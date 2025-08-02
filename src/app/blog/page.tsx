@@ -39,9 +39,36 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
+        <div className="flex justify-between items-center max-w-7xl mx-auto">
+          <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
+            <span className="text-white">1ABEL</span>
+          </Link>
+          
+          <div className="flex items-center space-x-8">
+            <Link href="/blog" className="text-gray-300 text-sm font-medium">
+              Blog & Insights
+            </Link>
+            <Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+              Services
+            </Link>
+            <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+              About
+            </Link>
+            <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+              Contact
+            </Link>
+            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-red-900/20 to-black" />
+      <section className="relative overflow-hidden pt-32 pb-20 px-4">
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-black" />
         
         <div className="relative max-w-6xl mx-auto text-center">
           {/* Animated Header */}
@@ -53,7 +80,7 @@ export default function BlogPage() {
           >
             <AnimatedGradientText className="mb-6">
               🎵 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
-              <span className="inline animate-gradient bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
+              <span className="inline animate-gradient bg-gradient-to-r from-gray-500 via-white to-gray-500 bg-clip-text text-transparent">
                 1ABEL Blog & Insights
               </span>
             </AnimatedGradientText>
@@ -61,7 +88,7 @@ export default function BlogPage() {
 
           <BlurIn
             word="Where Music Meets Innovation"
-            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-red-200 to-white bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent"
             duration={1.2}
           />
 
@@ -74,7 +101,7 @@ export default function BlogPage() {
             Discover insights about{" "}
             <WordRotate
               words={rotatingWords}
-              className="text-red-400 font-bold"
+              className="text-gray-400 font-bold"
               duration={3000}
             />
           </motion.div>
@@ -87,19 +114,19 @@ export default function BlogPage() {
             className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto mb-12"
           >
             <div className="text-center">
-              <NumberTicker value={totalMetrics.totalPosts} className="text-3xl font-bold text-red-400" />
+              <NumberTicker value={totalMetrics.totalPosts} className="text-3xl font-bold text-gray-400" />
               <p className="text-sm text-gray-400 mt-1">Articles</p>
             </div>
             <div className="text-center">
-              <NumberTicker value={totalMetrics.totalViews} className="text-3xl font-bold text-red-400" />
+              <NumberTicker value={totalMetrics.totalViews} className="text-3xl font-bold text-gray-400" />
               <p className="text-sm text-gray-400 mt-1">Views</p>
             </div>
             <div className="text-center">
-              <NumberTicker value={totalMetrics.totalLikes} className="text-3xl font-bold text-red-400" />
+              <NumberTicker value={totalMetrics.totalLikes} className="text-3xl font-bold text-gray-400" />
               <p className="text-sm text-gray-400 mt-1">Likes</p>
             </div>
             <div className="text-center">
-              <NumberTicker value={totalMetrics.averageReadTime} className="text-3xl font-bold text-red-400" />
+              <NumberTicker value={totalMetrics.averageReadTime} className="text-3xl font-bold text-gray-400" />
               <p className="text-sm text-gray-400 mt-1">Avg Read</p>
             </div>
           </motion.div>
@@ -115,7 +142,7 @@ export default function BlogPage() {
                 onClick={() => setActiveTab('general')}
                 className={`px-8 py-3 rounded-full transition-all duration-300 ${
                   activeTab === 'general'
-                    ? 'bg-red-600 text-white shadow-lg shadow-red-600/25'
+                    ? 'bg-gray-600 text-white shadow-lg shadow-gray-600/25'
                     : 'text-gray-400 hover:text-white'
                 }`}
               >
@@ -125,7 +152,7 @@ export default function BlogPage() {
                 onClick={() => setActiveTab('news')}
                 className={`px-8 py-3 rounded-full transition-all duration-300 ${
                   activeTab === 'news'
-                    ? 'bg-red-600 text-white shadow-lg shadow-red-600/25'
+                    ? 'bg-gray-600 text-white shadow-lg shadow-gray-600/25'
                     : 'text-gray-400 hover:text-white'
                 }`}
               >
@@ -143,17 +170,17 @@ export default function BlogPage() {
             className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-2xl mx-auto"
           >
             <div className="text-center p-4 bg-gray-900/30 rounded-lg backdrop-blur">
-              <Eye className="w-6 h-6 text-red-400 mx-auto mb-2" />
+              <Eye className="w-6 h-6 text-gray-400 mx-auto mb-2" />
               <NumberTicker value={currentMetrics.totalViews} className="text-2xl font-bold text-white" />
               <p className="text-sm text-gray-400">Total Views</p>
             </div>
             <div className="text-center p-4 bg-gray-900/30 rounded-lg backdrop-blur">
-              <Heart className="w-6 h-6 text-red-400 mx-auto mb-2" />
+              <Heart className="w-6 h-6 text-gray-400 mx-auto mb-2" />
               <NumberTicker value={currentMetrics.totalLikes} className="text-2xl font-bold text-white" />
               <p className="text-sm text-gray-400">Total Likes</p>
             </div>
             <div className="text-center p-4 bg-gray-900/30 rounded-lg backdrop-blur">
-              <Clock className="w-6 h-6 text-red-400 mx-auto mb-2" />
+              <Clock className="w-6 h-6 text-gray-400 mx-auto mb-2" />
               <NumberTicker value={currentMetrics.averageReadTime} className="text-2xl font-bold text-white" />
               <p className="text-sm text-gray-400">Avg Minutes</p>
             </div>
@@ -168,13 +195,13 @@ export default function BlogPage() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {currentPosts.map((post, index) => (
-              <AnimatedCard
-                key={post.id}
-                hoverEffect={index % 5 === 0 ? 'glow' : index % 3 === 0 ? 'tilt' : 'lift'}
-                glowColor="red"
-                delay={index * 100}
-                className="bg-gray-900/50 backdrop-blur rounded-xl overflow-hidden border border-gray-800 hover:border-red-500/50"
-              >
+              <Link key={post.id} href={`/blog/${post.slug}`}>
+                <AnimatedCard
+                  hoverEffect={index % 5 === 0 ? 'glow' : index % 3 === 0 ? 'tilt' : 'lift'}
+                  glowColor="gray"
+                  delay={index * 100}
+                  className="bg-gray-900/50 backdrop-blur rounded-xl overflow-hidden border border-gray-800 hover:border-gray-500/50 cursor-pointer h-full"
+                >
                 <div className="p-6">
                   {/* Category Badge */}
                   <div className="flex items-center justify-between mb-4">
@@ -189,7 +216,7 @@ export default function BlogPage() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-red-400 transition-colors line-clamp-2">
+                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-gray-400 transition-colors line-clamp-2">
                     {post.title}
                   </h3>
 
@@ -230,15 +257,16 @@ export default function BlogPage() {
 
                   {/* Read More Button */}
                   <ShimmerButton
-                    className="w-full bg-red-600 hover:bg-red-700 text-white text-sm"
-                    shimmerColor="#ef4444"
-                    background="linear-gradient(135deg, #dc2626, #b91c1c)"
+                    className="w-full bg-gray-600 hover:bg-gray-700 text-white text-sm"
+                    shimmerColor="#9ca3af"
+                    background="linear-gradient(135deg, #4b5563, #374151)"
                   >
                     Read Article
                     <ChevronRight className="w-4 h-4 ml-2" />
                   </ShimmerButton>
                 </div>
-              </AnimatedCard>
+                </AnimatedCard>
+              </Link>
             ))}
           </motion.div>
 
@@ -262,7 +290,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-red-900/20 to-black">
+      <section className="py-16 px-4 bg-gradient-to-r from-gray-900/20 to-black">
         <div className="max-w-4xl mx-auto text-center">
           <BlurIn
             word="Stay In The Loop"
@@ -276,12 +304,12 @@ export default function BlogPage() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-red-500"
+              className="flex-1 px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-gray-500"
             />
             <ShimmerButton
-              className="bg-red-600 hover:bg-red-700 text-white px-8 py-3"
-              shimmerColor="#ef4444"
-              background="linear-gradient(135deg, #dc2626, #b91c1c)"
+              className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-3"
+              shimmerColor="#9ca3af"
+              background="linear-gradient(135deg, #4b5563, #374151)"
             >
               Subscribe
             </ShimmerButton>

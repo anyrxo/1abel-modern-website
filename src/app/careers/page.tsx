@@ -7,7 +7,7 @@ export default function CareersPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
-            <span className="text-red-600">1</span><span className="text-white">ABEL</span>
+            <span className="text-gray-600">1</span><span className="text-white">ABEL</span>
           </Link>
           
           <div className="flex items-center space-x-6">
@@ -20,7 +20,7 @@ export default function CareersPage() {
             <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Contact
             </Link>
-            <a href="mailto:contact@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
               Get In Touch
             </a>
           </div>
@@ -110,7 +110,7 @@ export default function CareersPage() {
           <div className="space-y-8">
             
             {/* Position 1 */}
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-red-500/50 transition-colors">
+            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-gray-600 transition-colors">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Social Media Marketing Manager</h3>
@@ -125,7 +125,7 @@ export default function CareersPage() {
                   </div>
                 </div>
                 <div>
-                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
+                  <a href="mailto:anyro@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
                   </a>
                 </div>
@@ -133,7 +133,7 @@ export default function CareersPage() {
             </div>
 
             {/* Position 2 */}
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-red-500/50 transition-colors">
+            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-gray-600 transition-colors">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Music Producer / Audio Engineer</h3>
@@ -148,7 +148,7 @@ export default function CareersPage() {
                   </div>
                 </div>
                 <div>
-                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
+                  <a href="mailto:anyro@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
                   </a>
                 </div>
@@ -156,7 +156,7 @@ export default function CareersPage() {
             </div>
 
             {/* Position 3 */}
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-red-500/50 transition-colors">
+            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-gray-600 transition-colors">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Video Director / Content Creator</h3>
@@ -171,7 +171,7 @@ export default function CareersPage() {
                   </div>
                 </div>
                 <div>
-                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
+                  <a href="mailto:anyro@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
                   </a>
                 </div>
@@ -179,7 +179,7 @@ export default function CareersPage() {
             </div>
 
             {/* Position 4 */}
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-red-500/50 transition-colors">
+            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-gray-600 transition-colors">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Data Analyst / Growth Hacker</h3>
@@ -194,7 +194,7 @@ export default function CareersPage() {
                   </div>
                 </div>
                 <div>
-                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
+                  <a href="mailto:anyro@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
                   </a>
                 </div>
@@ -202,7 +202,7 @@ export default function CareersPage() {
             </div>
 
             {/* Position 5 */}
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-red-500/50 transition-colors">
+            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800 hover:border-gray-600 transition-colors">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Artist Relations Manager</h3>
@@ -217,7 +217,7 @@ export default function CareersPage() {
                   </div>
                 </div>
                 <div>
-                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
+                  <a href="mailto:anyro@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
                   </a>
                 </div>
@@ -262,7 +262,7 @@ export default function CareersPage() {
             </div>
           </div>
           
-          <a href="mailto:contact@1abel.com?subject=Internship Application" className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
+          <a href="mailto:anyro@1abel.com?subject=Internship Application" className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
             Apply for Internship
           </a>
         </div>
@@ -323,7 +323,7 @@ export default function CareersPage() {
             We're always looking for exceptional talent. Send us your resume and tell us how you can help revolutionize the music industry.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="mailto:contact@1abel.com?subject=General Application" className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
+            <a href="mailto:anyro@1abel.com?subject=General Application" className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
               Send General Application
             </a>
             <Link href="/contact">

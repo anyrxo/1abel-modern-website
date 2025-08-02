@@ -7,7 +7,7 @@ export default function ServicesPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
-            <span className="text-red-600">1</span><span className="text-white">ABEL</span>
+            <span className="text-gray-600">1</span><span className="text-white">ABEL</span>
           </Link>
           
           <div className="flex items-center space-x-8">
@@ -23,7 +23,7 @@ export default function ServicesPage() {
             <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Contact
             </Link>
-            <a href="mailto:contact@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
               Get In Touch
             </a>
           </div>
@@ -214,7 +214,7 @@ export default function ServicesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
-              href="mailto:contact@1abel.com" 
+              href="mailto:anyro@1abel.com" 
               className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors"
             >
               Email Us

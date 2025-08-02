@@ -4925,8 +4925,35 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
+        <div className="flex justify-between items-center max-w-7xl mx-auto">
+          <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
+            <span className="text-white">1ABEL</span>
+          </Link>
+          
+          <div className="flex items-center space-x-8">
+            <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+              Blog & Insights
+            </Link>
+            <Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+              Services
+            </Link>
+            <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+              About
+            </Link>
+            <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+              Contact
+            </Link>
+            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </nav>
+
       {/* Header */}
-      <div className="bg-gradient-to-b from-red-900/20 to-black py-20 px-4">
+      <div className="bg-gradient-to-b from-gray-900/20 to-black pt-32 pb-20 px-4">
         <div className="max-w-4xl mx-auto">
           <div>
             <div className="flex items-center space-x-4 mb-6">
@@ -4944,7 +4971,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-500 via-white to-gray-500 bg-clip-text text-transparent">
               {post.title}
             </h1>
             
@@ -4972,7 +4999,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-red-400 prose-code:text-red-400 prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-800">
+        <div className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-gray-400 prose-code:text-gray-400 prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-800">
           <div className="space-y-6">
             {content.split('\n').map((line, index) => {
               if (line.startsWith('# ')) {
@@ -4982,10 +5009,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 return <h2 key={index} className="text-3xl font-bold mb-4 mt-8 text-white">{line.slice(3)}</h2>
               }
               if (line.startsWith('### ')) {
-                return <h3 key={index} className="text-2xl font-bold mb-3 mt-6 text-red-400">{line.slice(4)}</h3>
+                return <h3 key={index} className="text-2xl font-bold mb-3 mt-6 text-gray-400">{line.slice(4)}</h3>
               }
               if (line.startsWith('**') && line.endsWith('**')) {
-                return <p key={index} className="text-xl font-bold text-red-400 mb-4">{line.slice(2, -2)}</p>
+                return <p key={index} className="text-xl font-bold text-gray-400 mb-4">{line.slice(2, -2)}</p>
               }
               if (line.trim() === '') {
                 return <br key={index} />
@@ -5003,7 +5030,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       </div>
       
       {/* CTA Section */}
-      <div className="bg-gradient-to-r from-red-900/20 to-black py-16 px-4">
+      <div className="bg-gradient-to-r from-gray-900/20 to-black py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div>
             <h2 className="text-3xl font-bold mb-6 text-white">
@@ -5013,9 +5040,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               Join the roster that's redefining global RnB, trap, and rap music.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                Submit Your Demo
-              </button>
+              <a href="mailto:anyro@1abel.com" className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
+                Contact Us
+              </a>
               <Link href="/blog">
                 <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-3 rounded-lg font-semibold transition-colors">
                   Read More Articles
