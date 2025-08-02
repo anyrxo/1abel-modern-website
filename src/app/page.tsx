@@ -14,19 +14,19 @@ export default function HomePage() {
   const [isLoaded, setIsLoaded] = useState(false)
   
   const { scrollY } = useScroll()
-  const scrollProgress = useTransform(scrollY, [0, 4000], [0, 1])
+  const scrollProgress = useTransform(scrollY, [0, 1500], [0, 1])
   
-  // Logo animations - quick transitions
-  const logoScale = useTransform(scrollProgress, [0, 0.1, 0.2], [1, 1, 0])
-  const logoOpacity = useTransform(scrollProgress, [0, 0.08, 0.2], [1, 1, 0])
-  const labelOpacity = useTransform(scrollProgress, [0, 0.05, 0.18], [0, 1, 0])
+  // Logo animations - very quick transitions
+  const logoScale = useTransform(scrollProgress, [0, 0.05, 0.1], [1, 1, 0])
+  const logoOpacity = useTransform(scrollProgress, [0, 0.04, 0.1], [1, 1, 0])
+  const labelOpacity = useTransform(scrollProgress, [0, 0.02, 0.08], [0, 1, 0])
   
-  // Section animations - appear quickly one after another
-  const heroOpacity = useTransform(scrollProgress, [0.15, 0.25, 0.4, 0.5], [0, 1, 1, 0])
-  const statsOpacity = useTransform(scrollProgress, [0.25, 0.35, 0.5, 0.6], [0, 1, 1, 0])
-  const servicesOpacity = useTransform(scrollProgress, [0.35, 0.45, 0.6, 0.7], [0, 1, 1, 0])
-  const artistsOpacity = useTransform(scrollProgress, [0.45, 0.55, 0.7, 0.8], [0, 1, 1, 0])
-  const ctaOpacity = useTransform(scrollProgress, [0.55, 0.65, 0.8, 1], [0, 1, 1, 0])
+  // Section animations - instant appearance when scrolling
+  const heroOpacity = useTransform(scrollProgress, [0.08, 0.12, 0.35, 0.4], [0, 1, 1, 0])
+  const statsOpacity = useTransform(scrollProgress, [0.35, 0.4, 0.6, 0.65], [0, 1, 1, 0])
+  const servicesOpacity = useTransform(scrollProgress, [0.6, 0.65, 0.85, 0.9], [0, 1, 1, 0])
+  const artistsOpacity = useTransform(scrollProgress, [0.85, 0.9, 0.95, 1], [0, 1, 1, 0])
+  const ctaOpacity = useTransform(scrollProgress, [0.95, 1], [0, 1])
 
   useEffect(() => {
     setTimeout(() => setIsLoaded(true), 100)
@@ -42,9 +42,11 @@ export default function HomePage() {
         transition={{ duration: 0.8, delay: 2 }}
       >
         <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <motion.div whileHover={{ scale: 1.05 }} className="text-2xl font-bold text-red-600">
-            1ABEL
-          </motion.div>
+          <Link href="/">
+            <motion.div whileHover={{ scale: 1.05 }} className="text-2xl font-bold text-red-600 cursor-pointer">
+              1ABEL
+            </motion.div>
+          </Link>
           
           <div className="flex items-center space-x-6">
             <Link href="/blog">
@@ -57,12 +59,16 @@ export default function HomePage() {
                 Blog & Insights
               </ShimmerButton>
             </Link>
-            <motion.button className="text-white/70 hover:text-white transition-colors text-sm">
-              Artists
-            </motion.button>
-            <motion.button className="text-white/70 hover:text-white transition-colors text-sm">
-              Services
-            </motion.button>
+            <Link href="/artists">
+              <motion.button className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+                Artists
+              </motion.button>
+            </Link>
+            <Link href="/services">
+              <motion.button className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+                Services
+              </motion.button>
+            </Link>
             <ShimmerButton
               className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 text-sm"
               shimmerColor="#ef4444"
@@ -118,8 +124,8 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* Shorter spacer */}
-      <div className="h-[400vh]" />
+      {/* Much shorter spacer for instant transitions */}
+      <div className="h-[150vh]" />
 
       {/* Hero Section */}
       <section className="relative z-10 min-h-screen flex items-center justify-center">
@@ -418,6 +424,80 @@ export default function HomePage() {
           </div>
         </motion.div>
       </section>
+
+      {/* Footer */}
+      <footer className="relative z-10 bg-gray-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            {/* Company Info */}
+            <div>
+              <h3 className="text-2xl font-bold text-red-600 mb-4">1ABEL</h3>
+              <p className="text-gray-300 mb-4">
+                The world's most advanced music label for RnB, trap, and rap artists. Building superstars, not just releasing music.
+              </p>
+              <div className="flex space-x-4">
+                <a href="#" className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
+                  <span className="text-white text-sm">♪</span>
+                </a>
+                <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors">
+                  <span className="text-white text-sm">📱</span>
+                </a>
+                <a href="#" className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 transition-colors">
+                  <span className="text-white text-sm">🎵</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li><Link href="/artists" className="text-gray-300 hover:text-white transition-colors">Our Artists</Link></li>
+                <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
+                <li><Link href="/blog" className="text-gray-300 hover:text-white transition-colors">Blog & Insights</Link></li>
+                <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Legal</h4>
+              <ul className="space-y-2">
+                <li><Link href="/privacy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="text-gray-300 hover:text-white transition-colors">Terms of Service</Link></li>
+                <li><Link href="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
+                <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
+              <div className="space-y-2 text-gray-300">
+                <p>📧 hello@1abel.com</p>
+                <p>📱 +61 4XX XXX XXX</p>
+                <p>📍 Sydney, Australia</p>
+              </div>
+              <div className="mt-4">
+                <ShimmerButton
+                  className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 text-sm w-full"
+                  shimmerColor="#ef4444"
+                >
+                  Submit Demo
+                </ShimmerButton>
+              </div>
+            </div>
+
+          </div>
+          
+          <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+            <p className="text-gray-400">
+              © 2025 1ABEL. All rights reserved. The world's most advanced music label for urban artists.
+            </p>
+          </div>
+        </div>
+      </footer>
 
       {/* Background Stars */}
       <section className="fixed inset-0 overflow-hidden pointer-events-none">
