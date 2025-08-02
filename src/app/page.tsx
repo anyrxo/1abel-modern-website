@@ -492,26 +492,142 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* Final Call to Action */}
-      <section className="relative z-10 min-h-screen flex items-center justify-center">
+      {/* Final Call to Action with Epic Concert Background */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Epic Concert Background - Replace with actual concert image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `linear-gradient(45deg, #8B0000 0%, #DC143C 25%, #FF6347 50%, #DC143C 75%, #8B0000 100%)`,
+            backgroundSize: '400% 400%',
+          }}
+        >
+          {/* Animated gradient background as placeholder */}
+          <motion.div
+            className="absolute inset-0"
+            animate={{
+              backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+            style={{
+              background: `linear-gradient(45deg, #8B0000 0%, #DC143C 25%, #FF6347 50%, #DC143C 75%, #8B0000 100%)`,
+              backgroundSize: '400% 400%',
+            }}
+          />
+          
+          {/* Concert crowd silhouettes overlay */}
+          <div className="absolute bottom-0 left-0 right-0 h-64">
+            {[...Array(20)].map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute bottom-0 bg-black/80"
+                style={{
+                  left: `${i * 5}%`,
+                  width: `${Math.random() * 8 + 2}%`,
+                  height: `${Math.random() * 40 + 20}%`,
+                  clipPath: 'polygon(20% 100%, 80% 100%, 90% 80%, 70% 60%, 60% 40%, 40% 60%, 10% 80%)'
+                }}
+                animate={{
+                  scaleY: [1, 1.1, 1],
+                  opacity: [0.7, 0.9, 0.7]
+                }}
+                transition={{
+                  duration: 2 + Math.random() * 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: Math.random() * 2
+                }}
+              />
+            ))}
+          </div>
+          
+          {/* Stage lights effect */}
+          {[...Array(5)].map((_, i) => (
+            <motion.div
+              key={`light-${i}`}
+              className="absolute top-0 w-32 h-32 rounded-full"
+              style={{
+                left: `${20 + i * 15}%`,
+                background: 'radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.3) 30%, transparent 70%)'
+              }}
+              animate={{
+                opacity: [0.3, 0.8, 0.3],
+                scale: [1, 1.2, 1]
+              }}
+              transition={{
+                duration: 1.5 + i * 0.3,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: i * 0.5
+              }}
+            />
+          ))}
+        </div>
+        
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/30" />
+        
+        {/* Animated Red Smoke Effect */}
+        <div className="absolute inset-0">
+          {[...Array(3)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute inset-0 opacity-20"
+              style={{
+                background: `radial-gradient(ellipse at ${30 + i * 30}% ${40 + i * 20}%, rgba(220, 38, 38, 0.3) 0%, transparent 50%)`,
+              }}
+              animate={{
+                scale: [1, 1.2, 1],
+                opacity: [0.1, 0.3, 0.1],
+              }}
+              transition={{
+                duration: 4 + i * 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: i * 1.5
+              }}
+            />
+          ))}
+        </div>
+        
+        {/* Concert Crowd Silhouettes */}
+        <motion.div 
+          className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent"
+          animate={{
+            opacity: [0.6, 0.8, 0.6],
+          }}
+          transition={{
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        />
+        
         <motion.div
-          className="text-center"
+          className="relative z-10 text-center max-w-4xl mx-auto px-8"
           style={{
             opacity: contentOpacity,
             scale: contentScale
           }}
         >
           <motion.h2
-            className="text-6xl md:text-8xl font-bold mb-8"
+            className="text-6xl md:text-8xl font-bold mb-8 text-white drop-shadow-2xl"
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
+            style={{
+              textShadow: '0 0 30px rgba(220, 38, 38, 0.8), 0 0 60px rgba(220, 38, 38, 0.4)'
+            }}
           >
             JOIN THE MOVEMENT
           </motion.h2>
           
           <motion.p
-            className="text-xl md:text-2xl mb-12 text-white/70"
+            className="text-xl md:text-2xl mb-4 text-white/90 drop-shadow-lg"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -519,9 +635,21 @@ export default function HomePage() {
             Where culture creators become legends
           </motion.p>
           
+          <motion.p
+            className="text-lg mb-12 text-red-300/80 drop-shadow-lg"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
+            Live shows • Festival headliners • Sold-out venues
+          </motion.p>
+          
           <motion.button
-            className="px-16 py-6 bg-red-600 text-white text-xl font-bold uppercase tracking-wider hover:bg-red-700 transition-colors"
-            whileHover={{ scale: 1.05 }}
+            className="px-16 py-6 bg-red-600 text-white text-xl font-bold uppercase tracking-wider hover:bg-red-700 transition-all duration-300 shadow-2xl border-2 border-red-500 hover:border-red-400"
+            whileHover={{ 
+              scale: 1.05,
+              boxShadow: '0 0 40px rgba(220, 38, 38, 0.6)'
+            }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -531,16 +659,18 @@ export default function HomePage() {
           </motion.button>
           
           <motion.div
-            className="mt-16 flex justify-center gap-6"
+            className="mt-16 flex justify-center gap-6 flex-wrap"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
           >
-            <a href="#" className="text-white/50 hover:text-white transition-colors">Contact</a>
-            <span className="text-white/20">|</span>
-            <a href="#" className="text-white/50 hover:text-white transition-colors">Demo Submission</a>
-            <span className="text-white/20">|</span>
-            <a href="#" className="text-white/50 hover:text-white transition-colors">Press</a>
+            <a href="#" className="text-white/70 hover:text-white transition-colors drop-shadow-lg">Contact</a>
+            <span className="text-white/30">|</span>
+            <a href="#" className="text-white/70 hover:text-white transition-colors drop-shadow-lg">Demo Submission</a>
+            <span className="text-white/30">|</span>
+            <a href="#" className="text-white/70 hover:text-white transition-colors drop-shadow-lg">Press</a>
+            <span className="text-white/30">|</span>
+            <a href="#" className="text-white/70 hover:text-white transition-colors drop-shadow-lg">Book Shows</a>
           </motion.div>
         </motion.div>
       </section>
