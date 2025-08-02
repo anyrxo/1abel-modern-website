@@ -1,26 +1,31 @@
+import Link from 'next/link'
+
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/80 backdrop-blur">
+      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <a href="/" className="text-2xl font-bold text-red-600 hover:scale-105 transition-transform">
-            1ABEL
-          </a>
+          <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
+            <span className="text-red-600">1</span><span className="text-white">ABEL</span>
+          </Link>
           
-          <div className="flex items-center space-x-6">
-            <a href="/blog" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+          <div className="flex items-center space-x-8">
+            <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Blog & Insights
-            </a>
-            <a href="/artists" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
-              Artists
-            </a>
-            <a href="/services" className="text-red-400 text-sm font-medium">
+            </Link>
+            <Link href="/services" className="text-gray-300 text-sm font-medium">
               Services
+            </Link>
+            <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+              About
+            </Link>
+            <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+              Contact
+            </Link>
+            <a href="mailto:contact@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+              Get In Touch
             </a>
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors">
-              Submit Demo
-            </button>
           </div>
         </div>
       </nav>
@@ -28,11 +33,11 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
             OUR SERVICES
           </h1>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Full-service artist development that transforms raw talent into global superstars. We handle everything so you can focus on creating music.
+            Comprehensive music industry consulting and development services that transform raw talent into sustainable businesses.
           </p>
         </div>
       </section>
@@ -43,104 +48,104 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             {/* Service 1 */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-gray-600 transition-colors">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6">
                 <span className="text-white text-2xl">🎵</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Music Production</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Music Production Consulting</h3>
               <p className="text-gray-300 mb-6">
-                Professional recording, mixing, and mastering with industry-leading producers. Radio-ready sound guaranteed.
+                Strategic guidance on production workflows, studio setup optimization, and industry-standard mixing/mastering processes.
               </p>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Professional studio recording</li>
-                <li>• Industry-standard mixing & mastering</li>
-                <li>• Beat production & composition</li>
-                <li>• Vocal coaching & direction</li>
+                <li>• Production workflow optimization</li>
+                <li>• Industry-standard quality assessment</li>
+                <li>• Studio setup consulting</li>
+                <li>• Technical standards guidance</li>
               </ul>
             </div>
 
             {/* Service 2 */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-gray-600 transition-colors">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6">
                 <span className="text-white text-2xl">📱</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Social Media Management</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Digital Marketing Strategy</h3>
               <p className="text-gray-300 mb-6">
-                Complete social media domination across TikTok, Instagram, YouTube, and Twitter. We create viral moments.
+                Complete digital presence optimization across TikTok, Instagram, YouTube, and emerging platforms.
               </p>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Daily content creation</li>
-                <li>• Viral campaign strategies</li>
-                <li>• Influencer collaborations</li>
-                <li>• Analytics & optimization</li>
+                <li>• Social media strategy development</li>
+                <li>• Algorithm optimization techniques</li>
+                <li>• Content creation frameworks</li>
+                <li>• Platform-specific best practices</li>
               </ul>
             </div>
 
             {/* Service 3 */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-gray-600 transition-colors">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6">
                 <span className="text-white text-2xl">🎯</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Marketing & Promotion</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Business Development</h3>
               <p className="text-gray-300 mb-6">
-                Strategic marketing campaigns that get your music heard by millions. Playlist placement and PR included.
+                Strategic business planning, revenue optimization, and industry relationship building for sustainable growth.
               </p>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Spotify playlist placement</li>
-                <li>• Press & media coverage</li>
-                <li>• Radio promotion campaigns</li>
-                <li>• Influencer partnerships</li>
+                <li>• Revenue stream diversification</li>
+                <li>• Industry partnership facilitation</li>
+                <li>• Business model optimization</li>
+                <li>• Financial planning guidance</li>
               </ul>
             </div>
 
             {/* Service 4 */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-gray-600 transition-colors">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6">
                 <span className="text-white text-2xl">🎬</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Video Production</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Content Strategy</h3>
               <p className="text-gray-300 mb-6">
-                High-budget music videos, lyric videos, and behind-the-scenes content. Cinematic quality every time.
+                Visual content development strategy, including video production planning and brand aesthetic development.
               </p>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Music video production</li>
-                <li>• Lyric & visualizer videos</li>
-                <li>• Behind-the-scenes content</li>
-                <li>• Live performance videos</li>
+                <li>• Visual brand development</li>
+                <li>• Video content strategy</li>
+                <li>• Production workflow planning</li>
+                <li>• Brand consistency frameworks</li>
               </ul>
             </div>
 
             {/* Service 5 */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-white text-2xl">💰</span>
+            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-gray-600 transition-colors">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6">
+                <span className="text-white text-2xl">💼</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Brand Partnerships</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Industry Consulting</h3>
               <p className="text-gray-300 mb-6">
-                Connect with major brands for lucrative sponsorship deals. We negotiate the best rates and terms.
+                Navigate complex industry relationships, contract negotiations, and strategic partnership opportunities.
               </p>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Brand deal negotiations</li>
-                <li>• Sponsorship opportunities</li>
-                <li>• Product placement deals</li>
-                <li>• Long-term partnerships</li>
+                <li>• Industry relationship building</li>
+                <li>• Contract review and guidance</li>
+                <li>• Partnership opportunity assessment</li>
+                <li>• Strategic planning consultation</li>
               </ul>
             </div>
 
             {/* Service 6 */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-colors">
-              <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
-                <span className="text-white text-2xl">🎤</span>
+            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-gray-600 transition-colors">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6">
+                <span className="text-white text-2xl">📊</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Live Performance</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Analytics & Optimization</h3>
               <p className="text-gray-300 mb-6">
-                Book high-paying gigs, festivals, and tours. We handle everything from booking to production.
+                Data-driven performance analysis, streaming optimization, and growth metric tracking for informed decision-making.
               </p>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Festival bookings</li>
-                <li>• Tour planning & management</li>
-                <li>• Venue negotiations</li>
-                <li>• Production coordination</li>
+                <li>• Performance analytics review</li>
+                <li>• Growth metric optimization</li>
+                <li>• Data-driven strategy development</li>
+                <li>• ROI analysis and reporting</li>
               </ul>
             </div>
 
@@ -148,70 +153,52 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-black to-red-900/20">
+      {/* Consultation Process */}
+      <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-              INVESTMENT PLANS
+              HOW WE WORK
             </h2>
             <p className="text-xl text-gray-300">
-              Choose the package that fits your career goals
+              Our collaborative approach to music industry consulting
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             
-            {/* Starter Plan */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800">
-              <h3 className="text-2xl font-bold mb-2 text-white">STARTER</h3>
-              <p className="text-4xl font-bold text-red-400 mb-6">$5,000<span className="text-lg text-gray-400">/project</span></p>
-              <ul className="space-y-3 mb-8">
-                <li className="text-gray-300">✓ Professional recording session</li>
-                <li className="text-gray-300">✓ Mixing & mastering</li>
-                <li className="text-gray-300">✓ Basic social media content</li>
-                <li className="text-gray-300">✓ Streaming platform distribution</li>
-              </ul>
-              <button className="w-full bg-gray-700 hover:bg-gray-600 text-white py-3 rounded-lg font-semibold transition-colors">
-                Get Started
-              </button>
-            </div>
-
-            {/* Professional Plan */}
-            <div className="p-8 bg-red-900/20 rounded-xl border-2 border-red-500 relative">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                MOST POPULAR
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">1</span>
               </div>
-              <h3 className="text-2xl font-bold mb-2 text-white">PROFESSIONAL</h3>
-              <p className="text-4xl font-bold text-red-400 mb-6">$15,000<span className="text-lg text-gray-400">/project</span></p>
-              <ul className="space-y-3 mb-8">
-                <li className="text-gray-300">✓ Everything in Starter</li>
-                <li className="text-gray-300">✓ Music video production</li>
-                <li className="text-gray-300">✓ Full marketing campaign</li>
-                <li className="text-gray-300">✓ Playlist placement</li>
-                <li className="text-gray-300">✓ Press & media coverage</li>
-              </ul>
-              <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition-colors">
-                Choose Professional
-              </button>
+              <h3 className="text-lg font-semibold text-white mb-2">Discovery</h3>
+              <p className="text-gray-300 text-sm">Initial consultation to understand your goals, current situation, and challenges</p>
             </div>
-
-            {/* Superstar Plan */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800">
-              <h3 className="text-2xl font-bold mb-2 text-white">SUPERSTAR</h3>
-              <p className="text-4xl font-bold text-red-400 mb-6">$50,000<span className="text-lg text-gray-400">/project</span></p>
-              <ul className="space-y-3 mb-8">
-                <li className="text-gray-300">✓ Everything in Professional</li>
-                <li className="text-gray-300">✓ Brand partnership deals</li>
-                <li className="text-gray-300">✓ Tour booking & management</li>
-                <li className="text-gray-300">✓ Celebrity collaborations</li>
-                <li className="text-gray-300">✓ 1-year career management</li>
-              </ul>
-              <button className="w-full bg-gray-700 hover:bg-gray-600 text-white py-3 rounded-lg font-semibold transition-colors">
-                Go Superstar
-              </button>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">2</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Strategy</h3>
+              <p className="text-gray-300 text-sm">Develop customized roadmap and action plan based on your specific needs</p>
             </div>
-
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">3</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Implementation</h3>
+              <p className="text-gray-300 text-sm">Execute strategy with ongoing guidance and support throughout the process</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold">4</span>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Optimization</h3>
+              <p className="text-gray-300 text-sm">Continuous refinement and optimization based on results and changing industry dynamics</p>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -219,19 +206,27 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
-            READY TO DOMINATE?
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
+            READY TO ELEVATE?
           </h2>
           <p className="text-xl text-gray-300 mb-12">
-            Let's discuss your vision and create a custom plan that fits your goals and budget.
+            Let's discuss your vision and create a custom strategy that fits your goals and situation.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 rounded-lg text-lg font-semibold transition-colors">
-              Submit Your Demo
-            </button>
-            <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-12 py-4 rounded-lg text-lg font-semibold transition-colors">
-              Schedule Consultation
-            </button>
+            <a 
+              href="mailto:contact@1abel.com" 
+              className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors"
+            >
+              Email Us
+            </a>
+            <a 
+              href="https://twitter.com/anyrxo" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="border border-white text-white hover:bg-white hover:text-black px-12 py-4 rounded-lg text-lg font-semibold transition-colors"
+            >
+              @anyrxo
+            </a>
           </div>
         </div>
       </section>
