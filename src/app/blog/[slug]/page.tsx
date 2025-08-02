@@ -1,11 +1,7 @@
-'use client'
-
 import { notFound } from 'next/navigation'
 import { blogPosts, newsArticles } from '@/data/blogPosts'
 import { formatBlogDate } from '@/utils/blogMetrics'
-import { motion } from 'framer-motion'
 import { Clock, Eye, Heart, Share2, Calendar, Tag } from 'lucide-react'
-import ShimmerButton from '@/components/magicui/shimmer-button'
 import Link from 'next/link'
 
 // Get blog content by slug
@@ -4909,6 +4905,14 @@ After managing campaigns for 24 active artists and generating 500M+ combined soc
   return content[slug] || 'Content coming soon...'
 }
 
+export async function generateStaticParams() {
+  // Generate params for all blog posts and news articles
+  const allPosts = [...blogPosts, ...newsArticles]
+  return allPosts.map((post) => ({
+    slug: post.slug,
+  }))
+}
+
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const result = getBlogContent(slug)
@@ -4924,11 +4928,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       {/* Header */}
       <div className="bg-gradient-to-b from-red-900/20 to-black py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div>
             <div className="flex items-center space-x-4 mb-6">
               <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-${post.categoryColor}-500/20 text-${post.categoryColor}-400 border border-${post.categoryColor}-500/30`}>
                 <Tag className="w-3 h-3 inline mr-1" />
@@ -4966,18 +4966,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 Share
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
       
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-red-400 prose-code:text-red-400 prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-800"
-        >
+        <div className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-p:text-gray-300 prose-strong:text-red-400 prose-code:text-red-400 prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-800">
           <div className="space-y-6">
             {content.split('\n').map((line, index) => {
               if (line.startsWith('# ')) {
@@ -5004,17 +4999,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               return <p key={index} className="text-gray-300 mb-4">{line}</p>
             })}
           </div>
-        </motion.div>
+        </div>
       </div>
       
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-red-900/20 to-black py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div>
             <h2 className="text-3xl font-bold mb-6 text-white">
               Ready to Work with Australia's Leading Urban Music Label?
             </h2>
@@ -5022,23 +5013,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               Join the roster that's redefining Australian RnB, trap, and rap music.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <ShimmerButton
-                className="bg-red-600 hover:bg-red-700 text-white px-8 py-3"
-                shimmerColor="#ef4444"
-              >
+              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
                 Submit Your Demo
-              </ShimmerButton>
+              </button>
               <Link href="/blog">
-                <ShimmerButton
-                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-3"
-                  shimmerColor="#ffffff"
-                  background="rgba(0, 0, 0, 0.3)"
-                >
+                <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-3 rounded-lg font-semibold transition-colors">
                   Read More Articles
-                </ShimmerButton>
+                </button>
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
