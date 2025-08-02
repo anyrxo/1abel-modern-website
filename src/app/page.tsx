@@ -131,7 +131,7 @@ export default function HomePage() {
           {/* Vertical White ABEL perfectly fitted on the 1 - Writes on beautifully */}
           <motion.div
             style={{ opacity: labelOpacity }}
-            className="absolute top-[28%] left-[48%] flex flex-col text-[2.2vh] font-black leading-[0.85] tracking-tighter text-white z-20"
+            className="absolute top-[15%] left-[52%] flex flex-col text-[4.5vh] font-black leading-[1.1] tracking-wide text-white z-20"
           >
             {['A', 'B', 'E', 'L'].map((letter, index) => (
               <motion.span
