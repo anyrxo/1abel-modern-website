@@ -41,29 +41,20 @@ export default function HomePage() {
   // Scroll progress mapping
   const scrollProgress = useTransform(scrollY, [0, 10000], [0, 1])
   
-  // Massive yin-yang spinning and splitting animation along central curve
-  const yinYangRotate = useTransform(scrollProgress, [0, 0.08, 0.9, 1], [0, 720, 720, 1440])
-  const yinYangScale = useTransform(scrollProgress, [0, 0.05, 0.9, 1], [1, 1.2, 1.2, 1])
-  // Split along the central S-curve of yin-yang
-  const yinSplitX = useTransform(scrollProgress, [0, 0.05, 0.08, 0.85, 0.95], [0, 0, -200, -200, 0])
-  const yangSplitX = useTransform(scrollProgress, [0, 0.05, 0.08, 0.85, 0.95], [0, 0, 200, 200, 0])
-  const yinYangOpacity = useTransform(scrollProgress, [0, 0.05, 0.12, 0.8, 0.9, 1], [1, 1, 0, 0, 1, 1])
+  // Logo (1) - visible on page load, stays until scroll
+  const logoScale = useTransform(scrollProgress, [0, 0.05, 0.7, 0.8], [1, 1, 1, 0])
+  const logoOpacity = useTransform(scrollProgress, [0, 0.05, 0.7, 0.8], [1, 1, 1, 0])
   
-  // Logo (1) appearance - comes forth faster, no spinning
-  const logoScale = useTransform(scrollProgress, [0.08, 0.12, 0.8, 0.88], [0, 1, 1, 0])
-  const logoOpacity = useTransform(scrollProgress, [0.08, 0.12, 0.8, 0.85], [0, 1, 1, 0])
-  const logoY = useTransform(scrollProgress, [0.08, 0.12], [50, 0])
-  
-  // ABEL appearance - writes on the 1 immediately after it emerges
-  const labelOpacity = useTransform(scrollProgress, [0.12, 0.18, 0.75, 0.8], [0, 1, 1, 0])
+  // ABEL appearance - writes on the 1 after page load
+  const labelOpacity = useTransform(scrollProgress, [0, 0.1, 0.6, 0.7], [0, 1, 1, 0])
   
   // White smoke effect at the end
   const smokeOpacity = useTransform(scrollProgress, [0.9, 0.95, 0.98, 1], [0, 1, 1, 0])
   
-  // Content transformations
-  const contentRotate = useTransform(scrollProgress, [0.2, 0.4, 0.6, 0.8], [0, 90, -90, 0])
-  const contentScale = useTransform(scrollProgress, [0.2, 0.5, 0.8], [1, 1.5, 1])
-  const contentOpacity = useTransform(scrollProgress, [0.15, 0.25, 0.7, 0.8], [0, 1, 1, 0])
+  // Content transformations - start earlier
+  const contentRotate = useTransform(scrollProgress, [0.1, 0.3, 0.5, 0.7], [0, 90, -90, 0])
+  const contentScale = useTransform(scrollProgress, [0.1, 0.4, 0.7], [1, 1.5, 1])
+  const contentOpacity = useTransform(scrollProgress, [0.08, 0.15, 0.85, 0.95], [0, 1, 1, 0])
   
   // Loop back to beginning
   useEffect(() => {
@@ -100,159 +91,37 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-b from-white via-white/50 to-transparent" />
       </motion.div>
-      {/* Hero Section with Vertical 1ABEL */}
-      <section className="fixed inset-0 flex items-center justify-center">
-        {/* Massive Yin-Yang with Shimmering Particles */}
-        <motion.div
-          className="absolute w-[80vh] h-[80vh]"
-          initial={{ scale: 1 }}
-          style={{ 
-            rotate: yinYangRotate,
-            scale: yinYangScale,
-            opacity: yinYangOpacity
-          }}
-        >
-          {/* Shimmering Particles Around Yin-Yang */}
-          {[...Array(20)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1 h-1 bg-white rounded-full"
-              style={{
-                left: `${50 + 40 * Math.cos((i / 20) * Math.PI * 2)}%`,
-                top: `${50 + 40 * Math.sin((i / 20) * Math.PI * 2)}%`,
-              }}
-              animate={{
-                opacity: [0.2, 1, 0.2],
-                scale: [0.5, 1.5, 0.5],
-                x: [0, Math.cos((i / 20) * Math.PI * 2) * 10, 0],
-                y: [0, Math.sin((i / 20) * Math.PI * 2) * 10, 0],
-              }}
-              transition={{
-                duration: 2 + Math.random() * 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: i * 0.1
-              }}
-            />
-          ))}
-          
-          {/* More Inner Ring of Particles */}
-          {[...Array(12)].map((_, i) => (
-            <motion.div
-              key={`inner-${i}`}
-              className="absolute w-0.5 h-0.5 bg-white/60 rounded-full"
-              style={{
-                left: `${50 + 45 * Math.cos((i / 12) * Math.PI * 2)}%`,
-                top: `${50 + 45 * Math.sin((i / 12) * Math.PI * 2)}%`,
-              }}
-              animate={{
-                opacity: [0.1, 0.8, 0.1],
-                scale: [0.3, 1, 0.3],
-              }}
-              transition={{
-                duration: 3 + Math.random() * 1,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: i * 0.2
-              }}
-            />
-          ))}
-          
-          {/* Yin Half */}
-          <motion.div
-            className="absolute inset-0"
-            style={{ x: yinSplitX }}
-          >
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <defs>
-                <clipPath id="yinClip">
-                  <rect x="0" y="0" width="50" height="100" />
-                </clipPath>
-              </defs>
-              <g clipPath="url(#yinClip)">
-                <circle cx="50" cy="50" r="49" fill="white" stroke="rgba(255,255,255,0.8)" strokeWidth="2"/>
-                <path d="M50,1 A24.5,24.5 0 0,1 50,50 A49,49 0 0,0 50,99 A24.5,24.5 0 0,1 50,50 A49,49 0 0,0 50,1" 
-                      fill="black" stroke="rgba(0,0,0,0.1)" strokeWidth="1"/>
-                <circle cx="50" cy="25.5" r="8" fill="black" stroke="rgba(0,0,0,0.5)" strokeWidth="0.5"/>
-                <circle cx="50" cy="74.5" r="8" fill="white" stroke="rgba(255,255,255,0.3)" strokeWidth="0.5"/>
-                <circle cx="50" cy="25.5" r="2.5" fill="white"/>
-                <circle cx="50" cy="74.5" r="2.5" fill="black"/>
-                {/* Brushed texture effect */}
-                <defs>
-                  <filter id="brush">
-                    <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise"/>
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="1"/>
-                  </filter>
-                </defs>
-              </g>
-            </svg>
-          </motion.div>
-          
-          {/* Yang Half */}
-          <motion.div
-            className="absolute inset-0"
-            style={{ x: yangSplitX }}
-          >
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              <defs>
-                <clipPath id="yangClip">
-                  <rect x="50" y="0" width="50" height="100" />
-                </clipPath>
-              </defs>
-              <g clipPath="url(#yangClip)">
-                <circle cx="50" cy="50" r="49" fill="white" stroke="rgba(255,255,255,0.8)" strokeWidth="2"/>
-                <path d="M50,1 A24.5,24.5 0 0,1 50,50 A49,49 0 0,0 50,99 A24.5,24.5 0 0,1 50,50 A49,49 0 0,0 50,1" 
-                      fill="black" stroke="rgba(0,0,0,0.1)" strokeWidth="1"/>
-                <circle cx="50" cy="25.5" r="8" fill="black" stroke="rgba(0,0,0,0.5)" strokeWidth="0.5"/>
-                <circle cx="50" cy="74.5" r="8" fill="white" stroke="rgba(255,255,255,0.3)" strokeWidth="0.5"/>
-                <circle cx="50" cy="25.5" r="2.5" fill="white"/>
-                <circle cx="50" cy="74.5" r="2.5" fill="black"/>
-              </g>
-            </svg>
-          </motion.div>
-        </motion.div>
-
-        {/* Dark Abyss Between Split - Where 1 Emerges From */}
-        <motion.div
-          className="absolute w-[80vh] h-[80vh] bg-gradient-to-r from-transparent via-black to-transparent"
-          style={{
-            opacity: useTransform(scrollProgress, [0.08, 0.12, 0.8, 0.85], [0, 1, 1, 0]),
-            scaleX: useTransform(scrollProgress, [0.08, 0.12], [0, 1])
-          }}
-        />
-        
+      {/* Hero Section with Red 1 and ABEL */}
+      <section className="fixed inset-0 flex items-center justify-center">        
         <motion.div
           style={{ 
             scale: logoScale, 
-            opacity: logoOpacity,
-            y: logoY
+            opacity: logoOpacity
           }}
           className="relative z-10"
         >
-          {/* Big Red 1 with Glow - Emerges from Shadows */}
+          {/* Big Red 1 with Glow */}
           <motion.div
-            className="text-[50vh] font-bold leading-none text-red-600 relative"
-            style={{
-              filter: useTransform(scrollProgress, [0.08, 0.12], 
-                ["brightness(0) contrast(0)", "brightness(1) contrast(1)"])
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ 
+              opacity: isLoaded ? 1 : 0, 
+              scale: isLoaded ? 1 : 0.8,
             }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+            className="text-[50vh] font-bold leading-none text-red-600 relative"
           >
             <motion.span
               animate={{
                 textShadow: [
-                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3), 0 0 300px rgba(0, 0, 0, 0.8)',
-                  '0 0 120px rgba(220, 38, 38, 0.8), 0 0 240px rgba(220, 38, 38, 0.5), 0 0 400px rgba(0, 0, 0, 1)',
-                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3), 0 0 300px rgba(0, 0, 0, 0.8)',
+                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3)',
+                  '0 0 120px rgba(220, 38, 38, 0.8), 0 0 240px rgba(220, 38, 38, 0.5)',
+                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3)',
                 ],
               }}
               transition={{
                 duration: 3,
                 repeat: Infinity,
                 ease: "easeInOut",
-              }}
-              style={{
-                transform: useTransform(scrollProgress, [0.08, 0.12], 
-                  ["scale(0.5)", "scale(1)"])
               }}
             >
               1
@@ -267,15 +136,16 @@ export default function HomePage() {
             {['A', 'B', 'E', 'L'].map((letter, index) => (
               <motion.span
                 key={letter}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: 2 + index * 0.3,
+                  ease: [0.34, 1.56, 0.64, 1]
+                }}
                 style={{
                   opacity: useTransform(scrollProgress, 
-                    [0.12 + index * 0.015, 0.14 + index * 0.015], [0, 1]
-                  ),
-                  scale: useTransform(scrollProgress, 
-                    [0.12 + index * 0.015, 0.14 + index * 0.015], [0.5, 1]
-                  ),
-                  y: useTransform(scrollProgress, 
-                    [0.12 + index * 0.015, 0.14 + index * 0.015], [30, 0]
+                    [0, 0.05 + index * 0.01, 0.6, 0.7], [0, 1, 1, 0]
                   )
                 }}
                 whileHover={{ 
