@@ -258,8 +258,8 @@ export default function HomePage() {
               top: `${Math.random() * 50}%`,
             }}
             animate={{
-              x: [0, window.innerWidth || 1000],
-              y: [0, (window.innerHeight || 1000) * 0.3],
+              x: [0, 1000],
+              y: [0, 300],
               opacity: [0, 1, 0],
               scale: [0, 2, 0],
             }}
