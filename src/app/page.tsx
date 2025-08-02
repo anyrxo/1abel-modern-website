@@ -140,10 +140,10 @@ export default function HomePage() {
             <motion.p className="text-xl text-gray-300 mb-8">
               Australia's most advanced RnB/trap/rap label • We speak TikTok, not Triple J
             </motion.p>
-            <motion.p className="text-lg text-gray-400 mb-12 max-w-4xl mx-auto">
-              <span className="line-through text-gray-600">360 deals that steal your publishing ❌</span><br/>
-              <span className="line-through text-gray-600">Radio campaigns for songs nobody hears ❌</span><br/>
-              <span className="line-through text-gray-600">Waiting 18 months for A&R approval ❌</span><br/><br/>
+            <motion.p className="text-lg text-gray-300 mb-12 max-w-4xl mx-auto">
+              <span className="line-through text-gray-500">360 deals that steal your publishing ❌</span><br/>
+              <span className="line-through text-gray-500">Radio campaigns for songs nobody hears ❌</span><br/>
+              <span className="line-through text-gray-500">Waiting 18 months for A&R approval ❌</span><br/><br/>
               <span className="text-red-400">✅ Algorithm optimization that actually works</span><br/>
               <span className="text-red-400">✅ TikTok campaigns that hit millions of views</span><br/>
               <span className="text-red-400">✅ Release your music in 2 weeks, not 2 years</span>
@@ -183,26 +183,26 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <AnimatedCard hoverEffect="glow" glowColor="red" className="text-center p-8 bg-gray-900/50 rounded-xl">
               <NumberTicker value={50} className="text-6xl font-bold text-red-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Million+ Streams</h3>
-              <p className="text-gray-400">Combined artist catalog 2024</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">Million+ Streams</h3>
+              <p className="text-gray-300">Combined artist catalog 2024</p>
             </AnimatedCard>
             
             <AnimatedCard hoverEffect="lift" className="text-center p-8 bg-gray-900/50 rounded-xl">
               <NumberTicker value={24} className="text-6xl font-bold text-red-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Active Artists</h3>
-              <p className="text-gray-400">Curated roster of talent</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">Active Artists</h3>
+              <p className="text-gray-300">Curated roster of talent</p>
             </AnimatedCard>
             
             <AnimatedCard hoverEffect="scale" className="text-center p-8 bg-gray-900/50 rounded-xl">
               <NumberTicker value={500} className="text-6xl font-bold text-red-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Million+ Views</h3>
-              <p className="text-gray-400">TikTok & YouTube Shorts</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">Million+ Views</h3>
+              <p className="text-gray-300">TikTok & YouTube Shorts</p>
             </AnimatedCard>
             
             <AnimatedCard hoverEffect="tilt" className="text-center p-8 bg-gray-900/50 rounded-xl">
               <NumberTicker value={2} className="text-6xl font-bold text-red-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Week Releases</h3>
-              <p className="text-gray-400">Average time to market</p>
+              <h3 className="text-xl font-semibold mb-2 text-white">Week Releases</h3>
+              <p className="text-gray-300">Average time to market</p>
             </AnimatedCard>
           </div>
         </motion.div>
@@ -224,14 +224,14 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <AnimatedCard hoverEffect="glow" glowColor="red" className="p-8 bg-gray-900/50 rounded-xl">
               <TrendingUp className="w-12 h-12 text-red-400 mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Algorithm Mastery</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Algorithm Mastery</h3>
               <div className="mb-6">
-                <p className="text-red-200 font-semibold mb-2">❌ Old Labels:</p>
-                <p className="text-gray-400 text-sm mb-4">"Let's pitch this to Triple J and hope for the best"</p>
-                <p className="text-green-200 font-semibold mb-2">✅ 1ABEL:</p>
-                <p className="text-gray-300 text-sm">TikTok algorithm optimization, Spotify playlist placement strategy, Instagram Reels viral formulas</p>
+                <p className="text-red-300 font-semibold mb-2">❌ Old Labels:</p>
+                <p className="text-gray-300 text-sm mb-4">"Let's pitch this to Triple J and hope for the best"</p>
+                <p className="text-green-300 font-semibold mb-2">✅ 1ABEL:</p>
+                <p className="text-white text-sm">TikTok algorithm optimization, Spotify playlist placement strategy, Instagram Reels viral formulas</p>
               </div>
-              <ul className="text-sm text-gray-400 space-y-2">
+              <ul className="text-sm text-gray-300 space-y-2">
                 <li>• 15-second hook optimization</li>
                 <li>• Peak posting time analysis</li>
                 <li>• Trending audio hijacking</li>
@@ -241,14 +241,14 @@ export default function HomePage() {
             
             <AnimatedCard hoverEffect="lift" className="p-8 bg-gray-900/50 rounded-xl">
               <Instagram className="w-12 h-12 text-red-400 mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Real Social Media</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Real Social Media</h3>
               <div className="mb-6">
-                <p className="text-red-200 font-semibold mb-2">❌ Old Labels:</p>
-                <p className="text-gray-400 text-sm mb-4">One Instagram post per week, radio interviews nobody watches</p>
-                <p className="text-green-200 font-semibold mb-2">✅ 1ABEL:</p>
-                <p className="text-gray-300 text-sm">Daily content creation, viral moment creation, influencer network access</p>
+                <p className="text-red-300 font-semibold mb-2">❌ Old Labels:</p>
+                <p className="text-gray-300 text-sm mb-4">One Instagram post per week, radio interviews nobody watches</p>
+                <p className="text-green-300 font-semibold mb-2">✅ 1ABEL:</p>
+                <p className="text-white text-sm">Daily content creation, viral moment creation, influencer network access</p>
               </div>
-              <ul className="text-sm text-gray-400 space-y-2">
+              <ul className="text-sm text-gray-300 space-y-2">
                 <li>• 500M+ combined TikTok views</li>
                 <li>• Viral moment engineering</li>
                 <li>• Creator collaboration network</li>
@@ -258,14 +258,14 @@ export default function HomePage() {
             
             <AnimatedCard hoverEffect="scale" className="p-8 bg-gray-900/50 rounded-xl">
               <Award className="w-12 h-12 text-red-400 mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Artist First</h3>
+              <h3 className="text-2xl font-bold mb-4 text-white">Artist First</h3>
               <div className="mb-6">
-                <p className="text-red-200 font-semibold mb-2">❌ Old Labels:</p>
-                <p className="text-gray-400 text-sm mb-4">360 deals, own your masters, take 80% of everything</p>
-                <p className="text-green-200 font-semibold mb-2">✅ 1ABEL:</p>
-                <p className="text-gray-300 text-sm">Fair splits, artist development, real career building</p>
+                <p className="text-red-300 font-semibold mb-2">❌ Old Labels:</p>
+                <p className="text-gray-300 text-sm mb-4">360 deals, own your masters, take 80% of everything</p>
+                <p className="text-green-300 font-semibold mb-2">✅ 1ABEL:</p>
+                <p className="text-white text-sm">Fair splits, artist development, real career building</p>
               </div>
-              <ul className="text-sm text-gray-400 space-y-2">
+              <ul className="text-sm text-gray-300 space-y-2">
                 <li>• You keep your masters</li>
                 <li>• Fair revenue splits</li>
                 <li>• 2-week release cycles</li>
@@ -287,10 +287,16 @@ export default function HomePage() {
           </motion.h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <AnimatedCard hoverEffect="magnetic" className="relative overflow-hidden rounded-xl bg-gradient-to-br from-red-600 to-purple-800 p-8 h-80">
+            <AnimatedCard hoverEffect="magnetic" className="relative overflow-hidden rounded-xl h-80">
+              <div 
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(220,38,38);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(147,51,234);stop-opacity:1" /></linearGradient></defs><rect width="400" height="400" fill="url(%23grad1)"/><circle cx="200" cy="150" r="60" fill="rgba(255,255,255,0.1)"/><path d="M160 220 L240 220 L200 280 Z" fill="rgba(255,255,255,0.1)"/></svg>')`
+                }}
+              />
               <div className="absolute inset-0 bg-black/40" />
-              <div className="relative z-10 h-full flex flex-col justify-end">
-                <h3 className="text-3xl font-bold mb-2">KOFI</h3>
+              <div className="relative z-10 h-full flex flex-col justify-end p-8">
+                <h3 className="text-3xl font-bold mb-2 text-white">KOFI</h3>
                 <p className="text-red-200 mb-4">RnB Sensation • 45M+ Streams</p>
                 <div className="flex space-x-4">
                   <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
@@ -303,10 +309,16 @@ export default function HomePage() {
               </div>
             </AnimatedCard>
             
-            <AnimatedCard hoverEffect="tilt" className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-600 to-blue-800 p-8 h-80">
+            <AnimatedCard hoverEffect="tilt" className="relative overflow-hidden rounded-xl h-80">
+              <div 
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(147,51,234);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(59,130,246);stop-opacity:1" /></linearGradient></defs><rect width="400" height="400" fill="url(%23grad2)"/><polygon points="200,80 320,200 200,320 80,200" fill="rgba(255,255,255,0.1)"/><circle cx="200" cy="200" r="30" fill="rgba(255,255,255,0.2)"/></svg>')`
+                }}
+              />
               <div className="absolute inset-0 bg-black/40" />
-              <div className="relative z-10 h-full flex flex-col justify-end">
-                <h3 className="text-3xl font-bold mb-2">LUNA TRAP</h3>
+              <div className="relative z-10 h-full flex flex-col justify-end p-8">
+                <h3 className="text-3xl font-bold mb-2 text-white">LUNA TRAP</h3>
                 <p className="text-purple-200 mb-4">Trap Queen • 32M+ Streams</p>
                 <div className="flex space-x-4">
                   <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
@@ -319,10 +331,16 @@ export default function HomePage() {
               </div>
             </AnimatedCard>
             
-            <AnimatedCard hoverEffect="glow" glowColor="red" className="relative overflow-hidden rounded-xl bg-gradient-to-br from-orange-600 to-red-800 p-8 h-80">
+            <AnimatedCard hoverEffect="glow" glowColor="red" className="relative overflow-hidden rounded-xl h-80">
+              <div 
+                className="absolute inset-0 bg-cover bg-center"
+                style={{
+                  backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(249,115,22);stop-opacity:1" /><stop offset="100%" style="stop-color:rgb(220,38,38);stop-opacity:1" /></linearGradient></defs><rect width="400" height="400" fill="url(%23grad3)"/><path d="M200 50 L350 200 L200 350 L50 200 Z" fill="rgba(255,255,255,0.1)"/><rect x="150" y="150" width="100" height="100" fill="rgba(255,255,255,0.2)"/></svg>')`
+                }}
+              />
               <div className="absolute inset-0 bg-black/40" />
-              <div className="relative z-10 h-full flex flex-col justify-end">
-                <h3 className="text-3xl font-bold mb-2">PHOENIX</h3>
+              <div className="relative z-10 h-full flex flex-col justify-end p-8">
+                <h3 className="text-3xl font-bold mb-2 text-white">PHOENIX</h3>
                 <p className="text-orange-200 mb-4">Hip-Hop Artist • 28M+ Streams</p>
                 <div className="flex space-x-4">
                   <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
