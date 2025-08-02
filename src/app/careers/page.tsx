@@ -4,28 +4,25 @@ export default function CareersPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/80 backdrop-blur">
+      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <Link href="/" className="text-2xl font-bold text-red-600 hover:scale-105 transition-transform">
-            1ABEL
+          <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
+            <span className="text-red-600">1</span><span className="text-white">ABEL</span>
           </Link>
           
           <div className="flex items-center space-x-6">
-            <Link href="/blog" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+            <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Blog & Insights
             </Link>
-            <Link href="/artists" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
-              Artists
-            </Link>
-            <Link href="/services" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+            <Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Services
             </Link>
-            <Link href="/contact" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+            <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Contact
             </Link>
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors">
-              Submit Demo
-            </button>
+            <a href="mailto:contact@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+              Get In Touch
+            </a>
           </div>
         </div>
       </nav>
@@ -33,7 +30,7 @@ export default function CareersPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
             JOIN THE TEAM
           </h1>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -43,7 +40,7 @@ export default function CareersPage() {
       </section>
 
       {/* Why Work Here */}
-      <section className="py-20 px-4 bg-gradient-to-b from-black to-red-900/20">
+      <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-white">
             WHY 1ABEL?
@@ -52,7 +49,7 @@ export default function CareersPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800">
-              <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6">
                 <span className="text-white text-2xl">🚀</span>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Innovation First</h3>
@@ -68,7 +65,7 @@ export default function CareersPage() {
             </div>
 
             <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800">
-              <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6">
                 <span className="text-white text-2xl">💰</span>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Competitive Package</h3>
@@ -84,7 +81,7 @@ export default function CareersPage() {
             </div>
 
             <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800">
-              <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mb-6">
                 <span className="text-white text-2xl">🎵</span>
               </div>
               <h3 className="text-2xl font-bold mb-4 text-white">Music Culture</h3>
@@ -117,20 +114,20 @@ export default function CareersPage() {
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Social Media Marketing Manager</h3>
-                  <p className="text-red-400 mb-4">Full-time • Sydney/Remote • $80K-120K + Equity</p>
+                  <p className="text-gray-400 mb-4">Full-time • Sydney/Remote • $80K-120K + Equity</p>
                   <p className="text-gray-300 mb-4">
                     Lead TikTok, Instagram, and YouTube campaigns for our artist roster. Create viral content strategies and manage influencer partnerships.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">TikTok Marketing</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Content Strategy</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Influencer Relations</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">TikTok Marketing</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Content Strategy</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Influencer Relations</span>
                   </div>
                 </div>
                 <div>
-                  <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -140,20 +137,20 @@ export default function CareersPage() {
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Music Producer / Audio Engineer</h3>
-                  <p className="text-red-400 mb-4">Full-time • Sydney • $70K-100K + Royalties</p>
+                  <p className="text-gray-400 mb-4">Full-time • Sydney • $70K-100K + Royalties</p>
                   <p className="text-gray-300 mb-4">
                     Produce, mix, and master tracks for our RnB, trap, and rap artists. Work in our state-of-the-art studio facility.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Pro Tools</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Urban Music</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Mixing/Mastering</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Pro Tools</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Urban Music</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Mixing/Mastering</span>
                   </div>
                 </div>
                 <div>
-                  <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -163,20 +160,20 @@ export default function CareersPage() {
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Video Director / Content Creator</h3>
-                  <p className="text-red-400 mb-4">Contract/Full-time • Sydney • $60K-90K + Project Bonuses</p>
+                  <p className="text-gray-400 mb-4">Contract/Full-time • Sydney • $60K-90K + Project Bonuses</p>
                   <p className="text-gray-300 mb-4">
                     Create music videos, behind-the-scenes content, and social media visuals. Experience with urban music aesthetics required.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Music Videos</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Adobe Creative Suite</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Social Content</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Music Videos</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Adobe Creative Suite</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Social Content</span>
                   </div>
                 </div>
                 <div>
-                  <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -186,20 +183,20 @@ export default function CareersPage() {
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Data Analyst / Growth Hacker</h3>
-                  <p className="text-red-400 mb-4">Full-time • Remote • $75K-105K + Equity</p>
+                  <p className="text-gray-400 mb-4">Full-time • Remote • $75K-105K + Equity</p>
                   <p className="text-gray-300 mb-4">
                     Analyze streaming data, social media metrics, and campaign performance. Optimize our marketing strategies using data insights.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Python/SQL</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Spotify Analytics</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Growth Marketing</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Python/SQL</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Spotify Analytics</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Growth Marketing</span>
                   </div>
                 </div>
                 <div>
-                  <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -209,20 +206,20 @@ export default function CareersPage() {
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                 <div className="mb-6 lg:mb-0">
                   <h3 className="text-2xl font-bold text-white mb-2">Artist Relations Manager</h3>
-                  <p className="text-red-400 mb-4">Full-time • Sydney • $65K-85K + Commission</p>
+                  <p className="text-gray-400 mb-4">Full-time • Sydney • $65K-85K + Commission</p>
                   <p className="text-gray-300 mb-4">
                     Manage relationships with our artist roster. Handle day-to-day communications, tour coordination, and career development.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Artist Management</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Music Industry</span>
-                    <span className="px-3 py-1 bg-red-600/20 text-red-400 rounded-full text-sm">Project Management</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Artist Management</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Music Industry</span>
+                    <span className="px-3 py-1 bg-gray-600/20 text-gray-400 rounded-full text-sm">Project Management</span>
                   </div>
                 </div>
                 <div>
-                  <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                  <a href="mailto:contact@1abel.com?subject=Application" className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
                     Apply Now
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -232,7 +229,7 @@ export default function CareersPage() {
       </section>
 
       {/* Internships */}
-      <section className="py-20 px-4 bg-gradient-to-b from-red-900/20 to-black">
+      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-6xl font-bold mb-8 text-white">
             INTERNSHIP PROGRAM
@@ -265,9 +262,9 @@ export default function CareersPage() {
             </div>
           </div>
           
-          <button className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 rounded-lg text-lg font-semibold transition-colors">
+          <a href="mailto:contact@1abel.com?subject=Internship Application" className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
             Apply for Internship
-          </button>
+          </a>
         </div>
       </section>
 
@@ -281,7 +278,7 @@ export default function CareersPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold">1</span>
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Apply</h3>
@@ -289,7 +286,7 @@ export default function CareersPage() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold">2</span>
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Screen</h3>
@@ -297,7 +294,7 @@ export default function CareersPage() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold">3</span>
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Project</h3>
@@ -305,7 +302,7 @@ export default function CareersPage() {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold">4</span>
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Offer</h3>
@@ -317,22 +314,22 @@ export default function CareersPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-4 bg-gradient-to-r from-red-900/20 to-black">
+      <section className="py-20 px-4 bg-gradient-to-r from-gray-900/20 to-black">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
             DON'T SEE YOUR ROLE?
           </h2>
           <p className="text-xl text-gray-300 mb-12">
             We're always looking for exceptional talent. Send us your resume and tell us how you can help revolutionize the music industry.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 rounded-lg text-lg font-semibold transition-colors">
+            <a href="mailto:contact@1abel.com?subject=General Application" className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
               Send General Application
-            </button>
+            </a>
             <Link href="/contact">
-              <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-12 py-4 rounded-lg text-lg font-semibold transition-colors">
-                Get In Touch
-              </button>
+              <a href="https://twitter.com/anyrxo" target="_blank" rel="noopener noreferrer" className="border border-white text-white hover:bg-white hover:text-black px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
+                @anyrxo
+              </a>
             </Link>
           </div>
         </div>

@@ -4,28 +4,25 @@ export default function TermsPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/80 backdrop-blur">
+      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <Link href="/" className="text-2xl font-bold text-red-600 hover:scale-105 transition-transform">
-            1ABEL
+          <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
+            <span className="text-red-600">1</span><span className="text-white">ABEL</span>
           </Link>
           
           <div className="flex items-center space-x-6">
-            <Link href="/blog" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+            <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Blog & Insights
             </Link>
-            <Link href="/artists" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
-              Artists
-            </Link>
-            <Link href="/services" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+            <Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Services
             </Link>
-            <Link href="/contact" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+            <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Contact
             </Link>
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors">
-              Submit Demo
-            </button>
+            <a href="mailto:contact@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+              Get In Touch
+            </a>
           </div>
         </div>
       </nav>
@@ -33,7 +30,7 @@ export default function TermsPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
             TERMS OF SERVICE
           </h1>
           <p className="text-xl text-gray-300 mb-8">
@@ -223,7 +220,7 @@ export default function TermsPage() {
             </p>
           </div>
 
-          <div className="bg-red-900/20 rounded-xl p-8 border border-red-500">
+          <div className="bg-gray-900/20 rounded-xl p-8 border border-gray-500">
             <h2 className="text-3xl font-bold text-white mb-6">Contact Information</h2>
             
             <p className="text-gray-300 mb-4">

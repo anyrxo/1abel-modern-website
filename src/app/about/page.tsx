@@ -4,28 +4,28 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/80 backdrop-blur">
+      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <Link href="/" className="text-2xl font-bold text-red-600 hover:scale-105 transition-transform">
-            1ABEL
+          <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
+            <span className="text-red-600">1</span><span className="text-white">ABEL</span>
           </Link>
           
-          <div className="flex items-center space-x-6">
-            <Link href="/blog" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+          <div className="flex items-center space-x-8">
+            <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Blog & Insights
             </Link>
-            <Link href="/artists" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
-              Artists
-            </Link>
-            <Link href="/services" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+            <Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Services
             </Link>
-            <Link href="/contact" className="text-white hover:text-red-400 transition-colors text-sm font-medium">
+            <Link href="/about" className="text-gray-300 text-sm font-medium">
+              About
+            </Link>
+            <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Contact
             </Link>
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition-colors">
-              Submit Demo
-            </button>
+            <a href="mailto:contact@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+              Get In Touch
+            </a>
           </div>
         </div>
       </nav>
@@ -33,7 +33,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
             ABOUT 1ABEL
           </h1>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -43,7 +43,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-black to-red-900/20">
+      <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
@@ -60,7 +60,7 @@ export default function AboutPage() {
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center mt-1">
+                  <div className="w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center mt-1">
                     <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
@@ -70,7 +70,7 @@ export default function AboutPage() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center mt-1">
+                  <div className="w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center mt-1">
                     <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="w-6 h-6 bg-red-600 rounded-full flex items-center justify-center mt-1">
+                  <div className="w-6 h-6 bg-gray-600 rounded-full flex items-center justify-center mt-1">
                     <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
@@ -92,24 +92,24 @@ export default function AboutPage() {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-red-600 to-red-800 rounded-xl p-8">
+              <div className="bg-gradient-to-br from-gray-600 to-gray-800 rounded-xl p-8">
                 <div className="bg-black/50 rounded-lg p-6">
                   <h3 className="text-2xl font-bold text-white mb-4">The 1ABEL Difference</h3>
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="text-3xl font-bold text-red-400">50M+</div>
+                      <div className="text-3xl font-bold text-white">50M+</div>
                       <div className="text-sm text-gray-300">Total Streams</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-red-400">24</div>
+                      <div className="text-3xl font-bold text-white">24</div>
                       <div className="text-sm text-gray-300">Active Artists</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-red-400">500M+</div>
+                      <div className="text-3xl font-bold text-white">500M+</div>
                       <div className="text-sm text-gray-300">TikTok Views</div>
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-red-400">2</div>
+                      <div className="text-3xl font-bold text-white">2</div>
                       <div className="text-sm text-gray-300">Week Releases</div>
                     </div>
                   </div>
@@ -165,7 +165,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-red-900/20 to-black">
+      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-white">
             WHAT WE BELIEVE
@@ -174,7 +174,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div className="text-center p-8 bg-gray-900/50 rounded-xl border border-gray-800">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl">🎵</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Art First</h3>
@@ -184,7 +184,7 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center p-8 bg-gray-900/50 rounded-xl border border-gray-800">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl">🚀</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Innovation Always</h3>
@@ -194,7 +194,7 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center p-8 bg-gray-900/50 rounded-xl border border-gray-800">
-              <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-white text-2xl">🤝</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Partnership</h3>
@@ -217,7 +217,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             
             <div className="text-center">
-              <div className="w-32 h-32 bg-gradient-to-br from-red-600 to-red-800 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-32 h-32 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-white text-4xl">🎯</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Strategy Team</h3>
@@ -225,7 +225,7 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center">
-              <div className="w-32 h-32 bg-gradient-to-br from-red-600 to-red-800 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-32 h-32 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-white text-4xl">🎧</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Creative Team</h3>
@@ -233,7 +233,7 @@ export default function AboutPage() {
             </div>
             
             <div className="text-center">
-              <div className="w-32 h-32 bg-gradient-to-br from-red-600 to-red-800 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <div className="w-32 h-32 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-white text-4xl">💼</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Business Team</h3>
@@ -245,22 +245,22 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-red-900/20 to-black">
+      <section className="py-20 px-4 bg-gradient-to-r from-gray-900/20 to-black">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
             READY TO JOIN US?
           </h2>
           <p className="text-xl text-gray-300 mb-12">
             If you're a talented RnB, trap, or rap artist ready to take your career to the next level, let's talk.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-red-600 hover:bg-red-700 text-white px-12 py-4 rounded-lg text-lg font-semibold transition-colors">
-              Submit Your Demo
-            </button>
+            <a href="mailto:contact@1abel.com" className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
+              Email Us
+            </a>
             <Link href="/contact">
-              <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-12 py-4 rounded-lg text-lg font-semibold transition-colors">
-                Get In Touch
-              </button>
+              <a href="https://twitter.com/anyrxo" target="_blank" rel="noopener noreferrer" className="border border-white text-white hover:bg-white hover:text-black px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
+                @anyrxo
+              </a>
             </Link>
           </div>
         </div>
