@@ -128,23 +128,30 @@ export default function HomePage() {
             </motion.span>
           </motion.div>
           
-          {/* Rectangular container for diagonal arm with ABEL text */}
+          {/* Vertical White ABEL perfectly fitted on the 1 - Writes on beautifully */}
           <motion.div
             style={{ opacity: labelOpacity }}
-            className="absolute top-[8%] left-[30%] w-[40vh] h-[8vh] bg-red-600 transform rotate-[135deg] origin-bottom-left flex items-center justify-center text-[4vh] font-black text-white z-20"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ 
-              duration: 0.8, 
-              delay: 1,
-              ease: [0.34, 1.56, 0.64, 1]
-            }}
-            whileHover={{ 
-              scale: 1.05, 
-              transition: { duration: 0.2 }
-            }}
+            className="absolute top-[12%] left-[58%] flex flex-col text-[5vh] font-black leading-[1.1] tracking-wide text-white z-20 h-[30vh] justify-between"
           >
-            <span className="transform rotate-[45deg] tracking-widest">ABEL</span>
+            {['A', 'B', 'E', 'L'].map((letter, index) => (
+              <motion.span
+                key={letter}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ 
+                  duration: 0.4, 
+                  delay: 1 + index * 0.15,
+                  ease: [0.34, 1.56, 0.64, 1]
+                }}
+                whileHover={{ 
+                  scale: 1.1, 
+                  transition: { duration: 0.2 }
+                }}
+                className="cursor-pointer"
+              >
+                {letter}
+              </motion.span>
+            ))}
           </motion.div>
         </motion.div>
 
