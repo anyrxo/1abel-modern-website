@@ -690,152 +690,178 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* The Future of Music is Here */}
-      <section className="relative z-10 min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-red-950/20 to-black">
+      {/* About 1ABEL */}
+      <section className="relative z-10 py-32 bg-gradient-to-b from-black via-gray-900/50 to-black">
         <motion.div
           className="max-w-6xl mx-auto px-8 text-center"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
           <motion.h2
-            className="text-6xl md:text-8xl font-black mb-8 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent"
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-4xl md:text-6xl font-light mb-8 text-white"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
           >
-            WE ARE THE FUTURE
+            Australia's Premier Music Label
           </motion.h2>
           
           <motion.p
-            className="text-2xl md:text-3xl font-bold text-white mb-12 max-w-4xl mx-auto leading-tight"
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            className="text-xl text-white/80 mb-16 max-w-4xl mx-auto leading-relaxed"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
-            1ABEL is Australia's #1 modern music label. We don't just sign artists - we build <span className="text-red-400">empires</span>.
+            1ABEL represents the future of music in Australia. We specialize in R&B, Rap, and Trap, 
+            connecting talented artists with global audiences through innovative digital strategies and 
+            authentic storytelling.
           </motion.p>
 
           <motion.div
-            className="grid md:grid-cols-3 gap-8 mb-16"
+            className="grid md:grid-cols-3 gap-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <motion.div 
-              className="bg-red-600/10 border border-red-500/30 rounded-lg p-8 backdrop-blur-sm"
-              whileHover={{ scale: 1.05, borderColor: "rgba(239, 68, 68, 0.6)" }}
+              className="text-center"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
             >
-              <h3 className="text-3xl font-bold text-red-400 mb-4">VIRAL STRATEGY</h3>
-              <p className="text-white/80">Forget radio and playlists. We make artists go viral on Instagram, TikTok, and YouTube with content that breaks the internet.</p>
+              <div className="w-16 h-16 bg-red-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-red-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-semibold text-white mb-4">Artist Development</h3>
+              <p className="text-white/70">Comprehensive support for emerging and established artists</p>
             </motion.div>
             
             <motion.div 
-              className="bg-red-600/10 border border-red-500/30 rounded-lg p-8 backdrop-blur-sm"
-              whileHover={{ scale: 1.05, borderColor: "rgba(239, 68, 68, 0.6)" }}
+              className="text-center"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
             >
-              <h3 className="text-3xl font-bold text-red-400 mb-4">BRAND BUILDING</h3>
-              <p className="text-white/80">We don't just promote music - we build personal brands. Our artists land major brand deals and become household names.</p>
+              <div className="w-16 h-16 bg-red-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-red-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-semibold text-white mb-4">Digital Strategy</h3>
+              <p className="text-white/70">Modern marketing approaches for the streaming era</p>
             </motion.div>
             
             <motion.div 
-              className="bg-red-600/10 border border-red-500/30 rounded-lg p-8 backdrop-blur-sm"
-              whileHover={{ scale: 1.05, borderColor: "rgba(239, 68, 68, 0.6)" }}
+              className="text-center"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
             >
-              <h3 className="text-3xl font-bold text-red-400 mb-4">FULL LIFESTYLE</h3>
-              <p className="text-white/80">Turn passion into profit. Our artists quit their day jobs and live their dreams full-time with consistent 6-figure incomes.</p>
+              <div className="w-16 h-16 bg-red-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-red-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+              </div>
+              <h3 className="text-2xl font-semibold text-white mb-4">Full Service</h3>
+              <p className="text-white/70">From production to promotion, we handle every aspect</p>
             </motion.div>
           </motion.div>
         </motion.div>
       </section>
 
-      {/* Revolutionary Approach */}
-      <section className="relative z-10 min-h-screen flex items-center justify-center">
+      {/* Our Approach */}
+      <section className="relative z-10 py-32">
         <motion.div
           className="max-w-7xl mx-auto px-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.6 }}
         >
-          <motion.div className="text-center mb-16">
-            <h2 className="text-5xl md:text-7xl font-black text-white mb-8">
-              DEATH TO <span className="text-red-500 line-through">OLD SCHOOL</span>
-            </h2>
-            <p className="text-2xl text-red-400 font-bold">Welcome to the new era of music business</p>
+          <motion.div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-light text-white mb-8">Our Approach</h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              We combine traditional music industry expertise with cutting-edge digital strategies
+            </p>
           </motion.div>
 
           <motion.div 
             className="grid md:grid-cols-2 gap-16 items-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="space-y-8">
               <motion.div 
-                className="flex items-start gap-4"
-                whileHover={{ x: 10 }}
+                className="flex items-start gap-6"
+                whileHover={{ x: 5 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center font-bold text-sm">✗</div>
+                <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-xl font-bold text-red-400 mb-2">OLD SCHOOL BULLSH*T</h3>
-                  <p className="text-white/70">Radio submissions, playlist begging, industry gatekeepers, waiting for "discovery"</p>
+                  <h3 className="text-xl font-semibold text-white mb-3">Authentic Artistry</h3>
+                  <p className="text-white/70">We prioritize genuine talent and authentic expression over manufactured trends</p>
                 </div>
               </motion.div>
               
               <motion.div 
-                className="flex items-start gap-4"
-                whileHover={{ x: 10 }}
+                className="flex items-start gap-6"
+                whileHover={{ x: 5 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center font-bold text-sm">✗</div>
+                <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-xl font-bold text-red-400 mb-2">PRAY & HOPE MARKETING</h3>
-                  <p className="text-white/70">Posting randomly, hoping for shoutouts, relying on luck instead of strategy</p>
+                  <h3 className="text-xl font-semibold text-white mb-3">Strategic Growth</h3>
+                  <p className="text-white/70">Data-driven decisions combined with creative intuition for sustainable success</p>
                 </div>
               </motion.div>
               
               <motion.div 
-                className="flex items-start gap-4"
-                whileHover={{ x: 10 }}
+                className="flex items-start gap-6"
+                whileHover={{ x: 5 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center font-bold text-sm">✗</div>
+                <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-xl font-bold text-red-400 mb-2">BROKE ARTIST LIFESTYLE</h3>
-                  <p className="text-white/70">Struggling for years, working day jobs, treating music like a hobby</p>
+                  <h3 className="text-xl font-semibold text-white mb-3">Long-term Partnerships</h3>
+                  <p className="text-white/70">Building careers, not just releasing tracks - we're invested in lasting success</p>
                 </div>
               </motion.div>
             </div>
 
             <div className="space-y-8">
               <motion.div 
-                className="flex items-start gap-4"
-                whileHover={{ x: 10 }}
+                className="flex items-start gap-6"
+                whileHover={{ x: 5 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center font-bold text-sm">✓</div>
+                <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-xl font-bold text-green-400 mb-2">1ABEL MODERN APPROACH</h3>
-                  <p className="text-white/70">Direct to fan, viral content strategy, social media domination, algorithmic mastery</p>
+                  <h3 className="text-xl font-semibold text-white mb-3">Global Reach</h3>
+                  <p className="text-white/70">Australian roots with international distribution and marketing networks</p>
                 </div>
               </motion.div>
               
               <motion.div 
-                className="flex items-start gap-4"
-                whileHover={{ x: 10 }}
+                className="flex items-start gap-6"
+                whileHover={{ x: 5 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center font-bold text-sm">✓</div>
+                <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-xl font-bold text-green-400 mb-2">CALCULATED VIRALITY</h3>
-                  <p className="text-white/70">Data-driven content, strategic posting, engineered engagement, guaranteed growth</p>
+                  <h3 className="text-xl font-semibold text-white mb-3">Technology Integration</h3>
+                  <p className="text-white/70">Leveraging streaming platforms, social media, and emerging technologies</p>
                 </div>
               </motion.div>
               
               <motion.div 
-                className="flex items-start gap-4"
-                whileHover={{ x: 10 }}
+                className="flex items-start gap-6"
+                whileHover={{ x: 5 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center font-bold text-sm">✓</div>
+                <div className="w-3 h-3 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-xl font-bold text-green-400 mb-2">MILLIONAIRE MINDSET</h3>
-                  <p className="text-white/70">Full-time careers, multiple revenue streams, brand partnerships, generational wealth</p>
+                  <h3 className="text-xl font-semibold text-white mb-3">Artist Empowerment</h3>
+                  <p className="text-white/70">Education and resources to help artists maintain creative control</p>
                 </div>
               </motion.div>
             </div>
@@ -843,214 +869,383 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      {/* Domination Statistics */}
-      <section className="relative z-10 min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-red-950/10 to-black">
+      {/* Genre Focus */}
+      <section className="relative z-10 py-32 bg-gradient-to-b from-black via-gray-900/30 to-black">
         <motion.div
           className="max-w-6xl mx-auto px-8 text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.6 }}
         >
           <motion.h2
-            className="text-6xl md:text-8xl font-black mb-16 text-white"
-            initial={{ scale: 0.5, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-4xl md:text-6xl font-light mb-20 text-white"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
           >
-            RESULTS SPEAK
+            Our Sound
           </motion.h2>
 
           <motion.div
-            className="grid md:grid-cols-4 gap-8 mb-16"
+            className="grid md:grid-cols-3 gap-12"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
             <motion.div 
-              className="text-center"
-              whileHover={{ scale: 1.1 }}
+              className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+              whileHover={{ y: -10, scale: 1.02 }}
+              transition={{ duration: 0.3 }}
             >
-              <div className="text-5xl md:text-6xl font-black text-red-500 mb-4">100M+</div>
-              <div className="text-xl text-white/80">Streams Generated</div>
+              <h3 className="text-3xl font-semibold text-red-400 mb-6">R&B</h3>
+              <p className="text-white/70 text-lg leading-relaxed">
+                Soulful vocals and contemporary production that speaks to modern audiences while honoring classic traditions.
+              </p>
             </motion.div>
             
             <motion.div 
-              className="text-center"
-              whileHover={{ scale: 1.1 }}
+              className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+              whileHover={{ y: -10, scale: 1.02 }}
+              transition={{ duration: 0.3 }}
             >
-              <div className="text-5xl md:text-6xl font-black text-red-500 mb-4">50M+</div>
-              <div className="text-xl text-white/80">Social Media Reach</div>
+              <h3 className="text-3xl font-semibold text-red-400 mb-6">Rap</h3>
+              <p className="text-white/70 text-lg leading-relaxed">
+                Authentic storytelling and innovative wordplay that captures the Australian experience and beyond.
+              </p>
             </motion.div>
             
             <motion.div 
-              className="text-center"
-              whileHover={{ scale: 1.1 }}
+              className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10"
+              whileHover={{ y: -10, scale: 1.02 }}
+              transition={{ duration: 0.3 }}
             >
-              <div className="text-5xl md:text-6xl font-black text-red-500 mb-4">500+</div>
-              <div className="text-xl text-white/80">Shows Booked</div>
-            </motion.div>
-            
-            <motion.div 
-              className="text-center"
-              whileHover={{ scale: 1.1 }}
-            >
-              <div className="text-5xl md:text-6xl font-black text-red-500 mb-4">$10M+</div>
-              <div className="text-xl text-white/80">Artist Revenue</div>
+              <h3 className="text-3xl font-semibold text-red-400 mb-6">Trap</h3>
+              <p className="text-white/70 text-lg leading-relaxed">
+                Hard-hitting beats and atmospheric soundscapes that define the contemporary urban music landscape.
+              </p>
             </motion.div>
           </motion.div>
-
-          <motion.p
-            className="text-2xl text-white/90 mb-12 max-w-4xl mx-auto"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
-            Our artists don't just succeed - they <span className="text-red-400 font-bold">dominate</span>. 
-            From bedroom producers to stadium headliners, we turn talent into empires.
-          </motion.p>
         </motion.div>
       </section>
 
-      {/* Genre Domination */}
-      <section className="relative z-10 min-h-screen flex items-center justify-center">
+      {/* Blog Section */}
+      <section className="relative z-10 py-32">
         <motion.div
-          className="max-w-6xl mx-auto px-8 text-center"
+          className="max-w-7xl mx-auto px-8"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.6 }}
         >
-          <motion.h2
-            className="text-5xl md:text-7xl font-black mb-16 text-white"
-            initial={{ y: -50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            WE OWN THE SOUND
-          </motion.h2>
-
-          <motion.div
-            className="grid md:grid-cols-3 gap-8 mb-16"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-          >
-            <motion.div 
-              className="bg-gradient-to-br from-red-600/20 to-purple-600/20 border border-red-500/30 rounded-xl p-8 backdrop-blur-sm"
-              whileHover={{ scale: 1.05, rotateY: 5 }}
-            >
-              <h3 className="text-4xl font-black text-red-400 mb-4">R&B</h3>
-              <p className="text-white/80 text-lg">Smooth vocals meet modern production. Our R&B artists are redefining soul for the TikTok generation.</p>
-            </motion.div>
-            
-            <motion.div 
-              className="bg-gradient-to-br from-red-600/20 to-orange-600/20 border border-red-500/30 rounded-xl p-8 backdrop-blur-sm"
-              whileHover={{ scale: 1.05, rotateY: 5 }}
-            >
-              <h3 className="text-4xl font-black text-red-400 mb-4">RAP</h3>
-              <p className="text-white/80 text-lg">Raw. Real. Revolutionary. Our rap artists don't just spit bars - they speak revolutions.</p>
-            </motion.div>
-            
-            <motion.div 
-              className="bg-gradient-to-br from-red-600/20 to-pink-600/20 border border-red-500/30 rounded-xl p-8 backdrop-blur-sm"
-              whileHover={{ scale: 1.05, rotateY: 5 }}
-            >
-              <h3 className="text-4xl font-black text-red-400 mb-4">TRAP</h3>
-              <p className="text-white/80 text-lg">808s that hit different. Our trap artists are setting the standard for the global sound.</p>
-            </motion.div>
+          <motion.div className="text-center mb-20">
+            <h2 className="text-4xl md:text-6xl font-light text-white mb-8">Industry Insights</h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              Stay informed with the latest trends, strategies, and insights from the music industry
+            </p>
           </motion.div>
 
-          <motion.p
-            className="text-xl text-white/70 max-w-4xl mx-auto"
+          <motion.div
+            className="grid md:grid-cols-3 gap-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
-            We don't follow trends - we create them. Our artists shape culture, influence millions, and define what's next in music.
-          </motion.p>
+            <motion.article 
+              className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="p-8">
+                <div className="text-red-400 text-sm font-medium mb-3">DISTRIBUTION</div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Spotify vs Traditional Radio: The Streaming Revolution
+                </h3>
+                <p className="text-white/60 mb-6">
+                  How streaming platforms have democratized music discovery and why playlist placement 
+                  matters more than radio play in 2024.
+                </p>
+                <div className="text-white/40 text-sm">5 min read • Music Industry</div>
+              </div>
+            </motion.article>
+
+            <motion.article 
+              className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="p-8">
+                <div className="text-red-400 text-sm font-medium mb-3">MARKETING</div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Building Your Artist Brand in the Social Media Age
+                </h3>
+                <p className="text-white/60 mb-6">
+                  Essential strategies for artists to develop authentic personal brands that resonate 
+                  with audiences across Instagram, TikTok, and YouTube.
+                </p>
+                <div className="text-white/40 text-sm">7 min read • Artist Development</div>
+              </div>
+            </motion.article>
+
+            <motion.article 
+              className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="p-8">
+                <div className="text-red-400 text-sm font-medium mb-3">TRENDS</div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  The Rise of Australian R&B: A New Golden Era
+                </h3>
+                <p className="text-white/60 mb-6">
+                  Exploring how Australian R&B artists are making their mark globally and the 
+                  unique sound that's putting Australia on the R&B map.
+                </p>
+                <div className="text-white/40 text-sm">6 min read • Genre Analysis</div>
+              </div>
+            </motion.article>
+
+            <motion.article 
+              className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="p-8">
+                <div className="text-red-400 text-sm font-medium mb-3">TECHNOLOGY</div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  AI in Music Production: Tool or Threat?
+                </h3>
+                <p className="text-white/60 mb-6">
+                  Examining how artificial intelligence is changing music creation and what it means 
+                  for artists, producers, and the creative process.
+                </p>
+                <div className="text-white/40 text-sm">8 min read • Technology</div>
+              </div>
+            </motion.article>
+
+            <motion.article 
+              className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="p-8">
+                <div className="text-red-400 text-sm font-medium mb-3">BUSINESS</div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Music Licensing and Sync Opportunities in 2024
+                </h3>
+                <p className="text-white/60 mb-6">
+                  Understanding the lucrative world of music licensing for films, TV, commercials, 
+                  and streaming content in the modern entertainment landscape.
+                </p>
+                <div className="text-white/40 text-sm">9 min read • Business Strategy</div>
+              </div>
+            </motion.article>
+
+            <motion.article 
+              className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10"
+              whileHover={{ y: -5 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="p-8">
+                <div className="text-red-400 text-sm font-medium mb-3">CAREER</div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  From Bedroom Producer to Professional Artist
+                </h3>
+                <p className="text-white/60 mb-6">
+                  A comprehensive guide to transitioning from hobbyist to professional musician, 
+                  including business setup, networking, and sustainable career building.
+                </p>
+                <div className="text-white/40 text-sm">12 min read • Career Development</div>
+              </div>
+            </motion.article>
+          </motion.div>
+
+          <motion.div 
+            className="text-center mt-16"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <motion.button
+              className="px-8 py-4 bg-red-600/20 border border-red-500/30 text-red-400 rounded-full hover:bg-red-600/30 transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View All Articles
+            </motion.button>
+          </motion.div>
         </motion.div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="relative z-10 min-h-screen flex items-center justify-center bg-gradient-to-b from-black via-red-950/30 to-black">
+      {/* Contact Section */}
+      <section className="relative z-10 py-32 bg-gradient-to-b from-black via-gray-900/30 to-black">
         <motion.div
           className="max-w-4xl mx-auto px-8 text-center"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.6 }}
         >
           <motion.h2
-            className="text-6xl md:text-8xl font-black mb-8 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent"
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            className="text-4xl md:text-6xl font-light mb-8 text-white"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
           >
-            READY TO DOMINATE?
+            Ready to Elevate Your Music?
           </motion.h2>
           
           <motion.p
-            className="text-2xl md:text-3xl text-white mb-12 font-bold"
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            className="text-xl text-white/70 mb-16 max-w-3xl mx-auto"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Stop playing small. Start building your empire.
+            Join the 1ABEL family and take your music career to the next level with Australia's most innovative music label.
           </motion.p>
 
           <motion.div
-            className="space-y-8 mb-16"
+            className="space-y-8"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
           >
             <motion.a
               href="mailto:anyro@1abel.com"
-              className="inline-block px-16 py-6 bg-red-600 text-white text-2xl font-black uppercase tracking-wider hover:bg-red-700 transition-all duration-300 shadow-2xl border-2 border-red-500 hover:border-red-400 rounded-lg"
-              whileHover={{ 
-                scale: 1.05,
-                boxShadow: '0 0 40px rgba(220, 38, 38, 0.6)'
-              }}
+              className="inline-block px-12 py-4 bg-red-600 text-white text-lg font-medium rounded-full hover:bg-red-700 transition-all duration-300 shadow-xl"
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               anyro@1abel.com
             </motion.a>
             
             <motion.div 
-              className="text-xl text-white/80"
+              className="text-white/60"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <p className="mb-4">Follow the movement:</p>
-              <p className="text-red-400 font-bold text-2xl">@anyrxo</p>
-              <p className="text-white/60">Instagram • Twitter • TikTok • YouTube</p>
+              <p className="mb-4">Connect with us:</p>
+              <p className="text-red-400 font-medium text-lg">@anyrxo</p>
+              <p className="text-white/50 text-sm">Instagram • Twitter • TikTok • YouTube</p>
             </motion.div>
-          </motion.div>
-
-          <motion.div
-            className="border-t border-red-500/30 pt-8"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
-          >
-            <p className="text-white/40 text-lg mb-4">1abel.com</p>
-            <p className="text-white/60 text-sm max-w-2xl mx-auto">
-              Australia's #1 modern music label. We don't just sign artists - we build legends. 
-              From viral moments to sold-out shows, from bedroom beats to brand partnerships. 
-              This is where music careers become lifestyles.
-            </p>
           </motion.div>
         </motion.div>
       </section>
 
-      {/* Minimal Footer */}
-      <footer className="relative z-10 py-20 text-center">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <p className="text-white/20 text-sm tracking-widest">© 2024</p>
-        </motion.div>
+      {/* Professional Footer */}
+      <footer className="relative z-10 bg-gradient-to-t from-gray-900 to-black border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-8 py-16">
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
+            {/* Company Info */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <h3 className="text-2xl font-semibold text-white mb-6">1ABEL</h3>
+              <p className="text-white/60 mb-6 leading-relaxed">
+                Australia's premier music label specializing in R&B, Rap, and Trap. 
+                Connecting talented artists with global audiences.
+              </p>
+              <div className="flex space-x-4">
+                <motion.a
+                  href="https://instagram.com/anyrxo"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-600/20 transition-colors"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <svg className="w-5 h-5 text-white/70" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </motion.a>
+                <motion.a
+                  href="https://twitter.com/anyrxo"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-600/20 transition-colors"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <svg className="w-5 h-5 text-white/70" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  </svg>
+                </motion.a>
+                <motion.a
+                  href="https://youtube.com/@anyrxo"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-600/20 transition-colors"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <svg className="w-5 h-5 text-white/70" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </motion.a>
+              </div>
+            </motion.div>
+
+            {/* Quick Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <h4 className="text-lg font-semibold text-white mb-6">Quick Links</h4>
+              <ul className="space-y-3">
+                <li><a href="#about" className="text-white/60 hover:text-red-400 transition-colors">About</a></li>
+                <li><a href="#artists" className="text-white/60 hover:text-red-400 transition-colors">Artists</a></li>
+                <li><a href="#services" className="text-white/60 hover:text-red-400 transition-colors">Services</a></li>
+                <li><a href="#blog" className="text-white/60 hover:text-red-400 transition-colors">Blog</a></li>
+                <li><a href="#contact" className="text-white/60 hover:text-red-400 transition-colors">Contact</a></li>
+              </ul>
+            </motion.div>
+
+            {/* Services */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <h4 className="text-lg font-semibold text-white mb-6">Services</h4>
+              <ul className="space-y-3">
+                <li><a href="#artist-development" className="text-white/60 hover:text-red-400 transition-colors">Artist Development</a></li>
+                <li><a href="#distribution" className="text-white/60 hover:text-red-400 transition-colors">Music Distribution</a></li>
+                <li><a href="#marketing" className="text-white/60 hover:text-red-400 transition-colors">Digital Marketing</a></li>
+                <li><a href="#production" className="text-white/60 hover:text-red-400 transition-colors">Music Production</a></li>
+                <li><a href="#booking" className="text-white/60 hover:text-red-400 transition-colors">Show Booking</a></li>
+              </ul>
+            </motion.div>
+
+            {/* Legal & Policies */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              <h4 className="text-lg font-semibold text-white mb-6">Legal</h4>
+              <ul className="space-y-3">
+                <li><a href="/privacy-policy" className="text-white/60 hover:text-red-400 transition-colors">Privacy Policy</a></li>
+                <li><a href="/terms-of-service" className="text-white/60 hover:text-red-400 transition-colors">Terms of Service</a></li>
+                <li><a href="/cookie-policy" className="text-white/60 hover:text-red-400 transition-colors">Cookie Policy</a></li>
+                <li><a href="/submissions" className="text-white/60 hover:text-red-400 transition-colors">Demo Submissions</a></li>
+                <li><a href="/careers" className="text-white/60 hover:text-red-400 transition-colors">Careers</a></li>
+              </ul>
+            </motion.div>
+          </div>
+
+          {/* Bottom Bar */}
+          <motion.div
+            className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <div className="text-white/40 text-sm mb-4 md:mb-0">
+              © 2024 1ABEL Music Label. All rights reserved. | ABN: 12 345 678 901
+            </div>
+            <div className="flex items-center space-x-6 text-sm text-white/40">
+              <span>Made in Australia 🇦🇺</span>
+              <a href="mailto:anyro@1abel.com" className="hover:text-red-400 transition-colors">
+                anyro@1abel.com
+              </a>
+            </div>
+          </motion.div>
+        </div>
       </footer>
     </div>
   )
