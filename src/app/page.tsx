@@ -3,6 +3,8 @@
 import { motion, useScroll, useTransform, useSpring, useMotionValue, useAnimationFrame } from 'framer-motion'
 import { useRef, useState, useEffect } from 'react'
 import { wrap } from '@motionone/utils'
+import Link from 'next/link'
+import ShimmerButton from '@/components/magicui/shimmer-button'
 
 export default function HomePage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -83,6 +85,52 @@ export default function HomePage() {
 
   return (
     <div ref={containerRef} className="bg-black text-white overflow-hidden">
+      {/* Navigation Bar */}
+      <motion.nav 
+        className="fixed top-0 left-0 right-0 z-50 p-6"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : -20 }}
+        transition={{ duration: 0.8, delay: 2 }}
+      >
+        <div className="flex justify-between items-center max-w-7xl mx-auto">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            className="text-2xl font-bold text-red-600"
+          >
+            1ABEL
+          </motion.div>
+          
+          <div className="flex items-center space-x-6">
+            <Link href="/blog">
+              <ShimmerButton
+                className="bg-transparent border-red-600 text-red-400 hover:text-white px-6 py-2 text-sm"
+                shimmerColor="#ef4444"
+                background="rgba(0, 0, 0, 0.3)"
+                borderRadius="8px"
+              >
+                Blog & Insights
+              </ShimmerButton>
+            </Link>
+            
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-white/70 hover:text-white transition-colors text-sm"
+            >
+              Artists
+            </motion.button>
+            
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-white/70 hover:text-white transition-colors text-sm"
+            >
+              About
+            </motion.button>
+          </div>
+        </div>
+      </motion.nav>
+
       {/* White Smoke Effect at End */}
       <motion.div 
         className="fixed inset-0 pointer-events-none"
