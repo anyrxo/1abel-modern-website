@@ -139,8 +139,8 @@ export default function HomePage() {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ 
-                  duration: 0.8, 
-                  delay: 2 + index * 0.3,
+                  duration: 0.4, 
+                  delay: 1 + index * 0.15,
                   ease: [0.34, 1.56, 0.64, 1]
                 }}
                 style={{
@@ -174,70 +174,103 @@ export default function HomePage() {
       {/* Spacer for scroll */}
       <div className="h-[1000vh]" />
 
-      {/* Insane Infinite Scrolling Yin-Yang Pattern */}
+      {/* Beautiful Flashing Stars Background */}
       <section className="fixed inset-0 overflow-hidden pointer-events-none">
-        <motion.div
-          style={{ 
-            y,
-            rotate: rotationValue
-          }}
-          className="absolute top-0 left-[10%] flex flex-col gap-[20vh]"
-        >
-          {[...Array(10)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="text-[8vh] font-bold"
-              style={{
-                color: i % 2 === 0 ? 'white' : 'black',
-                textShadow: i % 2 === 0 ? '0 0 20px rgba(255,255,255,0.5)' : '0 0 20px rgba(0,0,0,0.5)'
-              }}
-            >
-              {i % 2 === 0 ? '☯' : '☯'}
-            </motion.div>
-          ))}
-        </motion.div>
+        {/* Large Stars */}
+        {[...Array(50)].map((_, i) => (
+          <motion.div
+            key={`star-${i}`}
+            className="absolute text-white"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              fontSize: `${Math.random() * 8 + 4}px`,
+            }}
+            animate={{
+              opacity: [0.1, 0.8, 0.1],
+              scale: [0.5, 1.2, 0.5],
+            }}
+            transition={{
+              duration: Math.random() * 3 + 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: Math.random() * 2
+            }}
+          >
+            ✦
+          </motion.div>
+        ))}
         
-        <motion.div
-          style={{ 
-            y: y2,
-            rotate: useTransform(rotationValue, v => -v)
-          }}
-          className="absolute top-0 right-[10%] flex flex-col gap-[30vh]"
-        >
-          {[...Array(10)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="text-[6vh]"
-              animate={{
-                scale: [1, 1.5, 1],
-                rotate: [0, 180, 360]
-              }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                delay: i * 0.2
-              }}
-              style={{
-                color: i % 2 === 0 ? 'black' : 'white',
-              }}
-            >
-              ☯
-            </motion.div>
-          ))}
-        </motion.div>
+        {/* Medium Stars */}
+        {[...Array(80)].map((_, i) => (
+          <motion.div
+            key={`star-med-${i}`}
+            className="absolute text-white/60"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              fontSize: `${Math.random() * 6 + 2}px`,
+            }}
+            animate={{
+              opacity: [0.05, 0.6, 0.05],
+              scale: [0.3, 1, 0.3],
+            }}
+            transition={{
+              duration: Math.random() * 4 + 1.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: Math.random() * 3
+            }}
+          >
+            ★
+          </motion.div>
+        ))}
         
-        {/* Infinity Symbol */}
-        <motion.div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-          style={{
-            scale: contentScale,
-            rotate: contentRotate
-          }}
-        >
-          <div className="text-[20vh] font-bold text-white/10">
-            ∞
-          </div>
-        </motion.div>
+        {/* Small Twinkling Stars */}
+        {[...Array(120)].map((_, i) => (
+          <motion.div
+            key={`star-small-${i}`}
+            className="absolute w-1 h-1 bg-white/40 rounded-full"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              opacity: [0.02, 0.4, 0.02],
+              scale: [0.2, 1, 0.2],
+            }}
+            transition={{
+              duration: Math.random() * 5 + 1,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: Math.random() * 4
+            }}
+          />
+        ))}
+        
+        {/* Shooting Stars */}
+        {[...Array(5)].map((_, i) => (
+          <motion.div
+            key={`shooting-${i}`}
+            className="absolute w-0.5 h-0.5 bg-white rounded-full"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 50}%`,
+            }}
+            animate={{
+              x: [0, window.innerWidth || 1000],
+              y: [0, (window.innerHeight || 1000) * 0.3],
+              opacity: [0, 1, 0],
+              scale: [0, 2, 0],
+            }}
+            transition={{
+              duration: Math.random() * 3 + 2,
+              repeat: Infinity,
+              ease: "easeOut",
+              delay: Math.random() * 10 + 5
+            }}
+          />
+        ))}
       </section>
 
       {/* Streaming Dominance */}
