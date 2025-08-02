@@ -128,15 +128,27 @@ export default function HomePage() {
           style={{ opacity: heroOpacity }}
         >
           <motion.h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-red-500 via-white to-red-500 bg-clip-text text-transparent">
-            AUSTRALIA'S #1
+            WHILE OTHER LABELS
           </motion.h1>
           <motion.h2 className="text-4xl md:text-6xl font-bold mb-8 text-white">
-            RNB & TRAP POWERHOUSE
+            STILL PITCH RADIO DJs...
           </motion.h2>
-          <motion.p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            We don't just sign artists - we build superstars. From bedroom beats to Billboard charts, 
-            1ABEL turns raw talent into chart-topping sensations across Spotify, Apple Music, and beyond.
-          </motion.p>
+          <motion.div className="text-center mb-8">
+            <motion.p className="text-3xl md:text-5xl font-bold text-red-400 mb-4">
+              WE BUILD VIRAL MOMENTS
+            </motion.p>
+            <motion.p className="text-xl text-gray-300 mb-8">
+              Australia's most advanced RnB/trap/rap label • We speak TikTok, not Triple J
+            </motion.p>
+            <motion.p className="text-lg text-gray-400 mb-12 max-w-4xl mx-auto">
+              <span className="line-through text-gray-600">360 deals that steal your publishing ❌</span><br/>
+              <span className="line-through text-gray-600">Radio campaigns for songs nobody hears ❌</span><br/>
+              <span className="line-through text-gray-600">Waiting 18 months for A&R approval ❌</span><br/><br/>
+              <span className="text-red-400">✅ Algorithm optimization that actually works</span><br/>
+              <span className="text-red-400">✅ TikTok campaigns that hit millions of views</span><br/>
+              <span className="text-red-400">✅ Release your music in 2 weeks, not 2 years</span>
+            </motion.p>
+          </motion.div>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <ShimmerButton
@@ -170,27 +182,27 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <AnimatedCard hoverEffect="glow" glowColor="red" className="text-center p-8 bg-gray-900/50 rounded-xl">
-              <NumberTicker value={250} className="text-6xl font-bold text-red-400 mb-4" />
+              <NumberTicker value={50} className="text-6xl font-bold text-red-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Million+ Streams</h3>
-              <p className="text-gray-400">Across all platforms in 2024</p>
+              <p className="text-gray-400">Combined artist catalog 2024</p>
             </AnimatedCard>
             
             <AnimatedCard hoverEffect="lift" className="text-center p-8 bg-gray-900/50 rounded-xl">
-              <NumberTicker value={47} className="text-6xl font-bold text-red-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Chart Entries</h3>
-              <p className="text-gray-400">ARIA & Billboard placements</p>
+              <NumberTicker value={24} className="text-6xl font-bold text-red-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Active Artists</h3>
+              <p className="text-gray-400">Curated roster of talent</p>
             </AnimatedCard>
             
             <AnimatedCard hoverEffect="scale" className="text-center p-8 bg-gray-900/50 rounded-xl">
-              <NumberTicker value={185} className="text-6xl font-bold text-red-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Active Artists</h3>
-              <p className="text-gray-400">Growing our roster daily</p>
+              <NumberTicker value={500} className="text-6xl font-bold text-red-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Million+ Views</h3>
+              <p className="text-gray-400">TikTok & YouTube Shorts</p>
             </AnimatedCard>
             
             <AnimatedCard hoverEffect="tilt" className="text-center p-8 bg-gray-900/50 rounded-xl">
-              <NumberTicker value={12} className="text-6xl font-bold text-red-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Gold Records</h3>
-              <p className="text-gray-400">Certified hits this year</p>
+              <NumberTicker value={2} className="text-6xl font-bold text-red-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Week Releases</h3>
+              <p className="text-gray-400">Average time to market</p>
             </AnimatedCard>
           </div>
         </motion.div>
@@ -202,44 +214,62 @@ export default function HomePage() {
           className="max-w-7xl mx-auto px-8"
           style={{ opacity: servicesOpacity }}
         >
-          <motion.h2 className="text-5xl font-bold text-center mb-16 text-white">
-            FULL-STACK MUSIC EMPIRE
+          <motion.h2 className="text-5xl font-bold text-center mb-8 text-white">
+            WHY OTHER LABELS FAIL
           </motion.h2>
+          <motion.p className="text-xl text-center text-gray-300 mb-16 max-w-3xl mx-auto">
+            While they're stuck in 2015, we're building the future of music marketing
+          </motion.p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <AnimatedCard hoverEffect="glow" glowColor="red" className="p-8 bg-gray-900/50 rounded-xl">
               <TrendingUp className="w-12 h-12 text-red-400 mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Digital Distribution</h3>
-              <p className="text-gray-300 mb-6">Spotify, Apple Music, YouTube Music, Amazon, Tidal - we get you everywhere that matters, with priority playlist placement.</p>
+              <h3 className="text-2xl font-bold mb-4">Algorithm Mastery</h3>
+              <div className="mb-6">
+                <p className="text-red-200 font-semibold mb-2">❌ Old Labels:</p>
+                <p className="text-gray-400 text-sm mb-4">"Let's pitch this to Triple J and hope for the best"</p>
+                <p className="text-green-200 font-semibold mb-2">✅ 1ABEL:</p>
+                <p className="text-gray-300 text-sm">TikTok algorithm optimization, Spotify playlist placement strategy, Instagram Reels viral formulas</p>
+              </div>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Spotify algorithm optimization</li>
-                <li>• Apple Music editorial pitching</li>
-                <li>• YouTube monetization setup</li>
-                <li>• TikTok viral campaign strategies</li>
+                <li>• 15-second hook optimization</li>
+                <li>• Peak posting time analysis</li>
+                <li>• Trending audio hijacking</li>
+                <li>• Cross-platform content strategy</li>
               </ul>
             </AnimatedCard>
             
             <AnimatedCard hoverEffect="lift" className="p-8 bg-gray-900/50 rounded-xl">
               <Instagram className="w-12 h-12 text-red-400 mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Social Media Domination</h3>
-              <p className="text-gray-300 mb-6">Instagram Reels, TikTok trends, YouTube Shorts - we create viral moments that translate to streams and sales.</p>
+              <h3 className="text-2xl font-bold mb-4">Real Social Media</h3>
+              <div className="mb-6">
+                <p className="text-red-200 font-semibold mb-2">❌ Old Labels:</p>
+                <p className="text-gray-400 text-sm mb-4">One Instagram post per week, radio interviews nobody watches</p>
+                <p className="text-green-200 font-semibold mb-2">✅ 1ABEL:</p>
+                <p className="text-gray-300 text-sm">Daily content creation, viral moment creation, influencer network access</p>
+              </div>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Viral TikTok campaign creation</li>
-                <li>• Instagram Reels optimization</li>
-                <li>• YouTube Shorts automation</li>
-                <li>• Influencer partnership deals</li>
+                <li>• 500M+ combined TikTok views</li>
+                <li>• Viral moment engineering</li>
+                <li>• Creator collaboration network</li>
+                <li>• Real-time trend adaptation</li>
               </ul>
             </AnimatedCard>
             
             <AnimatedCard hoverEffect="scale" className="p-8 bg-gray-900/50 rounded-xl">
               <Award className="w-12 h-12 text-red-400 mb-6" />
-              <h3 className="text-2xl font-bold mb-4">Brand Partnerships</h3>
-              <p className="text-gray-300 mb-6">Nike, Adidas, Mercedes, Red Bull - we secure million-dollar brand deals and sync opportunities for our artists.</p>
+              <h3 className="text-2xl font-bold mb-4">Artist First</h3>
+              <div className="mb-6">
+                <p className="text-red-200 font-semibold mb-2">❌ Old Labels:</p>
+                <p className="text-gray-400 text-sm mb-4">360 deals, own your masters, take 80% of everything</p>
+                <p className="text-green-200 font-semibold mb-2">✅ 1ABEL:</p>
+                <p className="text-gray-300 text-sm">Fair splits, artist development, real career building</p>
+              </div>
               <ul className="text-sm text-gray-400 space-y-2">
-                <li>• Major brand endorsement deals</li>
-                <li>• TV/Film sync placements</li>
-                <li>• Fashion collaboration projects</li>
-                <li>• Gaming soundtrack opportunities</li>
+                <li>• You keep your masters</li>
+                <li>• Fair revenue splits</li>
+                <li>• 2-week release cycles</li>
+                <li>• No bullshit contracts</li>
               </ul>
             </AnimatedCard>
           </div>
