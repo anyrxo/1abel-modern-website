@@ -128,35 +128,24 @@ export default function HomePage() {
             </motion.span>
           </motion.div>
           
-          {/* Vertical White ABEL perfectly fitted on the 1 - Writes on beautifully */}
+          {/* Rectangular container for diagonal arm with ABEL text */}
           <motion.div
             style={{ opacity: labelOpacity }}
-            className="absolute top-[12%] left-[58%] flex flex-col text-[6vh] font-black leading-[1.0] tracking-wide text-white z-20 h-[32vh] justify-between"
+            className="absolute top-[8%] left-[30%] w-[40vh] h-[8vh] bg-red-600 transform rotate-[135deg] origin-bottom-left flex items-center justify-center text-[4vh] font-black text-white z-20"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ 
+              duration: 0.8, 
+              delay: 1,
+              ease: [0.34, 1.56, 0.64, 1]
+            }}
+            whileHover={{ 
+              scale: 1.05, 
+              transition: { duration: 0.2 }
+            }}
           >
-            {['A', 'B', 'E', 'L'].map((letter, index) => (
-              <motion.span
-                key={letter}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ 
-                  duration: 0.4, 
-                  delay: 1 + index * 0.15,
-                  ease: [0.34, 1.56, 0.64, 1]
-                }}
-                style={{
-                  opacity: useTransform(scrollProgress, 
-                    [0, 0.05 + index * 0.01, 0.6, 0.7], [0, 1, 1, 0]
-                  )
-                }}
-                whileHover={{ 
-                  scale: 1.1, 
-                  transition: { duration: 0.2 }
-                }}
-                className="cursor-pointer"
-              >
-                {letter}
-              </motion.span>
-            ))}
+            <span className="transform rotate-[45deg] tracking-widest">ABEL</span>
+          </motion.div>
           </motion.div>
         </motion.div>
 
