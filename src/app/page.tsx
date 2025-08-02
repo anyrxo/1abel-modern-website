@@ -94,15 +94,14 @@ export default function HomePage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: isLoaded ? 1 : 0 }}
               transition={{ duration: 1, delay: 1.5 }}
-              className="absolute top-[20%] right-[-10%] flex flex-col text-[8vh] font-black leading-[1.1] tracking-wide text-white"
+              className="absolute top-[12%] left-[58%] flex flex-col text-[5vh] font-black leading-[1.1] tracking-wide text-white h-[38vh] justify-between items-center"
             >
               {['A', 'B', 'E', 'L'].map((letter, index) => (
                 <motion.span
                   key={letter}
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: 2 + index * 0.15, ease: [0.34, 1.56, 0.64, 1] }}
-                  className="mb-4"
                 >
                   {letter}
                 </motion.span>
