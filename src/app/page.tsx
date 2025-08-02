@@ -146,7 +146,6 @@ export default function HomePage() {
           >
             <span className="transform rotate-[45deg] tracking-widest">ABEL</span>
           </motion.div>
-          </motion.div>
         </motion.div>
 
         
