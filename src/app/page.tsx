@@ -41,20 +41,21 @@ export default function HomePage() {
   // Scroll progress mapping
   const scrollProgress = useTransform(scrollY, [0, 10000], [0, 1])
   
-  // Yin-yang opening/closing animation
-  const yinYangRotate = useTransform(scrollProgress, [0, 0.05, 0.9, 1], [0, 720, 720, 1440])
-  const yinYangScale = useTransform(scrollProgress, [0, 0.05, 0.9, 1], [1, 1, 1, 1])
-  const yinSplitX = useTransform(scrollProgress, [0, 0.1, 0.85, 0.95], [0, -200, -200, 0])
-  const yangSplitX = useTransform(scrollProgress, [0, 0.1, 0.85, 0.95], [0, 200, 200, 0])
-  const yinYangOpacity = useTransform(scrollProgress, [0.08, 0.15, 0.8, 0.9], [1, 0, 0, 1])
+  // Massive yin-yang spinning and splitting animation
+  const yinYangRotate = useTransform(scrollProgress, [0, 0.08, 0.9, 1], [0, 720, 720, 1440])
+  const yinYangScale = useTransform(scrollProgress, [0, 0.05, 0.9, 1], [1, 1.2, 1.2, 1])
+  const yinSplitX = useTransform(scrollProgress, [0, 0.05, 0.12, 0.85, 0.95], [0, 0, -300, -300, 0])
+  const yangSplitX = useTransform(scrollProgress, [0, 0.05, 0.12, 0.85, 0.95], [0, 0, 300, 300, 0])
+  const yinYangOpacity = useTransform(scrollProgress, [0, 0.05, 0.15, 0.8, 0.9, 1], [1, 1, 0, 0, 1, 1])
   
-  // Logo (1) appearance
-  const logoScale = useTransform(scrollProgress, [0.05, 0.15, 0.8, 0.9], [0, 1, 1, 0])
-  const logoOpacity = useTransform(scrollProgress, [0.08, 0.15, 0.8, 0.87], [0, 1, 1, 0])
-  const logoRotate = useTransform(scrollProgress, [0.1, 0.5, 0.85], [0, 360, 720])
+  // Logo (1) appearance - emerges from the yin-yang split
+  const logoScale = useTransform(scrollProgress, [0.10, 0.18, 0.8, 0.88], [0, 1.2, 1, 0])
+  const logoOpacity = useTransform(scrollProgress, [0.12, 0.18, 0.8, 0.85], [0, 1, 1, 0])
+  const logoRotate = useTransform(scrollProgress, [0.12, 0.4, 0.8], [0, 360, 720])
+  const logoY = useTransform(scrollProgress, [0.10, 0.18], [100, 0])
   
-  // ABEL appearance
-  const labelOpacity = useTransform(scrollProgress, [0.15, 0.2, 0.75, 0.8], [0, 1, 1, 0])
+  // ABEL appearance - writes on the 1 after it emerges
+  const labelOpacity = useTransform(scrollProgress, [0.18, 0.25, 0.75, 0.8], [0, 1, 1, 0])
   
   // White smoke effect at the end
   const smokeOpacity = useTransform(scrollProgress, [0.9, 0.95, 0.98, 1], [0, 1, 1, 0])
@@ -101,88 +102,94 @@ export default function HomePage() {
       </motion.div>
       {/* Hero Section with Vertical 1ABEL */}
       <section className="fixed inset-0 flex items-center justify-center">
-        {/* Yin-Yang Split Animation */}
+        {/* Massive Yin-Yang with Shadow */}
         <motion.div
-          className="absolute inset-0 flex items-center justify-center"
+          className="absolute w-[80vh] h-[80vh]"
           initial={{ scale: 1 }}
           style={{ 
             rotate: yinYangRotate,
-            opacity: yinYangOpacity
+            scale: yinYangScale,
+            opacity: yinYangOpacity,
+            filter: "drop-shadow(0 0 50px rgba(255,255,255,0.3))"
           }}
         >
-          {/* Yin (Black) Half */}
+          {/* Yin Half */}
           <motion.div
-            className="absolute w-[40vh] h-[80vh] overflow-hidden"
+            className="absolute inset-0"
             style={{ x: yinSplitX }}
           >
-            <div className="absolute right-0 w-[80vh] h-[80vh]">
-              <svg viewBox="0 0 100 100" className="w-full h-full">
-                <defs>
-                  <clipPath id="yinClip">
-                    <rect x="0" y="0" width="50" height="100" />
-                  </clipPath>
-                </defs>
-                <g clipPath="url(#yinClip)">
-                  <circle cx="50" cy="50" r="50" fill="white"/>
-                  <path d="M50,0 A25,25 0 0,1 50,50 A50,50 0 0,0 50,100 A25,25 0 0,1 50,50 A50,50 0 0,0 50,0" fill="black"/>
-                  <circle cx="50" cy="25" r="12" fill="black"/>
-                  <circle cx="50" cy="75" r="12" fill="white"/>
-                  <circle cx="50" cy="25" r="4" fill="white"/>
-                  <circle cx="50" cy="75" r="4" fill="black"/>
-                </g>
-              </svg>
-            </div>
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <defs>
+                <clipPath id="yinClip">
+                  <rect x="0" y="0" width="50" height="100" />
+                </clipPath>
+              </defs>
+              <g clipPath="url(#yinClip)">
+                <circle cx="50" cy="50" r="49" fill="white" stroke="white" strokeWidth="1"/>
+                <path d="M50,1 A24.5,24.5 0 0,1 50,50 A49,49 0 0,0 50,99 A24.5,24.5 0 0,1 50,50 A49,49 0 0,0 50,1" fill="black"/>
+                <circle cx="50" cy="25.5" r="8" fill="black"/>
+                <circle cx="50" cy="74.5" r="8" fill="white"/>
+                <circle cx="50" cy="25.5" r="2.5" fill="white"/>
+                <circle cx="50" cy="74.5" r="2.5" fill="black"/>
+              </g>
+            </svg>
           </motion.div>
           
-          {/* Yang (White) Half */}
+          {/* Yang Half */}
           <motion.div
-            className="absolute w-[40vh] h-[80vh] overflow-hidden"
+            className="absolute inset-0"
             style={{ x: yangSplitX }}
           >
-            <div className="absolute left-0 w-[80vh] h-[80vh]">
-              <svg viewBox="0 0 100 100" className="w-full h-full">
-                <defs>
-                  <clipPath id="yangClip">
-                    <rect x="50" y="0" width="50" height="100" />
-                  </clipPath>
-                </defs>
-                <g clipPath="url(#yangClip)">
-                  <circle cx="50" cy="50" r="50" fill="white"/>
-                  <path d="M50,0 A25,25 0 0,1 50,50 A50,50 0 0,0 50,100 A25,25 0 0,1 50,50 A50,50 0 0,0 50,0" fill="black"/>
-                  <circle cx="50" cy="25" r="12" fill="black"/>
-                  <circle cx="50" cy="75" r="12" fill="white"/>
-                  <circle cx="50" cy="25" r="4" fill="white"/>
-                  <circle cx="50" cy="75" r="4" fill="black"/>
-                </g>
-              </svg>
-            </div>
+            <svg viewBox="0 0 100 100" className="w-full h-full">
+              <defs>
+                <clipPath id="yangClip">
+                  <rect x="50" y="0" width="50" height="100" />
+                </clipPath>
+              </defs>
+              <g clipPath="url(#yangClip)">
+                <circle cx="50" cy="50" r="49" fill="white" stroke="white" strokeWidth="1"/>
+                <path d="M50,1 A24.5,24.5 0 0,1 50,50 A49,49 0 0,0 50,99 A24.5,24.5 0 0,1 50,50 A49,49 0 0,0 50,1" fill="black"/>
+                <circle cx="50" cy="25.5" r="8" fill="black"/>
+                <circle cx="50" cy="74.5" r="8" fill="white"/>
+                <circle cx="50" cy="25.5" r="2.5" fill="white"/>
+                <circle cx="50" cy="74.5" r="2.5" fill="black"/>
+              </g>
+            </svg>
           </motion.div>
         </motion.div>
+
+        {/* Dark Abyss Between Split - Where 1 Emerges From */}
+        <motion.div
+          className="absolute w-[80vh] h-[80vh] bg-gradient-to-r from-transparent via-black to-transparent"
+          style={{
+            opacity: useTransform(scrollProgress, [0.10, 0.15, 0.8, 0.85], [0, 1, 1, 0]),
+            scaleX: useTransform(scrollProgress, [0.10, 0.15], [0, 1])
+          }}
+        />
         
         <motion.div
           style={{ 
             scale: logoScale, 
             opacity: logoOpacity,
-            rotate: logoRotate
+            rotate: logoRotate,
+            y: logoY
           }}
           className="relative z-10"
         >
-          {/* Big Red 1 with Glow */}
+          {/* Big Red 1 with Glow - Emerges from Shadows */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ 
-              opacity: isLoaded ? 1 : 0, 
-              scale: isLoaded ? 1 : 0.8,
-            }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
             className="text-[50vh] font-bold leading-none text-red-600 relative"
+            style={{
+              filter: useTransform(scrollProgress, [0.12, 0.18], 
+                ["brightness(0) contrast(0)", "brightness(1) contrast(1)"])
+            }}
           >
             <motion.span
               animate={{
                 textShadow: [
-                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3)',
-                  '0 0 120px rgba(220, 38, 38, 0.8), 0 0 240px rgba(220, 38, 38, 0.5)',
-                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3)',
+                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3), 0 0 300px rgba(0, 0, 0, 0.8)',
+                  '0 0 120px rgba(220, 38, 38, 0.8), 0 0 240px rgba(220, 38, 38, 0.5), 0 0 400px rgba(0, 0, 0, 1)',
+                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3), 0 0 300px rgba(0, 0, 0, 0.8)',
                 ],
               }}
               transition={{
@@ -190,12 +197,16 @@ export default function HomePage() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
+              style={{
+                transform: useTransform(scrollProgress, [0.12, 0.18], 
+                  ["scale(0.5) rotateY(90deg)", "scale(1) rotateY(0deg)"])
+              }}
             >
               1
             </motion.span>
           </motion.div>
           
-          {/* Vertical White ABEL perfectly fitted on the 1 */}
+          {/* Vertical White ABEL perfectly fitted on the 1 - Writes on beautifully */}
           <motion.div
             style={{ opacity: labelOpacity }}
             className="absolute top-[30%] left-[50%] -translate-x-1/2 flex flex-col text-[4vh] font-black leading-[0.6] tracking-tighter text-white"
@@ -203,12 +214,16 @@ export default function HomePage() {
             {['A', 'B', 'E', 'L'].map((letter, index) => (
               <motion.span
                 key={letter}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ 
-                  duration: 0.8, 
-                  delay: 0.5 + index * 0.1,
-                  ease: [0.34, 1.56, 0.64, 1]
+                style={{
+                  opacity: useTransform(scrollProgress, 
+                    [0.18 + index * 0.02, 0.20 + index * 0.02], [0, 1]
+                  ),
+                  scale: useTransform(scrollProgress, 
+                    [0.18 + index * 0.02, 0.20 + index * 0.02], [0.5, 1]
+                  ),
+                  y: useTransform(scrollProgress, 
+                    [0.18 + index * 0.02, 0.20 + index * 0.02], [50, 0]
+                  )
                 }}
                 whileHover={{ 
                   scale: 1.1, 
@@ -222,42 +237,6 @@ export default function HomePage() {
           </motion.div>
         </motion.div>
 
-        {/* Insane floating yin-yang orbs */}
-        <div className="absolute inset-0 overflow-hidden">
-          {[...Array(10)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute"
-              style={{
-                width: Math.random() * 60 + 20,
-                height: Math.random() * 60 + 20,
-              }}
-              initial={{
-                x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920),
-                y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080),
-                rotate: 0,
-              }}
-              animate={{
-                x: [null, Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920)],
-                y: [null, Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080)],
-                rotate: 360,
-              }}
-              transition={{
-                duration: Math.random() * 30 + 20,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut",
-              }}
-            >
-              <svg viewBox="0 0 100 100" className="w-full h-full opacity-20">
-                <circle cx="50" cy="50" r="50" fill="white"/>
-                <path d="M50,0 A25,25 0 0,1 50,50 A50,50 0 0,0 50,100 A25,25 0 0,1 50,50 A50,50 0 0,0 50,0" fill="black"/>
-                <circle cx="50" cy="25" r="8" fill="black"/>
-                <circle cx="50" cy="75" r="8" fill="white"/>
-              </svg>
-            </motion.div>
-          ))}
-        </div>
         
         {/* Glitch effect on hover */}
         <motion.div
