@@ -131,7 +131,7 @@ export default function HomePage() {
           {/* Vertical White ABEL perfectly fitted on the 1 - Writes on beautifully */}
           <motion.div
             style={{ opacity: labelOpacity }}
-            className="absolute top-[30%] left-[50%] -translate-x-1/2 flex flex-col text-[4vh] font-black leading-[0.6] tracking-tighter text-white"
+            className="absolute top-[35%] left-[52%] -translate-x-1/2 flex flex-col text-[3.5vh] font-black leading-[0.7] tracking-tight text-white z-20"
           >
             {['A', 'B', 'E', 'L'].map((letter, index) => (
               <motion.span
@@ -314,6 +314,17 @@ export default function HomePage() {
             ))}
           </div>
           
+          {/* Description */}
+          <motion.p
+            className="text-xl md:text-2xl mb-12 text-white/80 max-w-4xl mx-auto leading-relaxed"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+          >
+            These numbers represent real impact. Our artists dominate streaming platforms, 
+            viral social content, and digital music discovery. We don't chase trends—we create them.
+          </motion.p>
+          
           {/* Social Media & Platform Logos */}
           <motion.div 
             className="flex justify-center items-center gap-8 flex-wrap"
@@ -424,13 +435,24 @@ export default function HomePage() {
           }}
         >
           <motion.h2 
-            className="text-5xl md:text-7xl font-bold mb-12 text-center"
+            className="text-5xl md:text-7xl font-bold mb-8 text-center"
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1 }}
           >
             ORGANIC REACH REVOLUTION
           </motion.h2>
+          
+          <motion.p
+            className="text-xl text-white/70 text-center mb-12 max-w-3xl mx-auto"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            While others rely on outdated industry gatekeepers, we harness the power of 
+            direct fan connection. Our approach bypasses traditional barriers and builds 
+            authentic communities around our artists.
+          </motion.p>
           
           <div className="grid md:grid-cols-2 gap-12">
             {/* What We Do */}
@@ -494,28 +516,26 @@ export default function HomePage() {
 
       {/* Final Call to Action with Epic Concert Background */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Epic Concert Background - Replace with actual concert image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `linear-gradient(45deg, #8B0000 0%, #DC143C 25%, #FF6347 50%, #DC143C 75%, #8B0000 100%)`,
-            backgroundSize: '400% 400%',
-          }}
-        >
-          {/* Animated gradient background as placeholder */}
+        {/* Epic Concert Background */}
+        <div className="absolute inset-0">
+          {/* Base red concert atmosphere */}
+          <div className="absolute inset-0 bg-gradient-to-b from-red-900 via-red-700 to-black" />
+          
+          {/* Animated red smoke/stage lighting */}
           <motion.div
-            className="absolute inset-0"
+            className="absolute inset-0 opacity-60"
             animate={{
-              backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+              background: [
+                'radial-gradient(ellipse at 30% 30%, rgba(220, 38, 38, 0.6) 0%, transparent 70%)',
+                'radial-gradient(ellipse at 70% 40%, rgba(220, 38, 38, 0.8) 0%, transparent 70%)',
+                'radial-gradient(ellipse at 50% 60%, rgba(220, 38, 38, 0.6) 0%, transparent 70%)',
+                'radial-gradient(ellipse at 30% 30%, rgba(220, 38, 38, 0.6) 0%, transparent 70%)'
+              ]
             }}
             transition={{
-              duration: 8,
+              duration: 6,
               repeat: Infinity,
               ease: "easeInOut"
-            }}
-            style={{
-              background: `linear-gradient(45deg, #8B0000 0%, #DC143C 25%, #FF6347 50%, #DC143C 75%, #8B0000 100%)`,
-              backgroundSize: '400% 400%',
             }}
           />
           
