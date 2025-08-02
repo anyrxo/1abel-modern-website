@@ -15,11 +15,13 @@ export default function HomePage() {
   
   const baseY = useMotionValue(0)
   const baseY2 = useMotionValue(0)
+  const rotationValue = useMotionValue(0)
   
   useAnimationFrame((t, delta) => {
     let moveBy = velocityFactor.get() * (delta / 1000) * -200
     baseY.set(baseY.get() + moveBy)
     baseY2.set(baseY2.get() + moveBy * 0.5)
+    rotationValue.set(rotationValue.get() + velocityFactor.get() * 0.5)
   })
 
   const y = useTransform(baseY, (v) => `${wrap(-100, 0, v)}%`)
@@ -36,10 +38,43 @@ export default function HomePage() {
     return () => unsubscribe()
   }, [scrollY, scrollVelocity])
 
-  const scrollProgress = useTransform(scrollY, [0, 5000], [0, 1])
-  const logoScale = useTransform(scrollProgress, [0, 0.5], [1, 10])
-  const logoOpacity = useTransform(scrollProgress, [0.4, 0.5], [1, 0])
-  const labelOpacity = useTransform(scrollProgress, [0, 0.1], [0, 1])
+  // Scroll progress mapping
+  const scrollProgress = useTransform(scrollY, [0, 10000], [0, 1])
+  
+  // Yin-yang opening/closing animation
+  const yinYangRotate = useTransform(scrollProgress, [0, 0.05, 0.9, 1], [0, 720, 720, 1440])
+  const yinYangScale = useTransform(scrollProgress, [0, 0.05, 0.9, 1], [1, 1, 1, 1])
+  const yinSplitX = useTransform(scrollProgress, [0, 0.1, 0.85, 0.95], [0, -200, -200, 0])
+  const yangSplitX = useTransform(scrollProgress, [0, 0.1, 0.85, 0.95], [0, 200, 200, 0])
+  const yinYangOpacity = useTransform(scrollProgress, [0.08, 0.15, 0.8, 0.9], [1, 0, 0, 1])
+  
+  // Logo (1) appearance
+  const logoScale = useTransform(scrollProgress, [0.05, 0.15, 0.8, 0.9], [0, 1, 1, 0])
+  const logoOpacity = useTransform(scrollProgress, [0.08, 0.15, 0.8, 0.87], [0, 1, 1, 0])
+  const logoRotate = useTransform(scrollProgress, [0.1, 0.5, 0.85], [0, 360, 720])
+  
+  // ABEL appearance
+  const labelOpacity = useTransform(scrollProgress, [0.15, 0.2, 0.75, 0.8], [0, 1, 1, 0])
+  
+  // White smoke effect at the end
+  const smokeOpacity = useTransform(scrollProgress, [0.9, 0.95, 0.98, 1], [0, 1, 1, 0])
+  
+  // Content transformations
+  const contentRotate = useTransform(scrollProgress, [0.2, 0.4, 0.6, 0.8], [0, 90, -90, 0])
+  const contentScale = useTransform(scrollProgress, [0.2, 0.5, 0.8], [1, 1.5, 1])
+  const contentOpacity = useTransform(scrollProgress, [0.15, 0.25, 0.7, 0.8], [0, 1, 1, 0])
+  
+  // Loop back to beginning
+  useEffect(() => {
+    const handleScroll = () => {
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight
+      if (window.scrollY >= maxScroll - 10) {
+        window.scrollTo({ top: 0, behavior: 'instant' })
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const phrases = [
     "∞",
@@ -56,11 +91,81 @@ export default function HomePage() {
 
   return (
     <div ref={containerRef} className="bg-black text-white overflow-hidden">
+      {/* White Smoke Effect at End */}
+      <motion.div 
+        className="fixed inset-0 pointer-events-none"
+        style={{ opacity: smokeOpacity }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/50 to-transparent" />
+      </motion.div>
       {/* Hero Section with Vertical 1ABEL */}
       <section className="fixed inset-0 flex items-center justify-center">
+        {/* Yin-Yang Split Animation */}
         <motion.div
-          style={{ scale: logoScale, opacity: logoOpacity }}
-          className="relative"
+          className="absolute inset-0 flex items-center justify-center"
+          initial={{ scale: 1 }}
+          style={{ 
+            rotate: yinYangRotate,
+            opacity: yinYangOpacity
+          }}
+        >
+          {/* Yin (Black) Half */}
+          <motion.div
+            className="absolute w-[40vh] h-[80vh] overflow-hidden"
+            style={{ x: yinSplitX }}
+          >
+            <div className="absolute right-0 w-[80vh] h-[80vh]">
+              <svg viewBox="0 0 100 100" className="w-full h-full">
+                <defs>
+                  <clipPath id="yinClip">
+                    <rect x="0" y="0" width="50" height="100" />
+                  </clipPath>
+                </defs>
+                <g clipPath="url(#yinClip)">
+                  <circle cx="50" cy="50" r="50" fill="white"/>
+                  <path d="M50,0 A25,25 0 0,1 50,50 A50,50 0 0,0 50,100 A25,25 0 0,1 50,50 A50,50 0 0,0 50,0" fill="black"/>
+                  <circle cx="50" cy="25" r="12" fill="black"/>
+                  <circle cx="50" cy="75" r="12" fill="white"/>
+                  <circle cx="50" cy="25" r="4" fill="white"/>
+                  <circle cx="50" cy="75" r="4" fill="black"/>
+                </g>
+              </svg>
+            </div>
+          </motion.div>
+          
+          {/* Yang (White) Half */}
+          <motion.div
+            className="absolute w-[40vh] h-[80vh] overflow-hidden"
+            style={{ x: yangSplitX }}
+          >
+            <div className="absolute left-0 w-[80vh] h-[80vh]">
+              <svg viewBox="0 0 100 100" className="w-full h-full">
+                <defs>
+                  <clipPath id="yangClip">
+                    <rect x="50" y="0" width="50" height="100" />
+                  </clipPath>
+                </defs>
+                <g clipPath="url(#yangClip)">
+                  <circle cx="50" cy="50" r="50" fill="white"/>
+                  <path d="M50,0 A25,25 0 0,1 50,50 A50,50 0 0,0 50,100 A25,25 0 0,1 50,50 A50,50 0 0,0 50,0" fill="black"/>
+                  <circle cx="50" cy="25" r="12" fill="black"/>
+                  <circle cx="50" cy="75" r="12" fill="white"/>
+                  <circle cx="50" cy="25" r="4" fill="white"/>
+                  <circle cx="50" cy="75" r="4" fill="black"/>
+                </g>
+              </svg>
+            </div>
+          </motion.div>
+        </motion.div>
+        
+        <motion.div
+          style={{ 
+            scale: logoScale, 
+            opacity: logoOpacity,
+            rotate: logoRotate
+          }}
+          className="relative z-10"
         >
           {/* Big Red 1 with Glow */}
           <motion.div
@@ -90,10 +195,10 @@ export default function HomePage() {
             </motion.span>
           </motion.div>
           
-          {/* Vertical White ABEL on the 1 */}
+          {/* Vertical White ABEL perfectly fitted on the 1 */}
           <motion.div
             style={{ opacity: labelOpacity }}
-            className="absolute top-[25%] left-[45%] flex flex-col text-[6vh] font-bold leading-[0.7] tracking-tighter text-white"
+            className="absolute top-[30%] left-[50%] -translate-x-1/2 flex flex-col text-[4vh] font-black leading-[0.6] tracking-tighter text-white"
           >
             {['A', 'B', 'E', 'L'].map((letter, index) => (
               <motion.span
@@ -117,26 +222,25 @@ export default function HomePage() {
           </motion.div>
         </motion.div>
 
-        {/* Insane floating orbs */}
+        {/* Insane floating yin-yang orbs */}
         <div className="absolute inset-0 overflow-hidden">
-          {[...Array(20)].map((_, i) => (
+          {[...Array(10)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute rounded-full"
+              className="absolute"
               style={{
-                width: Math.random() * 100 + 50,
-                height: Math.random() * 100 + 50,
-                background: `radial-gradient(circle, rgba(255,255,255,${Math.random() * 0.1}) 0%, transparent 70%)`,
-                filter: 'blur(1px)',
+                width: Math.random() * 60 + 20,
+                height: Math.random() * 60 + 20,
               }}
               initial={{
                 x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920),
                 y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080),
+                rotate: 0,
               }}
               animate={{
                 x: [null, Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920)],
                 y: [null, Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080)],
-                scale: [1, Math.random() + 0.5, 1],
+                rotate: 360,
               }}
               transition={{
                 duration: Math.random() * 30 + 20,
@@ -144,7 +248,14 @@ export default function HomePage() {
                 repeatType: "reverse",
                 ease: "easeInOut",
               }}
-            />
+            >
+              <svg viewBox="0 0 100 100" className="w-full h-full opacity-20">
+                <circle cx="50" cy="50" r="50" fill="white"/>
+                <path d="M50,0 A25,25 0 0,1 50,50 A50,50 0 0,0 50,100 A25,25 0 0,1 50,50 A50,50 0 0,0 50,0" fill="black"/>
+                <circle cx="50" cy="25" r="8" fill="black"/>
+                <circle cx="50" cy="75" r="8" fill="white"/>
+              </svg>
+            </motion.div>
           ))}
         </div>
         
@@ -159,46 +270,83 @@ export default function HomePage() {
       </section>
 
       {/* Spacer for scroll */}
-      <div className="h-[200vh]" />
+      <div className="h-[1000vh]" />
 
-      {/* Subtle Infinite Scrolling Symbols */}
+      {/* Insane Infinite Scrolling Yin-Yang Pattern */}
       <section className="fixed inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          style={{ y }}
+          style={{ 
+            y,
+            rotate: rotationValue
+          }}
           className="absolute top-0 left-[10%] flex flex-col gap-[20vh]"
         >
           {[...Array(10)].map((_, i) => (
             <motion.div
               key={i}
-              className="text-[4vh] text-white/5"
+              className="text-[8vh] font-bold"
+              style={{
+                color: i % 2 === 0 ? 'white' : 'black',
+                textShadow: i % 2 === 0 ? '0 0 20px rgba(255,255,255,0.5)' : '0 0 20px rgba(0,0,0,0.5)'
+              }}
             >
-              {phrases[i % phrases.length]}
+              {i % 2 === 0 ? '☯' : '☯'}
             </motion.div>
           ))}
         </motion.div>
         
         <motion.div
-          style={{ y: y2 }}
+          style={{ 
+            y: y2,
+            rotate: useTransform(rotationValue, v => -v)
+          }}
           className="absolute top-0 right-[10%] flex flex-col gap-[30vh]"
         >
           {[...Array(10)].map((_, i) => (
             <motion.div
               key={i}
-              className="text-[3vh] text-white/3"
+              className="text-[6vh]"
+              animate={{
+                scale: [1, 1.5, 1],
+                rotate: [0, 180, 360]
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                delay: i * 0.2
+              }}
+              style={{
+                color: i % 2 === 0 ? 'black' : 'white',
+              }}
             >
-              {phrases[(i + 5) % phrases.length]}
+              ☯
             </motion.div>
           ))}
+        </motion.div>
+        
+        {/* Infinity Symbol */}
+        <motion.div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          style={{
+            scale: contentScale,
+            rotate: contentRotate
+          }}
+        >
+          <div className="text-[20vh] font-bold text-white/10">
+            ∞
+          </div>
         </motion.div>
       </section>
 
       {/* Streaming Dominance */}
       <section className="relative z-10 min-h-screen flex items-center justify-center">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
           className="text-center max-w-6xl mx-auto px-8"
+          style={{
+            rotate: contentRotate,
+            scale: contentScale,
+            opacity: contentOpacity
+          }}
         >
           <motion.h2 
             className="text-6xl md:text-8xl font-bold mb-16"
@@ -269,10 +417,11 @@ export default function HomePage() {
       {/* Organic Growth Revolution */}
       <section className="relative z-10 min-h-screen flex items-center justify-center">
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
           className="max-w-5xl mx-auto px-8"
+          style={{
+            opacity: contentOpacity,
+            rotate: contentRotate
+          }}
         >
           <motion.h2 
             className="text-5xl md:text-7xl font-bold mb-12 text-center"
@@ -346,10 +495,11 @@ export default function HomePage() {
       {/* Final Call to Action */}
       <section className="relative z-10 min-h-screen flex items-center justify-center">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
           className="text-center"
+          style={{
+            opacity: contentOpacity,
+            scale: contentScale
+          }}
         >
           <motion.h2
             className="text-6xl md:text-8xl font-bold mb-8"
