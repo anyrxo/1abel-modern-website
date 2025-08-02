@@ -74,7 +74,7 @@ export default function HomePage() {
             transition={{ duration: 1.5, ease: "easeOut" }}
             className="mb-8"
           >
-            <div className="text-[40vh] font-bold leading-none relative">
+            <div className="text-[50vh] font-bold leading-none text-red-600 relative">
               <motion.span
                 animate={{
                   textShadow: [
@@ -84,7 +84,6 @@ export default function HomePage() {
                   ]
                 }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="text-red-600"
               >
                 1
               </motion.span>
