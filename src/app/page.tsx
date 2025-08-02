@@ -157,7 +157,7 @@ export default function HomePage() {
               }}
             />
           ))}
-        >
+          
           {/* Yin Half */}
           <motion.div
             className="absolute inset-0"
