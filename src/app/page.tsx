@@ -138,7 +138,7 @@ export default function HomePage() {
               WE BUILD VIRAL MOMENTS
             </motion.p>
             <motion.p className="text-xl text-gray-300 mb-8">
-              Australia's most advanced RnB/trap/rap label • We speak TikTok, not Triple J
+              The world's most advanced RnB/trap/rap label • We speak TikTok, not Triple J
             </motion.p>
             <motion.p className="text-lg text-gray-300 mb-12 max-w-4xl mx-auto">
               <span className="line-through text-gray-500">360 deals that steal your publishing ❌</span><br/>
@@ -218,7 +218,7 @@ export default function HomePage() {
             WHY OTHER LABELS FAIL
           </motion.h2>
           <motion.p className="text-xl text-center text-gray-300 mb-16 max-w-3xl mx-auto">
-            While they're stuck in 2015, we're building the future of music marketing
+            While other labels are stuck in 2015, we're building the future of music marketing globally
           </motion.p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -367,7 +367,7 @@ export default function HomePage() {
           </motion.h2>
           
           <motion.p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            Join the roster that's redefining Australian music. From your first track to your first gold plaque - we make stars, not just artists.
+            Join the roster that's redefining global music. From your first track to your first gold plaque - we make stars, not just artists.
           </motion.p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">

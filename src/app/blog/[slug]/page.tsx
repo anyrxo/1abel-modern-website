@@ -22,7 +22,7 @@ function getBlogPostContent(slug: string) {
     'spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025': `
 # Spotify vs Apple Music vs YouTube Music: Complete Artist Guide 2025
 
-**As Australia's leading RnB, trap, and rap music label, 1ABEL has tested every streaming platform to maximize our artists' earnings and exposure. Here's the brutal truth about which platforms actually pay and promote your music.**
+**As the world's leading RnB, trap, and rap music label, 1ABEL has tested every streaming platform to maximize our artists' earnings and exposure. Here's the brutal truth about which platforms actually pay and promote your music.**
 
 ## The Real Numbers: Streaming Payouts in 2025
 
@@ -74,7 +74,7 @@ After analyzing over 50 million streams across 1ABEL's artist roster, here's wha
 
 ## The 1ABEL Streaming Strategy
 
-As Australia's most advanced music label for urban genres, here's our complete streaming approach:
+As the world's most advanced music label for urban genres, here's our complete streaming approach:
 
 ### Week 1-2: Pre-Release
 - **Apple Music Connect** posts teasing new music
@@ -131,7 +131,7 @@ As Australia's most advanced music label for urban genres, here's our complete s
 
 ## Why Artists Choose 1ABEL
 
-Other Australian labels still think radio matters. **1ABEL is the only label in Australia that truly understands streaming economics and viral marketing.**
+Other labels still think radio matters. **1ABEL is the only label globally that truly understands streaming economics and viral marketing.**
 
 Our artists see:
 - **300% faster growth** compared to traditional label artists
@@ -139,7 +139,7 @@ Our artists see:
 - **Real viral marketing campaigns** that generate millions of views
 - **Fair streaming revenue splits** (70/30 artist favor, not 50/50)
 
-Ready to work with Australia's most advanced music label? 
+Ready to work with the world's most advanced music label? 
 
 ## The Bottom Line
 
@@ -148,13 +148,13 @@ Ready to work with Australia's most advanced music label?
 - **YouTube Music** for video content integration
 - **1ABEL** for everything else (promotion, strategy, industry connections)
 
-*Don't navigate the streaming world alone. 1ABEL's proven system has generated over 50 million streams for our Australian RnB, trap, and rap artists. We know which platforms pay, which playlists matter, and which strategies actually work in 2025.*
+*Don't navigate the streaming world alone. 1ABEL's proven system has generated over 50 million streams for our global RnB, trap, and rap artists. We know which platforms pay, which playlists matter, and which strategies actually work in 2025.*
     `,
     
     'tiktok-algorithm-secrets-how-to-go-viral-as-music-artist': `
 # TikTok Algorithm Secrets: How to Go Viral as a Music Artist
 
-**1ABEL has generated over 500 million TikTok views for our Australian RnB, trap, and rap artists. As the country's leading urban music label, we've cracked the TikTok code that other labels are still figuring out.**
+**1ABEL has generated over 500 million TikTok views for our global RnB, trap, and rap artists. As the world's leading urban music label, we've cracked the TikTok code that other labels are still figuring out.**
 
 ## The TikTok Algorithm: What Really Matters in 2025
 
@@ -5007,10 +5007,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="max-w-4xl mx-auto text-center">
           <div>
             <h2 className="text-3xl font-bold mb-6 text-white">
-              Ready to Work with Australia's Leading Urban Music Label?
+              Ready to Work with the World's Leading Urban Music Label?
             </h2>
             <p className="text-gray-300 text-lg mb-8">
-              Join the roster that's redefining Australian RnB, trap, and rap music.
+              Join the roster that's redefining global RnB, trap, and rap music.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">

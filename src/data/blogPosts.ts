@@ -30,11 +30,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '3',
-    title: 'Why Every Other Australian Label is Stuck in 2015 (And We\'re Not)',
+    title: 'Why Every Other Label is Stuck in 2015 (And We\'re Not)',
     category: 'INDUSTRY TRUTH',
     categoryColor: 'red', 
-    excerpt: 'Australian labels still pitching radio DJs while kids discover music on TikTok. They\'re signing artists for 360 deals when streaming changed everything. Here\'s how 1ABEL does it differently.',
-    description: 'Honest breakdown of why traditional Australian labels are failing artists and how modern artist development actually works in 2025.',
+    excerpt: 'Most labels still pitching radio DJs while kids discover music on TikTok. They\'re signing artists for 360 deals when streaming changed everything. Here\'s how 1ABEL does it differently.',
+    description: 'Honest breakdown of why traditional labels are failing artists and how modern artist development actually works in 2025.',
     readTime: '12 min',
     date: '2025-01-26',
     slug: 'why-every-other-australian-label-stuck-in-2015-and-we-are-not',
@@ -190,7 +190,7 @@ export const newsArticles: BlogPost[] = [
   },
   {
     id: 'n3',
-    title: 'Why Traditional Australian Labels Are Failing Independent Artists',
+    title: 'Why Traditional Labels Are Failing Independent Artists Globally',
     category: 'INDUSTRY ANALYSIS',
     categoryColor: 'red',
     excerpt: 'Major labels still prioritizing radio when 65% of music discovery happens on social media. Independent artists are outperforming label artists on streaming platforms. The old system is broken.',
