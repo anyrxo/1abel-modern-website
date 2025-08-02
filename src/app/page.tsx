@@ -42,16 +42,16 @@ export default function HomePage() {
   const labelOpacity = useTransform(scrollProgress, [0, 0.1], [0, 1])
 
   const phrases = [
-    "WHERE LEGENDS ARE BORN",
-    "BEYOND MUSIC",
-    "CULTURAL ARCHITECTS",
-    "DEFINING GENERATIONS",
-    "TIMELESS ARTISTRY",
-    "INFINITE POSSIBILITIES",
-    "CREATIVE EXCELLENCE",
-    "LUXURY IN SOUND",
-    "ELEVATED EXPERIENCES",
-    "FUTURE FORWARD"
+    "∞",
+    "•",
+    "◦",
+    "○",
+    "●",
+    "◯",
+    "⬤",
+    "✦",
+    "✧",
+    "⬥"
   ]
 
   return (
@@ -62,37 +62,54 @@ export default function HomePage() {
           style={{ scale: logoScale, opacity: logoOpacity }}
           className="relative"
         >
-          {/* Big 1 */}
+          {/* Big Red 1 with Glow */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: isLoaded ? 1 : 0, scale: isLoaded ? 1 : 0.8 }}
+            animate={{ 
+              opacity: isLoaded ? 1 : 0, 
+              scale: isLoaded ? 1 : 0.8,
+            }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="text-[40vh] font-bold leading-none"
+            className="text-[50vh] font-bold leading-none text-red-600 relative"
           >
-            1
+            <motion.span
+              animate={{
+                textShadow: [
+                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3)',
+                  '0 0 120px rgba(220, 38, 38, 0.8), 0 0 240px rgba(220, 38, 38, 0.5)',
+                  '0 0 80px rgba(220, 38, 38, 0.5), 0 0 160px rgba(220, 38, 38, 0.3)',
+                ],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            >
+              1
+            </motion.span>
           </motion.div>
           
-          {/* Vertical ABEL */}
+          {/* Vertical White ABEL on the 1 */}
           <motion.div
             style={{ opacity: labelOpacity }}
-            className="absolute top-[15%] left-[60%] flex flex-col text-[8vh] font-bold leading-none tracking-wider"
+            className="absolute top-[20%] left-[55%] flex flex-col text-[10vh] font-bold leading-[0.8] tracking-tight text-white"
           >
             {['A', 'B', 'E', 'L'].map((letter, index) => (
               <motion.span
                 key={letter}
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{ 
                   duration: 0.8, 
                   delay: 0.5 + index * 0.1,
-                  ease: "easeOut"
+                  ease: [0.34, 1.56, 0.64, 1]
                 }}
                 whileHover={{ 
-                  scale: 1.2, 
-                  x: 10,
+                  scale: 1.1, 
                   transition: { duration: 0.2 }
                 }}
-                className="cursor-pointer hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-gray-500"
+                className="cursor-pointer"
               >
                 {letter}
               </motion.span>
@@ -100,211 +117,172 @@ export default function HomePage() {
           </motion.div>
         </motion.div>
 
-        {/* Floating particles */}
+        {/* Insane floating orbs */}
         <div className="absolute inset-0 overflow-hidden">
-          {[...Array(50)].map((_, i) => (
+          {[...Array(20)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute w-1 h-1 bg-white/20 rounded-full"
+              className="absolute rounded-full"
+              style={{
+                width: Math.random() * 100 + 50,
+                height: Math.random() * 100 + 50,
+                background: `radial-gradient(circle, rgba(255,255,255,${Math.random() * 0.1}) 0%, transparent 70%)`,
+                filter: 'blur(1px)',
+              }}
               initial={{
                 x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920),
                 y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080),
               }}
               animate={{
-                x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920),
+                x: [null, Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920)],
                 y: [null, Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080)],
+                scale: [1, Math.random() + 0.5, 1],
               }}
               transition={{
-                duration: Math.random() * 20 + 10,
+                duration: Math.random() * 30 + 20,
                 repeat: Infinity,
                 repeatType: "reverse",
-                ease: "linear",
+                ease: "easeInOut",
               }}
             />
           ))}
         </div>
+        
+        {/* Glitch effect on hover */}
+        <motion.div
+          className="absolute inset-0 pointer-events-none"
+          initial={{ opacity: 0 }}
+          whileHover={{ opacity: 0.1 }}
+        >
+          <div className="absolute inset-0 bg-red-600/10 mix-blend-screen" />
+        </motion.div>
       </section>
 
       {/* Spacer for scroll */}
       <div className="h-[500vh]" />
 
-      {/* Infinite Scrolling Text - Layer 1 */}
-      <section className="fixed top-[20%] left-0 w-full overflow-hidden pointer-events-none">
+      {/* Subtle Infinite Scrolling Symbols */}
+      <section className="fixed inset-0 overflow-hidden pointer-events-none">
         <motion.div
           style={{ y }}
-          className="flex flex-col"
+          className="absolute top-0 left-[10%] flex flex-col gap-[20vh]"
         >
-          {[...Array(2)].map((_, repeatIndex) => (
-            <div key={repeatIndex} className="flex flex-col">
-              {phrases.map((phrase, index) => (
-                <motion.div
-                  key={`${repeatIndex}-${index}`}
-                  className="text-[15vh] font-bold whitespace-nowrap px-8 py-4 text-white/10 hover:text-white/30 transition-all duration-300"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  {phrase}
-                </motion.div>
-              ))}
-            </div>
+          {[...Array(10)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="text-[4vh] text-white/5"
+            >
+              {phrases[i % phrases.length]}
+            </motion.div>
           ))}
         </motion.div>
-      </section>
-
-      {/* Infinite Scrolling Text - Layer 2 (Opposite Direction) */}
-      <section className="fixed top-[40%] left-0 w-full overflow-hidden pointer-events-none">
+        
         <motion.div
           style={{ y: y2 }}
-          className="flex flex-col"
+          className="absolute top-0 right-[10%] flex flex-col gap-[30vh]"
         >
-          {[...Array(2)].map((_, repeatIndex) => (
-            <div key={repeatIndex} className="flex flex-col">
-              {[...phrases].reverse().map((phrase, index) => (
-                <motion.div
-                  key={`${repeatIndex}-${index}`}
-                  className="text-[10vh] font-light whitespace-nowrap px-8 py-2 text-white/5 hover:text-white/20 transition-all duration-300"
-                  style={{ fontStyle: 'italic' }}
-                  whileHover={{ scale: 1.02 }}
-                >
-                  {phrase}
-                </motion.div>
-              ))}
-            </div>
+          {[...Array(10)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="text-[3vh] text-white/3"
+            >
+              {phrases[(i + 5) % phrases.length]}
+            </motion.div>
           ))}
         </motion.div>
       </section>
 
-      {/* Content Sections */}
+      {/* Epic Statement */}
+      <section className="relative z-10 min-h-screen flex items-center justify-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.5, ease: [0.34, 1.56, 0.64, 1] }}
+          className="text-center"
+        >
+          <motion.h2 
+            className="text-[20vh] font-bold leading-[0.8] tracking-tighter"
+            style={{
+              backgroundImage: "linear-gradient(to right, #ffffff, #ff0000)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              color: "transparent",
+            }}
+            animate={{
+              filter: [
+                "hue-rotate(0deg)",
+                "hue-rotate(180deg)",
+                "hue-rotate(360deg)",
+              ],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          >
+            ELITE
+          </motion.h2>
+        </motion.div>
+      </section>
+
+      {/* Minimal Statement */}
       <section className="relative z-10 min-h-screen flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-          className="max-w-4xl mx-auto px-8 text-center"
+          transition={{ duration: 3 }}
+          className="max-w-2xl mx-auto px-8 text-center"
         >
-          <motion.h2 
-            className="text-6xl md:text-8xl font-bold mb-8"
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-          >
-            WE ARE THE FUTURE
-          </motion.h2>
           <motion.p 
-            className="text-xl md:text-2xl text-gray-400 leading-relaxed"
-            initial={{ y: 50, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+            className="text-2xl md:text-4xl font-light tracking-wide leading-relaxed"
+            initial={{ letterSpacing: "0.5em", opacity: 0 }}
+            whileInView={{ letterSpacing: "0.1em", opacity: 1 }}
+            transition={{ duration: 2, ease: "easeOut" }}
           >
-            Where visionaries unite. Where culture is crafted. Where legends rise.
+            WHERE LEGENDS BEGIN
           </motion.p>
         </motion.div>
       </section>
 
-      {/* Manifesto Section */}
-      <section className="relative z-10 min-h-screen flex items-center">
-        <div className="max-w-6xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <h3 className="text-5xl font-bold mb-6">OUR VISION</h3>
-            <p className="text-gray-400 text-lg leading-relaxed">
-              We don't just sign artists. We cultivate icons. We build empires. 
-              We create movements that transcend time and space.
-            </p>
-          </motion.div>
-          
-          <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="relative"
-          >
-            <div className="aspect-square bg-gradient-to-br from-white/10 to-transparent rounded-full blur-3xl" />
-            <motion.div
-              className="absolute inset-0 flex items-center justify-center"
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            >
-              <span className="text-9xl font-bold opacity-20">∞</span>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
+      {/* Interactive Element */}
       <section className="relative z-10 min-h-screen flex items-center justify-center">
         <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-center"
+          className="relative"
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 100 }}
         >
-          <h2 className="text-7xl md:text-9xl font-bold mb-12">
-            <motion.span
-              className="inline-block"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              READY?
-            </motion.span>
-          </h2>
-          
-          <motion.button
-            className="px-12 py-6 border-2 border-white text-xl font-medium relative overflow-hidden group"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <motion.div
+            className="w-[300px] h-[300px] rounded-full border border-white/20 flex items-center justify-center cursor-pointer"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
           >
-            <span className="relative z-10">ENTER THE REALM</span>
             <motion.div
-              className="absolute inset-0 bg-white"
-              initial={{ y: "100%" }}
-              whileHover={{ y: 0 }}
-              transition={{ duration: 0.3 }}
-            />
-            <motion.span
-              className="absolute inset-0 flex items-center justify-center text-black font-bold"
-              initial={{ y: "100%" }}
-              whileHover={{ y: 0 }}
-              transition={{ duration: 0.3 }}
+              className="w-[200px] h-[200px] rounded-full border border-white/30 flex items-center justify-center"
+              animate={{ rotate: -360 }}
+              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
             >
-              ENTER THE REALM
-            </motion.span>
-          </motion.button>
+              <motion.div
+                className="w-[100px] h-[100px] rounded-full bg-red-600/20 flex items-center justify-center"
+                whileHover={{ scale: 1.5, backgroundColor: "rgba(220, 38, 38, 0.5)" }}
+              >
+                <span className="text-2xl font-bold">∞</span>
+              </motion.div>
+            </motion.div>
+          </motion.div>
         </motion.div>
       </section>
 
-      {/* Footer */}
+      {/* Minimal Footer */}
       <footer className="relative z-10 py-20 text-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <p className="text-gray-600 mb-4">1ABEL © 2024</p>
-          <p className="text-gray-700 text-sm">Beyond Everything</p>
+          <p className="text-white/20 text-sm tracking-widest">© 2024</p>
         </motion.div>
       </footer>
-
-      {/* Background Gradient Animation */}
-      <div className="fixed inset-0 pointer-events-none">
-        <motion.div
-          className="absolute inset-0"
-          animate={{
-            background: [
-              "radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%)",
-              "radial-gradient(circle at 80% 80%, rgba(120, 119, 198, 0.1) 0%, transparent 50%)",
-              "radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%)",
-            ],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        />
-      </div>
     </div>
   )
 }
