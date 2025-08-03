@@ -394,14 +394,14 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row gap-6 justify-center mb-20"
           >
-            <ShimmerButton className="shadow-2xl">
+            <ShimmerButton className="shadow-2xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800">
               <a 
                 href="mailto:anyro@1abel.com" 
-                className="inline-flex items-center justify-center px-12 py-5 text-lg font-semibold"
+                className="inline-flex items-center justify-center px-12 py-5 text-lg font-semibold text-white hover:text-white focus:text-white"
               >
-                <Mail className="w-6 h-6 mr-3" />
+                <Mail className="w-6 h-6 mr-3 text-white" />
                 anyro@1abel.com
-                <ArrowRight className="w-5 h-5 ml-3" />
+                <ArrowRight className="w-5 h-5 ml-3 text-white" />
               </a>
             </ShimmerButton>
             
@@ -409,7 +409,7 @@ export default function HomePage() {
               href="https://twitter.com/anyrxo" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group border-2 border-white text-white hover:bg-white hover:text-black px-12 py-5 rounded-xl text-lg font-semibold transition-all duration-300 inline-flex items-center justify-center hover:shadow-xl"
+              className="group border-2 border-white text-white hover:bg-gradient-to-r hover:from-red-600 hover:to-red-700 hover:border-red-600 px-12 py-5 rounded-xl text-lg font-semibold transition-all duration-300 inline-flex items-center justify-center hover:shadow-2xl hover:shadow-red-600/20"
               whileHover={{ scale: 1.05, y: -5 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -429,7 +429,7 @@ export default function HomePage() {
             {[
               { value: 150, suffix: "M+", label: "Streams" },
               { value: 34, label: "Artists" },
-              { value: 2, suffix: "M+", label: "Brand Deals" },
+              { value: 2, suffix: "M+", label: "$Brand Deals" },
               { value: 80, suffix: "%", label: "Royalties" }
             ].map((stat, index) => (
               <div key={stat.label} className="text-center">

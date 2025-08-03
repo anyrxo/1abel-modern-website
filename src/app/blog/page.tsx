@@ -317,14 +317,14 @@ export default function BlogPage() {
                   viral marketing strategies, and the future of music.
                 </p>
                 
-                <ShimmerButton className="shadow-2xl">
+                <ShimmerButton className="shadow-2xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800">
                   <a 
                     href="mailto:anyro@1abel.com?subject=Newsletter%20Subscription"
-                    className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold"
+                    className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white hover:text-white focus:text-white"
                   >
-                    <Mail className="w-5 h-5 mr-2" />
+                    <Mail className="w-5 h-5 mr-2 text-white" />
                     Subscribe to Newsletter
-                    <ArrowRight className="w-5 h-5 ml-2" />
+                    <ArrowRight className="w-5 h-5 ml-2 text-white" />
                   </a>
                 </ShimmerButton>
               </div>

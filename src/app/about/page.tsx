@@ -273,7 +273,7 @@ export default function AboutPage() {
             {[
               { value: 150, suffix: "M+", label: "Total Streams", description: "Across all platforms" },
               { value: 34, label: "Global Artists", description: "And growing fast" },
-              { value: 2, suffix: "M+", label: "Brand Deals", description: "Secured for artists" },
+              { value: 2, suffix: "M+", label: "$Brand Deals", description: "Secured for artists" },
               { value: 500, suffix: "M+", label: "Social Views", description: "Viral campaigns" }
             ].map((stat, index) => (
               <motion.div
@@ -298,21 +298,21 @@ export default function AboutPage() {
             <h3 className="text-3xl font-bold text-center mb-12">Success Stories</h3>
             {[
               {
-                artist: "Luna Rose",
+                artist: "1ABEL Artist",
                 before: "0 monthly listeners",
                 after: "100K+ monthly listeners",
                 time: "6 months",
                 method: "TikTok viral campaign + playlist strategy"
               },
               {
-                artist: "TRVP LORD",
+                artist: "1ABEL Artist",
                 before: "Local producer",
                 after: "Nike & Fashion Nova deals",
                 time: "4 months",
                 method: "Influencer partnerships + brand alignment"
               },
               {
-                artist: "Zara X",
+                artist: "1ABEL Artist",
                 before: "Independent struggle",
                 after: "Billboard charting",
                 time: "8 months",
@@ -391,10 +391,10 @@ export default function AboutPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <ShimmerButton className="shadow-2xl">
-              <a href="mailto:anyro@1abel.com" className="inline-flex items-center justify-center px-12 py-5 text-lg font-semibold">
+            <ShimmerButton className="shadow-2xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800">
+              <a href="mailto:anyro@1abel.com" className="inline-flex items-center justify-center px-12 py-5 text-lg font-semibold text-white hover:text-white focus:text-white">
                 Apply Now
-                <ArrowRight className="w-5 h-5 ml-3" />
+                <ArrowRight className="w-5 h-5 ml-3 text-white" />
               </a>
             </ShimmerButton>
             <Link href="/contact">
