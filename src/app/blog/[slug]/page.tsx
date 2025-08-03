@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { blogPosts, newsArticles } from '@/data/blogPosts'
 import { formatBlogDate } from '@/utils/blogMetrics'
-import { Clock, Eye, Heart, Share2, Calendar, Tag } from 'lucide-react'
+import { Clock, Eye, Heart, Share2, Calendar, Tag, Mail } from 'lucide-react'
 import Link from 'next/link'
 
 // Get blog content by slug
@@ -20,40 +20,38 @@ function getBlogContent(slug: string) {
 function getBlogPostContent(slug: string) {
   const content: { [key: string]: string } = {
     'spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025': `
-# Spotify vs Apple Music vs YouTube Music: Complete Artist Guide 2025
-
-**As the world's leading RnB, trap, and rap music label, 1ABEL has tested every streaming platform to maximize our artists' earnings and exposure. Here's the brutal truth about which platforms actually pay and promote your music.**
+As the world's leading RnB, trap, and rap music label, 1ABEL has tested every streaming platform to maximize our artists' earnings and exposure. Here's the brutal truth about which platforms actually pay and promote your music.
 
 ## The Real Numbers: Streaming Payouts in 2025
 
 After analyzing over 50 million streams across 1ABEL's artist roster, here's what each platform actually pays per stream:
 
 ### Spotify: $0.003 - $0.005 per stream
-- **Pros:** Massive discovery potential, algorithm learns fast, playlist placement opportunities
-- **Cons:** Lowest payout rates, oversaturated with 100K+ daily uploads
-- **1ABEL Strategy:** We focus on playlist placement and algorithm optimization for our RnB/trap artists
+- Pros: Massive discovery potential, algorithm learns fast, playlist placement opportunities
+- Cons: Lowest payout rates, oversaturated with 100K+ daily uploads
+- 1ABEL Strategy: We focus on playlist placement and algorithm optimization for our RnB/trap artists
 
 ### Apple Music: $0.007 - $0.01 per stream  
-- **Pros:** Higher payouts, less competition, editorial team loves quality RnB
-- **Cons:** Harder discovery, smaller user base in Australia
-- **1ABEL Strategy:** Perfect for established artists, we pitch heavily to Apple Music's urban playlists
+- Pros: Higher payouts, less competition, editorial team loves quality RnB
+- Cons: Harder discovery, smaller user base in Australia
+- 1ABEL Strategy: Perfect for established artists, we pitch heavily to Apple Music's urban playlists
 
 ### YouTube Music: $0.002 - $0.008 per stream
-- **Pros:** Video integration, massive reach potential, Google's backing
-- **Cons:** Confusing interface, algorithm favors existing YouTube creators
-- **1ABEL Strategy:** We create visual content for every track to maximize YouTube Music placement
+- Pros: Video integration, massive reach potential, Google's backing
+- Cons: Confusing interface, algorithm favors existing YouTube creators
+- 1ABEL Strategy: We create visual content for every track to maximize YouTube Music placement
 
 ## Discovery: Where Artists Actually Get Found
 
-**The shocking truth:** 73% of new music discovery happens outside traditional streaming app browsing.
+The shocking truth: 73% of new music discovery happens outside traditional streaming app browsing.
 
 ### TikTok → Streaming Pipeline
 1ABEL has perfected the TikTok-to-streaming conversion:
-- **15-second hook optimization** gets tracks viral on TikTok
-- **Direct streaming links** in bio convert viral moments to streams
-- **Cross-platform promotion** amplifies viral content across all platforms
+- 15-second hook optimization gets tracks viral on TikTok
+- Direct streaming links in bio convert viral moments to streams
+- Cross-platform promotion amplifies viral content across all platforms
 
-**Case Study:** Our artist KOFI's track went from 50K TikTok views to 2.3M Spotify streams in 6 weeks using our viral formula.
+Case Study: Our artist KOFI's track went from 50K TikTok views to 2.3M Spotify streams in 6 weeks using our viral formula.
 
 ## Playlist Placement: What Actually Works
 
@@ -152,9 +150,7 @@ Ready to work with the world's most advanced music label?
     `,
     
     'tiktok-algorithm-secrets-how-to-go-viral-as-music-artist': `
-# TikTok Algorithm Secrets: How to Go Viral as a Music Artist
-
-**1ABEL has generated over 500 million TikTok views for our global RnB, trap, and rap artists. As the world's leading urban music label, we've cracked the TikTok code that other labels are still figuring out.**
+1ABEL has generated over 500 million TikTok views for our global RnB, trap, and rap artists. As the world's leading urban music label, we've cracked the TikTok code that other labels are still figuring out.
 
 ## The TikTok Algorithm: What Really Matters in 2025
 
@@ -4929,23 +4925,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
-            <span className="text-white">1ABEL</span>
+            <span className="text-red-600">1</span><span className="text-white">ABEL</span>
           </Link>
           
           <div className="flex items-center space-x-8">
             <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Blog & Insights
-            </Link>
-            <Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Services
+              Blog
             </Link>
             <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               About
             </Link>
-            <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Contact
-            </Link>
-            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center">
+              <Mail className="w-4 h-4 mr-2" />
               Get In Touch
             </a>
           </div>

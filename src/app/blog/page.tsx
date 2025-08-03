@@ -11,7 +11,7 @@ import NumberTicker from '@/components/magicui/number-ticker'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
-import { ChevronRight, Clock, Eye, Heart, Share2, Calendar, Tag } from 'lucide-react'
+import { ChevronRight, Clock, Eye, Heart, Share2, Calendar, Tag, Mail } from 'lucide-react'
 
 export default function BlogPage() {
   const [activeTab, setActiveTab] = useState<'general' | 'news'>('general')
@@ -43,23 +43,18 @@ export default function BlogPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
-            <span className="text-white">1ABEL</span>
+            <span className="text-red-600">1</span><span className="text-white">ABEL</span>
           </Link>
           
           <div className="flex items-center space-x-8">
             <Link href="/blog" className="text-gray-300 text-sm font-medium">
-              Blog & Insights
-            </Link>
-            <Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Services
+              Blog
             </Link>
             <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               About
             </Link>
-            <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Contact
-            </Link>
-            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
+            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center">
+              <Mail className="w-4 h-4 mr-2" />
               Get In Touch
             </a>
           </div>

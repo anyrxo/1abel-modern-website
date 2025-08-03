@@ -41,12 +41,8 @@ export default function HomePage() {
           </Link>
           
           <div className="flex items-center space-x-8">
-            <Link href="/" className="text-white hover:text-gray-300 transition-colors text-sm font-medium flex items-center">
-              <Home className="w-4 h-4 mr-2" />
-              Home
-            </Link>
             <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Blog & Insights
+              Blog
             </Link>
             <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               About
