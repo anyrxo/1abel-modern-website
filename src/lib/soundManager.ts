@@ -240,17 +240,8 @@ export class SoundManager {
     
     console.log('🎼 Playing welcome sequence...')
     
-    // Start with gentle UI sound
-    await this.playUISound()
-    
-    // Start atmospheric layers
+    // Just start atmospheric layers, no beeps or other sounds
     setTimeout(async () => await this.startAtmosphere(), 500)
-    
-    // Play a gentle musical sequence
-    setTimeout(async () => await this.playBeepSequence(), 2000)
-    
-    // Add some mystical elements
-    setTimeout(async () => await this.playMystical(), 4000)
   }
 
   // 🎛️ CONTROLS

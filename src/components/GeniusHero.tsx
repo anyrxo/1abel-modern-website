@@ -26,15 +26,15 @@ export function GeniusHero() {
   const [isLoaded, setIsLoaded] = useState(false)
   
   const { scrollY } = useScroll()
-  const scrollProgress = useTransform(scrollY, [0, 1500], [0, 1])
+  const scrollProgress = useTransform(scrollY, [0, 2000], [0, 1])
   
-  // Logo animations - from PERFECT IMPLEMENTATION
-  const logoScale = useTransform(scrollProgress, [0, 0.05, 0.1], [1, 1, 0])
-  const logoOpacity = useTransform(scrollProgress, [0, 0.04, 0.1], [1, 1, 0])
-  const labelOpacity = useTransform(scrollProgress, [0, 0.02, 0.08], [0, 1, 0])
+  // Logo animations - stays longer before fading
+  const logoScale = useTransform(scrollProgress, [0, 0.15, 0.2], [1, 1, 0])
+  const logoOpacity = useTransform(scrollProgress, [0, 0.14, 0.2], [1, 1, 0])
+  const labelOpacity = useTransform(scrollProgress, [0, 0.02, 0.18], [0, 1, 0])
   
   // Content animations
-  const contentOpacity = useTransform(scrollProgress, [0.1, 0.3], [0, 1])
+  const contentOpacity = useTransform(scrollProgress, [0.2, 0.4], [0, 1])
 
   // Mouse tracking for interactive gradient orbs
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -155,11 +155,12 @@ export function GeniusHero() {
               }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               className="cursor-pointer"
-              onMouseEnter={() => playMystical()}
+              onMouseEnter={() => {
+                // Play shard sound when hovering over the 1
+                playMystical() // This plays circles + shard
+              }}
               onClick={() => {
                 playLogo()
-                // Beep sequence after logo
-                setTimeout(() => playBeeps(), 800)
               }}
             >
               1
@@ -286,7 +287,7 @@ export function GeniusHero() {
       </section>
 
       {/* Spacer for scroll content */}
-      <div className="h-[150vh]" />
+      <div className="h-[200vh]" />
     </div>
   )
 }
