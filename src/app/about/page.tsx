@@ -196,26 +196,26 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="space-y-8"
             >
-              <h3 className="text-3xl font-bold text-red-600">Traditional Labels</h3>
+              <h3 className="text-3xl font-bold text-gray-400">Traditional Labels</h3>
               <ul className="space-y-4 text-gray-400">
                 <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✗</span>
+                  <span className="text-gray-500 mt-1">✗</span>
                   <span>Still pitching to radio DJs and hoping for the best</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✗</span>
+                  <span className="text-gray-500 mt-1">✗</span>
                   <span>18-month release cycles that kill momentum</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✗</span>
+                  <span className="text-gray-500 mt-1">✗</span>
                   <span>360 deals that take everything from artists</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✗</span>
+                  <span className="text-gray-500 mt-1">✗</span>
                   <span>Zero understanding of TikTok, Reels, or viral marketing</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✗</span>
+                  <span className="text-gray-500 mt-1">✗</span>
                   <span>Stuck in outdated methods from 20 years ago</span>
                 </li>
               </ul>
@@ -228,26 +228,26 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="space-y-8"
             >
-              <h3 className="text-3xl font-bold text-green-500">1ABEL Method</h3>
+              <h3 className="text-3xl font-bold text-red-600">1ABEL Method</h3>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-start gap-3">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <span className="text-red-600 mt-1">✓</span>
                   <span>Viral TikTok campaigns that actually convert to streams</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <span className="text-red-600 mt-1">✓</span>
                   <span>2-week releases to capture momentum instantly</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <span className="text-red-600 mt-1">✓</span>
                   <span>Fair deals: 80% royalties, artists keep masters</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <span className="text-red-600 mt-1">✓</span>
                   <span>Algorithm experts who've grown millions of followers</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-green-500 mt-1">✓</span>
+                  <span className="text-red-600 mt-1">✓</span>
                   <span>Modern tactics that dominate modern platforms</span>
                 </li>
               </ul>
