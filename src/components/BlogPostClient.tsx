@@ -8,7 +8,7 @@ import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import NumberTicker from '@/components/magicui/number-ticker'
 import BlurIn from '@/components/magicui/blur-in'
-import { formatBlogDate } from '@/utils/blogMetrics'
+import { formatBlogDate, getPostStats } from '@/utils/blogMetrics'
 
 interface BlogPostClientProps {
   post: any
@@ -21,6 +21,7 @@ export function BlogPostClient({ post, content }: BlogPostClientProps) {
   
   const shareUrl = `https://1abel.com/blog/${post.slug}`
   const shareText = `Check out "${post.title}" by @1abel`
+  const postStats = getPostStats(post)
   
   const handleShare = (platform: string) => {
     const urls = {
@@ -126,7 +127,7 @@ export function BlogPostClient({ post, content }: BlogPostClientProps) {
             <div className="flex items-center gap-6 text-sm text-gray-400">
               <span className="flex items-center gap-2">
                 <Eye className="w-4 h-4" />
-                <NumberTicker value={post.views} />
+                <NumberTicker value={postStats.views} />
               </span>
               <motion.button
                 onClick={() => setLiked(!liked)}
@@ -137,11 +138,11 @@ export function BlogPostClient({ post, content }: BlogPostClientProps) {
                 whileTap={{ scale: 0.95 }}
               >
                 <Heart className={`w-4 h-4 ${liked ? 'fill-current' : ''}`} />
-                <NumberTicker value={post.likes + (liked ? 1 : 0)} />
+                <NumberTicker value={postStats.likes + (liked ? 1 : 0)} />
               </motion.button>
               <span className="flex items-center gap-2">
                 <Share2 className="w-4 h-4" />
-                <NumberTicker value={post.shares} />
+                <NumberTicker value={postStats.shares} />
               </span>
             </div>
 

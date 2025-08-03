@@ -381,12 +381,56 @@ function getBlogPostContent(slug: string) {
     )
   }
 
-  return content[slug] || <div>Content not found</div>
+  return content[slug] || (
+    <div className="prose prose-invert max-w-none">
+      <div className="mb-12">
+        <p className="text-xl text-gray-300 leading-relaxed">
+          This blog post is currently being written and will be available soon. Check back later for the complete article.
+        </p>
+      </div>
+      
+      <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 mb-8">
+        <h2 className="text-2xl font-bold mb-4">Coming Soon</h2>
+        <p className="text-gray-300">
+          We're working hard to bring you valuable, actionable content that helps artists succeed. 
+          This article will cover everything you need to know about this topic.
+        </p>
+      </div>
+      
+      <div className="text-center p-8">
+        <p className="text-gray-400">
+          Want to be notified when this article is published? Contact us at anyro@1abel.com
+        </p>
+      </div>
+    </div>
+  )
 }
 
 function getNewsPostContent(slug: string) {
   const content: { [key: string]: JSX.Element } = {}
-  return content[slug] || <div>News content not found</div>
+  return content[slug] || (
+    <div className="prose prose-invert max-w-none">
+      <div className="mb-12">
+        <p className="text-xl text-gray-300 leading-relaxed">
+          This news article is currently being written and will be available soon. Check back later for the complete article.
+        </p>
+      </div>
+      
+      <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 mb-8">
+        <h2 className="text-2xl font-bold mb-4">Breaking Industry News</h2>
+        <p className="text-gray-300">
+          Stay tuned for the latest industry insights and analysis from 1ABEL. 
+          We track the most important developments affecting independent artists.
+        </p>
+      </div>
+      
+      <div className="text-center p-8">
+        <p className="text-gray-400">
+          Get industry news updates: anyro@1abel.com
+        </p>
+      </div>
+    </div>
+  )
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
