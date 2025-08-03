@@ -10,7 +10,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Which streaming platform pays best? Real breakdown of royalty rates, playlist opportunities, and promotion features. Spotify pays $0.003-0.005 per stream, Apple Music $0.007-0.01, but discovery differs massively.',
     description: 'Complete comparison of every major streaming platform from an artist perspective, including real payout data, playlist submission processes, and promotional opportunities.',
     readTime: '18 min',
-    date: '2025-01-30',
+    date: '2025-07-22',
     slug: 'spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025',
     keywords: ['spotify vs apple music', 'streaming royalties', 'music platform comparison', 'artist payouts', 'playlist submission'],
     type: 'general'
@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'The real TikTok algorithm breakdown every artist needs. Peak posting times (6-10am, 7-9pm), 15-second hook formulas, hashtag strategies, and why 10K followers doesn\'t guarantee virality.',
     description: 'Deep dive into TikTok\'s recommendation algorithm specifically for music content, including trending audio strategies, optimal posting schedules, and content that converts followers to streams.',
     readTime: '15 min',
-    date: '2025-01-28',
+    date: '2025-06-08',
     slug: 'tiktok-algorithm-secrets-how-to-go-viral-as-music-artist',
     keywords: ['tiktok algorithm', 'viral music', 'music marketing', 'social media growth', 'tiktok for artists'],
     type: 'general'
@@ -36,7 +36,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Most labels still pitching radio DJs while kids discover music on TikTok. They\'re signing artists for 360 deals when streaming changed everything. Here\'s how 1ABEL does it differently.',
     description: 'Honest breakdown of why traditional labels are failing artists and how modern artist development actually works in 2025.',
     readTime: '12 min',
-    date: '2025-01-26',
+    date: '2025-05-14',
     slug: 'why-every-other-australian-label-stuck-in-2015-and-we-are-not',
     keywords: ['australian music industry', 'record labels', 'music industry problems', '1abel approach', 'modern artist development'],
     type: 'general'
@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'TikTok has the discovery, Instagram has the engagement, YouTube Shorts has the monetization. Here\'s where to post what content for maximum impact as a music artist.',
     description: 'Strategic guide to short-form video platforms for musicians, including content optimization, cross-platform promotion, and platform-specific audience behavior.',
     readTime: '14 min',
-    date: '2025-01-24',
+    date: '2025-04-03',
     slug: 'instagram-reels-vs-tiktok-vs-youtube-shorts-where-should-artists-focus',
     keywords: ['instagram reels', 'tiktok vs youtube shorts', 'short form video', 'music marketing', 'social media strategy'],
     type: 'general'
@@ -62,7 +62,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Playlist pluggers charging $500+ for "guaranteed placement"? Scam. Editorial playlists need 50K+ monthly listeners? Myth. Here\'s what really gets you playlist adds.',
     description: 'No-BS guide to playlist placement, including real submission strategies, contact methods, and what curators actually look for in submissions.',
     readTime: '16 min',
-    date: '2025-01-22',
+    date: '2025-03-18',
     slug: 'playlist-placement-reality-check-what-actually-works-2025',
     keywords: ['playlist placement', 'spotify playlists', 'music promotion', 'playlist submission', 'music discovery'],
     type: 'general'
@@ -75,7 +75,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Stop begging for free stuff. Real brand partnerships start at $1,000+ for micro-influencers. Here\'s how to position yourself, create media kits, and negotiate rates.',
     description: 'Complete guide to securing brand partnerships as a musician, including email templates, rate negotiation, and building long-term brand relationships.',
     readTime: '13 min',
-    date: '2025-01-20',
+    date: '2025-08-12',
     slug: 'brand-deals-for-musicians-how-to-actually-get-paid-by-companies',
     keywords: ['brand deals', 'musician sponsorships', 'artist partnerships', 'music monetization', 'influencer marketing'],
     type: 'general'
@@ -88,7 +88,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'You don\'t need a $50K studio. Audio interface ($200), decent mic ($300), monitors ($400), and the right plugins. Here\'s the exact gear setup that gets radio-quality results.',
     description: 'Complete home studio setup guide for emerging artists, including equipment recommendations, software choices, and acoustic treatment on a budget.',
     readTime: '17 min',
-    date: '2025-01-18',
+    date: '2025-02-28',
     slug: 'music-production-on-budget-pro-studio-sound-under-2000',
     keywords: ['home studio setup', 'music production', 'budget recording', 'studio equipment', 'production tips'],
     type: 'general'
@@ -101,7 +101,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'DistroKid keeps 0% but offers no promotion. CD Baby takes 9% but provides better analytics. Label deals vary wildly. Here\'s when each option makes sense.',
     description: 'Comprehensive breakdown of music distribution options, including pros/cons of each service and when artists should consider label partnerships.',
     readTime: '14 min',
-    date: '2025-01-16',
+    date: '2025-01-09',
     slug: 'distribution-deals-explained-distrokid-vs-cd-baby-vs-label-deals',
     keywords: ['music distribution', 'distrokid', 'cd baby', 'record label deals', 'independent music'],
     type: 'general'
@@ -114,7 +114,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'One Netflix placement can pay more than 100K Spotify streams. Here\'s how to prepare your music for sync opportunities and where to submit.',
     description: 'Complete guide to sync licensing for independent artists, including preparation strategies, submission platforms, and industry contacts.',
     readTime: '15 min',
-    date: '2025-01-14',
+    date: '2025-06-25',
     slug: 'sync-licensing-for-beginners-getting-your-music-in-tv-films-ads',
     keywords: ['sync licensing', 'tv music', 'film music', 'advertising music', 'music licensing'],
     type: 'general'
@@ -127,7 +127,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Streaming pays pennies, but live shows pay rent. How to book gigs, negotiate fees, and build a touring circuit that actually makes money.',
     description: 'Practical guide to building a live performance career, including booking strategies, fee negotiation, and fan engagement at shows.',
     readTime: '12 min',
-    date: '2025-01-12',
+    date: '2025-04-17',
     slug: 'live-performance-revenue-gigs-festivals-building-fanbase',
     keywords: ['live music', 'concert booking', 'music festivals', 'touring', 'live performance'],
     type: 'general'
@@ -140,7 +140,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Social media platforms own your audience. Email lists are forever. Here\'s how to build an email list of real fans who actually open your messages and buy your music.',
     description: 'Email marketing strategies specifically for musicians, including list building tactics, content planning, and conversion optimization.',
     readTime: '11 min',
-    date: '2025-01-10',
+    date: '2025-03-05',
     slug: 'email-marketing-for-musicians-building-list-that-actually-converts',
     keywords: ['email marketing', 'fan engagement', 'music marketing', 'mailing list', 'artist newsletter'],
     type: 'general'
@@ -153,7 +153,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Publishing is where the real money is. Many artists sign away 50% of their publishing without understanding what they\'re giving up. Here\'s how to protect your rights.',
     description: 'Essential guide to music publishing, copyright, and protecting your intellectual property as an independent artist.',
     readTime: '19 min',
-    date: '2025-01-08',
+    date: '2025-07-11',
     slug: 'music-rights-publishing-dont-let-labels-steal-your-publishing',
     keywords: ['music publishing', 'music rights', 'copyright', 'music business', 'artist rights'],
     type: 'general'
@@ -170,7 +170,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'TikTok users can now add viral songs directly to Spotify/Apple Music with one tap. Early data shows 400% increase in stream conversion rates. This is the game-changer everyone predicted.',
     description: 'Analysis of TikTok\'s latest feature and its massive impact on music discovery and streaming conversion rates.',
     readTime: '8 min',
-    date: '2025-01-30',
+    date: '2025-08-07',
     slug: 'tiktok-new-add-to-music-app-feature-changes-everything-for-artists',
     keywords: ['tiktok music', 'music discovery', 'streaming conversion', 'tiktok features', 'music marketing'],
     type: 'news'
@@ -183,7 +183,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'Hip-hop/RnB accounted for 32% of all Australian streams in 2024, up from 24% in 2023. Pop-punk and indie rock continue declining as Gen Z drives urban music growth.',
     description: 'Deep dive into Spotify Wrapped 2024 data revealing major shifts in Australian music consumption patterns.',
     readTime: '12 min',
-    date: '2025-01-28',
+    date: '2025-05-23',
     slug: 'spotify-wrapped-2024-hip-hop-rnb-dominate-australian-streams',
     keywords: ['spotify wrapped', 'australian music', 'streaming statistics', 'hip hop', 'rnb trends'],
     type: 'news'
@@ -196,7 +196,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'Major labels still prioritizing radio when 65% of music discovery happens on social media. Independent artists are outperforming label artists on streaming platforms. The old system is broken.',
     description: 'Investigation into why traditional label models are failing in the streaming era and what independent artists need instead.',
     readTime: '15 min',
-    date: '2025-01-26',
+    date: '2025-02-14',
     slug: 'why-traditional-australian-labels-are-failing-independent-artists',
     keywords: ['record labels', 'independent music', 'australian music industry', 'streaming era', 'artist development'],
     type: 'news'
@@ -209,7 +209,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'Instagram\'s latest algorithm update prioritizes posts with trending audio. Music content seeing 250% higher reach compared to static posts. Artists should pivot strategy immediately.',
     description: 'Breakdown of Instagram\'s algorithm changes and strategic recommendations for music artists.',
     readTime: '9 min',
-    date: '2025-01-24',
+    date: '2025-06-30',
     slug: 'instagram-reels-algorithm-update-favors-music-content',
     keywords: ['instagram algorithm', 'reels update', 'music marketing', 'social media strategy', 'artist promotion'],
     type: 'news'
@@ -222,7 +222,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'Only 12% of new releases include spatial audio, but tracks with spatial audio get 40% more playlist placements. Here\'s why artists need to start mixing in Atmos.',
     description: 'Analysis of spatial audio adoption and its impact on streaming platform promotion.',
     readTime: '11 min',
-    date: '2025-01-22',
+    date: '2025-04-19',
     slug: 'apple-music-spatial-audio-why-most-artists-are-missing-out',
     keywords: ['spatial audio', 'apple music', 'atmos mixing', 'audio technology', 'music production'],
     type: 'news'
@@ -235,7 +235,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'YouTube expands Shorts monetization with music-specific features. Artists can now earn directly from short-form content. Early adopters seeing $500-2000+ monthly revenue.',
     description: 'Complete guide to YouTube Shorts monetization opportunities for independent artists.',
     readTime: '10 min',
-    date: '2025-01-20',
+    date: '2025-01-27',
     slug: 'youtube-shorts-monetization-new-revenue-streams-for-musicians',
     keywords: ['youtube shorts', 'music monetization', 'youtube revenue', 'content creation', 'artist income'],
     type: 'news'
@@ -248,7 +248,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'Netflix, Amazon Prime, and Disney+ are licensing 300% more independent music than 2023. Budget allocations increased, but most artists don\'t know how to get involved.',
     description: 'Industry report on the massive growth in sync licensing opportunities for independent artists.',
     readTime: '13 min',
-    date: '2025-01-18',
+    date: '2025-03-12',
     slug: 'sync-licensing-boom-tv-shows-desperately-need-indie-music',
     keywords: ['sync licensing', 'tv music', 'independent artists', 'streaming platforms', 'music licensing'],
     type: 'news'
@@ -261,7 +261,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'Fake playlist curators charge $200-500 for "guaranteed placement" on playlists with bought followers. Here\'s how to spot scams and find legitimate submission opportunities.',
     description: 'Comprehensive guide to avoiding playlist promotion scams and finding legitimate opportunities.',
     readTime: '14 min',
-    date: '2025-01-16',
+    date: '2025-07-04',
     slug: 'playlist-submission-scams-what-to-avoid-2025',
     keywords: ['playlist scams', 'music promotion', 'spotify playlists', 'industry scams', 'playlist submission'],
     type: 'news'
@@ -274,7 +274,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'Small venues closing as artists build direct fan relationships online. House concerts and private events increase 400%. The live music landscape is changing forever.',
     description: 'Analysis of how digital fan engagement is reshaping live music performance opportunities.',
     readTime: '12 min',
-    date: '2025-01-14',
+    date: '2025-05-08',
     slug: 'live-music-venues-struggle-as-artists-go-direct-to-fan',
     keywords: ['live music', 'venue crisis', 'direct to fan', 'house concerts', 'music industry'],
     type: 'news'
@@ -287,7 +287,7 @@ export const newsArticles: BlogPost[] = [
     excerpt: 'AI can now create full songs in any genre. But human artists using AI tools strategically are seeing massive productivity gains. The key is knowing how to leverage, not compete.',
     description: 'Balanced analysis of AI music generation and how human artists can adapt and thrive.',
     readTime: '16 min',
-    date: '2025-01-12',
+    date: '2025-08-01',
     slug: 'ai-music-tools-threat-or-opportunity-for-human-artists',
     keywords: ['ai music', 'music technology', 'artist tools', 'music creation', 'industry trends'],
     type: 'news'

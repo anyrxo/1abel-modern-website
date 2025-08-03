@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { calculateBlogMetrics, formatBlogDate } from '@/utils/blogMetrics'
+import { calculateBlogMetrics, formatBlogDate, getPostStats } from '@/utils/blogMetrics'
 import { blogPosts, newsArticles } from '@/data/blogPosts'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import NumberTicker from '@/components/magicui/number-ticker'
@@ -94,7 +94,7 @@ export default function BlogPage() {
               { value: totalMetrics.totalPosts, label: "Articles", icon: <BookOpen className="w-5 h-5" /> },
               { value: totalMetrics.totalViews, suffix: "+", label: "Total Views", icon: <Eye className="w-5 h-5" /> },
               { value: totalMetrics.totalLikes, suffix: "+", label: "Likes", icon: <Heart className="w-5 h-5" /> },
-              { value: Math.round(totalMetrics.totalViews * 0.02), suffix: "+", label: "Shares", icon: <Share2 className="w-5 h-5" /> }
+              { value: totalMetrics.totalShares, suffix: "+", label: "Shares", icon: <Share2 className="w-5 h-5" /> }
             ].map((stat, index) => (
               <div key={stat.label} className="text-center">
                 <div className="flex items-center justify-center gap-2 text-gray-400 mb-2">
@@ -192,18 +192,25 @@ export default function BlogPage() {
 
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-6 text-sm text-gray-400">
-                        <span className="flex items-center gap-2">
-                          <Eye className="w-4 h-4" />
-                          <NumberTicker value={1247} />
-                        </span>
-                        <span className="flex items-center gap-2">
-                          <Heart className="w-4 h-4" />
-                          <NumberTicker value={62} />
-                        </span>
-                        <span className="flex items-center gap-2">
-                          <Share2 className="w-4 h-4" />
-                          <NumberTicker value={25} />
-                        </span>
+                        {(() => {
+                          const stats = getPostStats(currentPosts[0]);
+                          return (
+                            <>
+                              <span className="flex items-center gap-2">
+                                <Eye className="w-4 h-4" />
+                                <NumberTicker value={stats.views} />
+                              </span>
+                              <span className="flex items-center gap-2">
+                                <Heart className="w-4 h-4" />
+                                <NumberTicker value={stats.likes} />
+                              </span>
+                              <span className="flex items-center gap-2">
+                                <Share2 className="w-4 h-4" />
+                                <NumberTicker value={stats.shares} />
+                              </span>
+                            </>
+                          );
+                        })()}
                       </div>
 
                       <motion.span 
@@ -272,7 +279,21 @@ export default function BlogPage() {
                           </span>
                           <span className="flex items-center gap-1">
                             <Eye className="w-3 h-3" />
-                            1.2k
+                            {(() => {
+                              const stats = getPostStats(post);
+                              const views = stats.views;
+                              if (views >= 1000) {
+                                return `${(views / 1000).toFixed(1)}k`;
+                              }
+                              return views.toString();
+                            })()}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <Heart className="w-3 h-3" />
+                            {(() => {
+                              const stats = getPostStats(post);
+                              return stats.likes;
+                            })()}
                           </span>
                         </div>
 
