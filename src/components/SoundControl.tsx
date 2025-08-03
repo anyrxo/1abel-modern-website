@@ -2,13 +2,23 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Volume2, VolumeX } from 'lucide-react'
+import { Volume2, VolumeX, Music } from 'lucide-react'
 import { useSound } from '@/lib/soundManager'
 
 export function SoundControl() {
-  const [isMuted, setIsMuted] = useState(false)
+  const [isMuted, setIsMuted] = useState(true)  // Start muted by default
   const [volume, setVolume] = useState(0.4)
-  const { setVolume: setSoundVolume, stopAllSounds } = useSound()
+  const [musicPlaying, setMusicPlaying] = useState(false)
+  const { 
+    setVolume: setSoundVolume, 
+    stopAllSounds, 
+    enable, 
+    disable,
+    startBackgroundMusic,
+    stopBackgroundMusic,
+    playWind,
+    playRoomAmbient
+  } = useSound()
 
   useEffect(() => {
     // Check if user has a preference stored
@@ -32,9 +42,10 @@ export function SoundControl() {
     setIsMuted(newMuted)
     
     if (newMuted) {
-      setSoundVolume(0)
+      disable()
       stopAllSounds()
     } else {
+      enable()
       setSoundVolume(volume)
     }
     
@@ -53,6 +64,18 @@ export function SoundControl() {
     
     localStorage.setItem('1abel-sound-volume', newVolume.toString())
     localStorage.setItem('1abel-sound-muted', (newVolume === 0).toString())
+  }
+
+  const toggleMusic = () => {
+    if (musicPlaying) {
+      stopBackgroundMusic()
+      setMusicPlaying(false)
+    } else {
+      startBackgroundMusic()
+      playWind()
+      playRoomAmbient()
+      setMusicPlaying(true)
+    }
   }
 
   return (
@@ -75,6 +98,20 @@ export function SoundControl() {
           ) : (
             <Volume2 className="w-4 h-4 text-white" />
           )}
+        </motion.button>
+        
+        <motion.button
+          onClick={toggleMusic}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className={`p-2 rounded-lg transition-colors ${
+            musicPlaying 
+              ? 'bg-red-600 hover:bg-red-700 text-white' 
+              : 'bg-gray-800 hover:bg-gray-700 text-gray-400'
+          }`}
+          data-sound="shard"
+        >
+          <Music className="w-4 h-4" />
         </motion.button>
         
         <div className="flex items-center space-x-2">

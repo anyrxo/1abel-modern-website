@@ -18,7 +18,12 @@ export function GeniusHero() {
     playParticles, 
     startBackgroundMusic,
     playWind,
-    playCircles 
+    playCircles,
+    playIgloo,
+    playProjectText,
+    playRandomBeep,
+    playRandomUI,
+    playManifesto
   } = useSound()
   const [isLoaded, setIsLoaded] = useState(false)
   
@@ -75,14 +80,7 @@ export function GeniusHero() {
   }
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoaded(true)
-      // Start ambient sounds after page loads
-      setTimeout(() => {
-        playWind() // Start wind ambient
-        startBackgroundMusic() // Start background music
-      }, 2000)
-    }, 100)
+    setTimeout(() => setIsLoaded(true), 100)
     
     // Initialize interactive sounds for the entire page
     const cleanup = initInteractiveSounds()
@@ -110,10 +108,18 @@ export function GeniusHero() {
           </Link>
           
           <div className="flex items-center space-x-8">
-            <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+            <Link 
+              href="/blog" 
+              className="text-white hover:text-gray-300 transition-colors text-sm font-medium"
+              onMouseEnter={() => playProjectText()}
+            >
               Blog
             </Link>
-            <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
+            <Link 
+              href="/about" 
+              className="text-white hover:text-gray-300 transition-colors text-sm font-medium"
+              onMouseEnter={() => playManifesto()}
+            >
               About
             </Link>
             <a 
@@ -168,8 +174,8 @@ export function GeniusHero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: 1 + index * 0.15, ease: [0.34, 1.56, 0.64, 1] }}
                 className="cursor-pointer"
-                onClick={() => playCircles()}
-                onMouseEnter={() => playParticles()}
+                onClick={() => playRandomBeep()}
+                onMouseEnter={() => playIgloo()}
                 data-sound="shard"
               >
                 {letter}
@@ -182,58 +188,79 @@ export function GeniusHero() {
       {/* Interactive gradient orbs that follow mouse */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-red-600/30 to-red-400/20 blur-3xl"
+          className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-red-600/30 to-red-400/20 blur-3xl cursor-pointer"
           animate={{
             x: mousePosition.x * 150,
             y: mousePosition.y * 150,
           }}
           transition={{ type: "spring", damping: 30 }}
           style={{ left: '10%', top: '20%' }}
+          onClick={() => playCircles()}
         />
         <motion.div
-          className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-red-500/20 to-orange-600/15 blur-3xl"
+          className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-red-500/20 to-orange-600/15 blur-3xl cursor-pointer"
           animate={{
             x: mousePosition.x * -120,
             y: mousePosition.y * -120,
           }}
           transition={{ type: "spring", damping: 25 }}
           style={{ right: '15%', bottom: '15%' }}
+          onClick={() => playWind()}
         />
         <motion.div
-          className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-red-700/25 to-red-500/20 blur-3xl"
+          className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-red-700/25 to-red-500/20 blur-3xl cursor-pointer"
           animate={{
             x: mousePosition.x * 80,
             y: mousePosition.y * -80,
           }}
           transition={{ type: "spring", damping: 35 }}
           style={{ left: '60%', top: '60%' }}
+          onClick={() => playRandomUI()}
         />
       </div>
 
-      {/* Background Stars - PERFECT IMPLEMENTATION */}
+      {/* Background Stars - Mouse Following */}
       <section className="fixed inset-0 overflow-hidden pointer-events-none">
-        {[...Array(100)].map((_, i) => (
-          <motion.div
-            key={`star-${i}`}
-            className="absolute text-white text-xs"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              opacity: [0.1, 0.8, 0.1],
-              scale: [0.5, 1.2, 0.5],
-            }}
-            transition={{
-              duration: Math.random() * 3 + 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: Math.random() * 2
-            }}
-          >
-            ✦
-          </motion.div>
-        ))}
+        {[...Array(100)].map((_, i) => {
+          const baseX = Math.random() * 100
+          const baseY = Math.random() * 100
+          const speed = 0.1 + Math.random() * 0.2 // Random speed for each star
+          
+          return (
+            <motion.div
+              key={`star-${i}`}
+              className="absolute text-white text-xs"
+              style={{
+                left: `${baseX}%`,
+                top: `${baseY}%`,
+              }}
+              animate={{
+                x: mousePosition.x * (speed * 100),
+                y: mousePosition.y * (speed * 100),
+                opacity: [0.1, 0.8, 0.1],
+                scale: [0.5, 1.2, 0.5],
+              }}
+              transition={{
+                x: { type: "spring", damping: 20, stiffness: 100 },
+                y: { type: "spring", damping: 20, stiffness: 100 },
+                opacity: {
+                  duration: Math.random() * 3 + 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: Math.random() * 2
+                },
+                scale: {
+                  duration: Math.random() * 3 + 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: Math.random() * 2
+                }
+              }}
+            >
+              ✦
+            </motion.div>
+          )
+        })}
       </section>
 
       {/* Spacer for scroll content */}

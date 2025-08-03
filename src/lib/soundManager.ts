@@ -11,7 +11,7 @@ interface SoundConfig {
 }
 
 export class SoundManager {
-  private enabled: boolean = true
+  private enabled: boolean = false  // Start muted by default
   private globalVolume: number = 0.4
   private context: AudioContext | null = null
   private initialized: boolean = false
@@ -75,7 +75,10 @@ export class SoundManager {
   }
 
   private async playSound(soundName: string, config: SoundConfig = { volume: 1 }) {
-    if (!this.context || !this.enabled || !this.audioBuffers.has(soundName)) return
+    if (!this.context || !this.enabled || !this.audioBuffers.has(soundName)) {
+      console.log(`Sound ${soundName} not played: enabled=${this.enabled}, context=${!!this.context}, hasBuffer=${this.audioBuffers.has(soundName)}`)
+      return
+    }
 
     const buffer = this.audioBuffers.get(soundName)!
     const source = this.context.createBufferSource()
@@ -165,6 +168,26 @@ export class SoundManager {
     this.playSound('manifesto', { volume: 0.5 })
   }
 
+  public playIgloo() {
+    this.playSound('igloo', { volume: 0.3 })
+  }
+
+  public playProjectText() {
+    this.playSound('project-text', { volume: 0.4 })
+  }
+
+  // Random sound variations
+  public playRandomBeep() {
+    const variation = Math.floor(Math.random() * 3) + 1
+    this.playBeeps(variation)
+  }
+
+  public playRandomUI() {
+    const sounds = ['ui-short', 'ui-long']
+    const sound = sounds[Math.floor(Math.random() * sounds.length)]
+    this.playSound(sound, { volume: 0.3 })
+  }
+
   // Background music
   public async startBackgroundMusic() {
     if (this.backgroundMusic) return
@@ -242,6 +265,10 @@ export function useSound() {
     playWind: () => soundManager.playWind(),
     playCircles: () => soundManager.playCircles(),
     playManifesto: () => soundManager.playManifesto(),
+    playIgloo: () => soundManager.playIgloo(),
+    playProjectText: () => soundManager.playProjectText(),
+    playRandomBeep: () => soundManager.playRandomBeep(),
+    playRandomUI: () => soundManager.playRandomUI(),
     
     // Background sounds
     startBackgroundMusic: () => soundManager.startBackgroundMusic(),
