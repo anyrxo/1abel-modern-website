@@ -768,6 +768,12 @@ video {
 .mt-20 {
   margin-top: 5rem;
 }
+.mr-4 {
+  margin-right: 1rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -858,6 +864,9 @@ video {
 .h-\[200vh\] {
   height: 200vh;
 }
+.h-12 {
+  height: 3rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -905,6 +914,9 @@ video {
 }
 .w-0\.5 {
   width: 0.125rem;
+}
+.w-12 {
+  width: 3rem;
 }
 .min-w-\[40px\] {
   min-width: 40px;
@@ -2214,6 +2226,10 @@ video {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:text-2xl {
