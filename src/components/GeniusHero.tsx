@@ -182,13 +182,12 @@ export function GeniusHero() {
                   transition={{ duration: 0.4, delay: 1 + index * 0.15, ease: [0.34, 1.56, 0.64, 1] }}
                   className="cursor-pointer"
                   onMouseEnter={() => {
-                    // Each letter plays a different sound
-                    sounds[index]()
+                    // Play hover sound on each letter
+                    playHover()
                   }}
                   onClick={() => {
-                    // Double click for emphasis
+                    // Each letter plays a different sound on click
                     sounds[index]()
-                    setTimeout(() => playHover(), 300)
                   }}
                   whileHover={{ 
                     scale: 1.1,

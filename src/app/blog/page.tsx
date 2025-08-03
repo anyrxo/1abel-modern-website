@@ -11,6 +11,7 @@ import NumberTicker from '@/components/magicui/number-ticker'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import WordRotate from '@/components/magicui/word-rotate'
 import BlurIn from '@/components/magicui/blur-in'
+import { Header } from '@/components/Header'
 import { ChevronRight, Clock, Eye, Heart, Share2, Calendar, Tag, Mail } from 'lucide-react'
 
 export default function BlogPage() {
@@ -40,146 +41,56 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
-        <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
-            <span className="text-red-600">1</span><span className="text-white">ABEL</span>
-          </Link>
-          
-          <div className="flex items-center space-x-8">
-            <Link href="/blog" className="text-gray-300 text-sm font-medium">
-              Blog
-            </Link>
-            <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              About
-            </Link>
-            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center">
-              <Mail className="w-4 h-4 mr-2" />
-              Get In Touch
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden pt-32 pb-20 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-black" />
-        
-        <div className="relative max-w-6xl mx-auto text-center">
-          {/* Animated Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 30 }}
-            transition={{ duration: 0.8 }}
-            className="mb-8"
-          >
-            <AnimatedGradientText className="mb-6">
-              🎵 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
-              <span className="inline animate-gradient bg-gradient-to-r from-gray-500 via-white to-gray-500 bg-clip-text text-transparent">
-                1ABEL Blog & Insights
-              </span>
-            </AnimatedGradientText>
-          </motion.div>
-
-          <BlurIn
-            word="Where Music Meets Innovation"
-            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent"
-            duration={1.2}
-          />
-
-          <motion.div
+      {/* Hero Section - Minimal and Clean */}
+      <section className="relative pt-32 pb-16 px-8">
+        <div className="max-w-6xl mx-auto">
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-300 mb-8"
+            transition={{ duration: 0.8 }}
+            className="text-6xl md:text-8xl font-bold mb-4"
           >
-            Discover insights about{" "}
-            <WordRotate
-              words={rotatingWords}
-              className="text-gray-400 font-bold"
-              duration={3000}
-            />
-          </motion.div>
-
-          {/* Blog Metrics */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: isLoaded ? 1 : 0, scale: isLoaded ? 1 : 0.9 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto mb-12"
+            <span className="text-red-600">1</span>ABEL BLOG
+          </motion.h1>
+          
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: isLoaded ? 1 : 0, y: isLoaded ? 0 : 20 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-xl text-gray-400 max-w-2xl"
           >
-            <div className="text-center">
-              <NumberTicker value={totalMetrics.totalPosts} className="text-3xl font-bold text-gray-400" />
-              <p className="text-sm text-gray-400 mt-1">Articles</p>
-            </div>
-            <div className="text-center">
-              <NumberTicker value={totalMetrics.totalViews} className="text-3xl font-bold text-gray-400" />
-              <p className="text-sm text-gray-400 mt-1">Views</p>
-            </div>
-            <div className="text-center">
-              <NumberTicker value={totalMetrics.totalLikes} className="text-3xl font-bold text-gray-400" />
-              <p className="text-sm text-gray-400 mt-1">Likes</p>
-            </div>
-            <div className="text-center">
-              <NumberTicker value={totalMetrics.averageReadTime} className="text-3xl font-bold text-gray-400" />
-              <p className="text-sm text-gray-400 mt-1">Avg Read</p>
-            </div>
-          </motion.div>
+            Insights on modern music, streaming strategy, and building Australia's most advanced music label.
+          </motion.p>
         </div>
       </section>
 
-      {/* Tab Navigation */}
-      <section className="py-8 px-4">
+      {/* Tab Navigation - Simple */}
+      <section className="px-8 pb-12">
         <div className="max-w-6xl mx-auto">
-          <div className="flex justify-center mb-12">
-            <div className="flex bg-gray-900/50 rounded-full p-1 backdrop-blur">
-              <button
-                onClick={() => setActiveTab('general')}
-                className={`px-8 py-3 rounded-full transition-all duration-300 ${
-                  activeTab === 'general'
-                    ? 'bg-gray-600 text-white shadow-lg shadow-gray-600/25'
-                    : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                Music & Brand ({blogPosts.length})
-              </button>
-              <button
-                onClick={() => setActiveTab('news')}
-                className={`px-8 py-3 rounded-full transition-all duration-300 ${
-                  activeTab === 'news'
-                    ? 'bg-gray-600 text-white shadow-lg shadow-gray-600/25'
-                    : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                Industry News ({newsArticles.length})
-              </button>
-            </div>
+          <div className="flex gap-8 mb-12 border-b border-gray-800">
+            <button
+              onClick={() => setActiveTab('general')}
+              className={`pb-4 px-1 transition-all duration-300 ${
+                activeTab === 'general'
+                  ? 'text-white border-b-2 border-red-600'
+                  : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              Music & Brand
+            </button>
+            <button
+              onClick={() => setActiveTab('news')}
+              className={`pb-4 px-1 transition-all duration-300 ${
+                activeTab === 'news'
+                  ? 'text-white border-b-2 border-red-600'
+                  : 'text-gray-400 hover:text-white'
+              }`}
+            >
+              Industry News
+            </button>
           </div>
-
-          {/* Current Tab Metrics */}
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-2xl mx-auto"
-          >
-            <div className="text-center p-4 bg-gray-900/30 rounded-lg backdrop-blur">
-              <Eye className="w-6 h-6 text-gray-400 mx-auto mb-2" />
-              <NumberTicker value={currentMetrics.totalViews} className="text-2xl font-bold text-white" />
-              <p className="text-sm text-gray-400">Total Views</p>
-            </div>
-            <div className="text-center p-4 bg-gray-900/30 rounded-lg backdrop-blur">
-              <Heart className="w-6 h-6 text-gray-400 mx-auto mb-2" />
-              <NumberTicker value={currentMetrics.totalLikes} className="text-2xl font-bold text-white" />
-              <p className="text-sm text-gray-400">Total Likes</p>
-            </div>
-            <div className="text-center p-4 bg-gray-900/30 rounded-lg backdrop-blur">
-              <Clock className="w-6 h-6 text-gray-400 mx-auto mb-2" />
-              <NumberTicker value={currentMetrics.averageReadTime} className="text-2xl font-bold text-white" />
-              <p className="text-sm text-gray-400">Avg Minutes</p>
-            </div>
-          </motion.div>
 
           {/* Blog Posts Grid */}
           <motion.div
@@ -191,126 +102,50 @@ export default function BlogPage() {
           >
             {currentPosts.map((post, index) => (
               <Link key={post.id} href={`/blog/${post.slug}`}>
-                <AnimatedCard
-                  hoverEffect={index % 5 === 0 ? 'glow' : index % 3 === 0 ? 'tilt' : 'lift'}
-                  glowColor="gray"
-                  delay={index * 100}
-                  className="bg-gray-900/50 backdrop-blur rounded-xl overflow-hidden border border-gray-800 hover:border-gray-500/50 cursor-pointer h-full"
+                <motion.article
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="group cursor-pointer"
                 >
-                <div className="p-6">
-                  {/* Category Badge */}
-                  <div className="flex items-center justify-between mb-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-${post.categoryColor}-500/20 text-${post.categoryColor}-400 border border-${post.categoryColor}-500/30`}>
-                      <Tag className="w-3 h-3 inline mr-1" />
-                      {post.category}
-                    </span>
-                    <span className="text-xs text-gray-500">
-                      <Calendar className="w-3 h-3 inline mr-1" />
-                      {formatBlogDate(post.date)}
-                    </span>
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="text-xl font-bold mb-3 text-white group-hover:text-gray-400 transition-colors line-clamp-2">
-                    {post.title}
-                  </h3>
-
-                  {/* Excerpt */}
-                  <p className="text-gray-400 text-sm mb-4 line-clamp-3">
-                    {post.excerpt}
-                  </p>
-
-                  {/* Meta Info */}
-                  <div className="flex items-center justify-between text-xs text-gray-500 mb-4">
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <Clock className="w-3 h-3 mr-1" />
-                        {post.readTime}
-                      </div>
-                      <div className="flex items-center">
-                        <Eye className="w-3 h-3 mr-1" />
-                        {Math.floor(Math.random() * 5000 + 1000)}
-                      </div>
-                      <div className="flex items-center">
-                        <Heart className="w-3 h-3 mr-1" />
-                        {Math.floor(Math.random() * 200 + 50)}
-                      </div>
+                  <div className="border-b border-gray-800 pb-8 mb-8 hover:border-gray-700 transition-colors">
+                    {/* Date and Category */}
+                    <div className="flex items-center gap-4 text-sm text-gray-400 mb-4">
+                      <time>{formatBlogDate(post.date)}</time>
+                      <span className="text-red-600">{post.category}</span>
+                      <span>{post.readTime}</span>
                     </div>
-                  </div>
 
-                  {/* Keywords */}
-                  <div className="flex flex-wrap gap-1 mb-4">
-                    {post.keywords.slice(0, 3).map((keyword) => (
-                      <span
-                        key={keyword}
-                        className="px-2 py-1 bg-gray-800 text-gray-400 text-xs rounded"
-                      >
-                        #{keyword}
-                      </span>
-                    ))}
-                  </div>
+                    {/* Title */}
+                    <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-red-600 transition-colors">
+                      {post.title}
+                    </h3>
 
-                  {/* Read More Button */}
-                  <ShimmerButton
-                    className="w-full bg-gray-600 hover:bg-gray-700 text-white text-sm"
-                    shimmerColor="#9ca3af"
-                    background="linear-gradient(135deg, #4b5563, #374151)"
-                  >
-                    Read Article
-                    <ChevronRight className="w-4 h-4 ml-2" />
-                  </ShimmerButton>
-                </div>
-                </AnimatedCard>
+                    {/* Excerpt */}
+                    <p className="text-gray-400 mb-4 line-clamp-2">
+                      {post.excerpt}
+                    </p>
+
+                    {/* Read More */}
+                    <span className="text-red-600 group-hover:text-white transition-colors inline-flex items-center">
+                      Read Article
+                      <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </div>
+                </motion.article>
               </Link>
             ))}
           </motion.div>
 
-          {/* Load More Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-center mt-12"
-          >
-            <ShimmerButton
-              className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-4"
-              shimmerColor="#ffffff"
-              background="linear-gradient(135deg, #374151, #1f2937)"
-            >
-              Load More Articles
-              <ChevronRight className="w-5 h-5 ml-2" />
-            </ShimmerButton>
-          </motion.div>
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-gray-900/20 to-black">
-        <div className="max-w-4xl mx-auto text-center">
-          <BlurIn
-            word="Stay In The Loop"
-            className="text-3xl md:text-4xl font-bold mb-4"
-            duration={0.8}
-          />
-          <p className="text-gray-300 text-lg mb-8">
-            Get the latest music industry insights and 1ABEL updates delivered to your inbox.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-gray-500"
-            />
-            <ShimmerButton
-              className="bg-gray-600 hover:bg-gray-700 text-white px-8 py-3"
-              shimmerColor="#9ca3af"
-              background="linear-gradient(135deg, #4b5563, #374151)"
-            >
-              Subscribe
-            </ShimmerButton>
-          </div>
+      {/* Simple Footer */}
+      <footer className="mt-20 py-12 border-t border-gray-800 px-8">
+        <div className="max-w-6xl mx-auto text-center text-gray-400">
+          <p>© 2025 1ABEL. All rights reserved.</p>
         </div>
-      </section>
+      </footer>
     </div>
   )
 }
