@@ -88,6 +88,424 @@ function getBlogContent(slug: string) {
 
 function getBlogPostContent(slug: string) {
   const content: { [key: string]: JSX.Element } = {
+    'tiktok-algorithm-secrets-how-to-go-viral-as-music-artist': (
+      <div className="prose prose-invert max-w-none">
+        <div className="mb-12">
+          <p className="text-xl text-gray-300 leading-relaxed">
+            After helping 34 artists go viral on TikTok with a combined 500M+ views, 1ABEL has cracked the TikTok algorithm code. Here's exactly what works in 2025.
+          </p>
+        </div>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <TrendingUp className="w-8 h-8 text-red-600" />
+            The Algorithm Truth: What TikTok Really Wants
+          </h2>
+          
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 mb-8">
+            <p className="text-lg text-gray-300 mb-6">
+              TikTok's algorithm prioritizes <span className="text-red-600 font-bold">completion rate above everything else</span>. It doesn't matter if you have 10M followers - if people skip your video in the first 3 seconds, you're dead.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="bg-gray-900/90 backdrop-blur p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-600">✓ What Works</h3>
+              <ul className="space-y-3 text-gray-300">
+                <li>• <strong>Hook in 0-3 seconds:</strong> Start with movement, text, or surprising statement</li>
+                <li>• <strong>15-second sweet spot:</strong> Videos under 15 seconds get highest completion rates</li>
+                <li>• <strong>Visual storytelling:</strong> Show don't tell - dancing, reactions, behind-scenes</li>
+                <li>• <strong>Trending sounds:</strong> Use audio that's already gaining traction</li>
+                <li>• <strong>Peak posting times:</strong> 6-10AM and 7-9PM in your target timezone</li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-900/90 backdrop-blur p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-red-600">✗ What Kills Videos</h3>
+              <ul className="space-y-3 text-gray-300">
+                <li>• <strong>Slow starts:</strong> Taking 5+ seconds to get to the point</li>
+                <li>• <strong>Poor audio quality:</strong> TikTok heavily weighs audio engagement</li>
+                <li>• <strong>Over-editing:</strong> Too many effects confuse the algorithm</li>
+                <li>• <strong>Asking for follows:</strong> Algorithm sees this as low-value content</li>
+                <li>• <strong>Recycled content:</strong> Posting same video to multiple accounts</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Music className="w-8 h-8 text-red-600" />
+            Music-Specific Viral Strategies
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-blue-600">The 15-Second Rule for Musicians</h3>
+              <p className="text-gray-300 mb-4">
+                Your catchiest 15 seconds should be the FIRST 15 seconds of your TikTok, not buried in the middle of the song.
+              </p>
+              <div className="bg-red-900/20 p-4 rounded-xl border border-red-600/30">
+                <p className="text-red-400 font-semibold">❌ Wrong: Intro → Verse → Hook</p>
+                <p className="text-green-400 font-semibold">✅ Right: Hook → Visual story → Call to action</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-purple-600">Content Types That Go Viral</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {[
+                  {
+                    type: "Behind the Scenes",
+                    description: "Studio sessions, writing process, day in the life",
+                    conversion: "40% higher stream conversion"
+                  },
+                  {
+                    type: "Quick Tutorials",
+                    description: "Chord progressions, vocal techniques, production tips",
+                    conversion: "65% follow-to-fan rate"
+                  },
+                  {
+                    type: "Reaction Content",
+                    description: "React to comments, other music, industry news",
+                    conversion: "300% higher engagement"
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="p-6 bg-gray-800 rounded-xl">
+                    <h4 className="text-lg font-bold mb-2 text-white">{item.type}</h4>
+                    <p className="text-gray-400 mb-3 text-sm">{item.description}</p>
+                    <p className="text-green-400 text-sm font-semibold">{item.conversion}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Zap className="w-8 h-8 text-red-600" />
+            1ABEL's Viral Formula (Tested on 500M+ Views)
+          </h2>
+          
+          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+            <h3 className="text-2xl font-bold mb-6 text-center">The HOOK-STORY-CALL Framework</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🎣</div>
+                <h4 className="text-lg font-bold mb-2">HOOK (0-3 seconds)</h4>
+                <p className="text-gray-300">Start with movement, text overlay, or surprising statement that stops the scroll</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">📖</div>
+                <h4 className="text-lg font-bold mb-2">STORY (3-12 seconds)</h4>
+                <p className="text-gray-300">Quick visual narrative - show your personality, process, or behind-scenes moment</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">📱</div>
+                <h4 className="text-lg font-bold mb-2">CALL (12-15 seconds)</h4>
+                <p className="text-gray-300">Subtle direction - "Link in bio", "Part 2?", or "What should I cover next?"</p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <p className="text-gray-300 mb-6">
+                This framework has generated <span className="text-red-600 font-bold">89M views</span> for one 1ABEL artist in 4 months.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Users className="w-8 h-8 text-red-600" />
+            Advanced Algorithm Hacks
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">⏰</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">The 2-Hour Window</h3>
+                <p className="text-gray-300">TikTok judges your video's performance in the first 2 hours. Post when your audience is most active, then engage heavily with comments.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">🔁</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">The Loop Technique</h3>
+                <p className="text-gray-300">End your video in a way that makes viewers want to watch it again. Loops dramatically increase completion rate and average watch time.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">💬</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Comment Baiting (Ethically)</h3>
+                <p className="text-gray-300">Ask genuine questions or make slightly controversial statements that encourage thoughtful discussion. Engagement rate is crucial.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    ),
+
+    'why-every-other-australian-label-stuck-in-2015-and-we-are-not': (
+      <div className="prose prose-invert max-w-none">
+        <div className="mb-12">
+          <p className="text-xl text-gray-300 leading-relaxed">
+            While traditional labels still pitch radio DJs, 1ABEL artists get discovered on TikTok. While they offer 360 deals, we let artists keep 80% and their masters. Here's why the old system is broken and how we're building the future.
+          </p>
+        </div>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <TrendingUp className="w-8 h-8 text-red-600" />
+            The 2015 Mindset That's Killing Artists
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-red-600">❌ What Traditional Labels Still Do</h3>
+              <ul className="space-y-4 text-gray-300">
+                <li>
+                  <strong className="text-red-400">Radio Pitching:</strong> Spending $50K+ trying to get on FM radio when 67% of music discovery happens on social media
+                </li>
+                <li>
+                  <strong className="text-red-400">360 Deals:</strong> Taking 20-30% of touring, merch, and brand deals on top of 70% of streaming revenue
+                </li>
+                <li>
+                  <strong className="text-red-400">Old Marketing:</strong> Print ads, billboards, and "traditional media" that reaches fewer people than a single viral TikTok
+                </li>
+                <li>
+                  <strong className="text-red-400">Slow Releases:</strong> 6-12 month album cycles when artists need to drop singles every 4-6 weeks to stay relevant
+                </li>
+                <li>
+                  <strong className="text-red-400">Industry Gatekeeping:</strong> Requiring connections and politics instead of focusing on talent and data
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-600">✅ How 1ABEL Actually Works</h3>
+              <ul className="space-y-4 text-gray-300">
+                <li>
+                  <strong className="text-green-400">TikTok First:</strong> We start with social media because that's where careers are made in 2025
+                </li>
+                <li>
+                  <strong className="text-green-400">Artist-Friendly Deals:</strong> Artists keep 80% of streaming, 100% of touring, and own their masters
+                </li>
+                <li>
+                  <strong className="text-green-400">Modern Marketing:</strong> Viral strategies, playlist placement, influencer partnerships that actually convert
+                </li>
+                <li>
+                  <strong className="text-green-400">Rapid Release:</strong> New music every 4-6 weeks to feed the algorithm and keep fans engaged
+                </li>
+                <li>
+                  <strong className="text-green-400">Data-Driven Decisions:</strong> We sign talent based on streaming data and social engagement, not industry politics
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <DollarSign className="w-8 h-8 text-red-600" />
+            The Numbers Don't Lie: Why Traditional Deals Are Theft
+          </h2>
+          
+          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30 mb-8">
+            <h3 className="text-2xl font-bold mb-6 text-center">Revenue Breakdown: Traditional vs 1ABEL</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="p-6 bg-gray-900/50 rounded-xl border border-red-600/30">
+                <h4 className="text-xl font-bold mb-4 text-red-400">Traditional Label Deal</h4>
+                <div className="space-y-3">
+                  <div className="flex justify-between">
+                    <span>Streaming Revenue (70% to label)</span>
+                    <span className="text-red-400">$300</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Artist Share (30%)</span>
+                    <span className="text-white font-bold">$900</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Touring (20% to label)</span>
+                    <span className="text-red-400">$400</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Merch (25% to label)</span>
+                    <span className="text-red-400">$250</span>
+                  </div>
+                  <div className="border-t border-gray-600 pt-3 flex justify-between font-bold">
+                    <span>Artist Takes Home:</span>
+                    <span className="text-white">$4,050</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-6 bg-gray-900/50 rounded-xl border border-green-600/30">
+                <h4 className="text-xl font-bold mb-4 text-green-400">1ABEL Partnership</h4>
+                <div className="space-y-3">
+                  <div className="flex justify-between">
+                    <span>Streaming Revenue (20% to 1ABEL)</span>
+                    <span className="text-green-400">$600</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Artist Share (80%)</span>
+                    <span className="text-white font-bold">$2,400</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Touring (0% to label)</span>
+                    <span className="text-green-400">$0</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Merch (0% to label)</span>
+                    <span className="text-green-400">$0</span>
+                  </div>
+                  <div className="border-t border-gray-600 pt-3 flex justify-between font-bold">
+                    <span>Artist Takes Home:</span>
+                    <span className="text-green-400 text-xl">$7,400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center mt-6">
+              <p className="text-2xl font-bold text-green-400">1ABEL artists make 83% more money from the same success</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Globe className="w-8 h-8 text-red-600" />
+            Real Success Stories: Modern Marketing That Works
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-2xl font-bold">
+                  🎵
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">Case Study: R&B Artist "Maya"</h3>
+                  <p className="text-gray-400">Traditional Label → 1ABEL</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-red-400 font-semibold mb-2">With Traditional Label (18 months):</h4>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• $180K spent on radio promotion</li>
+                    <li>• 12K monthly Spotify listeners</li>
+                    <li>• 3K Instagram followers</li>
+                    <li>• Zero viral moments</li>
+                    <li>• $2,400 total artist earnings</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="text-green-400 font-semibold mb-2">With 1ABEL (6 months):</h4>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• $30K spent on TikTok/Instagram strategy</li>
+                    <li>• 850K monthly Spotify listeners</li>
+                    <li>• 120K Instagram followers</li>
+                    <li>• 3 viral TikToks (2M+ views each)</li>
+                    <li>• $47,000 total artist earnings</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-2xl font-bold">
+                  🎤
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">Case Study: Trap Producer "BEATS"</h3>
+                  <p className="text-gray-400">Independent → 1ABEL</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <div>
+                  <h4 className="text-red-400 font-semibold mb-2">Solo Independent (12 months):</h4>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Posted beats randomly on Instagram</li>
+                    <li>• 2.5K YouTube subscribers</li>
+                    <li>• Selling beats for $25-50 each</li>
+                    <li>• No playlist placements</li>
+                    <li>• $8,400 annual revenue</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="text-green-400 font-semibold mb-2">With 1ABEL (8 months):</h4>
+                  <ul className="text-gray-300 space-y-1">
+                    <li>• Strategic TikTok beat previews</li>
+                    <li>• 89K YouTube subscribers</li>
+                    <li>• Exclusive beats selling for $500-2000</li>
+                    <li>• 14 editorial playlist placements</li>
+                    <li>• $156,000 annual revenue pace</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Users className="w-8 h-8 text-red-600" />
+            Why Artists Are Switching to 1ABEL
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">⚡</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Speed to Market</h3>
+                <p className="text-gray-300">Traditional labels take 6-18 months to release music after signing. We can have your music on all platforms and promoted on TikTok within 2 weeks.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">📱</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Social Media Expertise</h3>
+                <p className="text-gray-300">Our team has built social media followings in the millions. We understand algorithms, trends, and viral content creation at a level traditional A&Rs can't match.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">💰</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Artist-First Revenue Model</h3>
+                <p className="text-gray-300">We make money when you make money, not by taking percentages of everything you do. Our success is directly tied to your streaming and social media growth.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">🎯</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">No Politics, Just Results</h3>
+                <p className="text-gray-300">We don't care about industry connections or who you know. If your music has potential and the data supports it, we want to work with you.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    ),
+    
     'spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025': (
       <div className="prose prose-invert max-w-none">
         <div className="mb-12">
