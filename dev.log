@@ -3,10 +3,12 @@
 > next dev
 
  ⚠ Specified "headers" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
+ ⚠ Port 3000 is in use by process 14651
+24830, using available port 3001 instead.
  ⚠ Specified "headers" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
    ▲ Next.js 15.4.5
-   - Local:        http://localhost:3000
-   - Network:      http://192.168.20.65:3000
+   - Local:        http://localhost:3001
+   - Network:      http://192.168.20.65:3001
    - Experiments (use with caution):
      · optimizePackageImports
 
@@ -14,139 +16,4 @@
  ⚠ Specified "headers" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
  ⚠ Attempted to load @next/swc-darwin-arm64, but an error occurred: dlopen(/Users/anyro/Downloads/home/ubuntu/igloo_clone/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node, 0x0001): tried: '/Users/anyro/Downloads/home/ubuntu/igloo_clone/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node' (segment '__TEXT' load command content extends beyond end of file), '/System/Volumes/Preboot/Cryptexes/OS/Users/anyro/Downloads/home/ubuntu/igloo_clone/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node' (no such file), '/Users/anyro/Downloads/home/ubuntu/igloo_clone/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node' (segment '__TEXT' load command content extends beyond end of file)
  ⚠ Specified "headers" will not automatically work with "output: export". See more info here: https://nextjs.org/docs/messages/export-no-custom-routes
- ✓ Ready in 1982ms
- ○ Compiling / ...
- ✓ Compiled / in 4s (1399 modules)
- ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
- GET / 200 in 4371ms
- ✓ Compiled in 366ms (636 modules)
- ✓ Compiled in 262ms (636 modules)
- ✓ Compiled in 174ms (636 modules)
- ✓ Compiled in 204ms (636 modules)
- ✓ Compiled in 209ms (636 modules)
- ✓ Compiled in 77ms (636 modules)
- ✓ Compiled / in 161ms (754 modules)
- ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
- GET / 200 in 373ms
- ✓ Compiled in 234ms (1390 modules)
- ✓ Compiled in 135ms (1392 modules)
- ✓ Compiled in 239ms (1392 modules)
- ✓ Compiled in 328ms (637 modules)
- ✓ Compiled in 113ms (637 modules)
- ✓ Compiled in 526ms (637 modules)
- ✓ Compiled in 219ms (623 modules)
- ✓ Compiled in 53ms (623 modules)
- ✓ Compiled in 209ms (637 modules)
- ✓ Compiled in 102ms (637 modules)
- ✓ Compiled in 96ms (637 modules)
- ✓ Compiled in 163ms (637 modules)
- ✓ Compiled in 76ms (637 modules)
- ✓ Compiled in 130ms (637 modules)
- ✓ Compiled in 151ms (637 modules)
- ✓ Compiled in 98ms (637 modules)
- ✓ Compiled in 326ms (644 modules)
- ✓ Compiled in 84ms (644 modules)
- ✓ Compiled in 105ms (644 modules)
- ✓ Compiled in 72ms (644 modules)
- ✓ Compiled in 95ms (644 modules)
- ✓ Compiled in 177ms (630 modules)
- ✓ Compiled in 74ms (630 modules)
- ✓ Compiled in 53ms (630 modules)
- ✓ Compiled in 105ms (630 modules)
- ✓ Compiled in 267ms (644 modules)
- ✓ Compiled in 69ms (644 modules)
- ✓ Compiled in 78ms (644 modules)
- ✓ Compiled in 91ms (644 modules)
- ✓ Compiled in 104ms (644 modules)
- ✓ Compiled in 92ms (644 modules)
- ✓ Compiled in 134ms (644 modules)
- ✓ Compiled in 97ms (644 modules)
- ✓ Compiled in 69ms (644 modules)
- ✓ Compiled in 53ms (644 modules)
- ✓ Compiled in 112ms (644 modules)
- ✓ Compiled in 119ms (644 modules)
- ✓ Compiled in 76ms (644 modules)
- ✓ Compiled in 72ms (644 modules)
- ✓ Compiled in 53ms (644 modules)
- ✓ Compiled in 139ms (645 modules)
- ✓ Compiled in 192ms (631 modules)
- ✓ Compiled in 74ms (645 modules)
- ✓ Compiled in 65ms (645 modules)
- ✓ Compiled in 92ms (645 modules)
- ✓ Compiled in 155ms (645 modules)
- ✓ Compiled in 75ms (645 modules)
- ✓ Compiled in 74ms (631 modules)
- ✓ Compiled in 52ms (631 modules)
- ✓ Compiled in 44ms (631 modules)
- ✓ Compiled in 260ms (645 modules)
- ✓ Compiled in 124ms (645 modules)
- ✓ Compiled in 155ms (631 modules)
- ✓ Compiled in 53ms (631 modules)
- ✓ Compiled in 140ms (645 modules)
- ✓ Compiled in 69ms (645 modules)
- ✓ Compiled in 147ms (645 modules)
- ✓ Compiled in 93ms (645 modules)
- ✓ Compiled in 94ms (645 modules)
- ✓ Compiled in 100ms (645 modules)
- ✓ Compiled in 92ms (645 modules)
- ✓ Compiled in 93ms (645 modules)
- ✓ Compiled in 92ms (645 modules)
- ✓ Compiled in 72ms (645 modules)
- ✓ Compiled in 92ms (645 modules)
- ✓ Compiled in 288ms (631 modules)
- ✓ Compiled in 94ms (645 modules)
- ✓ Compiled in 84ms (645 modules)
- ✓ Compiled in 89ms (645 modules)
- ✓ Compiled in 96ms (645 modules)
- ✓ Compiled in 86ms (645 modules)
- ✓ Compiled in 84ms (645 modules)
- ✓ Compiled in 93ms (645 modules)
- ✓ Compiled in 98ms (645 modules)
- ✓ Compiled in 94ms (645 modules)
- ✓ Compiled in 76ms (645 modules)
- ✓ Compiled in 87ms (645 modules)
- ✓ Compiled in 144ms (645 modules)
- ✓ Compiled in 47ms (645 modules)
- ✓ Compiled in 78ms (645 modules)
- ✓ Compiled in 77ms (645 modules)
- ⚠ ./src/components/GeniusHero.tsx
-Attempted import error: 'initInteractiveSounds' is not exported from '@/lib/soundManager' (imported as 'initInteractiveSounds').
-
-Import trace for requested module:
-./src/components/GeniusHero.tsx
-./src/app/page.tsx
- ⚠ ./src/components/GeniusHero.tsx
-Attempted import error: 'initInteractiveSounds' is not exported from '@/lib/soundManager' (imported as 'initInteractiveSounds').
-
-Import trace for requested module:
-./src/components/GeniusHero.tsx
-./src/app/page.tsx
- ✓ Compiled in 141ms (645 modules)
- ✓ Compiled in 108ms (645 modules)
- ✓ Compiled in 51ms (645 modules)
- ✓ Compiled in 89ms (645 modules)
- ✓ Compiled in 65ms (645 modules)
- ✓ Compiled in 86ms (645 modules)
- ✓ Compiled in 125ms (645 modules)
- ✓ Compiled in 134ms (645 modules)
- ✓ Compiled in 180ms (645 modules)
- ✓ Compiled in 102ms (645 modules)
- ✓ Compiled in 117ms (645 modules)
- ✓ Compiled in 83ms (645 modules)
- ✓ Compiled in 75ms (645 modules)
- ✓ Compiled in 82ms (645 modules)
- ✓ Compiled in 80ms (637 modules)
- ✓ Compiled in 65ms (637 modules)
- ✓ Compiled in 46ms (637 modules)
- ✓ Compiled in 62ms (637 modules)
- ✓ Compiled in 78ms (637 modules)
- ✓ Compiled in 42ms (637 modules)
- ✓ Compiled in 74ms (637 modules)
- ✓ Compiled in 62ms (637 modules)
- ✓ Compiled in 79ms (637 modules)
- ✓ Compiled in 61ms (637 modules)
- ✓ Compiled in 59ms (637 modules)
- ○ Compiling / ...
- ✓ Compiled / in 516ms (1393 modules)
- ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
- HEAD / 200 in 809ms
+ ✓ Ready in 2.5s

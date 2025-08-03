@@ -83,7 +83,7 @@ export class SoundManager {
     console.log(`🎵 Successfully loaded ${this.audioBuffers.size}/${this.ALL_SOUNDS.length} sound files`)
   }
 
-  private async playSound(soundName: string, config: SoundConfig = { volume: 1 }) {
+  private async playSound(soundName: string, config: SoundConfig = { volume: 1 }): Promise<AudioBufferSourceNode | null> {
     if (!this.context || !this.enabled || !this.audioBuffers.has(soundName)) {
       console.log(`🔇 Cannot play ${soundName}: enabled=${this.enabled}, hasBuffer=${this.audioBuffers.has(soundName)}`)
       return null
@@ -140,64 +140,64 @@ export class SoundManager {
   // 🎵 SIMPLE WORKING METHODS
 
   // UI Sounds
-  public playUISound() {
+  public async playUISound() {
     const uiSounds = ['ui-short', 'ui-long', 'click-project']
     const randomSound = uiSounds[Math.floor(Math.random() * uiSounds.length)]
-    this.playSound(randomSound, { volume: 0.3, fadeIn: 0.1 })
+    await this.playSound(randomSound, { volume: 0.3, fadeIn: 0.1 })
   }
 
   // Navigation sounds
-  public playEnter() {
-    this.playSound('enter-project', { volume: 0.4, fadeIn: 0.3 })
+  public async playEnter() {
+    await this.playSound('enter-project', { volume: 0.4, fadeIn: 0.3 })
   }
 
-  public playLeave() {
-    this.playSound('leave-project', { volume: 0.3, fadeOut: 0.5 })
+  public async playLeave() {
+    await this.playSound('leave-project', { volume: 0.3, fadeOut: 0.5 })
   }
 
   // Logo/Identity sounds
-  public playLogo() {
-    this.playSound('logo', { volume: 0.5, fadeIn: 0.2 })
+  public async playLogo() {
+    await this.playSound('logo', { volume: 0.5, fadeIn: 0.2 })
   }
 
-  public playManifesto() {
-    this.playSound('manifesto', { volume: 0.4, fadeIn: 0.3 })
+  public async playManifesto() {
+    await this.playSound('manifesto', { volume: 0.4, fadeIn: 0.3 })
   }
 
-  public playIgloo() {
-    this.playSound('igloo', { volume: 0.3, fadeIn: 0.2 })
+  public async playIgloo() {
+    await this.playSound('igloo', { volume: 0.3, fadeIn: 0.2 })
   }
 
   // Musical sequences
-  public playBeepSequence() {
-    this.playSound('beeps', { volume: 0.35 })
-    setTimeout(() => this.playSound('beeps2', { volume: 0.35 }), 600)
-    setTimeout(() => this.playSound('beeps3', { volume: 0.35 }), 1200)
+  public async playBeepSequence() {
+    await this.playSound('beeps', { volume: 0.35 })
+    setTimeout(async () => await this.playSound('beeps2', { volume: 0.35 }), 600)
+    setTimeout(async () => await this.playSound('beeps3', { volume: 0.35 }), 1200)
   }
 
   // Mystical sounds (NO PARTICLES!)
-  public playMystical() {
-    this.playSound('circles', { volume: 0.25, fadeIn: 0.5 })
-    setTimeout(() => this.playSound('shard', { volume: 0.3, fadeIn: 0.3 }), 500)
+  public async playMystical() {
+    await this.playSound('circles', { volume: 0.25, fadeIn: 0.5 })
+    setTimeout(async () => await this.playSound('shard', { volume: 0.3, fadeIn: 0.3 }), 500)
   }
 
   // 🌊 ATMOSPHERIC LAYERS
-  public startAtmosphere() {
+  public async startAtmosphere() {
     if (!this.enabled) return
 
     console.log('🌊 Starting atmospheric layers...')
     
     // Wind - very gentle background
-    this.playSound('wind', { volume: 0.08, loop: true, fadeIn: 3 })
+    await this.playSound('wind', { volume: 0.08, loop: true, fadeIn: 3 })
     
     // Room tone - warm presence
-    setTimeout(() => {
-      this.playSound('room', { volume: 0.12, loop: true, fadeIn: 2 })
+    setTimeout(async () => {
+      await this.playSound('room', { volume: 0.12, loop: true, fadeIn: 2 })
     }, 1000)
     
     // Background music - subtle
-    setTimeout(() => {
-      this.ambientMusic = this.playSound('music-highq', { volume: 0.10, loop: true, fadeIn: 4 })
+    setTimeout(async () => {
+      this.ambientMusic = await this.playSound('music-highq', { volume: 0.10, loop: true, fadeIn: 4 })
     }, 2000)
   }
 
@@ -225,22 +225,22 @@ export class SoundManager {
   }
 
   // 🎼 WELCOME SEQUENCE
-  public playWelcomeSequence() {
+  public async playWelcomeSequence() {
     if (!this.enabled) return
     
     console.log('🎼 Playing welcome sequence...')
     
     // Start with gentle UI sound
-    this.playUISound()
+    await this.playUISound()
     
     // Start atmospheric layers
-    setTimeout(() => this.startAtmosphere(), 500)
+    setTimeout(async () => await this.startAtmosphere(), 500)
     
     // Play a gentle musical sequence
-    setTimeout(() => this.playBeepSequence(), 2000)
+    setTimeout(async () => await this.playBeepSequence(), 2000)
     
     // Add some mystical elements
-    setTimeout(() => this.playMystical(), 4000)
+    setTimeout(async () => await this.playMystical(), 4000)
   }
 
   // 🎛️ CONTROLS
