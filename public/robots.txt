@@ -1,4 +1,71 @@
 User-agent: *
 Allow: /
 
+# SEO-optimized robots.txt for 1ABEL Global Music Label
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Block AI scrapers that don't respect copyright
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+# Allow music industry crawlers
+User-agent: Spotify
+Allow: /
+
+User-agent: AppleBot
+Allow: /
+
+User-agent: YouTubeBot
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+Disallow: /.well-known/
+
+# Important files
 Sitemap: https://1abel.com/sitemap.xml
+Sitemap: https://1abel.com/blog-sitemap.xml
+
+# Cache directive
+Cache-delay: 86400

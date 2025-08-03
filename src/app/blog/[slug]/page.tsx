@@ -75,7 +75,7 @@ function getBlogPostContent(slug: string) {
                 color: "from-gray-600 to-gray-400",
                 icon: "🎧",
                 pros: ["Higher payouts", "Less competition", "Editorial loves quality RnB"],
-                cons: ["Harder discovery", "Smaller user base in Australia"],
+                cons: ["Harder discovery", "Smaller global user base"],
                 strategy: "Perfect for established artists, we pitch heavily to Apple Music's urban playlists"
               },
               {
@@ -1306,8 +1306,56 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     setTimeout(() => setCopied(false), 2000)
   }
 
+  // Structured data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `https://1abel.com/blog-images/${post.slug}.jpg`,
+    "author": {
+      "@type": "Organization",
+      "name": "1ABEL",
+      "url": "https://1abel.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "1ABEL Global Music Label",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://1abel.com/logo.png"
+      }
+    },
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": shareUrl
+    },
+    "articleSection": post.category,
+    "keywords": `${post.category}, music label, RnB, trap, rap, streaming, artist development, music industry`,
+    "wordCount": 2500,
+    "url": shareUrl,
+    "isPartOf": {
+      "@type": "Blog",
+      "name": "1ABEL Blog",
+      "url": "https://1abel.com/blog"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Music Industry",
+      "description": "Global music label insights and industry trends"
+    }
+  }
+
   return (
     <div className="min-h-screen bg-black text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
       <Header />
       
       {/* Hero Section */}
