@@ -5,7 +5,7 @@ import { GeniusFeaturesSection } from '@/components/GeniusCard'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import Link from 'next/link'
-import { TrendingUp, Award, Users, Mail, MessageCircle, Star, Sparkles, Music, Globe, Heart, ArrowRight } from 'lucide-react'
+import { TrendingUp, Award, Users, Mail, MessageCircle, Star, Sparkles, Music, Globe, Heart, ArrowRight, Smartphone, Handshake, BarChart3, Palette, Check } from 'lucide-react'
 import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
 import ShimmerButton from '@/components/magicui/shimmer-button'
 import NumberTicker from '@/components/magicui/number-ticker'
@@ -188,22 +188,22 @@ export default function HomePage() {
               {
                 title: "Social Media Mastery",
                 description: "Our team has managed accounts for top streamers and models with millions of followers. We know what converts.",
-                icon: "📱"
+                icon: <Smartphone className="w-8 h-8" />
               },
               {
                 title: "Industry Connections",
                 description: "Direct relationships with playlist curators, brand managers, and influencers across multiple industries.",
-                icon: "🤝"
+                icon: <Handshake className="w-8 h-8" />
               },
               {
                 title: "Data-Driven Strategy",
                 description: "Every decision backed by analytics. We test, measure, and scale what works for your unique sound.",
-                icon: "📊"
+                icon: <BarChart3 className="w-8 h-8" />
               },
               {
                 title: "Creative Freedom",
                 description: "You keep 80% of royalties and maintain creative control. We're partners, not owners.",
-                icon: "🎨"
+                icon: <Palette className="w-8 h-8" />
               }
             ].map((item, index) => (
               <motion.div
@@ -214,7 +214,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 className="group"
               >
-                <div className="text-5xl mb-6">{item.icon}</div>
+                <div className="text-red-600 mb-6">{item.icon}</div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-red-600 transition-colors">
                   {item.title}
                 </h3>
@@ -373,15 +373,15 @@ export default function HomePage() {
             
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center text-gray-400">
               <div className="flex items-center">
-                <span className="text-red-600 mr-2">✓</span>
+                <Check className="w-5 h-5 text-red-600 mr-2" />
                 <span>Keep 80% royalties</span>
               </div>
               <div className="flex items-center">
-                <span className="text-red-600 mr-2">✓</span>
+                <Check className="w-5 h-5 text-red-600 mr-2" />
                 <span>Creative control</span>
               </div>
               <div className="flex items-center">
-                <span className="text-red-600 mr-2">✓</span>
+                <Check className="w-5 h-5 text-red-600 mr-2" />
                 <span>Global reach</span>
               </div>
             </div>

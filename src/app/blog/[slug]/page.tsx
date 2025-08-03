@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { blogPosts, newsArticles } from '@/data/blogPosts'
-import { DollarSign, TrendingUp, Music, Globe, Users, Zap, ArrowRight } from 'lucide-react'
+import { DollarSign, TrendingUp, Music, Globe, Users, Zap, ArrowRight, Check, Target, BarChart3, Lightbulb, Rocket, Search, Mail, PenTool, FileText, Send, X } from 'lucide-react'
 import { Header } from '@/components/Header'
 import { BlogPostClient } from '@/components/BlogPostClient'
 
@@ -146,8 +146,8 @@ function getBlogPostContent(slug: string) {
                 Your catchiest 15 seconds should be the FIRST 15 seconds of your TikTok, not buried in the middle of the song.
               </p>
               <div className="bg-red-900/20 p-4 rounded-xl border border-red-600/30">
-                <p className="text-red-400 font-semibold">❌ Wrong: Intro → Verse → Hook</p>
-                <p className="text-green-400 font-semibold">✅ Right: Hook → Visual story → Call to action</p>
+                <p className="text-red-400 font-semibold flex items-center"><X className="w-4 h-4 mr-2" />Wrong: Intro → Verse → Hook</p>
+                <p className="text-green-400 font-semibold flex items-center"><Check className="w-4 h-4 mr-2" />Right: Hook → Visual story → Call to action</p>
               </div>
             </div>
 
@@ -270,7 +270,7 @@ function getBlogPostContent(slug: string) {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
-              <h3 className="text-2xl font-bold mb-4 text-red-600">❌ What Traditional Labels Still Do</h3>
+              <h3 className="text-2xl font-bold mb-4 text-red-600 flex items-center"><X className="w-6 h-6 mr-2" />What Traditional Labels Still Do</h3>
               <ul className="space-y-4 text-gray-300">
                 <li>
                   <strong className="text-red-400">Radio Pitching:</strong> Spending $50K+ trying to get on FM radio when 67% of music discovery happens on social media
@@ -291,7 +291,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
-              <h3 className="text-2xl font-bold mb-4 text-green-600">✅ How 1ABEL Actually Works</h3>
+              <h3 className="text-2xl font-bold mb-4 text-green-600 flex items-center"><Check className="w-6 h-6 mr-2" />How 1ABEL Actually Works</h3>
               <ul className="space-y-4 text-gray-300">
                 <li>
                   <strong className="text-green-400">TikTok First:</strong> We start with social media because that's where careers are made in 2025
@@ -471,7 +471,7 @@ function getBlogPostContent(slug: string) {
           
           <div className="space-y-6">
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">⚡</div>
+              <div className="text-red-600"><Zap className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Speed to Market</h3>
                 <p className="text-gray-300">Traditional labels take 6-18 months to release music after signing. We can have your music on all platforms and promoted on TikTok within 2 weeks.</p>
@@ -487,7 +487,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">💰</div>
+              <div className="text-red-600"><DollarSign className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Artist-First Revenue Model</h3>
                 <p className="text-gray-300">We make money when you make money, not by taking percentages of everything you do. Our success is directly tied to your streaming and social media growth.</p>
@@ -495,7 +495,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">🎯</div>
+              <div className="text-red-600"><Target className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">No Politics, Just Results</h3>
                 <p className="text-gray-300">We don't care about industry connections or who you know. If your music has potential and the data supports it, we want to work with you.</p>
@@ -532,7 +532,7 @@ function getBlogPostContent(slug: string) {
                 platform: "Spotify",
                 payout: "$0.003 - $0.005",
                 color: "from-green-600 to-green-400",
-                icon: "🎵",
+                icon: <Music className="w-5 h-5" />,
                 pros: ["Massive discovery potential", "Algorithm learns fast", "Playlist placement opportunities"],
                 cons: ["Lowest payout rates", "100K+ daily uploads"],
                 strategy: "We focus on playlist placement and algorithm optimization for our RnB/trap artists"
@@ -734,7 +734,7 @@ function getBlogPostContent(slug: string) {
           
           <div className="space-y-6">
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">💰</div>
+              <div className="text-red-600"><DollarSign className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Keep 80% of Your Revenue</h3>
                 <p className="text-gray-300">While major labels take 70-90%, we believe artists deserve the majority of their earnings.</p>
@@ -742,7 +742,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">🎯</div>
+              <div className="text-red-600"><Target className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Modern Marketing That Works</h3>
                 <p className="text-gray-300">TikTok viral strategies, Instagram growth hacking, and playlist placement - not outdated radio promotion.</p>
@@ -750,7 +750,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">⚡</div>
+              <div className="text-red-600"><Zap className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Speed to Market</h3>
                 <p className="text-gray-300">From demo to global distribution in weeks, not months. We move at internet speed.</p>
@@ -782,7 +782,7 @@ function getBlogPostContent(slug: string) {
               </div>
               
               <div className="text-center p-6 bg-gray-900/50 rounded-xl">
-                <div className="text-4xl mb-4">🚀</div>
+                <div className="text-red-600 mb-4"><Rocket className="w-12 h-12" /></div>
                 <h4 className="text-lg font-bold mb-2">Step 3: Launch</h4>
                 <p className="text-gray-300">Start growing immediately</p>
               </div>
@@ -887,7 +887,7 @@ function getBlogPostContent(slug: string) {
           </div>
 
           <div className="bg-green-900/20 border border-green-600/30 p-6 rounded-xl mb-8">
-            <h3 className="text-xl font-bold text-green-400 mb-3">💰 Money-Saving Pro Tips</h3>
+            <h3 className="text-xl font-bold text-green-400 mb-3 flex items-center"><DollarSign className="w-5 h-5 mr-2" />Money-Saving Pro Tips</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300">
               <ul className="space-y-2">
                 <li>• Buy used gear from Guitar Center or Reverb</li>
@@ -950,7 +950,7 @@ function getBlogPostContent(slug: string) {
           </div>
 
           <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
-            <h3 className="text-xl font-bold mb-4">🎯 1ABEL Artist Success Story</h3>
+            <h3 className="text-xl font-bold mb-4 flex items-center"><Target className="w-5 h-5 mr-2" />1ABEL Artist Success Story</h3>
             <blockquote className="text-lg text-gray-300 italic mb-4">
               "I spent $180 on DIY acoustic treatment in my apartment bedroom. Three months later, my track 'Lost in the City' hit #3 on Billboard Hip-Hop charts. The vocal clarity and mix translation were absolutely professional."
             </blockquote>
@@ -991,7 +991,7 @@ function getBlogPostContent(slug: string) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <div className="bg-gradient-to-br from-red-900/30 to-red-800/30 p-8 rounded-2xl border border-red-600/50">
               <h3 className="text-2xl font-bold mb-6 text-red-400 flex items-center gap-3">
-                ❌ SCAMS TO AVOID
+                <div className="flex items-center"><X className="w-4 h-4 mr-2 text-red-400" />SCAMS TO AVOID</div>
               </h3>
               
               <div className="space-y-4">
@@ -1019,7 +1019,7 @@ function getBlogPostContent(slug: string) {
 
             <div className="bg-gradient-to-br from-green-900/30 to-green-800/30 p-8 rounded-2xl border border-green-600/50">
               <h3 className="text-2xl font-bold mb-6 text-green-400 flex items-center gap-3">
-                ✅ LEGITIMATE OPPORTUNITIES
+                <div className="flex items-center"><Check className="w-4 h-4 mr-2 text-green-400" />LEGITIMATE OPPORTUNITIES</div>
               </h3>
               
               <div className="space-y-4">
@@ -1111,7 +1111,7 @@ function getBlogPostContent(slug: string) {
           </div>
 
           <div className="bg-green-900/20 border border-green-600/30 p-6 rounded-xl">
-            <h3 className="text-xl font-bold text-green-400 mb-3">💡 1ABEL Pro Tip</h3>
+            <h3 className="text-xl font-bold text-green-400 mb-3 flex items-center"><Lightbulb className="w-5 h-5 mr-2" />1ABEL Pro Tip</h3>
             <p className="text-gray-300">
               We spend $500-1000 per artist on playlist placement but target 15-20 mid-tier playlists instead of 1-2 expensive ones. 
               Diversification prevents algorithm dependency and creates more stable growth.
@@ -1306,7 +1306,7 @@ function getBlogPostContent(slug: string) {
           
           <div className="space-y-6">
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">🎯</div>
+              <div className="text-red-600"><Target className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">The "Playlist Ladder" Strategy</h3>
                 <p className="text-gray-300 mb-3">Start with smaller playlists (1K-5K followers) to build momentum, then use those placements as social proof for bigger curators.</p>
@@ -1324,7 +1324,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">📊</div>
+              <div className="text-red-600"><BarChart3 className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Data-Driven Follow-Up</h3>
                 <p className="text-gray-300 mb-3">Share engagement metrics with curators after placement. "Your playlist drove 2,500 streams and 89 saves" builds long-term relationships.</p>
@@ -1333,7 +1333,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">🎵</div>
+              <div className="text-red-600"><Music className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">The "Sound Sandwich" Technique</h3>
                 <p className="text-gray-300 mb-3">Reference 2-3 songs already on their playlist in your pitch. "Fits perfectly between Track A and Track B" shows you understand their curation style.</p>
@@ -1354,13 +1354,13 @@ function getBlogPostContent(slug: string) {
             
             <div className="grid grid-cols-1 md:grid-cols-7 gap-4 mb-8">
               {[
-                { day: "Day 1", task: "Setup Spotify for Artists, optimize profile", icon: "🎯" },
-                { day: "Day 2", task: "Research 20 playlists in your genre", icon: "🔍" },
-                { day: "Day 3", task: "Find curator contact info", icon: "📧" },
-                { day: "Day 4", task: "Write personalized pitch emails", icon: "✍️" },
-                { day: "Day 5", task: "Submit to editorial playlists", icon: "📝" },
-                { day: "Day 6", task: "Send curator outreach emails", icon: "📤" },
-                { day: "Day 7", task: "Track responses, plan follow-ups", icon: "📊" }
+                { day: "Day 1", task: "Setup Spotify for Artists, optimize profile", icon: <Target className="w-5 h-5" /> },
+                { day: "Day 2", task: "Research 20 playlists in your genre", icon: <Search className="w-5 h-5" /> },
+                { day: "Day 3", task: "Find curator contact info", icon: <Mail className="w-5 h-5" /> },
+                { day: "Day 4", task: "Write personalized pitch emails", icon: <PenTool className="w-5 h-5" /> },
+                { day: "Day 5", task: "Submit to editorial playlists", icon: <FileText className="w-5 h-5" /> },
+                { day: "Day 6", task: "Send curator outreach emails", icon: <Send className="w-5 h-5" /> },
+                { day: "Day 7", task: "Track responses, plan follow-ups", icon: <BarChart3 className="w-5 h-5" /> }
               ].map((item, index) => (
                 <div key={index} className="text-center p-4 bg-gray-900/50 rounded-xl">
                   <div className="text-2xl mb-2">{item.icon}</div>
@@ -1446,7 +1446,7 @@ function getBlogPostContent(slug: string) {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-red-900/20 border border-red-600/30 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-red-400 mb-3">❌ RED FLAGS: Avoid These "Opportunities"</h3>
+              <h3 className="text-xl font-bold text-red-400 mb-3 flex items-center"><X className="w-5 h-5 mr-2" />RED FLAGS: Avoid These "Opportunities"</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• "Exposure" as payment - your rent doesn't accept exposure</li>
                 <li>• "Affiliate only" deals - you do the work, they get the profit</li>
@@ -1457,7 +1457,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="bg-green-900/20 border border-green-600/30 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-green-400 mb-3">✅ GOLD STANDARD: Premium Brand Partnerships</h3>
+              <h3 className="text-xl font-bold text-green-400 mb-3 flex items-center"><Check className="w-5 h-5 mr-2" />GOLD STANDARD: Premium Brand Partnerships</h3>
               <ul className="space-y-2 text-gray-300 text-sm">
                 <li>• Upfront cash payment + product/service</li>
                 <li>• Long-term partnership potential</li>
@@ -1771,7 +1771,7 @@ function getBlogPostContent(slug: string) {
           
           <div className="space-y-6">
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">🎯</div>
+              <div className="text-red-600"><Target className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">The "Industry Insider" Positioning</h3>
                 <p className="text-gray-300 mb-3">Position yourself as a music industry expert, not just an artist. Brands pay premium for industry credibility and behind-the-scenes access.</p>
@@ -1789,7 +1789,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">📊</div>
+              <div className="text-red-600"><BarChart3 className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Performance-Based Bonuses</h3>
                 <p className="text-gray-300 mb-3">Negotiate bonuses for hitting engagement targets. "Base $5K + $2K if we hit 10% engagement rate" shows confidence and shares success.</p>
@@ -1798,7 +1798,7 @@ function getBlogPostContent(slug: string) {
             </div>
 
             <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
-              <div className="text-2xl">🎵</div>
+              <div className="text-red-600"><Music className="w-8 h-8" /></div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Music Integration Premium</h3>
                 <p className="text-gray-300 mb-3">Song integrations command 3-5x higher rates than regular posts. Brands get music + visuals + your audience in one package.</p>
