@@ -9,6 +9,7 @@ export function SoundControl() {
   const [isMuted, setIsMuted] = useState(true)  // Start muted by default
   const [volume, setVolume] = useState(0.4)
   const [musicPlaying, setMusicPlaying] = useState(false)
+  const [showControl, setShowControl] = useState(false)
   const { 
     setVolume: setSoundVolume, 
     enable, 
@@ -42,6 +43,16 @@ export function SoundControl() {
       const vol = parseFloat(savedVolume)
       setVolume(vol)
     }
+
+    // Show control only after user scrolls down
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowControl(true)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [setSoundVolume, enable, disable])
 
   const toggleMute = () => {
@@ -86,11 +97,13 @@ export function SoundControl() {
     setMusicPlaying(!musicPlaying)
   }
 
+  if (!showControl) return null
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, delay: 3 }}
+      transition={{ duration: 0.5 }}
       className="fixed bottom-6 right-6 z-50"
     >
       <div className="bg-black/80 backdrop-blur border border-gray-700 rounded-lg p-4 flex items-center space-x-3">

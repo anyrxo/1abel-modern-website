@@ -395,7 +395,7 @@ function getBlogPostContent(slug: string) {
                   🎵
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Case Study: R&B Artist "Maya"</h3>
+                  <h3 className="text-xl font-bold">Case Study: R&B Artist</h3>
                   <p className="text-gray-400">Traditional Label → 1ABEL</p>
                 </div>
               </div>
@@ -431,7 +431,7 @@ function getBlogPostContent(slug: string) {
                   🎤
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold">Case Study: Trap Producer "BEATS"</h3>
+                  <h3 className="text-xl font-bold">Case Study: Trap Producer</h3>
                   <p className="text-gray-400">Independent → 1ABEL</p>
                 </div>
               </div>

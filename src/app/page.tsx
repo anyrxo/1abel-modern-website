@@ -28,7 +28,7 @@ export default function HomePage() {
       <GeniusFeaturesSection />
 
       {/* A Beautiful Heaven for Artists Section */}
-      <section className="min-h-screen bg-black py-20 px-8 relative overflow-hidden">
+      <section className="bg-black py-16 px-8 relative overflow-hidden">
         {/* Magical background effects */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/10 via-red-600/5 to-transparent animate-pulse" />
@@ -140,7 +140,7 @@ export default function HomePage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-red-600 rounded-full mr-4"></div>
                 <div>
-                  <div className="font-semibold">Jordan Rivers</div>
+                  <div className="font-semibold">1ABEL Artist</div>
                   <div className="text-sm text-gray-400">R&B Artist</div>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export default function HomePage() {
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-red-600 rounded-full mr-4"></div>
                 <div>
-                  <div className="font-semibold">Maya Chen</div>
+                  <div className="font-semibold">1ABEL Artist</div>
                   <div className="text-sm text-gray-400">Trap Artist</div>
                 </div>
               </div>
@@ -171,7 +171,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Artists Choose 1ABEL */}
-      <section className="min-h-screen bg-gradient-to-b from-black to-gray-900 py-20 px-8">
+      <section className="bg-gradient-to-b from-black to-gray-900 py-16 px-8">
         <div className="max-w-6xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0, y: 50 }}
@@ -228,7 +228,7 @@ export default function HomePage() {
       </section>
 
       {/* The Revolution Starts Here */}
-      <section className="min-h-screen bg-gradient-to-b from-black to-gray-900 py-20 px-8 relative overflow-hidden">
+      <section className="bg-gradient-to-b from-black to-gray-900 py-16 px-8 relative overflow-hidden">
         {/* Animated background particles */}
         <div className="absolute inset-0">
           {[...Array(50)].map((_, i) => (
@@ -274,21 +274,21 @@ export default function HomePage() {
             {[
               {
                 quote: "1ABEL turned my bedroom recordings into 50M streams in 6 months. They understand algorithms like no traditional label.",
-                artist: "Luna Rose",
+                artist: "1ABEL Artist",
                 genre: "R&B Artist",
                 achievement: "From 0 to 100K monthly listeners"
               },
               {
                 quote: "They got me brand deals worth $500K because they actually have connections outside music. This is the future.",
-                artist: "TRVP LORD",
+                artist: "1ABEL Artist",
                 genre: "Trap Producer",
-                achievement: "Nike & Fashion Nova partnerships"
+                achievement: "Major brand partnerships"
               },
               {
                 quote: "No 360 deal BS. I keep my masters, get 80% royalties, and they still promote harder than any major label.",
-                artist: "Zara X",
+                artist: "1ABEL Artist",
                 genre: "Rap Artist",
-                achievement: "Billboard charting independently"
+                achievement: "Independent chart success"
               }
             ].map((testimonial, index) => (
               <motion.div
