@@ -3637,6 +3637,169 @@ function getBlogPostContent(slug: string) {
           </a>
         </div>
       </div>
+    ),
+
+    'email-marketing-for-musicians-building-list-that-actually-converts': (
+      <div className="prose prose-invert max-w-none">
+        <p className="text-xl text-gray-300 mb-8">
+          Social media platforms own your audience. Email lists are forever. Here's how to build an email list of real fans who actually open your messages and buy your music.
+        </p>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Why Email Marketing Still Matters for Musicians</h2>
+        
+        <div className="bg-gray-800/50 p-6 rounded-lg mb-8">
+          <h3 className="text-xl font-semibold mb-4 text-red-400">Platform Risk vs. Owned Audiences</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-red-900/30 p-4 rounded-lg border border-red-600/30">
+              <h4 className="font-semibold text-red-400 mb-2">Social Media Risks</h4>
+              <ul className="space-y-1 text-gray-300 text-sm">
+                <li>• Algorithm changes kill your reach overnight</li>
+                <li>• Platform can ban or suspend your account</li>
+                <li>• You don't own the relationship with fans</li>
+                <li>• Organic reach continues declining</li>
+                <li>• Platform could shut down entirely</li>
+              </ul>
+            </div>
+            <div className="bg-green-900/30 p-4 rounded-lg border border-green-600/30">
+              <h4 className="font-semibold text-green-400 mb-2">Email List Benefits</h4>
+              <ul className="space-y-1 text-gray-300 text-sm">
+                <li>• Direct access to your audience</li>
+                <li>• Higher conversion rates than social</li>
+                <li>• You own the contact data</li>
+                <li>• Better for selling music and merch</li>
+                <li>• More personal connection with fans</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Email Marketing Performance Data</h2>
+        
+        <div className="space-y-6">
+          <div className="bg-gray-800/50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-green-400">Industry Benchmarks for Musicians</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-400 mb-2">22%</div>
+                <h4 className="font-semibold text-white mb-2">Average Open Rate</h4>
+                <p className="text-gray-300 text-sm">Music industry emails vs 21% all industries</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-400 mb-2">3.1%</div>
+                <h4 className="font-semibold text-white mb-2">Click-Through Rate</h4>
+                <p className="text-gray-300 text-sm">Higher than social media engagement</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-red-400 mb-2">$38</div>
+                <h4 className="font-semibold text-white mb-2">ROI per $1 Spent</h4>
+                <p className="text-gray-300 text-sm">Email marketing return on investment</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-800/50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-red-400">Real Revenue Examples</h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">$</span>
+                <div>
+                  <h4 className="font-semibold text-white">Album Release Campaign</h4>
+                  <p className="text-gray-300 text-sm">1,000 subscribers = $2,500 in first week sales</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">$</span>
+                <div>
+                  <h4 className="font-semibold text-white">Concert Ticket Sales</h4>
+                  <p className="text-gray-300 text-sm">500 local subscribers = 200 tickets sold</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">$</span>
+                <div>
+                  <h4 className="font-semibold text-white">Merchandise Drop</h4>
+                  <p className="text-gray-300 text-sm">2,000 subscribers = $8,000 in merch revenue</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Building Your Email List</h2>
+        
+        <div className="bg-gray-800/50 p-6 rounded-lg mb-8">
+          <h3 className="text-xl font-semibold mb-4 text-red-400">Lead Magnet Ideas That Work</h3>
+          <div className="space-y-4">
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">1</span>
+              <div>
+                <h4 className="font-semibold text-white">Free Song Download</h4>
+                <p className="text-gray-300 text-sm">Offer exclusive track not available on streaming platforms</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">2</span>
+              <div>
+                <h4 className="font-semibold text-white">Behind-the-Scenes Content</h4>
+                <p className="text-gray-300 text-sm">Studio footage, songwriting process, personal stories</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">3</span>
+              <div>
+                <h4 className="font-semibold text-white">Early Access to Tickets</h4>
+                <p className="text-gray-300 text-sm">Pre-sale codes for concerts and special events</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">4</span>
+              <div>
+                <h4 className="font-semibold text-white">Music Production Tips</h4>
+                <p className="text-gray-300 text-sm">Share your knowledge about recording, mixing, songwriting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Email Content Strategy</h2>
+        
+        <div className="bg-gray-800/50 p-6 rounded-lg mb-8">
+          <h3 className="text-xl font-semibold mb-4 text-green-400">The 80/20 Rule for Musicians</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-blue-900/30 p-4 rounded-lg border border-blue-600/30">
+              <h4 className="font-semibold text-blue-400 mb-2">80% Value Content</h4>
+              <ul className="space-y-1 text-gray-300 text-sm">
+                <li>• Personal stories and experiences</li>
+                <li>• Music industry insights</li>
+                <li>• Behind-the-scenes content</li>
+                <li>• Fan appreciation messages</li>
+                <li>• Creative process updates</li>
+              </ul>
+            </div>
+            <div className="bg-green-900/30 p-4 rounded-lg border border-green-600/30">
+              <h4 className="font-semibold text-green-400 mb-2">20% Promotional</h4>
+              <ul className="space-y-1 text-gray-300 text-sm">
+                <li>• New song releases</li>
+                <li>• Concert announcements</li>
+                <li>• Merchandise launches</li>
+                <li>• Album pre-orders</li>
+                <li>• Special offers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-red-900/30 to-red-800/30 p-6 rounded-lg border border-red-500/20">
+          <h3 className="text-xl font-semibold mb-4 text-red-400">Build Your Email List</h3>
+          <p className="text-gray-300 mb-4">
+            1ABEL helps artists build direct relationships with fans through strategic email marketing and content creation.
+          </p>
+          <a href="mailto:anyro@1abel.com?subject=Email%20Marketing%20Strategy" 
+             className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+            Get Email Marketing Help
+          </a>
+        </div>
+      </div>
     )
   }
 
@@ -3668,7 +3831,143 @@ function getBlogPostContent(slug: string) {
 
 function getNewsPostContent(slug: string) {
   const content: { [key: string]: JSX.Element } = {
-    // News articles content would go here, but for now they use fallback
+    'tiktok-new-add-to-music-app-feature-changes-everything-for-artists': (
+      <div className="prose prose-invert max-w-none">
+        <p className="text-xl text-gray-300 mb-8">
+          TikTok users can now add viral songs directly to Spotify/Apple Music with one tap. Early data shows 400% increase in stream conversion rates. This is the game-changer everyone predicted.
+        </p>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">The Feature That Changes Music Discovery Forever</h2>
+        
+        <div className="bg-gray-800/50 p-6 rounded-lg mb-8">
+          <h3 className="text-xl font-semibold mb-4 text-red-400">How It Works</h3>
+          <div className="space-y-4">
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">1</span>
+              <div>
+                <h4 className="font-semibold text-white">User Hears Song on TikTok</h4>
+                <p className="text-gray-300 text-sm">While scrolling, user discovers new music through viral videos</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">2</span>
+              <div>
+                <h4 className="font-semibold text-white">One-Tap Add Button Appears</h4>
+                <p className="text-gray-300 text-sm">TikTok displays "Add to Spotify" or "Add to Apple Music" button</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">3</span>
+              <div>
+                <h4 className="font-semibold text-white">Instant Playlist Addition</h4>
+                <p className="text-gray-300 text-sm">Song automatically saves to user's streaming platform playlist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Impact on Stream Conversion Rates</h2>
+        
+        <div className="space-y-6">
+          <div className="bg-gray-800/50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-green-400">Early Performance Data</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-400 mb-2">400%</div>
+                <h4 className="font-semibold text-white mb-2">Conversion Increase</h4>
+                <p className="text-gray-300 text-sm">TikTok to streaming platform conversion</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-400 mb-2">15-30</div>
+                <h4 className="font-semibold text-white mb-2">Seconds to Add</h4>
+                <p className="text-gray-300 text-sm">From discovery to playlist addition</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-red-400 mb-2">85%</div>
+                <h4 className="font-semibold text-white mb-2">User Adoption</h4>
+                <p className="text-gray-300 text-sm">Of users who see the feature use it</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-red-900/30 to-red-800/30 p-6 rounded-lg border border-red-500/20">
+          <h3 className="text-xl font-semibold mb-4 text-red-400">What This Means for Artists</h3>
+          <p className="text-gray-300 mb-4">
+            TikTok virality now directly translates to streaming revenue. Artists need to optimize their TikTok strategy immediately.
+          </p>
+          <a href="mailto:anyro@1abel.com?subject=TikTok%20Strategy%20Help" 
+             className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+            Get TikTok Strategy Help
+          </a>
+        </div>
+      </div>
+    ),
+
+    'spotify-wrapped-2024-hip-hop-rnb-dominate-australian-streams': (
+      <div className="prose prose-invert max-w-none">
+        <p className="text-xl text-gray-300 mb-8">
+          Hip-hop/RnB accounted for 32% of all streams globally in 2024, up from 24% in 2023. Pop-punk and indie rock continue declining as Gen Z drives urban music growth.
+        </p>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Genre Domination in 2024</h2>
+        
+        <div className="space-y-6">
+          <div className="bg-gray-800/50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-green-400">Streaming Share by Genre</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Hip-Hop/RnB</span>
+                  <span className="text-green-400 font-bold">32%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Pop</span>
+                  <span className="text-blue-400 font-bold">28%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Electronic/Dance</span>
+                  <span className="text-purple-400 font-bold">15%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Rock</span>
+                  <span className="text-gray-400 font-bold">12%</span>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Indie</span>
+                  <span className="text-gray-400 font-bold">8%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Country</span>
+                  <span className="text-gray-400 font-bold">3%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Jazz</span>
+                  <span className="text-gray-400 font-bold">1%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-white">Other</span>
+                  <span className="text-gray-400 font-bold">1%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-red-900/30 to-red-800/30 p-6 rounded-lg border border-red-500/20">
+          <h3 className="text-xl font-semibold mb-4 text-red-400">The Hip-Hop/RnB Opportunity</h3>
+          <p className="text-gray-300 mb-4">
+            1ABEL specializes in developing hip-hop and RnB artists in the world's fastest-growing music genres.
+          </p>
+          <a href="mailto:anyro@1abel.com?subject=Hip-Hop%20RnB%20Development" 
+             className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+            Join 1ABEL's Roster
+          </a>
+        </div>
+      </div>
+    )
   }
 
   return content[slug] || (

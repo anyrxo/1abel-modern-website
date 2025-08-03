@@ -1,0 +1,28 @@
+{
+  "test_date": "2025-08-03T20:56:52.360941",
+  "base_url": "http://localhost:8000",
+  "total_issues": 2,
+  "issues": [
+    {
+      "severity": "high",
+      "category": "blog",
+      "page": "/blog/spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025/",
+      "description": "Blog post returns 404",
+      "recommendation": "Fix broken blog post link",
+      "timestamp": "2025-08-03T20:56:48.672452"
+    },
+    {
+      "severity": "high",
+      "category": "blog",
+      "page": "/blog/tiktok-algorithm-secrets-how-to-go-viral-as-music-artist/",
+      "description": "Blog post returns 404",
+      "recommendation": "Fix broken blog post link",
+      "timestamp": "2025-08-03T20:56:48.998458"
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 2,
+    "medium": 0
+  }
+}

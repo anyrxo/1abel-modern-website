@@ -1,0 +1,1364 @@
+{
+  "audit_date": "2025-08-03T20:55:42.312969",
+  "total_pages": 32,
+  "total_links": 521,
+  "pages": [
+    "index.html",
+    "404.html",
+    "contact/index.html",
+    "privacy/index.html",
+    "terms/index.html",
+    "about/index.html",
+    "blog/index.html",
+    "blog/apple-music-spatial-audio-why-most-artists-are-missing-out/index.html",
+    "blog/spotify-wrapped-2024-hip-hop-rnb-dominate-australian-streams/index.html",
+    "blog/spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025/index.html",
+    "blog/email-marketing-for-musicians-building-list-that-actually-converts/index.html",
+    "blog/ai-music-tools-threat-or-opportunity-for-human-artists/index.html",
+    "blog/live-music-venues-struggle-as-artists-go-direct-to-fan/index.html",
+    "blog/playlist-placement-reality-check-what-actually-works-2025/index.html",
+    "blog/sync-licensing-boom-tv-shows-desperately-need-indie-music/index.html",
+    "blog/distribution-deals-explained-distrokid-vs-cd-baby-vs-label-deals/index.html",
+    "blog/music-rights-publishing-dont-let-labels-steal-your-publishing/index.html",
+    "blog/live-performance-revenue-gigs-festivals-building-fanbase/index.html",
+    "blog/playlist-submission-scams-what-to-avoid-2025/index.html",
+    "blog/music-production-on-budget-pro-studio-sound-under-2000/index.html",
+    "blog/tiktok-algorithm-secrets-how-to-go-viral-as-music-artist/index.html",
+    "blog/brand-deals-for-musicians-how-to-actually-get-paid-by-companies/index.html",
+    "blog/tiktok-new-add-to-music-app-feature-changes-everything-for-artists/index.html",
+    "blog/instagram-reels-vs-tiktok-vs-youtube-shorts-where-should-artists-focus/index.html",
+    "blog/youtube-shorts-monetization-new-revenue-streams-for-musicians/index.html",
+    "blog/why-traditional-australian-labels-are-failing-independent-artists/index.html",
+    "blog/instagram-reels-algorithm-update-favors-music-content/index.html",
+    "blog/sync-licensing-for-beginners-getting-your-music-in-tv-films-ads/index.html",
+    "blog/why-every-other-australian-label-stuck-in-2015-and-we-are-not/index.html",
+    "careers/index.html",
+    "404/index.html",
+    "services/index.html"
+  ],
+  "navigation_links": [
+    "/about/",
+    "/services/",
+    "/contact/",
+    "/blog/",
+    "/",
+    "mailto:anyro@1abel.com"
+  ],
+  "issues": [
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "index.html",
+      "description": "Title too long: 66 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "index.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "404.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "contact/index.html",
+      "description": "Title too long: 66 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "contact/index.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "privacy/index.html",
+      "description": "Title too long: 66 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "privacy/index.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "terms/index.html",
+      "description": "Title too long: 66 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "terms/index.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "about/index.html",
+      "description": "Title too long: 66 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "about/index.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/index.html",
+      "description": "Title too long: 66 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/index.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/apple-music-spatial-audio-why-most-artists-are-missing-out/index.html",
+      "description": "Title too long: 78 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/apple-music-spatial-audio-why-most-artists-are-missing-out/index.html",
+      "description": "Meta description too long: 166 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/spotify-wrapped-2024-hip-hop-rnb-dominate-australian-streams/index.html",
+      "description": "Title too long: 86 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/spotify-wrapped-2024-hip-hop-rnb-dominate-australian-streams/index.html",
+      "description": "Meta description too long: 164 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025/index.html",
+      "description": "Title too long: 86 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025/index.html",
+      "description": "Meta description too long: 212 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/email-marketing-for-musicians-building-list-that-actually-converts/index.html",
+      "description": "Title too long: 88 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/email-marketing-for-musicians-building-list-that-actually-converts/index.html",
+      "description": "Meta description too long: 170 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/ai-music-tools-threat-or-opportunity-for-human-artists/index.html",
+      "description": "Title too long: 75 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/ai-music-tools-threat-or-opportunity-for-human-artists/index.html",
+      "description": "Meta description too long: 177 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/live-music-venues-struggle-as-artists-go-direct-to-fan/index.html",
+      "description": "Title too long: 73 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/live-music-venues-struggle-as-artists-go-direct-to-fan/index.html",
+      "description": "Meta description too long: 165 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/playlist-placement-reality-check-what-actually-works-2025/index.html",
+      "description": "Title too long: 80 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/playlist-placement-reality-check-what-actually-works-2025/index.html",
+      "description": "Meta description too long: 179 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/sync-licensing-boom-tv-shows-desperately-need-indie-music/index.html",
+      "description": "Title too long: 77 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/sync-licensing-boom-tv-shows-desperately-need-indie-music/index.html",
+      "description": "Meta description too long: 171 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/distribution-deals-explained-distrokid-vs-cd-baby-vs-label-deals/index.html",
+      "description": "Title too long: 84 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/music-rights-publishing-dont-let-labels-steal-your-publishing/index.html",
+      "description": "Title too long: 93 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/music-rights-publishing-dont-let-labels-steal-your-publishing/index.html",
+      "description": "Meta description too long: 176 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/live-performance-revenue-gigs-festivals-building-fanbase/index.html",
+      "description": "Title too long: 85 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/playlist-submission-scams-what-to-avoid-2025/index.html",
+      "description": "Title too long: 67 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/playlist-submission-scams-what-to-avoid-2025/index.html",
+      "description": "Meta description too long: 187 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/music-production-on-budget-pro-studio-sound-under-2000/index.html",
+      "description": "Title too long: 82 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/music-production-on-budget-pro-studio-sound-under-2000/index.html",
+      "description": "Meta description too long: 183 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/tiktok-algorithm-secrets-how-to-go-viral-as-music-artist/index.html",
+      "description": "Title too long: 78 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/tiktok-algorithm-secrets-how-to-go-viral-as-music-artist/index.html",
+      "description": "Meta description too long: 191 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/brand-deals-for-musicians-how-to-actually-get-paid-by-companies/index.html",
+      "description": "Title too long: 83 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/brand-deals-for-musicians-how-to-actually-get-paid-by-companies/index.html",
+      "description": "Meta description too long: 170 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/tiktok-new-add-to-music-app-feature-changes-everything-for-artists/index.html",
+      "description": "Title too long: 104 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/tiktok-new-add-to-music-app-feature-changes-everything-for-artists/index.html",
+      "description": "Meta description too long: 186 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/instagram-reels-vs-tiktok-vs-youtube-shorts-where-should-artists-focus/index.html",
+      "description": "Title too long: 91 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/instagram-reels-vs-tiktok-vs-youtube-shorts-where-should-artists-focus/index.html",
+      "description": "Meta description too long: 169 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/youtube-shorts-monetization-new-revenue-streams-for-musicians/index.html",
+      "description": "Title too long: 81 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/youtube-shorts-monetization-new-revenue-streams-for-musicians/index.html",
+      "description": "Meta description too long: 170 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/why-traditional-australian-labels-are-failing-independent-artists/index.html",
+      "description": "Title too long: 82 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/why-traditional-australian-labels-are-failing-independent-artists/index.html",
+      "description": "Meta description too long: 192 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/instagram-reels-algorithm-update-favors-music-content/index.html",
+      "description": "Title too long: 72 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/instagram-reels-algorithm-update-favors-music-content/index.html",
+      "description": "Meta description too long: 187 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/sync-licensing-for-beginners-getting-your-music-in-tv-films-ads/index.html",
+      "description": "Title too long: 90 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/why-every-other-australian-label-stuck-in-2015-and-we-are-not/index.html",
+      "description": "Title too long: 78 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "blog/why-every-other-australian-label-stuck-in-2015-and-we-are-not/index.html",
+      "description": "Meta description too long: 194 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "careers/index.html",
+      "description": "Title too long: 66 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "careers/index.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "404/index.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "services/index.html",
+      "description": "Title too long: 66 chars",
+      "recommendation": "Shorten title to 50-60 characters"
+    },
+    {
+      "severity": "medium",
+      "category": "seo",
+      "page": "services/index.html",
+      "description": "Meta description too long: 253 chars",
+      "recommendation": "Shorten to 150-160 characters"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "404.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "404.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "404.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "404.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "contact/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "contact/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "contact/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "contact/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "privacy/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "privacy/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "privacy/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "privacy/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "terms/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "terms/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "terms/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "terms/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "about/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "about/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "about/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "about/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/apple-music-spatial-audio-why-most-artists-are-missing-out/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/apple-music-spatial-audio-why-most-artists-are-missing-out/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/apple-music-spatial-audio-why-most-artists-are-missing-out/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/apple-music-spatial-audio-why-most-artists-are-missing-out/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/spotify-wrapped-2024-hip-hop-rnb-dominate-australian-streams/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/spotify-wrapped-2024-hip-hop-rnb-dominate-australian-streams/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/spotify-wrapped-2024-hip-hop-rnb-dominate-australian-streams/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/spotify-wrapped-2024-hip-hop-rnb-dominate-australian-streams/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/email-marketing-for-musicians-building-list-that-actually-converts/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/email-marketing-for-musicians-building-list-that-actually-converts/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/email-marketing-for-musicians-building-list-that-actually-converts/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/email-marketing-for-musicians-building-list-that-actually-converts/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/ai-music-tools-threat-or-opportunity-for-human-artists/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/ai-music-tools-threat-or-opportunity-for-human-artists/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/ai-music-tools-threat-or-opportunity-for-human-artists/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/ai-music-tools-threat-or-opportunity-for-human-artists/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/live-music-venues-struggle-as-artists-go-direct-to-fan/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/live-music-venues-struggle-as-artists-go-direct-to-fan/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/live-music-venues-struggle-as-artists-go-direct-to-fan/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/live-music-venues-struggle-as-artists-go-direct-to-fan/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/playlist-placement-reality-check-what-actually-works-2025/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/playlist-placement-reality-check-what-actually-works-2025/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/playlist-placement-reality-check-what-actually-works-2025/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/playlist-placement-reality-check-what-actually-works-2025/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/sync-licensing-boom-tv-shows-desperately-need-indie-music/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/sync-licensing-boom-tv-shows-desperately-need-indie-music/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/sync-licensing-boom-tv-shows-desperately-need-indie-music/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/sync-licensing-boom-tv-shows-desperately-need-indie-music/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/distribution-deals-explained-distrokid-vs-cd-baby-vs-label-deals/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/distribution-deals-explained-distrokid-vs-cd-baby-vs-label-deals/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/distribution-deals-explained-distrokid-vs-cd-baby-vs-label-deals/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/distribution-deals-explained-distrokid-vs-cd-baby-vs-label-deals/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/music-rights-publishing-dont-let-labels-steal-your-publishing/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/music-rights-publishing-dont-let-labels-steal-your-publishing/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/music-rights-publishing-dont-let-labels-steal-your-publishing/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/music-rights-publishing-dont-let-labels-steal-your-publishing/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/live-performance-revenue-gigs-festivals-building-fanbase/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/live-performance-revenue-gigs-festivals-building-fanbase/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/live-performance-revenue-gigs-festivals-building-fanbase/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/live-performance-revenue-gigs-festivals-building-fanbase/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/playlist-submission-scams-what-to-avoid-2025/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/playlist-submission-scams-what-to-avoid-2025/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/playlist-submission-scams-what-to-avoid-2025/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/playlist-submission-scams-what-to-avoid-2025/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/music-production-on-budget-pro-studio-sound-under-2000/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/music-production-on-budget-pro-studio-sound-under-2000/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/music-production-on-budget-pro-studio-sound-under-2000/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/music-production-on-budget-pro-studio-sound-under-2000/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/tiktok-algorithm-secrets-how-to-go-viral-as-music-artist/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/tiktok-algorithm-secrets-how-to-go-viral-as-music-artist/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/tiktok-algorithm-secrets-how-to-go-viral-as-music-artist/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/tiktok-algorithm-secrets-how-to-go-viral-as-music-artist/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/brand-deals-for-musicians-how-to-actually-get-paid-by-companies/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/brand-deals-for-musicians-how-to-actually-get-paid-by-companies/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/brand-deals-for-musicians-how-to-actually-get-paid-by-companies/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/brand-deals-for-musicians-how-to-actually-get-paid-by-companies/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/tiktok-new-add-to-music-app-feature-changes-everything-for-artists/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/tiktok-new-add-to-music-app-feature-changes-everything-for-artists/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/tiktok-new-add-to-music-app-feature-changes-everything-for-artists/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/tiktok-new-add-to-music-app-feature-changes-everything-for-artists/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/instagram-reels-vs-tiktok-vs-youtube-shorts-where-should-artists-focus/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/instagram-reels-vs-tiktok-vs-youtube-shorts-where-should-artists-focus/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/instagram-reels-vs-tiktok-vs-youtube-shorts-where-should-artists-focus/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/instagram-reels-vs-tiktok-vs-youtube-shorts-where-should-artists-focus/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/youtube-shorts-monetization-new-revenue-streams-for-musicians/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/youtube-shorts-monetization-new-revenue-streams-for-musicians/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/youtube-shorts-monetization-new-revenue-streams-for-musicians/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/youtube-shorts-monetization-new-revenue-streams-for-musicians/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/why-traditional-australian-labels-are-failing-independent-artists/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/why-traditional-australian-labels-are-failing-independent-artists/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/why-traditional-australian-labels-are-failing-independent-artists/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/why-traditional-australian-labels-are-failing-independent-artists/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/instagram-reels-algorithm-update-favors-music-content/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/instagram-reels-algorithm-update-favors-music-content/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/instagram-reels-algorithm-update-favors-music-content/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/instagram-reels-algorithm-update-favors-music-content/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/sync-licensing-for-beginners-getting-your-music-in-tv-films-ads/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/sync-licensing-for-beginners-getting-your-music-in-tv-films-ads/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/sync-licensing-for-beginners-getting-your-music-in-tv-films-ads/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/sync-licensing-for-beginners-getting-your-music-in-tv-films-ads/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/why-every-other-australian-label-stuck-in-2015-and-we-are-not/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/why-every-other-australian-label-stuck-in-2015-and-we-are-not/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/why-every-other-australian-label-stuck-in-2015-and-we-are-not/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "blog/why-every-other-australian-label-stuck-in-2015-and-we-are-not/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "careers/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "careers/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "careers/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "careers/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "404/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "404/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "404/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "404/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "services/index.html",
+      "description": "Broken internal link: '/_next/static/media/e4af272ccee01ff0-s.p.woff2' -> '_next/static/media/e4af272ccee01ff0-s.p.woff2/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "services/index.html",
+      "description": "Broken internal link: '/_next/static/css/030770a5260af9d3.css' -> '_next/static/css/030770a5260af9d3.css/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "services/index.html",
+      "description": "Broken internal link: '/_next/static/chunks/webpack-f362e938533703f4.js' -> '_next/static/chunks/webpack-f362e938533703f4.js/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    },
+    {
+      "severity": "high",
+      "category": "navigation",
+      "page": "services/index.html",
+      "description": "Broken internal link: '//1abel.com' -> '1abel.com/index.html'",
+      "recommendation": "Fix broken link or remove it"
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 128,
+    "medium": 59,
+    "low": 0
+  }
+}
