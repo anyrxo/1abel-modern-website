@@ -5,7 +5,12 @@ import { GeniusFeaturesSection } from '@/components/GeniusCard'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import Link from 'next/link'
-import { TrendingUp, Award, Users, Mail, MessageCircle } from 'lucide-react'
+import { TrendingUp, Award, Users, Mail, MessageCircle, Star, Sparkles, Music, Globe, Heart, ArrowRight } from 'lucide-react'
+import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
+import ShimmerButton from '@/components/magicui/shimmer-button'
+import NumberTicker from '@/components/magicui/number-ticker'
+import WordRotate from '@/components/magicui/word-rotate'
+import BlurIn from '@/components/magicui/blur-in'
 
 export default function HomePage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -22,59 +27,100 @@ export default function HomePage() {
       {/* Genius Features Section with 3D Cards */}
       <GeniusFeaturesSection />
 
-      {/* Artist Success Stories Section */}
+      {/* A Beautiful Heaven for Artists Section */}
       <section className="min-h-screen bg-black py-20 px-8 relative overflow-hidden">
+        {/* Magical background effects */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/5 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/10 via-red-600/5 to-transparent animate-pulse" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,_var(--tw-gradient-stops))] from-red-500/10 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent" />
         </div>
         
         <div className="relative z-10 max-w-6xl mx-auto">
-          <motion.h2 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-7xl font-bold text-center mb-20"
+            className="text-center mb-16"
           >
-            YOUR SUCCESS IS <span className="text-red-600">OUR MISSION</span>
-          </motion.h2>
+            <AnimatedGradientText className="mb-8">
+              <Sparkles className="w-4 h-4 mr-2" />
+              The Future of Music Labels
+              <Sparkles className="w-4 h-4 ml-2" />
+            </AnimatedGradientText>
+            
+            <BlurIn
+              word="A BEAUTIFUL HEAVEN FOR ARTISTS"
+              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 bg-gradient-to-r from-white via-red-200 to-red-600 bg-clip-text text-transparent"
+              duration={1}
+            />
+            
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
+            >
+              Where <WordRotate words={["RnB artists", "trap producers", "rap legends", "music creators"]} className="text-red-600 font-bold" /> 
+              find their path to global stardom through modern marketing and genuine partnerships
+            </motion.p>
+          </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <div className="text-6xl font-bold text-red-600 mb-4">150M+</div>
-              <div className="text-xl text-gray-400">Total Streams</div>
-              <div className="text-sm text-gray-500 mt-2">Across all platforms</div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <div className="text-6xl font-bold text-red-600 mb-4">34</div>
-              <div className="text-xl text-gray-400">Global Artists</div>
-              <div className="text-sm text-gray-500 mt-2">And growing</div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="text-center"
-            >
-              <div className="text-6xl font-bold text-red-600 mb-4">2.5M+</div>
-              <div className="text-xl text-gray-400">Social Following</div>
-              <div className="text-sm text-gray-500 mt-2">Combined reach</div>
-            </motion.div>
+          {/* Why Artists Choose 1ABEL */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+            {[
+              {
+                icon: <Globe className="w-8 h-8" />,
+                title: "Global Reach",
+                description: "From bedroom to billboard in weeks, not years",
+                stat: "150M+",
+                statLabel: "Total Streams"
+              },
+              {
+                icon: <TrendingUp className="w-8 h-8" />,
+                title: "Modern Marketing",
+                description: "TikTok viral strategies that actually work",
+                stat: "500M+",
+                statLabel: "Social Views"
+              },
+              {
+                icon: <Award className="w-8 h-8" />,
+                title: "Fair Deals",
+                description: "Keep 80% royalties & own your masters",
+                stat: "80%",
+                statLabel: "Artist Share"
+              },
+              {
+                icon: <Heart className="w-8 h-8" />,
+                title: "Real Partnership",
+                description: "We're invested in your success, not just profit",
+                stat: "34",
+                statLabel: "Happy Artists"
+              }
+            ].map((item, index) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="relative group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100" />
+                <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-red-600/50 transition-all duration-300">
+                  <div className="text-red-600 mb-4">{item.icon}</div>
+                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-gray-400 mb-4">{item.description}</p>
+                  <div className="pt-4 border-t border-gray-700">
+                    <div className="text-3xl font-bold text-red-600">
+                      {item.stat.includes('M') || item.stat.includes('%') ? item.stat : <NumberTicker value={parseInt(item.stat)} />}
+                    </div>
+                    <div className="text-sm text-gray-500">{item.statLabel}</div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
 
           {/* Success Story Cards */}
@@ -181,11 +227,115 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* The Revolution Starts Here */}
+      <section className="min-h-screen bg-gradient-to-b from-black to-gray-900 py-20 px-8 relative overflow-hidden">
+        {/* Animated background particles */}
+        <div className="absolute inset-0">
+          {[...Array(50)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-1 h-1 bg-red-600/30 rounded-full"
+              initial={{ 
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight
+              }}
+              animate={{
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight
+              }}
+              transition={{
+                duration: Math.random() * 20 + 10,
+                repeat: Infinity,
+                repeatType: "reverse"
+              }}
+            />
+          ))}
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-5xl md:text-7xl font-bold mb-8">
+              THE <span className="text-red-600">REVOLUTION</span> STARTS HERE
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
+              Join artists who refused to accept the old way. Who knew their music deserved 
+              better than radio pitches and 360 deals. Who chose modern marketing over ancient methods.
+            </p>
+          </motion.div>
+          
+          {/* Artist testimonials with magical cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                quote: "1ABEL turned my bedroom recordings into 50M streams in 6 months. They understand algorithms like no traditional label.",
+                artist: "Luna Rose",
+                genre: "R&B Artist",
+                achievement: "From 0 to 100K monthly listeners"
+              },
+              {
+                quote: "They got me brand deals worth $500K because they actually have connections outside music. This is the future.",
+                artist: "TRVP LORD",
+                genre: "Trap Producer",
+                achievement: "Nike & Fashion Nova partnerships"
+              },
+              {
+                quote: "No 360 deal BS. I keep my masters, get 80% royalties, and they still promote harder than any major label.",
+                artist: "Zara X",
+                genre: "Rap Artist",
+                achievement: "Billboard charting independently"
+              }
+            ].map((testimonial, index) => (
+              <motion.div
+                key={testimonial.artist}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="relative group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-orange-600/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
+                <div className="relative bg-gray-900/90 backdrop-blur p-8 rounded-2xl border border-gray-700 hover:border-red-600/50 transition-all duration-300">
+                  <div className="text-red-600 text-6xl mb-4">"</div>
+                  <p className="text-gray-300 mb-6 italic">{testimonial.quote}</p>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <div className="font-bold text-white">{testimonial.artist}</div>
+                      <div className="text-sm text-gray-400">{testimonial.genre}</div>
+                    </div>
+                    <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-gray-700">
+                    <div className="text-sm text-red-600">{testimonial.achievement}</div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Join 1ABEL CTA Section */}
       <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black relative overflow-hidden">
-        {/* Background effects */}
+        {/* Magical aurora background */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/20 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/20 via-transparent to-transparent animate-pulse" />
+          <motion.div
+            className="absolute inset-0"
+            animate={{
+              background: [
+                'radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%)',
+                'radial-gradient(circle at 80% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%)',
+                'radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%)',
+              ]
+            }}
+            transition={{ duration: 10, repeat: Infinity }}
+          />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-8 text-center">
@@ -196,6 +346,12 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="mb-12"
           >
+            <AnimatedGradientText className="mb-8">
+              <Music className="w-4 h-4 mr-2" />
+              Limited Spots Available
+              <Music className="w-4 h-4 ml-2" />
+            </AnimatedGradientText>
+            
             <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-white tracking-tight">
               READY TO GO
             </h2>
@@ -238,30 +394,16 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row gap-6 justify-center mb-20"
           >
-            <motion.a 
-              href="mailto:anyro@1abel.com" 
-              className="group relative bg-white text-black hover:bg-gray-100 px-12 py-5 rounded-xl text-lg font-semibold transition-all duration-300 inline-flex items-center justify-center shadow-xl hover:shadow-2xl overflow-hidden"
-              whileHover={{ scale: 1.05, y: -5 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Mail className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform" />
-              anyro@1abel.com
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-500"
-                initial={{ x: "-100%" }}
-                whileHover={{ x: 0 }}
-                transition={{ duration: 0.3 }}
-              />
-              <motion.span
-                className="absolute inset-0 flex items-center justify-center text-white font-semibold"
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
+            <ShimmerButton className="shadow-2xl">
+              <a 
+                href="mailto:anyro@1abel.com" 
+                className="inline-flex items-center justify-center px-12 py-5 text-lg font-semibold"
               >
                 <Mail className="w-6 h-6 mr-3" />
                 anyro@1abel.com
-              </motion.span>
-            </motion.a>
+                <ArrowRight className="w-5 h-5 ml-3" />
+              </a>
+            </ShimmerButton>
             
             <motion.a 
               href="https://twitter.com/anyrxo" 
@@ -275,6 +417,29 @@ export default function HomePage() {
               @anyrxo
             </motion.a>
           </motion.div>
+          
+          {/* Final stats */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto"
+          >
+            {[
+              { value: 150, suffix: "M+", label: "Streams" },
+              { value: 34, label: "Artists" },
+              { value: 2, suffix: "M+", label: "Brand Deals" },
+              { value: 80, suffix: "%", label: "Royalties" }
+            ].map((stat, index) => (
+              <div key={stat.label} className="text-center">
+                <div className="text-3xl font-bold text-red-600">
+                  <NumberTicker value={stat.value} />{stat.suffix}
+                </div>
+                <div className="text-sm text-gray-400">{stat.label}</div>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
@@ -286,6 +451,17 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-8">
+          {/* Join the revolution banner */}
+          <div className="text-center mb-12 pb-12 border-b border-gray-800">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">
+              Join the <span className="text-red-600">Revolution</span>
+            </h3>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Be part of the movement that's changing how music careers are built. 
+              Modern marketing. Fair deals. Real success.
+            </p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-2xl font-bold mb-4">
