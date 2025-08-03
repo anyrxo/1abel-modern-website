@@ -13,6 +13,61 @@ import BlurIn from '@/components/magicui/blur-in'
 import { Header } from '@/components/Header'
 import { useState } from 'react'
 
+interface PageProps {
+  params: { slug: string }
+}
+
+// Generate metadata for blog posts
+export async function generateMetadata({ params }: PageProps) {
+  const blogData = getBlogContent(params.slug)
+  
+  if (!blogData) {
+    return {
+      title: 'Blog Post Not Found | 1ABEL Music Label',
+      description: 'The requested blog post could not be found.'
+    }
+  }
+
+  const { post } = blogData
+  const title = `${post.title} | 1ABEL Music Blog`
+  const description = post.excerpt
+  const url = `https://1abel.com/blog/${post.slug}`
+
+  return {
+    title,
+    description,
+    keywords: `${post.category}, music label, RnB, trap, rap, streaming, artist development, music industry, ${post.title}`,
+    authors: [{ name: '1ABEL Music Label' }],
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: '1ABEL Music Label',
+      images: [
+        {
+          url: `/blog-images/${post.slug}.jpg`,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
+      type: 'article',
+      publishedTime: post.date,
+      section: post.category,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`/blog-images/${post.slug}.jpg`],
+      creator: '@1ABEL_Music',
+    },
+    alternates: {
+      canonical: url,
+    },
+  }
+}
+
 // Get blog content by slug
 function getBlogContent(slug: string) {
   // First check blog posts
@@ -1276,7 +1331,7 @@ function getNewsPostContent(slug: string) {
   return content[slug] || <div>Content not found</div>
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+export default function BlogPostPage({ params }: PageProps) {
   const blogData = getBlogContent(params.slug)
   const [liked, setLiked] = useState(false)
   const [copied, setCopied] = useState(false)
