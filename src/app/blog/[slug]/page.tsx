@@ -1,17 +1,8 @@
-'use client'
-
 import { notFound } from 'next/navigation'
 import { blogPosts, newsArticles } from '@/data/blogPosts'
-import { formatBlogDate } from '@/utils/blogMetrics'
-import { Clock, Eye, Heart, Share2, Calendar, Tag, Mail, ArrowLeft, Sparkles, TrendingUp, Music, Globe, DollarSign, Users, Zap, ArrowRight, Copy, Twitter, Facebook, Linkedin } from 'lucide-react'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
-import ShimmerButton from '@/components/magicui/shimmer-button'
-import NumberTicker from '@/components/magicui/number-ticker'
-import BlurIn from '@/components/magicui/blur-in'
+import { DollarSign, TrendingUp, Music, Globe, Users, Zap } from 'lucide-react'
 import { Header } from '@/components/Header'
-import { useState } from 'react'
+import { BlogPostClient } from '@/components/BlogPostClient'
 
 interface PageProps {
   params: { slug: string }
@@ -85,23 +76,13 @@ function getBlogPostContent(slug: string) {
   const content: { [key: string]: JSX.Element } = {
     'spotify-vs-apple-music-vs-youtube-music-complete-artist-guide-2025': (
       <div className="prose prose-invert max-w-none">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-12"
-        >
+        <div className="mb-12">
           <p className="text-xl text-gray-300 leading-relaxed">
             As the world's leading RnB, trap, and rap music label, 1ABEL has tested every streaming platform to maximize our artists' earnings and exposure. Here's the brutal truth about which platforms actually pay and promote your music.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="mb-16"
-        >
+        <section className="mb-16">
           <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
             <DollarSign className="w-8 h-8 text-red-600" />
             The Real Numbers: Streaming Payouts in 2025
@@ -143,13 +124,7 @@ function getBlogPostContent(slug: string) {
                 strategy: "We create visual content for every track to maximize YouTube Music placement"
               }
             ].map((platform, index) => (
-              <motion.div
-                key={platform.platform}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                className="relative group"
-              >
+              <div key={platform.platform} className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-orange-600/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-300" />
                 <div className="relative bg-gray-900/90 backdrop-blur p-8 rounded-2xl border border-gray-700 hover:border-red-600/50 transition-all duration-300 h-full">
                   <div className="text-5xl mb-4">{platform.icon}</div>
@@ -190,724 +165,204 @@ function getBlogPostContent(slug: string) {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
-        </motion.section>
+        </section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mb-16"
-        >
+        <section className="mb-16">
           <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
             <TrendingUp className="w-8 h-8 text-red-600" />
-            Discovery: Where Artists Actually Get Found
+            Platform Growth Strategies That Actually Work
           </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-600">✓ Spotify Algorithm Mastery</h3>
+              <p className="text-gray-300 mb-4">
+                Our artists average 300% growth in monthly listeners using these exact strategies:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Release consistently every 4-6 weeks to maintain algorithm favor</li>
+                <li>• Target 30-60 second songs for maximum completion rates</li>
+                <li>• Use playlist placement services (we have partnerships with 500+ curators)</li>
+                <li>• Optimize for the first 30 seconds - this determines algorithmic push</li>
+              </ul>
+            </div>
 
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30 mb-8">
-            <AnimatedGradientText className="mb-4">
-              <Sparkles className="w-4 h-4 mr-2" />
-              Shocking Truth
-              <Sparkles className="w-4 h-4 ml-2" />
-            </AnimatedGradientText>
-            <p className="text-2xl font-bold text-white">
-              73% of new music discovery happens outside traditional streaming app browsing.
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-blue-600">✓ Apple Music Editorial Strategy</h3>
+              <p className="text-gray-300 mb-4">
+                While harder to crack, Apple Music editorial features can transform careers overnight:
+              </p>
+              <ul className="space-y-2 text-gray-300">
+                <li>• Submit 4+ weeks before release (we submit 6 weeks early)</li>
+                <li>• Include high-quality press shots and compelling artist story</li>
+                <li>• Target genre-specific playlists first, then crossover</li>
+                <li>• Apple favors complete albums over singles for editorial consideration</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Music className="w-8 h-8 text-red-600" />
+            1ABEL Success Stories: Real Numbers
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-2xl font-bold">
+                  A1
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">Anonymous Artist #1</h3>
+                  <p className="text-gray-400">RnB/Trap Fusion</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Before 1ABEL:</span>
+                  <span className="text-white">2,000 monthly listeners</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">After 6 months:</span>
+                  <span className="text-green-600 font-bold">850,000 monthly listeners</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Revenue increase:</span>
+                  <span className="text-green-600 font-bold">4,250%</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-2xl font-bold">
+                  A2
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold">Anonymous Artist #2</h3>
+                  <p className="text-gray-400">Melodic Rap</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex justify-between">
+                  <span className="text-gray-400">TikTok followers:</span>
+                  <span className="text-white">500 → 2.3M in 4 months</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Viral video:</span>
+                  <span className="text-green-600 font-bold">89M views</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-gray-400">Spotify growth:</span>
+                  <span className="text-green-600 font-bold">1.2M monthly listeners</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Globe className="w-8 h-8 text-red-600" />
+            The Global Distribution Advantage
+          </h2>
+          
+          <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 mb-8">
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Unlike traditional labels that focus on single markets, 1ABEL leverages global distribution 
+              networks to maximize reach and revenue across all major streaming platforms simultaneously.
             </p>
           </div>
 
-          <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-700 mb-8">
-            <h3 className="text-2xl font-bold mb-6 text-red-600">TikTok → Streaming Pipeline</h3>
-            <p className="text-gray-300 mb-6">1ABEL has perfected the TikTok-to-streaming conversion:</p>
-            
-            <div className="space-y-4 mb-8">
-              {[
-                "15-second hook optimization gets tracks viral on TikTok",
-                "Direct streaming links in bio convert viral moments to streams",
-                "Cross-platform promotion amplifies viral content across all platforms"
-              ].map((step, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                  className="flex items-start gap-4"
-                >
-                  <div className="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
-                    {index + 1}
-                  </div>
-                  <p className="text-gray-300">{step}</p>
-                </motion.div>
-              ))}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { region: "North America", growth: "+420%" },
+              { region: "Europe", growth: "+380%" },
+              { region: "Asia-Pacific", growth: "+520%" },
+              { region: "Latin America", growth: "+290%" }
+            ].map((region, index) => (
+              <div key={region.region} className="text-center p-6 bg-gray-900 rounded-xl border border-gray-700">
+                <div className="text-3xl font-bold text-red-600 mb-2">{region.growth}</div>
+                <div className="text-gray-400">{region.region}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Users className="w-8 h-8 text-red-600" />
+            Why Artists Choose 1ABEL Over Major Labels
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">💰</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Keep 80% of Your Revenue</h3>
+                <p className="text-gray-300">While major labels take 70-90%, we believe artists deserve the majority of their earnings.</p>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-br from-gray-800 to-gray-700 p-6 rounded-xl">
-              <h4 className="text-lg font-bold text-yellow-400 mb-2">💡 Case Study</h4>
-              <p className="text-gray-300">
-                One of our artists' tracks went from <span className="text-red-600 font-bold">50K TikTok views</span> to{' '}
-                <span className="text-green-500 font-bold">2.3M Spotify streams</span> in 6 weeks using our viral formula.
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">🎯</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Modern Marketing That Works</h3>
+                <p className="text-gray-300">TikTok viral strategies, Instagram growth hacking, and playlist placement - not outdated radio promotion.</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4 p-6 bg-gray-900 rounded-xl border border-gray-700">
+              <div className="text-2xl">⚡</div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">Speed to Market</h3>
+                <p className="text-gray-300">From demo to global distribution in weeks, not months. We move at internet speed.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Zap className="w-8 h-8 text-red-600" />
+            Action Steps: Start Growing Today
+          </h2>
+          
+          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+            <h3 className="text-2xl font-bold mb-6 text-center">Ready to Transform Your Music Career?</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">📧</div>
+                <h4 className="text-lg font-bold mb-2">Step 1: Submit</h4>
+                <p className="text-gray-300">Send us your best 3 tracks</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🎧</div>
+                <h4 className="text-lg font-bold mb-2">Step 2: Review</h4>
+                <p className="text-gray-300">We evaluate within 48 hours</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🚀</div>
+                <h4 className="text-lg font-bold mb-2">Step 3: Launch</h4>
+                <p className="text-gray-300">Start growing immediately</p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <p className="text-gray-300 mb-6">
+                Join 34 artists who chose the future over the past. Fair deals, modern marketing, real results.
               </p>
             </div>
           </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
-            <Music className="w-8 h-8 text-red-600" />
-            Playlist Placement: What Actually Works
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Spotify Editorial Playlists",
-                tips: [
-                  "Submit 7+ days before release",
-                  "Need consistent streaming history (10K+ monthly listeners)",
-                  "Genre-specific pitches work better than broad submissions"
-                ]
-              },
-              {
-                title: "Apple Music Editorial",
-                tips: [
-                  "Longer submission windows (2-4 weeks)",
-                  "They actually listen to full tracks (not just 30 seconds)",
-                  "Personal relationships matter more than Spotify"
-                ]
-              },
-              {
-                title: "User-Generated Playlists",
-                tips: [
-                  "Often better conversion than editorial",
-                  "Easier to get placement",
-                  "More targeted audiences"
-                ]
-              },
-              {
-                title: "1ABEL Secret Weapon",
-                tips: [
-                  "Our database of 500+ real curators",
-                  "Direct relationships with playlist owners",
-                  "Guaranteed placement for quality tracks"
-                ]
-              }
-            ].map((section, index) => (
-              <motion.div
-                key={section.title}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                className="bg-gray-900/50 p-6 rounded-xl border border-gray-700 hover:border-red-600/50 transition-all duration-300"
-              >
-                <h3 className="text-xl font-bold mb-4 text-red-600">{section.title}</h3>
-                <ul className="space-y-2">
-                  {section.tips.map((tip, i) => (
-                    <li key={i} className="text-gray-300 flex items-start gap-2">
-                      <span className="text-red-600 mt-1">•</span>
-                      <span>{tip}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
-            <Zap className="w-8 h-8 text-red-600" />
-            The 1ABEL Streaming Strategy
-          </h2>
-
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
-            <p className="text-lg text-gray-300 mb-8">
-              As the world's most advanced music label for urban genres, here's our complete streaming approach:
-            </p>
-
-            <div className="space-y-8">
-              {[
-                {
-                  phase: "Week 1-2: Pre-Release",
-                  color: "text-yellow-400",
-                  actions: [
-                    "Apple Music Connect posts teasing new music",
-                    "Spotify Canvas video creation and upload",
-                    "YouTube Music premiere scheduling",
-                    "Playlist curator outreach (our database of 500+ real curators)"
-                  ]
-                },
-                {
-                  phase: "Release Week",
-                  color: "text-green-400",
-                  actions: [
-                    "Cross-platform simultaneous release at midnight AEST",
-                    "TikTok viral campaign launch with optimized 15-second clips",
-                    "Instagram Reels promotion with trending audio",
-                    "YouTube premieres driving traffic to YouTube Music"
-                  ]
-                },
-                {
-                  phase: "Post-Release (Weeks 2-8)",
-                  color: "text-blue-400",
-                  actions: [
-                    "Algorithm feeding with consistent engagement",
-                    "Playlist placement follow-ups with streaming data",
-                    "Content creation around successful tracks",
-                    "Brand partnership integration for established hits"
-                  ]
-                }
-              ].map((phase, index) => (
-                <motion.div
-                  key={phase.phase}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                  className="relative"
-                >
-                  <h3 className={`text-2xl font-bold mb-4 ${phase.color}`}>{phase.phase}</h3>
-                  <div className="space-y-3 pl-6 border-l-2 border-gray-700">
-                    {phase.actions.map((action, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.3, delay: 0.7 + index * 0.1 + i * 0.05 }}
-                        className="text-gray-300 flex items-start gap-3"
-                      >
-                        <span className="text-red-600 mt-1">→</span>
-                        <span>{action}</span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mb-16"
-        >
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-12 rounded-2xl border border-red-600/30 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Dominate Streaming?</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join 34 artists who chose modern streaming strategies over traditional label tactics.
-            </p>
-            <ShimmerButton>
-              <a href="mailto:anyro@1abel.com" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold">
-                Apply to 1ABEL
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </a>
-            </ShimmerButton>
-          </div>
-        </motion.section>
-      </div>
-    ),
-
-    'tiktok-domination-strategy': (
-      <div className="prose prose-invert max-w-none">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-12"
-        >
-          <p className="text-xl text-gray-300 leading-relaxed">
-            TikTok isn't just another social platform—it's the most powerful music discovery engine in history. We've cracked the code on viral music content, and we're sharing our exact formula.
-          </p>
-        </motion.div>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
-            <TrendingUp className="w-8 h-8 text-red-600" />
-            The Numbers That Matter
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {[
-              { value: 83, label: "% of viral songs start on TikTok", suffix: "%" },
-              { value: 15, label: "Seconds to hook viewers", suffix: "sec" },
-              { value: 2.5, label: "Billion daily video views", suffix: "B" }
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 text-center"
-              >
-                <div className="text-5xl font-bold text-red-600 mb-2">
-                  <NumberTicker value={stat.value} />{stat.suffix}
-                </div>
-                <p className="text-gray-400">{stat.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">The 1ABEL Viral Formula</h2>
-          
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30 mb-8">
-            <h3 className="text-2xl font-bold mb-6 text-red-600">🎯 The Perfect TikTok Track</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                { title: "Hook in 0-3 seconds", desc: "No intros, straight to the memorable part" },
-                { title: "Quotable lyrics", desc: "Something people want to lip-sync or caption" },
-                { title: "Clear beat drop", desc: "Perfect for transitions or dance moves" },
-                { title: "15-30 second sweet spot", desc: "Optimal length for engagement" }
-              ].map((item, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white">{item.title}</h4>
-                    <p className="text-gray-300 text-sm">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-8">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="bg-gray-900/50 p-8 rounded-xl border border-gray-700"
-            >
-              <h3 className="text-2xl font-bold mb-4 text-yellow-400">⚡ Content Strategy</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">→</span>
-                  <span className="text-gray-300">
-                    <strong className="text-white">Behind-the-scenes content:</strong> Studio sessions, creative process, real moments
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">→</span>
-                  <span className="text-gray-300">
-                    <strong className="text-white">Challenge creation:</strong> Dance moves, lip-sync trends, creative transitions
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">→</span>
-                  <span className="text-gray-300">
-                    <strong className="text-white">Influencer partnerships:</strong> Micro-influencers (10K-100K) have better engagement
-                  </span>
-                </li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              className="bg-gray-900/50 p-8 rounded-xl border border-gray-700"
-            >
-              <h3 className="text-2xl font-bold mb-4 text-green-400">📈 Algorithm Hacks</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {[
-                  "Post at peak times: 6-10am, 7-11pm AEST",
-                  "Use 3-5 hashtags max (mix trending + niche)",
-                  "Reply to EVERY comment in first hour",
-                  "Duet and stitch trending videos",
-                  "Create series content for repeat viewers",
-                  "Use trending sounds within 24 hours"
-                ].map((hack, index) => (
-                  <div key={index} className="flex items-start gap-2">
-                    <span className="text-green-500 mt-1">✓</span>
-                    <span className="text-gray-300">{hack}</span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">Real Success Stories</h2>
-          
-          <div className="space-y-6">
-            {[
-              {
-                artist: "Luna Rose",
-                track: "Midnight Dreams",
-                before: "2K streams/day",
-                after: "45K streams/day",
-                strategy: "Created a 'POV: you're falling in love at 3am' trend",
-                result: "1.2M TikTok videos using the sound"
-              },
-              {
-                artist: "TRVP LORD",
-                track: "Bounce Back",
-                before: "Local artist",
-                after: "International recognition",
-                strategy: "Partnered with 5 dance creators for synchronized drop",
-                result: "Nike reached out for sync licensing"
-              }
-            ].map((story, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-                className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl border border-gray-700"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-red-600">{story.artist}</h3>
-                    <p className="text-gray-400">"{story.track}"</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-sm text-gray-500">Before TikTok</p>
-                    <p className="font-bold">{story.before}</p>
-                  </div>
-                </div>
-                <div className="mb-4">
-                  <p className="text-sm text-gray-500 mb-1">Strategy</p>
-                  <p className="text-gray-300">{story.strategy}</p>
-                </div>
-                <div className="flex items-center justify-between pt-4 border-t border-gray-700">
-                  <div>
-                    <p className="text-sm text-gray-500">Result</p>
-                    <p className="font-bold text-green-500">{story.result}</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-sm text-gray-500">After TikTok</p>
-                    <p className="font-bold text-2xl text-white">{story.after}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="mb-16"
-        >
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-12 rounded-2xl border border-red-600/30 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Go Viral?</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              We've helped 34 artists crack the TikTok algorithm. You could be next.
-            </p>
-            <ShimmerButton>
-              <a href="mailto:anyro@1abel.com" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold">
-                Start Your TikTok Journey
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </a>
-            </ShimmerButton>
-          </div>
-        </motion.section>
-      </div>
-    ),
-
-    'brand-deals-musicians-guide': (
-      <div className="prose prose-invert max-w-none">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-12"
-        >
-          <p className="text-xl text-gray-300 leading-relaxed">
-            Forget streaming pennies. The real money in music comes from brand partnerships. We've secured over $2M in brand deals for our artists, and here's exactly how we do it.
-          </p>
-        </motion.div>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
-            <DollarSign className="w-8 h-8 text-red-600" />
-            The Money Most Artists Leave on the Table
-          </h2>
-
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30 mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-red-600">Streaming Revenue</h3>
-                <ul className="space-y-3">
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">1M streams on Spotify</span>
-                    <span className="font-bold">$3,000</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Time to achieve</span>
-                    <span className="font-bold">3-6 months</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Sustainability</span>
-                    <span className="font-bold text-yellow-500">Declining</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-green-500">Brand Partnership</h3>
-                <ul className="space-y-3">
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Single Instagram post</span>
-                    <span className="font-bold">$5,000+</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Time to achieve</span>
-                    <span className="font-bold">1 week</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Sustainability</span>
-                    <span className="font-bold text-green-500">Growing</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { value: 2, suffix: "M+", label: "Brand deals secured", icon: "💰" },
-              { value: 34, label: "Artists with partnerships", icon: "🤝" },
-              { value: 15, suffix: "K", label: "Average deal value", icon: "📈" }
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                className="bg-gray-900/50 p-6 rounded-xl border border-gray-700 text-center"
-              >
-                <div className="text-4xl mb-3">{stat.icon}</div>
-                <div className="text-4xl font-bold text-white mb-2">
-                  ${stat.value}{stat.suffix}
-                </div>
-                <p className="text-gray-400">{stat.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">The Brand Deal Playbook</h2>
-
-          <div className="space-y-8">
-            {[
-              {
-                step: "1. Build Your Brand Bible",
-                content: [
-                  "Define your aesthetic (visual style, color palette, vibe)",
-                  "Know your audience demographics (age, location, interests)",
-                  "Create a one-page media kit with your best stats",
-                  "Professional photos that show your personality"
-                ]
-              },
-              {
-                step: "2. Target the Right Brands",
-                content: [
-                  "Start with brands you already use and love",
-                  "Look at your audience's other interests",
-                  "Check who's sponsoring similar artists",
-                  "Don't just chase big names - smaller brands pay too"
-                ]
-              },
-              {
-                step: "3. The Perfect Pitch",
-                content: [
-                  "Lead with your unique value proposition",
-                  "Show specific examples of your engagement",
-                  "Propose creative campaign ideas",
-                  "Always include your rates (yes, really)"
-                ]
-              }
-            ].map((section, index) => (
-              <motion.div
-                key={section.step}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                className="bg-gray-900/50 p-8 rounded-xl border border-gray-700"
-              >
-                <h3 className="text-2xl font-bold mb-4 text-red-600">{section.step}</h3>
-                <ul className="space-y-3">
-                  {section.content.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="text-green-500 mt-1">✓</span>
-                      <span className="text-gray-300">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">Real 1ABEL Success Stories</h2>
-
-          <div className="space-y-6">
-            {[
-              {
-                artist: "Zara X",
-                brand: "Fashion Nova",
-                deal: "$45,000",
-                campaign: "Summer collection launch",
-                deliverables: "3 Instagram posts, 5 stories, 1 TikTok",
-                result: "2.3M impressions, 15% conversion rate"
-              },
-              {
-                artist: "TRVP LORD",
-                brand: "Nike",
-                deal: "$75,000",
-                campaign: "Air Max Day campaign",
-                deliverables: "Music video feature, 2 posts, event appearance",
-                result: "Song added to Nike Training playlist"
-              },
-              {
-                artist: "Luna Rose",
-                brand: "Fenty Beauty",
-                deal: "$25,000",
-                campaign: "Gloss Bomb promo",
-                deliverables: "1 TikTok, 2 Instagram Reels",
-                result: "8M views, product sold out"
-              }
-            ].map((deal, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
-                className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl border border-gray-700"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-white">{deal.artist} x {deal.brand}</h3>
-                    <p className="text-gray-400">{deal.campaign}</p>
-                  </div>
-                  <div className="text-3xl font-bold text-green-500">{deal.deal}</div>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Deliverables</p>
-                    <p className="text-gray-300">{deal.deliverables}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Results</p>
-                    <p className="text-gray-300">{deal.result}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">Rate Card Reality Check</h2>
-
-          <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700">
-            <p className="text-lg text-gray-300 mb-6">
-              Stop undercharging. Here's what artists at different levels should charge:
-            </p>
-
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b border-gray-700">
-                    <th className="text-left py-4 px-4">Follower Count</th>
-                    <th className="text-left py-4 px-4">Instagram Post</th>
-                    <th className="text-left py-4 px-4">TikTok</th>
-                    <th className="text-left py-4 px-4">Story Series</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { followers: "10K - 50K", instagram: "$500 - $2,500", tiktok: "$750 - $3,000", stories: "$250 - $1,000" },
-                    { followers: "50K - 100K", instagram: "$2,500 - $5,000", tiktok: "$3,000 - $7,500", stories: "$1,000 - $2,500" },
-                    { followers: "100K - 500K", instagram: "$5,000 - $15,000", tiktok: "$7,500 - $20,000", stories: "$2,500 - $5,000" },
-                    { followers: "500K+", instagram: "$15,000+", tiktok: "$20,000+", stories: "$5,000+" }
-                  ].map((tier, index) => (
-                    <tr key={index} className="border-b border-gray-800">
-                      <td className="py-4 px-4 font-semibold">{tier.followers}</td>
-                      <td className="py-4 px-4 text-green-500">{tier.instagram}</td>
-                      <td className="py-4 px-4 text-green-500">{tier.tiktok}</td>
-                      <td className="py-4 px-4 text-green-500">{tier.stories}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="mb-16"
-        >
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-12 rounded-2xl border border-red-600/30 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Secure Your First Deal?</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              1ABEL artists get exclusive access to our brand partnership team and connection database.
-            </p>
-            <ShimmerButton>
-              <a href="mailto:anyro@1abel.com" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold">
-                Join 1ABEL Today
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </a>
-            </ShimmerButton>
-          </div>
-        </motion.section>
+        </section>
       </div>
     )
   }
@@ -916,450 +371,19 @@ function getBlogPostContent(slug: string) {
 }
 
 function getNewsPostContent(slug: string) {
-  const content: { [key: string]: JSX.Element } = {
-    'major-labels-streaming-crisis': (
-      <div className="prose prose-invert max-w-none">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-12"
-        >
-          <p className="text-xl text-gray-300 leading-relaxed">
-            While Universal Music Group reports record profits, their artists are seeing the smallest streaming checks in history. The system is broken, and we have the receipts.
-          </p>
-        </motion.div>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">The Shocking Numbers</h2>
-
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30 mb-8">
-            <h3 className="text-2xl font-bold mb-6 text-red-600">Major Label Reality Check</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-xl font-bold mb-4">What Labels Take</h4>
-                <ul className="space-y-3">
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Recording royalties</span>
-                    <span className="font-bold text-red-500">80-90%</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Merchandise</span>
-                    <span className="font-bold text-red-500">20-50%</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Touring</span>
-                    <span className="font-bold text-red-500">20-30%</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Publishing</span>
-                    <span className="font-bold text-red-500">25-50%</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="text-xl font-bold mb-4">What Artists Keep</h4>
-                <ul className="space-y-3">
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">After recoupment</span>
-                    <span className="font-bold text-green-500">10-20%</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Creative control</span>
-                    <span className="font-bold text-yellow-500">Limited</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Master ownership</span>
-                    <span className="font-bold text-red-500">None</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span className="text-gray-400">Release schedule</span>
-                    <span className="font-bold text-red-500">Label decides</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700">
-            <h3 className="text-2xl font-bold mb-4">The Streaming Math Doesn't Add Up</h3>
-            <p className="text-gray-300 mb-4">
-              A major label artist needs <span className="text-red-600 font-bold">3.3 MILLION streams</span> just to earn minimum wage ($1,472/month) after the label takes their cut.
-            </p>
-            <p className="text-gray-300">
-              Meanwhile, independent artists on fair deals need only <span className="text-green-500 font-bold">336,000 streams</span> to earn the same amount.
-            </p>
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">Why Artists Are Leaving</h2>
-
-          <div className="space-y-6">
-            {[
-              {
-                reason: "Outdated Marketing",
-                details: "Still pitching radio while fans live on TikTok",
-                impact: "Missing 90% of discovery opportunities"
-              },
-              {
-                reason: "18-Month Release Cycles",
-                details: "By the time music drops, the moment is gone",
-                impact: "Artists lose momentum and fan engagement"
-              },
-              {
-                reason: "360 Deal Exploitation",
-                details: "Labels take a cut of everything, even live shows",
-                impact: "Artists can't build sustainable careers"
-              },
-              {
-                reason: "Zero Transparency",
-                details: "Complex accounting hides true earnings",
-                impact: "Artists never know what they're really owed"
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="bg-gray-900/50 p-6 rounded-xl border border-gray-700"
-              >
-                <h3 className="text-xl font-bold text-red-600 mb-2">{item.reason}</h3>
-                <p className="text-gray-300 mb-2">{item.details}</p>
-                <p className="text-sm text-gray-500">Impact: {item.impact}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">The 1ABEL Alternative</h2>
-
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-red-600">Traditional Label</h3>
-                <ul className="space-y-3">
-                  <li className="text-gray-300">❌ 10-20% royalties (after recoup)</li>
-                  <li className="text-gray-300">❌ No master ownership</li>
-                  <li className="text-gray-300">❌ 360 deal takes everything</li>
-                  <li className="text-gray-300">❌ 18+ month release cycles</li>
-                  <li className="text-gray-300">❌ Outdated marketing tactics</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3 className="text-2xl font-bold mb-4 text-green-500">1ABEL</h3>
-                <ul className="space-y-3">
-                  <li className="text-gray-300">✅ 80% royalties (no recoup)</li>
-                  <li className="text-gray-300">✅ Artists keep masters</li>
-                  <li className="text-gray-300">✅ Fair partnership model</li>
-                  <li className="text-gray-300">✅ 2-week release cycles</li>
-                  <li className="text-gray-300">✅ Modern viral marketing</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mb-16"
-        >
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-12 rounded-2xl border border-red-600/30 text-center">
-            <h2 className="text-3xl font-bold mb-4">The Revolution is Here</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join 34 artists who chose fair deals and modern marketing over exploitation.
-            </p>
-            <ShimmerButton>
-              <a href="mailto:anyro@1abel.com" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold">
-                Join the Movement
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </a>
-            </ShimmerButton>
-          </div>
-        </motion.section>
-      </div>
-    ),
-
-    'tiktok-music-industry-impact': (
-      <div className="prose prose-invert max-w-none">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-12"
-        >
-          <p className="text-xl text-gray-300 leading-relaxed">
-            TikTok has fundamentally changed how music becomes popular. Labels spending millions on radio are being outperformed by bedroom producers with ring lights. Here's what's really happening.
-          </p>
-        </motion.div>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">The New Music Industry Power Structure</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            {[
-              { 
-                platform: "TikTok",
-                power: "83%",
-                description: "of Billboard hits started here"
-              },
-              {
-                platform: "Radio",
-                power: "12%",
-                description: "influence on new music discovery"
-              },
-              {
-                platform: "Labels",
-                power: "5%",
-                description: "success rate without social media"
-              }
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 text-center"
-              >
-                <h3 className="text-xl font-bold mb-2">{item.platform}</h3>
-                <div className="text-5xl font-bold text-red-600 mb-2">{item.power}</div>
-                <p className="text-gray-400">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
-            <h3 className="text-2xl font-bold mb-4">The Algorithm is the New A&R</h3>
-            <p className="text-gray-300 mb-4">
-              Traditional A&R departments are being replaced by TikTok's For You Page. The algorithm doesn't care about your label connections—it only cares about engagement.
-            </p>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-3">
-                <span className="text-green-500 mt-1">✓</span>
-                <span className="text-gray-300">15-second clips are worth more than $100K music videos</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-500 mt-1">✓</span>
-                <span className="text-gray-300">Bedroom artists are outstreaming major label acts</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-green-500 mt-1">✓</span>
-                <span className="text-gray-300">Viral sounds generate more revenue than radio hits</span>
-              </li>
-            </ul>
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">Case Studies: TikTok vs Traditional</h2>
-
-          <div className="space-y-8">
-            {[
-              {
-                artist: "Lil Nas X - Old Town Road",
-                tiktok: "Started as TikTok meme",
-                traditional: "Labels initially rejected it",
-                result: "19 weeks at #1, Diamond certified"
-              },
-              {
-                artist: "Doja Cat - Say So",
-                tiktok: "Dance challenge explosion",
-                traditional: "Label didn't believe in it",
-                result: "First TikTok song to hit #1"
-              },
-              {
-                artist: "Glass Animals - Heat Waves",
-                tiktok: "Viral 2 years after release",
-                traditional: "Label had given up promoting",
-                result: "5 billion streams and counting"
-              }
-            ].map((study, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="bg-gray-900/50 p-8 rounded-xl border border-gray-700"
-              >
-                <h3 className="text-2xl font-bold text-red-600 mb-4">{study.artist}</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">TikTok Strategy</p>
-                    <p className="text-gray-300">{study.tiktok}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Traditional Approach</p>
-                    <p className="text-gray-300">{study.traditional}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 mb-1">Result</p>
-                    <p className="text-green-500 font-bold">{study.result}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">Why Labels Are Panicking</h2>
-
-          <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700">
-            <div className="space-y-6">
-              {[
-                {
-                  problem: "They can't control virality",
-                  explanation: "No amount of money guarantees TikTok success. A 17-year-old with good timing can outperform a million-dollar campaign."
-                },
-                {
-                  problem: "Artists don't need them for discovery",
-                  explanation: "TikTok democratized music discovery. Artists can go from zero to millions of streams without a label."
-                },
-                {
-                  problem: "Their marketing playbook is obsolete",
-                  explanation: "Radio pluggers and blog premieres mean nothing when TikTok decides what's hot."
-                },
-                {
-                  problem: "Deal leverage is gone",
-                  explanation: "Artists with TikTok hits have options. They don't need to sign terrible deals anymore."
-                }
-              ].map((item, index) => (
-                <div key={index} className="pb-6 border-b border-gray-800 last:border-0">
-                  <h3 className="text-xl font-bold text-red-600 mb-2">{item.problem}</h3>
-                  <p className="text-gray-300">{item.explanation}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mb-16"
-        >
-          <h2 className="text-4xl font-bold mb-8">The 1ABEL Advantage</h2>
-
-          <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
-            <p className="text-lg text-gray-300 mb-6">
-              We built 1ABEL specifically for the TikTok era. While traditional labels are still figuring out hashtags, we're engineering viral moments.
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-red-600">Our TikTok Expertise</h3>
-                <ul className="space-y-3">
-                  <li className="text-gray-300">• Former social media managers on staff</li>
-                  <li className="text-gray-300">• Direct relationships with TikTok creators</li>
-                  <li className="text-gray-300">• Viral campaign track record</li>
-                  <li className="text-gray-300">• Algorithm optimization strategies</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-4 text-green-500">Our Results</h3>
-                <ul className="space-y-3">
-                  <li className="text-gray-300">• 500M+ TikTok views generated</li>
-                  <li className="text-gray-300">• 12 viral sounds in 2024</li>
-                  <li className="text-gray-300">• 150M+ streams from TikTok</li>
-                  <li className="text-gray-300">• $2M+ in brand deals secured</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </motion.section>
-
-        <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mb-16"
-        >
-          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-12 rounded-2xl border border-red-600/30 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready for the TikTok Era?</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join a label that understands modern music marketing.
-            </p>
-            <ShimmerButton>
-              <a href="mailto:anyro@1abel.com" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold">
-                Apply to 1ABEL
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </a>
-            </ShimmerButton>
-          </div>
-        </motion.section>
-      </div>
-    )
-  }
-
-  return content[slug] || <div>Content not found</div>
+  const content: { [key: string]: JSX.Element } = {}
+  return content[slug] || <div>News content not found</div>
 }
 
 export default function BlogPostPage({ params }: PageProps) {
   const blogData = getBlogContent(params.slug)
-  const [liked, setLiked] = useState(false)
-  const [copied, setCopied] = useState(false)
   
   if (!blogData) {
     notFound()
   }
   
   const { post, content } = blogData
-  
   const shareUrl = `https://1abel.com/blog/${post.slug}`
-  const shareText = `Check out "${post.title}" by @1abel`
-  
-  const handleShare = (platform: string) => {
-    const urls = {
-      twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`,
-      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`,
-      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`
-    }
-    
-    window.open(urls[platform as keyof typeof urls], '_blank')
-  }
-  
-  const handleCopy = async () => {
-    await navigator.clipboard.writeText(shareUrl)
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
-  }
 
   // Structured data for SEO
   const structuredData = {
@@ -1412,168 +436,7 @@ export default function BlogPostPage({ params }: PageProps) {
         }}
       />
       <Header />
-      
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-16 px-8 overflow-hidden">
-        {/* Animated background */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/10 via-transparent to-transparent animate-pulse" />
-          <motion.div
-            className="absolute inset-0"
-            animate={{
-              background: [
-                'radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%)',
-                'radial-gradient(circle at 80% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%)',
-                'radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%)',
-              ]
-            }}
-            transition={{ duration: 10, repeat: Infinity }}
-          />
-        </div>
-
-        <div className="max-w-4xl mx-auto relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Link href="/blog" className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors mb-8">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Blog
-            </Link>
-            
-            <AnimatedGradientText className="mb-6">
-              <Tag className="w-4 h-4 mr-2" />
-              {post.category}
-              <Tag className="w-4 h-4 ml-2" />
-            </AnimatedGradientText>
-            
-            <BlurIn
-              word={post.title}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8"
-              duration={1}
-            />
-            
-            <div className="flex items-center gap-6 text-sm text-gray-400 mb-8">
-              <time className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" />
-                {formatBlogDate(post.date)}
-              </time>
-              <span className="flex items-center gap-2">
-                <Clock className="w-4 h-4" />
-                {post.readTime}
-              </span>
-              <span className="flex items-center gap-2">
-                <Eye className="w-4 h-4" />
-                <NumberTicker value={post.views} />
-              </span>
-            </div>
-            
-            <p className="text-xl text-gray-300 leading-relaxed">{post.excerpt}</p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Content Section */}
-      <section className="px-8 pb-20">
-        <div className="max-w-4xl mx-auto">
-          {content}
-          
-          {/* Share Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="mt-16 pt-12 border-t border-gray-800"
-          >
-            <div className="flex items-center justify-between flex-wrap gap-6">
-              <div className="flex items-center gap-4">
-                <motion.button
-                  onClick={() => setLiked(!liked)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-lg border transition-all ${
-                    liked 
-                      ? 'bg-red-600 border-red-600 text-white' 
-                      : 'border-gray-700 text-gray-400 hover:text-white hover:border-gray-600'
-                  }`}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Heart className={`w-5 h-5 ${liked ? 'fill-current' : ''}`} />
-                  <NumberTicker value={post.likes + (liked ? 1 : 0)} />
-                </motion.button>
-                
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-400 mr-2">Share:</span>
-                  <motion.button
-                    onClick={() => handleShare('twitter')}
-                    className="p-2 rounded-lg border border-gray-700 text-gray-400 hover:text-white hover:border-gray-600 transition-all"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Twitter className="w-5 h-5" />
-                  </motion.button>
-                  <motion.button
-                    onClick={() => handleShare('facebook')}
-                    className="p-2 rounded-lg border border-gray-700 text-gray-400 hover:text-white hover:border-gray-600 transition-all"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Facebook className="w-5 h-5" />
-                  </motion.button>
-                  <motion.button
-                    onClick={() => handleShare('linkedin')}
-                    className="p-2 rounded-lg border border-gray-700 text-gray-400 hover:text-white hover:border-gray-600 transition-all"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </motion.button>
-                  <motion.button
-                    onClick={handleCopy}
-                    className="p-2 rounded-lg border border-gray-700 text-gray-400 hover:text-white hover:border-gray-600 transition-all"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <Copy className="w-5 h-5" />
-                  </motion.button>
-                  {copied && (
-                    <motion.span
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      className="text-green-500 text-sm"
-                    >
-                      Copied!
-                    </motion.span>
-                  )}
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          
-          {/* Author/CTA Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-            className="mt-12 bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700"
-          >
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">Written by 1ABEL Team</h3>
-              <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
-                We're revolutionizing the music industry with modern marketing strategies and fair artist deals. 
-                Join 34 artists who chose the future over the past.
-              </p>
-              <ShimmerButton>
-                <a href="mailto:anyro@1abel.com" className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold">
-                  <Mail className="w-5 h-5 mr-2" />
-                  Get in Touch
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </a>
-              </ShimmerButton>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      <BlogPostClient post={post} content={content} />
     </div>
   )
 }
