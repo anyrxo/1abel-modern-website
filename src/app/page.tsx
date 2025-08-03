@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef, useState, useEffect } from 'react'
 import Link from 'next/link'
-import { TrendingUp, Award, Users, Mail, MessageCircle } from 'lucide-react'
+import { TrendingUp, Award, Users, Mail, MessageCircle, Home } from 'lucide-react'
 
 export default function HomePage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -41,22 +41,21 @@ export default function HomePage() {
           </Link>
           
           <div className="flex items-center space-x-8">
+            <Link href="/" className="text-white hover:text-gray-300 transition-colors text-sm font-medium flex items-center">
+              <Home className="w-4 h-4 mr-2" />
+              Home
+            </Link>
             <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               Blog & Insights
-            </Link>
-            <Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Services
             </Link>
             <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
               About
             </Link>
-            <Link href="/contact" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Contact
-            </Link>
             <a 
               href="mailto:anyro@1abel.com" 
-              className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors"
+              className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center"
             >
+              <Mail className="w-4 h-4 mr-2" />
               Get In Touch
             </a>
           </div>
@@ -445,8 +444,14 @@ export default function HomePage() {
                   The world's most advanced music label for RnB, trap, and rap artists.
                 </p>
                 <div className="space-y-2 text-gray-300">
-                  <p>📧 anyro@1abel.com</p>
-                  <p>🐦 @anyrxo</p>
+                  <p className="flex items-center">
+                    <Mail className="w-4 h-4 mr-2" />
+                    anyro@1abel.com
+                  </p>
+                  <p className="flex items-center">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    @anyrxo
+                  </p>
                 </div>
               </div>
 
@@ -454,7 +459,6 @@ export default function HomePage() {
                 <h4 className="text-lg font-semibold mb-4">Company</h4>
                 <ul className="space-y-2">
                   <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">About</Link></li>
-                  <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
                   <li><Link href="/blog" className="text-gray-300 hover:text-white transition-colors">Blog</Link></li>
                   <li><Link href="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
                 </ul>
