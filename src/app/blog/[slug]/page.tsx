@@ -5,7 +5,20 @@ import { Header } from '@/components/Header'
 import { BlogPostClient } from '@/components/BlogPostClient'
 
 interface PageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
+}
+
+// Generate static params for all blog posts and news articles
+export async function generateStaticParams() {
+  const blogSlugs = blogPosts.map((post) => ({
+    slug: post.slug,
+  }))
+  
+  const newsSlugs = newsArticles.map((article) => ({
+    slug: article.slug,
+  }))
+  
+  return [...blogSlugs, ...newsSlugs]
 }
 
 // Generate metadata for blog posts
@@ -376,15 +389,16 @@ function getNewsPostContent(slug: string) {
   return content[slug] || <div>News content not found</div>
 }
 
-export default function BlogPostPage({ params }: PageProps) {
-  const blogData = getBlogContent(params.slug)
+export default async function BlogPostPage({ params }: PageProps) {
+  const resolvedParams = await params
+  const blogData = getBlogContent(resolvedParams.slug)
   
   if (!blogData) {
     notFound()
   }
   
   const { post, content } = blogData
-  const shareUrl = `https://1abel.com/blog/${post.slug}`
+  const shareUrl = `https://1abel.com/blog/${resolvedParams.slug}`
 
   // Structured data for SEO
   const structuredData = {

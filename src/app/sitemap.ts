@@ -1,6 +1,9 @@
 import { MetadataRoute } from 'next'
 import { blogPosts, newsArticles } from '@/data/blogPosts'
 
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://1abel.com'
   

@@ -55,7 +55,6 @@ export const metadata: Metadata = {
   verification: {
     google: 'google-site-verification-code',
     yandex: 'yandex-verification-code',
-    bing: 'bing-site-verification',
   },
   alternates: {
     canonical: 'https://1abel.com',
