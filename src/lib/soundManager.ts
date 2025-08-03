@@ -1,6 +1,7 @@
 /**
- * Enhanced Sound Manager for 1ABEL - Beautiful OGG Audio System
- * Uses professional OGG audio files for immersive experience
+ * 🎼 REVOLUTIONARY MUSICAL EXPERIENCE SYSTEM FOR 1ABEL
+ * Creates flowing, atmospheric soundscapes using all 18 OGG files
+ * No jarring transitions - only smooth, immersive musical journeys
  */
 
 interface SoundConfig {
@@ -8,19 +9,39 @@ interface SoundConfig {
   loop?: boolean
   fadeIn?: number
   fadeOut?: number
+  crossfade?: boolean
+}
+
+interface LayeredSound {
+  name: string
+  gainNode: GainNode
+  source: AudioBufferSourceNode
+  volume: number
 }
 
 export class SoundManager {
-  private enabled: boolean = false  // Start muted by default
+  private enabled: boolean = false
   private globalVolume: number = 0.4
   private context: AudioContext | null = null
   private initialized: boolean = false
   private audioBuffers: Map<string, AudioBuffer> = new Map()
-  private currentlyPlaying: Map<string, AudioBufferSourceNode> = new Map()
-  private backgroundMusic: AudioBufferSourceNode | null = null
+  private activeLayers: Map<string, LayeredSound> = new Map()
+  private ambientLayers: Set<string> = new Set()
+  private crossfadeTimeout: NodeJS.Timeout | null = null
+
+  // 🌊 ATMOSPHERIC LAYERS - Always flowing gently in the background
+  private readonly AMBIENT_SOUNDS = ['wind', 'room', 'music-highq']
+  
+  // 🎵 MUSICAL FAMILIES - Grouped for harmonic progressions
+  private readonly SOUND_FAMILIES = {
+    beeps: ['beeps', 'beeps2', 'beeps3'],
+    ui: ['ui-short', 'ui-long', 'click-project'],
+    project: ['enter-project', 'leave-project', 'project-text'],
+    mystical: ['particles', 'circles', 'shard'],
+    identity: ['logo', 'manifesto', 'igloo']
+  }
 
   constructor() {
-    // Initialize on first user interaction
     if (typeof window !== 'undefined') {
       ['click', 'touchstart', 'keydown'].forEach(event => {
         window.addEventListener(event, () => this.init(), { once: true })
@@ -34,35 +55,24 @@ export class SoundManager {
     try {
       this.context = new (window.AudioContext || (window as any).webkitAudioContext)()
       this.initialized = true
-      
-      // Preload key audio files
-      await this.preloadSounds()
+      await this.preloadAllSounds()
     } catch (error) {
       console.warn('Audio context initialization failed:', error)
     }
   }
 
-  private async preloadSounds() {
-    const soundFiles = [
-      'ui-short.ogg',
-      'ui-long.ogg', 
-      'click-project.ogg',
-      'enter-project.ogg',
-      'leave-project.ogg',
-      'logo.ogg',
-      'beeps.ogg',
-      'beeps2.ogg',
-      'beeps3.ogg',
-      'particles.ogg',
-      'shard.ogg',
-      'wind.ogg',
-      'circles.ogg',
-      'manifesto.ogg',
-      'music-highq.ogg',
-      'room.ogg'
+  private async preloadAllSounds() {
+    // 🎼 Load all 18 OGG files for complete musical palette
+    const allSoundFiles = [
+      'beeps.ogg', 'beeps2.ogg', 'beeps3.ogg',
+      'ui-short.ogg', 'ui-long.ogg', 'click-project.ogg',
+      'enter-project.ogg', 'leave-project.ogg', 'project-text.ogg',
+      'particles.ogg', 'circles.ogg', 'shard.ogg',
+      'logo.ogg', 'manifesto.ogg', 'igloo.ogg',
+      'wind.ogg', 'room.ogg', 'music-highq.ogg'
     ]
 
-    for (const file of soundFiles) {
+    const loadPromises = allSoundFiles.map(async (file) => {
       try {
         const response = await fetch(`/sounds/${file}`)
         const arrayBuffer = await response.arrayBuffer()
@@ -71,13 +81,16 @@ export class SoundManager {
       } catch (error) {
         console.warn(`Failed to load sound: ${file}`, error)
       }
-    }
+    })
+
+    await Promise.all(loadPromises)
+    console.log(`🎵 Loaded ${this.audioBuffers.size}/18 sound files`)
   }
 
-  private async playSound(soundName: string, config: SoundConfig = { volume: 1 }) {
+  // 🌊 SMOOTH LAYERED SOUND SYSTEM - NO JARRING CUTS
+  private async createLayeredSound(soundName: string, config: SoundConfig): Promise<LayeredSound | null> {
     if (!this.context || !this.enabled || !this.audioBuffers.has(soundName)) {
-      console.log(`Sound ${soundName} not played: enabled=${this.enabled}, context=${!!this.context}, hasBuffer=${this.audioBuffers.has(soundName)}`)
-      return
+      return null
     }
 
     const buffer = this.audioBuffers.get(soundName)!
@@ -87,356 +100,466 @@ export class SoundManager {
     source.buffer = buffer
     source.connect(gainNode)
     gainNode.connect(this.context.destination)
-
-    // Set volume
-    const volume = this.globalVolume * config.volume
-    gainNode.gain.setValueAtTime(volume, this.context.currentTime)
-
-    // Handle fade in/out
-    if (config.fadeIn) {
-      gainNode.gain.setValueAtTime(0, this.context.currentTime)
-      gainNode.gain.linearRampToValueAtTime(volume, this.context.currentTime + config.fadeIn)
-    }
-
-    if (config.fadeOut) {
-      gainNode.gain.setValueAtTime(volume, this.context.currentTime + buffer.duration - config.fadeOut)
-      gainNode.gain.linearRampToValueAtTime(0, this.context.currentTime + buffer.duration)
-    }
-
-    // Handle looping
     source.loop = config.loop || false
 
-    // Store reference for potential stopping
-    this.currentlyPlaying.set(soundName, source)
+    const targetVolume = this.globalVolume * config.volume
+    
+    // 🎵 SMOOTH FADE IN - No sudden jumps
+    if (config.fadeIn && config.fadeIn > 0) {
+      gainNode.gain.setValueAtTime(0, this.context.currentTime)
+      gainNode.gain.exponentialRampToValueAtTime(
+        Math.max(targetVolume, 0.001), 
+        this.context.currentTime + config.fadeIn
+      )
+    } else {
+      gainNode.gain.setValueAtTime(targetVolume, this.context.currentTime)
+    }
 
-    // Clean up when finished
-    source.onended = () => {
-      this.currentlyPlaying.delete(soundName)
+    const layeredSound: LayeredSound = {
+      name: soundName,
+      gainNode,
+      source,
+      volume: targetVolume
     }
 
     source.start()
-    return source
+    return layeredSound
   }
 
-  // 🎼 DIVINE MUSICAL COMPOSITION SYSTEM
-  // Each sound is a note in the grand symphony of interaction
-  
-  // ✨ Celestial UI Harmonics - Gentle, like touching stardust
-  public playHover() {
-    this.playSound('ui-short', { volume: 0.25, fadeIn: 0.1 })
-  }
+  // 🎹 CROSSFADE SYSTEM - Smooth transitions between sounds
+  private async crossfadeToSound(fromSound: string, toSound: string, duration: number = 2) {
+    if (!this.enabled) return
 
-  public playClick() {
-    this.playSound('click-project', { volume: 0.4, fadeIn: 0.05 })
-  }
-
-  // 🎵 Triumph & Success - Rising crescendo of achievement
-  public playSuccess() {
-    this.playSound('beeps', { volume: 0.35, fadeIn: 0.1 })
-  }
-
-  // 🚪 Gateway Sounds - Entering & leaving sacred spaces
-  public playEnter() {
-    this.playSound('enter-project', { volume: 0.5, fadeIn: 0.3 })
-  }
-
-  public playLeave() {
-    this.playSound('leave-project', { volume: 0.3, fadeOut: 0.5 })
-  }
-
-  // 👑 Logo Symphony - The divine identity manifests
-  public playLogo() {
-    this.playSound('logo', { volume: 0.6, fadeIn: 0.2 })
-  }
-
-  // ✨ Particle Magic - Cosmic dust dancing in digital wind
-  public playParticles() {
-    this.playSound('particles', { volume: 0.25, fadeIn: 0.2, fadeOut: 0.3 })
-  }
-
-  // 💎 Crystal Shards - Sharp, crystalline perfection
-  public playShard() {
-    this.playSound('shard', { volume: 0.45, fadeIn: 0.05 })
-  }
-
-  // 🎼 Beep Variations - Three-note melody system
-  public playBeepMelody(note: 'first' | 'second' | 'third' = 'first') {
-    const soundName = note === 'first' ? 'beeps' : note === 'second' ? 'beeps2' : 'beeps3'
-    this.playSound(soundName, { volume: 0.4, fadeIn: 0.1 })
-  }
-
-  // 🌪️ Wind Symphony - Nature's breath in digital form
-  public playWind() {
-    this.playSound('wind', { volume: 0.15, fadeIn: 2, fadeOut: 1 })
-  }
-
-  // ⭕ Circles of Power - Geometric harmony
-  public playCircles() {
-    this.playSound('circles', { volume: 0.35, fadeIn: 0.15 })
-  }
-
-  // 📜 Manifesto of Purpose - The voice of destiny
-  public playManifesto() {
-    this.playSound('manifesto', { volume: 0.45, fadeIn: 0.3 })
-  }
-
-  // 🏔️ Igloo Depths - Ancient wisdom calls
-  public playIgloo() {
-    this.playSound('igloo', { volume: 0.3, fadeIn: 0.2 })
-  }
-
-  // 📝 Project Text - The written word comes alive
-  public playProjectText() {
-    this.playSound('project-text', { volume: 0.4, fadeIn: 0.25 })
-  }
-
-  // 🎭 Intelligent Musical Variations
-  public playHarmonicBeep() {
-    // Musical progression through the three beep notes
-    const progression = ['first', 'second', 'third'] as const
-    const note = progression[Math.floor(Math.random() * 3)]
-    this.playBeepMelody(note)
-  }
-
-  public playDelicateUI() {
-    // Alternates between two UI sounds for variety
-    const sounds = ['ui-short', 'ui-long'] as const
-    const sound = sounds[Math.floor(Math.random() * 2)]
-    this.playSound(sound, { volume: 0.25, fadeIn: 0.1 })
-  }
-
-  // 🎹 Musical Chords - Combination sounds for special moments
-  public playMysticalChord() {
-    // Plays circles + particles together for magical moments
-    this.playCircles()
-    setTimeout(() => this.playParticles(), 150)
-  }
-
-  public playTriumphantChord() {
-    // Logo + manifesto for grand moments
-    this.playLogo()
-    setTimeout(() => this.playManifesto(), 300)
-  }
-
-  // 🌟 Contextual Sound Selection - AI-like intelligence
-  public playContextualSound(context: 'navigation' | 'interaction' | 'achievement' | 'mystical') {
-    switch (context) {
-      case 'navigation':
-        Math.random() > 0.5 ? this.playProjectText() : this.playDelicateUI()
-        break
-      case 'interaction':
-        Math.random() > 0.7 ? this.playMysticalChord() : this.playCircles()
-        break
-      case 'achievement':
-        this.playTriumphantChord()
-        break
-      case 'mystical':
-        this.playIgloo()
-        setTimeout(() => this.playParticles(), 200)
-        break
-    }
-  }
-
-  // Background music
-  public async startBackgroundMusic() {
-    if (this.backgroundMusic) return
+    const fromLayer = this.activeLayers.get(fromSound)
     
-    this.backgroundMusic = await this.playSound('music-highq', { 
-      volume: 0.15, 
-      loop: true, 
-      fadeIn: 3 
-    }) || null
-  }
-
-  public stopBackgroundMusic() {
-    if (this.backgroundMusic) {
-      this.backgroundMusic.stop()
-      this.backgroundMusic = null
-    }
-  }
-
-  public playRoomAmbient() {
-    this.playSound('room', { volume: 0.2, loop: false, fadeIn: 1 })
-  }
-
-  public stopSound(soundName: string) {
-    const source = this.currentlyPlaying.get(soundName)
-    if (source) {
-      source.stop()
-      this.currentlyPlaying.delete(soundName)
-    }
-  }
-
-  public stopAllSounds() {
-    this.currentlyPlaying.forEach((source, name) => {
-      source.stop()
+    // Start new sound with fade in
+    const newLayer = await this.createLayeredSound(toSound, {
+      volume: 0.3,
+      fadeIn: duration,
+      loop: this.AMBIENT_SOUNDS.includes(toSound)
     })
-    this.currentlyPlaying.clear()
-    
-    if (this.backgroundMusic) {
-      this.backgroundMusic.stop()
-      this.backgroundMusic = null
+
+    if (newLayer) {
+      this.activeLayers.set(toSound, newLayer)
+    }
+
+    // Fade out old sound
+    if (fromLayer && this.context) {
+      fromLayer.gainNode.gain.exponentialRampToValueAtTime(
+        0.001,
+        this.context.currentTime + duration
+      )
+      
+      setTimeout(() => {
+        if (fromLayer.source) {
+          fromLayer.source.stop()
+        }
+        this.activeLayers.delete(fromSound)
+      }, duration * 1000)
     }
   }
 
+  // 🌟 ATMOSPHERIC FOUNDATION - Gentle ambient layers
+  private async startAtmosphericFoundation() {
+    if (!this.enabled) return
+
+    // 🌊 Wind - Gentle natural breath
+    const windLayer = await this.createLayeredSound('wind', {
+      volume: 0.1,
+      loop: true,
+      fadeIn: 4
+    })
+    if (windLayer) this.activeLayers.set('wind', windLayer)
+
+    // 🏠 Room tone - Warm spatial presence  
+    setTimeout(async () => {
+      const roomLayer = await this.createLayeredSound('room', {
+        volume: 0.15,
+        loop: true,
+        fadeIn: 3
+      })
+      if (roomLayer) this.activeLayers.set('room', roomLayer)
+    }, 2000)
+
+    // 🎵 Gentle background music - Musical foundation
+    setTimeout(async () => {
+      const musicLayer = await this.createLayeredSound('music-highq', {
+        volume: 0.12,
+        loop: true,
+        fadeIn: 5
+      })
+      if (musicLayer) this.activeLayers.set('music-highq', musicLayer)
+    }, 4000)
+  }
+
+  // 🎭 MUSICAL PHRASE SYSTEM - Flowing melodies instead of single notes
+  private async playMusicalPhrase(family: keyof typeof this.SOUND_FAMILIES, intensity: 'gentle' | 'medium' | 'powerful' = 'medium') {
+    if (!this.enabled) return
+
+    const sounds = this.SOUND_FAMILIES[family]
+    const volumes = {
+      gentle: [0.2, 0.25, 0.3],
+      medium: [0.3, 0.35, 0.4], 
+      powerful: [0.4, 0.45, 0.5]
+    }
+
+    // 🎼 Play sounds as a flowing musical phrase
+    for (let i = 0; i < sounds.length; i++) {
+      setTimeout(async () => {
+        const layer = await this.createLayeredSound(sounds[i], {
+          volume: volumes[intensity][i] || 0.3,
+          fadeIn: 0.3,
+          fadeOut: 0.5
+        })
+
+        if (layer) {
+          // Auto-cleanup after sound ends
+          setTimeout(() => {
+            this.activeLayers.delete(sounds[i])
+          }, (layer.source.buffer?.duration || 1) * 1000 + 500)
+        }
+      }, i * 800) // Gentle timing between notes
+    }
+  }
+
+  // 🌊 FLUID INTERACTION SYSTEM - Smooth responses to user actions
+
+  // ✨ GENTLE UI HARMONICS
+  public async playGentleUIFlow() {
+    await this.playMusicalPhrase('ui', 'gentle')
+  }
+
+  public async playUIClick() {
+    const uiSounds = ['ui-short', 'ui-long', 'click-project']
+    const randomUI = uiSounds[Math.floor(Math.random() * uiSounds.length)]
+    
+    const layer = await this.createLayeredSound(randomUI, {
+      volume: 0.25,
+      fadeIn: 0.1,
+      fadeOut: 0.3
+    })
+    
+    if (layer) {
+      setTimeout(() => this.activeLayers.delete(randomUI), 2000)
+    }
+  }
+
+  // 🚪 PROJECT GATEWAY FLOW - Smooth entrance/exit experience
+  public async playProjectEnter() {
+    // Layer entrance sounds for rich experience
+    const enterLayer = await this.createLayeredSound('enter-project', {
+      volume: 0.4,
+      fadeIn: 0.5
+    })
+    
+    setTimeout(async () => {
+      const circlesLayer = await this.createLayeredSound('circles', {
+        volume: 0.2,
+        fadeIn: 0.3
+      })
+    }, 300)
+
+    setTimeout(async () => {
+      const projectLayer = await this.createLayeredSound('project-text', {
+        volume: 0.25,
+        fadeIn: 0.4
+      })
+    }, 600)
+  }
+
+  public async playProjectLeave() {
+    // Gentle farewell sequence
+    const leaveLayer = await this.createLayeredSound('leave-project', {
+      volume: 0.3,
+      fadeIn: 0.2,
+      fadeOut: 1
+    })
+
+    setTimeout(async () => {
+      const windLayer = this.activeLayers.get('wind')
+      if (windLayer && this.context) {
+        // Boost wind slightly for gentle closure
+        windLayer.gainNode.gain.exponentialRampToValueAtTime(
+          0.15,
+          this.context.currentTime + 1
+        )
+      }
+    }, 500)
+  }
+
+  // 🎵 HARMONIC PROGRESSION SYSTEM
+  public async playHarmonicProgression(progression: 'ascending' | 'descending' | 'circular' = 'ascending') {
+    const beepSounds = ['beeps', 'beeps2', 'beeps3']
+    
+    let sequence = beepSounds
+    if (progression === 'descending') sequence = [...beepSounds].reverse()
+    if (progression === 'circular') sequence = [...beepSounds, 'beeps2']
+
+    for (let i = 0; i < sequence.length; i++) {
+      setTimeout(async () => {
+        const layer = await this.createLayeredSound(sequence[i], {
+          volume: 0.35 - (i * 0.05), // Gradual volume decrease
+          fadeIn: 0.2,
+          fadeOut: 0.4
+        })
+      }, i * 600)
+    }
+  }
+
+  // 🌟 MYSTICAL AMBIENCE BUILDER
+  public async buildMysticalAmbience() {
+    // Layer mystical sounds to create atmosphere
+    const mysticalSounds = ['particles', 'circles', 'shard']
+    
+    for (let i = 0; i < mysticalSounds.length; i++) {
+      setTimeout(async () => {
+        const layer = await this.createLayeredSound(mysticalSounds[i], {
+          volume: 0.15 + (i * 0.05),
+          fadeIn: 1 + (i * 0.5),
+          loop: i === 0 // Only particles loop gently
+        })
+        
+        if (layer && i === 0) {
+          this.activeLayers.set(mysticalSounds[i], layer)
+        }
+      }, i * 1000)
+    }
+  }
+
+  // 👑 LOGO IDENTITY SYMPHONY
+  public async playLogoIdentityFlow() {
+    // Grand, flowing logo presentation
+    const logoLayer = await this.createLayeredSound('logo', {
+      volume: 0.5,
+      fadeIn: 0.3
+    })
+
+    setTimeout(async () => {
+      const manifestoLayer = await this.createLayeredSound('manifesto', {
+        volume: 0.35,
+        fadeIn: 0.4
+      })
+    }, 600)
+
+    setTimeout(async () => {
+      const iglooLayer = await this.createLayeredSound('igloo', {
+        volume: 0.3,
+        fadeIn: 0.5
+      })
+    }, 1200)
+
+    // Follow with harmonic progression
+    setTimeout(() => {
+      this.playHarmonicProgression('ascending')
+    }, 2000)
+  }
+
+  // 🌊 CONTEXTUAL AMBIENCE SYSTEM
+  public async setContextualAmbience(context: 'calm' | 'focused' | 'creative' | 'mystical') {
+    // Smoothly transition ambient layers based on context
+    
+    switch (context) {
+      case 'calm':
+        await this.crossfadeToSound('music-highq', 'wind', 3)
+        setTimeout(() => this.enhanceAmbientLayer('room', 0.2), 1000)
+        break
+        
+      case 'focused':
+        await this.crossfadeToSound('wind', 'room', 2)
+        setTimeout(() => this.enhanceAmbientLayer('music-highq', 0.1), 1500)
+        break
+        
+      case 'creative':
+        this.buildMysticalAmbience()
+        setTimeout(() => this.enhanceAmbientLayer('music-highq', 0.18), 2000)
+        break
+        
+      case 'mystical':
+        this.buildMysticalAmbience()
+        setTimeout(() => this.playHarmonicProgression('circular'), 3000)
+        break
+    }
+  }
+
+  // 🔊 AMBIENT LAYER ENHANCEMENT
+  private enhanceAmbientLayer(layerName: string, targetVolume: number) {
+    const layer = this.activeLayers.get(layerName)
+    if (layer && this.context) {
+      layer.gainNode.gain.exponentialRampToValueAtTime(
+        targetVolume,
+        this.context.currentTime + 2
+      )
+    }
+  }
+
+  // 🎼 WELCOME SYMPHONY - Beautiful introduction when audio first enabled
+  public async playWelcomeSymphony() {
+    if (!this.enabled) return
+
+    console.log('🎼 Starting Welcome Symphony...')
+    
+    // 1. Start atmospheric foundation
+    await this.startAtmosphericFoundation()
+    
+    // 2. Gentle UI introduction
+    setTimeout(() => this.playGentleUIFlow(), 2000)
+    
+    // 3. Musical progression
+    setTimeout(() => this.playHarmonicProgression('ascending'), 4000)
+    
+    // 4. Set creative ambience
+    setTimeout(() => this.setContextualAmbience('creative'), 6000)
+  }
+
+  // 🛑 SMOOTH SHUTDOWN SYSTEM
+  public async fadeOutAllLayers(duration: number = 3) {
+    if (!this.context) return
+
+    for (const [name, layer] of this.activeLayers) {
+      layer.gainNode.gain.exponentialRampToValueAtTime(
+        0.001,
+        this.context.currentTime + duration
+      )
+    }
+
+    setTimeout(() => {
+      this.activeLayers.forEach(layer => {
+        if (layer.source) layer.source.stop()
+      })
+      this.activeLayers.clear()
+    }, duration * 1000)
+  }
+
+  // 🎛️ CONTROL METHODS
   public enable() {
     this.enabled = true
-    console.log('SoundManager enabled')
+    console.log('🎵 Sound system enabled - Welcome to the musical journey')
   }
 
   public disable() {
     this.enabled = false
-    this.stopAllSounds()
-    console.log('SoundManager disabled')
+    this.fadeOutAllLayers(2)
+    console.log('🔇 Sound system disabled')
   }
 
   public setVolume(volume: number) {
     this.globalVolume = Math.max(0, Math.min(1, volume))
+    
+    // Adjust all active layers
+    for (const layer of this.activeLayers.values()) {
+      const newVolume = this.globalVolume * layer.volume
+      if (this.context) {
+        layer.gainNode.gain.exponentialRampToValueAtTime(
+          Math.max(newVolume, 0.001),
+          this.context.currentTime + 0.5
+        )
+      }
+    }
   }
+
+  // Legacy compatibility methods (with smooth implementations)
+  public playHover = () => this.playUIClick()
+  public playClick = () => this.playUIClick()
+  public playEnter = () => this.playProjectEnter()
+  public playLeave = () => this.playProjectLeave()
+  public playSuccess = () => this.playHarmonicProgression('ascending')
+  public playLogo = () => this.playLogoIdentityFlow()
+  public playParticles = () => this.buildMysticalAmbience()
 }
 
 // Global instance
 export const soundManager = new SoundManager()
 
-// React hook for using enhanced sound manager
+// React hook for smooth musical experience
 export function useSound() {
   return {
-    // Basic UI sounds
-    playHover: () => soundManager.playHover(),
-    playClick: () => soundManager.playClick(),
-    playSuccess: () => soundManager.playSuccess(),
+    // 🌊 Smooth UI interactions
+    playHover: () => soundManager.playUIClick(),
+    playClick: () => soundManager.playUIClick(),
+    playGentleFlow: () => soundManager.playGentleUIFlow(),
     
-    // 🎼 Divine Musical Composition
-    playEnter: () => soundManager.playEnter(),
-    playLeave: () => soundManager.playLeave(),
-    playLogo: () => soundManager.playLogo(),
-    playParticles: () => soundManager.playParticles(),
-    playShard: () => soundManager.playShard(),
-    playWind: () => soundManager.playWind(),
-    playCircles: () => soundManager.playCircles(),
-    playManifesto: () => soundManager.playManifesto(),
-    playIgloo: () => soundManager.playIgloo(),
-    playProjectText: () => soundManager.playProjectText(),
+    // 🚪 Project navigation
+    playEnter: () => soundManager.playProjectEnter(),
+    playLeave: () => soundManager.playProjectLeave(),
     
-    // 🎵 Musical Harmonies & Melodies
-    playBeepMelody: (note?: 'first' | 'second' | 'third') => soundManager.playBeepMelody(note),
-    playHarmonicBeep: () => soundManager.playHarmonicBeep(),
-    playDelicateUI: () => soundManager.playDelicateUI(),
+    // 🎵 Musical progressions
+    playHarmonicProgression: (type?: 'ascending' | 'descending' | 'circular') => 
+      soundManager.playHarmonicProgression(type),
     
-    // 🎹 Musical Chords & Combinations
-    playMysticalChord: () => soundManager.playMysticalChord(),
-    playTriumphantChord: () => soundManager.playTriumphantChord(),
+    // 👑 Identity sounds
+    playLogo: () => soundManager.playLogoIdentityFlow(),
     
-    // 🌟 Contextual Intelligence
-    playContextualSound: (context: 'navigation' | 'interaction' | 'achievement' | 'mystical') => 
-      soundManager.playContextualSound(context),
+    // 🌟 Mystical atmosphere
+    playMystical: () => soundManager.buildMysticalAmbience(),
     
-    // Background sounds
-    startBackgroundMusic: () => soundManager.startBackgroundMusic(),
-    stopBackgroundMusic: () => soundManager.stopBackgroundMusic(),
-    playRoomAmbient: () => soundManager.playRoomAmbient(),
+    // 🌊 Contextual ambiences
+    setAmbience: (context: 'calm' | 'focused' | 'creative' | 'mystical') =>
+      soundManager.setContextualAmbience(context),
     
-    // Controls
-    stopSound: (name: string) => soundManager.stopSound(name),
-    stopAllSounds: () => soundManager.stopAllSounds(),
+    // 🎼 Welcome experience
+    playWelcomeSymphony: () => soundManager.playWelcomeSymphony(),
+    
+    // 🎛️ Controls
     enable: () => soundManager.enable(),
     disable: () => soundManager.disable(),
-    setVolume: (volume: number) => soundManager.setVolume(volume)
+    setVolume: (volume: number) => soundManager.setVolume(volume),
+    fadeOut: (duration?: number) => soundManager.fadeOutAllLayers(duration)
   }
 }
 
-// Add enhanced hover sounds to elements
-export function addHoverSound(element: HTMLElement, soundType: 'default' | 'enter' | 'logo' | 'shard' = 'default') {
-  const handleMouseEnter = () => {
-    switch (soundType) {
-      case 'enter':
-        soundManager.playEnter()
-        break
-      case 'logo':
-        soundManager.playLogo()
-        break
-      case 'shard':
-        soundManager.playShard()
-        break
-      default:
-        soundManager.playHover()
-    }
-  }
-  
-  const handleClick = () => soundManager.playClick()
-  const handleMouseLeave = () => {
-    if (soundType === 'enter') {
-      soundManager.playLeave()
-    }
-  }
-
-  element.addEventListener('mouseenter', handleMouseEnter)
-  element.addEventListener('click', handleClick)
-  element.addEventListener('mouseleave', handleMouseLeave)
-
-  // Return cleanup function
-  return () => {
-    element.removeEventListener('mouseenter', handleMouseEnter)
-    element.removeEventListener('click', handleClick)
-    element.removeEventListener('mouseleave', handleMouseLeave)
-  }
-}
-
-// Initialize interactive sounds for buttons with enhanced audio
+// Enhanced interactive sound initialization
 export function initInteractiveSounds() {
   if (typeof window === 'undefined') return
 
-  // Add sounds to different element types
-  const addSoundsToButtons = () => {
-    // Logo elements get special logo sound
-    const logoElements = document.querySelectorAll('[data-sound="logo"]')
-    logoElements.forEach(element => {
-      if (element instanceof HTMLElement && !element.dataset.soundAdded) {
-        addHoverSound(element, 'logo')
-        element.dataset.soundAdded = 'true'
-      }
-    })
-    
-    // Special entrance elements
-    const enterElements = document.querySelectorAll('[data-sound="enter"]')
-    enterElements.forEach(element => {
-      if (element instanceof HTMLElement && !element.dataset.soundAdded) {
-        addHoverSound(element, 'enter')
-        element.dataset.soundAdded = 'true'
-      }
-    })
-    
-    // Sharp/crystal elements
-    const shardElements = document.querySelectorAll('[data-sound="shard"]')
-    shardElements.forEach(element => {
-      if (element instanceof HTMLElement && !element.dataset.soundAdded) {
-        addHoverSound(element, 'shard')
-        element.dataset.soundAdded = 'true'
-      }
-    })
+  let lastInteractionTime = 0
+  const INTERACTION_COOLDOWN = 300 // Prevent sound spam
 
-    // Regular buttons and links
-    const buttons = document.querySelectorAll('button, a[href], [role="button"]')
-    buttons.forEach(button => {
-      if (button instanceof HTMLElement && !button.dataset.soundAdded && !button.dataset.sound) {
-        addHoverSound(button, 'default')
-        button.dataset.soundAdded = 'true'
+  const addSmoothInteraction = (element: HTMLElement, soundType: string) => {
+    const handleInteraction = async (event: Event) => {
+      const now = Date.now()
+      if (now - lastInteractionTime < INTERACTION_COOLDOWN) return
+      lastInteractionTime = now
+
+      switch (soundType) {
+        case 'logo':
+          soundManager.playLogoIdentityFlow()
+          break
+        case 'enter':
+          soundManager.playProjectEnter()
+          break
+        case 'mystical':
+          soundManager.buildMysticalAmbience()
+          break
+        default:
+          soundManager.playUIClick()
+      }
+    }
+
+    element.addEventListener('mouseenter', handleInteraction)
+    element.addEventListener('click', handleInteraction)
+    
+    return () => {
+      element.removeEventListener('mouseenter', handleInteraction)
+      element.removeEventListener('click', handleInteraction)
+    }
+  }
+
+  // Apply smooth interactions to elements
+  const setupSmoothSounds = () => {
+    document.querySelectorAll('[data-sound]').forEach(element => {
+      if (element instanceof HTMLElement && !element.dataset.soundSetup) {
+        const soundType = element.dataset.sound || 'default'
+        addSmoothInteraction(element, soundType)
+        element.dataset.soundSetup = 'true'
       }
     })
   }
 
-  // Initial setup
-  addSoundsToButtons()
-
-  // Re-run when DOM changes
-  const observer = new MutationObserver(() => {
-    addSoundsToButtons()
-  })
-
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  })
-
+  setupSmoothSounds()
+  
+  // Monitor for new elements
+  const observer = new MutationObserver(setupSmoothSounds)
+  observer.observe(document.body, { childList: true, subtree: true })
+  
   return () => observer.disconnect()
 }

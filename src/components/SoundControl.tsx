@@ -11,13 +11,11 @@ export function SoundControl() {
   const [musicPlaying, setMusicPlaying] = useState(false)
   const { 
     setVolume: setSoundVolume, 
-    stopAllSounds, 
     enable, 
     disable,
-    startBackgroundMusic,
-    stopBackgroundMusic,
-    playWind,
-    playRoomAmbient
+    fadeOut,
+    setAmbience,
+    playWelcomeSymphony
   } = useSound()
 
   useEffect(() => {
@@ -53,15 +51,13 @@ export function SoundControl() {
     
     if (newMuted) {
       disable()
-      stopAllSounds()
+      fadeOut(2)
     } else {
       enable()
       setSoundVolume(volume)
       
-      // 🎼 Divine Welcome Symphony when user first enables audio
-      if ((window as any).playWelcomeSymphony) {
-        setTimeout(() => (window as any).playWelcomeSymphony(), 300)
-      }
+      // 🎼 Welcome Symphony when user first enables audio
+      setTimeout(() => playWelcomeSymphony(), 300)
     }
     
     localStorage.setItem('1abel-sound-muted', newMuted.toString())
@@ -88,16 +84,11 @@ export function SoundControl() {
 
   const toggleMusic = () => {
     if (musicPlaying) {
-      stopBackgroundMusic()
+      setAmbience('calm')
       setMusicPlaying(false)
     } else {
-      // 🎵 Start the complete ambient symphony
-      startBackgroundMusic()
-      
-      // Layer in ambient sounds with divine timing
-      setTimeout(() => playWind(), 500)
-      setTimeout(() => playRoomAmbient(), 1000)
-      
+      // 🎵 Start the complete creative ambient experience
+      setAmbience('creative')
       setMusicPlaying(true)
     }
   }
