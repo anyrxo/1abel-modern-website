@@ -18,6 +18,7 @@ export class SoundManager {
   private audioBuffers: Map<string, AudioBuffer> = new Map()
   private currentSources: Map<string, AudioBufferSourceNode> = new Map()
   private ambientMusic: AudioBufferSourceNode | null = null
+  private atmosphereStarted: boolean = false
 
   // 🎵 ALL 18 FILES (excluding particles from mystical sounds)
   private readonly ALL_SOUNDS = [
@@ -146,6 +147,12 @@ export class SoundManager {
     await this.playSound(randomSound, { volume: 0.3, fadeIn: 0.1 })
   }
 
+  // Typing sound specifically for text animations
+  public async playTypingSound() {
+    // Use project-text sound for typing effect
+    await this.playSound('project-text', { volume: 0.2 })
+  }
+
   // Navigation sounds
   public async playEnter() {
     await this.playSound('enter-project', { volume: 0.4, fadeIn: 0.3 })
@@ -183,9 +190,10 @@ export class SoundManager {
 
   // 🌊 ATMOSPHERIC LAYERS
   public async startAtmosphere() {
-    if (!this.enabled) return
+    if (!this.enabled || this.atmosphereStarted) return
 
     console.log('🌊 Starting atmospheric layers...')
+    this.atmosphereStarted = true
     
     // Wind - very gentle background
     await this.playSound('wind', { volume: 0.08, loop: true, fadeIn: 3 })
@@ -222,6 +230,8 @@ export class SoundManager {
       }
       this.ambientMusic = null
     }
+    
+    this.atmosphereStarted = false
   }
 
   // 🎼 WELCOME SEQUENCE
@@ -300,6 +310,8 @@ export function useSound() {
     playClick: () => soundManager.playUISound(),
     playEnter: () => soundManager.playEnter(),
     playLeave: () => soundManager.playLeave(),
+    playUISound: () => soundManager.playUISound(),
+    playTypingSound: () => soundManager.playTypingSound(),
     
     // Identity sounds
     playLogo: () => soundManager.playLogo(),
@@ -334,24 +346,7 @@ export function initGlobalSounds() {
   // Make sound manager globally available
   ;(window as any).soundManager = soundManager
   
-  // Auto-add hover sounds to interactive elements
-  const addHoverSounds = () => {
-    const buttons = document.querySelectorAll('button, a[href], [role="button"]')
-    buttons.forEach(button => {
-      if (button instanceof HTMLElement && !button.dataset.soundAdded) {
-        button.addEventListener('mouseenter', () => soundManager.playUISound())
-        button.addEventListener('click', () => soundManager.playUISound())
-        button.dataset.soundAdded = 'true'
-      }
-    })
-  }
-
-  // Initial setup
-  addHoverSounds()
-  
-  // Re-run when DOM changes
-  const observer = new MutationObserver(addHoverSounds)
-  observer.observe(document.body, { childList: true, subtree: true })
-  
-  return () => observer.disconnect()
+  // We don't auto-add sounds to all elements anymore
+  // to prevent random typing sounds on scroll
+  return () => {}
 }

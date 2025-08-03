@@ -100,7 +100,6 @@ export function GeniusHero() {
             <motion.div 
               whileHover={{ scale: 1.05 }} 
               className="text-2xl font-bold cursor-pointer"
-              onMouseEnter={() => playHover()}
               onClick={() => playLogo()}
             >
               <span className="text-red-600">1</span><span className="text-white">ABEL</span>
@@ -111,7 +110,6 @@ export function GeniusHero() {
             <Link 
               href="/blog" 
               className="text-white hover:text-gray-300 transition-colors text-sm font-medium"
-              onMouseEnter={() => playHover()}
               onClick={() => playClick()}
             >
               Blog
@@ -119,7 +117,6 @@ export function GeniusHero() {
             <Link 
               href="/about" 
               className="text-white hover:text-gray-300 transition-colors text-sm font-medium"
-              onMouseEnter={() => playHover()}
               onClick={() => playManifesto()}
             >
               About
@@ -127,8 +124,6 @@ export function GeniusHero() {
             <a 
               href="mailto:anyro@1abel.com" 
               className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center"
-              onMouseEnter={() => playEnter()}
-              onMouseLeave={() => playLeave()}
               onClick={() => playBeeps()}
             >
               <Mail className="w-4 h-4 mr-2" />
@@ -219,7 +214,6 @@ export function GeniusHero() {
           transition={{ type: "spring", damping: 30 }}
           style={{ left: '10%', top: '20%' }}
           onClick={() => playMystical()}
-          onMouseEnter={() => playHover()}
         />
         
         {/* 🟠 Orb of Particles - The Soul of Magic */}
@@ -232,7 +226,6 @@ export function GeniusHero() {
           transition={{ type: "spring", damping: 25 }}
           style={{ right: '15%', bottom: '15%' }}
           onClick={() => playBeeps()}
-          onMouseEnter={() => playHover()}
         />
         
         {/* 🔺 Orb of Manifestation - The Voice of Creation */}
@@ -245,7 +238,6 @@ export function GeniusHero() {
           transition={{ type: "spring", damping: 35 }}
           style={{ left: '60%', top: '60%' }}
           onClick={() => playLogo()}
-          onMouseEnter={() => playHover()}
         />
       </div>
 
