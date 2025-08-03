@@ -12,18 +12,29 @@ export function GeniusHero() {
   const titleRef = useRef<HTMLHeadingElement>(null)
   const isInView = useInView(titleRef, { once: true })
   const { 
-    playSuccess, 
+    // 🎼 Divine Musical Arsenal
+    playTriumphantChord,
+    playMysticalChord,
+    playContextualSound,
+    playHarmonicBeep,
+    playDelicateUI,
+    playBeepMelody,
+    
+    // ✨ Core Harmonics
     playLogo, 
     playEnter, 
+    playLeave,
     playParticles, 
-    startBackgroundMusic,
-    playWind,
     playCircles,
     playIgloo,
     playProjectText,
-    playRandomBeep,
-    playRandomUI,
-    playManifesto
+    playManifesto,
+    playShard,
+    
+    // 🌊 Ambient Symphony
+    startBackgroundMusic,
+    playWind,
+    playRoomAmbient
   } = useSound()
   const [isLoaded, setIsLoaded] = useState(false)
   
@@ -80,7 +91,22 @@ export function GeniusHero() {
   }
 
   useEffect(() => {
-    setTimeout(() => setIsLoaded(true), 100)
+    setTimeout(() => {
+      setIsLoaded(true)
+      
+      // 🎼 Divine Page Load Symphony - Only when sounds are enabled
+      // This creates a beautiful welcome experience when user first enables audio
+      const welcomeSymphony = () => {
+        setTimeout(() => playDelicateUI(), 500)
+        setTimeout(() => playBeepMelody('first'), 1000)
+        setTimeout(() => playBeepMelody('second'), 1200)
+        setTimeout(() => playBeepMelody('third'), 1400)
+        setTimeout(() => playMysticalChord(), 1800)
+      }
+      
+      // Store the welcome function globally so SoundControl can trigger it
+      ;(window as any).playWelcomeSymphony = welcomeSymphony
+    }, 100)
     
     // Initialize interactive sounds for the entire page
     const cleanup = initInteractiveSounds()
@@ -101,7 +127,8 @@ export function GeniusHero() {
             <motion.div 
               whileHover={{ scale: 1.05 }} 
               className="text-2xl font-bold cursor-pointer"
-              data-sound="logo"
+              onMouseEnter={() => playContextualSound('navigation')}
+              onClick={() => playTriumphantChord()}
             >
               <span className="text-red-600">1</span><span className="text-white">ABEL</span>
             </motion.div>
@@ -112,6 +139,7 @@ export function GeniusHero() {
               href="/blog" 
               className="text-white hover:text-gray-300 transition-colors text-sm font-medium"
               onMouseEnter={() => playProjectText()}
+              onClick={() => playContextualSound('achievement')}
             >
               Blog
             </Link>
@@ -119,13 +147,16 @@ export function GeniusHero() {
               href="/about" 
               className="text-white hover:text-gray-300 transition-colors text-sm font-medium"
               onMouseEnter={() => playManifesto()}
+              onClick={() => playContextualSound('mystical')}
             >
               About
             </Link>
             <a 
               href="mailto:anyro@1abel.com" 
               className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center"
-              data-sound="enter"
+              onMouseEnter={() => playEnter()}
+              onMouseLeave={() => playLeave()}
+              onClick={() => playTriumphantChord()}
             >
               <Mail className="w-4 h-4 mr-2" />
               Get In Touch
@@ -156,8 +187,15 @@ export function GeniusHero() {
               }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               className="cursor-pointer"
-              onClick={() => playLogo()}
-              data-sound="logo"
+              onMouseEnter={() => playMysticalChord()}
+              onClick={() => {
+                playTriumphantChord()
+                // Follow with divine harmonic progression
+                setTimeout(() => playContextualSound('achievement'), 400)
+                setTimeout(() => playBeepMelody('first'), 800)
+                setTimeout(() => playBeepMelody('second'), 1000)
+                setTimeout(() => playBeepMelody('third'), 1200)
+              }}
             >
               1
             </motion.span>
@@ -167,26 +205,44 @@ export function GeniusHero() {
             style={{ opacity: labelOpacity }}
             className="absolute top-[12%] left-[58%] flex flex-col text-[5vh] font-black leading-[1.1] tracking-wide text-white z-20 h-[38vh] justify-between items-center"
           >
-            {['A', 'B', 'E', 'L'].map((letter, index) => (
-              <motion.span
-                key={letter}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: 1 + index * 0.15, ease: [0.34, 1.56, 0.64, 1] }}
-                className="cursor-pointer"
-                onClick={() => playRandomBeep()}
-                onMouseEnter={() => playIgloo()}
-                data-sound="shard"
-              >
-                {letter}
-              </motion.span>
-            ))}
+            {['A', 'B', 'E', 'L'].map((letter, index) => {
+              const melodyNotes = ['first', 'second', 'third', 'first'] as const
+              const contexts = ['mystical', 'interaction', 'achievement', 'navigation'] as const
+              
+              return (
+                <motion.span
+                  key={letter}
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: 1 + index * 0.15, ease: [0.34, 1.56, 0.64, 1] }}
+                  className="cursor-pointer"
+                  onMouseEnter={() => {
+                    // Each letter plays a different harmonic in sequence
+                    playIgloo()
+                    setTimeout(() => playBeepMelody(melodyNotes[index]), 100)
+                  }}
+                  onClick={() => {
+                    // Divine contextual symphony for each letter
+                    playContextualSound(contexts[index])
+                    setTimeout(() => playDelicateUI(), 200)
+                    setTimeout(() => playParticles(), 400)
+                  }}
+                  whileHover={{ 
+                    scale: 1.1,
+                    textShadow: '0 0 20px rgba(255, 255, 255, 0.8)'
+                  }}
+                >
+                  {letter}
+                </motion.span>
+              )
+            })}
           </motion.div>
         </motion.div>
       </section>
 
-      {/* Interactive gradient orbs that follow mouse */}
+      {/* 🌟 Divine Gradient Orbs - Each a musical sphere of power */}
       <div className="absolute inset-0 overflow-hidden">
+        {/* 🔴 Orb of Circles - The Heart of Rhythm */}
         <motion.div
           className="absolute w-[600px] h-[600px] rounded-full bg-gradient-to-r from-red-600/30 to-red-400/20 blur-3xl cursor-pointer"
           animate={{
@@ -195,8 +251,15 @@ export function GeniusHero() {
           }}
           transition={{ type: "spring", damping: 30 }}
           style={{ left: '10%', top: '20%' }}
-          onClick={() => playCircles()}
+          onClick={() => {
+            playCircles()
+            setTimeout(() => playMysticalChord(), 150)
+            setTimeout(() => playHarmonicBeep(), 300)
+          }}
+          onMouseEnter={() => playDelicateUI()}
         />
+        
+        {/* 🟠 Orb of Particles - The Soul of Magic */}
         <motion.div
           className="absolute w-[800px] h-[800px] rounded-full bg-gradient-to-r from-red-500/20 to-orange-600/15 blur-3xl cursor-pointer"
           animate={{
@@ -205,8 +268,15 @@ export function GeniusHero() {
           }}
           transition={{ type: "spring", damping: 25 }}
           style={{ right: '15%', bottom: '15%' }}
-          onClick={() => playWind()}
+          onClick={() => {
+            playParticles()
+            setTimeout(() => playContextualSound('mystical'), 200)
+            setTimeout(() => playBeepMelody('second'), 400)
+          }}
+          onMouseEnter={() => playContextualSound('interaction')}
         />
+        
+        {/* 🔺 Orb of Manifestation - The Voice of Creation */}
         <motion.div
           className="absolute w-[400px] h-[400px] rounded-full bg-gradient-to-r from-red-700/25 to-red-500/20 blur-3xl cursor-pointer"
           animate={{
@@ -215,7 +285,12 @@ export function GeniusHero() {
           }}
           transition={{ type: "spring", damping: 35 }}
           style={{ left: '60%', top: '60%' }}
-          onClick={() => playRandomUI()}
+          onClick={() => {
+            playContextualSound('achievement')
+            setTimeout(() => playTriumphantChord(), 100)
+            setTimeout(() => playShard(), 250)
+          }}
+          onMouseEnter={() => playManifesto()}
         />
       </div>
 

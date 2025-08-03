@@ -13,7 +13,15 @@ interface GeniusCardProps {
 export function GeniusCard({ children, className = '', glowColor = '#dc2626' }: GeniusCardProps) {
   const cardRef = useRef<HTMLDivElement>(null)
   const [isHovered, setIsHovered] = useState(false)
-  const { playEnter, playLeave, playShard, playParticles } = useSound()
+  const { 
+    playEnter, 
+    playLeave, 
+    playShard, 
+    playMysticalChord,
+    playContextualSound,
+    playDelicateUI,
+    playHarmonicBeep
+  } = useSound()
 
   // Motion values for 3D rotation
   const mouseX = useMotionValue(0)
@@ -45,19 +53,24 @@ export function GeniusCard({ children, className = '', glowColor = '#dc2626' }: 
 
   const handleMouseEnter = () => {
     setIsHovered(true)
+    // 🎼 Divine entrance symphony - Gateway to knowledge
     playEnter()
-    playParticles()
+    setTimeout(() => playDelicateUI(), 150)
   }
 
   const handleMouseLeave = () => {
     mouseX.set(0)
     mouseY.set(0)
     setIsHovered(false)
+    // 🌊 Graceful departure with fading harmony
     playLeave()
   }
 
   const handleClick = () => {
+    // 💎 Crystal shard activation followed by mystical chord
     playShard()
+    setTimeout(() => playMysticalChord(), 200)
+    setTimeout(() => playHarmonicBeep(), 400)
   }
 
   return (

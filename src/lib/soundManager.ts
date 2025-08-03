@@ -118,74 +118,123 @@ export class SoundManager {
     return source
   }
 
-  // UI Sound Effects with OGG files
+  // 🎼 DIVINE MUSICAL COMPOSITION SYSTEM
+  // Each sound is a note in the grand symphony of interaction
+  
+  // ✨ Celestial UI Harmonics - Gentle, like touching stardust
   public playHover() {
-    this.playSound('ui-short', { volume: 0.3 })
+    this.playSound('ui-short', { volume: 0.25, fadeIn: 0.1 })
   }
 
   public playClick() {
-    this.playSound('click-project', { volume: 0.5 })
+    this.playSound('click-project', { volume: 0.4, fadeIn: 0.05 })
   }
 
+  // 🎵 Triumph & Success - Rising crescendo of achievement
   public playSuccess() {
-    this.playSound('beeps', { volume: 0.4 })
+    this.playSound('beeps', { volume: 0.35, fadeIn: 0.1 })
   }
 
+  // 🚪 Gateway Sounds - Entering & leaving sacred spaces
   public playEnter() {
-    this.playSound('enter-project', { volume: 0.6 })
+    this.playSound('enter-project', { volume: 0.5, fadeIn: 0.3 })
   }
 
   public playLeave() {
-    this.playSound('leave-project', { volume: 0.4 })
+    this.playSound('leave-project', { volume: 0.3, fadeOut: 0.5 })
   }
 
+  // 👑 Logo Symphony - The divine identity manifests
   public playLogo() {
-    this.playSound('logo', { volume: 0.5 })
+    this.playSound('logo', { volume: 0.6, fadeIn: 0.2 })
   }
 
+  // ✨ Particle Magic - Cosmic dust dancing in digital wind
   public playParticles() {
-    this.playSound('particles', { volume: 0.3, loop: true })
+    this.playSound('particles', { volume: 0.25, fadeIn: 0.2, fadeOut: 0.3 })
   }
 
+  // 💎 Crystal Shards - Sharp, crystalline perfection
   public playShard() {
-    this.playSound('shard', { volume: 0.4 })
+    this.playSound('shard', { volume: 0.45, fadeIn: 0.05 })
   }
 
-  public playBeeps(variation: number = 1) {
-    const soundName = variation === 1 ? 'beeps' : variation === 2 ? 'beeps2' : 'beeps3'
-    this.playSound(soundName, { volume: 0.4 })
+  // 🎼 Beep Variations - Three-note melody system
+  public playBeepMelody(note: 'first' | 'second' | 'third' = 'first') {
+    const soundName = note === 'first' ? 'beeps' : note === 'second' ? 'beeps2' : 'beeps3'
+    this.playSound(soundName, { volume: 0.4, fadeIn: 0.1 })
   }
 
+  // 🌪️ Wind Symphony - Nature's breath in digital form
   public playWind() {
-    this.playSound('wind', { volume: 0.2, loop: true, fadeIn: 2 })
+    this.playSound('wind', { volume: 0.15, fadeIn: 2, fadeOut: 1 })
   }
 
+  // ⭕ Circles of Power - Geometric harmony
   public playCircles() {
-    this.playSound('circles', { volume: 0.3 })
+    this.playSound('circles', { volume: 0.35, fadeIn: 0.15 })
   }
 
+  // 📜 Manifesto of Purpose - The voice of destiny
   public playManifesto() {
-    this.playSound('manifesto', { volume: 0.5 })
+    this.playSound('manifesto', { volume: 0.45, fadeIn: 0.3 })
   }
 
+  // 🏔️ Igloo Depths - Ancient wisdom calls
   public playIgloo() {
-    this.playSound('igloo', { volume: 0.3 })
+    this.playSound('igloo', { volume: 0.3, fadeIn: 0.2 })
   }
 
+  // 📝 Project Text - The written word comes alive
   public playProjectText() {
-    this.playSound('project-text', { volume: 0.4 })
+    this.playSound('project-text', { volume: 0.4, fadeIn: 0.25 })
   }
 
-  // Random sound variations
-  public playRandomBeep() {
-    const variation = Math.floor(Math.random() * 3) + 1
-    this.playBeeps(variation)
+  // 🎭 Intelligent Musical Variations
+  public playHarmonicBeep() {
+    // Musical progression through the three beep notes
+    const progression = ['first', 'second', 'third'] as const
+    const note = progression[Math.floor(Math.random() * 3)]
+    this.playBeepMelody(note)
   }
 
-  public playRandomUI() {
-    const sounds = ['ui-short', 'ui-long']
-    const sound = sounds[Math.floor(Math.random() * sounds.length)]
-    this.playSound(sound, { volume: 0.3 })
+  public playDelicateUI() {
+    // Alternates between two UI sounds for variety
+    const sounds = ['ui-short', 'ui-long'] as const
+    const sound = sounds[Math.floor(Math.random() * 2)]
+    this.playSound(sound, { volume: 0.25, fadeIn: 0.1 })
+  }
+
+  // 🎹 Musical Chords - Combination sounds for special moments
+  public playMysticalChord() {
+    // Plays circles + particles together for magical moments
+    this.playCircles()
+    setTimeout(() => this.playParticles(), 150)
+  }
+
+  public playTriumphantChord() {
+    // Logo + manifesto for grand moments
+    this.playLogo()
+    setTimeout(() => this.playManifesto(), 300)
+  }
+
+  // 🌟 Contextual Sound Selection - AI-like intelligence
+  public playContextualSound(context: 'navigation' | 'interaction' | 'achievement' | 'mystical') {
+    switch (context) {
+      case 'navigation':
+        Math.random() > 0.5 ? this.playProjectText() : this.playDelicateUI()
+        break
+      case 'interaction':
+        Math.random() > 0.7 ? this.playMysticalChord() : this.playCircles()
+        break
+      case 'achievement':
+        this.playTriumphantChord()
+        break
+      case 'mystical':
+        this.playIgloo()
+        setTimeout(() => this.playParticles(), 200)
+        break
+    }
   }
 
   // Background music
@@ -207,7 +256,7 @@ export class SoundManager {
   }
 
   public playRoomAmbient() {
-    this.playSound('room', { volume: 0.2, loop: true, fadeIn: 2 })
+    this.playSound('room', { volume: 0.2, loop: false, fadeIn: 1 })
   }
 
   public stopSound(soundName: string) {
@@ -232,11 +281,13 @@ export class SoundManager {
 
   public enable() {
     this.enabled = true
+    console.log('SoundManager enabled')
   }
 
   public disable() {
     this.enabled = false
     this.stopAllSounds()
+    console.log('SoundManager disabled')
   }
 
   public setVolume(volume: number) {
@@ -255,20 +306,30 @@ export function useSound() {
     playClick: () => soundManager.playClick(),
     playSuccess: () => soundManager.playSuccess(),
     
-    // Enhanced sounds
+    // 🎼 Divine Musical Composition
     playEnter: () => soundManager.playEnter(),
     playLeave: () => soundManager.playLeave(),
     playLogo: () => soundManager.playLogo(),
     playParticles: () => soundManager.playParticles(),
     playShard: () => soundManager.playShard(),
-    playBeeps: (variation?: number) => soundManager.playBeeps(variation),
     playWind: () => soundManager.playWind(),
     playCircles: () => soundManager.playCircles(),
     playManifesto: () => soundManager.playManifesto(),
     playIgloo: () => soundManager.playIgloo(),
     playProjectText: () => soundManager.playProjectText(),
-    playRandomBeep: () => soundManager.playRandomBeep(),
-    playRandomUI: () => soundManager.playRandomUI(),
+    
+    // 🎵 Musical Harmonies & Melodies
+    playBeepMelody: (note?: 'first' | 'second' | 'third') => soundManager.playBeepMelody(note),
+    playHarmonicBeep: () => soundManager.playHarmonicBeep(),
+    playDelicateUI: () => soundManager.playDelicateUI(),
+    
+    // 🎹 Musical Chords & Combinations
+    playMysticalChord: () => soundManager.playMysticalChord(),
+    playTriumphantChord: () => soundManager.playTriumphantChord(),
+    
+    // 🌟 Contextual Intelligence
+    playContextualSound: (context: 'navigation' | 'interaction' | 'achievement' | 'mystical') => 
+      soundManager.playContextualSound(context),
     
     // Background sounds
     startBackgroundMusic: () => soundManager.startBackgroundMusic(),

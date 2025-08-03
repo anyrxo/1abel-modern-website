@@ -21,21 +21,31 @@ export function SoundControl() {
   } = useSound()
 
   useEffect(() => {
+    // Start with sound disabled by default
+    disable()
+    setSoundVolume(0)
+    
     // Check if user has a preference stored
     const savedMute = localStorage.getItem('1abel-sound-muted')
     const savedVolume = localStorage.getItem('1abel-sound-volume')
     
-    if (savedMute === 'true') {
-      setIsMuted(true)
-      setSoundVolume(0)
+    if (savedMute === 'false') {
+      setIsMuted(false)
+      enable()
+      if (savedVolume) {
+        const vol = parseFloat(savedVolume)
+        setVolume(vol)
+        setSoundVolume(vol)
+      } else {
+        setSoundVolume(0.4)
+      }
     }
     
-    if (savedVolume) {
+    if (savedVolume && savedMute !== 'false') {
       const vol = parseFloat(savedVolume)
       setVolume(vol)
-      setSoundVolume(vol)
     }
-  }, [setSoundVolume])
+  }, [setSoundVolume, enable, disable])
 
   const toggleMute = () => {
     const newMuted = !isMuted
@@ -47,6 +57,11 @@ export function SoundControl() {
     } else {
       enable()
       setSoundVolume(volume)
+      
+      // 🎼 Divine Welcome Symphony when user first enables audio
+      if ((window as any).playWelcomeSymphony) {
+        setTimeout(() => (window as any).playWelcomeSymphony(), 300)
+      }
     }
     
     localStorage.setItem('1abel-sound-muted', newMuted.toString())
@@ -54,12 +69,17 @@ export function SoundControl() {
 
   const handleVolumeChange = (newVolume: number) => {
     setVolume(newVolume)
-    setSoundVolume(newVolume)
     
     if (newVolume === 0) {
       setIsMuted(true)
-    } else if (isMuted) {
-      setIsMuted(false)
+      disable()
+      setSoundVolume(0)
+    } else {
+      if (isMuted) {
+        setIsMuted(false)
+        enable()
+      }
+      setSoundVolume(newVolume)
     }
     
     localStorage.setItem('1abel-sound-volume', newVolume.toString())
@@ -71,9 +91,13 @@ export function SoundControl() {
       stopBackgroundMusic()
       setMusicPlaying(false)
     } else {
+      // 🎵 Start the complete ambient symphony
       startBackgroundMusic()
-      playWind()
-      playRoomAmbient()
+      
+      // Layer in ambient sounds with divine timing
+      setTimeout(() => playWind(), 500)
+      setTimeout(() => playRoomAmbient(), 1000)
+      
       setMusicPlaying(true)
     }
   }
