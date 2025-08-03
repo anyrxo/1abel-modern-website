@@ -9,8 +9,9 @@ interface PageProps {
 }
 
 // Generate metadata for blog posts
-export async function generateMetadata({ params }: PageProps) {
-  const blogData = getBlogContent(params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params
+  const blogData = getBlogContent(resolvedParams.slug)
   
   if (!blogData) {
     return {
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: PageProps) {
   const { post } = blogData
   const title = `${post.title} | 1ABEL Music Blog`
   const description = post.excerpt
-  const url = `https://1abel.com/blog/${post.slug}`
+  const url = `https://1abel.com/blog/${resolvedParams.slug}`
 
   return {
     title,
