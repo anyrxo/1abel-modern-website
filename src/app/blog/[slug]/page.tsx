@@ -2151,6 +2151,1249 @@ function getBlogPostContent(slug: string) {
           </div>
         </section>
       </div>
+    ),
+
+    'distribution-deals-explained-distrokid-vs-cd-baby-vs-label-deals': (
+      <div className="prose prose-invert max-w-none">
+        <div className="mb-12">
+          <p className="text-xl text-gray-300 leading-relaxed">
+            DistroKid keeps 0% but offers no promotion. CD Baby takes 9% but provides better analytics. Label deals vary wildly. 
+            Here's the brutally honest breakdown of every distribution option and when each makes sense for your career.
+          </p>
+        </div>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <BarChart3 className="w-8 h-8 text-red-600" />
+            Distribution Platforms: The Real Numbers
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            <div className="bg-gradient-to-br from-blue-900/30 to-blue-800/20 p-8 rounded-2xl border border-blue-600/30">
+              <div className="text-blue-400 text-4xl mb-4">🎵</div>
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">DistroKid</h3>
+              <ul className="space-y-3 text-gray-300 mb-6">
+                <li>• <strong>Cost:</strong> $20-36/year unlimited releases</li>
+                <li>• <strong>Revenue share:</strong> 0% (you keep 100%)</li>
+                <li>• <strong>Speed:</strong> 24-48 hours to all platforms</li>
+                <li>• <strong>Analytics:</strong> Basic streaming data</li>
+                <li>• <strong>Promotion:</strong> Minimal to none</li>
+              </ul>
+              <div className="bg-blue-900/20 p-4 rounded-xl">
+                <p className="text-blue-300 font-semibold">Best for: High-volume independent artists</p>
+                <p className="text-sm text-gray-400">Upload limit: Unlimited</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-900/30 to-green-800/20 p-8 rounded-2xl border border-green-600/30">
+              <div className="text-green-400 text-4xl mb-4">💿</div>
+              <h3 className="text-2xl font-bold mb-4 text-green-400">CD Baby</h3>
+              <ul className="space-y-3 text-gray-300 mb-6">
+                <li>• <strong>Cost:</strong> $30-60 per release</li>
+                <li>• <strong>Revenue share:</strong> 9% of streaming revenue</li>
+                <li>• <strong>Speed:</strong> 2-5 days to platforms</li>
+                <li>• <strong>Analytics:</strong> Detailed fan insights</li>
+                <li>• <strong>Promotion:</strong> Sync licensing opportunities</li>
+              </ul>
+              <div className="bg-green-900/20 p-4 rounded-xl">
+                <p className="text-green-300 font-semibold">Best for: Artists wanting extra services</p>
+                <p className="text-sm text-gray-400">Physical distribution available</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-red-900/30 to-red-800/20 p-8 rounded-2xl border border-red-600/30">
+              <div className="text-red-400 text-4xl mb-4">🏢</div>
+              <h3 className="text-2xl font-bold mb-4 text-red-400">Record Labels</h3>
+              <ul className="space-y-3 text-gray-300 mb-6">
+                <li>• <strong>Cost:</strong> $0 upfront (they pay you)</li>
+                <li>• <strong>Revenue share:</strong> 50-80% to label</li>
+                <li>• <strong>Speed:</strong> Strategic release timing</li>
+                <li>• <strong>Analytics:</strong> Professional industry data</li>
+                <li>• <strong>Promotion:</strong> Radio, playlists, marketing</li>
+              </ul>
+              <div className="bg-red-900/20 p-4 rounded-xl">
+                <p className="text-red-300 font-semibold">Best for: Artists ready for investment</p>
+                <p className="text-sm text-gray-400">Advance payments typical</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Target className="w-8 h-8 text-red-600" />
+            The Hidden Costs Nobody Talks About
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-orange-400">DistroKid Hidden Costs</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Extra Fees</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Custom label name:</strong> +$20/year</li>
+                    <li>• <strong>Spotify pre-save:</strong> +$12/year</li>
+                    <li>• <strong>YouTube monetization:</strong> +$12/year</li>
+                    <li>• <strong>Shazam/iPhone recognition:</strong> +$12/year</li>
+                    <li>• <strong>Lyrics on Spotify:</strong> +$12/year</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Reality Check</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• Total with all features: ~$90/year</li>
+                    <li>• Stop paying = music gets removed</li>
+                    <li>• No playlist pitching service</li>
+                    <li>• Basic customer support</li>
+                    <li>• No sync licensing opportunities</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">CD Baby Real Costs</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">What You Actually Pay</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Single:</strong> $30 + 9% forever</li>
+                    <li>• <strong>Album:</strong> $60 + 9% forever</li>
+                    <li>• <strong>Sync licensing:</strong> They take 60%</li>
+                    <li>• <strong>Physical CDs:</strong> Additional manufacturing costs</li>
+                    <li>• <strong>Pro publishing:</strong> +$50 setup</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">What You Get</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• Music stays up forever (no annual fee)</li>
+                    <li>• Detailed fan geographic data</li>
+                    <li>• Sync licensing team actively pitches</li>
+                    <li>• Physical distribution to stores</li>
+                    <li>• Better customer support</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <DollarSign className="w-8 h-8 text-red-600" />
+            When Each Option Makes Financial Sense
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+              <h3 className="text-2xl font-bold mb-6 text-center">Revenue Breakeven Analysis</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                  <div className="text-4xl mb-4">💰</div>
+                  <h4 className="text-lg font-bold mb-2 text-blue-400">DistroKid Breakeven</h4>
+                  <p className="text-gray-300 mb-2">If you make less than <span className="text-green-400 font-bold">$400/year</span> from streaming</p>
+                  <p className="text-sm text-gray-400">($90 all features ÷ 0% = $90 total cost)</p>
+                </div>
+                
+                <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                  <div className="text-4xl mb-4">📊</div>
+                  <h4 className="text-lg font-bold mb-2 text-green-400">CD Baby Breakeven</h4>
+                  <p className="text-gray-300 mb-2">If you make <span className="text-green-400 font-bold">$400-2000/year</span> from streaming</p>
+                  <p className="text-sm text-gray-400">($60 + 9% ongoing vs DistroKid $90)</p>
+                </div>
+                
+                <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                  <div className="text-4xl mb-4">🏢</div>
+                  <h4 className="text-lg font-bold mb-2 text-red-400">Label Deal Sense</h4>
+                  <p className="text-gray-300 mb-2">If you can get advance of <span className="text-green-400 font-bold">$5,000+</span></p>
+                  <p className="text-sm text-gray-400">And they provide real marketing/promotion</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Zap className="w-8 h-8 text-red-600" />
+            Alternative Distribution Options
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-purple-600">🚀 AWAL (Artists Without A Label)</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Cost:</strong> Free (invitation only)</li>
+                  <li>• <strong>Revenue share:</strong> 15% to AWAL</li>
+                  <li>• <strong>Requirements:</strong> 25K+ monthly streams</li>
+                  <li>• <strong>Benefits:</strong> Playlist pitching, analytics, sync</li>
+                </ul>
+                <p className="text-sm text-gray-400">Best for established independent artists</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-yellow-600">⚡ TuneCore</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Cost:</strong> $30-50/year per release</li>
+                  <li>• <strong>Revenue share:</strong> 0%</li>
+                  <li>• <strong>Features:</strong> Publishing admin, sync</li>
+                  <li>• <strong>Support:</strong> Better than DistroKid</li>
+                </ul>
+                <p className="text-sm text-gray-400">Middle ground between DistroKid and CD Baby</p>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-pink-600">🎯 Stem (formerly Amuse)</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Cost:</strong> Free tier + paid features</li>
+                  <li>• <strong>Revenue share:</strong> 0% (free), 15% (pro)</li>
+                  <li>• <strong>Special:</strong> Record deal scouting</li>
+                  <li>• <strong>AI features:</strong> Smart marketing tools</li>
+                </ul>
+                <p className="text-sm text-gray-400">Good for artists wanting label opportunities</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-green-600">💎 Bandcamp</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Cost:</strong> 10-15% per sale</li>
+                  <li>• <strong>Revenue share:</strong> You keep 85-90%</li>
+                  <li>• <strong>Audience:</strong> Music collectors, super fans</li>
+                  <li>• <strong>Benefits:</strong> Direct fan relationship</li>
+                </ul>
+                <p className="text-sm text-gray-400">Supplement to streaming, not replacement</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Users className="w-8 h-8 text-red-600" />
+            Real Artist Case Studies
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">Case Study 1: Starting Artist (0-1K monthly listeners)</h3>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">The Situation</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• First releases, building audience</li>
+                    <li>• Making $50-200/year from streaming</li>
+                    <li>• Releasing 6-12 songs per year</li>
+                    <li>• Focus on growth, not immediate profit</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Best Choice: DistroKid</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Why:</strong> Unlimited releases for fixed cost</li>
+                    <li>• <strong>Annual cost:</strong> $20-36 (basic plan)</li>
+                    <li>• <strong>Revenue impact:</strong> Keeps 100% of small earnings</li>
+                    <li>• <strong>Growth focus:</strong> Can experiment with releases</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-400">Case Study 2: Growing Artist (5-25K monthly listeners)</h3>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">The Situation</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• Making $500-2,000/year from streaming</li>
+                    <li>• 3-6 strategic releases per year</li>
+                    <li>• Building professional relationships</li>
+                    <li>• Need better analytics and sync opportunities</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Best Choice: CD Baby</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Why:</strong> Better services justify the 9%</li>
+                    <li>• <strong>Annual impact:</strong> $45-180 to CD Baby</li>
+                    <li>• <strong>Value add:</strong> Sync licensing, detailed analytics</li>
+                    <li>• <strong>Long-term:</strong> Music stays up forever</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-red-400">Case Study 3: Established Artist (50K+ monthly listeners)</h3>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">The Situation</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• Making $5,000+/year from streaming</li>
+                    <li>• Strategic album/EP releases</li>
+                    <li>• Ready for professional investment</li>
+                    <li>• Need marketing support and industry connections</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Best Choice: Label Deal or AWAL</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Why:</strong> Ready for professional support</li>
+                    <li>• <strong>AWAL:</strong> 15% for playlist pitching, analytics</li>
+                    <li>• <strong>Label:</strong> Advance + marketing budget</li>
+                    <li>• <strong>ROI:</strong> Professional promotion worth the revenue share</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <ArrowRight className="w-8 h-8 text-red-600" />
+            The 1ABEL Recommendation System
+          </h2>
+          
+          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+            <h3 className="text-2xl font-bold mb-6 text-center">Choose Based on Your Revenue, Not Your Dreams</h3>
+            
+            <div className="space-y-6">
+              <div className="bg-gray-900/50 p-6 rounded-xl border-l-4 border-blue-600">
+                <h4 className="text-xl font-bold mb-3 text-blue-400">💡 Revenue Under $500/year</h4>
+                <p className="text-gray-300 mb-2"><strong>Go with DistroKid basic ($20/year)</strong></p>
+                <p className="text-gray-400">Focus on creating more music and building audience. Don't pay for services you can't use yet.</p>
+              </div>
+
+              <div className="bg-gray-900/50 p-6 rounded-xl border-l-4 border-green-600">
+                <h4 className="text-xl font-bold mb-3 text-green-400">📈 Revenue $500-$3,000/year</h4>
+                <p className="text-gray-300 mb-2"><strong>Switch to CD Baby for better services</strong></p>
+                <p className="text-gray-400">The 9% is worth it for sync opportunities and detailed analytics. You're ready to invest in growth.</p>
+              </div>
+
+              <div className="bg-gray-900/50 p-6 rounded-xl border-l-4 border-red-600">
+                <h4 className="text-xl font-bold mb-3 text-red-400">🚀 Revenue $3,000+/year</h4>
+                <p className="text-gray-300 mb-2"><strong>Consider AWAL or start shopping for label deals</strong></p>
+                <p className="text-gray-400">You're making real money. Time for professional support and industry connections.</p>
+              </div>
+            </div>
+            
+            <div className="text-center mt-8">
+              <p className="text-gray-300">
+                <span className="text-red-600 font-bold">1ABEL works with artists</span> at the $3,000+ level who are ready for professional marketing and industry connections.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    ),
+
+    'sync-licensing-for-beginners-getting-your-music-in-tv-films-ads': (
+      <div className="prose prose-invert max-w-none">
+        <div className="mb-12">
+          <p className="text-xl text-gray-300 leading-relaxed">
+            One Netflix placement can pay more than 100,000 Spotify streams. TV shows, films, and ads are desperately looking for fresh music, 
+            but most artists don't know how to get their music in front of music supervisors. Here's everything you need to know.
+          </p>
+        </div>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <DollarSign className="w-8 h-8 text-red-600" />
+            Sync Licensing: The Money Reality
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            <div className="bg-gradient-to-br from-blue-900/30 to-blue-800/20 p-8 rounded-2xl border border-blue-600/30">
+              <div className="text-blue-400 text-4xl mb-4">📺</div>
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">TV Shows</h3>
+              <ul className="space-y-3 text-gray-300 mb-6">
+                <li>• <strong>Background:</strong> $1,500-5,000</li>
+                <li>• <strong>Featured:</strong> $3,000-15,000</li>
+                <li>• <strong>Main theme:</strong> $25,000-75,000</li>
+                <li>• <strong>Netflix/Prime:</strong> Often higher rates</li>
+                <li>• <strong>Plus:</strong> Performance royalties when aired</li>
+              </ul>
+              <div className="bg-blue-900/20 p-4 rounded-xl">
+                <p className="text-blue-300 font-semibold">High Volume Opportunity</p>
+                <p className="text-sm text-gray-400">100+ new shows launching monthly</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-900/30 to-purple-800/20 p-8 rounded-2xl border border-purple-600/30">
+              <div className="text-purple-400 text-4xl mb-4">🎬</div>
+              <h3 className="text-2xl font-bold mb-4 text-purple-400">Films</h3>
+              <ul className="space-y-3 text-gray-300 mb-6">
+                <li>• <strong>Indie film:</strong> $500-3,000</li>
+                <li>• <strong>Studio film:</strong> $15,000-50,000</li>
+                <li>• <strong>Major blockbuster:</strong> $100,000+</li>
+                <li>• <strong>End credits:</strong> $25,000-100,000</li>
+                <li>• <strong>Plus:</strong> Worldwide theatrical royalties</li>
+              </ul>
+              <div className="bg-purple-900/20 p-4 rounded-xl">
+                <p className="text-purple-300 font-semibold">Prestige & Exposure</p>
+                <p className="text-sm text-gray-400">Can launch entire careers</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-900/30 to-green-800/20 p-8 rounded-2xl border border-green-600/30">
+              <div className="text-green-400 text-4xl mb-4">📢</div>
+              <h3 className="text-2xl font-bold mb-4 text-green-400">Advertising</h3>
+              <ul className="space-y-3 text-gray-300 mb-6">
+                <li>• <strong>Local ad:</strong> $1,000-5,000</li>
+                <li>• <strong>National campaign:</strong> $25,000-250,000</li>
+                <li>• <strong>Super Bowl ad:</strong> $500,000+</li>
+                <li>• <strong>Online/social:</strong> $500-5,000</li>
+                <li>• <strong>Plus:</strong> Huge exposure potential</li>
+              </ul>
+              <div className="bg-green-900/20 p-4 rounded-xl">
+                <p className="text-green-300 font-semibold">Fastest Path to Income</p>
+                <p className="text-sm text-gray-400">Quick turnaround, immediate pay</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Target className="w-8 h-8 text-red-600" />
+            What Music Supervisors Actually Want
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-600">✓ Music That Gets Licensed</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Technical Requirements</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Clean versions:</strong> No explicit content (TV especially)</li>
+                    <li>• <strong>Instrumental versions:</strong> For dialogue scenes</li>
+                    <li>• <strong>Stems available:</strong> Ability to edit/remix</li>
+                    <li>• <strong>High quality:</strong> Professional mixing/mastering</li>
+                    <li>• <strong>Clear ownership:</strong> No uncleared samples</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Content That Works</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Emotional connection:</strong> Enhances storytelling</li>
+                    <li>• <strong>Non-distracting:</strong> Supports, doesn't compete</li>
+                    <li>• <strong>Versatile moods:</strong> Multiple use scenarios</li>
+                    <li>• <strong>Modern production:</strong> Contemporary sound</li>
+                    <li>• <strong>Unique but familiar:</strong> Fresh take on proven concepts</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-red-600">✗ Music That Gets Rejected</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Technical Problems</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Poor audio quality:</strong> Home recordings without professional mixing</li>
+                    <li>• <strong>Uncleared samples:</strong> Legal liability issues</li>
+                    <li>• <strong>No instrumental:</strong> Can't edit for dialogue</li>
+                    <li>• <strong>Wrong format:</strong> MP3s instead of WAV files</li>
+                    <li>• <strong>Rights issues:</strong> Unclear publishing ownership</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Content Issues</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Too generic:</strong> Sounds like everything else</li>
+                    <li>• <strong>Overly complex:</strong> Competes with dialogue/action</li>
+                    <li>• <strong>Wrong energy:</strong> Doesn't match scene requirements</li>
+                    <li>• <strong>Dated production:</strong> Sounds like it's from 2010</li>
+                    <li>• <strong>Limited use:</strong> Only works in one specific scenario</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Music className="w-8 h-8 text-red-600" />
+            How to Prepare Your Music for Sync
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+              <h3 className="text-2xl font-bold mb-6 text-center">The Sync-Ready Checklist</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <h4 className="text-xl font-bold text-blue-400">🎵 Audio Preparation</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-1" />
+                      <div>
+                        <p className="text-white font-semibold">Professional Master</p>
+                        <p className="text-gray-400 text-sm">Properly mixed and mastered, not just loudness</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-1" />
+                      <div>
+                        <p className="text-white font-semibold">Clean + Explicit Versions</p>
+                        <p className="text-gray-400 text-sm">TV requires clean, streaming allows explicit</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-1" />
+                      <div>
+                        <p className="text-white font-semibold">Instrumental Version</p>
+                        <p className="text-gray-400 text-sm">Remove vocals for dialogue scenes</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-1" />
+                      <div>
+                        <p className="text-white font-semibold">Multiple Lengths</p>
+                        <p className="text-gray-400 text-sm">:30, :60, full length versions</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h4 className="text-xl font-bold text-purple-400">📋 Legal/Business</h4>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-1" />
+                      <div>
+                        <p className="text-white font-semibold">100% Ownership</p>
+                        <p className="text-gray-400 text-sm">You own all rights, no uncleared samples</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-1" />
+                      <div>
+                        <p className="text-white font-semibold">Publishing Rights</p>
+                        <p className="text-gray-400 text-sm">Know who controls what percentage</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-1" />
+                      <div>
+                        <p className="text-white font-semibold">Sync-Friendly Agreement</p>
+                        <p className="text-gray-400 text-sm">All collaborators agree to sync licensing</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-1" />
+                      <div>
+                        <p className="text-white font-semibold">Metadata Complete</p>
+                        <p className="text-gray-400 text-sm">Writer credits, publisher info, PRO registration</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Search className="w-8 h-8 text-red-600" />
+            Where to Submit Your Music
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-green-600">🎯 Direct to Music Supervisors</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Research credits:</strong> Find supervisors for shows you like</li>
+                  <li>• <strong>IMDbPro:</strong> Contact information for industry professionals</li>
+                  <li>• <strong>LinkedIn:</strong> Many supervisors are active here</li>
+                  <li>• <strong>Industry events:</strong> ASCAP Expo, MIDEM, etc.</li>
+                </ul>
+                <div className="bg-green-900/20 p-3 rounded-xl">
+                  <p className="text-sm text-gray-400">Best for: Established artists with proven track record</p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-blue-600">📚 Sync Libraries</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Musicbed:</strong> High-end production music</li>
+                  <li>• <strong>AudioNetwork:</strong> Broad catalog, good for beginners</li>
+                  <li>• <strong>Epidemic Sound:</strong> Focus on online content</li>
+                  <li>• <strong>APM Music:</strong> Traditional broadcast library</li>
+                </ul>
+                <div className="bg-blue-900/20 p-3 rounded-xl">
+                  <p className="text-sm text-gray-400">Best for: New artists building sync experience</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-purple-600">🎪 Sync Representation</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Sync agents:</strong> Take 20-50%, but have industry relationships</li>
+                  <li>• <strong>Music libraries:</strong> Exclusive deals, split revenue 50/50</li>
+                  <li>• <strong>Publishers:</strong> Full-service sync and publishing administration</li>
+                  <li>• <strong>Label sync teams:</strong> If you're signed to a label</li>
+                </ul>
+                <div className="bg-purple-900/20 p-3 rounded-xl">
+                  <p className="text-sm text-gray-400">Best for: Artists ready to share revenue for connections</p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-orange-600">🌐 Online Platforms</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Songtradr:</strong> Direct marketplace for sync licensing</li>
+                  <li>• <strong>Crucial Music:</strong> Connects artists with supervisors</li>
+                  <li>• <strong>TAXI:</strong> A&R and sync submission service</li>
+                  <li>• <strong>Music Gateway:</strong> UK-based sync opportunities</li>
+                </ul>
+                <div className="bg-orange-900/20 p-3 rounded-xl">
+                  <p className="text-sm text-gray-400">Best for: Anyone getting started in sync</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Mail className="w-8 h-8 text-red-600" />
+            How to Pitch Music Supervisors
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">Email Template That Works</h3>
+              <div className="bg-gray-800 p-6 rounded-xl border border-gray-600">
+                <p className="text-gray-300 mb-4">
+                  <strong className="text-white">Subject:</strong> Sync Submission - [Your Artist Name] - [Genre/Mood]
+                </p>
+                <div className="space-y-3 text-gray-300">
+                  <p>Hi [Music Supervisor Name],</p>
+                  <p>I'm [Your Name], an independent [genre] artist from [location]. I've been following your work on [specific show/film] and loved how you used [specific song] in [specific scene].</p>
+                  <p>I have [number] sync-ready tracks that would be perfect for [type of content they work on]. My music has been described as [brief description - 2-3 words max].</p>
+                  <p><strong>Track highlights:</strong></p>
+                  <ul className="list-disc list-inside ml-4 space-y-1">
+                    <li>"[Song Title]" - [mood/energy] - perfect for [scene type]</li>
+                    <li>"[Song Title]" - [mood/energy] - great for [scene type]</li>
+                  </ul>
+                  <p>All tracks include clean versions, instrumentals, and stems. I own 100% of the rights.</p>
+                  <p>Private SoundCloud link: [link]<br/>
+                  EPK: [link to one-page electronic press kit]</p>
+                  <p>Thank you for your time.</p>
+                  <p>Best,<br/>[Your name]<br/>[phone] | [email]</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-red-400">Common Pitching Mistakes</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">✗ What NOT to Do</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• Mass CC'ing multiple supervisors</li>
+                    <li>• Sending 10+ song attachments</li>
+                    <li>• Generic "check out my music" emails</li>
+                    <li>• Following up every week</li>
+                    <li>• Pitching explicit music for TV</li>
+                    <li>• Not researching their previous work</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">✓ What TO Do</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• Personalize each email</li>
+                    <li>• Include 2-3 relevant tracks max</li>
+                    <li>• Reference specific shows/scenes</li>
+                    <li>• Follow up once after 3 months</li>
+                    <li>• Include instrumental versions</li>
+                    <li>• Show you understand their style</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <TrendingUp className="w-8 h-8 text-red-600" />
+            Building Long-term Sync Success
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-green-600">🎯 Create More Licensable Music</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Study what gets licensed:</strong> Watch shows, note music choices</li>
+                  <li>• <strong>Write for scenarios:</strong> "Road trip song", "breakup scene"</li>
+                  <li>• <strong>Instrumental-first:</strong> Create backing tracks that work alone</li>
+                  <li>• <strong>Multiple moods:</strong> Build a diverse catalog</li>
+                  <li>• <strong>Collaborate:</strong> Work with sync-focused producers</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-blue-600">📈 Track Your Progress</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Submission spreadsheet:</strong> Track who you've contacted</li>
+                  <li>• <strong>Response rates:</strong> Measure what's working</li>
+                  <li>• <strong>Placement tracking:</strong> Monitor where your music appears</li>
+                  <li>• <strong>Revenue tracking:</strong> Calculate sync vs streaming income</li>
+                  <li>• <strong>Relationship notes:</strong> Remember personal details</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-purple-600">🤝 Network in the Industry</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Attend industry events:</strong> ASCAP, BMI showcases</li>
+                  <li>• <strong>Join organizations:</strong> Guild of Music Supervisors</li>
+                  <li>• <strong>Social media:</strong> Follow supervisors, engage thoughtfully</li>
+                  <li>• <strong>Support other artists:</strong> Recommend peers for placements</li>
+                  <li>• <strong>Stay updated:</strong> Industry news, new shows launching</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-orange-600">💰 Maximize Your Earnings</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Join a PRO:</strong> ASCAP, BMI, or SESAC for performance royalties</li>
+                  <li>• <strong>Register songs:</strong> Make sure you get backend royalties</li>
+                  <li>• <strong>Know your worth:</strong> Don't undervalue your music</li>
+                  <li>• <strong>Negotiate rights:</strong> Keep sync rights when possible</li>
+                  <li>• <strong>Multiple revenue streams:</strong> Sync + streaming + live</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <ArrowRight className="w-8 h-8 text-red-600" />
+            Your 30-Day Sync Licensing Action Plan
+          </h2>
+          
+          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+            <h3 className="text-2xl font-bold mb-6 text-center">From Zero to First Sync Opportunity</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🎵</div>
+                <h4 className="text-lg font-bold mb-2 text-blue-400">Week 1: Prepare</h4>
+                <p className="text-sm text-gray-300">Create clean + instrumental versions, organize metadata, ensure 100% ownership</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🔍</div>
+                <h4 className="text-lg font-bold mb-2 text-green-400">Week 2: Research</h4>
+                <p className="text-sm text-gray-300">Find 20 music supervisors, study their shows, note music style preferences</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">📧</div>
+                <h4 className="text-lg font-bold mb-2 text-purple-400">Week 3: Submit</h4>
+                <p className="text-sm text-gray-300">Send 10 personalized pitches, upload to 3 sync libraries, join 2 platforms</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">📈</div>
+                <h4 className="text-lg font-bold mb-2 text-red-400">Week 4: Scale</h4>
+                <p className="text-sm text-gray-300">Track responses, refine pitch, submit to 10 more supervisors, plan next batch</p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <p className="text-gray-300 mb-6">
+                One sync placement can pay <span className="text-red-600 font-bold">more than 100,000 streams</span>. The market is there - you just need to access it professionally.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    ),
+
+    'live-performance-revenue-gigs-festivals-building-fanbase': (
+      <div className="prose prose-invert max-w-none">
+        <div className="mb-12">
+          <p className="text-xl text-gray-300 leading-relaxed">
+            Streaming pays pennies, but live shows pay rent. Even small venues pay $200-500 per night, while festivals can pay $5,000-50,000. 
+            Here's how to book gigs, negotiate fees, and build a touring circuit that actually makes money.
+          </p>
+        </div>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <DollarSign className="w-8 h-8 text-red-600" />
+            Live Performance Pay Scale Reality
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-12">
+            <div className="bg-gradient-to-br from-gray-900/30 to-gray-800/20 p-6 rounded-2xl border border-gray-600/30">
+              <div className="text-gray-400 text-3xl mb-4">🎤</div>
+              <h3 className="text-xl font-bold mb-4 text-gray-300">Open Mics</h3>
+              <ul className="space-y-2 text-gray-300 mb-4">
+                <li>• <strong>Pay:</strong> $0-50</li>
+                <li>• <strong>Sets:</strong> 10-20 minutes</li>
+                <li>• <strong>Audience:</strong> 5-30 people</li>
+                <li>• <strong>Goal:</strong> Practice & networking</li>
+              </ul>
+              <div className="bg-gray-800/20 p-3 rounded-xl">
+                <p className="text-sm text-gray-400">Starting point for new artists</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-900/30 to-blue-800/20 p-6 rounded-2xl border border-blue-600/30">
+              <div className="text-blue-400 text-3xl mb-4">🏪</div>
+              <h3 className="text-xl font-bold mb-4 text-blue-400">Small Venues</h3>
+              <ul className="space-y-2 text-gray-300 mb-4">
+                <li>• <strong>Pay:</strong> $200-800</li>
+                <li>• <strong>Sets:</strong> 30-45 minutes</li>
+                <li>• <strong>Audience:</strong> 50-200 people</li>
+                <li>• <strong>Goal:</strong> Build local following</li>
+              </ul>
+              <div className="bg-blue-900/20 p-3 rounded-xl">
+                <p className="text-sm text-gray-400">Bread and butter of touring</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-900/30 to-purple-800/20 p-6 rounded-2xl border border-purple-600/30">
+              <div className="text-purple-400 text-3xl mb-4">🎪</div>
+              <h3 className="text-xl font-bold mb-4 text-purple-400">Mid-Size Venues</h3>
+              <ul className="space-y-2 text-gray-300 mb-4">
+                <li>• <strong>Pay:</strong> $1,000-5,000</li>
+                <li>• <strong>Sets:</strong> 45-75 minutes</li>
+                <li>• <strong>Audience:</strong> 200-1,000 people</li>
+                <li>• <strong>Goal:</strong> Professional touring</li>
+              </ul>
+              <div className="bg-purple-900/20 p-3 rounded-xl">
+                <p className="text-sm text-gray-400">Regional headliner level</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-900/30 to-green-800/20 p-6 rounded-2xl border border-green-600/30">
+              <div className="text-green-400 text-3xl mb-4">🎊</div>
+              <h3 className="text-xl font-bold mb-4 text-green-400">Festivals</h3>
+              <ul className="space-y-2 text-gray-300 mb-4">
+                <li>• <strong>Pay:</strong> $5,000-100,000+</li>
+                <li>• <strong>Sets:</strong> 45-90 minutes</li>
+                <li>• <strong>Audience:</strong> 1,000-50,000 people</li>
+                <li>• <strong>Goal:</strong> Mass exposure & income</li>
+              </ul>
+              <div className="bg-green-900/20 p-3 rounded-xl">
+                <p className="text-sm text-gray-400">Career-changing opportunities</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Target className="w-8 h-8 text-red-600" />
+            How to Book Your First Paid Gigs
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">Build Your Live Performance Resume</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Essential Materials</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Electronic Press Kit (EPK):</strong> One-page PDF with bio, photos, music links</li>
+                    <li>• <strong>Live performance videos:</strong> High-quality footage of you performing</li>
+                    <li>• <strong>Professional photos:</strong> Stage shots and promotional images</li>
+                    <li>• <strong>Rider/Tech requirements:</strong> Sound equipment needs</li>
+                    <li>• <strong>Set list examples:</strong> Show your song catalog</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Performance Proof</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Video evidence:</strong> Phone recordings of full songs</li>
+                    <li>• <strong>Crowd engagement:</strong> Show audience singing along</li>
+                    <li>• <strong>Professional setup:</strong> Proper mics, instruments, staging</li>
+                    <li>• <strong>Song variety:</strong> Demonstrate range and energy levels</li>
+                    <li>• <strong>Stage presence:</strong> Confident performance and crowd interaction</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-400">Venue Research & Outreach Strategy</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Finding the Right Venues</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Start local:</strong> Bars, coffee shops, restaurants in your city</li>
+                    <li>• <strong>Check similar artists:</strong> Where do artists like you perform?</li>
+                    <li>• <strong>Music venue websites:</strong> Most list booking contact info</li>
+                    <li>• <strong>Social media:</strong> Follow venues, engage with their posts</li>
+                    <li>• <strong>Live music calendars:</strong> City websites, local magazines</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Booking Email Template</h4>
+                  <div className="bg-gray-800 p-4 rounded-xl text-sm">
+                    <p className="text-gray-300 mb-3">
+                      <strong>Subject:</strong> Booking Inquiry - [Artist Name] - [Genre]
+                    </p>
+                    <p className="text-gray-300 mb-2">Hi [Booking Manager],</p>
+                    <p className="text-gray-300 mb-2">I'm [Name], a [genre] artist from [location]. I've performed at [2-3 similar venues] and would love to play at [venue name].</p>
+                    <p className="text-gray-300 mb-2">My music: [streaming link]<br/>
+                    Live performance video: [YouTube link]<br/>
+                    EPK: [press kit link]</p>
+                    <p className="text-gray-300">Available dates: [list 3-4 options]</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Users className="w-8 h-8 text-red-600" />
+            Building Your Live Fanbase
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-green-600">🎯 Pre-Show Promotion</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Announce early:</strong> Post 2-4 weeks before show</li>
+                  <li>• <strong>Multi-platform:</strong> Instagram, TikTok, Facebook, Twitter</li>
+                  <li>• <strong>Story countdown:</strong> Daily updates leading to show</li>
+                  <li>• <strong>Behind-scenes:</strong> Rehearsal clips, setlist teasers</li>
+                  <li>• <strong>Cross-promote:</strong> Share other artists on the bill</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-blue-600">🎤 During Performance</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Crowd interaction:</strong> Learn audience names, ask questions</li>
+                  <li>• <strong>Social media callouts:</strong> "Tag us in your stories!"</li>
+                  <li>• <strong>New song introductions:</strong> Tell stories behind the music</li>
+                  <li>• <strong>Merchandise mention:</strong> Subtle sales during set breaks</li>
+                  <li>• <strong>Next show announcement:</strong> Build momentum for future gigs</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-purple-600">📱 Post-Show Engagement</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Thank you posts:</strong> Tag venue, other artists, attendees</li>
+                  <li>• <strong>Photo/video sharing:</strong> Crowd shots, stage moments</li>
+                  <li>• <strong>Stories collection:</strong> Repost fan videos and photos</li>
+                  <li>• <strong>Email capture:</strong> Collect addresses at merch table</li>
+                  <li>• <strong>Next show teaser:</strong> "Where should we play next?"</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-orange-600">💰 Merchandise Strategy</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li>• <strong>Start simple:</strong> T-shirts, stickers, CDs/vinyl</li>
+                  <li>• <strong>Venue-specific:</strong> "I saw [Artist] at [Venue]" shirts</li>
+                  <li>• <strong>Digital bundles:</strong> Exclusive tracks, meet & greet photos</li>
+                  <li>• <strong>Price strategically:</strong> $5-25 items for impulse purchases</li>
+                  <li>• <strong>Limited editions:</strong> Create urgency and exclusivity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <TrendingUp className="w-8 h-8 text-red-600" />
+            Scaling Up: From Local to Regional Tours
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+              <h3 className="text-2xl font-bold mb-6 text-center">The Live Performance Ladder</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                  <div className="text-4xl mb-4">🎤</div>
+                  <h4 className="text-lg font-bold mb-2 text-gray-400">Level 1: Local</h4>
+                  <p className="text-sm text-gray-300">Open mics → small venues in your city. Goal: Get comfortable performing.</p>
+                </div>
+                
+                <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                  <div className="text-4xl mb-4">🚗</div>
+                  <h4 className="text-lg font-bold mb-2 text-blue-400">Level 2: Regional</h4>
+                  <p className="text-sm text-gray-300">Venues 2-4 hours away. Goal: Build fanbase in nearby cities.</p>
+                </div>
+                
+                <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                  <div className="text-4xl mb-4">✈️</div>
+                  <h4 className="text-lg font-bold mb-2 text-purple-400">Level 3: National</h4>
+                  <p className="text-sm text-gray-300">Cross-country tours, major cities. Goal: Nationwide recognition.</p>
+                </div>
+                
+                <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                  <div className="text-4xl mb-4">🌍</div>
+                  <h4 className="text-lg font-bold mb-2 text-green-400">Level 4: International</h4>
+                  <p className="text-sm text-gray-300">International festivals, global tours. Goal: Worldwide career.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <ArrowRight className="w-8 h-8 text-red-600" />
+            Your 90-Day Live Performance Action Plan
+          </h2>
+          
+          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+            <h3 className="text-2xl font-bold mb-6 text-center">From Zero to Paid Gigs</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">📋</div>
+                <h4 className="text-lg font-bold mb-2 text-blue-400">Month 1: Prepare</h4>
+                <p className="text-sm text-gray-300">Create EPK, record performance videos, research 20 local venues, book 3 open mics</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">📧</div>
+                <h4 className="text-lg font-bold mb-2 text-green-400">Month 2: Outreach</h4>
+                <p className="text-sm text-gray-300">Send booking emails, perform at open mics, network with other artists, book first paid gig</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🎪</div>
+                <h4 className="text-lg font-bold mb-2 text-purple-400">Month 3: Perform</h4>
+                <p className="text-sm text-gray-300">Execute first paid shows, collect fan emails, plan next month's gigs, track progress</p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <p className="text-gray-300 mb-6">
+                One successful local show can lead to <span className="text-red-600 font-bold">5 more bookings</span>. Venue owners talk to each other - your reputation spreads fast.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    ),
+
+    'music-rights-publishing-dont-let-labels-steal-your-publishing': (
+      <div className="prose prose-invert max-w-none">
+        <p className="text-xl text-gray-300 mb-8">
+          Publishing is where the real money is in music. Many artists sign away 50% of their publishing without understanding what they're giving up. Here's how to protect your rights and maximize your revenue.
+        </p>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Publishing vs. Master Rights: The Critical Difference</h2>
+        
+        <div className="bg-gray-800/50 p-6 rounded-lg mb-8">
+          <h3 className="text-xl font-semibold mb-4 text-red-400">Two Separate Revenue Streams</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-blue-900/30 p-4 rounded-lg border border-blue-600/30">
+              <h4 className="font-semibold text-blue-400 mb-2">Master Rights (Recording)</h4>
+              <ul className="space-y-1 text-gray-300 text-sm">
+                <li>• Streaming royalties from Spotify, Apple</li>
+                <li>• Digital downloads and physical sales</li>
+                <li>• YouTube ad revenue</li>
+                <li>• Radio airplay (neighboring rights)</li>
+                <li>• Sample licensing</li>
+              </ul>
+            </div>
+            <div className="bg-green-900/30 p-4 rounded-lg border border-green-600/30">
+              <h4 className="font-semibold text-green-400 mb-2">Publishing Rights (Composition)</h4>
+              <ul className="space-y-1 text-gray-300 text-sm">
+                <li>• Performance royalties (PRO payments)</li>
+                <li>• Mechanical royalties</li>
+                <li>• Sync licensing (TV, films, ads)</li>
+                <li>• Cover versions by other artists</li>
+                <li>• Sheet music and lyric licensing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Publishing Revenue Breakdown</h2>
+        
+        <div className="space-y-6">
+          <div className="bg-gray-800/50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-green-400">Where Publishing Money Comes From</h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-400 mb-2">45%</div>
+                <h4 className="font-semibold text-white mb-2">Performance Royalties</h4>
+                <p className="text-gray-300 text-sm">Radio, streaming, live venues, TV background music</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-400 mb-2">35%</div>
+                <h4 className="font-semibold text-white mb-2">Sync Licensing</h4>
+                <p className="text-gray-300 text-sm">TV shows, movies, commercials, video games</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-red-400 mb-2">20%</div>
+                <h4 className="font-semibold text-white mb-2">Mechanical Royalties</h4>
+                <p className="text-gray-300 text-sm">Streaming, downloads, covers, samples</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-800/50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-red-400">Real Publishing Revenue Examples</h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-4">
+                <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">$</span>
+                <div>
+                  <h4 className="font-semibold text-white">Netflix Sync License</h4>
+                  <p className="text-gray-300 text-sm">$15,000-50,000 for popular series background music</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">$</span>
+                <div>
+                  <h4 className="font-semibold text-white">Major Brand Commercial</h4>
+                  <p className="text-gray-300 text-sm">$100,000+ for national advertising campaigns</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">$</span>
+                <div>
+                  <h4 className="font-semibold text-white">Radio Hit Performance</h4>
+                  <p className="text-gray-300 text-sm">$200,000+ annually from PRO collections</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Protecting Your Publishing Rights</h2>
+        
+        <div className="bg-gray-800/50 p-6 rounded-lg mb-8">
+          <h3 className="text-xl font-semibold mb-4 text-red-400">Essential Steps for Independent Artists</h3>
+          <div className="space-y-4">
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">1</span>
+              <div>
+                <h4 className="font-semibold text-white">Register with a PRO</h4>
+                <p className="text-gray-300 text-sm">ASCAP, BMI, or SESAC in the US. Choose based on genre and support.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">2</span>
+              <div>
+                <h4 className="font-semibold text-white">Copyright Your Songs</h4>
+                <p className="text-gray-300 text-sm">File with copyright office. Costs $35-65 per song but provides legal protection.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">3</span>
+              <div>
+                <h4 className="font-semibold text-white">Track Your Usage</h4>
+                <p className="text-gray-300 text-sm">Use services like Tunesat to monitor where your music is being used.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-1">4</span>
+              <div>
+                <h4 className="font-semibold text-white">Keep Detailed Records</h4>
+                <p className="text-gray-300 text-sm">Document songwriting splits, collaborations, and licensing agreements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="text-3xl font-bold mb-6 text-white">Publishing Deal Red Flags</h2>
+        
+        <div className="space-y-6">
+          <div className="bg-gray-800/50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-red-400">What to Avoid in Publishing Deals</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-white mb-2">❌ Deal Breakers</h4>
+                <ul className="space-y-1 text-gray-300 text-sm">
+                  <li>• Giving up 100% of publishing</li>
+                  <li>• Deals without reversion clauses</li>
+                  <li>• No advance or unfair advance terms</li>
+                  <li>• Retroactive catalog grabs</li>
+                  <li>• Exclusive songwriting requirements</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-white mb-2">✅ Fair Deal Terms</h4>
+                <ul className="space-y-1 text-gray-300 text-sm">
+                  <li>• 50/50 split maximum (co-publishing)</li>
+                  <li>• Reversion after 5-7 years</li>
+                  <li>• Meaningful advance payment</li>
+                  <li>• Active sync licensing efforts</li>
+                  <li>• Clear territory limitations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-800/50 p-6 rounded-lg">
+            <h3 className="text-xl font-semibold mb-4 text-blue-400">Publishing Administration vs. Publishing Deals</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-white mb-2">Administration (Recommended)</h4>
+                <ul className="space-y-1 text-gray-300 text-sm">
+                  <li>• You keep 80-85% of publishing</li>
+                  <li>• Company collects and distributes</li>
+                  <li>• You retain ownership</li>
+                  <li>• Shorter term lengths (2-3 years)</li>
+                  <li>• Example: Songtrust, CD Baby Pro</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-white mb-2">Full Publishing Deal</h4>
+                <ul className="space-y-1 text-gray-300 text-sm">
+                  <li>• You give up 50% permanently</li>
+                  <li>• Company becomes co-owner</li>
+                  <li>• They invest in promotion</li>
+                  <li>• Longer terms (5-10 years)</li>
+                  <li>• Only worth it for major advances</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-red-900/30 to-red-800/30 p-6 rounded-lg border border-red-500/20">
+          <h3 className="text-xl font-semibold mb-4 text-red-400">Protect Your Publishing Rights</h3>
+          <p className="text-gray-300 mb-4">
+            Don't sign away your future income. Get our complete publishing guide with contract templates, PRO registration help, and sync licensing strategies.
+          </p>
+          <a href="mailto:anyro@1abel.com?subject=Publishing Rights Guide" 
+             className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+            Get Publishing Protection Kit
+          </a>
+        </div>
+      </div>
     )
   }
 
@@ -2171,16 +3414,20 @@ function getBlogPostContent(slug: string) {
       </div>
       
       <div className="text-center p-8">
-        <p className="text-gray-400">
-          Want to be notified when this article is published? Contact us at anyro@1abel.com
-        </p>
+        <a href="mailto:anyro@1abel.com?subject=Blog Post Request" 
+           className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+          Request This Topic
+        </a>
       </div>
     </div>
   )
 }
 
 function getNewsPostContent(slug: string) {
-  const content: { [key: string]: JSX.Element } = {}
+  const content: { [key: string]: JSX.Element } = {
+    // News articles content would go here, but for now they use fallback
+  }
+
   return content[slug] || (
     <div className="prose prose-invert max-w-none">
       <div className="mb-12">
@@ -2190,34 +3437,34 @@ function getNewsPostContent(slug: string) {
       </div>
       
       <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 mb-8">
-        <h2 className="text-2xl font-bold mb-4">Breaking Industry News</h2>
+        <h2 className="text-2xl font-bold mb-4">Breaking News Coming Soon</h2>
         <p className="text-gray-300">
-          Stay tuned for the latest industry insights and analysis from 1ABEL. 
-          We track the most important developments affecting independent artists.
+          Stay tuned for the latest industry insights and breaking news that affects independent artists.
         </p>
       </div>
       
       <div className="text-center p-8">
-        <p className="text-gray-400">
-          Get industry news updates: anyro@1abel.com
-        </p>
+        <a href="mailto:anyro@1abel.com?subject=News Story Request" 
+           className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+          Suggest News Topic
+        </a>
       </div>
     </div>
   )
 }
 
-export default async function BlogPostPage({ params }: PageProps) {
+export default async function BlogPost({ params }: PageProps) {
   const resolvedParams = await params
   const blogData = getBlogContent(resolvedParams.slug)
   
   if (!blogData) {
     notFound()
   }
-  
-  const { post, content } = blogData
-  const shareUrl = `https://1abel.com/blog/${resolvedParams.slug}`
 
-  // Structured data for SEO
+  const { post, content } = blogData
+  
+  const shareUrl = `https://1abel.com/blog/${resolvedParams.slug}`
+  
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
