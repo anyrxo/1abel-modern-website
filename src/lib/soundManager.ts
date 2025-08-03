@@ -19,6 +19,8 @@ export class SoundManager {
   private currentSources: Map<string, AudioBufferSourceNode> = new Map()
   private ambientMusic: AudioBufferSourceNode | null = null
   private atmosphereStarted: boolean = false
+  private persistentAtmosphere: boolean = true  // NEW: Keep atmosphere across pages
+  private lastInteractionTime: number = 0      // NEW: Track user interaction
 
   // 🎵 ALL 18 FILES (excluding particles from mystical sounds)
   private readonly ALL_SOUNDS = [
@@ -90,9 +92,14 @@ export class SoundManager {
       return null
     }
 
-    // Stop existing instance of this sound
+    // Track user interaction for atmospheric persistence
+    if (!this.AMBIENT_SOUNDS.includes(soundName)) {
+      this.lastInteractionTime = Date.now()
+    }
+
+    // Stop existing instance of this sound (except for atmospheric sounds during page transitions)
     const existingSource = this.currentSources.get(soundName)
-    if (existingSource) {
+    if (existingSource && (!this.AMBIENT_SOUNDS.includes(soundName) || !this.persistentAtmosphere)) {
       try {
         existingSource.stop()
       } catch (e) {
@@ -188,25 +195,61 @@ export class SoundManager {
     setTimeout(async () => await this.playSound('shard', { volume: 0.3, fadeIn: 0.3 }), 500)
   }
 
-  // 🌊 ATMOSPHERIC LAYERS
+  // 🌊 ATMOSPHERIC LAYERS - PERSISTENT ACROSS PAGES
   public async startAtmosphere() {
-    if (!this.enabled || this.atmosphereStarted) return
+    if (!this.enabled) return
+    
+    // Only start if not already started or if sounds have stopped
+    const hasActiveAtmosphere = this.AMBIENT_SOUNDS.some(soundName => 
+      this.currentSources.has(soundName)
+    )
+    
+    if (hasActiveAtmosphere && this.atmosphereStarted) {
+      console.log('🌊 Atmosphere already active')
+      return
+    }
 
     console.log('🌊 Starting atmospheric layers...')
     this.atmosphereStarted = true
     
-    // Wind - very gentle background
+    // Wind - very gentle background (persistent)
     await this.playSound('wind', { volume: 0.08, loop: true, fadeIn: 3 })
     
-    // Room tone - warm presence
+    // Room tone - warm presence (persistent)
     setTimeout(async () => {
       await this.playSound('room', { volume: 0.12, loop: true, fadeIn: 2 })
     }, 1000)
     
-    // Background music - subtle
+    // Background music - subtle (persistent)
     setTimeout(async () => {
       this.ambientMusic = await this.playSound('music-highq', { volume: 0.10, loop: true, fadeIn: 4 })
     }, 2000)
+    
+    // Auto-restart atmosphere if it gets interrupted (page changes, etc.)
+    this.setupAtmosphereWatchdog()
+  }
+
+  private setupAtmosphereWatchdog() {
+    if (!this.persistentAtmosphere) return
+    
+    const watchdog = setInterval(() => {
+      if (!this.enabled) {
+        clearInterval(watchdog)
+        return
+      }
+      
+      // Check if atmosphere sounds are still playing
+      const hasActiveAtmosphere = this.AMBIENT_SOUNDS.some(soundName => 
+        this.currentSources.has(soundName)
+      )
+      
+      // If no atmosphere and user was recently active, restart it
+      if (!hasActiveAtmosphere && this.atmosphereStarted && (Date.now() - this.lastInteractionTime < 30000)) {
+        console.log('🌊 Atmosphere watchdog: Restarting atmosphere')
+        this.atmosphereStarted = false // Reset flag
+        this.startAtmosphere()
+      }
+    }, 5000) // Check every 5 seconds
   }
 
   public stopAtmosphere() {
@@ -284,9 +327,40 @@ export class SoundManager {
     }
   }
 
+  // 🎵 ENHANCED BUTTON INTERACTIONS
+  public async playButtonHover() {
+    // Subtle hover sound - lighter than click
+    await this.playSound('ui-short', { volume: 0.15, fadeIn: 0.05 })
+  }
+
+  public async playButtonClick() {
+    // More pronounced click sound
+    await this.playSound('click-project', { volume: 0.25, fadeIn: 0.05 })
+  }
+
+  public async playShimmerButtonHover() {
+    // Special shimmer button hover - use shard for magical effect
+    await this.playSound('shard', { volume: 0.12, fadeIn: 0.1 })
+  }
+
+  public async playShimmerButtonClick() {
+    // Shimmer button click - use circles for magical effect
+    await this.playSound('circles', { volume: 0.2, fadeIn: 0.1 })
+  }
+
+  public async playLinkHover() {
+    // Very subtle link hover
+    await this.playSound('ui-long', { volume: 0.1, fadeIn: 0.05 })
+  }
+
+  public async playFormInteraction() {
+    // Form field focus/input sounds
+    await this.playSound('project-text', { volume: 0.15 })
+  }
+
   // Legacy compatibility
-  public playHover = () => this.playUISound()
-  public playClick = () => this.playUISound()
+  public playHover = () => this.playButtonHover()
+  public playClick = () => this.playButtonClick()
   public playSuccess = () => this.playBeepSequence()
 }
 
@@ -297,12 +371,20 @@ export const soundManager = new SoundManager()
 export function useSound() {
   return {
     // Basic interactions
-    playHover: () => soundManager.playUISound(),
-    playClick: () => soundManager.playUISound(),
+    playHover: () => soundManager.playButtonHover(),
+    playClick: () => soundManager.playButtonClick(),
     playEnter: () => soundManager.playEnter(),
     playLeave: () => soundManager.playLeave(),
     playUISound: () => soundManager.playUISound(),
     playTypingSound: () => soundManager.playTypingSound(),
+    
+    // Enhanced button interactions
+    playButtonHover: () => soundManager.playButtonHover(),
+    playButtonClick: () => soundManager.playButtonClick(),
+    playShimmerButtonHover: () => soundManager.playShimmerButtonHover(),
+    playShimmerButtonClick: () => soundManager.playShimmerButtonClick(),
+    playLinkHover: () => soundManager.playLinkHover(),
+    playFormInteraction: () => soundManager.playFormInteraction(),
     
     // Identity sounds
     playLogo: () => soundManager.playLogo(),

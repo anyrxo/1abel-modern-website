@@ -4,11 +4,12 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Volume2, VolumeX } from 'lucide-react'
 import { useSound, initGlobalSounds } from '@/lib/soundManager'
+import { GlobalSoundHooks } from './GlobalSoundHooks'
 
 export function GlobalSoundSystem() {
   const [isMuted, setIsMuted] = useState(true)
   const [volume, setVolume] = useState(0.4)
-  const { enable, disable, setVolume: setSoundVolume, playWelcome } = useSound()
+  const { enable, disable, setVolume: setSoundVolume, playWelcome, startAtmosphere } = useSound()
 
   useEffect(() => {
     // Initialize global sound system
@@ -26,10 +27,14 @@ export function GlobalSoundSystem() {
         setVolume(vol)
         setSoundVolume(vol)
       }
+      // Ensure atmosphere starts on page load if sounds are enabled
+      setTimeout(() => {
+        startAtmosphere()
+      }, 1000)
     }
     
     return cleanup
-  }, [enable, setSoundVolume])
+  }, [enable, setSoundVolume, startAtmosphere])
 
   const toggleMute = () => {
     const newMuted = !isMuted
@@ -40,8 +45,11 @@ export function GlobalSoundSystem() {
     } else {
       enable()
       setSoundVolume(volume)
-      // Play welcome sequence when first enabling
-      setTimeout(() => playWelcome(), 300)
+      // Play welcome sequence and start atmosphere when first enabling
+      setTimeout(() => {
+        playWelcome()
+        startAtmosphere()
+      }, 300)
     }
     
     localStorage.setItem('1abel-sound-muted', newMuted.toString())
@@ -66,12 +74,14 @@ export function GlobalSoundSystem() {
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, delay: 2 }}
-      className="fixed bottom-6 right-6 z-50"
-    >
+    <>
+      <GlobalSoundHooks />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 2 }}
+        className="fixed bottom-6 right-6 z-50"
+      >
       <div className="bg-black/80 backdrop-blur border border-gray-700 rounded-lg p-3 flex items-center space-x-3">
         <motion.button
           onClick={toggleMute}
@@ -129,5 +139,6 @@ export function GlobalSoundSystem() {
         }
       `}</style>
     </motion.div>
+    </>
   )
 }
