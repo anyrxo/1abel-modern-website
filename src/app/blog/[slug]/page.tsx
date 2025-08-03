@@ -3987,7 +3987,8 @@ function getNewsPostContent(slug: string) {
       
       <div className="text-center p-8">
         <a href="mailto:anyro@1abel.com?subject=News Story Request" 
-           className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+           className="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95">
+          <Mail className="w-4 h-4 mr-2" />
           Suggest News Topic
         </a>
       </div>

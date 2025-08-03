@@ -228,16 +228,14 @@ export function BlogPostClient({ post, content }: BlogPostClientProps) {
                   modern marketing, and a team that's genuinely invested in your success.
                 </p>
                 
-                <ShimmerButton className="shadow-2xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800">
-                  <a 
-                    href="mailto:anyro@1abel.com?subject=Artist%20Application"
-                    className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white hover:text-white focus:text-white"
-                  >
-                    <Mail className="w-5 h-5 mr-2 text-white" />
-                    Apply Now
-                    <ArrowRight className="w-5 h-5 ml-2 text-white" />
-                  </a>
-                </ShimmerButton>
+                <a 
+                  href="mailto:anyro@1abel.com?subject=Artist%20Application"
+                  className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-lg transition-all duration-300 shadow-2xl transform hover:scale-105 active:scale-95"
+                >
+                  <Mail className="w-5 h-5 mr-2 text-white" />
+                  Apply Now
+                  <ArrowRight className="w-5 h-5 ml-2 text-white" />
+                </a>
               </div>
             </div>
           </motion.div>
