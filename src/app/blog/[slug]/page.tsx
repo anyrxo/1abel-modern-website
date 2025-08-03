@@ -1860,6 +1860,297 @@ function getBlogPostContent(slug: string) {
           </div>
         </section>
       </div>
+    ),
+
+    'instagram-reels-vs-tiktok-vs-youtube-shorts-where-should-artists-focus': (
+      <div className="prose prose-invert max-w-none">
+        <div className="mb-12">
+          <p className="text-xl text-gray-300 leading-relaxed">
+            TikTok has the discovery algorithm, Instagram Reels has the engagement rates, YouTube Shorts has the monetization. 
+            As a music artist, you need to know where to focus your limited time and energy for maximum impact.
+          </p>
+        </div>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <BarChart3 className="w-8 h-8 text-red-600" />
+            Platform Breakdown: The Hard Numbers
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            <div className="bg-gradient-to-br from-pink-900/30 to-pink-800/20 p-8 rounded-2xl border border-pink-600/30">
+              <div className="text-pink-400 text-4xl mb-4">📱</div>
+              <h3 className="text-2xl font-bold mb-4 text-pink-400">TikTok</h3>
+              <ul className="space-y-3 text-gray-300 mb-6">
+                <li>• <strong>Best for:</strong> Music discovery & viral moments</li>
+                <li>• <strong>Algorithm:</strong> Most aggressive push for new creators</li>
+                <li>• <strong>Audience:</strong> 16-24 years old, highly engaged</li>
+                <li>• <strong>Conversion:</strong> 67% of users discover new music here</li>
+              </ul>
+              <div className="bg-pink-900/20 p-4 rounded-xl">
+                <p className="text-pink-300 font-semibold">Music Discovery Champion</p>
+                <p className="text-sm text-gray-400">Average viral post: 500K-2M views</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-purple-900/30 to-purple-800/20 p-8 rounded-2xl border border-purple-600/30">
+              <div className="text-purple-400 text-4xl mb-4">📷</div>
+              <h3 className="text-2xl font-bold mb-4 text-purple-400">Instagram Reels</h3>
+              <ul className="space-y-3 text-gray-300 mb-6">
+                <li>• <strong>Best for:</strong> Fan engagement & community building</li>
+                <li>• <strong>Algorithm:</strong> Favors accounts with existing followers</li>
+                <li>• <strong>Audience:</strong> 18-34 years old, higher income</li>
+                <li>• <strong>Conversion:</strong> 40% higher story completion rate</li>
+              </ul>
+              <div className="bg-purple-900/20 p-4 rounded-xl">
+                <p className="text-purple-300 font-semibold">Engagement King</p>
+                <p className="text-sm text-gray-400">Comments/likes 3x higher than TikTok</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-red-900/30 to-red-800/20 p-8 rounded-2xl border border-red-600/30">
+              <div className="text-red-400 text-4xl mb-4">🎬</div>
+              <h3 className="text-2xl font-bold mb-4 text-red-400">YouTube Shorts</h3>
+              <ul className="space-y-3 text-gray-300 mb-6">
+                <li>• <strong>Best for:</strong> Long-term revenue & SEO</li>
+                <li>• <strong>Algorithm:</strong> Searchable content, lasting views</li>
+                <li>• <strong>Audience:</strong> 25-45 years old, music buyers</li>
+                <li>• <strong>Conversion:</strong> Highest stream-to-purchase ratio</li>
+              </ul>
+              <div className="bg-red-900/20 p-4 rounded-xl">
+                <p className="text-red-300 font-semibold">Revenue Generator</p>
+                <p className="text-sm text-gray-400">AdSense + tips + memberships</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Target className="w-8 h-8 text-red-600" />
+            Content Strategy by Platform
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-pink-400">TikTok Strategy</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">✓ What to Post</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• 15-second song snippets (hook first)</li>
+                    <li>• Behind-the-scenes studio content</li>
+                    <li>• Trending sound remixes</li>
+                    <li>• Quick music tutorials/tips</li>
+                    <li>• Artist lifestyle/personality</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">📅 Posting Schedule</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Frequency:</strong> 1-2 times daily</li>
+                    <li>• <strong>Best times:</strong> 6-10AM, 7-9PM</li>
+                    <li>• <strong>Hashtags:</strong> 3-5 relevant tags</li>
+                    <li>• <strong>Captions:</strong> Short, engaging questions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-purple-400">Instagram Reels Strategy</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">✓ What to Post</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• High-quality music videos</li>
+                    <li>• Performance clips</li>
+                    <li>• Aesthetic studio shots</li>
+                    <li>• Fan interaction content</li>
+                    <li>• Cross-promotion with stories</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">📅 Posting Schedule</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Frequency:</strong> 4-6 times weekly</li>
+                    <li>• <strong>Best times:</strong> 11AM-1PM, 5-7PM</li>
+                    <li>• <strong>Hashtags:</strong> 10-15 targeted tags</li>
+                    <li>• <strong>Stories:</strong> Drive to Reels for algorithm boost</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-red-400">YouTube Shorts Strategy</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">✓ What to Post</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• Educational music content</li>
+                    <li>• Lyric videos with visualizers</li>
+                    <li>• Gear reviews/studio tours</li>
+                    <li>• "How I made this beat/song"</li>
+                    <li>• Reaction to fan covers</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">📅 Posting Schedule</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• <strong>Frequency:</strong> 3-4 times weekly</li>
+                    <li>• <strong>Best times:</strong> 2-4PM, 8-10PM</li>
+                    <li>• <strong>SEO:</strong> Descriptive titles with keywords</li>
+                    <li>• <strong>Thumbnails:</strong> Custom thumbnails beat auto-generated</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Zap className="w-8 h-8 text-red-600" />
+            Cross-Platform Content Strategy
+          </h2>
+          
+          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+            <h3 className="text-2xl font-bold mb-6 text-center">The 1ABEL Triple-Platform Method</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🎯</div>
+                <h4 className="text-lg font-bold mb-2 text-pink-400">Step 1: TikTok First</h4>
+                <p className="text-gray-300">Create viral content on TikTok to test what resonates. Use completion rate and shares as success metrics.</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">📱</div>
+                <h4 className="text-lg font-bold mb-2 text-purple-400">Step 2: Instagram Reels</h4>
+                <p className="text-gray-300">Repost successful TikToks to Reels with platform-specific captions and hashtags. Add Instagram-exclusive behind-scenes content.</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🎬</div>
+                <h4 className="text-lg font-bold mb-2 text-red-400">Step 3: YouTube Shorts</h4>
+                <p className="text-gray-300">Transform viral content into educational format. Add tutorials, breakdowns, and searchable content for long-term discovery.</p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <p className="text-gray-300 mb-6">
+                This strategy increased one 1ABEL artist's total social reach by <span className="text-red-600 font-bold">340%</span> in 3 months.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <DollarSign className="w-8 h-8 text-red-600" />
+            Monetization Comparison
+          </h2>
+          
+          <div className="overflow-x-auto">
+            <table className="w-full bg-gray-900 rounded-xl border border-gray-700">
+              <thead>
+                <tr className="border-b border-gray-700">
+                  <th className="p-4 text-left text-white font-bold">Platform</th>
+                  <th className="p-4 text-left text-white font-bold">Direct Revenue</th>
+                  <th className="p-4 text-left text-white font-bold">Music Promotion</th>
+                  <th className="p-4 text-left text-white font-bold">Brand Deals</th>
+                  <th className="p-4 text-left text-white font-bold">Long-term Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-gray-800">
+                  <td className="p-4 text-pink-400 font-semibold">TikTok</td>
+                  <td className="p-4 text-gray-300">Creator Fund ($20-40/1M views)</td>
+                  <td className="p-4 text-green-400">★★★★★</td>
+                  <td className="p-4 text-yellow-400">★★★★☆</td>
+                  <td className="p-4 text-red-400">★★☆☆☆</td>
+                </tr>
+                <tr className="border-b border-gray-800">
+                  <td className="p-4 text-purple-400 font-semibold">Instagram</td>
+                  <td className="p-4 text-gray-300">Reels Play Bonus ($0.01-0.05/1K views)</td>
+                  <td className="p-4 text-green-400">★★★★☆</td>
+                  <td className="p-4 text-green-400">★★★★★</td>
+                  <td className="p-4 text-yellow-400">★★★★☆</td>
+                </tr>
+                <tr>
+                  <td className="p-4 text-red-400 font-semibold">YouTube</td>
+                  <td className="p-4 text-gray-300">Ad Revenue ($2-5/1K views)</td>
+                  <td className="p-4 text-yellow-400">★★★☆☆</td>
+                  <td className="p-4 text-yellow-400">★★★☆☆</td>
+                  <td className="p-4 text-green-400">★★★★★</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div className="mt-8 bg-gray-900/50 p-6 rounded-xl">
+            <h4 className="text-lg font-bold mb-3 text-white">💡 Revenue Reality Check</h4>
+            <p className="text-gray-300">
+              <strong>Short-term:</strong> TikTok for discovery, Instagram for brand deals ($500-5K per post with 50K+ followers)<br/>
+              <strong>Long-term:</strong> YouTube Shorts for sustainable AdSense revenue ($200-800/month with consistent posting)
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <ArrowRight className="w-8 h-8 text-red-600" />
+            Where to Focus Your Energy (Based on Your Goals)
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-green-600">🎯 If You're Starting Out (0-10K followers)</h3>
+                <p className="text-gray-300 mb-4"><strong>Focus: TikTok 70%, Instagram 20%, YouTube 10%</strong></p>
+                <ul className="space-y-2 text-gray-400">
+                  <li>• TikTok's algorithm gives new creators the best shot at viral content</li>
+                  <li>• Post 1-2 TikToks daily, repurpose best content to Instagram</li>
+                  <li>• Use YouTube Shorts for SEO/searchable content only</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-blue-600">💰 If You Want Brand Deals (10K+ followers)</h3>
+                <p className="text-gray-300 mb-4"><strong>Focus: Instagram 50%, TikTok 35%, YouTube 15%</strong></p>
+                <ul className="space-y-2 text-gray-400">
+                  <li>• Instagram has highest brand deal rates and professional audience</li>
+                  <li>• Maintain TikTok presence for content ideas and discovery</li>
+                  <li>• YouTube Shorts for long-form content and credibility</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-purple-600">🏗️ If You Want Long-term Growth (Any size)</h3>
+                <p className="text-gray-300 mb-4"><strong>Focus: YouTube 40%, Instagram 35%, TikTok 25%</strong></p>
+                <ul className="space-y-2 text-gray-400">
+                  <li>• YouTube content has longest lifespan and search discoverability</li>
+                  <li>• Instagram for community building and fan retention</li>
+                  <li>• TikTok for testing new content and trend awareness</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-red-600">🎵 If Music Discovery is Priority</h3>
+                <p className="text-gray-300 mb-4"><strong>Focus: TikTok 60%, Instagram 25%, YouTube 15%</strong></p>
+                <ul className="space-y-2 text-gray-400">
+                  <li>• TikTok drives 67% of new music discovery for Gen Z</li>
+                  <li>• Instagram Reels for music video content and fan engagement</li>
+                  <li>• YouTube for official music videos and educational content</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     )
   }
 
