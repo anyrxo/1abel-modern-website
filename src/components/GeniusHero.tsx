@@ -4,25 +4,24 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-motion'
 import Link from 'next/link'
 import { Mail } from 'lucide-react'
-import { initInteractiveSounds, useSound } from '@/lib/soundManager'
-import { SoundControl } from './SoundControl'
+import { useSound } from '@/lib/soundManager'
 
 export function GeniusHero() {
   const containerRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
   const isInView = useInView(titleRef, { once: true })
   const { 
-    // 🌊 Smooth Musical Experience
-    playGentleFlow,
+    // 🎵 Simplified Working Sound System
     playHover,
     playClick,
     playEnter, 
     playLeave,
     playLogo,
+    playManifesto,
+    playIgloo,
+    playBeeps,
     playMystical,
-    playHarmonicProgression,
-    setAmbience,
-    playWelcomeSymphony
+    playWelcome
   } = useSound()
   const [isLoaded, setIsLoaded] = useState(false)
   
@@ -83,12 +82,8 @@ export function GeniusHero() {
       setIsLoaded(true)
       
       // 🎼 Store the welcome symphony for SoundControl
-      ;(window as any).playWelcomeSymphony = playWelcomeSymphony
+      ;(window as any).playWelcomeSymphony = playWelcome
     }, 100)
-    
-    // Initialize interactive sounds for the entire page
-    const cleanup = initInteractiveSounds()
-    return cleanup
   }, [])
 
   return (
@@ -105,7 +100,7 @@ export function GeniusHero() {
             <motion.div 
               whileHover={{ scale: 1.05 }} 
               className="text-2xl font-bold cursor-pointer"
-              onMouseEnter={() => playGentleFlow()}
+              onMouseEnter={() => playHover()}
               onClick={() => playLogo()}
             >
               <span className="text-red-600">1</span><span className="text-white">ABEL</span>
@@ -117,7 +112,7 @@ export function GeniusHero() {
               href="/blog" 
               className="text-white hover:text-gray-300 transition-colors text-sm font-medium"
               onMouseEnter={() => playHover()}
-              onClick={() => setAmbience('focused')}
+              onClick={() => playClick()}
             >
               Blog
             </Link>
@@ -125,7 +120,7 @@ export function GeniusHero() {
               href="/about" 
               className="text-white hover:text-gray-300 transition-colors text-sm font-medium"
               onMouseEnter={() => playHover()}
-              onClick={() => setAmbience('mystical')}
+              onClick={() => playManifesto()}
             >
               About
             </Link>
@@ -134,7 +129,7 @@ export function GeniusHero() {
               className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center"
               onMouseEnter={() => playEnter()}
               onMouseLeave={() => playLeave()}
-              onClick={() => setAmbience('creative')}
+              onClick={() => playBeeps()}
             >
               <Mail className="w-4 h-4 mr-2" />
               Get In Touch
@@ -168,9 +163,8 @@ export function GeniusHero() {
               onMouseEnter={() => playMystical()}
               onClick={() => {
                 playLogo()
-                // Smooth harmonic progression
-                setTimeout(() => playHarmonicProgression('ascending'), 500)
-                setTimeout(() => setAmbience('creative'), 2000)
+                // Beep sequence after logo
+                setTimeout(() => playBeeps(), 800)
               }}
             >
               1
@@ -182,8 +176,7 @@ export function GeniusHero() {
             className="absolute top-[12%] left-[58%] flex flex-col text-[5vh] font-black leading-[1.1] tracking-wide text-white z-20 h-[38vh] justify-between items-center"
           >
             {['A', 'B', 'E', 'L'].map((letter, index) => {
-              const progressions = ['ascending', 'descending', 'circular', 'ascending'] as const
-              const ambiences = ['mystical', 'creative', 'focused', 'calm'] as const
+              const sounds = [playManifesto, playIgloo, playBeeps, playMystical]
               
               return (
                 <motion.span
@@ -193,13 +186,13 @@ export function GeniusHero() {
                   transition={{ duration: 0.4, delay: 1 + index * 0.15, ease: [0.34, 1.56, 0.64, 1] }}
                   className="cursor-pointer"
                   onMouseEnter={() => {
-                    // Each letter triggers a smooth progression
-                    playHarmonicProgression(progressions[index])
+                    // Each letter plays a different sound
+                    sounds[index]()
                   }}
                   onClick={() => {
-                    // Set contextual ambience for each letter
-                    setAmbience(ambiences[index])
-                    setTimeout(() => playGentleFlow(), 300)
+                    // Double click for emphasis
+                    sounds[index]()
+                    setTimeout(() => playHover(), 300)
                   }}
                   whileHover={{ 
                     scale: 1.1,
@@ -225,7 +218,7 @@ export function GeniusHero() {
           }}
           transition={{ type: "spring", damping: 30 }}
           style={{ left: '10%', top: '20%' }}
-          onClick={() => setAmbience('mystical')}
+          onClick={() => playMystical()}
           onMouseEnter={() => playHover()}
         />
         
@@ -238,8 +231,8 @@ export function GeniusHero() {
           }}
           transition={{ type: "spring", damping: 25 }}
           style={{ right: '15%', bottom: '15%' }}
-          onClick={() => setAmbience('creative')}
-          onMouseEnter={() => playMystical()}
+          onClick={() => playBeeps()}
+          onMouseEnter={() => playHover()}
         />
         
         {/* 🔺 Orb of Manifestation - The Voice of Creation */}
@@ -251,8 +244,8 @@ export function GeniusHero() {
           }}
           transition={{ type: "spring", damping: 35 }}
           style={{ left: '60%', top: '60%' }}
-          onClick={() => setAmbience('focused')}
-          onMouseEnter={() => playHarmonicProgression('circular')}
+          onClick={() => playLogo()}
+          onMouseEnter={() => playHover()}
         />
       </div>
 
@@ -302,9 +295,6 @@ export function GeniusHero() {
 
       {/* Spacer for scroll content */}
       <div className="h-[150vh]" />
-      
-      {/* Sound Control */}
-      <SoundControl />
     </div>
   )
 }

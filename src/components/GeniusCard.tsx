@@ -17,9 +17,7 @@ export function GeniusCard({ children, className = '', glowColor = '#dc2626' }: 
     playEnter, 
     playLeave, 
     playHover,
-    playMystical,
-    playHarmonicProgression,
-    setAmbience
+    playMystical
   } = useSound()
 
   // Motion values for 3D rotation
@@ -65,10 +63,8 @@ export function GeniusCard({ children, className = '', glowColor = '#dc2626' }: 
   }
 
   const handleClick = () => {
-    // 🎵 Smooth mystical progression
+    // 🎵 Simple mystical sound
     playMystical()
-    setTimeout(() => playHarmonicProgression('ascending'), 300)
-    setTimeout(() => setAmbience('creative'), 800)
   }
 
   return (

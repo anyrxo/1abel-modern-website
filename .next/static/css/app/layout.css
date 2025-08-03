@@ -897,6 +897,9 @@ video {
 .min-w-\[40px\] {
   min-width: 40px;
 }
+.min-w-\[35px\] {
+  min-width: 35px;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1469,6 +1472,9 @@ video {
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .px-12 {
   padding-left: 3rem;

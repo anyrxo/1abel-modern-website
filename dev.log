@@ -109,3 +109,44 @@
  ✓ Compiled in 47ms (645 modules)
  ✓ Compiled in 78ms (645 modules)
  ✓ Compiled in 77ms (645 modules)
+ ⚠ ./src/components/GeniusHero.tsx
+Attempted import error: 'initInteractiveSounds' is not exported from '@/lib/soundManager' (imported as 'initInteractiveSounds').
+
+Import trace for requested module:
+./src/components/GeniusHero.tsx
+./src/app/page.tsx
+ ⚠ ./src/components/GeniusHero.tsx
+Attempted import error: 'initInteractiveSounds' is not exported from '@/lib/soundManager' (imported as 'initInteractiveSounds').
+
+Import trace for requested module:
+./src/components/GeniusHero.tsx
+./src/app/page.tsx
+ ✓ Compiled in 141ms (645 modules)
+ ✓ Compiled in 108ms (645 modules)
+ ✓ Compiled in 51ms (645 modules)
+ ✓ Compiled in 89ms (645 modules)
+ ✓ Compiled in 65ms (645 modules)
+ ✓ Compiled in 86ms (645 modules)
+ ✓ Compiled in 125ms (645 modules)
+ ✓ Compiled in 134ms (645 modules)
+ ✓ Compiled in 180ms (645 modules)
+ ✓ Compiled in 102ms (645 modules)
+ ✓ Compiled in 117ms (645 modules)
+ ✓ Compiled in 83ms (645 modules)
+ ✓ Compiled in 75ms (645 modules)
+ ✓ Compiled in 82ms (645 modules)
+ ✓ Compiled in 80ms (637 modules)
+ ✓ Compiled in 65ms (637 modules)
+ ✓ Compiled in 46ms (637 modules)
+ ✓ Compiled in 62ms (637 modules)
+ ✓ Compiled in 78ms (637 modules)
+ ✓ Compiled in 42ms (637 modules)
+ ✓ Compiled in 74ms (637 modules)
+ ✓ Compiled in 62ms (637 modules)
+ ✓ Compiled in 79ms (637 modules)
+ ✓ Compiled in 61ms (637 modules)
+ ✓ Compiled in 59ms (637 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 516ms (1393 modules)
+ ⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ HEAD / 200 in 809ms

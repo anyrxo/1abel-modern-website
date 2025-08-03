@@ -13,9 +13,8 @@ export function SoundControl() {
     setVolume: setSoundVolume, 
     enable, 
     disable,
-    fadeOut,
-    setAmbience,
-    playWelcomeSymphony
+    stopAll,
+    playWelcome
   } = useSound()
 
   useEffect(() => {
@@ -51,13 +50,13 @@ export function SoundControl() {
     
     if (newMuted) {
       disable()
-      fadeOut(2)
+      stopAll()
     } else {
       enable()
       setSoundVolume(volume)
       
-      // 🎼 Welcome Symphony when user first enables audio
-      setTimeout(() => playWelcomeSymphony(), 300)
+      // 🎼 Welcome sequence when user first enables audio
+      setTimeout(() => playWelcome(), 300)
     }
     
     localStorage.setItem('1abel-sound-muted', newMuted.toString())
@@ -83,14 +82,8 @@ export function SoundControl() {
   }
 
   const toggleMusic = () => {
-    if (musicPlaying) {
-      setAmbience('calm')
-      setMusicPlaying(false)
-    } else {
-      // 🎵 Start the complete creative ambient experience
-      setAmbience('creative')
-      setMusicPlaying(true)
-    }
+    // Simple toggle for now
+    setMusicPlaying(!musicPlaying)
   }
 
   return (
