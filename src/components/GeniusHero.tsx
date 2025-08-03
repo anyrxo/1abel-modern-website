@@ -5,12 +5,21 @@ import { motion, useScroll, useTransform, useSpring, useInView } from 'framer-mo
 import Link from 'next/link'
 import { Mail } from 'lucide-react'
 import { initInteractiveSounds, useSound } from '@/lib/soundManager'
+import { SoundControl } from './SoundControl'
 
 export function GeniusHero() {
   const containerRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
   const isInView = useInView(titleRef, { once: true })
-  const { playSuccess } = useSound()
+  const { 
+    playSuccess, 
+    playLogo, 
+    playEnter, 
+    playParticles, 
+    startBackgroundMusic,
+    playWind,
+    playCircles 
+  } = useSound()
   const [isLoaded, setIsLoaded] = useState(false)
   
   const { scrollY } = useScroll()
@@ -66,7 +75,15 @@ export function GeniusHero() {
   }
 
   useEffect(() => {
-    setTimeout(() => setIsLoaded(true), 100)
+    setTimeout(() => {
+      setIsLoaded(true)
+      // Start ambient sounds after page loads
+      setTimeout(() => {
+        playWind() // Start wind ambient
+        startBackgroundMusic() // Start background music
+      }, 2000)
+    }, 100)
+    
     // Initialize interactive sounds for the entire page
     const cleanup = initInteractiveSounds()
     return cleanup
@@ -83,7 +100,11 @@ export function GeniusHero() {
       >
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <Link href="/">
-            <motion.div whileHover={{ scale: 1.05 }} className="text-2xl font-bold cursor-pointer">
+            <motion.div 
+              whileHover={{ scale: 1.05 }} 
+              className="text-2xl font-bold cursor-pointer"
+              data-sound="logo"
+            >
               <span className="text-red-600">1</span><span className="text-white">ABEL</span>
             </motion.div>
           </Link>
@@ -98,6 +119,7 @@ export function GeniusHero() {
             <a 
               href="mailto:anyro@1abel.com" 
               className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors flex items-center"
+              data-sound="enter"
             >
               <Mail className="w-4 h-4 mr-2" />
               Get In Touch
@@ -127,6 +149,9 @@ export function GeniusHero() {
                 ]
               }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              className="cursor-pointer"
+              onClick={() => playLogo()}
+              data-sound="logo"
             >
               1
             </motion.span>
@@ -143,6 +168,9 @@ export function GeniusHero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: 1 + index * 0.15, ease: [0.34, 1.56, 0.64, 1] }}
                 className="cursor-pointer"
+                onClick={() => playCircles()}
+                onMouseEnter={() => playParticles()}
+                data-sound="shard"
               >
                 {letter}
               </motion.span>
@@ -210,6 +238,9 @@ export function GeniusHero() {
 
       {/* Spacer for scroll content */}
       <div className="h-[150vh]" />
+      
+      {/* Sound Control */}
+      <SoundControl />
     </div>
   )
 }

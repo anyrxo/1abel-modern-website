@@ -2,6 +2,7 @@
 
 import { useRef, useState } from 'react'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
+import { useSound } from '@/lib/soundManager'
 
 interface GeniusCardProps {
   children: React.ReactNode
@@ -12,6 +13,7 @@ interface GeniusCardProps {
 export function GeniusCard({ children, className = '', glowColor = '#dc2626' }: GeniusCardProps) {
   const cardRef = useRef<HTMLDivElement>(null)
   const [isHovered, setIsHovered] = useState(false)
+  const { playEnter, playLeave, playShard, playParticles } = useSound()
 
   // Motion values for 3D rotation
   const mouseX = useMotionValue(0)
@@ -41,10 +43,21 @@ export function GeniusCard({ children, className = '', glowColor = '#dc2626' }: 
     mouseY.set(normalizedY)
   }
 
+  const handleMouseEnter = () => {
+    setIsHovered(true)
+    playEnter()
+    playParticles()
+  }
+
   const handleMouseLeave = () => {
     mouseX.set(0)
     mouseY.set(0)
     setIsHovered(false)
+    playLeave()
+  }
+
+  const handleClick = () => {
+    playShard()
   }
 
   return (
@@ -58,8 +71,9 @@ export function GeniusCard({ children, className = '', glowColor = '#dc2626' }: 
         perspective: '1000px'
       }}
       onMouseMove={handleMouseMove}
-      onMouseEnter={() => setIsHovered(true)}
+      onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
       whileHover={{ scale: 1.02 }}
       transition={{ scale: { duration: 0.2 } }}
     >
