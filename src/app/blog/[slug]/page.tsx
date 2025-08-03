@@ -958,6 +958,249 @@ function getBlogPostContent(slug: string) {
           </div>
         </section>
 
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Lightbulb className="w-8 h-8 text-red-600" />
+            Software & DAW Selection Guide
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-400">Best DAWs for Different Genres</h3>
+              <div className="space-y-4">
+                <div className="border-l-4 border-green-400 pl-4">
+                  <h4 className="font-bold text-white">Logic Pro ($200) - Hip-Hop/RnB</h4>
+                  <p className="text-gray-300 text-sm">Mac only. Incredible built-in sounds, Flex Pitch for vocal tuning, industry-standard</p>
+                </div>
+                <div className="border-l-4 border-blue-400 pl-4">
+                  <h4 className="font-bold text-white">FL Studio ($99-200) - Trap/EDM</h4>
+                  <p className="text-gray-300 text-sm">Lifetime free updates, excellent for beat making, piano roll is unmatched</p>
+                </div>
+                <div className="border-l-4 border-purple-400 pl-4">
+                  <h4 className="font-bold text-white">Reaper ($60) - All Genres</h4>
+                  <p className="text-gray-300 text-sm">Lightweight, customizable, great for recording bands, lowest CPU usage</p>
+                </div>
+                <div className="border-l-4 border-red-400 pl-4">
+                  <h4 className="font-bold text-white">Pro Tools ($23/month) - Professional</h4>
+                  <p className="text-gray-300 text-sm">Industry standard for mixing/mastering, essential for professional studios</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-blue-400">Essential Plugin Bundle ($300)</h3>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-bold text-white mb-2">FabFilter Pro-Q 3 ($179)</h4>
+                  <p className="text-gray-300 text-sm">Professional EQ plugin. Clean up frequencies, surgical cuts, musical boosts</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-white mb-2">Melodyne Essential ($99)</h4>
+                  <p className="text-gray-300 text-sm">Pitch correction for vocals. More natural than Auto-Tune for detailed work</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-white mb-2">Waves SSL 4000 Collection ($29)</h4>
+                  <p className="text-gray-300 text-sm">Classic console sound. Channel strip, compressor, EQ modeled from legendary desk</p>
+                </div>
+                <div className="bg-blue-900/20 p-3 rounded">
+                  <p className="text-blue-300 text-sm font-semibold">Free Alternatives: TDR Nova (EQ), MAutoPitch (tuning), ReaPlugs (effects)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <BarChart3 className="w-8 h-8 text-red-600" />
+            Recording Techniques That Matter
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-green-400">Vocal Recording: Hip-Hop/RnB Specific</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Recording Chain Setup:</h4>
+                  <ol className="space-y-2 text-gray-300">
+                    <li>1. <strong>Mic placement:</strong> 6-8 inches, slight off-axis to avoid plosives</li>
+                    <li>2. <strong>Pop filter:</strong> 4 inches from mic, essential for clean takes</li>
+                    <li>3. <strong>Input gain:</strong> Peak around -12dB, never clip the preamp</li>
+                    <li>4. <strong>Room tone:</strong> Record 30 seconds silence for noise reference</li>
+                    <li>5. <strong>Multiple takes:</strong> Comp the best parts together</li>
+                  </ol>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold mb-3 text-white">Common Mistakes to Avoid:</h4>
+                  <ul className="space-y-2 text-gray-300">
+                    <li>• Recording too close (proximity effect bass buildup)</li>
+                    <li>• Using built-in laptop mic (terrible quality)</li>
+                    <li>• Not monitoring levels (clipping kills professional sound)</li>
+                    <li>• Recording in untreated rooms (reverb/echo issues)</li>
+                    <li>• Not using a metronome (timing problems in mix)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-2xl font-bold mb-4 text-purple-400">Beat Making & Production Tips</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-purple-900/20 p-4 rounded-lg">
+                  <h4 className="font-bold text-white mb-2">Drum Programming</h4>
+                  <ul className="text-gray-300 text-sm space-y-1">
+                    <li>• Layer kick and 808 for power</li>
+                    <li>• High-pass everything except kick/808</li>
+                    <li>• Add swing for groove (5-15%)</li>
+                    <li>• Velocity variations for humanization</li>
+                  </ul>
+                </div>
+                <div className="bg-purple-900/20 p-4 rounded-lg">
+                  <h4 className="font-bold text-white mb-2">Melody Creation</h4>
+                  <ul className="text-gray-300 text-sm space-y-1">
+                    <li>• Start with simple 4-8 note patterns</li>
+                    <li>• Use minor pentatonic scales</li>
+                    <li>• Layer octaves for thickness</li>
+                    <li>• Leave space for vocals</li>
+                  </ul>
+                </div>
+                <div className="bg-purple-900/20 p-4 rounded-lg">
+                  <h4 className="font-bold text-white mb-2">Arrangement Structure</h4>
+                  <ul className="text-gray-300 text-sm space-y-1">
+                    <li>• Intro: 4-8 bars</li>
+                    <li>• Verse: 16 bars</li>
+                    <li>• Hook: 8 bars</li>
+                    <li>• Bridge: 4-8 bars for variety</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Target className="w-8 h-8 text-red-600" />
+            Mixing Fundamentals: Get Radio-Ready Sound
+          </h2>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-red-400">EQ Chain for Vocals</h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center p-3 bg-gray-800 rounded">
+                    <span className="text-gray-300">High-pass filter</span>
+                    <span className="text-red-400 font-bold">80-100Hz</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-gray-800 rounded">
+                    <span className="text-gray-300">Presence boost</span>
+                    <span className="text-red-400 font-bold">3-5kHz</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-gray-800 rounded">
+                    <span className="text-gray-300">Air/brightness</span>
+                    <span className="text-red-400 font-bold">10-12kHz</span>
+                  </div>
+                  <div className="flex justify-between items-center p-3 bg-gray-800 rounded">
+                    <span className="text-gray-300">Harsh frequencies</span>
+                    <span className="text-yellow-400 font-bold">2-3kHz cut</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-green-400">Compression Settings</h3>
+                <div className="space-y-2 text-gray-300">
+                  <div>• <strong>Ratio:</strong> 3:1 to 4:1 for vocals</div>
+                  <div>• <strong>Attack:</strong> 5-10ms (let transients through)</div>
+                  <div>• <strong>Release:</strong> 100-200ms (natural decay)</div>
+                  <div>• <strong>Threshold:</strong> 3-6dB gain reduction</div>
+                  <div>• <strong>Makeup gain:</strong> Compensate for level loss</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700">
+                <h3 className="text-xl font-bold mb-4 text-blue-400">Mix Bus Processing</h3>
+                <div className="space-y-3">
+                  <div className="border-l-4 border-blue-400 pl-4">
+                    <h4 className="font-bold text-white">1. EQ (Subtle)</h4>
+                    <p className="text-gray-300 text-sm">High-shelf at 10kHz (+1dB), slight low-mid cut at 300Hz</p>
+                  </div>
+                  <div className="border-l-4 border-green-400 pl-4">
+                    <h4 className="font-bold text-white">2. Compression (Glue)</h4>
+                    <p className="text-gray-300 text-sm">Slow attack, medium release, 1-2dB reduction max</p>
+                  </div>
+                  <div className="border-l-4 border-purple-400 pl-4">
+                    <h4 className="font-bold text-white">3. Saturation</h4>
+                    <p className="text-gray-300 text-sm">Tape emulation or harmonic exciter for warmth</p>
+                  </div>
+                  <div className="border-l-4 border-red-400 pl-4">
+                    <h4 className="font-bold text-white">4. Limiter</h4>
+                    <p className="text-gray-300 text-sm">Ceiling at -0.1dB, 3-6dB gain reduction for loudness</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-yellow-900/20 border border-yellow-600/30 p-6 rounded-xl">
+                <h3 className="text-xl font-bold text-yellow-400 mb-3">Reference Track Method</h3>
+                <ul className="space-y-2 text-gray-300 text-sm">
+                  <li>• Load a professionally mixed song in same genre</li>
+                  <li>• Match your mix volume to reference</li>
+                  <li>• A/B compare frequency balance and stereo width</li>
+                  <li>• Adjust your mix to match professional standard</li>
+                  <li>• Check mix on car speakers, headphones, phone</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-4xl font-bold mb-8 flex items-center gap-3">
+            <Rocket className="w-8 h-8 text-red-600" />
+            Your First 30 Days: Studio Setup Action Plan
+          </h2>
+          
+          <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 p-8 rounded-2xl border border-red-600/30">
+            <h3 className="text-2xl font-bold mb-6 text-center">From Bedroom to Billboard Charts</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🛒</div>
+                <h4 className="text-lg font-bold mb-2 text-red-400">Week 1</h4>
+                <p className="text-sm text-gray-300">Order essential gear: interface, mic, headphones. Set up DAW and start learning.</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🎨</div>
+                <h4 className="text-lg font-bold mb-2 text-red-400">Week 2</h4>
+                <p className="text-sm text-gray-300">Install acoustic treatment, calibrate monitors, record first test vocals and beats.</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🎵</div>
+                <h4 className="text-lg font-bold mb-2 text-red-400">Week 3</h4>
+                <p className="text-sm text-gray-300">Complete first full song: recording, mixing, basic mastering. Learn from mistakes.</p>
+              </div>
+              
+              <div className="text-center p-6 bg-gray-900/50 rounded-xl">
+                <div className="text-4xl mb-4">🚀</div>
+                <h4 className="text-lg font-bold mb-2 text-red-400">Week 4</h4>
+                <p className="text-sm text-gray-300">Record second song applying lessons learned. Upload to streaming platforms.</p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <p className="text-gray-300 mb-6">
+                <span className="text-red-600 font-bold">1ABEL artists</span> consistently produce radio-quality music from $1,500 home studios. 
+                Your bedroom can be your launching pad to global success.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <div className="bg-gradient-to-br from-red-900/20 to-orange-900/20 border border-red-600/30 p-8 rounded-2xl text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to Build Your Professional Home Studio?</h3>
           <p className="text-gray-300 mb-6">
