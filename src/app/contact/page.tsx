@@ -1,34 +1,10 @@
 import Link from 'next/link'
+import { Header } from '@/components/Header'
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 p-6 bg-black/90 backdrop-blur border-b border-gray-800">
-        <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <Link href="/" className="text-2xl font-bold hover:scale-105 transition-transform">
-            <span className="text-gray-600">1</span><span className="text-white">ABEL</span>
-          </Link>
-          
-          <div className="flex items-center space-x-8">
-            <Link href="/blog" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Blog & Insights
-            </Link>
-            <Link href="/services" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              Services
-            </Link>
-            <Link href="/about" className="text-white hover:text-gray-300 transition-colors text-sm font-medium">
-              About
-            </Link>
-            <Link href="/contact" className="text-gray-300 text-sm font-medium">
-              Contact
-            </Link>
-            <a href="mailto:anyro@1abel.com" className="bg-white text-black hover:bg-gray-200 px-6 py-2 rounded-lg text-sm font-medium transition-colors">
-              Get In Touch
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4">
