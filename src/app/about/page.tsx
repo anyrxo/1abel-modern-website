@@ -391,12 +391,13 @@ export default function AboutPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <ShimmerButton className="shadow-2xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800">
-              <a href="mailto:anyro@1abel.com" className="inline-flex items-center justify-center px-12 py-5 text-lg font-semibold text-white hover:text-white focus:text-white">
-                Apply Now
-                <ArrowRight className="w-5 h-5 ml-3 text-white" />
-              </a>
-            </ShimmerButton>
+            <a 
+              href="mailto:anyro@1abel.com?subject=Artist%20Application" 
+              className="inline-flex items-center justify-center px-12 py-5 text-lg font-semibold text-white bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-lg transition-all duration-300 shadow-2xl transform hover:scale-105 active:scale-95"
+            >
+              Apply Now
+              <ArrowRight className="w-5 h-5 ml-3 text-white" />
+            </a>
             <Link href="/contact">
               <motion.a 
                 href="https://twitter.com/anyrxo" 
