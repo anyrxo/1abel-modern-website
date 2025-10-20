@@ -31,32 +31,6 @@ export default function Arc2Page() {
             </p>
           </motion.div>
 
-          {/* Spotify Embed */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="mb-20"
-          >
-            <div className="max-w-3xl mx-auto">
-              <p className="text-center text-xs tracking-widest uppercase text-gray-400 mb-6">
-                The Sound Behind The Collection
-              </p>
-              <div className="aspect-[16/9] md:aspect-[21/9] w-full">
-                <iframe
-                  style={{ borderRadius: '12px' }}
-                  src="https://open.spotify.com/embed/track/4jv6eilCCXbkZyS95MwQxt?utm_source=generator"
-                  width="100%"
-                  height="100%"
-                  frameBorder="0"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                  className="w-full h-full"
-                />
-              </div>
-            </div>
-          </motion.div>
-
           {/* Collection Categories */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -108,6 +82,28 @@ export default function Arc2Page() {
                 <p className="text-sm text-gray-500 text-center mt-2">Explore Collection →</p>
               </div>
             </Link>
+          </motion.div>
+        </div>
+
+        {/* Spotify Inspiration - Moved to Bottom */}
+        <div className="max-w-7xl mx-auto px-8 py-16 border-t border-gray-800">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <p className="text-xs tracking-widest uppercase text-gray-500 mb-4">
+              The Sound Behind The Collection
+            </p>
+            <a
+              href="https://open.spotify.com/track/4jv6eilCCXbkZyS95MwQxt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors text-sm underline"
+            >
+              https://open.spotify.com/track/4jv6eilCCXbkZyS95MwQxt
+            </a>
           </motion.div>
         </div>
       </main>

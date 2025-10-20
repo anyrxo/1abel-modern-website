@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
+import { useCart } from '@/lib/cartContext'
+import { useRouter } from 'next/navigation'
 
 const products = {
   '1': { name: "PEARL CHAIN", price: 100 },
@@ -15,15 +17,53 @@ const products = {
 
 export function ProductDetail({ id }: { id: string }) {
   const [selectedSize, setSelectedSize] = useState('ONE SIZE')
+  const [showNotification, setShowNotification] = useState(false)
+  const { addItem } = useCart()
+  const router = useRouter()
   const product = products[id as keyof typeof products]
 
   if (!product) {
     return <div className="bg-white text-black min-h-screen flex items-center justify-center">Product not found</div>
   }
 
+  const handleAddToCart = () => {
+    addItem({
+      id,
+      name: product.name,
+      price: product.price,
+      size: selectedSize,
+      arc: 'Arc 3 — Light',
+      category: 'ACCESSORIES',
+    })
+
+    setShowNotification(true)
+    setTimeout(() => setShowNotification(false), 3000)
+  }
+
   return (
     <div className="bg-white text-black min-h-screen">
       <Header />
+
+      {/* Add to Cart Notification */}
+      {showNotification && (
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }}
+          className="fixed top-24 right-8 z-50 bg-black text-white px-6 py-4 shadow-lg border-2 border-black"
+        >
+          <p className="font-semibold uppercase tracking-wide text-sm">
+            Added to cart!
+          </p>
+          <button
+            onClick={() => router.push('/cart')}
+            className="text-xs underline mt-2 hover:no-underline"
+          >
+            View cart
+          </button>
+        </motion.div>
+      )}
+
       <main className="pt-24 pb-24">
         <div className="max-w-7xl mx-auto px-8">
           <div className="mb-12">
@@ -54,8 +94,18 @@ export function ProductDetail({ id }: { id: string }) {
                 <p className="pt-4 border-t border-gray-200">SHIPS IN 1-3 WEEKS</p>
                 <p className="font-semibold text-black">ALL SALES ARE FINAL</p>
               </div>
-              <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="w-full py-4 bg-black text-white hover:bg-gray-800 transition-colors text-sm tracking-wider uppercase font-medium mb-4">Add to cart — ${product.price}.00 AUD</motion.button>
-              <button className="w-full py-4 border-2 border-black hover:bg-black hover:text-white transition-colors text-sm tracking-wider uppercase font-medium">Buy with Shop Pay</button>
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={handleAddToCart}
+                className="w-full py-4 bg-black text-white hover:bg-gray-800 transition-colors text-sm tracking-wider uppercase font-medium mb-4"
+              >
+                Add to cart — ${product.price}.00 AUD
+              </motion.button>
+
+              <p className="text-xs text-center text-gray-500 mb-4">
+                Shop Pay checkout available at cart
+              </p>
             </motion.div>
           </div>
         </div>
