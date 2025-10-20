@@ -5,7 +5,11 @@ import { useState } from 'react'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
+export default function ProductDetailPage({
+  params
+}: {
+  params: { id: string }
+}) {
   const [selectedSize, setSelectedSize] = useState('')
 
   const product = {
