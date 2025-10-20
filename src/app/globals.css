@@ -7,6 +7,13 @@
 @layer base {
   body {
     font-feature-settings: "rlig" 1, "calt" 1;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 

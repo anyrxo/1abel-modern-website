@@ -6,25 +6,25 @@ import { GlobalSoundSystem } from '@/components/GlobalSoundSystem'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: '1ABEL - Global Music Label | RnB, Trap & Rap Artists Worldwide',
-  description: '1ABEL is the world\'s leading music label specializing in RnB, trap, and rap. We discover, develop, and promote breakthrough artists globally. Join the revolution with streaming optimization, viral marketing, and industry-leading artist development.',
-  keywords: 'music label, RnB music label, trap music label, rap music label, hip hop label, music distribution, artist development, streaming optimization, viral marketing, music promotion, record label, independent label, music industry, artist management, music publishing, global music label, international artists, music career development, playlist placement, streaming services',
-  authors: [{ name: '1ABEL Music Label' }],
+  title: '1ABEL - Premium Streetwear & Fashion',
+  description: '1ABEL is a premium streetwear brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.',
+  keywords: 'streetwear, fashion, clothing brand, minimalist fashion, black and white fashion, premium streetwear, urban fashion, contemporary fashion, designer clothing, fashion boutique, mens fashion, womens fashion, streetwear brand, fashion store, online clothing store',
+  authors: [{ name: '1ABEL' }],
   creator: '1ABEL',
-  publisher: '1ABEL Global Music',
-  category: 'Music & Entertainment',
-  classification: 'Music Label',
+  publisher: '1ABEL',
+  category: 'Fashion & Apparel',
+  classification: 'Clothing Brand',
   openGraph: {
-    title: '1ABEL - Global Music Label | RnB, Trap & Rap Artists Worldwide',
-    description: '1ABEL is the world\'s leading music label specializing in RnB, trap, and rap. We discover, develop, and promote breakthrough artists globally with industry-leading streaming optimization and viral marketing.',
+    title: '1ABEL - Premium Streetwear & Fashion',
+    description: '1ABEL is a premium streetwear brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.',
     url: 'https://1abel.com',
-    siteName: '1ABEL Music Label',
+    siteName: '1ABEL',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: '1ABEL Global Music Label - RnB, Trap & Rap Artists',
+        alt: '1ABEL Premium Streetwear & Fashion',
       },
     ],
     locale: 'en_US',
@@ -33,11 +33,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '1ABEL - Global Music Label | RnB, Trap & Rap',
-    description: 'World\'s leading music label for RnB, trap & rap artists. Industry-leading streaming optimization & viral marketing. Join the revolution.',
+    title: '1ABEL - Premium Streetwear & Fashion',
+    description: 'Premium streetwear brand offering minimalist black and white designs. Shop our curated collection.',
     images: ['/og-image.jpg'],
-    creator: '@1ABEL_Music',
-    site: '@1ABEL_Music',
+    creator: '@1ABEL',
+    site: '@1ABEL',
   },
   robots: {
     index: true,
@@ -66,11 +66,11 @@ export const metadata: Metadata = {
     },
   },
   other: {
-    'apple-mobile-web-app-title': '1ABEL Music',
+    'apple-mobile-web-app-title': '1ABEL',
     'application-name': '1ABEL',
     'mobile-web-app-capable': 'yes',
-    'theme-color': '#dc2626',
-    'color-scheme': 'dark light',
+    'theme-color': '#000000',
+    'color-scheme': 'light dark',
     'format-detection': 'telephone=no',
   },
 }
@@ -82,43 +82,51 @@ export default function RootLayout({
 }) {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "ClothingStore",
     "name": "1ABEL",
-    "alternateName": "1ABEL Music Label",
+    "alternateName": "1ABEL Streetwear",
     "url": "https://1abel.com",
     "logo": "https://1abel.com/logo.png",
-    "description": "1ABEL is the world's leading music label specializing in RnB, trap, and rap. We discover, develop, and promote breakthrough artists globally.",
+    "description": "1ABEL is a premium streetwear brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.",
     "foundingDate": "2020",
-    "industry": "Music Industry",
-    "numberOfEmployees": "50-100",
+    "industry": "Fashion & Apparel",
     "areaServed": "Worldwide",
-    "knowsAbout": ["Music Production", "Artist Development", "Music Marketing", "Streaming Optimization", "Music Distribution"],
+    "priceRange": "$$",
     "sameAs": [
-      "https://instagram.com/1abel_music",
-      "https://twitter.com/1ABEL_Music",
-      "https://youtube.com/@1ABEL",
-      "https://spotify.com/artist/1ABEL"
+      "https://instagram.com/1abel",
+      "https://twitter.com/1ABEL"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "contactType": "Business Inquiries",
-      "email": "anyro@1abel.com",
+      "contactType": "Customer Service",
+      "email": "info@1abel.com",
       "availableLanguage": "English"
     },
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "Global"
     },
-    "makesOffer": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Music Label Services",
-          "description": "Complete artist development, music production, distribution, and marketing services"
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "1ABEL Clothing",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Tops",
+          "itemListElement": []
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Bottoms",
+          "itemListElement": []
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Accessories",
+          "itemListElement": []
         }
-      }
-    ]
+      ]
+    }
   }
 
   return (
@@ -145,10 +153,10 @@ export default function RootLayout({
         <meta name="geo.region" content="Global" />
         <meta name="geo.placename" content="Worldwide" />
         <meta name="ICBM" content="Global Music Label" />
-        <meta name="DC.title" content="1ABEL - Global Music Label" />
+        <meta name="DC.title" content="1ABEL - Premium Streetwear" />
         <meta name="DC.creator" content="1ABEL" />
-        <meta name="DC.subject" content="Music Label, RnB, Trap, Rap" />
-        <meta name="DC.description" content="World's leading music label for RnB, trap, and rap artists" />
+        <meta name="DC.subject" content="Streetwear, Fashion, Clothing" />
+        <meta name="DC.description" content="Premium streetwear brand offering minimalist black and white designs" />
         <meta name="DC.type" content="Text.Homepage" />
         <meta name="DC.format" content="text/html" />
         <meta name="DC.language" content="en" />
