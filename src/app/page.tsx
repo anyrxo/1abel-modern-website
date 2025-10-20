@@ -160,40 +160,38 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-white border-t border-black py-16 px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6">1ABEL</h3>
-              <p className="text-sm text-gray-600">
-                Premium streetwear collections inspired by sound.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-xs font-semibold mb-4 tracking-wider uppercase">Collections</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/arc-2" className="hover:underline">Arc 2 — Shadow</Link></li>
-                <li><Link href="/arc-3" className="hover:underline">Arc 3 — Light</Link></li>
+              <h3 className="font-bold mb-4 uppercase tracking-wide">Shop</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><Link href="/arc-2" className="hover:text-black">Arc 2 — Shadow</Link></li>
+                <li><Link href="/arc-3" className="hover:text-black">Arc 3 — Light</Link></li>
               </ul>
             </div>
-
             <div>
-              <h4 className="text-xs font-semibold mb-4 tracking-wider uppercase">Support</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/contact" className="hover:underline">Contact Us</Link></li>
-                <li><Link href="/shipping" className="hover:underline">Shipping Policy</Link></li>
-                <li><Link href="/refund" className="hover:underline">Refund Policy</Link></li>
+              <h3 className="font-bold mb-4 uppercase tracking-wide">Support</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><Link href="/contact" className="hover:text-black">Contact Us</Link></li>
+                <li><Link href="/shipping" className="hover:text-black">Shipping</Link></li>
+                <li><Link href="/refund" className="hover:text-black">Returns</Link></li>
               </ul>
             </div>
-
             <div>
-              <h4 className="text-xs font-semibold mb-4 tracking-wider uppercase">Legal</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/privacy" className="hover:underline">Privacy Policy</Link></li>
-                <li><Link href="/terms" className="hover:underline">Terms of Service</Link></li>
+              <h3 className="font-bold mb-4 uppercase tracking-wide">Company</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><Link href="/about" className="hover:text-black">About</Link></li>
+                <li><Link href="/terms" className="hover:text-black">Terms</Link></li>
+                <li><Link href="/privacy" className="hover:text-black">Privacy</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4 uppercase tracking-wide">Connect</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><a href="#" className="hover:text-black">Instagram</a></li>
+                <li><a href="#" className="hover:text-black">Twitter</a></li>
               </ul>
             </div>
           </div>
-
           <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
             <p>© 2025, 1ABEL</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>

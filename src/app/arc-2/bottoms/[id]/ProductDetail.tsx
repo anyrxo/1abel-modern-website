@@ -135,6 +135,38 @@ export function ProductDetail({ id }: { id: string }) {
       </main>
       <footer className="bg-black border-t border-gray-800 py-16 px-8">
         <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h3 className="font-bold mb-4 uppercase tracking-wide text-white">Shop</h3>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="/arc-2" className="hover:text-white">Arc 2 — Shadow</Link></li>
+                <li><Link href="/arc-3" className="hover:text-white">Arc 3 — Light</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4 uppercase tracking-wide text-white">Support</h3>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
+                <li><Link href="/shipping" className="hover:text-white">Shipping</Link></li>
+                <li><Link href="/refund" className="hover:text-white">Returns</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4 uppercase tracking-wide text-white">Company</h3>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><Link href="/about" className="hover:text-white">About</Link></li>
+                <li><Link href="/terms" className="hover:text-white">Terms</Link></li>
+                <li><Link href="/privacy" className="hover:text-white">Privacy</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4 uppercase tracking-wide text-white">Connect</h3>
+              <ul className="space-y-2 text-sm text-gray-400">
+                <li><a href="#" className="hover:text-white">Instagram</a></li>
+                <li><a href="#" className="hover:text-white">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
           <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
             <p>© 2025, 1ABEL</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
