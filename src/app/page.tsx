@@ -196,47 +196,46 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-16 px-8">
+      <footer className="bg-white border-t border-black py-16 px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4">1ABEL</h3>
-              <p className="text-gray-400 text-sm">
+              <h3 className="text-2xl font-bold mb-6">1ABEL</h3>
+              <p className="text-sm text-gray-600">
                 Premium streetwear for the modern individual.
               </p>
             </div>
 
             <div>
-              <h4 className="text-sm font-semibold mb-4 tracking-wider uppercase">Shop</h4>
+              <h4 className="text-xs font-semibold mb-4 tracking-wider uppercase">Shop</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/tops" className="text-gray-400 hover:text-white transition-colors">Tops</Link></li>
-                <li><Link href="/bottoms" className="text-gray-400 hover:text-white transition-colors">Bottoms</Link></li>
-                <li><Link href="/accessories" className="text-gray-400 hover:text-white transition-colors">Accessories</Link></li>
+                <li><Link href="/tops" className="hover:underline">Tops</Link></li>
+                <li><Link href="/bottoms" className="hover:underline">Bottoms</Link></li>
+                <li><Link href="/accessories" className="hover:underline">Accessories</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-sm font-semibold mb-4 tracking-wider uppercase">Company</h4>
+              <h4 className="text-xs font-semibold mb-4 tracking-wider uppercase">Support</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About</Link></li>
-                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
-                <li><Link href="/careers" className="text-gray-400 hover:text-white transition-colors">Careers</Link></li>
+                <li><Link href="/contact" className="hover:underline">Contact Us</Link></li>
+                <li><Link href="/shipping" className="hover:underline">Shipping Policy</Link></li>
+                <li><Link href="/refund" className="hover:underline">Refund Policy</Link></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="text-sm font-semibold mb-4 tracking-wider uppercase">Legal</h4>
+              <h4 className="text-xs font-semibold mb-4 tracking-wider uppercase">Legal</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy</Link></li>
-                <li><Link href="/terms" className="text-gray-400 hover:text-white transition-colors">Terms</Link></li>
+                <li><Link href="/privacy" className="hover:underline">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="hover:underline">Terms of Service</Link></li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-gray-800 pt-8 text-center">
-            <p className="text-gray-400 text-sm">
-              © 2025 1ABEL. All rights reserved.
-            </p>
+          <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+            <p>© 2025, 1ABEL</p>
+            <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>
       </footer>
