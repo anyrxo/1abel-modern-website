@@ -33,12 +33,84 @@
   },
   "dynamicRoutes": [
     {
+      "page": "/accessories/[id]",
+      "regex": "^/accessories/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/accessories/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/arc-2/accessories/[id]",
+      "regex": "^/arc\\-2/accessories/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/arc\\-2/accessories/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/arc-2/bottoms/[id]",
+      "regex": "^/arc\\-2/bottoms/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/arc\\-2/bottoms/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/arc-2/tops/[id]",
+      "regex": "^/arc\\-2/tops/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/arc\\-2/tops/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/arc-3/accessories/[id]",
+      "regex": "^/arc\\-3/accessories/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/arc\\-3/accessories/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/arc-3/bottoms/[id]",
+      "regex": "^/arc\\-3/bottoms/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/arc\\-3/bottoms/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops/[id]",
+      "regex": "^/arc\\-3/tops/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/arc\\-3/tops/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
       "page": "/blog/[slug]",
       "regex": "^/blog/([^/]+?)(?:/)?$",
       "routeKeys": {
         "nxtPslug": "nxtPslug"
       },
       "namedRegex": "^/blog/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/bottoms/[id]",
+      "regex": "^/bottoms/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/bottoms/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/tops/[id]",
+      "regex": "^/tops/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/tops/(?<nxtPid>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -61,16 +133,88 @@
       "namedRegex": "^/about(?:/)?$"
     },
     {
+      "page": "/accessories",
+      "regex": "^/accessories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/accessories(?:/)?$"
+    },
+    {
+      "page": "/account",
+      "regex": "^/account(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account(?:/)?$"
+    },
+    {
+      "page": "/arc-2",
+      "regex": "^/arc\\-2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2(?:/)?$"
+    },
+    {
+      "page": "/arc-2/accessories",
+      "regex": "^/arc\\-2/accessories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/accessories(?:/)?$"
+    },
+    {
+      "page": "/arc-2/bottoms",
+      "regex": "^/arc\\-2/bottoms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/bottoms(?:/)?$"
+    },
+    {
+      "page": "/arc-2/tops",
+      "regex": "^/arc\\-2/tops(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/tops(?:/)?$"
+    },
+    {
+      "page": "/arc-3",
+      "regex": "^/arc\\-3(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3(?:/)?$"
+    },
+    {
+      "page": "/arc-3/accessories",
+      "regex": "^/arc\\-3/accessories(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/accessories(?:/)?$"
+    },
+    {
+      "page": "/arc-3/bottoms",
+      "regex": "^/arc\\-3/bottoms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/bottoms(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops",
+      "regex": "^/arc\\-3/tops(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/tops(?:/)?$"
+    },
+    {
       "page": "/blog",
       "regex": "^/blog(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/blog(?:/)?$"
     },
     {
+      "page": "/bottoms",
+      "regex": "^/bottoms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/bottoms(?:/)?$"
+    },
+    {
       "page": "/careers",
       "regex": "^/careers(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/careers(?:/)?$"
+    },
+    {
+      "page": "/cart",
+      "regex": "^/cart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cart(?:/)?$"
     },
     {
       "page": "/contact",
@@ -101,6 +245,12 @@
       "regex": "^/terms(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/terms(?:/)?$"
+    },
+    {
+      "page": "/tops",
+      "regex": "^/tops(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tops(?:/)?$"
     }
   ],
   "dataRoutes": [],

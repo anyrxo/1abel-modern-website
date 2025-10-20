@@ -1,215 +1,218 @@
-import Link from 'next/link'
+'use client'
+
+import { motion } from 'framer-motion'
 import { Header } from '@/components/Header'
+import { Mail, MessageCircle, MapPin, Clock } from 'lucide-react'
+import Link from 'next/link'
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-white text-black">
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
-            GET IN TOUCH
-          </h1>
-          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Ready to discuss your music career or business opportunity? We prefer direct communication through email or social media.
-          </p>
+      <section className="pt-32 pb-20 px-8">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center"
+          >
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-6">
+              GET IN TOUCH
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Have questions about our collections or need assistance? We're here to help.
+            </p>
+          </motion.div>
         </div>
       </section>
 
       {/* Contact Methods */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            {/* Email Contact */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 text-center">
-              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">📧</span>
+      <section className="py-16 px-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center p-8 border border-black"
+            >
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black">
+                <Mail className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Email</h3>
-              <p className="text-gray-300 mb-6">
-                For all business inquiries, partnerships, and consultations.
-              </p>
-              <a 
-                href="mailto:anyro@1abel.com" 
-                className="bg-white text-black hover:bg-gray-200 px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
-              >
-                anyro@1abel.com
-              </a>
-            </div>
+              <h3 className="text-xl font-bold mb-2 uppercase tracking-wide">Email</h3>
+              <p className="text-sm text-gray-600 mb-4">support@1abel.com</p>
+            </motion.div>
 
-            {/* Social Media Contact */}
-            <div className="p-8 bg-gray-900/50 rounded-xl border border-gray-800 text-center">
-              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center mx-auto mb-6">
-                <span className="text-white text-2xl">🐦</span>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-center p-8 border border-black"
+            >
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black">
+                <MessageCircle className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Social Media</h3>
-              <p className="text-gray-300 mb-6">
-                Quick questions, updates, and industry discussions.
-              </p>
-              <a 
-                href="https://twitter.com/anyrxo" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="border border-white text-white hover:bg-white hover:text-black px-8 py-3 rounded-lg font-semibold transition-colors inline-block"
+              <h3 className="text-xl font-bold mb-2 uppercase tracking-wide">Live Chat</h3>
+              <p className="text-sm text-gray-600 mb-4">Mon-Fri, 9AM-6PM</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-center p-8 border border-black"
+            >
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black">
+                <MapPin className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 uppercase tracking-wide">Location</h3>
+              <p className="text-sm text-gray-600 mb-4">Melbourne, Australia</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-center p-8 border border-black"
+            >
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black">
+                <Clock className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 uppercase tracking-wide">Hours</h3>
+              <p className="text-sm text-gray-600 mb-4">24/7 Online Support</p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form */}
+      <section className="py-16 px-8 bg-gray-50">
+        <div className="max-w-3xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl font-bold tracking-tight mb-8 text-center uppercase">
+              Send Us A Message
+            </h2>
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    className="w-full px-4 py-3 border-2 border-black focus:outline-none focus:ring-2 focus:ring-black"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full px-4 py-3 border-2 border-black focus:outline-none focus:ring-2 focus:ring-black"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  className="w-full px-4 py-3 border-2 border-black focus:outline-none focus:ring-2 focus:ring-black"
+                  placeholder="How can we help?"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">
+                  Message
+                </label>
+                <textarea
+                  rows={6}
+                  className="w-full px-4 py-3 border-2 border-black focus:outline-none focus:ring-2 focus:ring-black resize-none"
+                  placeholder="Your message..."
+                />
+              </div>
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                type="submit"
+                className="w-full py-4 bg-black text-white hover:bg-gray-800 transition-colors text-sm tracking-wider uppercase font-medium"
               >
-                @anyrxo
-              </a>
-            </div>
-
-          </div>
+                Send Message
+              </motion.button>
+            </form>
+          </motion.div>
         </div>
       </section>
 
-      {/* Contact Information */}
-      <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+      {/* FAQ Section */}
+      <section className="py-20 px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-white">
-            HOW TO REACH US
+          <h2 className="text-4xl font-bold tracking-tight mb-12 text-center uppercase">
+            Frequently Asked
           </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <div className="text-center p-6 bg-gray-800/50 rounded-xl border border-gray-700">
-              <h3 className="text-xl font-bold text-white mb-4">Business Inquiries</h3>
-              <p className="text-gray-300 mb-4">
-                Partnerships, collaborations, and business development opportunities.
-              </p>
-              <p className="text-white font-medium">📧 anyro@1abel.com</p>
-            </div>
-            
-            <div className="text-center p-6 bg-gray-800/50 rounded-xl border border-gray-700">
-              <h3 className="text-xl font-bold text-white mb-4">Industry Connect</h3>
-              <p className="text-gray-300 mb-4">
-                Quick questions, industry discussions, and networking.
-              </p>
-              <p className="text-white font-medium">🐦 @anyrxo</p>
-            </div>
-            
-            <div className="text-center p-6 bg-gray-800/50 rounded-xl border border-gray-700">
-              <h3 className="text-xl font-bold text-white mb-4">Response Time</h3>
-              <p className="text-gray-300 mb-4">
-                We typically respond within 24-48 hours for all inquiries.
-              </p>
-              <p className="text-white font-medium">⏰ 24-48 hours</p>
-            </div>
-            
-          </div>
-        </div>
-      </section>
 
-      {/* What to Include */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-white">
-            WHEN REACHING OUT
-          </h2>
-          
-          <div className="space-y-8">
-            
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800">
-              <h3 className="text-2xl font-bold text-white mb-4">For Artists & Musicians</h3>
-              <p className="text-gray-300 mb-4">
-                Include a brief introduction about yourself, your music style, current goals, and what you're looking for from 1ABEL.
-              </p>
-              <ul className="text-gray-400 space-y-2">
-                <li>• Your background and musical style</li>
-                <li>• Current projects and goals</li>
-                <li>• Specific areas where you need guidance</li>
-                <li>• Timeline and availability for consultation</li>
-              </ul>
-            </div>
-            
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800">
-              <h3 className="text-2xl font-bold text-white mb-4">For Business Partners</h3>
-              <p className="text-gray-300 mb-4">
-                Describe your organization, the partnership opportunity, and how it aligns with 1ABEL's mission.
-              </p>
-              <ul className="text-gray-400 space-y-2">
-                <li>• Your company/organization overview</li>
-                <li>• Specific partnership proposal</li>
-                <li>• Expected outcomes and benefits</li>
-                <li>• Timeline and next steps</li>
-              </ul>
-            </div>
-            
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-800">
-              <h3 className="text-2xl font-bold text-white mb-4">For Media & Press</h3>
-              <p className="text-gray-300 mb-4">
-                Include your publication details, story angle, deadline, and specific information you're seeking.
-              </p>
-              <ul className="text-gray-400 space-y-2">
-                <li>• Publication/media outlet information</li>
-                <li>• Story concept and angle</li>
-                <li>• Deadline requirements</li>
-                <li>• Specific questions or interview needs</li>
-              </ul>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-white">
-            FREQUENTLY ASKED
-          </h2>
-          
           <div className="space-y-6">
-            <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800">
-              <h3 className="text-xl font-bold text-white mb-3">How do you work with artists?</h3>
-              <p className="text-gray-300">We provide strategic consulting and guidance rather than traditional label services. Each relationship is customized based on the artist's specific needs and goals.</p>
-            </div>
-            
-            <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800">
-              <h3 className="text-xl font-bold text-white mb-3">What makes 1ABEL different?</h3>
-              <p className="text-gray-300">We focus on modern digital marketing strategies, understanding current algorithms, and building sustainable careers rather than outdated industry practices.</p>
-            </div>
-            
-            <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800">
-              <h3 className="text-xl font-bold text-white mb-3">Do you work internationally?</h3>
-              <p className="text-gray-300">Yes, we work with artists and partners globally. Most of our consulting can be done remotely, with in-person meetings available in major cities.</p>
-            </div>
-            
-            <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800">
-              <h3 className="text-xl font-bold text-white mb-3">What's your consultation process?</h3>
-              <p className="text-gray-300">We start with a discovery call to understand your situation, then develop a customized strategy with ongoing support and optimization.</p>
-            </div>
+            {[
+              {
+                question: "What are your shipping times?",
+                answer: "We ship all orders within 1-3 weeks. International shipping may take longer depending on location."
+              },
+              {
+                question: "What is your return policy?",
+                answer: "All sales are final. Please review your order carefully before purchasing."
+              },
+              {
+                question: "Do you ship internationally?",
+                answer: "Yes, we ship worldwide. Shipping costs are calculated at checkout."
+              },
+              {
+                question: "How do I track my order?",
+                answer: "Once your order ships, you'll receive a tracking number via email."
+              }
+            ].map((faq, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="border border-black p-6"
+              >
+                <h3 className="text-xl font-bold mb-3 uppercase tracking-wide">
+                  {faq.question}
+                </h3>
+                <p className="text-gray-600">{faq.answer}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-gray-400 to-white bg-clip-text text-transparent">
-            LET'S CONNECT
-          </h2>
-          <p className="text-xl text-gray-300 mb-12">
-            Ready to discuss how 1ABEL can help accelerate your music career or business?
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a 
-              href="mailto:anyro@1abel.com" 
-              className="bg-white text-black hover:bg-gray-200 px-12 py-4 rounded-lg text-lg font-semibold transition-colors"
-            >
-              Email Us Now
-            </a>
-            <a 
-              href="https://twitter.com/anyrxo" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="border border-white text-white hover:bg-white hover:text-black px-12 py-4 rounded-lg text-lg font-semibold transition-colors"
-            >
-              Message @anyrxo
-            </a>
+      {/* Footer */}
+      <footer className="bg-white border-t border-black py-16 px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+            <p>© 2025, 1ABEL</p>
+            <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>
-      </section>
+      </footer>
     </div>
   )
 }
