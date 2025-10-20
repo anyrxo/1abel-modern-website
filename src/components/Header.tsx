@@ -14,9 +14,19 @@ export function Header() {
 
   const isActive = (path: string) => pathname === path
 
+  // Determine theme based on current path
+  const isArc2 = pathname.startsWith('/arc-2')
+  const isArc3 = pathname.startsWith('/arc-3')
+  const isDark = isArc2
+  const isLight = isArc3
+
   return (
     <motion.nav
-      className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-black"
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
+        isDark
+          ? 'bg-black border-b border-gray-800'
+          : 'bg-white border-b border-black'
+      }`}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -26,11 +36,16 @@ export function Header() {
           {/* Left Menu */}
           <div className="flex items-center space-x-8">
             {/* ARCS Dropdown */}
-            <div className="relative" onMouseLeave={() => setArcsOpen(false)}>
+            <div className="relative">
               <button
                 onMouseEnter={() => setArcsOpen(true)}
-                className="text-xs font-medium tracking-wider uppercase transition-colors text-gray-500 hover:text-black flex items-center"
-                onClick={() => playClick()}
+                onMouseLeave={() => setArcsOpen(false)}
+                className={`text-xs font-medium tracking-wider uppercase transition-colors flex items-center ${
+                  isDark
+                    ? 'text-gray-400 hover:text-white'
+                    : 'text-gray-500 hover:text-black'
+                }`}
+                onClick={() => { playClick(); setArcsOpen(!arcsOpen); }}
               >
                 ARCS
                 <ChevronDown className="w-3 h-3 ml-1" />
@@ -40,18 +55,32 @@ export function Header() {
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="absolute top-full left-0 mt-2 bg-white border border-black shadow-lg min-w-[200px]"
+                  onMouseEnter={() => setArcsOpen(true)}
+                  onMouseLeave={() => setArcsOpen(false)}
+                  className={`absolute top-full left-0 mt-2 shadow-lg min-w-[200px] ${
+                    isDark
+                      ? 'bg-gray-900 border border-gray-700'
+                      : 'bg-white border border-black'
+                  }`}
                 >
                   <Link
                     href="/arc-2"
-                    className="block px-4 py-3 text-xs font-medium tracking-wider uppercase hover:bg-gray-100 transition-colors"
+                    className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-colors ${
+                      isDark
+                        ? 'text-white hover:bg-gray-800'
+                        : 'hover:bg-gray-100'
+                    }`}
                     onClick={() => { playClick(); setArcsOpen(false); }}
                   >
                     ARC 2 — SHADOW
                   </Link>
                   <Link
                     href="/arc-3"
-                    className="block px-4 py-3 text-xs font-medium tracking-wider uppercase hover:bg-gray-100 transition-colors border-t border-gray-200"
+                    className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-colors ${
+                      isDark
+                        ? 'text-white hover:bg-gray-800 border-t border-gray-700'
+                        : 'hover:bg-gray-100 border-t border-gray-200'
+                    }`}
                     onClick={() => { playClick(); setArcsOpen(false); }}
                   >
                     ARC 3 — LIGHT
@@ -69,7 +98,7 @@ export function Header() {
                 className="text-3xl font-bold cursor-pointer tracking-tighter"
                 onClick={() => playLogo()}
               >
-                <span className="text-black">1ABEL</span>
+                <span className={isDark ? 'text-white' : 'text-black'}>1ABEL</span>
               </motion.div>
             </Link>
           </div>
@@ -79,7 +108,9 @@ export function Header() {
             <Link
               href="/account"
               className={`text-xs font-medium tracking-wider uppercase transition-colors flex items-center ${
-                isActive('/account') ? 'text-black' : 'text-gray-500 hover:text-black'
+                isDark
+                  ? isActive('/account') ? 'text-white' : 'text-gray-400 hover:text-white'
+                  : isActive('/account') ? 'text-black' : 'text-gray-500 hover:text-black'
               }`}
               onClick={() => playClick()}
             >
@@ -89,7 +120,9 @@ export function Header() {
             <Link
               href="/contact"
               className={`text-xs font-medium tracking-wider uppercase transition-colors ${
-                isActive('/contact') ? 'text-black' : 'text-gray-500 hover:text-black'
+                isDark
+                  ? isActive('/contact') ? 'text-white' : 'text-gray-400 hover:text-white'
+                  : isActive('/contact') ? 'text-black' : 'text-gray-500 hover:text-black'
               }`}
               onClick={() => playClick()}
             >
@@ -98,7 +131,9 @@ export function Header() {
             <Link
               href="/cart"
               className={`text-xs font-medium tracking-wider uppercase transition-colors flex items-center ${
-                isActive('/cart') ? 'text-black' : 'text-gray-500 hover:text-black'
+                isDark
+                  ? isActive('/cart') ? 'text-white' : 'text-gray-400 hover:text-white'
+                  : isActive('/cart') ? 'text-black' : 'text-gray-500 hover:text-black'
               }`}
               onClick={() => playClick()}
             >
