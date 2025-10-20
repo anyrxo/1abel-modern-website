@@ -2,13 +2,15 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { User, ShoppingCart } from 'lucide-react'
+import { User, ShoppingCart, ChevronDown } from 'lucide-react'
 import { useSound } from '@/lib/soundManager'
 import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 export function Header() {
   const { playClick, playLogo } = useSound()
   const pathname = usePathname()
+  const [arcsOpen, setArcsOpen] = useState(false)
 
   const isActive = (path: string) => pathname === path
 
@@ -23,33 +25,40 @@ export function Header() {
         <div className="grid grid-cols-3 items-center">
           {/* Left Menu */}
           <div className="flex items-center space-x-8">
-            <Link
-              href="/tops"
-              className={`text-xs font-medium tracking-wider uppercase transition-colors ${
-                isActive('/tops') ? 'text-black' : 'text-gray-500 hover:text-black'
-              }`}
-              onClick={() => playClick()}
-            >
-              TOPS
-            </Link>
-            <Link
-              href="/bottoms"
-              className={`text-xs font-medium tracking-wider uppercase transition-colors ${
-                isActive('/bottoms') ? 'text-black' : 'text-gray-500 hover:text-black'
-              }`}
-              onClick={() => playClick()}
-            >
-              BOTTOMS
-            </Link>
-            <Link
-              href="/accessories"
-              className={`text-xs font-medium tracking-wider uppercase transition-colors ${
-                isActive('/accessories') ? 'text-black' : 'text-gray-500 hover:text-black'
-              }`}
-              onClick={() => playClick()}
-            >
-              ACCESSORIES
-            </Link>
+            {/* ARCS Dropdown */}
+            <div className="relative" onMouseLeave={() => setArcsOpen(false)}>
+              <button
+                onMouseEnter={() => setArcsOpen(true)}
+                className="text-xs font-medium tracking-wider uppercase transition-colors text-gray-500 hover:text-black flex items-center"
+                onClick={() => playClick()}
+              >
+                ARCS
+                <ChevronDown className="w-3 h-3 ml-1" />
+              </button>
+
+              {arcsOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="absolute top-full left-0 mt-2 bg-white border border-black shadow-lg min-w-[200px]"
+                >
+                  <Link
+                    href="/arc-2"
+                    className="block px-4 py-3 text-xs font-medium tracking-wider uppercase hover:bg-gray-100 transition-colors"
+                    onClick={() => { playClick(); setArcsOpen(false); }}
+                  >
+                    ARC 2 — SHADOW
+                  </Link>
+                  <Link
+                    href="/arc-3"
+                    className="block px-4 py-3 text-xs font-medium tracking-wider uppercase hover:bg-gray-100 transition-colors border-t border-gray-200"
+                    onClick={() => { playClick(); setArcsOpen(false); }}
+                  >
+                    ARC 3 — LIGHT
+                  </Link>
+                </motion.div>
+              )}
+            </div>
           </div>
 
           {/* Center Logo */}
