@@ -36,11 +36,13 @@ export function Header() {
           {/* Left Menu */}
           <div className="flex items-center space-x-8">
             {/* ARCS Dropdown */}
-            <div className="relative">
+            <div
+              className="relative"
+              onMouseEnter={() => setArcsOpen(true)}
+              onMouseLeave={() => setArcsOpen(false)}
+            >
               <button
-                onMouseEnter={() => setArcsOpen(true)}
-                onMouseLeave={() => setArcsOpen(false)}
-                className={`text-xs font-medium tracking-wider uppercase transition-colors flex items-center ${
+                className={`text-xs font-medium tracking-wider uppercase transition-colors flex items-center py-2 ${
                   isDark
                     ? 'text-gray-400 hover:text-white'
                     : 'text-gray-500 hover:text-black'
@@ -55,9 +57,7 @@ export function Header() {
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  onMouseEnter={() => setArcsOpen(true)}
-                  onMouseLeave={() => setArcsOpen(false)}
-                  className={`absolute top-full left-0 mt-2 shadow-lg min-w-[200px] ${
+                  className={`absolute top-full left-0 mt-0 shadow-lg min-w-[200px] z-50 ${
                     isDark
                       ? 'bg-gray-900 border border-gray-700'
                       : 'bg-white border border-black'
