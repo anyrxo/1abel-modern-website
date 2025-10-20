@@ -45,7 +45,7 @@ export default function Arc2Page() {
               <div className="aspect-[16/9] md:aspect-[21/9] w-full">
                 <iframe
                   style={{ borderRadius: '12px' }}
-                  src="https://open.spotify.com/embed/track/4jv6eilCCXb?utm_source=generator"
+                  src="https://open.spotify.com/embed/track/4jv6eilCCXbkZyS95MwQxt?utm_source=generator"
                   width="100%"
                   height="100%"
                   frameBorder="0"

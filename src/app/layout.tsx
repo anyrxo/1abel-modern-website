@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { GlobalSoundSystem } from '@/components/GlobalSoundSystem'
+import { CartProvider } from '@/lib/cartContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -163,8 +164,10 @@ export default function RootLayout({
         <meta name="DC.coverage" content="Global" />
       </head>
       <body className={inter.className}>
-        {children}
-        <GlobalSoundSystem />
+        <CartProvider>
+          {children}
+          <GlobalSoundSystem />
+        </CartProvider>
       </body>
     </html>
   )

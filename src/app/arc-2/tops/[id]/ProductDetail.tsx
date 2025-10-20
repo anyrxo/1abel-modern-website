@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
+import { useCart } from '@/lib/cartContext'
+import { useRouter } from 'next/navigation'
 
 const products = {
   '1': { name: "MIDNIGHT THERMAL", price: 100, category: "TOPS", collection: "SHADOW" },
@@ -18,6 +20,9 @@ const products = {
 
 export function ProductDetail({ id }: { id: string }) {
   const [selectedSize, setSelectedSize] = useState('')
+  const [showNotification, setShowNotification] = useState(false)
+  const { addItem } = useCart()
+  const router = useRouter()
   const product = products[id as keyof typeof products]
 
   if (!product) {
@@ -26,9 +31,48 @@ export function ProductDetail({ id }: { id: string }) {
 
   const sizes = ["XS", "S", "M", "L", "XL"]
 
+  const handleAddToCart = () => {
+    if (!selectedSize) {
+      alert('Please select a size')
+      return
+    }
+
+    addItem({
+      id,
+      name: product.name,
+      price: product.price,
+      size: selectedSize,
+      arc: 'Arc 2 — Shadow',
+      category: product.category,
+    })
+
+    setShowNotification(true)
+    setTimeout(() => setShowNotification(false), 3000)
+  }
+
   return (
     <div className="bg-black text-white min-h-screen">
       <Header />
+
+      {/* Add to Cart Notification */}
+      {showNotification && (
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }}
+          className="fixed top-24 right-8 z-50 bg-white text-black px-6 py-4 shadow-lg border-2 border-black"
+        >
+          <p className="font-semibold uppercase tracking-wide text-sm">
+            Added to cart!
+          </p>
+          <button
+            onClick={() => router.push('/cart')}
+            className="text-xs underline mt-2 hover:no-underline"
+          >
+            View cart
+          </button>
+        </motion.div>
+      )}
 
       <main className="pt-24 pb-24">
         <div className="max-w-7xl mx-auto px-8">
@@ -110,14 +154,20 @@ export function ProductDetail({ id }: { id: string }) {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full py-4 bg-white text-black hover:bg-gray-200 transition-colors text-sm tracking-wider uppercase font-medium mb-4"
+                onClick={handleAddToCart}
+                disabled={!selectedSize}
+                className={`w-full py-4 transition-colors text-sm tracking-wider uppercase font-medium mb-4 ${
+                  selectedSize
+                    ? 'bg-white text-black hover:bg-gray-200'
+                    : 'bg-gray-700 text-gray-500 cursor-not-allowed'
+                }`}
               >
                 Add to cart — ${product.price}.00 AUD
               </motion.button>
 
-              <button className="w-full py-4 border-2 border-white hover:bg-white hover:text-black transition-colors text-sm tracking-wider uppercase font-medium">
-                Buy with Shop Pay
-              </button>
+              <p className="text-xs text-center text-gray-500 mb-4">
+                Shop Pay checkout available at cart
+              </p>
             </motion.div>
           </div>
         </div>
