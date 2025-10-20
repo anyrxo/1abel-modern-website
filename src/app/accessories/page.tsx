@@ -8,39 +8,45 @@ export default function AccessoriesPage() {
   const products = [
     {
       id: 1,
-      name: "Baseball Cap",
-      price: "$35",
-      image: "/placeholder-cap.jpg"
+      name: "FUR SLIDE - BLACK",
+      price: "$100.00 AUD",
+      image: "/placeholder-slide-black.jpg",
+      soldOut: false
     },
     {
       id: 2,
-      name: "Beanie",
-      price: "$25",
-      image: "/placeholder-beanie.jpg"
+      name: "FUR SLIDE - LEOPARD",
+      price: "$100.00 AUD",
+      image: "/placeholder-slide-leopard.jpg",
+      soldOut: false
     },
     {
       id: 3,
-      name: "Tote Bag",
-      price: "$45",
-      image: "/placeholder-tote.jpg"
+      name: "FUR SLIDE - WHITE",
+      price: "$100.00 AUD",
+      image: "/placeholder-slide-white.jpg",
+      soldOut: false
     },
     {
       id: 4,
-      name: "Socks",
-      price: "$15",
-      image: "/placeholder-socks.jpg"
+      name: "WASTED POTENTIAL REVERSIBLE BELT",
+      price: "$120.00 AUD",
+      image: "/placeholder-belt.jpg",
+      soldOut: false
     },
     {
       id: 5,
-      name: "Belt",
-      price: "$55",
-      image: "/placeholder-belt.jpg"
+      name: "WASTED POTENTIAL BRACELET",
+      price: "$100.00 AUD",
+      image: "/placeholder-bracelet.jpg",
+      soldOut: false
     },
     {
       id: 6,
-      name: "Scarf",
-      price: "$40",
-      image: "/placeholder-scarf.jpg"
+      name: "SKULL CAP",
+      price: "$40.00 AUD",
+      image: "/placeholder-skullcap.jpg",
+      soldOut: false
     }
   ]
 
@@ -72,9 +78,17 @@ export default function AccessoriesPage() {
                 <Link href={`/accessories/${product.id}`}>
                   <div className="aspect-[3/4] bg-gray-100 mb-4 relative overflow-hidden">
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500" />
+                    {product.soldOut && (
+                      <div className="absolute inset-0 bg-white/80 flex items-center justify-center">
+                        <span className="text-sm font-semibold">SOLD OUT</span>
+                      </div>
+                    )}
                   </div>
-                  <h3 className="text-lg font-semibold mb-1">{product.name}</h3>
-                  <p className="text-gray-600">{product.price}</p>
+                  <h3 className="text-sm font-semibold mb-1 uppercase tracking-wide">{product.name}</h3>
+                  <p className="text-sm text-gray-600">
+                    {product.price}
+                    {product.soldOut && <span className="ml-2 text-gray-400">— Sold Out</span>}
+                  </p>
                 </Link>
               </motion.div>
             ))}

@@ -66,7 +66,7 @@ export function ProductDetail({ id }: { id: string }) {
             <div><h4 className="text-xs font-semibold mb-4 tracking-wider uppercase">Support</h4><ul className="space-y-2 text-sm"><li><Link href="/contact" className="hover:underline">Contact Us</Link></li><li><Link href="/shipping" className="hover:underline">Shipping Policy</Link></li><li><Link href="/refund" className="hover:underline">Refund Policy</Link></li></ul></div>
             <div><h4 className="text-xs font-semibold mb-4 tracking-wider uppercase">Legal</h4><ul className="space-y-2 text-sm"><li><Link href="/privacy" className="hover:underline">Privacy Policy</Link></li><li><Link href="/terms" className="hover:underline">Terms of Service</Link></li></ul></div>
           </div>
-          <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600"><p>© 2025, 1ABEL</p><p className="mt-4 md:mt-0">SITE BY 1ABEL</p></div>
+          <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600"><p>© 2025, 1ABEL</p><p className="mt-4 md:mt-0">SITE BY IIMAGINED</p></div>
         </div>
       </footer>
     </div>

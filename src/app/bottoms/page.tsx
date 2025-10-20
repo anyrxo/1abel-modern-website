@@ -8,39 +8,52 @@ export default function BottomsPage() {
   const products = [
     {
       id: 1,
-      name: "Relaxed Jeans",
-      price: "$95",
-      image: "/placeholder-jeans.jpg"
+      name: "SNOW LEOPARD SWEATPANTS",
+      price: "$120.00 AUD",
+      image: "/placeholder-sweatpants.jpg",
+      soldOut: false
     },
     {
       id: 2,
-      name: "Cargo Pants",
-      price: "$105",
-      image: "/placeholder-cargo.jpg"
+      name: "DISTRAUGHT SWEATPANTS",
+      price: "$120.00 AUD",
+      image: "/placeholder-sweatpants2.jpg",
+      soldOut: false
     },
     {
       id: 3,
-      name: "Sweatpants",
-      price: "$75",
-      image: "/placeholder-sweatpants.jpg"
+      name: "BAGGY JEANS - ASH",
+      price: "$150.00 AUD",
+      image: "/placeholder-jeans-ash.jpg",
+      soldOut: false
     },
     {
       id: 4,
-      name: "Shorts",
-      price: "$55",
-      image: "/placeholder-shorts.jpg"
+      name: "FLARED JEANS - ASH",
+      price: "$150.00 AUD",
+      image: "/placeholder-flared-ash.jpg",
+      soldOut: false
     },
     {
       id: 5,
-      name: "Track Pants",
-      price: "$85",
-      image: "/placeholder-track.jpg"
+      name: "FLARED JEANS - SKY BLUE",
+      price: "$150.00 AUD",
+      image: "/placeholder-flared-blue.jpg",
+      soldOut: false
     },
     {
       id: 6,
-      name: "Wide Leg Trousers",
-      price: "$115",
-      image: "/placeholder-trousers.jpg"
+      name: "BAGGY JEANS - STRIPED",
+      price: "$150.00 AUD",
+      image: "/placeholder-jeans-striped.jpg",
+      soldOut: true
+    },
+    {
+      id: 7,
+      name: "BOXERS (3 PACK)",
+      price: "$50.00 AUD",
+      image: "/placeholder-boxers.jpg",
+      soldOut: false
     }
   ]
 
@@ -72,9 +85,17 @@ export default function BottomsPage() {
                 <Link href={`/bottoms/${product.id}`}>
                   <div className="aspect-[3/4] bg-gray-100 mb-4 relative overflow-hidden">
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500" />
+                    {product.soldOut && (
+                      <div className="absolute inset-0 bg-white/80 flex items-center justify-center">
+                        <span className="text-sm font-semibold">SOLD OUT</span>
+                      </div>
+                    )}
                   </div>
-                  <h3 className="text-lg font-semibold mb-1">{product.name}</h3>
-                  <p className="text-gray-600">{product.price}</p>
+                  <h3 className="text-sm font-semibold mb-1 uppercase tracking-wide">{product.name}</h3>
+                  <p className="text-sm text-gray-600">
+                    {product.price}
+                    {product.soldOut && <span className="ml-2 text-gray-400">— Sold Out</span>}
+                  </p>
                 </Link>
               </motion.div>
             ))}

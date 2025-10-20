@@ -143,7 +143,7 @@ export function ProductDetail({ id }: { id: string }) {
 
           <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
             <p>© 2025, 1ABEL</p>
-            <p className="mt-4 md:mt-0">SITE BY 1ABEL</p>
+            <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>
       </footer>

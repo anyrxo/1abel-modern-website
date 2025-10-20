@@ -8,39 +8,59 @@ export default function TopsPage() {
   const products = [
     {
       id: 1,
-      name: "Essential Tee",
-      price: "$45",
-      image: "/placeholder-tee.jpg"
+      name: "LOST THOUGHTS THERMAL",
+      price: "$100.00 AUD",
+      image: "/placeholder-thermal.jpg",
+      soldOut: false
     },
     {
       id: 2,
-      name: "Classic Hoodie",
-      price: "$85",
-      image: "/placeholder-hoodie.jpg"
+      name: "SNOW LEOPARD HOODIE",
+      price: "$130.00 AUD",
+      image: "/placeholder-hoodie.jpg",
+      soldOut: false
     },
     {
       id: 3,
-      name: "Oversized Shirt",
-      price: "$65",
-      image: "/placeholder-shirt.jpg"
+      name: "DISTRAUGHT ZIPUP",
+      price: "$130.00 AUD",
+      image: "/placeholder-zipup.jpg",
+      soldOut: false
     },
     {
       id: 4,
-      name: "Long Sleeve",
-      price: "$55",
-      image: "/placeholder-longsleeve.jpg"
+      name: "POINT BLANK HOODIE",
+      price: "$130.00 AUD",
+      image: "/placeholder-hoodie2.jpg",
+      soldOut: false
     },
     {
       id: 5,
-      name: "Crewneck Sweat",
-      price: "$75",
-      image: "/placeholder-crewneck.jpg"
+      name: "PUFFER JACKET",
+      price: "$200.00 AUD",
+      image: "/placeholder-puffer.jpg",
+      soldOut: true
     },
     {
       id: 6,
-      name: "Tank Top",
-      price: "$35",
-      image: "/placeholder-tank.jpg"
+      name: "WASTED POTENTIAL THERMAL",
+      price: "$100.00 AUD",
+      image: "/placeholder-thermal2.jpg",
+      soldOut: true
+    },
+    {
+      id: 7,
+      name: "SWEATER - BLACK",
+      price: "$130.00 AUD",
+      image: "/placeholder-sweater-black.jpg",
+      soldOut: false
+    },
+    {
+      id: 8,
+      name: "SWEATER - WHITE",
+      price: "$130.00 AUD",
+      image: "/placeholder-sweater-white.jpg",
+      soldOut: false
     }
   ]
 
@@ -72,9 +92,17 @@ export default function TopsPage() {
                 <Link href={`/tops/${product.id}`}>
                   <div className="aspect-[3/4] bg-gray-100 mb-4 relative overflow-hidden">
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500" />
+                    {product.soldOut && (
+                      <div className="absolute inset-0 bg-white/80 flex items-center justify-center">
+                        <span className="text-sm font-semibold">SOLD OUT</span>
+                      </div>
+                    )}
                   </div>
-                  <h3 className="text-lg font-semibold mb-1">{product.name}</h3>
-                  <p className="text-gray-600">{product.price}</p>
+                  <h3 className="text-sm font-semibold mb-1 uppercase tracking-wide">{product.name}</h3>
+                  <p className="text-sm text-gray-600">
+                    {product.price}
+                    {product.soldOut && <span className="ml-2 text-gray-400">— Sold Out</span>}
+                  </p>
                 </Link>
               </motion.div>
             ))}
