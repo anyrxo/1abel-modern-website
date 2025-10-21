@@ -13,17 +13,17 @@ export default function CartPage() {
     <div className="bg-white text-black min-h-screen">
       <Header />
 
-      <main className="pt-28 pb-24 px-8">
+      <main className="pt-28 pb-24 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-16 flex justify-between items-center"
+            className="mb-12 md:mb-16 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
           >
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-4">CART</h1>
-              <p className="text-gray-600 text-lg">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-2 md:mb-4">CART</h1>
+              <p className="text-gray-600 text-base md:text-lg">
                 {items.length === 0 ? 'Your shopping cart' : `${items.length} item${items.length !== 1 ? 's' : ''} in cart`}
               </p>
             </div>
@@ -81,44 +81,44 @@ export default function CartPage() {
                       <X className="w-5 h-5" />
                     </button>
 
-                    <div className="flex gap-6">
-                      <div className="w-24 h-24 bg-gray-100 border border-gray-200 flex items-center justify-center">
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                      <div className="w-full sm:w-24 h-24 sm:h-24 bg-gray-100 border border-gray-200 flex items-center justify-center flex-shrink-0">
                         <span className="text-xs text-gray-400 uppercase">Image</span>
                       </div>
 
-                      <div className="flex-1">
+                      <div className="flex-1 min-w-0">
                         <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">
                           {item.arc} — {item.category}
                         </p>
-                        <h3 className="text-xl font-bold tracking-wide uppercase mb-2">
+                        <h3 className="text-lg sm:text-xl font-bold tracking-wide uppercase mb-2">
                           {item.name}
                         </h3>
                         <p className="text-sm text-gray-600 mb-4">
                           Size: <span className="font-semibold">{item.size}</span>
                         </p>
 
-                        <div className="flex items-center justify-between">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                           <div className="flex items-center border-2 border-black">
                             <button
                               onClick={() => updateQuantity(item.id, item.size, item.quantity - 1)}
-                              className="px-3 py-2 hover:bg-gray-100 transition-colors"
+                              className="px-3 py-2 hover:bg-gray-100 transition-colors touch-manipulation"
                               aria-label="Decrease quantity"
                             >
                               <Minus className="w-4 h-4" />
                             </button>
-                            <span className="px-4 py-2 font-semibold border-x-2 border-black">
+                            <span className="px-4 py-2 font-semibold border-x-2 border-black min-w-[60px] text-center">
                               {item.quantity}
                             </span>
                             <button
                               onClick={() => updateQuantity(item.id, item.size, item.quantity + 1)}
-                              className="px-3 py-2 hover:bg-gray-100 transition-colors"
+                              className="px-3 py-2 hover:bg-gray-100 transition-colors touch-manipulation"
                               aria-label="Increase quantity"
                             >
                               <Plus className="w-4 h-4" />
                             </button>
                           </div>
 
-                          <p className="text-xl font-bold">
+                          <p className="text-lg sm:text-xl font-bold">
                             ${(item.price * item.quantity).toFixed(2)} AUD
                           </p>
                         </div>
@@ -132,9 +132,9 @@ export default function CartPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="border-2 border-black p-8 h-fit sticky top-28"
+                className="border-2 border-black p-6 md:p-8 h-fit lg:sticky lg:top-28"
               >
-                <h2 className="text-2xl font-bold mb-6 uppercase tracking-wide">Order Summary</h2>
+                <h2 className="text-xl md:text-2xl font-bold mb-6 uppercase tracking-wide">Order Summary</h2>
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between text-gray-600">
                     <span>Subtotal</span>
@@ -166,7 +166,7 @@ export default function CartPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-black py-16 px-8">
+      <footer className="bg-white border-t border-black py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
             <p>© 2025, 1ABEL</p>

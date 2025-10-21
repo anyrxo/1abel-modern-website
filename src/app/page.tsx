@@ -50,7 +50,7 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative pt-20 px-8 overflow-hidden">
+      <section className="min-h-screen flex items-center justify-center relative pt-20 px-4 md:px-8 overflow-hidden">
         <motion.div
           style={{ opacity: heroOpacity, y: heroY }}
           initial={{ opacity: 0, y: 30 }}
@@ -59,7 +59,7 @@ export default function HomePage() {
           className="text-center max-w-5xl relative z-10"
         >
           <motion.h1
-            className="text-7xl md:text-9xl font-bold tracking-tighter mb-8"
+            className="text-5xl sm:text-7xl md:text-9xl font-bold tracking-tighter mb-8"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -67,7 +67,7 @@ export default function HomePage() {
             1ABEL
           </motion.h1>
           <motion.p
-            className="text-lg md:text-xl text-gray-600 tracking-wide mb-16 max-w-2xl mx-auto"
+            className="text-base sm:text-lg md:text-xl text-gray-600 tracking-wide mb-16 max-w-2xl mx-auto px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -129,7 +129,7 @@ export default function HomePage() {
               />
 
               {/* Content */}
-              <div className="relative z-20 text-center px-8">
+              <div className="relative z-20 text-center px-4 md:px-8">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -137,7 +137,7 @@ export default function HomePage() {
                   viewport={{ once: true }}
                 >
                   <motion.h2
-                    className="text-8xl md:text-9xl font-bold tracking-tighter text-white mb-4"
+                    className="text-6xl sm:text-8xl md:text-9xl font-bold tracking-tighter text-white mb-4"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
@@ -150,10 +150,10 @@ export default function HomePage() {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     viewport={{ once: true }}
                   />
-                  <p className="text-2xl md:text-3xl text-gray-400 tracking-widest uppercase mb-2">
+                  <p className="text-xl sm:text-2xl md:text-3xl text-gray-400 tracking-widest uppercase mb-2">
                     Shadow
                   </p>
-                  <p className="text-sm text-gray-500 max-w-md mx-auto mb-8">
+                  <p className="text-sm text-gray-500 max-w-md mx-auto mb-8 px-4">
                     Born from darkness. Heavy textures, midnight palettes, and commanding presence.
                   </p>
                   <motion.div
@@ -202,7 +202,7 @@ export default function HomePage() {
               />
 
               {/* Content */}
-              <div className="relative z-20 text-center px-8">
+              <div className="relative z-20 text-center px-4 md:px-8">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -210,7 +210,7 @@ export default function HomePage() {
                   viewport={{ once: true }}
                 >
                   <motion.h2
-                    className="text-8xl md:text-9xl font-bold tracking-tighter text-black mb-4"
+                    className="text-6xl sm:text-8xl md:text-9xl font-bold tracking-tighter text-black mb-4"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
@@ -223,10 +223,10 @@ export default function HomePage() {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     viewport={{ once: true }}
                   />
-                  <p className="text-2xl md:text-3xl text-gray-600 tracking-widest uppercase mb-2">
+                  <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 tracking-widest uppercase mb-2">
                     Light
                   </p>
-                  <p className="text-sm text-gray-500 max-w-md mx-auto mb-8">
+                  <p className="text-sm text-gray-500 max-w-md mx-auto mb-8 px-4">
                     Clarity in form. Ethereal minimalism with luminous tones and refined aesthetics.
                   </p>
                   <motion.div
@@ -258,9 +258,9 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-black py-16 px-8">
+      <footer className="bg-white border-t border-black py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
             <div>
               <h3 className="font-bold mb-4 uppercase tracking-wide">Shop</h3>
               <ul className="space-y-2 text-sm text-gray-600">

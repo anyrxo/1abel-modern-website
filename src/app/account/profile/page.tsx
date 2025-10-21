@@ -10,10 +10,10 @@ export default function ProfilePage() {
     <div className="bg-white text-black min-h-screen">
       <Header />
 
-      <main className="pt-28 pb-24 px-8">
+      <main className="pt-28 pb-24 px-4 md:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Breadcrumb */}
-          <div className="mb-8">
+          <div className="mb-6 md:mb-8">
             <Link href="/account" className="text-sm text-gray-500 hover:text-black transition-colors uppercase tracking-wider">
               ← Back to Account
             </Link>
@@ -24,13 +24,13 @@ export default function ProfilePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-2">PROFILE</h1>
-            <p className="text-gray-600 mb-12">Manage your personal information</p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-2">PROFILE</h1>
+            <p className="text-gray-600 mb-8 md:mb-12 text-sm md:text-base">Manage your personal information</p>
 
             {/* Profile Form */}
-            <div className="space-y-8">
-              <div className="border border-black p-8">
-                <h2 className="text-2xl font-bold mb-6 uppercase tracking-wide">Personal Information</h2>
+            <div className="space-y-6 md:space-y-8">
+              <div className="border border-black p-6 md:p-8">
+                <h2 className="text-xl md:text-2xl font-bold mb-6 uppercase tracking-wide">Personal Information</h2>
                 <form className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -102,8 +102,8 @@ export default function ProfilePage() {
                 </form>
               </div>
 
-              <div className="border border-black p-8">
-                <h2 className="text-2xl font-bold mb-6 uppercase tracking-wide">Shipping Address</h2>
+              <div className="border border-black p-6 md:p-8">
+                <h2 className="text-xl md:text-2xl font-bold mb-6 uppercase tracking-wide">Shipping Address</h2>
                 <form className="space-y-6">
                   <div>
                     <label className="block text-sm font-semibold mb-2 uppercase tracking-wide">

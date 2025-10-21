@@ -11,20 +11,20 @@ export default function Arc3Page() {
 
       <main className="pt-24 pb-24">
         {/* Hero Section */}
-        <div className="max-w-7xl mx-auto px-8 py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h1 className="text-7xl md:text-9xl font-bold tracking-tighter mb-6">
+            <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold tracking-tighter mb-6">
               ARC 3
             </h1>
-            <p className="text-2xl md:text-3xl font-light tracking-wide text-gray-600 mb-4">
+            <p className="text-xl sm:text-2xl md:text-3xl font-light tracking-wide text-gray-600 mb-4">
               LIGHT
             </p>
-            <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto leading-relaxed px-4">
               Clarity in form. This collection embodies ethereal minimalism,
               drawing from sounds that float and shimmer. Clean lines, luminous tones,
               and a refined aesthetic that speaks softly but powerfully.
@@ -36,7 +36,7 @@ export default function Arc3Page() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8"
           >
             <Link href="/arc-3/tops">
               <div className="group cursor-pointer">
@@ -86,7 +86,7 @@ export default function Arc3Page() {
         </div>
 
         {/* Spotify Inspiration - Moved to Bottom */}
-        <div className="max-w-7xl mx-auto px-8 py-16 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-16 border-t border-gray-200">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ export default function Arc3Page() {
               href="https://open.spotify.com/track/cLXMFYmCCXbJKRgn2VHRB6"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-black transition-colors text-sm underline"
+              className="text-gray-600 hover:text-black transition-colors text-sm underline break-all px-4"
             >
               https://open.spotify.com/track/cLXMFYmCCXbJKRgn2VHRB6
             </a>
@@ -109,7 +109,7 @@ export default function Arc3Page() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-black py-16 px-8">
+      <footer className="bg-white border-t border-black py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
             <p>© 2025, 1ABEL</p>
