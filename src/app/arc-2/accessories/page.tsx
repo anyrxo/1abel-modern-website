@@ -21,35 +21,35 @@ export default function Arc2AccessoriesPage() {
     {
       id: 1,
       name: "SHADOW CHAIN",
-      price: 100.00,
+      price: 145.00,
       category: "Chain",
       soldOut: false
     },
     {
       id: 2,
       name: "OBSIDIAN RING",
-      price: 80.00,
+      price: 95.00,
       category: "Ring",
       soldOut: false
     },
     {
       id: 3,
       name: "MIDNIGHT BEANIE",
-      price: 40.00,
+      price: 55.00,
       category: "Beanie",
       soldOut: false
     },
     {
       id: 4,
       name: "VOID GLOVES",
-      price: 60.00,
+      price: 85.00,
       category: "Gloves",
       soldOut: false
     },
     {
       id: 5,
       name: "ONYX BELT",
-      price: 120.00,
+      price: 125.00,
       category: "Belt",
       soldOut: false
     }

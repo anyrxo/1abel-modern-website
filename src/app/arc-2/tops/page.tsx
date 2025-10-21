@@ -21,56 +21,56 @@ export default function Arc2TopsPage() {
     {
       id: 1,
       name: "MIDNIGHT THERMAL",
-      price: 100.00,
+      price: 120.00,
       category: "Thermal",
       soldOut: false
     },
     {
       id: 2,
-      name: "SHADOW HOODIE",
-      price: 130.00,
+      name: "VOID HOODIE",
+      price: 145.00,
       category: "Hoodie",
       soldOut: false
     },
     {
       id: 3,
       name: "OBSIDIAN ZIPUP",
-      price: 130.00,
+      price: 155.00,
       category: "Zip-Up",
       soldOut: false
     },
     {
       id: 4,
-      name: "VOID HOODIE",
-      price: 130.00,
-      category: "Hoodie",
-      soldOut: false
-    },
-    {
-      id: 5,
       name: "ECLIPSE PUFFER",
-      price: 200.00,
+      price: 280.00,
       category: "Outerwear",
       soldOut: false
     },
     {
-      id: 6,
+      id: 5,
       name: "NOCTURNAL THERMAL",
-      price: 100.00,
+      price: 120.00,
       category: "Thermal",
       soldOut: false
     },
     {
+      id: 6,
+      name: "SHADOW CREWNECK",
+      price: 135.00,
+      category: "Crewneck",
+      soldOut: false
+    },
+    {
       id: 7,
-      name: "ONYX SWEATER",
-      price: 130.00,
-      category: "Sweater",
+      name: "ONYX LONGSLEEVE",
+      price: 95.00,
+      category: "Long-Sleeve",
       soldOut: false
     },
     {
       id: 8,
       name: "PHANTOM TEE",
-      price: 65.00,
+      price: 75.00,
       category: "T-Shirt",
       soldOut: false
     }

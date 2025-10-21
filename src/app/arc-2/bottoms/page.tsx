@@ -21,42 +21,42 @@ export default function Arc2BottomsPage() {
     {
       id: 1,
       name: "MIDNIGHT CARGO",
-      price: 120.00,
+      price: 165.00,
       category: "Cargo",
       soldOut: false
     },
     {
       id: 2,
       name: "SHADOW SWEATS",
-      price: 120.00,
+      price: 135.00,
       category: "Sweats",
       soldOut: false
     },
     {
       id: 3,
       name: "ONYX DENIM",
-      price: 150.00,
+      price: 180.00,
       category: "Denim",
       soldOut: false
     },
     {
       id: 4,
       name: "VOID JOGGERS",
-      price: 120.00,
+      price: 145.00,
       category: "Joggers",
       soldOut: false
     },
     {
       id: 5,
       name: "OBSIDIAN JEANS",
-      price: 150.00,
+      price: 175.00,
       category: "Denim",
       soldOut: false
     },
     {
       id: 6,
       name: "NOCTURNAL SWEATS",
-      price: 120.00,
+      price: 130.00,
       category: "Sweats",
       soldOut: false
     }
