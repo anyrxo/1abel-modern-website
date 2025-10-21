@@ -10,6 +10,32 @@ export default function HomePage() {
   const { scrollYProgress, scrollY } = useScroll()
   const [currentArc, setCurrentArc] = useState<null | 2 | 3>(null)
   const [soundEnabled, setSoundEnabled] = useState(false)
+  const audioRef = useRef<HTMLAudioElement | null>(null)
+
+  // Initialize ambient audio
+  useEffect(() => {
+    audioRef.current = new Audio('/ambient.mp3')
+    audioRef.current.loop = true
+    audioRef.current.volume = 0.3
+
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause()
+        audioRef.current = null
+      }
+    }
+  }, [])
+
+  // Handle sound toggle
+  useEffect(() => {
+    if (audioRef.current) {
+      if (soundEnabled) {
+        audioRef.current.play().catch(err => console.log('Audio play failed:', err))
+      } else {
+        audioRef.current.pause()
+      }
+    }
+  }, [soundEnabled])
 
   // Smooth parallax transforms
   const smoothProgress = useSpring(scrollYProgress, {
