@@ -21,42 +21,42 @@ export default function Arc3BottomsPage() {
     {
       id: 1,
       name: "CLOUD CARGO",
-      price: 120.00,
+      price: 162.00,
       category: "Cargo",
       soldOut: false
     },
     {
       id: 2,
       name: "IVORY SWEATS",
-      price: 120.00,
+      price: 132.00,
       category: "Sweats",
       soldOut: false
     },
     {
       id: 3,
       name: "PEARL DENIM",
-      price: 150.00,
+      price: 178.00,
       category: "Denim",
       soldOut: false
     },
     {
       id: 4,
       name: "FROST JOGGERS",
-      price: 120.00,
+      price: 142.00,
       category: "Joggers",
       soldOut: false
     },
     {
       id: 5,
       name: "CHALK JEANS",
-      price: 150.00,
+      price: 172.00,
       category: "Denim",
       soldOut: false
     },
     {
       id: 6,
       name: "LUNAR SWEATS",
-      price: 120.00,
+      price: 128.00,
       category: "Sweats",
       soldOut: false
     }
