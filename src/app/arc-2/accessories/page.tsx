@@ -39,45 +39,101 @@ export default function Arc2AccessoriesPage() {
 
       <main className="pt-24 pb-24">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="mb-12">
-            <Link href="/arc-2" className="text-xs text-gray-500 hover:text-white transition-colors uppercase tracking-wider">
-              ← Back to Arc 2
-            </Link>
-          </div>
+          <motion.div
+            className="mb-12"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <motion.div whileHover={{ x: -4 }} transition={{ duration: 0.2 }}>
+              <Link href="/arc-2" className="text-xs text-gray-500 hover:text-white transition-colors uppercase tracking-wider inline-block">
+                ← Back to Arc 2
+              </Link>
+            </motion.div>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-16 text-center"
           >
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4">
+            <motion.h1
+              className="text-5xl md:text-7xl font-bold tracking-tighter mb-4"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+            >
               ARC 2 — ACCESSORIES
-            </h1>
-            <p className="text-gray-500 text-sm tracking-wide">
+            </motion.h1>
+            <motion.div
+              className="h-px w-32 bg-gray-700 mx-auto mb-4"
+              initial={{ width: 0 }}
+              animate={{ width: 128 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            />
+            <motion.p
+              className="text-gray-500 text-sm tracking-wide"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               SHADOW COLLECTION
-            </p>
+            </motion.p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <motion.div
+            className="grid grid-cols-2 md:grid-cols-4 gap-8"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.1
+                }
+              }
+            }}
+          >
             {products.map((product, index) => (
               <motion.div
                 key={product.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0 }
+                }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                whileHover={{ y: -8 }}
                 className="group"
               >
                 <Link href={`/arc-2/accessories/${product.id}`}>
-                  <div className="aspect-[3/4] bg-gray-900 mb-4 relative overflow-hidden border border-gray-800">
-                    <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-500" />
-                  </div>
-                  <h3 className="text-sm font-semibold mb-1 uppercase tracking-wide">{product.name}</h3>
+                  <motion.div
+                    className="aspect-[3/4] bg-gray-900 mb-4 relative overflow-hidden border border-gray-800"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                  >
+                    <motion.div
+                      className="absolute inset-0 bg-white/0"
+                      whileHover={{ backgroundColor: "rgba(255, 255, 255, 0.05)" }}
+                      transition={{ duration: 0.4 }}
+                    />
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.6, ease: "easeOut" }}
+                    />
+                  </motion.div>
+                  <motion.h3
+                    className="text-sm font-semibold mb-1 uppercase tracking-wide"
+                    whileHover={{ x: 4 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {product.name}
+                  </motion.h3>
                   <p className="text-sm text-gray-500">{product.price}</p>
                 </Link>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </main>
 
