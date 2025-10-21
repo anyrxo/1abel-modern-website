@@ -1,339 +1,454 @@
 'use client'
 
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
+import { motion, useScroll, useTransform, useMotionValue, useSpring, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
-import { useState, useRef } from 'react'
-
-// Magnetic cursor component for Arc cards
-function MagneticCard({ children, className }: { children: React.ReactNode; className?: string }) {
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const cardRef = useRef<HTMLDivElement>(null)
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!cardRef.current) return
-    const rect = cardRef.current.getBoundingClientRect()
-    const x = e.clientX - rect.left - rect.width / 2
-    const y = e.clientY - rect.top - rect.height / 2
-    setPosition({ x: x * 0.1, y: y * 0.1 })
-  }
-
-  const handleMouseLeave = () => {
-    setPosition({ x: 0, y: 0 })
-  }
-
-  return (
-    <motion.div
-      ref={cardRef}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      animate={{ x: position.x, y: position.y }}
-      transition={{ type: "spring", stiffness: 150, damping: 15, mass: 0.1 }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  )
-}
+import { useState, useRef, useEffect } from 'react'
+import { Volume2, VolumeX } from 'lucide-react'
 
 export default function HomePage() {
-  const { scrollY } = useScroll()
-  const heroOpacity = useTransform(scrollY, [0, 300], [1, 0])
-  const heroY = useTransform(scrollY, [0, 300], [0, -50])
+  const { scrollYProgress, scrollY } = useScroll()
+  const [currentArc, setCurrentArc] = useState<null | 2 | 3>(null)
+  const [soundEnabled, setSoundEnabled] = useState(false)
 
-  // Parallax effects for Arc sections
-  const arc2Y = useTransform(scrollY, [0, 1000], [0, -100])
-  const arc3Y = useTransform(scrollY, [0, 1000], [0, -100])
+  // Smooth parallax transforms
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  })
+
+  const heroOpacity = useTransform(scrollY, [0, 400], [1, 0])
+  const heroScale = useTransform(scrollY, [0, 400], [1, 0.95])
+  const heroBlur = useTransform(scrollY, [0, 400], [0, 10])
+
+  // Advanced parallax for Arc sections
+  const arc2Y = useTransform(smoothProgress, [0, 0.5, 1], [0, -150, -300])
+  const arc3Y = useTransform(smoothProgress, [0, 0.5, 1], [0, -150, -300])
+  const arc2Opacity = useTransform(scrollY, [600, 900], [0.6, 1])
+  const arc3Opacity = useTransform(scrollY, [600, 900], [0.6, 1])
 
   return (
-    <div className="bg-white text-black">
+    <div className="bg-black text-white relative">
       <Header />
 
-      {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative pt-20 px-4 md:px-8 overflow-hidden">
+      {/* Ambient Background Noise Indicator */}
+      <motion.button
+        onClick={() => setSoundEnabled(!soundEnabled)}
+        className="fixed top-24 right-8 z-50 p-3 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        {soundEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
+      </motion.button>
+
+      {/* Hero Section - Immersive Introduction */}
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+        {/* Animated gradient background */}
         <motion.div
-          style={{ opacity: heroOpacity, y: heroY }}
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="text-center max-w-5xl relative z-10"
+          className="absolute inset-0 opacity-20"
+          animate={{
+            background: [
+              'radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 80% 50%, rgba(255,255,255,0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 50% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)',
+              'radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%)',
+            ]
+          }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+        />
+
+        <motion.div
+          style={{
+            opacity: heroOpacity,
+            scale: heroScale,
+            filter: useTransform(heroBlur, (v) => `blur(${v}px)`)
+          }}
+          className="text-center max-w-6xl px-4 md:px-8 relative z-10"
         >
-          <motion.h1
-            className="text-5xl sm:text-7xl md:text-9xl font-bold tracking-tighter mb-8"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            1ABEL
-          </motion.h1>
-          <motion.p
-            className="text-base sm:text-lg md:text-xl text-gray-600 tracking-wide mb-16 max-w-2xl mx-auto px-4"
+          {/* Pre-title */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="mb-8"
           >
-            Where sound becomes style. Each Arc is a complete collection inspired by music,
-            designed to embody a distinct energy.
-          </motion.p>
+            <span className="text-xs tracking-[0.3em] uppercase text-gray-500 font-light">
+              Premium Streetwear
+            </span>
+          </motion.div>
 
+          {/* Main Title with Staggered Animation */}
+          <motion.div className="mb-12">
+            <motion.h1
+              className="text-6xl sm:text-8xl md:text-[12rem] font-bold tracking-[-0.02em] mb-4"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+            >
+              1ABEL
+            </motion.h1>
+
+            {/* Subtle brand mark */}
+            <motion.div
+              initial={{ scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ duration: 1.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              className="h-[1px] w-32 bg-gradient-to-r from-transparent via-white to-transparent mx-auto mb-8"
+            />
+          </motion.div>
+
+          {/* Philosophy Statement */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="max-w-3xl mx-auto space-y-6"
+          >
+            <p className="text-lg md:text-2xl text-gray-400 font-light leading-relaxed">
+              Where sound becomes style.
+            </p>
+            <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto leading-loose">
+              Each Arc is more than a collection—it's an expression, a frequency,
+              a distinct energy translated into form. Step into the narrative.
+            </p>
+          </motion.div>
+
+          {/* CTA */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-xs tracking-widest uppercase text-gray-400 mb-8"
+            transition={{ delay: 1.2, duration: 0.8 }}
+            className="mt-16 flex flex-col items-center"
           >
-            Explore Collections
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <span className="text-xs tracking-[0.2em] uppercase text-gray-600">
+                Scroll to explore
+              </span>
+              <div className="w-[1px] h-16 bg-gradient-to-b from-gray-600 to-transparent mx-auto mt-4" />
+            </motion.div>
           </motion.div>
         </motion.div>
 
-        {/* Scroll Indicator - Enhanced with Pulse */}
+        {/* Noise texture overlay */}
+        <div className="absolute inset-0 opacity-[0.015] pointer-events-none mix-blend-overlay">
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIvPjwvc3ZnPg==')]" />
+        </div>
+      </section>
+
+      {/* Transition Statement */}
+      <section className="py-32 px-4 md:px-8 relative">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8, duration: 0.6 }}
-          className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-5xl mx-auto"
         >
-          <motion.div
-            animate={{ scale: [1, 1.2, 1] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <div className="w-px h-20 bg-gradient-to-b from-black/40 to-transparent relative">
-              <motion.div
-                className="absolute top-0 left-0 w-full h-10 bg-gradient-to-b from-black to-transparent"
-                animate={{ y: [0, 40, 0] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              />
-            </div>
-          </motion.div>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 text-center">
+            Two frequencies.<br />
+            <span className="text-gray-500">Infinite expression.</span>
+          </h2>
+          <p className="text-center text-gray-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+            Every Arc tells a story. Dark and light. Yin and yang.
+            The duality of self, materialized in fabric and form.
+          </p>
         </motion.div>
       </section>
 
-      {/* Arc Collections - Split Screen */}
-      <section className="min-h-screen flex flex-col md:flex-row">
-        {/* ARC 2 - SHADOW (Black) */}
-        <MagneticCard className="relative flex-1 overflow-hidden">
-          <Link href="/arc-2" className="block h-full">
-            <motion.div
-              style={{ y: arc2Y }}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="relative h-screen bg-black flex items-center justify-center group"
-            >
-              {/* Overlay */}
+      {/* Arc Collections - Enhanced Split Experience */}
+      <section className="relative">
+        {/* Arc 2 - Shadow */}
+        <motion.div
+          style={{ y: arc2Y, opacity: arc2Opacity }}
+          className="relative min-h-screen"
+        >
+          <Link
+            href="/arc-2"
+            className="block relative h-full group"
+            onMouseEnter={() => setCurrentArc(2)}
+            onMouseLeave={() => setCurrentArc(null)}
+          >
+            <motion.div className="min-h-screen bg-black border-y border-white/10 flex items-center justify-center relative overflow-hidden">
+              {/* Animated gradient on hover */}
               <motion.div
-                className="absolute inset-0 bg-white/0 z-10"
-                whileHover={{ backgroundColor: "rgba(255, 255, 255, 0.05)" }}
-                transition={{ duration: 0.6 }}
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
+                style={{
+                  background: 'radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255,255,255,0.03) 0%, transparent 50%)'
+                }}
               />
 
-              {/* Content */}
-              <div className="relative z-20 text-center px-4 md:px-8">
+              {/* Grid overlay */}
+              <div className="absolute inset-0 opacity-[0.02]"
+                style={{
+                  backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
+                  backgroundSize: '100px 100px'
+                }}
+              />
+
+              <div className="relative z-10 text-center px-4 md:px-8 max-w-5xl mx-auto">
+                {/* Arc Number */}
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
+                  transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                  className="mb-8"
                 >
-                  <motion.h2
-                    className="text-6xl sm:text-8xl md:text-9xl font-bold tracking-tighter text-white mb-4"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
+                  <motion.span
+                    className="text-[15rem] md:text-[20rem] font-bold leading-none tracking-tighter opacity-10 block"
+                    whileHover={{ opacity: 0.15 }}
+                    transition={{ duration: 0.6 }}
                   >
                     02
-                  </motion.h2>
-                  <motion.div
-                    className="h-px w-24 bg-gray-600 mx-auto mb-6"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: 96 }}
-                    transition={{ duration: 0.6, delay: 0.4 }}
-                    viewport={{ once: true }}
-                  />
-                  <p className="text-xl sm:text-2xl md:text-3xl text-gray-400 tracking-widest uppercase mb-2">
+                  </motion.span>
+                </motion.div>
+
+                {/* Content */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                  className="mt-[-12rem] md:mt-[-16rem]"
+                >
+                  <h3 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 uppercase">
                     Shadow
+                  </h3>
+
+                  <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-gray-600 to-transparent mx-auto mb-8" />
+
+                  <p className="text-gray-500 max-w-lg mx-auto mb-4 text-sm md:text-base leading-relaxed">
+                    Born from darkness. Heavy textures, commanding silhouettes,
+                    and the weight of midnight. For those who move through the world
+                    with quiet intensity.
                   </p>
-                  <p className="text-sm text-gray-500 max-w-md mx-auto mb-8 px-4">
-                    Born from darkness. Heavy textures, midnight palettes, and commanding presence.
-                  </p>
+
                   <motion.div
-                    whileHover={{ scale: 1.05, x: 4 }}
-                    whileTap={{ scale: 0.95 }}
-                    transition={{ duration: 0.3 }}
-                    className="inline-block text-xs tracking-wider uppercase text-white border-b border-white pb-1"
+                    className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gray-400 group-hover:text-white transition-colors duration-500 mt-8"
+                    whileHover={{ x: 4 }}
                   >
-                    Explore Arc 2 →
+                    Enter the Shadow
+                    <motion.span
+                      animate={{ x: [0, 4, 0] }}
+                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                    >
+                      →
+                    </motion.span>
                   </motion.div>
                 </motion.div>
               </div>
 
-              {/* Background Text - Enhanced with Gradient */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
-                <motion.span
-                  className="text-[20vw] font-bold tracking-tighter bg-gradient-to-br from-white to-gray-600 bg-clip-text text-transparent"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 0.05, scale: 1 }}
-                  transition={{ duration: 1, delay: 0.3 }}
-                  viewport={{ once: true }}
-                >
+              {/* Background text */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.02]">
+                <span className="text-[25vw] font-bold tracking-tighter">
                   SHADOW
-                </motion.span>
+                </span>
               </div>
             </motion.div>
           </Link>
-        </MagneticCard>
+        </motion.div>
 
-        {/* ARC 3 - LIGHT (White) */}
-        <MagneticCard className="relative flex-1 overflow-hidden">
-          <Link href="/arc-3" className="block h-full">
-            <motion.div
-              style={{ y: arc3Y }}
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="relative h-screen bg-white flex items-center justify-center border-l border-gray-200 group"
-            >
-              {/* Overlay */}
+        {/* Arc 3 - Light */}
+        <motion.div
+          style={{ y: arc3Y, opacity: arc3Opacity }}
+          className="relative min-h-screen"
+        >
+          <Link
+            href="/arc-3"
+            className="block relative h-full group"
+            onMouseEnter={() => setCurrentArc(3)}
+            onMouseLeave={() => setCurrentArc(null)}
+          >
+            <motion.div className="min-h-screen bg-white text-black border-y border-black/10 flex items-center justify-center relative overflow-hidden">
+              {/* Animated gradient on hover */}
               <motion.div
-                className="absolute inset-0 bg-black/0 z-10"
-                whileHover={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
-                transition={{ duration: 0.6 }}
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
+                style={{
+                  background: 'radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0,0,0,0.03) 0%, transparent 50%)'
+                }}
               />
 
-              {/* Content */}
-              <div className="relative z-20 text-center px-4 md:px-8">
+              {/* Grid overlay */}
+              <div className="absolute inset-0 opacity-[0.02]"
+                style={{
+                  backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)',
+                  backgroundSize: '100px 100px'
+                }}
+              />
+
+              <div className="relative z-10 text-center px-4 md:px-8 max-w-5xl mx-auto">
+                {/* Arc Number */}
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
+                  transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+                  className="mb-8"
                 >
-                  <motion.h2
-                    className="text-6xl sm:text-8xl md:text-9xl font-bold tracking-tighter text-black mb-4"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
+                  <motion.span
+                    className="text-[15rem] md:text-[20rem] font-bold leading-none tracking-tighter opacity-10 block"
+                    whileHover={{ opacity: 0.15 }}
+                    transition={{ duration: 0.6 }}
                   >
                     03
-                  </motion.h2>
-                  <motion.div
-                    className="h-px w-24 bg-gray-300 mx-auto mb-6"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: 96 }}
-                    transition={{ duration: 0.6, delay: 0.4 }}
-                    viewport={{ once: true }}
-                  />
-                  <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 tracking-widest uppercase mb-2">
+                  </motion.span>
+                </motion.div>
+
+                {/* Content */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+                  className="mt-[-12rem] md:mt-[-16rem]"
+                >
+                  <h3 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 uppercase">
                     Light
+                  </h3>
+
+                  <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-gray-400 to-transparent mx-auto mb-8" />
+
+                  <p className="text-gray-600 max-w-lg mx-auto mb-4 text-sm md:text-base leading-relaxed">
+                    Clarity in form. Ethereal minimalism, luminous tones,
+                    and the weightlessness of dawn. For those who seek balance
+                    in a chaotic world.
                   </p>
-                  <p className="text-sm text-gray-500 max-w-md mx-auto mb-8 px-4">
-                    Clarity in form. Ethereal minimalism with luminous tones and refined aesthetics.
-                  </p>
+
                   <motion.div
-                    whileHover={{ scale: 1.05, x: 4 }}
-                    whileTap={{ scale: 0.95 }}
-                    transition={{ duration: 0.3 }}
-                    className="inline-block text-xs tracking-wider uppercase text-black border-b border-black pb-1"
+                    className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gray-500 group-hover:text-black transition-colors duration-500 mt-8"
+                    whileHover={{ x: 4 }}
                   >
-                    Explore Arc 3 →
+                    Enter the Light
+                    <motion.span
+                      animate={{ x: [0, 4, 0] }}
+                      transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                    >
+                      →
+                    </motion.span>
                   </motion.div>
                 </motion.div>
               </div>
 
-              {/* Background Text - Enhanced with Gradient */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
-                <motion.span
-                  className="text-[20vw] font-bold tracking-tighter bg-gradient-to-br from-black to-gray-400 bg-clip-text text-transparent"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 0.05, scale: 1 }}
-                  transition={{ duration: 1, delay: 0.3 }}
-                  viewport={{ once: true }}
-                >
+              {/* Background text */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.02]">
+                <span className="text-[25vw] font-bold tracking-tighter">
                   LIGHT
-                </motion.span>
+                </span>
               </div>
             </motion.div>
           </Link>
-        </MagneticCard>
+        </motion.div>
+      </section>
+
+      {/* Philosophy Section */}
+      <section className="py-32 px-4 md:px-8 bg-black relative overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="max-w-6xl mx-auto"
+        >
+          <div className="grid md:grid-cols-2 gap-16 md:gap-24">
+            <div>
+              <h3 className="text-xs tracking-[0.3em] uppercase text-gray-600 mb-6">Philosophy</h3>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-8 leading-tight">
+                Slow fashion.<br />
+                Timeless pieces.
+              </h2>
+              <p className="text-gray-500 leading-relaxed">
+                We don't chase trends. We create archetypes—pieces designed to transcend
+                seasons and remain relevant as your personal style evolves. Quality over
+                quantity. Intention over impulse.
+              </p>
+            </div>
+            <div className="flex flex-col justify-end">
+              <div className="space-y-8">
+                <div>
+                  <h4 className="text-sm font-semibold tracking-wide mb-2">Limited Production</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Each drop is intentionally small. When it's gone, it's gone.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-semibold tracking-wide mb-2">Music-Driven Design</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    Every Arc is inspired by a sonic identity, a frequency that guides its aesthetic.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-semibold tracking-wide mb-2">Community, Not Consumers</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    You're not just buying clothes. You're joining a movement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-black py-16 px-4 md:px-8">
+      <footer className="bg-black border-t border-white/10 py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
             <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wide">Shop</h3>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Shop</h3>
+              <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 — Shadow</Link>
-                  </motion.div>
+                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 — Shadow</Link>
                 </li>
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 — Light</Link>
-                  </motion.div>
+                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 — Light</Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wide">Support</h3>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Support</h3>
+              <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/contact" className="hover:text-black transition-colors inline-block">Contact Us</Link>
-                  </motion.div>
+                  <Link href="/contact" className="hover:text-white transition-colors inline-block">Contact</Link>
                 </li>
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/shipping" className="hover:text-black transition-colors inline-block">Shipping</Link>
-                  </motion.div>
+                  <Link href="/shipping" className="hover:text-white transition-colors inline-block">Shipping</Link>
                 </li>
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/refund" className="hover:text-black transition-colors inline-block">Returns</Link>
-                  </motion.div>
+                  <Link href="/refund" className="hover:text-white transition-colors inline-block">Returns</Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wide">Company</h3>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Company</h3>
+              <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/about" className="hover:text-black transition-colors inline-block">About</Link>
-                  </motion.div>
+                  <Link href="/about" className="hover:text-white transition-colors inline-block">About</Link>
                 </li>
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/terms" className="hover:text-black transition-colors inline-block">Terms</Link>
-                  </motion.div>
+                  <Link href="/terms" className="hover:text-white transition-colors inline-block">Terms</Link>
                 </li>
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/privacy" className="hover:text-black transition-colors inline-block">Privacy</Link>
-                  </motion.div>
+                  <Link href="/privacy" className="hover:text-white transition-colors inline-block">Privacy</Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wide">Connect</h3>
-              <ul className="space-y-2 text-sm text-gray-600">
+              <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Connect</h3>
+              <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <a href="https://instagram.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors inline-block">Instagram</a>
-                  </motion.div>
+                  <a href="https://instagram.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-block">Instagram</a>
                 </li>
                 <li>
-                  <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <a href="https://twitter.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors inline-block">Twitter</a>
-                  </motion.div>
+                  <a href="https://twitter.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-block">Twitter</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-            <p>© 2025, 1ABEL</p>
+          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+            <p>© 2025, 1ABEL — All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>
