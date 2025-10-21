@@ -51,7 +51,7 @@ export function ProductDetail({ id }: { id: string }) {
                   ))}
                 </div>
               </div>
-              <button className="w-full py-4 bg-black text-white hover:bg-gray-800 transition-colors text-sm tracking-wider uppercase font-medium mb-4">Add to cart — ${product.price}.00</button>
+              <button className="w-full py-4 bg-black text-white hover:bg-gray-800 transition-colors text-sm tracking-wider uppercase font-medium mb-4">Add to cart : ${product.price}.00</button>
               <button className="w-full py-4 border-2 border-black hover:bg-gray-100 transition-colors text-sm tracking-wider uppercase font-medium">Buy with Shop Pay</button>
               <p className="text-xs text-center mt-4 text-gray-600">More payment options</p>
             </motion.div>

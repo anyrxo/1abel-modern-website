@@ -145,6 +145,24 @@
       "namedRegex": "^/account(?:/)?$"
     },
     {
+      "page": "/account/login",
+      "regex": "^/account/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account/login(?:/)?$"
+    },
+    {
+      "page": "/account/profile",
+      "regex": "^/account/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account/profile(?:/)?$"
+    },
+    {
+      "page": "/account/signup",
+      "regex": "^/account/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/account/signup(?:/)?$"
+    },
+    {
       "page": "/arc-2",
       "regex": "^/arc\\-2(?:/)?$",
       "routeKeys": {},
@@ -229,10 +247,22 @@
       "namedRegex": "^/privacy(?:/)?$"
     },
     {
+      "page": "/refund",
+      "regex": "^/refund(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/refund(?:/)?$"
+    },
+    {
       "page": "/services",
       "regex": "^/services(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/services(?:/)?$"
+    },
+    {
+      "page": "/shipping",
+      "regex": "^/shipping(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/shipping(?:/)?$"
     },
     {
       "page": "/sitemap.xml",

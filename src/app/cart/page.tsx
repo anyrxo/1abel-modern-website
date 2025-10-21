@@ -54,13 +54,13 @@ export default function CartPage() {
                   href="/arc-2"
                   className="inline-flex items-center justify-center px-8 py-3 bg-black text-white hover:bg-gray-800 transition-colors text-sm tracking-wider uppercase font-medium"
                 >
-                  Arc 2 — Shadow
+                  Arc 2 Shadow
                 </Link>
                 <Link
                   href="/arc-3"
                   className="inline-flex items-center justify-center px-8 py-3 border-2 border-black text-black hover:bg-black hover:text-white transition-colors text-sm tracking-wider uppercase font-medium"
                 >
-                  Arc 3 — Light
+                  Arc 3 Light
                 </Link>
               </div>
             </motion.div>
@@ -90,7 +90,7 @@ export default function CartPage() {
 
                       <div className="flex-1 min-w-0">
                         <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">
-                          {item.arc} — {item.category}
+                          {item.arc} : {item.category}
                         </p>
                         <h3 className="text-lg sm:text-xl font-bold tracking-wide uppercase mb-2">
                           {item.name}

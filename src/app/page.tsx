@@ -109,7 +109,7 @@ export default function HomePage() {
               Where sound becomes style.
             </p>
             <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto leading-loose">
-              Each Arc is more than a collection—it's an expression, a frequency,
+              Each Arc is more than a collection:it's an expression, a frequency,
               a distinct energy translated into form. Step into the narrative.
             </p>
           </motion.div>
@@ -361,7 +361,7 @@ export default function HomePage() {
                 Timeless pieces.
               </h2>
               <p className="text-gray-500 leading-relaxed">
-                We don't chase trends. We create archetypes—pieces designed to transcend
+                We don't chase trends. We create archetypes. Pieces designed to transcend
                 seasons and remain relevant as your personal style evolves. Quality over
                 quantity. Intention over impulse.
               </p>
@@ -400,10 +400,10 @@ export default function HomePage() {
               <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Shop</h3>
               <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 — Shadow</Link>
+                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 Shadow</Link>
                 </li>
                 <li>
-                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 — Light</Link>
+                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 Light</Link>
                 </li>
               </ul>
             </div>
@@ -448,7 +448,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
-            <p>© 2025, 1ABEL — All rights reserved</p>
+            <p>© 2025, 1ABEL All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>

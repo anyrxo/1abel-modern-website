@@ -58,7 +58,7 @@ export default function Arc2Page() {
             className="mb-8"
           >
             <span className="text-xs tracking-[0.3em] uppercase text-gray-600 font-light">
-              Arc 2 — Collection
+              Arc 2 Collection
             </span>
           </motion.div>
 
@@ -94,7 +94,7 @@ export default function Arc2Page() {
             </p>
             <p className="text-sm md:text-base text-gray-500 leading-loose max-w-2xl mx-auto">
               For those who move through the world with quiet intensity. This collection
-              embodies raw energy and atmospheric depth—pieces designed for individuals
+              embodies raw energy and atmospheric depth:pieces designed for individuals
               who understand that presence doesn't require volume.
             </p>
           </motion.div>
@@ -157,7 +157,7 @@ export default function Arc2Page() {
               <div>
                 <h3 className="text-sm font-semibold tracking-wide mb-3 uppercase">Commanding Presence</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Silhouettes designed to dominate space. You don't blend in—you
+                  Silhouettes designed to dominate space. You don't blend in:you
                   define the room.
                 </p>
               </div>
@@ -285,10 +285,10 @@ export default function Arc2Page() {
           </h2>
           <p className="text-sm text-gray-500 mb-8 max-w-xl mx-auto leading-relaxed">
             Every Arc begins with sound. This track embodies the frequency that shaped
-            the Shadow collection—heavy, atmospheric, commanding.
+            the Shadow collection: heavy, atmospheric, commanding.
           </p>
           <a
-            href="https://open.spotify.com/track/4jv6eilCCXbkZyS95MwQxt"
+            href="https://spotify.link/w2kUeaFYDXb"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 border border-white/10 hover:border-white/20 hover:bg-white/5 transition-all duration-300 text-sm tracking-wide"
@@ -308,10 +308,10 @@ export default function Arc2Page() {
               <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Shop</h3>
               <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 — Shadow</Link>
+                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 Shadow</Link>
                 </li>
                 <li>
-                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 — Light</Link>
+                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 Light</Link>
                 </li>
               </ul>
             </div>
@@ -356,7 +356,7 @@ export default function Arc2Page() {
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
-            <p>© 2025, 1ABEL — All rights reserved</p>
+            <p>© 2025, 1ABEL All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>

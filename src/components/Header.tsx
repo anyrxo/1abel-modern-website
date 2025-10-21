@@ -113,7 +113,7 @@ export function Header() {
                         }`}
                         onClick={() => { playClick(); setArcsOpen(false); }}
                       >
-                        ARC 2 — SHADOW
+                        ARC 2 SHADOW
                       </Link>
                     </motion.div>
                     <motion.div
@@ -129,7 +129,7 @@ export function Header() {
                         }`}
                         onClick={() => { playClick(); setArcsOpen(false); }}
                       >
-                        ARC 3 — LIGHT
+                        ARC 3 LIGHT
                       </Link>
                     </motion.div>
                   </motion.div>
@@ -315,7 +315,7 @@ export function Header() {
                             }`}
                             onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArcsOpen(false); }}
                           >
-                            ARC 2 — SHADOW
+                            ARC 2 SHADOW
                           </Link>
                           <Link
                             href="/arc-3"
@@ -326,7 +326,7 @@ export function Header() {
                             }`}
                             onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArcsOpen(false); }}
                           >
-                            ARC 3 — LIGHT
+                            ARC 3 LIGHT
                           </Link>
                         </div>
                       </motion.div>

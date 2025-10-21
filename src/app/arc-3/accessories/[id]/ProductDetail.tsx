@@ -36,7 +36,7 @@ const products = {
       "Water resistant",
       "Lifetime warranty"
     ],
-    story: "Simple rings are hard to find. Most are too flashy or too plain. The Ivory Ring finds the balance—minimal enough to wear daily, substantial enough to feel quality. It's the ring you don't take off."
+    story: "Simple rings are hard to find. Most are too flashy or too plain. The Ivory Ring finds the balance:minimal enough to wear daily, substantial enough to feel quality. It's the ring you don't take off."
   },
   '3': {
     name: "CLOUD BEANIE",
@@ -134,7 +134,7 @@ export function ProductDetail({ id }: { id: string }) {
       name: product.name,
       price: product.price,
       size: selectedSize,
-      arc: 'Arc 3 — Light',
+      arc: 'Arc 3 Light',
       category: 'ACCESSORIES',
     })
 
@@ -168,7 +168,7 @@ export function ProductDetail({ id }: { id: string }) {
               {product.name}
             </p>
             <p className="text-sm text-gray-300">
-              Size {selectedSize} — ${product.price}.00 AUD
+              Size {selectedSize} : ${product.price}.00 AUD
             </p>
             <div className="flex gap-3 pt-3 border-t border-gray-800">
               <motion.button
@@ -267,7 +267,7 @@ export function ProductDetail({ id }: { id: string }) {
               {/* Header */}
               <div className="space-y-4 pb-8 border-b border-black/10">
                 <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400">
-                  ARC 3 — LIGHT / {product.category}
+                  ARC 3 LIGHT / {product.category}
                 </p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight uppercase">
                   {product.name}
@@ -302,7 +302,7 @@ export function ProductDetail({ id }: { id: string }) {
                 <ul className="space-y-2">
                   {product.details.map((detail, index) => (
                     <li key={index} className="text-xs text-gray-500 flex items-start gap-3">
-                      <span className="text-gray-300 mt-1">—</span>
+                      <span className="text-gray-300 mt-1">:</span>
                       <span>{detail}</span>
                     </li>
                   ))}
@@ -352,7 +352,7 @@ export function ProductDetail({ id }: { id: string }) {
                     : 'bg-black/10 text-gray-400 cursor-not-allowed border border-black/5'
                 }`}
               >
-                {selectedSize ? `Add to cart — $${product.price}.00 AUD` : 'Select a size'}
+                {selectedSize ? `Add to cart : $${product.price}.00 AUD` : 'Select a size'}
               </motion.button>
 
               {/* Limited Production Message */}
@@ -363,22 +363,22 @@ export function ProductDetail({ id }: { id: string }) {
                 className="p-6 border border-black/10 bg-black/5"
               >
                 <p className="text-xs leading-relaxed text-gray-500">
-                  <span className="font-semibold text-black">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited—designed to transcend seasons, not chase trends.
+                  <span className="font-semibold text-black">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited:designed to transcend seasons, not chase trends.
                 </p>
               </motion.div>
 
               {/* Shipping Info */}
               <div className="space-y-3 text-xs text-gray-400">
                 <p className="flex items-start gap-3">
-                  <span className="text-gray-300">—</span>
+                  <span className="text-gray-300">:</span>
                   <span>Ships in 1-3 weeks</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-gray-300">—</span>
+                  <span className="text-gray-300">:</span>
                   <span>All sales are final</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-gray-300">—</span>
+                  <span className="text-gray-300">:</span>
                   <span>Free shipping on orders over $200 AUD</span>
                 </p>
               </div>
@@ -395,10 +395,10 @@ export function ProductDetail({ id }: { id: string }) {
               <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-400">Shop</h3>
               <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 — Shadow</Link>
+                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 Shadow</Link>
                 </li>
                 <li>
-                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 — Light</Link>
+                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 Light</Link>
                 </li>
               </ul>
             </div>
@@ -443,7 +443,7 @@ export function ProductDetail({ id }: { id: string }) {
             </div>
           </div>
           <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
-            <p>© 2025, 1ABEL — All rights reserved</p>
+            <p>© 2025, 1ABEL All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>

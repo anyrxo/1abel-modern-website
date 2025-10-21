@@ -94,7 +94,7 @@ export default function BottomsPage() {
                   <h3 className="text-sm font-semibold mb-1 uppercase tracking-wide">{product.name}</h3>
                   <p className="text-sm text-gray-600">
                     {product.price}
-                    {product.soldOut && <span className="ml-2 text-gray-400">— Sold Out</span>}
+                    {product.soldOut && <span className="ml-2 text-gray-400">: Sold Out</span>}
                   </p>
                 </Link>
               </motion.div>

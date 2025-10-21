@@ -58,7 +58,7 @@ export default function Arc3Page() {
             className="mb-8"
           >
             <span className="text-xs tracking-[0.3em] uppercase text-gray-400 font-light">
-              Arc 3 — Collection
+              Arc 3 Collection
             </span>
           </motion.div>
 
@@ -94,7 +94,7 @@ export default function Arc3Page() {
             </p>
             <p className="text-sm md:text-base text-gray-500 leading-loose max-w-2xl mx-auto">
               For those who seek balance in a chaotic world. This collection speaks
-              softly but powerfully—pieces crafted for individuals who understand that
+              softly but powerfully:pieces crafted for individuals who understand that
               true strength lies in restraint.
             </p>
           </motion.div>
@@ -285,10 +285,10 @@ export default function Arc3Page() {
           </h2>
           <p className="text-sm text-gray-500 mb-8 max-w-xl mx-auto leading-relaxed">
             Every Arc begins with sound. This track embodies the frequency that shaped
-            the Light collection—ethereal, floating, luminous.
+            the Light collection: ethereal, floating, luminous.
           </p>
           <a
-            href="https://open.spotify.com/track/cLXMFYmCCXbJKRgn2VHRB6"
+            href="https://spotify.link/qEQY5uDYDXb"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 border border-black/10 hover:border-black/20 hover:bg-black/5 transition-all duration-300 text-sm tracking-wide"
@@ -308,10 +308,10 @@ export default function Arc3Page() {
               <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-400">Shop</h3>
               <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 — Shadow</Link>
+                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 Shadow</Link>
                 </li>
                 <li>
-                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 — Light</Link>
+                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 Light</Link>
                 </li>
               </ul>
             </div>
@@ -356,7 +356,7 @@ export default function Arc3Page() {
             </div>
           </div>
           <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-            <p>© 2025, 1ABEL — All rights reserved</p>
+            <p>© 2025, 1ABEL All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>

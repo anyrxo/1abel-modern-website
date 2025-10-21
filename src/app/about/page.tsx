@@ -97,12 +97,12 @@ export default function AboutPage() {
                   a mood, a moment in time. It should be a frequency you can wear.
                 </p>
                 <p>
-                  1ABEL was founded on this principle—that the intersection of sound
+                  1ABEL was founded on this principle: that the intersection of sound
                   and style creates something transcendent. Not trend-chasing. Not
                   fast fashion. Timeless archetypes that speak to those who understand.
                 </p>
                 <p>
-                  We don't create collections based on seasons. We create Arcs—complete
+                  We don't create collections based on seasons. We create Arcs. Complete
                   expressions inspired by sonic identities, each one a deliberate
                   exploration of duality, contrast, and balance.
                 </p>
@@ -150,7 +150,7 @@ export default function AboutPage() {
               Slow fashion.<br />Timeless pieces.
             </h3>
             <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
-              We don't chase trends. We create archetypes—pieces designed to transcend
+              We don't chase trends. We create archetypes. Pieces designed to transcend
               seasons and remain relevant as your personal style evolves.
             </p>
           </motion.div>
@@ -208,7 +208,7 @@ export default function AboutPage() {
               <span className="text-gray-500">Infinite expression.</span>
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Each Arc represents a complete collection—a world unto itself. Dark and light.
+              Each Arc represents a complete collection:a world unto itself. Dark and light.
               Yin and yang. The duality of self, materialized in fabric and form.
             </p>
           </motion.div>
@@ -317,7 +317,7 @@ export default function AboutPage() {
           </h3>
           <p className="text-gray-500 mb-6 leading-relaxed">
             Every piece is crafted with meticulous attention to detail. We believe in
-            slow fashion—creating timeless pieces that last, not trends that fade.
+            slow fashion. Creating timeless pieces that last, not trends that fade.
           </p>
           <p className="text-gray-500 leading-relaxed">
             1ABEL is for those who appreciate the intersection of music, art, and fashion.
@@ -334,10 +334,10 @@ export default function AboutPage() {
               <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-400">Shop</h3>
               <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 — Shadow</Link>
+                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 Shadow</Link>
                 </li>
                 <li>
-                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 — Light</Link>
+                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 Light</Link>
                 </li>
               </ul>
             </div>
@@ -382,7 +382,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-            <p>© 2025, 1ABEL — All rights reserved</p>
+            <p>© 2025, 1ABEL All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>

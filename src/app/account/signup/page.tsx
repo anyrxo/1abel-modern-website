@@ -169,8 +169,8 @@ export default function SignupPage() {
             <div>
               <h3 className="font-bold mb-4 uppercase tracking-wide">Shop</h3>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li><Link href="/arc-2" className="hover:text-black">Arc 2 — Shadow</Link></li>
-                <li><Link href="/arc-3" className="hover:text-black">Arc 3 — Light</Link></li>
+                <li><Link href="/arc-2" className="hover:text-black">Arc 2 Shadow</Link></li>
+                <li><Link href="/arc-3" className="hover:text-black">Arc 3 Light</Link></li>
               </ul>
             </div>
             <div>

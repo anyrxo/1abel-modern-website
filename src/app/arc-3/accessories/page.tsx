@@ -191,7 +191,7 @@ export default function Arc3AccessoriesPage() {
                     </motion.h3>
                     <p className="text-sm text-gray-500">
                       ${product.price.toFixed(2)} AUD
-                      {product.soldOut && <span className="ml-2 text-gray-400">— Sold Out</span>}
+                      {product.soldOut && <span className="ml-2 text-gray-400">: Sold Out</span>}
                     </p>
                   </div>
 
@@ -226,7 +226,7 @@ export default function Arc3AccessoriesPage() {
               Limited Production
             </p>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Each piece is intentionally limited. We don't chase trends—we create
+              Each piece is intentionally limited. We don't chase trends:we create
               archetypes designed to transcend seasons. When it's gone, it's gone.
             </p>
           </motion.div>
@@ -241,10 +241,10 @@ export default function Arc3AccessoriesPage() {
               <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-400">Shop</h3>
               <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 — Shadow</Link>
+                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 Shadow</Link>
                 </li>
                 <li>
-                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 — Light</Link>
+                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 Light</Link>
                 </li>
               </ul>
             </div>
@@ -289,7 +289,7 @@ export default function Arc3AccessoriesPage() {
             </div>
           </div>
           <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
-            <p>© 2025, 1ABEL — All rights reserved</p>
+            <p>© 2025, 1ABEL All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>

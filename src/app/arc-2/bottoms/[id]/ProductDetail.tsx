@@ -12,7 +12,7 @@ const products = {
     name: "MIDNIGHT CARGO",
     price: 165,
     category: "Cargo Pants",
-    description: "Military-grade utility meets streetwear sensibility. Heavy canvas construction with reinforced stitching at stress points. Six functional pockets for everything you need—nothing you don't.",
+    description: "Military-grade utility meets streetwear sensibility. Heavy canvas construction with reinforced stitching at stress points. Six functional pockets for everything you need:nothing you don't.",
     details: [
       "12oz cotton canvas with mechanical stretch",
       "Reinforced bartack stitching at all stress points",
@@ -21,7 +21,7 @@ const products = {
       "Tapered fit with articulated knees for movement",
       "Pre-washed for broken-in feel"
     ],
-    story: "Born from the idea that function doesn't have to sacrifice form. These cargos were designed for those who carry more than just their phone and wallet—creatives, builders, thinkers who need their clothes to work as hard as they do. The silhouette is intentionally relaxed but never sloppy. Wear them to the studio, the street, the job site."
+    story: "Born from the idea that function doesn't have to sacrifice form. These cargos were designed for those who carry more than just their phone and wallet:creatives, builders, thinkers who need their clothes to work as hard as they do. The silhouette is intentionally relaxed but never sloppy. Wear them to the studio, the street, the job site."
   },
   '2': {
     name: "SHADOW SWEATS",
@@ -36,7 +36,7 @@ const products = {
       "Reinforced elastic cuffs",
       "Hidden zippered pocket"
     ],
-    story: "These aren't your run-to-the-store sweats. These are the sweats you wear when you're locked in—working, creating, thinking. Heavy enough to feel substantial, soft enough to forget you're wearing them. The kind of sweats that become an extension of you."
+    story: "These aren't your run-to-the-store sweats. These are the sweats you wear when you're locked in:working, creating, thinking. Heavy enough to feel substantial, soft enough to forget you're wearing them. The kind of sweats that become an extension of you."
   },
   '3': {
     name: "ONYX DENIM",
@@ -49,15 +49,15 @@ const products = {
       "Wide leg cut with high rise",
       "Button fly with reinforced buttonholes",
       "Selvedge detailing at outseam",
-      "Unwashed—will shrink approximately 1 inch in inseam"
+      "Unwashed:will shrink approximately 1 inch in inseam"
     ],
-    story: "There's something honest about raw denim. It molds to your body, tells your story through its fades. These jeans aren't meant to look perfect out of the box—they're meant to become perfect over months and years of wear. An investment piece in the truest sense."
+    story: "There's something honest about raw denim. It molds to your body, tells your story through its fades. These jeans aren't meant to look perfect out of the box:they're meant to become perfect over months and years of wear. An investment piece in the truest sense."
   },
   '4': {
     name: "VOID JOGGERS",
     price: 145,
     category: "Joggers",
-    description: "Technical joggers with luxury fabrication. Four-way stretch with water-resistant finish. Designed for movement—whether that's through the city or through your process.",
+    description: "Technical joggers with luxury fabrication. Four-way stretch with water-resistant finish. Designed for movement:whether that's through the city or through your process.",
     details: [
       "Polyester-spandex blend with four-way stretch",
       "DWR (Durable Water Repellent) finish",
@@ -87,7 +87,7 @@ const products = {
     name: "NOCTURNAL SWEATS",
     price: 130,
     category: "Sweatpants",
-    description: "Oversized heavyweight sweats with vintage wash. The kind of sweats that look like you've had them forever—because you will.",
+    description: "Oversized heavyweight sweats with vintage wash. The kind of sweats that look like you've had them forever:because you will.",
     details: [
       "380 GSM heavyweight cotton fleece",
       "Garment-dyed for vintage look and feel",
@@ -96,7 +96,7 @@ const products = {
       "Single back patch pocket",
       "Pre-shrunk"
     ],
-    story: "Designed to be your default. The sweats you throw on for early mornings, late nights, and everything in between. Oversized enough to feel like freedom, heavy enough to feel grounded. These get better with age—softer, more broken-in, more you."
+    story: "Designed to be your default. The sweats you throw on for early mornings, late nights, and everything in between. Oversized enough to feel like freedom, heavy enough to feel grounded. These get better with age:softer, more broken-in, more you."
   }
 }
 
@@ -143,7 +143,7 @@ export function ProductDetail({ id }: { id: string }) {
       name: product.name,
       price: product.price,
       size: selectedSize,
-      arc: 'Arc 2 — Shadow',
+      arc: 'Arc 2 Shadow',
       category: 'BOTTOMS',
     })
 
@@ -177,7 +177,7 @@ export function ProductDetail({ id }: { id: string }) {
               {product.name}
             </p>
             <p className="text-sm text-gray-600">
-              Size {selectedSize} — ${product.price}.00 AUD
+              Size {selectedSize} : ${product.price}.00 AUD
             </p>
             <div className="flex gap-3 pt-3 border-t border-gray-200">
               <motion.button
@@ -276,7 +276,7 @@ export function ProductDetail({ id }: { id: string }) {
               {/* Header */}
               <div className="space-y-4 pb-8 border-b border-white/10">
                 <p className="text-[10px] tracking-[0.3em] uppercase text-gray-600">
-                  ARC 2 — SHADOW / {product.category}
+                  ARC 2 SHADOW / {product.category}
                 </p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight uppercase">
                   {product.name}
@@ -311,7 +311,7 @@ export function ProductDetail({ id }: { id: string }) {
                 <ul className="space-y-2">
                   {product.details.map((detail, index) => (
                     <li key={index} className="text-xs text-gray-500 flex items-start gap-3">
-                      <span className="text-gray-700 mt-1">—</span>
+                      <span className="text-gray-700 mt-1">:</span>
                       <span>{detail}</span>
                     </li>
                   ))}
@@ -359,7 +359,7 @@ export function ProductDetail({ id }: { id: string }) {
                     : 'bg-white/10 text-gray-600 cursor-not-allowed border border-white/5'
                 }`}
               >
-                {selectedSize ? `Add to cart — $${product.price}.00 AUD` : 'Select a size'}
+                {selectedSize ? `Add to cart : $${product.price}.00 AUD` : 'Select a size'}
               </motion.button>
 
               {/* Limited Production Message */}
@@ -370,22 +370,22 @@ export function ProductDetail({ id }: { id: string }) {
                 className="p-6 border border-white/10 bg-white/5"
               >
                 <p className="text-xs leading-relaxed text-gray-500">
-                  <span className="font-semibold text-white">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited—designed to transcend seasons, not chase trends.
+                  <span className="font-semibold text-white">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited:designed to transcend seasons, not chase trends.
                 </p>
               </motion.div>
 
               {/* Shipping Info */}
               <div className="space-y-3 text-xs text-gray-600">
                 <p className="flex items-start gap-3">
-                  <span className="text-gray-700">—</span>
+                  <span className="text-gray-700">:</span>
                   <span>Ships in 1-3 weeks</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-gray-700">—</span>
+                  <span className="text-gray-700">:</span>
                   <span>All sales are final</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-gray-700">—</span>
+                  <span className="text-gray-700">:</span>
                   <span>Free shipping on orders over $200 AUD</span>
                 </p>
               </div>
@@ -402,10 +402,10 @@ export function ProductDetail({ id }: { id: string }) {
               <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Shop</h3>
               <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 — Shadow</Link>
+                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 Shadow</Link>
                 </li>
                 <li>
-                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 — Light</Link>
+                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 Light</Link>
                 </li>
               </ul>
             </div>
@@ -450,7 +450,7 @@ export function ProductDetail({ id }: { id: string }) {
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
-            <p>© 2025, 1ABEL — All rights reserved</p>
+            <p>© 2025, 1ABEL All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>

@@ -36,7 +36,7 @@ const products = {
       "Ribbed cuffs and hem",
       "Garment-washed for lived-in feel"
     ],
-    story: "Some pieces exist outside of time. The Eternal Hoodie is designed to be worn for years—softening with each wash, becoming more yours. It's not about trends. It's about finding something that works and never needing to replace it."
+    story: "Some pieces exist outside of time. The Eternal Hoodie is designed to be worn for years:softening with each wash, becoming more yours. It's not about trends. It's about finding something that works and never needing to replace it."
   },
   '3': {
     name: "FROST ZIPUP",
@@ -51,7 +51,7 @@ const products = {
       "Athletic fit with stretch",
       "Water-resistant finish"
     ],
-    story: "Designed for transition. The Frost Zipup is what you reach for when you're moving between spaces—the studio and the street, work and rest. Refined enough to wear anywhere, functional enough to actually use."
+    story: "Designed for transition. The Frost Zipup is what you reach for when you're moving between spaces:the studio and the street, work and rest. Refined enough to wear anywhere, functional enough to actually use."
   },
   '4': {
     name: "IVORY HOODIE",
@@ -66,7 +66,7 @@ const products = {
       "Wide ribbed waistband",
       "Slight fading for lived-in aesthetic"
     ],
-    story: "There's comfort in familiarity. The Ivory Hoodie is pre-faded, pre-softened, pre-loved. It's the hoodie you throw on without thinking—because thinking is overrated when you're trying to create."
+    story: "There's comfort in familiarity. The Ivory Hoodie is pre-faded, pre-softened, pre-loved. It's the hoodie you throw on without thinking:because thinking is overrated when you're trying to create."
   },
   '5': {
     name: "ARCTIC PUFFER",
@@ -81,7 +81,7 @@ const products = {
       "Interior media pocket",
       "Packs into own pocket"
     ],
-    story: "Winter doesn't have to be heavy. The Arctic Puffer keeps you warm without the bulk—letting you move freely, think clearly. It's technical without looking like outdoor gear. Just clean lines and quiet warmth."
+    story: "Winter doesn't have to be heavy. The Arctic Puffer keeps you warm without the bulk:letting you move freely, think clearly. It's technical without looking like outdoor gear. Just clean lines and quiet warmth."
   },
   '6': {
     name: "PEARL THERMAL",
@@ -96,7 +96,7 @@ const products = {
       "Longer back hem for coverage",
       "Natural stretch for movement"
     ],
-    story: "Some pieces just work. The Pearl Thermal is that piece—the one you reach for when you want comfort without compromise. Soft organic cotton that feels good on your skin, looks good under anything."
+    story: "Some pieces just work. The Pearl Thermal is that piece:the one you reach for when you want comfort without compromise. Soft organic cotton that feels good on your skin, looks good under anything."
   },
   '7': {
     name: "CHALK SWEATER",
@@ -111,7 +111,7 @@ const products = {
       "Fully fashioned (no side seams)",
       "Hand-washable, won't pill"
     ],
-    story: "A good sweater is an investment. The Chalk Sweater is Italian merino—soft enough to wear against skin, refined enough to wear to dinner. It's the kind of quality that lasts decades if you treat it right."
+    story: "A good sweater is an investment. The Chalk Sweater is Italian merino:soft enough to wear against skin, refined enough to wear to dinner. It's the kind of quality that lasts decades if you treat it right."
   },
   '8': {
     name: "LUNAR TEE",
@@ -126,7 +126,7 @@ const products = {
       "Preshrunk",
       "Durable yet soft hand-feel"
     ],
-    story: "Everyone needs a perfect tee. The Lunar Tee is that tee—heavy enough to feel substantial, soft enough to forget you're wearing it. It's the foundation of a good wardrobe. Buy three."
+    story: "Everyone needs a perfect tee. The Lunar Tee is that tee:heavy enough to feel substantial, soft enough to forget you're wearing it. It's the foundation of a good wardrobe. Buy three."
   }
 }
 
@@ -173,7 +173,7 @@ export function ProductDetail({ id }: { id: string }) {
       name: product.name,
       price: product.price,
       size: selectedSize,
-      arc: 'Arc 3 — Light',
+      arc: 'Arc 3 Light',
       category: 'TOPS',
     })
 
@@ -207,7 +207,7 @@ export function ProductDetail({ id }: { id: string }) {
               {product.name}
             </p>
             <p className="text-sm text-gray-300">
-              Size {selectedSize} — ${product.price}.00 AUD
+              Size {selectedSize} : ${product.price}.00 AUD
             </p>
             <div className="flex gap-3 pt-3 border-t border-gray-800">
               <motion.button
@@ -306,7 +306,7 @@ export function ProductDetail({ id }: { id: string }) {
               {/* Header */}
               <div className="space-y-4 pb-8 border-b border-black/10">
                 <p className="text-[10px] tracking-[0.3em] uppercase text-gray-400">
-                  ARC 3 — LIGHT / {product.category}
+                  ARC 3 LIGHT / {product.category}
                 </p>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight uppercase">
                   {product.name}
@@ -341,7 +341,7 @@ export function ProductDetail({ id }: { id: string }) {
                 <ul className="space-y-2">
                   {product.details.map((detail, index) => (
                     <li key={index} className="text-xs text-gray-500 flex items-start gap-3">
-                      <span className="text-gray-300 mt-1">—</span>
+                      <span className="text-gray-300 mt-1">:</span>
                       <span>{detail}</span>
                     </li>
                   ))}
@@ -389,7 +389,7 @@ export function ProductDetail({ id }: { id: string }) {
                     : 'bg-black/10 text-gray-400 cursor-not-allowed border border-black/5'
                 }`}
               >
-                {selectedSize ? `Add to cart — $${product.price}.00 AUD` : 'Select a size'}
+                {selectedSize ? `Add to cart : $${product.price}.00 AUD` : 'Select a size'}
               </motion.button>
 
               {/* Limited Production Message */}
@@ -400,22 +400,22 @@ export function ProductDetail({ id }: { id: string }) {
                 className="p-6 border border-black/10 bg-black/5"
               >
                 <p className="text-xs leading-relaxed text-gray-500">
-                  <span className="font-semibold text-black">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited—designed to transcend seasons, not chase trends.
+                  <span className="font-semibold text-black">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited:designed to transcend seasons, not chase trends.
                 </p>
               </motion.div>
 
               {/* Shipping Info */}
               <div className="space-y-3 text-xs text-gray-400">
                 <p className="flex items-start gap-3">
-                  <span className="text-gray-300">—</span>
+                  <span className="text-gray-300">:</span>
                   <span>Ships in 1-3 weeks</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-gray-300">—</span>
+                  <span className="text-gray-300">:</span>
                   <span>All sales are final</span>
                 </p>
                 <p className="flex items-start gap-3">
-                  <span className="text-gray-300">—</span>
+                  <span className="text-gray-300">:</span>
                   <span>Free shipping on orders over $200 AUD</span>
                 </p>
               </div>
@@ -432,10 +432,10 @@ export function ProductDetail({ id }: { id: string }) {
               <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-400">Shop</h3>
               <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 — Shadow</Link>
+                  <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 Shadow</Link>
                 </li>
                 <li>
-                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 — Light</Link>
+                  <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 Light</Link>
                 </li>
               </ul>
             </div>
@@ -480,7 +480,7 @@ export function ProductDetail({ id }: { id: string }) {
             </div>
           </div>
           <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
-            <p>© 2025, 1ABEL — All rights reserved</p>
+            <p>© 2025, 1ABEL All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>

@@ -20,7 +20,7 @@ const products = {
       "Oversized relaxed fit",
       "Pre-washed for minimal shrinkage"
     ],
-    story: "Born from late nights in the studio. This thermal embodies the weight of creation—heavy, substantial, grounding. It's not what you wear when you're trying to impress. It's what you wear when you're focused on the work."
+    story: "Born from late nights in the studio. This thermal embodies the weight of creation:heavy, substantial, grounding. It's not what you wear when you're trying to impress. It's what you wear when you're focused on the work."
   },
   '2': {
     name: "VOID HOODIE",
@@ -34,7 +34,7 @@ const products = {
       "Elongated drawstrings with metal aglets",
       "Kangaroo pocket with hidden internal pocket"
     ],
-    story: "For those who understand that presence doesn't require volume. The Void Hoodie creates negative space around you—a field of calm in chaos. Wear it when you need to disappear into focus."
+    story: "For those who understand that presence doesn't require volume. The Void Hoodie creates negative space around you:a field of calm in chaos. Wear it when you need to disappear into focus."
   },
   '3': {
     name: "OBSIDIAN ZIPUP",
@@ -48,7 +48,7 @@ const products = {
       "Reflective 3M detailing on sleeves",
       "Adjustable hem with hidden drawcord"
     ],
-    story: "The piece you reach for when crossing thresholds. Studio to street. Day to night. The Obsidian Zipup bridges states—functional armor that looks intentional, not technical."
+    story: "The piece you reach for when crossing thresholds. Studio to street. Day to night. The Obsidian Zipup bridges states:functional armor that looks intentional, not technical."
   },
   '4': {
     name: "ECLIPSE PUFFER",
@@ -62,7 +62,7 @@ const products = {
       "Extreme oversized silhouette",
       "Internal storm flap and zipper garage"
     ],
-    story: "When you need to block out the cold and the noise. The Eclipse Puffer creates a cocoon—your personal atmosphere. It's excessive by design. Unapologetic in its volume."
+    story: "When you need to block out the cold and the noise. The Eclipse Puffer creates a cocoon:your personal atmosphere. It's excessive by design. Unapologetic in its volume."
   },
   '5': {
     name: "NOCTURNAL THERMAL",
@@ -83,7 +83,7 @@ const products = {
     price: 135,
     category: "TOPS",
     collection: "SHADOW",
-    description: "Essential heavyweight crewneck. No logos, no graphics—just weight and construction. The foundation piece.",
+    description: "Essential heavyweight crewneck. No logos, no graphics:just weight and construction. The foundation piece.",
     details: [
       "420 GSM brushed fleece cotton",
       "Drop-shoulder construction",
@@ -104,7 +104,7 @@ const products = {
       "Tapered sleeves",
       "Double-needle stitching throughout"
     ],
-    story: "The long-sleeve that actually fits. The Onyx isn't an afterthought—it's purpose-built. Layer it under hoodies or wear it solo. Either way, it holds its shape."
+    story: "The long-sleeve that actually fits. The Onyx isn't an afterthought:it's purpose-built. Layer it under hoodies or wear it solo. Either way, it holds its shape."
   },
   '8': {
     name: "PHANTOM TEE",
@@ -118,7 +118,7 @@ const products = {
       "Reinforced shoulder seams",
       "Pre-shrunk and garment dyed"
     ],
-    story: "Your everyday foundational tee. The Phantom gets better with every wash—fabric softens, fit relaxes, character develops. This is the tee you'll still be wearing years from now."
+    story: "Your everyday foundational tee. The Phantom gets better with every wash:fabric softens, fit relaxes, character develops. This is the tee you'll still be wearing years from now."
   }
 }
 
@@ -163,7 +163,7 @@ export function ProductDetail({ id }: { id: string }) {
       name: product.name,
       price: product.price,
       size: selectedSize,
-      arc: 'Arc 2 — Shadow',
+      arc: 'Arc 2 Shadow',
       category: product.category,
     })
 
@@ -194,7 +194,7 @@ export function ProductDetail({ id }: { id: string }) {
                 Added to cart
               </p>
               <p className="text-xs text-gray-600 mb-4">
-                {product.name} — Size {selectedSize}
+                {product.name} Size {selectedSize}
               </p>
               <div className="flex gap-3">
                 <button
@@ -293,7 +293,7 @@ export function ProductDetail({ id }: { id: string }) {
               {/* Collection & Name */}
               <div className="mb-8">
                 <p className="text-[10px] tracking-[0.3em] uppercase text-gray-600 mb-6">
-                  Arc 2 — {product.collection}
+                  Arc 2 {product.collection}
                 </p>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-none">
                   {product.name}
@@ -378,7 +378,7 @@ export function ProductDetail({ id }: { id: string }) {
                   <ul className="space-y-2">
                     {product.details.map((detail, index) => (
                       <li key={index} className="flex items-start gap-2">
-                        <span className="text-gray-600 mt-1">—</span>
+                        <span className="text-gray-600 mt-1">:</span>
                         <span>{detail}</span>
                       </li>
                     ))}
@@ -417,10 +417,10 @@ export function ProductDetail({ id }: { id: string }) {
               <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Shop</h3>
               <ul className="space-y-3 text-sm text-gray-500">
                 <li>
-                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 — Shadow</Link>
+                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 Shadow</Link>
                 </li>
                 <li>
-                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 — Light</Link>
+                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 Light</Link>
                 </li>
               </ul>
             </div>
@@ -465,7 +465,7 @@ export function ProductDetail({ id }: { id: string }) {
             </div>
           </div>
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
-            <p>© 2025, 1ABEL — All rights reserved</p>
+            <p>© 2025, 1ABEL All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>

@@ -213,12 +213,12 @@ export default function ContactPage() {
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
                   <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 — Shadow</Link>
+                    <Link href="/arc-2" className="hover:text-black transition-colors inline-block">Arc 2 Shadow</Link>
                   </motion.div>
                 </li>
                 <li>
                   <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 — Light</Link>
+                    <Link href="/arc-3" className="hover:text-black transition-colors inline-block">Arc 3 Light</Link>
                   </motion.div>
                 </li>
               </ul>
