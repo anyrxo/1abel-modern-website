@@ -21,56 +21,56 @@ export default function Arc3TopsPage() {
     {
       id: 1,
       name: "CLOUD THERMAL",
-      price: 100.00,
+      price: 118.00,
       category: "Thermal",
       soldOut: false
     },
     {
       id: 2,
       name: "ETERNAL HOODIE",
-      price: 130.00,
+      price: 142.00,
       category: "Hoodie",
       soldOut: false
     },
     {
       id: 3,
       name: "FROST ZIPUP",
-      price: 130.00,
+      price: 152.00,
       category: "Zip-Up",
       soldOut: false
     },
     {
       id: 4,
       name: "IVORY HOODIE",
-      price: 130.00,
+      price: 138.00,
       category: "Hoodie",
       soldOut: false
     },
     {
       id: 5,
       name: "ARCTIC PUFFER",
-      price: 200.00,
+      price: 275.00,
       category: "Outerwear",
       soldOut: false
     },
     {
       id: 6,
       name: "PEARL THERMAL",
-      price: 100.00,
+      price: 115.00,
       category: "Thermal",
       soldOut: false
     },
     {
       id: 7,
       name: "CHALK SWEATER",
-      price: 130.00,
+      price: 155.00,
       category: "Sweater",
       soldOut: false
     },
     {
       id: 8,
       name: "LUNAR TEE",
-      price: 65.00,
+      price: 72.00,
       category: "T-Shirt",
       soldOut: false
     }
