@@ -1,178 +1,295 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
+import { useRef, useState } from 'react'
 
 export default function Arc2AccessoriesPage() {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [hoveredProduct, setHoveredProduct] = useState<number | null>(null)
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"]
+  })
+
+  const headerY = useTransform(scrollYProgress, [0, 0.3], [0, -50])
+  const headerOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0])
+
   const products = [
     {
       id: 1,
       name: "SHADOW CHAIN",
-      price: "$100.00 AUD"
+      price: 100.00,
+      category: "Chain",
+      soldOut: false
     },
     {
       id: 2,
       name: "OBSIDIAN RING",
-      price: "$80.00 AUD"
+      price: 80.00,
+      category: "Ring",
+      soldOut: false
     },
     {
       id: 3,
       name: "MIDNIGHT BEANIE",
-      price: "$40.00 AUD"
+      price: 40.00,
+      category: "Beanie",
+      soldOut: false
     },
     {
       id: 4,
       name: "VOID GLOVES",
-      price: "$60.00 AUD"
+      price: 60.00,
+      category: "Gloves",
+      soldOut: false
     },
     {
       id: 5,
       name: "ONYX BELT",
-      price: "$120.00 AUD"
+      price: 120.00,
+      category: "Belt",
+      soldOut: false
     }
   ]
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div ref={containerRef} className="bg-black text-white min-h-screen relative">
       <Header />
 
-      <main className="pt-24 pb-24">
-        <div className="max-w-7xl mx-auto px-8">
+      {/* Noise texture overlay */}
+      <div className="fixed inset-0 opacity-[0.015] pointer-events-none mix-blend-overlay z-10">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIvPjwvc3ZnPg==')]" />
+      </div>
+
+      <main className="pt-32 pb-24 px-4 md:px-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Breadcrumb */}
           <motion.div
             className="mb-12"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <motion.div whileHover={{ x: -4 }} transition={{ duration: 0.2 }}>
-              <Link href="/arc-2" className="text-xs text-gray-500 hover:text-white transition-colors uppercase tracking-wider inline-block">
-                ← Back to Arc 2
-              </Link>
+            <Link href="/arc-2" className="group inline-flex items-center gap-2 text-xs text-gray-500 hover:text-white transition-colors uppercase tracking-[0.2em]">
+              <motion.span
+                className="inline-block"
+                whileHover={{ x: -4 }}
+                transition={{ duration: 0.3 }}
+              >
+                ←
+              </motion.span>
+              <span>Back to Arc 2</span>
+            </Link>
+          </motion.div>
+
+          {/* Page Header with Parallax */}
+          <motion.div
+            style={{ y: headerY, opacity: headerOpacity }}
+            className="mb-20 text-center relative"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            >
+              <p className="text-xs tracking-[0.3em] uppercase text-gray-600 mb-6">
+                Shadow Collection
+              </p>
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 uppercase">
+                Accessories
+              </h1>
+              <motion.div
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ duration: 1.5, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                className="h-[1px] w-32 bg-gradient-to-r from-transparent via-gray-600 to-transparent mx-auto mb-8"
+              />
+              <p className="text-sm text-gray-500 max-w-xl mx-auto leading-relaxed">
+                The details that complete your vision. Minimal, intentional pieces
+                designed to elevate without overpowering.
+              </p>
             </motion.div>
           </motion.div>
 
+          {/* Products Grid */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mb-16 text-center"
-          >
-            <motion.h1
-              className="text-5xl md:text-7xl font-bold tracking-tighter mb-4"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            >
-              ARC 2 — ACCESSORIES
-            </motion.h1>
-            <motion.div
-              className="h-px w-32 bg-gray-700 mx-auto mb-4"
-              initial={{ width: 0 }}
-              animate={{ width: 128 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            />
-            <motion.p
-              className="text-gray-500 text-sm tracking-wide"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              SHADOW COLLECTION
-            </motion.p>
-          </motion.div>
-
-          <motion.div
-            className="grid grid-cols-2 md:grid-cols-4 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12"
             initial="hidden"
             animate="visible"
             variants={{
               visible: {
                 transition: {
-                  staggerChildren: 0.1
+                  staggerChildren: 0.08
                 }
               }
             }}
           >
-            {products.map((product, index) => (
+            {products.map((product) => (
               <motion.div
                 key={product.id}
                 variants={{
-                  hidden: { opacity: 0, y: 30 },
+                  hidden: { opacity: 0, y: 40 },
                   visible: { opacity: 1, y: 0 }
                 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                whileHover={{ y: -8 }}
-                className="group"
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                onMouseEnter={() => setHoveredProduct(product.id)}
+                onMouseLeave={() => setHoveredProduct(null)}
               >
-                <Link href={`/arc-2/accessories/${product.id}`}>
+                <Link href={`/arc-2/accessories/${product.id}`} className="group block">
+                  {/* Product Image */}
+                  <div className="relative overflow-hidden mb-6">
+                    <motion.div
+                      className="aspect-[3/4] bg-gradient-to-br from-gray-900 to-black border border-white/5 relative"
+                      whileHover={{ scale: 1.02 }}
+                      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+                    >
+                      {/* Hover overlay */}
+                      <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-700" />
+
+                      {/* Grid overlay on hover */}
+                      <div className="absolute inset-0 opacity-0 group-hover:opacity-[0.03] transition-opacity duration-700"
+                        style={{
+                          backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
+                          backgroundSize: '20px 20px'
+                        }}
+                      />
+
+                      {/* Category badge */}
+                      <div className="absolute top-4 left-4 z-10">
+                        <span className="text-[10px] tracking-[0.2em] uppercase text-gray-500 bg-black/50 backdrop-blur-sm px-3 py-1 border border-white/10">
+                          {product.category}
+                        </span>
+                      </div>
+
+                      {/* Sold out overlay */}
+                      {product.soldOut && (
+                        <motion.div
+                          className="absolute inset-0 bg-black/90 flex items-center justify-center z-20"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                        >
+                          <div className="text-center">
+                            <p className="text-sm font-semibold tracking-[0.2em] uppercase">Sold Out</p>
+                            <p className="text-xs text-gray-500 mt-1">Limited Edition</p>
+                          </div>
+                        </motion.div>
+                      )}
+                    </motion.div>
+                  </div>
+
+                  {/* Product Info */}
+                  <div className="space-y-2">
+                    <motion.h3
+                      className="text-sm font-bold uppercase tracking-wide group-hover:text-gray-300 transition-colors"
+                      animate={{ x: hoveredProduct === product.id ? 4 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      {product.name}
+                    </motion.h3>
+                    <p className="text-sm text-gray-500">
+                      ${product.price.toFixed(2)} AUD
+                      {product.soldOut && <span className="ml-2 text-gray-600">— Sold Out</span>}
+                    </p>
+                  </div>
+
+                  {/* View Product CTA */}
                   <motion.div
-                    className="aspect-[3/4] bg-gray-900 mb-4 relative overflow-hidden border border-gray-800"
-                    whileHover={{ scale: 1.02 }}
-                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    className="mt-4 flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gray-600 group-hover:text-gray-400 transition-colors"
+                    animate={{ x: hoveredProduct === product.id ? 4 : 0 }}
+                    transition={{ duration: 0.3 }}
                   >
-                    <motion.div
-                      className="absolute inset-0 bg-white/0"
-                      whileHover={{ backgroundColor: "rgba(255, 255, 255, 0.05)" }}
-                      transition={{ duration: 0.4 }}
-                    />
-                    <motion.div
-                      className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ duration: 0.6, ease: "easeOut" }}
-                    />
+                    View Details
+                    <motion.span
+                      animate={{ x: hoveredProduct === product.id ? [0, 4, 0] : 0 }}
+                      transition={{ duration: 1.5, repeat: hoveredProduct === product.id ? Infinity : 0, ease: "easeInOut" }}
+                    >
+                      →
+                    </motion.span>
                   </motion.div>
-                  <motion.h3
-                    className="text-sm font-semibold mb-1 uppercase tracking-wide"
-                    whileHover={{ x: 4 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    {product.name}
-                  </motion.h3>
-                  <p className="text-sm text-gray-500">{product.price}</p>
                 </Link>
               </motion.div>
             ))}
           </motion.div>
+
+          {/* Collection Note */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-32 text-center max-w-2xl mx-auto"
+          >
+            <p className="text-xs tracking-[0.3em] uppercase text-gray-600 mb-4">
+              Limited Production
+            </p>
+            <p className="text-sm text-gray-500 leading-relaxed">
+              Each piece is intentionally limited. We don't chase trends—we create
+              archetypes designed to transcend seasons. When it's gone, it's gone.
+            </p>
+          </motion.div>
         </div>
       </main>
 
-      <footer className="bg-black border-t border-gray-800 py-16 px-8">
+      {/* Footer */}
+      <footer className="bg-black border-t border-white/10 py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
             <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wide text-white">Shop</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><Link href="/arc-2" className="hover:text-white">Arc 2 — Shadow</Link></li>
-                <li><Link href="/arc-3" className="hover:text-white">Arc 3 — Light</Link></li>
+              <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Shop</h3>
+              <ul className="space-y-3 text-sm text-gray-500">
+                <li>
+                  <Link href="/arc-2" className="hover:text-white transition-colors inline-block">Arc 2 — Shadow</Link>
+                </li>
+                <li>
+                  <Link href="/arc-3" className="hover:text-white transition-colors inline-block">Arc 3 — Light</Link>
+                </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wide text-white">Support</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
-                <li><Link href="/shipping" className="hover:text-white">Shipping</Link></li>
-                <li><Link href="/refund" className="hover:text-white">Returns</Link></li>
+              <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Support</h3>
+              <ul className="space-y-3 text-sm text-gray-500">
+                <li>
+                  <Link href="/contact" className="hover:text-white transition-colors inline-block">Contact</Link>
+                </li>
+                <li>
+                  <Link href="/shipping" className="hover:text-white transition-colors inline-block">Shipping</Link>
+                </li>
+                <li>
+                  <Link href="/refund" className="hover:text-white transition-colors inline-block">Returns</Link>
+                </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wide text-white">Company</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><Link href="/about" className="hover:text-white">About</Link></li>
-                <li><Link href="/terms" className="hover:text-white">Terms</Link></li>
-                <li><Link href="/privacy" className="hover:text-white">Privacy</Link></li>
+              <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Company</h3>
+              <ul className="space-y-3 text-sm text-gray-500">
+                <li>
+                  <Link href="/about" className="hover:text-white transition-colors inline-block">About</Link>
+                </li>
+                <li>
+                  <Link href="/terms" className="hover:text-white transition-colors inline-block">Terms</Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="hover:text-white transition-colors inline-block">Privacy</Link>
+                </li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4 uppercase tracking-wide text-white">Connect</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="https://instagram.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-white">Instagram</a></li>
-                <li><a href="https://twitter.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-white">Twitter</a></li>
+              <h3 className="text-xs font-semibold mb-6 uppercase tracking-[0.2em] text-gray-600">Connect</h3>
+              <ul className="space-y-3 text-sm text-gray-500">
+                <li>
+                  <a href="https://instagram.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-block">Instagram</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors inline-block">Twitter</a>
+                </li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
-            <p>© 2025, 1ABEL</p>
+          <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
+            <p>© 2025, 1ABEL — All rights reserved</p>
             <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>
