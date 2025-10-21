@@ -3,105 +3,54 @@
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { motion } from 'framer-motion'
-import AnimatedGradientText from '@/components/magicui/animated-gradient-text'
-import ShimmerButton from '@/components/magicui/shimmer-button'
-import NumberTicker from '@/components/magicui/number-ticker'
-import WordRotate from '@/components/magicui/word-rotate'
-import BlurIn from '@/components/magicui/blur-in'
-import { Instagram, Youtube, Twitter, TrendingUp, Users, DollarSign, Sparkles, Zap, Globe, Heart, ArrowRight } from 'lucide-react'
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
+    <div className="min-h-screen bg-white text-black">
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 relative overflow-hidden">
-        {/* Animated background */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-red-900/10 via-transparent to-transparent animate-pulse" />
+      <section className="pt-32 pb-20 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
-            className="absolute inset-0"
-            animate={{
-              background: [
-                'radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%)',
-                'radial-gradient(circle at 80% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%)',
-                'radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%)',
-              ]
-            }}
-            transition={{ duration: 10, repeat: Infinity }}
-          />
-        </div>
-        
-        <div className="max-w-6xl mx-auto text-center relative z-10">
-          <AnimatedGradientText className="mb-8">
-            <Sparkles className="w-4 h-4 mr-2" />
-            The Anyro Revolution
-            <Sparkles className="w-4 h-4 ml-2" />
-          </AnimatedGradientText>
-          
-          <BlurIn
-            word="FROM SOCIAL MEDIA TO MUSIC"
-            className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-red-200 to-red-600 bg-clip-text text-transparent"
-            duration={1}
-          />
-          
-          <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto"
+            transition={{ duration: 0.8 }}
           >
-            Industry-leading social media experts who dominated with <WordRotate words={["streamers", "models", "influencers", "creators"]} className="text-red-600 font-bold" /> 
-            discovered music labels were stuck in 2010. So we decided to revolutionize an entire industry.
-          </motion.p>
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold tracking-tighter mb-8 uppercase">
+              About 1ABEL
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Where sound becomes style. Premium streetwear inspired by music, designed for those who live at the intersection of culture and creativity.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      {/* The Social Media Story */}
-      <section className="py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+      {/* Our Story */}
+      <section className="py-16 md:py-20 px-4 md:px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-6xl font-bold mb-8">
-              THE <span className="text-red-600">DISRUPTION</span> STORY
-            </h2>
-          </motion.div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl font-bold mb-6 text-red-600">Before 1ABEL</h3>
-              <p className="text-xl text-gray-300 mb-6">
-                We built empires for streamers and models. Turned unknown faces into millionaires. 
-                Created viral moments that broke the internet. Managed accounts with millions of followers.
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-tight">
+                Our Story
+              </h2>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                1ABEL was born from a simple belief: clothing should be more than fabric. It should embody an energy, a mood, a moment in time.
               </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center gap-4">
-                  <Instagram className="w-6 h-6 text-red-600" />
-                  <span className="text-gray-400">10M+ followers managed across platforms</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <DollarSign className="w-6 h-6 text-red-600" />
-                  <span className="text-gray-400">$5M+ in brand deals secured</span>
-                </div>
-                <div className="flex items-center gap-4">
-                  <TrendingUp className="w-6 h-6 text-red-600" />
-                  <span className="text-gray-400">500% average growth rate</span>
-                </div>
-              </div>
+              <p className="text-gray-600 mb-4 leading-relaxed">
+                Each Arc represents a complete collection inspired by specific sounds and atmospheres. Arc 2 — Shadow draws from dark, heavy textures and midnight palettes. Arc 3 — Light embodies ethereal minimalism with luminous tones.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                We don't follow trends. We create timeless pieces that speak to individuals who understand that style is a form of self-expression.
+              </p>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -109,310 +58,194 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20 rounded-2xl blur-3xl" />
-              <div className="relative bg-gray-900/90 backdrop-blur p-8 rounded-2xl border border-gray-700">
-                <h3 className="text-2xl font-bold mb-4">The Moment Everything Changed</h3>
-                <p className="text-gray-300 mb-4">
-                  "We watched talented artists sign terrible deals with labels who didn't understand 
-                  TikTok, thought Instagram was just for photos, and were still pitching radio DJs 
-                  like it's 2005."
-                </p>
-                <p className="text-gray-400 italic">
-                  That's when we realized: Music needed what we do best - modern marketing that actually works.
-                </p>
+              <div className="aspect-square bg-black border-2 border-black flex items-center justify-center">
+                <span className="text-white text-6xl md:text-8xl font-bold tracking-tighter opacity-20">
+                  1ABEL
+                </span>
               </div>
             </motion.div>
-          </div>
-
-          {/* The Revolution */}
-          <div className="text-center mb-20">
-            <motion.h3
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-4xl font-bold mb-12"
-            >
-              SO WE BUILT <span className="text-red-600">1ABEL</span>
-            </motion.h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <Globe className="w-8 h-8" />,
-                  title: "Global Reach",
-                  description: "Applied our viral strategies to music. Result: 150M+ streams and counting."
-                },
-                {
-                  icon: <Users className="w-8 h-8" />,
-                  title: "34 Artists",
-                  description: "Each one carefully selected, each one on their way to global recognition."
-                },
-                {
-                  icon: <DollarSign className="w-8 h-8" />,
-                  title: "$2M+ Deals",
-                  description: "Brand partnerships that traditional labels could never secure."
-                }
-              ].map((item, index) => (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="relative group"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 to-orange-600/10 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                  <div className="relative bg-gray-900/90 backdrop-blur p-8 rounded-2xl border border-gray-700 hover:border-red-600/50 transition-all duration-300">
-                    <div className="text-red-600 mb-4">{item.icon}</div>
-                    <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                    <p className="text-gray-400">{item.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Our Advantage */}
-      <section className="py-20 px-4">
+      {/* Our Philosophy */}
+      <section className="py-16 md:py-20 px-4 md:px-8">
         <div className="max-w-6xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold text-center mb-16"
+            className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 uppercase tracking-tight"
           >
-            WHY WE'RE <span className="text-red-600">DIFFERENT</span>
+            Our Philosophy
           </motion.h2>
-          
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Quality First",
+                description: "Premium materials and meticulous craftsmanship in every piece. We don't compromise on quality."
+              },
+              {
+                title: "Minimalist Design",
+                description: "Clean lines, purposeful details, and timeless aesthetics. Less is more, always."
+              },
+              {
+                title: "Music-Inspired",
+                description: "Each collection is born from sound. Music sets the mood, we translate it into style."
+              }
+            ].map((item, index) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="border-2 border-black p-6 md:p-8"
+              >
+                <h3 className="text-xl md:text-2xl font-bold mb-4 uppercase tracking-wide">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* The Arc System */}
+      <section className="py-16 md:py-20 px-4 md:px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <motion.h2
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 uppercase tracking-tight"
+          >
+            The Arc System
+          </motion.h2>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="space-y-8"
             >
-              <h3 className="text-3xl font-bold text-gray-400">Traditional Labels</h3>
-              <ul className="space-y-4 text-gray-400">
-                <li className="flex items-start gap-3">
-                  <span className="text-gray-500 mt-1">✗</span>
-                  <span>Still pitching to radio DJs and hoping for the best</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-gray-500 mt-1">✗</span>
-                  <span>18-month release cycles that kill momentum</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-gray-500 mt-1">✗</span>
-                  <span>360 deals that take everything from artists</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-gray-500 mt-1">✗</span>
-                  <span>Zero understanding of TikTok, Reels, or viral marketing</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-gray-500 mt-1">✗</span>
-                  <span>Stuck in outdated methods from 20 years ago</span>
-                </li>
-              </ul>
+              <div className="bg-black text-white p-8 md:p-12">
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 uppercase">Arc 2 — Shadow</h3>
+                <div className="h-px w-24 bg-gray-600 mb-6" />
+                <p className="text-gray-400 mb-6 leading-relaxed">
+                  Born from darkness. Heavy textures, midnight palettes, and commanding presence.
+                  This collection embodies raw energy and atmospheric depth.
+                </p>
+                <Link href="/arc-2">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="border-2 border-white text-white hover:bg-white hover:text-black transition-colors px-6 py-3 text-sm uppercase tracking-wider font-medium"
+                  >
+                    Explore Arc 2
+                  </motion.button>
+                </Link>
+              </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="space-y-8"
             >
-              <h3 className="text-3xl font-bold text-red-600">1ABEL Method</h3>
-              <ul className="space-y-4 text-gray-300">
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✓</span>
-                  <span>Viral TikTok campaigns that actually convert to streams</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✓</span>
-                  <span>2-week releases to capture momentum instantly</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✓</span>
-                  <span>Fair deals: 80% royalties, artists keep masters</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✓</span>
-                  <span>Algorithm experts who've grown millions of followers</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-red-600 mt-1">✓</span>
-                  <span>Modern tactics that dominate modern platforms</span>
-                </li>
-              </ul>
+              <div className="bg-white border-2 border-black text-black p-8 md:p-12">
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 uppercase">Arc 3 — Light</h3>
+                <div className="h-px w-24 bg-gray-300 mb-6" />
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Clarity in form. Ethereal minimalism with luminous tones and refined aesthetics.
+                  This collection speaks softly but powerfully.
+                </p>
+                <Link href="/arc-3">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="border-2 border-black text-black hover:bg-black hover:text-white transition-colors px-6 py-3 text-sm uppercase tracking-wider font-medium"
+                  >
+                    Explore Arc 3
+                  </motion.button>
+                </Link>
+              </div>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* The Numbers */}
-      <section className="py-20 px-4 bg-gradient-to-b from-gray-900 to-black">
-        <div className="max-w-6xl mx-auto">
-          <motion.h2
+      {/* Commitment */}
+      <section className="py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold text-center mb-16"
           >
-            THE <span className="text-red-600">PROOF</span> IS IN THE NUMBERS
-          </motion.h2>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-            {[
-              { value: 150, suffix: "M+", label: "Total Streams", description: "Across all platforms" },
-              { value: 34, label: "Global Artists", description: "And growing fast" },
-              { value: 2, suffix: "M+", label: "$Brand Deals", description: "Secured for artists" },
-              { value: 500, suffix: "M+", label: "Social Views", description: "Viral campaigns" }
-            ].map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="text-5xl font-bold text-red-600 mb-2">
-                  <NumberTicker value={stat.value} />{stat.suffix}
-                </div>
-                <div className="text-xl text-white mb-1">{stat.label}</div>
-                <div className="text-sm text-gray-400">{stat.description}</div>
-              </motion.div>
-            ))}
-          </div>
-          
-          {/* Case Studies */}
-          <div className="space-y-8">
-            <h3 className="text-3xl font-bold text-center mb-12">Success Stories</h3>
-            {[
-              {
-                artist: "1ABEL Artist",
-                before: "0 monthly listeners",
-                after: "100K+ monthly listeners",
-                time: "6 months",
-                method: "TikTok viral campaign + playlist strategy"
-              },
-              {
-                artist: "1ABEL Artist",
-                before: "Local producer",
-                after: "Nike & Fashion Nova deals",
-                time: "4 months",
-                method: "Influencer partnerships + brand alignment"
-              },
-              {
-                artist: "1ABEL Artist",
-                before: "Independent struggle",
-                after: "Billboard charting",
-                time: "8 months",
-                method: "Strategic features + social momentum"
-              }
-            ].map((story, index) => (
-              <motion.div
-                key={story.artist}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-gray-900/50 p-8 rounded-2xl border border-gray-700"
-              >
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
-                  <div>
-                    <h4 className="text-xl font-bold text-red-600">{story.artist}</h4>
-                    <p className="text-gray-400">Artist</p>
-                  </div>
-                  <div>
-                    <p className="text-gray-400">Before 1ABEL</p>
-                    <p className="font-semibold">{story.before}</p>
-                  </div>
-                  <div>
-                    <p className="text-gray-400">After 1ABEL</p>
-                    <p className="font-semibold text-green-500">{story.after}</p>
-                  </div>
-                  <div>
-                    <p className="text-gray-400">Time: {story.time}</p>
-                    <p className="text-sm text-gray-500">{story.method}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 uppercase tracking-tight">
+              Our Commitment
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+              Every piece is crafted with attention to detail and a commitment to quality.
+              We believe in slow fashion — creating timeless pieces that last, not trends that fade.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              1ABEL is for those who appreciate the intersection of music, art, and fashion.
+              For those who understand that what you wear is an extension of who you are.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      {/* Join the Revolution CTA */}
-      <section className="py-20 px-4 bg-gradient-to-r from-gray-900/20 to-black relative overflow-hidden">
-        {/* Animated particles */}
-        <div className="absolute inset-0">
-          {[...Array(30)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-1 h-1 bg-red-600/30 rounded-full"
-              initial={{ 
-                x: Math.random() * 1000,
-                y: Math.random() * 1000
-              }}
-              animate={{
-                x: Math.random() * 1000,
-                y: Math.random() * 1000
-              }}
-              transition={{
-                duration: Math.random() * 20 + 10,
-                repeat: Infinity,
-                repeatType: "reverse"
-              }}
-            />
-          ))}
-        </div>
-        
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <AnimatedGradientText className="mb-8">
-            <Zap className="w-4 h-4 mr-2" />
-            Limited Spots Available
-            <Zap className="w-4 h-4 ml-2" />
-          </AnimatedGradientText>
-          
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-white to-red-600 bg-clip-text text-transparent">
-            READY TO WORK WITH THE EXPERTS?
-          </h2>
-          <p className="text-xl text-gray-300 mb-12">
-            We only work with artists who are ready to embrace modern marketing and build real careers.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a 
-              href="mailto:anyro@1abel.com?subject=Artist%20Application" 
-              className="inline-flex items-center justify-center px-12 py-5 text-lg font-semibold text-white bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-lg transition-all duration-300 shadow-2xl transform hover:scale-105 active:scale-95"
-            >
-              Apply Now
-              <ArrowRight className="w-5 h-5 ml-3 text-white" />
-            </a>
-            <Link href="/contact">
-              <motion.a 
-                href="https://twitter.com/anyrxo" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="border border-white text-white hover:bg-white hover:text-black px-12 py-4 rounded-lg text-lg font-semibold transition-colors inline-block"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Learn More
-              </motion.a>
-            </Link>
+      {/* Footer */}
+      <footer className="bg-white border-t border-black py-16 px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h3 className="font-bold mb-4 uppercase tracking-wide">Shop</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><Link href="/arc-2" className="hover:text-black">Arc 2 — Shadow</Link></li>
+                <li><Link href="/arc-3" className="hover:text-black">Arc 3 — Light</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4 uppercase tracking-wide">Support</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><Link href="/contact" className="hover:text-black">Contact Us</Link></li>
+                <li><Link href="/shipping" className="hover:text-black">Shipping</Link></li>
+                <li><Link href="/refund" className="hover:text-black">Returns</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4 uppercase tracking-wide">Company</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><Link href="/about" className="hover:text-black">About</Link></li>
+                <li><Link href="/terms" className="hover:text-black">Terms</Link></li>
+                <li><Link href="/privacy" className="hover:text-black">Privacy</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4 uppercase tracking-wide">Connect</h3>
+              <ul className="space-y-2 text-sm text-gray-600">
+                <li><a href="#" className="hover:text-black">Instagram</a></li>
+                <li><a href="#" className="hover:text-black">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+            <p>© 2025, 1ABEL</p>
+            <p className="mt-4 md:mt-0">SITE BY IIMAGINED</p>
           </div>
         </div>
-      </section>
+      </footer>
     </div>
   )
 }
