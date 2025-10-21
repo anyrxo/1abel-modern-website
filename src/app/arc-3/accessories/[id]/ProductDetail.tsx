@@ -36,7 +36,7 @@ const products = {
       "Water resistant",
       "Lifetime warranty"
     ],
-    story: "Simple rings are hard to find. Most are too flashy or too plain. The Ivory Ring finds the balance:minimal enough to wear daily, substantial enough to feel quality. It's the ring you don't take off."
+    story: "Simple rings are hard to find. Most are too flashy or too plain. The Ivory Ring finds the balance—minimal enough to wear daily, substantial enough to feel quality. It's the ring you don't take off."
   },
   '3': {
     name: "CLOUD BEANIE",
@@ -363,7 +363,7 @@ export function ProductDetail({ id }: { id: string }) {
                 className="p-6 border border-black/10 bg-black/5"
               >
                 <p className="text-xs leading-relaxed text-gray-500">
-                  <span className="font-semibold text-black">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited:designed to transcend seasons, not chase trends.
+                  <span className="font-semibold text-black">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited—designed to transcend seasons, not chase trends.
                 </p>
               </motion.div>
 

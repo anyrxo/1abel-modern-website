@@ -113,7 +113,7 @@ function getBlogPostContent(slug: string) {
               <h3 className="text-2xl font-bold mb-4 text-green-600">✓ What Works</h3>
               <ul className="space-y-3 text-gray-300">
                 <li>• <strong>Hook in 0-3 seconds:</strong> Start with movement, text, or surprising statement</li>
-                <li>• <strong>15-second sweet spot:</strong> Videos under 15 seconds get highest completion rates</li>
+                <li>• <strong>15-second sweet spot—</strong> Videos under 15 seconds get highest completion rates</li>
                 <li>• <strong>Visual storytelling:</strong> Show don't tell - dancing, reactions, behind-scenes</li>
                 <li>• <strong>Trending sounds:</strong> Use audio that's already gaining traction</li>
                 <li>• <strong>Peak posting times:</strong> 6-10AM and 7-9PM in your target timezone</li>
@@ -2971,7 +2971,7 @@ function getBlogPostContent(slug: string) {
                 <h3 className="text-xl font-bold mb-4 text-blue-600">📚 Sync Libraries</h3>
                 <ul className="space-y-2 text-gray-300 mb-4">
                   <li>• <strong>Musicbed:</strong> High-end production music</li>
-                  <li>• <strong>AudioNetwork:</strong> Broad catalog, good for beginners</li>
+                  <li>• <strong>AudioNetwork—</strong> Broad catalog, good for beginners</li>
                   <li>• <strong>Epidemic Sound:</strong> Focus on online content</li>
                   <li>• <strong>APM Music:</strong> Traditional broadcast library</li>
                 </ul>

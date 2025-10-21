@@ -21,7 +21,7 @@ const products = {
       "Garment-dyed for soft hand-feel",
       "GOTS certified"
     ],
-    story: "Cargos don't have to be heavy. The Cloud Cargo reimagines utility:keeping the function, losing the weight. Soft organic cotton that moves with you, pockets that hold what you need without adding bulk. Freedom and function in one."
+    story: "Cargos don't have to be heavy. The Cloud Cargo reimagines utility—keeping the function, losing the weight. Soft organic cotton that moves with you, pockets that hold what you need without adding bulk. Freedom and function in one."
   },
   '2': {
     name: "IVORY SWEATS",
@@ -36,7 +36,7 @@ const products = {
       "Single back pocket",
       "Preshrunk"
     ],
-    story: "Some days you just need sweats. The Ivory Sweats are those sweats:soft enough to live in, clean enough to wear out. Pre-washed so they feel broken-in immediately. This is comfort without compromise."
+    story: "Some days you just need sweats. The Ivory Sweats are those sweats—soft enough to live in, clean enough to wear out. Pre-washed so they feel broken-in immediately. This is comfort without compromise."
   },
   '3': {
     name: "PEARL DENIM",
@@ -51,7 +51,7 @@ const products = {
       "Five-pocket styling",
       "Pre-faded for character"
     ],
-    story: "Light denim done right. The Pearl Denim has that perfect vintage fade:not too distressed, not too clean. Just the right amount of character. Stretch denim that moves, Japanese quality that lasts."
+    story: "Light denim done right. The Pearl Denim has that perfect vintage fade—not too distressed, not too clean. Just the right amount of character. Stretch denim that moves, Japanese quality that lasts."
   },
   '4': {
     name: "FROST JOGGERS",
@@ -66,7 +66,7 @@ const products = {
       "Elastic cuffs with adjusters",
       "Reflective details"
     ],
-    story: "Movement shouldn't be complicated. The Frost Joggers keep up with your pace:whether you're running errands or actually running. Technical fabrics that perform, clean aesthetic that doesn't scream 'activewear.'"
+    story: "Movement shouldn't be complicated. The Frost Joggers keep up with your pace—whether you're running errands or actually running. Technical fabrics that perform, clean aesthetic that doesn't scream 'activewear.'"
   },
   '5': {
     name: "CHALK JEANS",
@@ -81,7 +81,7 @@ const products = {
       "Tonal stitching",
       "Shape retention technology"
     ],
-    story: "Light jeans can be tricky:too loose, they look sloppy. Too tight, they're uncomfortable. The Chalk Jeans hit that sweet spot: slim enough to look intentional, comfortable enough to wear all day. Quality denim that keeps its shape."
+    story: "Light jeans can be tricky:too loose, they look sloppy. Too tight, they're uncomfortable. The Chalk Jeans hit that sweet spot— slim enough to look intentional, comfortable enough to wear all day. Quality denim that keeps its shape."
   },
   '6': {
     name: "LUNAR SWEATS",
@@ -356,7 +356,7 @@ export function ProductDetail({ id }: { id: string }) {
                 className="p-6 border border-black/10 bg-black/5"
               >
                 <p className="text-xs leading-relaxed text-gray-500">
-                  <span className="font-semibold text-black">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited:designed to transcend seasons, not chase trends.
+                  <span className="font-semibold text-black">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited—designed to transcend seasons, not chase trends.
                 </p>
               </motion.div>
 

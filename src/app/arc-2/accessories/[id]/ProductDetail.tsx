@@ -21,7 +21,7 @@ const products = {
       "Hypoallergenic and tarnish-resistant",
       "Comes with premium gift box"
     ],
-    story: "Good jewelry should feel like armor. This chain is heavy enough to remind you it's there:grounding, centering. It's the piece you put on every morning and don't take off. Sterling silver that won't fade or tarnish. Built for the long haul."
+    story: "Good jewelry should feel like armor. This chain is heavy enough to remind you it's there—grounding, centering. It's the piece you put on every morning and don't take off. Sterling silver that won't fade or tarnish. Built for the long haul."
   },
   '2': {
     name: "OBSIDIAN RING",
@@ -364,7 +364,7 @@ export function ProductDetail({ id }: { id: string }) {
                 className="p-6 border border-white/10 bg-white/5"
               >
                 <p className="text-xs leading-relaxed text-gray-500">
-                  <span className="font-semibold text-white">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited:designed to transcend seasons, not chase trends.
+                  <span className="font-semibold text-white">Limited production.</span> When this drop sells out, it's gone. We don't restock. Every piece is intentionally limited—designed to transcend seasons, not chase trends.
                 </p>
               </motion.div>
 

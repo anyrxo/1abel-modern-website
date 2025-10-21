@@ -20,7 +20,7 @@ const products = {
       "Oversized relaxed fit",
       "Pre-washed for minimal shrinkage"
     ],
-    story: "Born from late nights in the studio. This thermal embodies the weight of creation:heavy, substantial, grounding. It's not what you wear when you're trying to impress. It's what you wear when you're focused on the work."
+    story: "Born from late nights in the studio. This thermal embodies the weight of creation—heavy, substantial, grounding. It's not what you wear when you're trying to impress. It's what you wear when you're focused on the work."
   },
   '2': {
     name: "VOID HOODIE",
@@ -34,7 +34,7 @@ const products = {
       "Elongated drawstrings with metal aglets",
       "Kangaroo pocket with hidden internal pocket"
     ],
-    story: "For those who understand that presence doesn't require volume. The Void Hoodie creates negative space around you:a field of calm in chaos. Wear it when you need to disappear into focus."
+    story: "For those who understand that presence doesn't require volume. The Void Hoodie creates negative space around you—a field of calm in chaos. Wear it when you need to disappear into focus."
   },
   '3': {
     name: "OBSIDIAN ZIPUP",
@@ -48,7 +48,7 @@ const products = {
       "Reflective 3M detailing on sleeves",
       "Adjustable hem with hidden drawcord"
     ],
-    story: "The piece you reach for when crossing thresholds. Studio to street. Day to night. The Obsidian Zipup bridges states:functional armor that looks intentional, not technical."
+    story: "The piece you reach for when crossing thresholds. Studio to street. Day to night. The Obsidian Zipup bridges states—functional armor that looks intentional, not technical."
   },
   '4': {
     name: "ECLIPSE PUFFER",
@@ -62,7 +62,7 @@ const products = {
       "Extreme oversized silhouette",
       "Internal storm flap and zipper garage"
     ],
-    story: "When you need to block out the cold and the noise. The Eclipse Puffer creates a cocoon:your personal atmosphere. It's excessive by design. Unapologetic in its volume."
+    story: "When you need to block out the cold and the noise. The Eclipse Puffer creates a cocoon—your personal atmosphere. It's excessive by design. Unapologetic in its volume."
   },
   '5': {
     name: "NOCTURNAL THERMAL",
