@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
-import { User, ShoppingCart, ChevronDown, Menu, X } from 'lucide-react'
+import { BookOpen, ShoppingCart, ChevronDown, Menu, X } from 'lucide-react'
 import { useSound } from '@/lib/soundManager'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
@@ -167,17 +167,17 @@ export function Header() {
             <div className="hidden md:flex items-center justify-end space-x-8">
               <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
                 <Link
-                  href="/account"
+                  href="/about"
                   className={`text-xs font-medium tracking-wider uppercase transition-colors flex items-center relative ${
                     isDark
-                      ? isActive('/account') ? 'text-white' : 'text-gray-400 hover:text-white'
-                      : isActive('/account') ? 'text-black' : 'text-gray-500 hover:text-black'
+                      ? isActive('/about') ? 'text-white' : 'text-gray-400 hover:text-white'
+                      : isActive('/about') ? 'text-black' : 'text-gray-500 hover:text-black'
                   }`}
                   onClick={() => playClick()}
                 >
-                  <User className="w-4 h-4 mr-1" />
-                  ACCOUNT
-                  {isActive('/account') && (
+                  <BookOpen className="w-4 h-4 mr-1" />
+                  ABOUT
+                  {isActive('/about') && (
                     <motion.div
                       layoutId="activeNav"
                       className={`absolute -bottom-1 left-0 right-0 h-px ${isDark ? 'bg-white' : 'bg-black'}`}
@@ -334,18 +334,18 @@ export function Header() {
                   </AnimatePresence>
                 </div>
 
-                {/* Account Link */}
+                {/* About Link */}
                 <Link
-                  href="/account"
+                  href="/about"
                   className={`text-lg font-medium tracking-wider uppercase transition-colors flex items-center py-3 ${
                     isDark
-                      ? isActive('/account') ? 'text-white' : 'text-gray-400 hover:text-white'
-                      : isActive('/account') ? 'text-black' : 'text-gray-500 hover:text-black'
+                      ? isActive('/about') ? 'text-white' : 'text-gray-400 hover:text-white'
+                      : isActive('/about') ? 'text-black' : 'text-gray-500 hover:text-black'
                   }`}
                   onClick={() => { playClick(); setMobileMenuOpen(false); }}
                 >
-                  <User className="w-5 h-5 mr-2" />
-                  ACCOUNT
+                  <BookOpen className="w-5 h-5 mr-2" />
+                  ABOUT
                 </Link>
 
                 {/* Contact Link */}

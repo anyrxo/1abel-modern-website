@@ -321,12 +321,12 @@ export default function HomePage() {
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
                   <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <a href="#" className="hover:text-black transition-colors inline-block">Instagram</a>
+                    <a href="https://instagram.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors inline-block">Instagram</a>
                   </motion.div>
                 </li>
                 <li>
                   <motion.div whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
-                    <a href="#" className="hover:text-black transition-colors inline-block">Twitter</a>
+                    <a href="https://twitter.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors inline-block">Twitter</a>
                   </motion.div>
                 </li>
               </ul>

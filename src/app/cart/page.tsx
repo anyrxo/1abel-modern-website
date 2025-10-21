@@ -4,9 +4,11 @@ import { motion } from 'framer-motion'
 import { Header } from '@/components/Header'
 import { ShoppingBag, X, Plus, Minus } from 'lucide-react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useCart } from '@/lib/cartContext'
 
 export default function CartPage() {
+  const router = useRouter()
   const { items, removeItem, updateQuantity, totalPrice, clearCart } = useCart()
 
   return (
@@ -152,6 +154,7 @@ export default function CartPage() {
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
+                  onClick={() => router.push('/checkout')}
                   className="w-full px-8 py-4 bg-black text-white hover:bg-gray-800 transition-colors text-sm tracking-wider uppercase font-medium mb-4"
                 >
                   Proceed to Checkout

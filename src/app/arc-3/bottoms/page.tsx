@@ -189,8 +189,8 @@ export default function Arc3BottomsPage() {
             <div>
               <h3 className="font-bold mb-4 uppercase tracking-wide">Connect</h3>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li><a href="#" className="hover:text-black">Instagram</a></li>
-                <li><a href="#" className="hover:text-black">Twitter</a></li>
+                <li><a href="https://instagram.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-black">Instagram</a></li>
+                <li><a href="https://twitter.com/1abelofficial" target="_blank" rel="noopener noreferrer" className="hover:text-black">Twitter</a></li>
               </ul>
             </div>
           </div>
