@@ -233,7 +233,7 @@ export default function Arc3BottomsPage() {
               Limited Production
             </p>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Each piece is intentionally limited. We don't chase trends:we create
+              Each piece is intentionally limited. We don't chase trends—we create
               archetypes designed to transcend seasons. When it's gone, it's gone.
             </p>
           </motion.div>

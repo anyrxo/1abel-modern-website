@@ -94,7 +94,7 @@ export default function Arc2Page() {
             </p>
             <p className="text-sm md:text-base text-gray-500 leading-loose max-w-2xl mx-auto">
               For those who move through the world with quiet intensity. This collection
-              embodies raw energy and atmospheric depth:pieces designed for individuals
+              embodies raw energy and atmospheric depth—pieces designed for individuals
               who understand that presence doesn't require volume.
             </p>
           </motion.div>
@@ -157,7 +157,7 @@ export default function Arc2Page() {
               <div>
                 <h3 className="text-sm font-semibold tracking-wide mb-3 uppercase">Commanding Presence</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Silhouettes designed to dominate space. You don't blend in:you
+                  Silhouettes designed to dominate space. You don't blend in—you
                   define the room.
                 </p>
               </div>

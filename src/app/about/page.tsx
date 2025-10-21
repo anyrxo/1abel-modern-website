@@ -97,7 +97,7 @@ export default function AboutPage() {
                   a mood, a moment in time. It should be a frequency you can wear.
                 </p>
                 <p>
-                  1ABEL was founded on this principle: that the intersection of sound
+                  1ABEL was founded on this principle—that the intersection of sound
                   and style creates something transcendent. Not trend-chasing. Not
                   fast fashion. Timeless archetypes that speak to those who understand.
                 </p>

@@ -36,7 +36,7 @@ const products = {
       "Water and scratch resistant",
       "Lifetime warranty against fading"
     ],
-    story: "Sometimes the most powerful statements are the quietest. This ring is for those who don't need flash:just substance. Heavy enough to feel substantial, minimal enough to go with everything. The kind of ring you wear for years, that becomes part of you."
+    story: "Sometimes the most powerful statements are the quietest. This ring is for those who don't need flash—just substance. Heavy enough to feel substantial, minimal enough to go with everything. The kind of ring you wear for years, that becomes part of you."
   },
   '3': {
     name: "MIDNIGHT BEANIE",
@@ -66,7 +66,7 @@ const products = {
       "Silicon grip palms",
       "Packable into own pocket"
     ],
-    story: "Winter doesn't have to slow you down. These gloves were built for movement:warm enough for the cold, light enough to forget you're wearing them. Touchscreen compatible so you don't have to choose between warmth and function. Technical without looking technical."
+    story: "Winter doesn't have to slow you down. These gloves were built for movement—warm enough for the cold, light enough to forget you're wearing them. Touchscreen compatible so you don't have to choose between warmth and function. Technical without looking technical."
   },
   '5': {
     name: "ONYX BELT",

@@ -57,7 +57,7 @@ const products = {
     name: "VOID JOGGERS",
     price: 145,
     category: "Joggers",
-    description: "Technical joggers with luxury fabrication. Four-way stretch with water-resistant finish. Designed for movement:whether that's through the city or through your process.",
+    description: "Technical joggers with luxury fabrication. Four-way stretch with water-resistant finish. Designed for movement—whether that's through the city or through your process.",
     details: [
       "Polyester-spandex blend with four-way stretch",
       "DWR (Durable Water Repellent) finish",
