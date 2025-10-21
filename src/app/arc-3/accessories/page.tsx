@@ -21,35 +21,35 @@ export default function Arc3AccessoriesPage() {
     {
       id: 1,
       name: "PEARL CHAIN",
-      price: 100.00,
+      price: 142.00,
       category: "Chain",
       soldOut: false
     },
     {
       id: 2,
       name: "IVORY RING",
-      price: 80.00,
+      price: 92.00,
       category: "Ring",
       soldOut: false
     },
     {
       id: 3,
       name: "CLOUD BEANIE",
-      price: 40.00,
+      price: 52.00,
       category: "Beanie",
       soldOut: false
     },
     {
       id: 4,
       name: "FROST GLOVES",
-      price: 60.00,
+      price: 82.00,
       category: "Gloves",
       soldOut: false
     },
     {
       id: 5,
       name: "CHALK BELT",
-      price: 120.00,
+      price: 122.00,
       category: "Belt",
       soldOut: false
     }
