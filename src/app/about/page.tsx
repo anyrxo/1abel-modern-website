@@ -208,7 +208,7 @@ export default function AboutPage() {
               <span className="text-gray-500">Infinite expression.</span>
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Each Arc represents a complete collection:a world unto itself. Dark and light.
+              Each Arc represents a complete collection—a world unto itself. Dark and light.
               Yin and yang. The duality of self, materialized in fabric and form.
             </p>
           </motion.div>

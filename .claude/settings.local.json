@@ -37,7 +37,11 @@
       "Bash(find . -name \"*.tsx\" -type f -exec sed -i 's/anywhere:/anywhere—/g' {} ;)",
       "Bash(find . -name \"*.tsx\" -type f -exec sed -i 's/warmth:/warmth—/g' {} ;)",
       "Bash(find . -name \"*.tsx\" -type f -exec sed -i 's/limited:/limited—/g' {} ;)",
-      "Bash(find . -name \"*.tsx\" -type f -exec sed -i 's/noise:/noise—/g' {} ;)"
+      "Bash(find . -name \"*.tsx\" -type f -exec sed -i 's/noise:/noise—/g' {} ;)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nRestore em dashes in product narratives where grammatically correct\n\nCHANGE EXPLANATION:\n- Previously replaced all em dashes (—) with colons, which was grammatically incorrect\n- Em dashes are the correct punctuation for narrative interruptions and explanations\n- Restored em dashes in product stories and descriptions where they belong\n- Kept simplified \"Arc 2 Shadow\" and \"Arc 3 Light\" (no em dash) in titles/nav\n\nEXAMPLES OF RESTORED EM DASHES:\n- \"creation—heavy, substantial, grounding\"\n- \"around you—a field of calm in chaos\"\n- \"bridges states—functional armor\"\n- \"reimagines utility—keeping the function\"\n- \"finds the balance—minimal enough to wear daily\"\n\nThese are grammatically correct uses of em dashes for:\n- Interrupting thoughts with additional detail\n- Adding emphasis or explanation mid-sentence\n- Creating dramatic pauses in narrative flow\n\nBuild successful: 99 pages generated\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(find . -name \"*.tsx\" -type f -exec sed -i 's/collection:a world/collection—a world/g' {} ;)",
+      "Bash(find . -name \"*.tsx\" -type f -exec sed -i 's/collection:it/collection—it/g' {} ;)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nFix incorrect colons that should be em dashes\n\nFIXES:\n- \"powerfully:pieces\" → \"powerfully—pieces\" (Arc 3 page)\n- \"collection:a world\" → \"collection—a world\" (About page)\n- \"collection:it\" → \"collection—it\" (Homepage)\n\nThese colons were grammatically incorrect. Em dashes are the proper punctuation\nfor these mid-sentence interruptions and explanations.\n\nBuild successful: 99 pages generated\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []

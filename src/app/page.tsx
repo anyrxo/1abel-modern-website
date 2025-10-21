@@ -109,7 +109,7 @@ export default function HomePage() {
               Where sound becomes style.
             </p>
             <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto leading-loose">
-              Each Arc is more than a collection:it's an expression, a frequency,
+              Each Arc is more than a collection—it's an expression, a frequency,
               a distinct energy translated into form. Step into the narrative.
             </p>
           </motion.div>

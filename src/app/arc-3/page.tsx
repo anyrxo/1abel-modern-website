@@ -94,7 +94,7 @@ export default function Arc3Page() {
             </p>
             <p className="text-sm md:text-base text-gray-500 leading-loose max-w-2xl mx-auto">
               For those who seek balance in a chaotic world. This collection speaks
-              softly but powerfully:pieces crafted for individuals who understand that
+              softly but powerfully—pieces crafted for individuals who understand that
               true strength lies in restraint.
             </p>
           </motion.div>
