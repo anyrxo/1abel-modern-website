@@ -92,7 +92,7 @@ export default function HomePage() {
           }}
           className="text-center max-w-6xl px-4 md:px-8 relative z-10"
         >
-          {/* Pre-title */}
+          {/* Pre-title Hook */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -100,7 +100,7 @@ export default function HomePage() {
             className="mb-8"
           >
             <span className="text-xs tracking-[0.3em] uppercase text-gray-500 font-light">
-              Premium minimalist essentials
+              For those who move too fast to overthink their wardrobe
             </span>
           </motion.div>
 
@@ -124,7 +124,7 @@ export default function HomePage() {
             />
           </motion.div>
 
-          {/* Philosophy Statement */}
+          {/* Philosophy Statement - Psychological Selling */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -132,11 +132,12 @@ export default function HomePage() {
             className="max-w-3xl mx-auto space-y-6"
           >
             <p className="text-lg md:text-2xl text-gray-400 font-light leading-relaxed">
-              Where sound becomes style.
+              What if getting dressed was as effortless as hitting play?
             </p>
             <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto leading-loose">
-              Each Arc is more than a collection—it's an expression, a frequency,
-              a distinct energy translated into form. Step into the narrative.
+              Clothing that works like music. Dark pieces that carry weight and presence.
+              Light pieces that bring balance and clarity. Every combination feels intentional.
+              No thought required. Just frequency.
             </p>
           </motion.div>
 
@@ -165,7 +166,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Transition Statement */}
+      {/* Transition Statement - Problem/Solution */}
       <section className="py-32 px-4 md:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -175,12 +176,13 @@ export default function HomePage() {
           className="max-w-5xl mx-auto"
         >
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 text-center">
-            Two frequencies.<br />
-            <span className="text-gray-500">Infinite expression.</span>
+            Built like a playlist.<br />
+            <span className="text-gray-500">Wears like a system.</span>
           </h2>
           <p className="text-center text-gray-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-            Every Arc tells a story. Dark and light. Yin and yang.
-            The duality of self, materialized in fabric and form.
+            Two Arcs. Dark for depth and focus. Light for clarity and balance.
+            Mix them endlessly. Every piece pairs perfectly. No thinking. No friction.
+            Just the frequency you need, when you need it.
           </p>
         </motion.div>
       </section>
@@ -248,16 +250,16 @@ export default function HomePage() {
                   <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-gray-600 to-transparent mx-auto mb-8" />
 
                   <p className="text-gray-500 max-w-lg mx-auto mb-4 text-sm md:text-base leading-relaxed">
-                    Born from darkness. Heavy textures, commanding silhouettes,
-                    and the weight of midnight. For those who move through the world
-                    with quiet intensity.
+                    For studio sessions. Late-night creation. Deep focus.
+                    When you need weight, presence, and command. VOID. STEEL. BLOOD. MOSS. EARTH.
+                    Pieces that ground you in intensity.
                   </p>
 
                   <motion.div
                     className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gray-400 group-hover:text-white transition-colors duration-500 mt-8"
                     whileHover={{ x: 4 }}
                   >
-                    Enter the Shadow
+                    Choose Shadow
                     <motion.span
                       animate={{ x: [0, 4, 0] }}
                       transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
@@ -339,16 +341,16 @@ export default function HomePage() {
                   <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-gray-400 to-transparent mx-auto mb-8" />
 
                   <p className="text-gray-600 max-w-lg mx-auto mb-4 text-sm md:text-base leading-relaxed">
-                    Clarity in form. Ethereal minimalism, luminous tones,
-                    and the weightlessness of dawn. For those who seek balance
-                    in a chaotic world.
+                    For daytime moves. Social energy. Mental clarity.
+                    When you need lightness, breath, and balance. SAND. MIST. CLAY. SAGE. IVORY.
+                    Pieces that lift you into flow.
                   </p>
 
                   <motion.div
                     className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gray-500 group-hover:text-black transition-colors duration-500 mt-8"
                     whileHover={{ x: 4 }}
                   >
-                    Enter the Light
+                    Choose Light
                     <motion.span
                       animate={{ x: [0, 4, 0] }}
                       transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

@@ -1,14 +1,20 @@
+# 1ABEL - Where Sound Becomes Style
+# Music-Inspired Minimalist Fashion by Anyro
+
 User-agent: *
 Allow: /
 
-# SEO-optimized robots.txt for 1ABEL Global Music Label
+# Major search engines - optimized for fast crawling
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
+Crawl-delay: 0
 
 User-agent: Slurp
 Allow: /
@@ -16,8 +22,8 @@ Crawl-delay: 1
 
 User-agent: DuckDuckBot
 Allow: /
-Crawl-delay: 1
 
+# Social media crawlers for rich previews
 User-agent: facebookexternalhit
 Allow: /
 
@@ -30,7 +36,13 @@ Allow: /
 User-agent: WhatsApp
 Allow: /
 
-# Block AI scrapers that don't respect copyright
+User-agent: Pinterestbot
+Allow: /
+
+User-agent: TikTokBot
+Allow: /
+
+# Block AI scrapers to protect unique brand content
 User-agent: GPTBot
 Disallow: /
 
@@ -46,26 +58,21 @@ Disallow: /
 User-agent: Claude-Web
 Disallow: /
 
-# Allow music industry crawlers
-User-agent: Spotify
-Allow: /
+User-agent: Diffbot
+Disallow: /
 
-User-agent: AppleBot
-Allow: /
+User-agent: PerplexityBot
+Disallow: /
 
-User-agent: YouTubeBot
-Allow: /
-
-# Disallow admin and private areas
-Disallow: /admin/
-Disallow: /private/
-Disallow: /_next/
+# Disallow private/functional pages
 Disallow: /api/
+Disallow: /account/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /_next/
 Disallow: /.well-known/
 
-# Important files
+# Sitemaps for optimal indexing
 Sitemap: https://1abel.com/sitemap.xml
-Sitemap: https://1abel.com/blog-sitemap.xml
-
-# Cache directive
-Cache-delay: 86400
+Sitemap: https://1abel.com/sitemap-products.xml
+Sitemap: https://1abel.com/sitemap-blog.xml
