@@ -273,16 +273,16 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                     Size
                   </p>
                   <div className="relative flex items-center gap-2">
-                    {/* Left Arrow */}
+                    {/* Left Arrow - Transparent */}
                     {canScrollLeft && (
                       <motion.button
                         onClick={scrollSizesLeft}
-                        className={`absolute -left-3 z-10 p-2 rounded-full ${
-                          arc === 'ARC_2' ? 'bg-white text-black' : 'bg-black text-white'
-                        }`}
+                        className={`absolute -left-3 z-10 p-1 ${
+                          arc === 'ARC_2' ? 'text-white/40 hover:text-white/70' : 'text-black/40 hover:text-black/70'
+                        } transition-colors`}
                         whileTap={{ scale: 0.9 }}
                       >
-                        <ChevronLeft className="w-4 h-4" />
+                        <ChevronLeft className="w-5 h-5" />
                       </motion.button>
                     )}
 
@@ -313,16 +313,16 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                       </div>
                     </motion.div>
 
-                    {/* Right Arrow */}
+                    {/* Right Arrow - Transparent */}
                     {canScrollRight && (
                       <motion.button
                         onClick={scrollSizesRight}
-                        className={`absolute -right-3 z-10 p-2 rounded-full ${
-                          arc === 'ARC_2' ? 'bg-white text-black' : 'bg-black text-white'
-                        }`}
+                        className={`absolute -right-3 z-10 p-1 ${
+                          arc === 'ARC_2' ? 'text-white/40 hover:text-white/70' : 'text-black/40 hover:text-black/70'
+                        } transition-colors`}
                         whileTap={{ scale: 0.9 }}
                       >
-                        <ChevronRight className="w-4 h-4" />
+                        <ChevronRight className="w-5 h-5" />
                       </motion.button>
                     )}
                   </div>

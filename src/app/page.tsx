@@ -54,18 +54,6 @@ export default function HomePage() {
           }}
           className="text-center max-w-6xl px-4 md:px-8 relative z-10"
         >
-          {/* Pre-title Hook */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="mb-8"
-          >
-            <span className="text-xs tracking-[0.3em] uppercase text-gray-500 font-light">
-              For those who move too fast to overthink their wardrobe
-            </span>
-          </motion.div>
-
           {/* Main Title with Staggered Animation */}
           <motion.div className="mb-12">
             <motion.h1
@@ -82,24 +70,19 @@ export default function HomePage() {
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
               transition={{ duration: 1.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="h-[1px] w-32 bg-gradient-to-r from-transparent via-white to-transparent mx-auto mb-8"
+              className="h-[1px] w-32 bg-gradient-to-r from-transparent via-white to-transparent mx-auto"
             />
           </motion.div>
 
-          {/* Philosophy Statement - Psychological Selling */}
+          {/* Minimal Hook */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="max-w-3xl mx-auto space-y-6"
+            className="max-w-2xl mx-auto"
           >
             <p className="text-lg md:text-2xl text-gray-400 font-light leading-relaxed">
-              What if getting dressed was as effortless as hitting play?
-            </p>
-            <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto leading-loose">
-              Clothing that works like music. Dark pieces that carry weight and presence.
-              Light pieces that bring balance and clarity. Every combination feels intentional.
-              No thought required. Just frequency.
+              Where sound becomes style.
             </p>
           </motion.div>
 

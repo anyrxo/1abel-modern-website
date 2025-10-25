@@ -63,7 +63,8 @@
       "Bash(node update-product-liquid.js:*)",
       "Bash(node fix-accessories-and-ctas.js:*)",
       "Bash(node transform-to-liquid-glass.js:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []

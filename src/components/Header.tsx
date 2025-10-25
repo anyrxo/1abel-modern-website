@@ -3,13 +3,11 @@
 import Link from 'next/link'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { BookOpen, ShoppingCart, ChevronDown, Menu, X } from 'lucide-react'
-import { useSound } from '@/lib/soundManager'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { useCart } from '@/lib/cartContext'
 
 export function Header() {
-  const { playClick, playLogo } = useSound()
   const { totalItems } = useCart()
   const pathname = usePathname()
   const [arcsOpen, setArcsOpen] = useState(false)
@@ -82,7 +80,7 @@ export function Header() {
                       ? 'text-gray-400 hover:text-white'
                       : 'text-gray-500 hover:text-black'
                   }`}
-                  onClick={() => playClick()}
+                  onClick={() => {}}
                 >
                   ARC 2
                 </Link>
@@ -98,28 +96,28 @@ export function Header() {
                     <Link
                       href="/arc-2/shop-all"
                       className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color text-white hover:bg-white/5"
-                      onClick={() => { playClick(); setArc2Open(false); }}
+                      onClick={() => { setArc2Open(false); }}
                     >
                       Shop All
                     </Link>
                     <Link
                       href="/arc-2/tops"
                       className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-300 hover:text-white hover:bg-white/5 border-gray-700"
-                      onClick={() => { playClick(); setArc2Open(false); }}
+                      onClick={() => { setArc2Open(false); }}
                     >
                       Tops
                     </Link>
                     <Link
                       href="/arc-2/bottoms"
                       className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-300 hover:text-white hover:bg-white/5 border-gray-700"
-                      onClick={() => { playClick(); setArc2Open(false); }}
+                      onClick={() => { setArc2Open(false); }}
                     >
                       Bottoms
                     </Link>
                     <Link
                       href="/arc-2/accessories"
                       className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-300 hover:text-white hover:bg-white/5 border-gray-700"
-                      onClick={() => { playClick(); setArc2Open(false); }}
+                      onClick={() => { setArc2Open(false); }}
                     >
                       Accessories
                     </Link>
@@ -140,7 +138,7 @@ export function Header() {
                       ? 'text-gray-400 hover:text-white'
                       : 'text-gray-500 hover:text-black'
                   }`}
-                  onClick={() => playClick()}
+                  onClick={() => {}}
                 >
                   ARC 3
                 </Link>
@@ -156,28 +154,28 @@ export function Header() {
                     <Link
                       href="/arc-3/shop-all"
                       className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color text-black hover:bg-black/5"
-                      onClick={() => { playClick(); setArc3Open(false); }}
+                      onClick={() => { setArc3Open(false); }}
                     >
                       Shop All
                     </Link>
                     <Link
                       href="/arc-3/tops"
                       className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-600 hover:text-black hover:bg-black/5 border-black/10"
-                      onClick={() => { playClick(); setArc3Open(false); }}
+                      onClick={() => { setArc3Open(false); }}
                     >
                       Tops
                     </Link>
                     <Link
                       href="/arc-3/bottoms"
                       className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-600 hover:text-black hover:bg-black/5 border-black/10"
-                      onClick={() => { playClick(); setArc3Open(false); }}
+                      onClick={() => { setArc3Open(false); }}
                     >
                       Bottoms
                     </Link>
                     <Link
                       href="/arc-3/accessories"
                       className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-600 hover:text-black hover:bg-black/5 border-black/10"
-                      onClick={() => { playClick(); setArc3Open(false); }}
+                      onClick={() => { setArc3Open(false); }}
                     >
                       Accessories
                     </Link>
@@ -198,7 +196,7 @@ export function Header() {
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
                   className="text-2xl md:text-3xl font-bold cursor-pointer tracking-tighter"
-                  onClick={() => playLogo()}
+                  onClick={() => {}}
                 >
                   <span className={isDark ? 'text-white' : 'text-black'}>1ABEL</span>
                 </motion.div>
@@ -215,7 +213,7 @@ export function Header() {
                       ? isActive('/about') ? 'text-white' : 'text-gray-400 hover:text-white'
                       : isActive('/about') ? 'text-black' : 'text-gray-500 hover:text-black'
                   }`}
-                  onClick={() => playClick()}
+                  onClick={() => {}}
                 >
                   <BookOpen className="w-4 h-4 mr-1" />
                   ABOUT
@@ -236,7 +234,7 @@ export function Header() {
                       ? isActive('/contact') ? 'text-white' : 'text-gray-400 hover:text-white'
                       : isActive('/contact') ? 'text-black' : 'text-gray-500 hover:text-black'
                   }`}
-                  onClick={() => playClick()}
+                  onClick={() => {}}
                 >
                   CONTACT US
                   {isActive('/contact') && (
@@ -256,7 +254,7 @@ export function Header() {
                       ? isActive('/cart') ? 'text-white' : 'text-gray-400 hover:text-white'
                       : isActive('/cart') ? 'text-black' : 'text-gray-500 hover:text-black'
                   }`}
-                  onClick={() => playClick()}
+                  onClick={() => {}}
                 >
                   <div className="relative mr-1">
                     <ShoppingCart className="w-4 h-4" />
@@ -311,7 +309,7 @@ export function Header() {
                 isDark ? 'text-white' : 'text-black'
               }`}>1ABEL</h2>
               <motion.button
-                onClick={() => { playClick(); setMobileMenuOpen(false); }}
+                onClick={() => { setMobileMenuOpen(false); }}
                 className={`p-2 ${isDark ? 'text-white' : 'text-black'}`}
                 whileTap={{ scale: 0.95 }}
               >
@@ -330,7 +328,7 @@ export function Header() {
                         ? 'text-gray-400 hover:text-white'
                         : 'text-gray-500 hover:text-black'
                     }`}
-                    onClick={() => { playClick(); setMobileArc2Open(!mobileArc2Open); }}
+                    onClick={() => { setMobileArc2Open(!mobileArc2Open); }}
                     whileTap={{ scale: 0.98 }}
                   >
                     ARC 2
@@ -361,7 +359,7 @@ export function Header() {
                                 ? 'text-white hover:text-gray-300'
                                 : 'text-black hover:text-gray-600'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc2Open(false); }}
+                            onClick={() => { setMobileMenuOpen(false); setMobileArc2Open(false); }}
                           >
                             Shop All
                           </Link>
@@ -372,7 +370,7 @@ export function Header() {
                                 ? 'text-gray-400 hover:text-gray-200'
                                 : 'text-gray-600 hover:text-gray-800'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc2Open(false); }}
+                            onClick={() => { setMobileMenuOpen(false); setMobileArc2Open(false); }}
                           >
                             Tops
                           </Link>
@@ -383,7 +381,7 @@ export function Header() {
                                 ? 'text-gray-400 hover:text-gray-200'
                                 : 'text-gray-600 hover:text-gray-800'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc2Open(false); }}
+                            onClick={() => { setMobileMenuOpen(false); setMobileArc2Open(false); }}
                           >
                             Bottoms
                           </Link>
@@ -394,7 +392,7 @@ export function Header() {
                                 ? 'text-gray-400 hover:text-gray-200'
                                 : 'text-gray-600 hover:text-gray-800'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc2Open(false); }}
+                            onClick={() => { setMobileMenuOpen(false); setMobileArc2Open(false); }}
                           >
                             Accessories
                           </Link>
@@ -412,7 +410,7 @@ export function Header() {
                         ? 'text-gray-400 hover:text-white'
                         : 'text-gray-500 hover:text-black'
                     }`}
-                    onClick={() => { playClick(); setMobileArc3Open(!mobileArc3Open); }}
+                    onClick={() => { setMobileArc3Open(!mobileArc3Open); }}
                     whileTap={{ scale: 0.98 }}
                   >
                     ARC 3
@@ -443,7 +441,7 @@ export function Header() {
                                 ? 'text-white hover:text-gray-300'
                                 : 'text-black hover:text-gray-600'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc3Open(false); }}
+                            onClick={() => { setMobileMenuOpen(false); setMobileArc3Open(false); }}
                           >
                             Shop All
                           </Link>
@@ -454,7 +452,7 @@ export function Header() {
                                 ? 'text-gray-400 hover:text-gray-200'
                                 : 'text-gray-600 hover:text-gray-800'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc3Open(false); }}
+                            onClick={() => { setMobileMenuOpen(false); setMobileArc3Open(false); }}
                           >
                             Tops
                           </Link>
@@ -465,7 +463,7 @@ export function Header() {
                                 ? 'text-gray-400 hover:text-gray-200'
                                 : 'text-gray-600 hover:text-gray-800'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc3Open(false); }}
+                            onClick={() => { setMobileMenuOpen(false); setMobileArc3Open(false); }}
                           >
                             Bottoms
                           </Link>
@@ -476,7 +474,7 @@ export function Header() {
                                 ? 'text-gray-400 hover:text-gray-200'
                                 : 'text-gray-600 hover:text-gray-800'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc3Open(false); }}
+                            onClick={() => { setMobileMenuOpen(false); setMobileArc3Open(false); }}
                           >
                             Accessories
                           </Link>
@@ -494,7 +492,7 @@ export function Header() {
                       ? isActive('/about') ? 'text-white' : 'text-gray-400 hover:text-white'
                       : isActive('/about') ? 'text-black' : 'text-gray-500 hover:text-black'
                   }`}
-                  onClick={() => { playClick(); setMobileMenuOpen(false); }}
+                  onClick={() => { setMobileMenuOpen(false); }}
                 >
                   <BookOpen className="w-5 h-5 mr-2" />
                   ABOUT
@@ -508,7 +506,7 @@ export function Header() {
                       ? isActive('/contact') ? 'text-white' : 'text-gray-400 hover:text-white'
                       : isActive('/contact') ? 'text-black' : 'text-gray-500 hover:text-black'
                   }`}
-                  onClick={() => { playClick(); setMobileMenuOpen(false); }}
+                  onClick={() => { setMobileMenuOpen(false); }}
                 >
                   CONTACT US
                 </Link>
@@ -521,7 +519,7 @@ export function Header() {
                       ? isActive('/cart') ? 'text-white' : 'text-gray-400 hover:text-white'
                       : isActive('/cart') ? 'text-black' : 'text-gray-500 hover:text-black'
                   }`}
-                  onClick={() => { playClick(); setMobileMenuOpen(false); }}
+                  onClick={() => { setMobileMenuOpen(false); }}
                 >
                   <ShoppingCart className="w-5 h-5 mr-2" />
                   CART

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { GlobalSoundSystem } from '@/components/GlobalSoundSystem'
 import { MobileBottomNav } from '@/components/MobileBottomNav'
 import { CartProvider } from '@/lib/cartContext'
 import { AuthProvider } from '@/lib/authContext'
@@ -176,7 +175,7 @@ export default function RootLayout({
           <CartProvider>
             {children}
             <MobileBottomNav />
-            <GlobalSoundSystem />
+            
           </CartProvider>
         </AuthProvider>
       </body>

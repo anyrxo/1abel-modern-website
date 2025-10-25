@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { CSSProperties } from "react";
-import { useSound } from "@/lib/soundManager";
+;
 
 export interface ShimmerButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -29,15 +29,13 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
     },
     ref,
   ) => {
-    const { playShimmerButtonHover, playShimmerButtonClick } = useSound();
+    ;
 
-    const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {
-      playShimmerButtonHover();
+    const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {;
       props.onMouseEnter?.(e);
     };
 
-    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-      playShimmerButtonClick();
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {;
       props.onClick?.(e);
     };
 

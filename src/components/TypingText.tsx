@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { useSound } from '@/lib/soundManager'
+
 
 interface TypingTextProps {
   text: string
@@ -23,7 +23,7 @@ export function TypingText({
 }: TypingTextProps) {
   const [displayedText, setDisplayedText] = useState('')
   const [isTyping, setIsTyping] = useState(false)
-  const { playTypingSound } = useSound()
+  
   const soundCounterRef = useRef(0)
 
   useEffect(() => {
@@ -41,7 +41,6 @@ export function TypingText({
           
           // Play typing sound every 3 characters for better effect
           if (playSound && soundCounterRef.current % 3 === 0) {
-            playTypingSound()
           }
           soundCounterRef.current++
           
@@ -57,7 +56,7 @@ export function TypingText({
     }, delay)
 
     return () => clearTimeout(startTyping)
-  }, [text, speed, delay, onComplete, playSound, playTypingSound])
+  }, [text, speed, delay, onComplete, playSound, ])
 
   return (
     <motion.span 
