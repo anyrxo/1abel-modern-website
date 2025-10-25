@@ -175,16 +175,142 @@
       "namedRegex": "^/arc\\-2/accessories(?:/)?$"
     },
     {
+      "page": "/arc-2/accessories/beanie",
+      "regex": "^/arc\\-2/accessories/beanie(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/accessories/beanie(?:/)?$"
+    },
+    {
+      "page": "/arc-2/accessories/belt",
+      "regex": "^/arc\\-2/accessories/belt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/accessories/belt(?:/)?$"
+    },
+    {
+      "page": "/arc-2/accessories/cap",
+      "regex": "^/arc\\-2/accessories/cap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/accessories/cap(?:/)?$"
+    },
+    {
+      "page": "/arc-2/accessories/chain",
+      "regex": "^/arc\\-2/accessories/chain(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/accessories/chain(?:/)?$"
+    },
+    {
+      "page": "/arc-2/accessories/gloves",
+      "regex": "^/arc\\-2/accessories/gloves(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/accessories/gloves(?:/)?$"
+    },
+    {
+      "page": "/arc-2/accessories/ring",
+      "regex": "^/arc\\-2/accessories/ring(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/accessories/ring(?:/)?$"
+    },
+    {
+      "page": "/arc-2/accessories/socks",
+      "regex": "^/arc\\-2/accessories/socks(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/accessories/socks(?:/)?$"
+    },
+    {
+      "page": "/arc-2/accessories/tote",
+      "regex": "^/arc\\-2/accessories/tote(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/accessories/tote(?:/)?$"
+    },
+    {
       "page": "/arc-2/bottoms",
       "regex": "^/arc\\-2/bottoms(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/arc\\-2/bottoms(?:/)?$"
     },
     {
+      "page": "/arc-2/bottoms/cargo",
+      "regex": "^/arc\\-2/bottoms/cargo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/bottoms/cargo(?:/)?$"
+    },
+    {
+      "page": "/arc-2/bottoms/denim",
+      "regex": "^/arc\\-2/bottoms/denim(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/bottoms/denim(?:/)?$"
+    },
+    {
+      "page": "/arc-2/bottoms/joggers",
+      "regex": "^/arc\\-2/bottoms/joggers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/bottoms/joggers(?:/)?$"
+    },
+    {
+      "page": "/arc-2/bottoms/shorts",
+      "regex": "^/arc\\-2/bottoms/shorts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/bottoms/shorts(?:/)?$"
+    },
+    {
+      "page": "/arc-2/bottoms/sweats",
+      "regex": "^/arc\\-2/bottoms/sweats(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/bottoms/sweats(?:/)?$"
+    },
+    {
+      "page": "/arc-2/bottoms/wide-pants",
+      "regex": "^/arc\\-2/bottoms/wide\\-pants(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/bottoms/wide\\-pants(?:/)?$"
+    },
+    {
       "page": "/arc-2/tops",
       "regex": "^/arc\\-2/tops(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/arc\\-2/tops(?:/)?$"
+    },
+    {
+      "page": "/arc-2/tops/coach-jacket",
+      "regex": "^/arc\\-2/tops/coach\\-jacket(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/tops/coach\\-jacket(?:/)?$"
+    },
+    {
+      "page": "/arc-2/tops/crewneck",
+      "regex": "^/arc\\-2/tops/crewneck(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/tops/crewneck(?:/)?$"
+    },
+    {
+      "page": "/arc-2/tops/hoodie",
+      "regex": "^/arc\\-2/tops/hoodie(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/tops/hoodie(?:/)?$"
+    },
+    {
+      "page": "/arc-2/tops/longsleeve",
+      "regex": "^/arc\\-2/tops/longsleeve(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/tops/longsleeve(?:/)?$"
+    },
+    {
+      "page": "/arc-2/tops/overshirt",
+      "regex": "^/arc\\-2/tops/overshirt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/tops/overshirt(?:/)?$"
+    },
+    {
+      "page": "/arc-2/tops/puffer",
+      "regex": "^/arc\\-2/tops/puffer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/tops/puffer(?:/)?$"
+    },
+    {
+      "page": "/arc-2/tops/tee",
+      "regex": "^/arc\\-2/tops/tee(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/tops/tee(?:/)?$"
     },
     {
       "page": "/arc-2/tops/thermal",
@@ -205,16 +331,148 @@
       "namedRegex": "^/arc\\-3/accessories(?:/)?$"
     },
     {
+      "page": "/arc-3/accessories/beanie",
+      "regex": "^/arc\\-3/accessories/beanie(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/accessories/beanie(?:/)?$"
+    },
+    {
+      "page": "/arc-3/accessories/belt",
+      "regex": "^/arc\\-3/accessories/belt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/accessories/belt(?:/)?$"
+    },
+    {
+      "page": "/arc-3/accessories/cap",
+      "regex": "^/arc\\-3/accessories/cap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/accessories/cap(?:/)?$"
+    },
+    {
+      "page": "/arc-3/accessories/chain",
+      "regex": "^/arc\\-3/accessories/chain(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/accessories/chain(?:/)?$"
+    },
+    {
+      "page": "/arc-3/accessories/gloves",
+      "regex": "^/arc\\-3/accessories/gloves(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/accessories/gloves(?:/)?$"
+    },
+    {
+      "page": "/arc-3/accessories/ring",
+      "regex": "^/arc\\-3/accessories/ring(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/accessories/ring(?:/)?$"
+    },
+    {
+      "page": "/arc-3/accessories/socks",
+      "regex": "^/arc\\-3/accessories/socks(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/accessories/socks(?:/)?$"
+    },
+    {
+      "page": "/arc-3/accessories/tote",
+      "regex": "^/arc\\-3/accessories/tote(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/accessories/tote(?:/)?$"
+    },
+    {
       "page": "/arc-3/bottoms",
       "regex": "^/arc\\-3/bottoms(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/arc\\-3/bottoms(?:/)?$"
     },
     {
+      "page": "/arc-3/bottoms/cargo",
+      "regex": "^/arc\\-3/bottoms/cargo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/bottoms/cargo(?:/)?$"
+    },
+    {
+      "page": "/arc-3/bottoms/denim",
+      "regex": "^/arc\\-3/bottoms/denim(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/bottoms/denim(?:/)?$"
+    },
+    {
+      "page": "/arc-3/bottoms/joggers",
+      "regex": "^/arc\\-3/bottoms/joggers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/bottoms/joggers(?:/)?$"
+    },
+    {
+      "page": "/arc-3/bottoms/shorts",
+      "regex": "^/arc\\-3/bottoms/shorts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/bottoms/shorts(?:/)?$"
+    },
+    {
+      "page": "/arc-3/bottoms/sweats",
+      "regex": "^/arc\\-3/bottoms/sweats(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/bottoms/sweats(?:/)?$"
+    },
+    {
+      "page": "/arc-3/bottoms/wide-pants",
+      "regex": "^/arc\\-3/bottoms/wide\\-pants(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/bottoms/wide\\-pants(?:/)?$"
+    },
+    {
       "page": "/arc-3/tops",
       "regex": "^/arc\\-3/tops(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/arc\\-3/tops(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops/coach-jacket",
+      "regex": "^/arc\\-3/tops/coach\\-jacket(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/tops/coach\\-jacket(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops/crewneck",
+      "regex": "^/arc\\-3/tops/crewneck(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/tops/crewneck(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops/hoodie",
+      "regex": "^/arc\\-3/tops/hoodie(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/tops/hoodie(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops/longsleeve",
+      "regex": "^/arc\\-3/tops/longsleeve(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/tops/longsleeve(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops/overshirt",
+      "regex": "^/arc\\-3/tops/overshirt(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/tops/overshirt(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops/puffer",
+      "regex": "^/arc\\-3/tops/puffer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/tops/puffer(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops/tee",
+      "regex": "^/arc\\-3/tops/tee(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/tops/tee(?:/)?$"
+    },
+    {
+      "page": "/arc-3/tops/thermal",
+      "regex": "^/arc\\-3/tops/thermal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/tops/thermal(?:/)?$"
     },
     {
       "page": "/blog",
