@@ -260,18 +260,6 @@ export default function Arc2ShopAllPage() {
         </motion.div>
       </section>
 
-      
-          {/* Filters */}
-          <ProductFilters
-            onSearchChange={setSearchQuery}
-            onColorFilter={setSelectedColors}
-            onSizeFilter={setSelectedSizes}
-            onPriceSort={setPriceSort}
-            availableColors={['VOID', 'STEEL', 'BLOOD', 'MOSS', 'EARTH']}
-            availableSizes={['XS', 'S', 'M', 'L', 'XL', 'ONE SIZE']}
-            isDark={true}
-          />
-
       {/* Products Grid */}
       <section className="relative pb-32 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">

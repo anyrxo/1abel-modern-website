@@ -173,18 +173,6 @@ export default function Arc2TopsPage() {
             </motion.div>
           </motion.div>
 
-          
-          {/* Filters */}
-          <ProductFilters
-            onSearchChange={setSearchQuery}
-            onColorFilter={setSelectedColors}
-            onSizeFilter={setSelectedSizes}
-            onPriceSort={setPriceSort}
-            availableColors={['VOID', 'STEEL', 'BLOOD', 'MOSS', 'EARTH']}
-            availableSizes={['XS', 'S', 'M', 'L', 'XL', 'ONE SIZE']}
-            isDark={true}
-          />
-
       {/* Products Grid */}
           <motion.div
             className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12"
@@ -347,15 +335,57 @@ export default function Arc2TopsPage() {
             className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-black rounded-t-premium-xl p-6 pb-8 max-h-[70vh] overflow-y-auto"
           >
             <h3 className="text-lg font-bold tracking-wider uppercase mb-6 text-white">Filters</h3>
-            <ProductFilters
-              onSearchChange={setSearchQuery}
-              onColorFilter={setSelectedColors}
-              onSizeFilter={setSelectedSizes}
-              onPriceSort={setPriceSort}
-              availableColors={['VOID', 'STEEL', 'BLOOD', 'MOSS', 'EARTH']}
-              availableSizes={['XS', 'S', 'M', 'L', 'XL', 'ONE SIZE']}
-              isDark={true}
-            />
+
+            {/* Colors */}
+            <div className="mb-6">
+              <p className="text-xs tracking-wider uppercase text-gray-500 mb-3">Colors</p>
+              <div className="flex flex-wrap gap-2">
+                {['VOID', 'STEEL', 'BLOOD', 'MOSS', 'EARTH'].map((color) => (
+                  <motion.button
+                    key={color}
+                    onClick={() => {
+                      setSelectedColors(prev =>
+                        prev.includes(color) ? prev.filter(c => c !== color) : [...prev, color]
+                      )
+                    }}
+                    className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                      selectedColors.includes(color)
+                        ? 'border-white bg-white text-black'
+                        : 'border-white/20 text-white hover:border-white/40'
+                    }`}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {color}
+                  </motion.button>
+                ))}
+              </div>
+            </div>
+
+            {/* Sizes */}
+            <div className="mb-6">
+              <p className="text-xs tracking-wider uppercase text-gray-500 mb-3">Sizes</p>
+              <div className="flex flex-wrap gap-2">
+                {['XS', 'S', 'M', 'L', 'XL'].map((size) => (
+                  <motion.button
+                    key={size}
+                    onClick={() => {
+                      setSelectedSizes(prev =>
+                        prev.includes(size) ? prev.filter(s => s !== size) : [...prev, size]
+                      )
+                    }}
+                    className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                      selectedSizes.includes(size)
+                        ? 'border-white bg-white text-black'
+                        : 'border-white/20 text-white hover:border-white/40'
+                    }`}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {size}
+                  </motion.button>
+                ))}
+              </div>
+            </div>
+
             <motion.button
               onClick={() => setFilterMenuOpen(false)}
               className="w-full mt-6 py-4 bg-white text-black text-sm font-bold tracking-wider uppercase rounded-premium"
