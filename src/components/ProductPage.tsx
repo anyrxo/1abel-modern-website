@@ -6,7 +6,7 @@ import { Header } from '@/components/Header'
 import Link from 'next/link'
 import { useCart } from '@/lib/cartContext'
 import { useRouter } from 'next/navigation'
-import { BASE_PRODUCTS, COLORS, ACCESSORY_COLORS } from '@/data/products'
+import { BASE_PRODUCTS, COLORS, PREMIUM_ACCESSORY_COLORS, PREMIUM_ACCESSORIES } from '@/data/products'
 
 type Arc = 'ARC_2' | 'ARC_3'
 type ColorKey = string
@@ -27,8 +27,8 @@ interface ProductPageProps {
 export function ProductPage({ productId, arc, colorStories, pairsWith }: ProductPageProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const product = BASE_PRODUCTS[productId]
-  const colors = product.category === 'ACCESSORIES'
-    ? (arc === 'ARC_2' ? ACCESSORY_COLORS.ARC_2 : ACCESSORY_COLORS.ARC_3)
+  const colors = PREMIUM_ACCESSORIES.includes(productId)
+    ? (arc === 'ARC_2' ? PREMIUM_ACCESSORY_COLORS.ARC_2 : PREMIUM_ACCESSORY_COLORS.ARC_3)
     : (arc === 'ARC_2' ? COLORS.ARC_2 : COLORS.ARC_3)
   const price = arc === 'ARC_2' ? product.arc2Price : product.arc3Price
   const arcName = arc === 'ARC_2' ? 'Arc 2' : 'Arc 3'
