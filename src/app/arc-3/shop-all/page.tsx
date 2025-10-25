@@ -12,6 +12,7 @@ export default function Arc3ShopAllPage() {
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedColors, setSelectedColors] = useState<string[]>([])
   const [selectedSizes, setSelectedSizes] = useState<string[]>([])
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [priceSort, setPriceSort] = useState<'asc' | 'desc' | 'none'>('none')
   const [filterMenuOpen, setFilterMenuOpen] = useState(false)
   const [sortMenuOpen, setSortMenuOpen] = useState(false)
@@ -187,6 +188,13 @@ export default function Arc3ShopAllPage() {
       )
     }
 
+    // Category filter
+    if (selectedCategories.length > 0) {
+      filtered = filtered.filter(p =>
+        selectedCategories.includes(p.category)
+      )
+    }
+
     // Size filter (skip for accessories that are ONE SIZE)
     if (selectedSizes.length > 0) {
       filtered = filtered.filter(p => {
@@ -203,7 +211,7 @@ export default function Arc3ShopAllPage() {
     }
 
     return filtered
-  }, [searchQuery, selectedColors, selectedSizes, priceSort])
+  }, [searchQuery, selectedColors, selectedSizes, selectedCategories, priceSort])
 
   return (
     <div ref={containerRef} className="bg-white text-black min-h-screen relative">
@@ -562,6 +570,31 @@ export default function Arc3ShopAllPage() {
             </motion.button>
               </div>
             </div>
+            {/* Category/Product Type */}
+            <div className="mb-6">
+              <p className="text-xs tracking-wider uppercase text-gray-500 mb-3">Product Type</p>
+              <div className="flex flex-wrap gap-2">
+                {['Tops', 'Bottoms', 'Accessories'].map((category) => (
+                  <motion.button
+                    key={category}
+                    onClick={() => {
+                      setSelectedCategories(prev =>
+                        prev.includes(category) ? prev.filter(c => c !== category) : [...prev, category]
+                      )
+                    }}
+                    className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                      selectedCategories.includes(category)
+                        ? 'border-white bg-white text-black'
+                        : 'border-white/20 text-white hover:border-white/40'
+                    }`}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {category}
+                  </motion.button>
+                ))}
+              </div>
+            </div>
+
 
             <motion.button
               onClick={() => setFilterMenuOpen(false)}
