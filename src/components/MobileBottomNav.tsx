@@ -34,20 +34,20 @@ export function MobileBottomNav() {
           >
             <p className="text-xs font-bold tracking-wider uppercase mb-3 text-gray-900">Select Arc</p>
             <Link
-              href="/arc-2"
+              href="/arc-2/collections"
               className="block mb-2 p-4 glass-card-dark rounded-premium hover-elevate"
               onClick={() => setArcMenuOpen(false)}
             >
               <p className="font-bold text-white text-sm">ARC 2 SHADOW</p>
-              <p className="text-xs text-gray-400">Dark collection</p>
+              <p className="text-xs text-gray-400">Depth and intention</p>
             </Link>
             <Link
-              href="/arc-3"
+              href="/arc-3/collections"
               className="block p-4 glass-card rounded-premium hover-elevate"
               onClick={() => setArcMenuOpen(false)}
             >
               <p className="font-bold text-black text-sm">ARC 3 LIGHT</p>
-              <p className="text-xs text-gray-600">Light collection</p>
+              <p className="text-xs text-gray-600">Clarity and ease</p>
             </Link>
           </motion.div>
         </motion.div>

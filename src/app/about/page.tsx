@@ -50,7 +50,7 @@ export default function AboutPage() {
             />
 
             <p className="text-xl md:text-2xl text-gray-600 font-light leading-relaxed max-w-3xl mx-auto">
-              Where sound becomes style. Premium streetwear for those who live
+              Where sound becomes style. Premium minimalist essentials for those who live
               at the intersection of music, art, and culture.
             </p>
           </motion.div>

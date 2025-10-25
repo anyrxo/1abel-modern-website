@@ -9,17 +9,17 @@ import { AuthProvider } from '@/lib/authContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: '1ABEL - Premium Streetwear & Fashion',
-  description: '1ABEL is a premium streetwear brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.',
-  keywords: 'streetwear, fashion, clothing brand, minimalist fashion, black and white fashion, premium streetwear, urban fashion, contemporary fashion, designer clothing, fashion boutique, mens fashion, womens fashion, streetwear brand, fashion store, online clothing store',
+  title: '1ABEL - Premium minimalist essentials & Fashion',
+  description: '1ABEL is a premium minimalist essentials brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.',
+  keywords: 'minimalist essentials, fashion, clothing brand, minimalist fashion, black and white fashion, premium minimalist essentials, urban fashion, contemporary fashion, designer clothing, fashion boutique, mens fashion, womens fashion, minimalist essentials brand, fashion store, online clothing store',
   authors: [{ name: '1ABEL' }],
   creator: '1ABEL',
   publisher: '1ABEL',
   category: 'Fashion & Apparel',
   classification: 'Clothing Brand',
   openGraph: {
-    title: '1ABEL - Premium Streetwear & Fashion',
-    description: '1ABEL is a premium streetwear brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.',
+    title: '1ABEL - Premium minimalist essentials & Fashion',
+    description: '1ABEL is a premium minimalist essentials brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.',
     url: 'https://1abel.com',
     siteName: '1ABEL',
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: '1ABEL Premium Streetwear & Fashion',
+        alt: '1ABEL Premium minimalist essentials & Fashion',
       },
     ],
     locale: 'en_US',
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '1ABEL - Premium Streetwear & Fashion',
-    description: 'Premium streetwear brand offering minimalist black and white designs. Shop our curated collection.',
+    title: '1ABEL - Premium minimalist essentials & Fashion',
+    description: 'Premium minimalist essentials brand offering minimalist black and white designs. Shop our curated collection.',
     images: ['/og-image.jpg'],
     creator: '@1ABEL',
     site: '@1ABEL',
@@ -87,10 +87,10 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ClothingStore",
     "name": "1ABEL",
-    "alternateName": "1ABEL Streetwear",
+    "alternateName": "1ABEL minimalist essentials",
     "url": "https://1abel.com",
     "logo": "https://1abel.com/logo.png",
-    "description": "1ABEL is a premium streetwear brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.",
+    "description": "1ABEL is a premium minimalist essentials brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.",
     "foundingDate": "2020",
     "industry": "Fashion & Apparel",
     "areaServed": "Worldwide",
@@ -156,10 +156,10 @@ export default function RootLayout({
         <meta name="geo.region" content="Global" />
         <meta name="geo.placename" content="Worldwide" />
         <meta name="ICBM" content="Global Music Label" />
-        <meta name="DC.title" content="1ABEL - Premium Streetwear" />
+        <meta name="DC.title" content="1ABEL - Premium minimalist essentials" />
         <meta name="DC.creator" content="1ABEL" />
-        <meta name="DC.subject" content="Streetwear, Fashion, Clothing" />
-        <meta name="DC.description" content="Premium streetwear brand offering minimalist black and white designs" />
+        <meta name="DC.subject" content="minimalist essentials, Fashion, Clothing" />
+        <meta name="DC.description" content="Premium minimalist essentials brand offering minimalist black and white designs" />
         <meta name="DC.type" content="Text.Homepage" />
         <meta name="DC.format" content="text/html" />
         <meta name="DC.language" content="en" />

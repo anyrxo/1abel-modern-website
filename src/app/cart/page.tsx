@@ -53,7 +53,7 @@ export default function CartPage() {
               className="text-center py-24"
             >
               <ShoppingBag className="w-16 h-16 mx-auto mb-6 text-gray-400" />
-              <h2 className="text-2xl font-bold mb-4">Your cart is empty</h2>
+              <h2 className="text-2xl font-bold mb-4">Nothing here yet</h2>
               <p className="text-gray-600 mb-8">Start shopping to add items to your cart</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link

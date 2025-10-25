@@ -100,7 +100,7 @@ export default function HomePage() {
             className="mb-8"
           >
             <span className="text-xs tracking-[0.3em] uppercase text-gray-500 font-light">
-              Premium Streetwear
+              Premium minimalist essentials
             </span>
           </motion.div>
 
