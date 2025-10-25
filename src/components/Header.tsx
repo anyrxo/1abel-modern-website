@@ -13,8 +13,12 @@ export function Header() {
   const { totalItems } = useCart()
   const pathname = usePathname()
   const [arcsOpen, setArcsOpen] = useState(false)
+  const [arc2Open, setArc2Open] = useState(false)
+  const [arc3Open, setArc3Open] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [mobileArcsOpen, setMobileArcsOpen] = useState(false)
+  const [mobileArc2Open, setMobileArc2Open] = useState(false)
+  const [mobileArc3Open, setMobileArc3Open] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const { scrollY } = useScroll()
 
@@ -65,75 +69,158 @@ export function Header() {
           <div className="grid grid-cols-3 items-center">
             {/* Left Menu - Desktop Only */}
             <div className="hidden md:flex items-center space-x-8">
-              {/* ARCS Dropdown */}
+              {/* ARC 2 Dropdown */}
               <div
                 className="relative"
-                onMouseEnter={() => setArcsOpen(true)}
-                onMouseLeave={() => setArcsOpen(false)}
+                onMouseEnter={() => setArc2Open(true)}
+                onMouseLeave={() => setArc2Open(false)}
               >
-                <motion.button
+                <Link
+                  href="/arc-2"
                   className={`text-xs font-medium tracking-wider uppercase transition-colors flex items-center py-2 ${
                     isDark
                       ? 'text-gray-400 hover:text-white'
                       : 'text-gray-500 hover:text-black'
                   }`}
-                  onClick={() => { playClick(); setArcsOpen(!arcsOpen); }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
+                  onClick={() => playClick()}
                 >
-                  ARCS
-                  <motion.div
-                    animate={{ rotate: arcsOpen ? 180 : 0 }}
-                    transition={{ duration: 0.3, ease: "easeOut" }}
-                  >
-                    <ChevronDown className="w-3 h-3 ml-1" />
-                  </motion.div>
-                </motion.button>
+                  ARC 2
+                </Link>
 
-                {arcsOpen && (
+                {arc2Open && (
                   <motion.div
                     initial={{ opacity: 0, y: -10, scale: 0.95 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -10, scale: 0.95 }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className={`absolute top-full left-0 mt-0 shadow-lg min-w-[200px] z-50 ${
+                    className={`absolute top-full left-0 mt-0 glass-card-dark backdrop-blur-xl shadow-2xl min-w-[180px] z-50 border ${
                       isDark
-                        ? 'bg-gray-900 border border-gray-700'
-                        : 'bg-white border border-black'
+                        ? 'border-gray-700'
+                        : 'border-black/10'
                     }`}
                   >
-                    <motion.div
-                      whileHover={{ x: 4 }}
-                      transition={{ duration: 0.2 }}
+                    <Link
+                      href="/arc-2"
+                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color ${
+                        isDark
+                          ? 'text-white hover:bg-white/5'
+                          : 'hover:bg-black/5'
+                      }`}
+                      onClick={() => { playClick(); setArc2Open(false); }}
                     >
-                      <Link
-                        href="/arc-2"
-                        className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-colors ${
-                          isDark
-                            ? 'text-white hover:bg-gray-800'
-                            : 'hover:bg-gray-100'
-                        }`}
-                        onClick={() => { playClick(); setArcsOpen(false); }}
-                      >
-                        ARC 2 SHADOW
-                      </Link>
-                    </motion.div>
-                    <motion.div
-                      whileHover={{ x: 4 }}
-                      transition={{ duration: 0.2 }}
+                      Shop All
+                    </Link>
+                    <Link
+                      href="/arc-2/tops"
+                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
+                        isDark
+                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
+                          : 'hover:bg-black/5 border-black/10'
+                      }`}
+                      onClick={() => { playClick(); setArc2Open(false); }}
                     >
-                      <Link
-                        href="/arc-3"
-                        className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-colors ${
-                          isDark
-                            ? 'text-white hover:bg-gray-800 border-t border-gray-700'
-                            : 'hover:bg-gray-100 border-t border-gray-200'
-                        }`}
-                        onClick={() => { playClick(); setArcsOpen(false); }}
-                      >
-                        ARC 3 LIGHT
-                      </Link>
-                    </motion.div>
+                      Tops
+                    </Link>
+                    <Link
+                      href="/arc-2/bottoms"
+                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
+                        isDark
+                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
+                          : 'hover:bg-black/5 border-black/10'
+                      }`}
+                      onClick={() => { playClick(); setArc2Open(false); }}
+                    >
+                      Bottoms
+                    </Link>
+                    <Link
+                      href="/arc-2/accessories"
+                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
+                        isDark
+                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
+                          : 'hover:bg-black/5 border-black/10'
+                      }`}
+                      onClick={() => { playClick(); setArc2Open(false); }}
+                    >
+                      Accessories
+                    </Link>
+                  </motion.div>
+                )}
+              </div>
+
+              {/* ARC 3 Dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setArc3Open(true)}
+                onMouseLeave={() => setArc3Open(false)}
+              >
+                <Link
+                  href="/arc-3"
+                  className={`text-xs font-medium tracking-wider uppercase transition-colors flex items-center py-2 ${
+                    isDark
+                      ? 'text-gray-400 hover:text-white'
+                      : 'text-gray-500 hover:text-black'
+                  }`}
+                  onClick={() => playClick()}
+                >
+                  ARC 3
+                </Link>
+
+                {arc3Open && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
+                    className={`absolute top-full left-0 mt-0 glass-card backdrop-blur-xl shadow-2xl min-w-[180px] z-50 border ${
+                      isDark
+                        ? 'border-gray-700'
+                        : 'border-black/10'
+                    }`}
+                  >
+                    <Link
+                      href="/arc-3"
+                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color ${
+                        isDark
+                          ? 'text-white hover:bg-white/5'
+                          : 'hover:bg-black/5'
+                      }`}
+                      onClick={() => { playClick(); setArc3Open(false); }}
+                    >
+                      Shop All
+                    </Link>
+                    <Link
+                      href="/arc-3/tops"
+                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
+                        isDark
+                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
+                          : 'hover:bg-black/5 border-black/10'
+                      }`}
+                      onClick={() => { playClick(); setArc3Open(false); }}
+                    >
+                      Tops
+                    </Link>
+                    <Link
+                      href="/arc-3/bottoms"
+                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
+                        isDark
+                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
+                          : 'hover:bg-black/5 border-black/10'
+                      }`}
+                      onClick={() => { playClick(); setArc3Open(false); }}
+                    >
+                      Bottoms
+                    </Link>
+                    <Link
+                      href="/arc-3/accessories"
+                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
+                        isDark
+                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
+                          : 'hover:bg-black/5 border-black/10'
+                      }`}
+                      onClick={() => { playClick(); setArc3Open(false); }}
+                    >
+                      Accessories
+                    </Link>
                   </motion.div>
                 )}
               </div>
@@ -300,7 +387,7 @@ export function Header() {
             {/* Mobile Menu Content */}
             <nav className="flex-1 p-6 overflow-y-auto">
               <div className="flex flex-col space-y-6">
-                {/* ARCS Dropdown in Mobile */}
+                {/* ARC 2 Dropdown in Mobile */}
                 <div>
                   <motion.button
                     className={`text-lg font-medium tracking-wider uppercase transition-colors flex items-center justify-between w-full py-3 ${
@@ -308,12 +395,12 @@ export function Header() {
                         ? 'text-gray-400 hover:text-white'
                         : 'text-gray-500 hover:text-black'
                     }`}
-                    onClick={() => { playClick(); setMobileArcsOpen(!mobileArcsOpen); }}
+                    onClick={() => { playClick(); setMobileArc2Open(!mobileArc2Open); }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    ARCS
+                    ARC 2
                     <motion.div
-                      animate={{ rotate: mobileArcsOpen ? 180 : 0 }}
+                      animate={{ rotate: mobileArc2Open ? 180 : 0 }}
                       transition={{ duration: 0.3, ease: "easeOut" }}
                     >
                       <ChevronDown className="w-5 h-5" />
@@ -321,7 +408,7 @@ export function Header() {
                   </motion.button>
 
                   <AnimatePresence>
-                    {mobileArcsOpen && (
+                    {mobileArc2Open && (
                       <motion.div
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
@@ -329,30 +416,134 @@ export function Header() {
                         transition={{ duration: 0.3, ease: "easeOut" }}
                         className="overflow-hidden"
                       >
-                        <div className={`flex flex-col space-y-2 pl-4 pt-3 border-l-2 ${
+                        <div className={`flex flex-col space-y-1 pl-4 pt-3 border-l-2 ${
                           isDark ? 'border-gray-800' : 'border-gray-200'
                         }`}>
                           <Link
                             href="/arc-2"
-                            className={`text-base font-medium tracking-wider uppercase transition-colors py-2 ${
+                            className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
                               isDark
                                 ? 'text-white hover:text-gray-300'
                                 : 'text-black hover:text-gray-600'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArcsOpen(false); }}
+                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc2Open(false); }}
                           >
-                            ARC 2 SHADOW
+                            Shop All
                           </Link>
                           <Link
+                            href="/arc-2/tops"
+                            className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
+                              isDark
+                                ? 'text-gray-400 hover:text-gray-200'
+                                : 'text-gray-600 hover:text-gray-800'
+                            }`}
+                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc2Open(false); }}
+                          >
+                            Tops
+                          </Link>
+                          <Link
+                            href="/arc-2/bottoms"
+                            className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
+                              isDark
+                                ? 'text-gray-400 hover:text-gray-200'
+                                : 'text-gray-600 hover:text-gray-800'
+                            }`}
+                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc2Open(false); }}
+                          >
+                            Bottoms
+                          </Link>
+                          <Link
+                            href="/arc-2/accessories"
+                            className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
+                              isDark
+                                ? 'text-gray-400 hover:text-gray-200'
+                                : 'text-gray-600 hover:text-gray-800'
+                            }`}
+                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc2Open(false); }}
+                          >
+                            Accessories
+                          </Link>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
+                {/* ARC 3 Dropdown in Mobile */}
+                <div>
+                  <motion.button
+                    className={`text-lg font-medium tracking-wider uppercase transition-colors flex items-center justify-between w-full py-3 ${
+                      isDark
+                        ? 'text-gray-400 hover:text-white'
+                        : 'text-gray-500 hover:text-black'
+                    }`}
+                    onClick={() => { playClick(); setMobileArc3Open(!mobileArc3Open); }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    ARC 3
+                    <motion.div
+                      animate={{ rotate: mobileArc3Open ? 180 : 0 }}
+                      transition={{ duration: 0.3, ease: "easeOut" }}
+                    >
+                      <ChevronDown className="w-5 h-5" />
+                    </motion.div>
+                  </motion.button>
+
+                  <AnimatePresence>
+                    {mobileArc3Open && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                        className="overflow-hidden"
+                      >
+                        <div className={`flex flex-col space-y-1 pl-4 pt-3 border-l-2 ${
+                          isDark ? 'border-gray-800' : 'border-gray-200'
+                        }`}>
+                          <Link
                             href="/arc-3"
-                            className={`text-base font-medium tracking-wider uppercase transition-colors py-2 ${
+                            className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
                               isDark
                                 ? 'text-white hover:text-gray-300'
                                 : 'text-black hover:text-gray-600'
                             }`}
-                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArcsOpen(false); }}
+                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc3Open(false); }}
                           >
-                            ARC 3 LIGHT
+                            Shop All
+                          </Link>
+                          <Link
+                            href="/arc-3/tops"
+                            className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
+                              isDark
+                                ? 'text-gray-400 hover:text-gray-200'
+                                : 'text-gray-600 hover:text-gray-800'
+                            }`}
+                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc3Open(false); }}
+                          >
+                            Tops
+                          </Link>
+                          <Link
+                            href="/arc-3/bottoms"
+                            className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
+                              isDark
+                                ? 'text-gray-400 hover:text-gray-200'
+                                : 'text-gray-600 hover:text-gray-800'
+                            }`}
+                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc3Open(false); }}
+                          >
+                            Bottoms
+                          </Link>
+                          <Link
+                            href="/arc-3/accessories"
+                            className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
+                              isDark
+                                ? 'text-gray-400 hover:text-gray-200'
+                                : 'text-gray-600 hover:text-gray-800'
+                            }`}
+                            onClick={() => { playClick(); setMobileMenuOpen(false); setMobileArc3Open(false); }}
+                          >
+                            Accessories
                           </Link>
                         </div>
                       </motion.div>

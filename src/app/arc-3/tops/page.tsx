@@ -92,9 +92,9 @@ export default function Arc3TopsPage() {
             className="mb-12"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], type: "spring", stiffness: 300, damping: 25 }}
           >
-            <Link href="/arc-3" className="group inline-flex items-center gap-2 text-xs text-gray-500 hover:text-black transition-colors uppercase tracking-[0.2em]">
+            <Link href="/arc-3" className="group inline-flex items-center gap-2 text-xs smooth-color uppercase tracking-[0.2em] hover:text-black transition-all duration-300">
               <motion.span
                 className="inline-block"
                 whileHover={{ x: -4 }}
@@ -155,7 +155,7 @@ export default function Arc3TopsPage() {
                   hidden: { opacity: 0, y: 40 },
                   visible: { opacity: 1, y: 0 }
                 }}
-                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], type: "spring", stiffness: 300, damping: 25 }}
                 onMouseEnter={() => setHoveredProduct(index)}
                 onMouseLeave={() => setHoveredProduct(null)}
               >
@@ -163,8 +163,8 @@ export default function Arc3TopsPage() {
                   {/* Product Image */}
                   <div className="relative overflow-hidden mb-6">
                     <motion.div
-                      className="aspect-[3/4] bg-gradient-to-br from-gray-50 to-white border border-black/10 relative"
-                      whileHover={{ scale: 1.02 }}
+                      className="aspect-[3/4] glass-card hover-elevate shimmer-on-hover relative overflow-hidden"
+                      whileHover={{ scale: 1.03, rotateZ: 0.5 }}
                       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                     >
                       {/* Hover overlay */}
@@ -219,11 +219,11 @@ export default function Arc3TopsPage() {
 
                   {/* View Product CTA */}
                   <motion.div
-                    className="mt-4 flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gray-400 group-hover:text-gray-600 transition-colors"
+                    className="mt-4 flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gray-400 group-hover:text-gray-600 smooth-color glow-on-hover"
                     animate={{ x: hoveredProduct === index ? 4 : 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    View Colors
+                    Explore Colors
                     <motion.span
                       animate={{ x: hoveredProduct === index ? [0, 4, 0] : 0 }}
                       transition={{ duration: 1.5, repeat: hoveredProduct === index ? Infinity : 0, ease: "easeInOut" }}

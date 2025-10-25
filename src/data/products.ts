@@ -45,6 +45,31 @@ export interface ColorVariant {
 }
 
 // Base Products - these are the core garments
+
+// Accessories only come in VOID (Arc 2) or CLOUD (Arc 3)
+export const ACCESSORY_COLORS = {
+  ARC_2: {
+    VOID: COLORS.ARC_2.VOID
+  },
+  ARC_3: {
+    CLOUD: COLORS.ARC_3.CLOUD
+  }
+}
+
+
+// Premium accessories (chain, ring, belt) only come in signature colors
+export const PREMIUM_ACCESSORY_COLORS = {
+  ARC_2: {
+    VOID: COLORS.ARC_2.VOID
+  },
+  ARC_3: {
+    CLOUD: COLORS.ARC_3.CLOUD
+  }
+}
+
+// Premium accessories that only come in one signature color
+export const PREMIUM_ACCESSORIES = ['CHAIN', 'RING', 'BELT']
+
 export const BASE_PRODUCTS: Record<string, BaseProduct> = {
   // TOPS
   THERMAL: {

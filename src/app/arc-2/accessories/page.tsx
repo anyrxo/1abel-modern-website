@@ -92,7 +92,7 @@ export default function Arc2AccessoriesPage() {
             className="mb-12"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], type: "spring", stiffness: 300, damping: 25 }}
           >
             <Link href="/arc-2" className="group inline-flex items-center gap-2 text-xs text-gray-500 hover:text-white transition-colors uppercase tracking-[0.2em]">
               <motion.span
@@ -155,7 +155,7 @@ export default function Arc2AccessoriesPage() {
                   hidden: { opacity: 0, y: 40 },
                   visible: { opacity: 1, y: 0 }
                 }}
-                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], type: "spring", stiffness: 300, damping: 25 }}
                 onMouseEnter={() => setHoveredProduct(index)}
                 onMouseLeave={() => setHoveredProduct(null)}
               >
@@ -164,7 +164,7 @@ export default function Arc2AccessoriesPage() {
                   <div className="relative overflow-hidden mb-6">
                     <motion.div
                       className="aspect-[3/4] bg-gradient-to-br from-gray-900 to-black border border-white/5 relative"
-                      whileHover={{ scale: 1.02 }}
+                      whileHover={{ scale: 1.03, rotateZ: 0.5 }}
                       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                     >
                       {/* Hover overlay */}
@@ -214,7 +214,7 @@ export default function Arc2AccessoriesPage() {
                       ${product.price.toFixed(2)} AUD
                       {product.soldOut && <span className="ml-2 text-gray-600">: Sold Out</span>}
                     </p>
-                    <p className="text-xs text-gray-400 mt-1">5 colors available</p>
+                    <p className="text-xs text-gray-400 mt-1">1 signature color</p>
                   </div>
 
                   {/* View Product CTA */}
@@ -223,7 +223,7 @@ export default function Arc2AccessoriesPage() {
                     animate={{ x: hoveredProduct === index ? 4 : 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    View Colors
+                    See Details
                     <motion.span
                       animate={{ x: hoveredProduct === index ? [0, 4, 0] : 0 }}
                       transition={{ duration: 1.5, repeat: hoveredProduct === index ? Infinity : 0, ease: "easeInOut" }}
