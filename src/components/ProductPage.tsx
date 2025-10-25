@@ -1,13 +1,13 @@
 'use client'
 
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, PanInfo } from 'framer-motion'
 import { useState, useRef, useEffect } from 'react'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
 import { useCart } from '@/lib/cartContext'
 import { useRouter } from 'next/navigation'
 import { BASE_PRODUCTS, COLORS, PREMIUM_ACCESSORY_COLORS, PREMIUM_ACCESSORIES } from '@/data/products'
-import { ArrowLeft, Share2, X } from 'lucide-react'
+import { ArrowLeft, Share2, X, ChevronLeft, ChevronRight } from 'lucide-react'
 
 type Arc = 'ARC_2' | 'ARC_3'
 type ColorKey = string
@@ -43,8 +43,30 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const [modalProduct, setModalProduct] = useState<any>(null)
   const [showSizeError, setShowSizeError] = useState(false)
   const [showCartConfirmation, setShowCartConfirmation] = useState(false)
+  const [sizeCarouselIndex, setSizeCarouselIndex] = useState(0)
   const { addItem } = useCart()
   const router = useRouter()
+
+  // Determine how many sizes to show at once based on screen size
+  const sizesToShow = 5 // Show 5 sizes at a time
+  const canScrollLeft = sizeCarouselIndex > 0
+  const canScrollRight = sizeCarouselIndex + sizesToShow < product.sizes.length
+
+  const scrollSizesLeft = () => {
+    setSizeCarouselIndex(Math.max(0, sizeCarouselIndex - 1))
+  }
+
+  const scrollSizesRight = () => {
+    setSizeCarouselIndex(Math.min(product.sizes.length - sizesToShow, sizeCarouselIndex + 1))
+  }
+
+  const handleSizeDrag = (event: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+    if (info.offset.x > 50) {
+      scrollSizesLeft()
+    } else if (info.offset.x < -50) {
+      scrollSizesRight()
+    }
+  }
 
   const handleShare = async () => {
     if (navigator.share) {
@@ -250,22 +272,59 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                   <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-4`}>
                     Size
                   </p>
-                  <div className={`grid ${product.sizes.length <= 6 ? 'grid-cols-6' : 'grid-cols-8'} gap-2`}>
-                    {product.sizes.map((size) => (
+                  <div className="relative flex items-center gap-2">
+                    {/* Left Arrow */}
+                    {canScrollLeft && (
                       <motion.button
-                        key={size}
-                        onClick={() => setSelectedSize(size)}
-                        className={`py-3 border text-sm btn-liquid hover-elevate magnetic-button ${
-                          selectedSize === size
-                            ? (arc === 'ARC_2' ? 'border-white bg-white text-black' : 'border-black bg-black text-white')
-                            : (arc === 'ARC_2' ? 'border-white/20 hover:border-white/40' : 'border-black/20 hover:border-black/40')
+                        onClick={scrollSizesLeft}
+                        className={`absolute -left-3 z-10 p-2 rounded-full ${
+                          arc === 'ARC_2' ? 'bg-white text-black' : 'bg-black text-white'
                         }`}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                        whileTap={{ scale: 0.9 }}
                       >
-                        {size}
+                        <ChevronLeft className="w-4 h-4" />
                       </motion.button>
-                    ))}
+                    )}
+
+                    {/* Size Buttons Container with Swipe Support */}
+                    <motion.div
+                      className="flex-1 overflow-hidden"
+                      drag="x"
+                      dragConstraints={{ left: 0, right: 0 }}
+                      dragElastic={0.1}
+                      onDragEnd={handleSizeDrag}
+                    >
+                      <div className="flex gap-2">
+                        {product.sizes.slice(sizeCarouselIndex, sizeCarouselIndex + sizesToShow).map((size) => (
+                          <motion.button
+                            key={size}
+                            onClick={() => setSelectedSize(size)}
+                            className={`flex-1 py-3 border text-sm btn-liquid hover-elevate magnetic-button ${
+                              selectedSize === size
+                                ? (arc === 'ARC_2' ? 'border-white bg-white text-black' : 'border-black bg-black text-white')
+                                : (arc === 'ARC_2' ? 'border-white/20 hover:border-white/40' : 'border-black/20 hover:border-black/40')
+                            }`}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            {size}
+                          </motion.button>
+                        ))}
+                      </div>
+                    </motion.div>
+
+                    {/* Right Arrow */}
+                    {canScrollRight && (
+                      <motion.button
+                        onClick={scrollSizesRight}
+                        className={`absolute -right-3 z-10 p-2 rounded-full ${
+                          arc === 'ARC_2' ? 'bg-white text-black' : 'bg-black text-white'
+                        }`}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        <ChevronRight className="w-4 h-4" />
+                      </motion.button>
+                    )}
                   </div>
                   {/* Error message when no size selected */}
                   {showSizeError && (

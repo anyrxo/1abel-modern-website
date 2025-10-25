@@ -583,30 +583,6 @@ export default function Arc2AccessoriesPage() {
             </motion.button>
               </div>
             </div>
-            {/* Category/Product Type */}
-            <div className="mb-6">
-              <p className="text-xs tracking-wider uppercase text-gray-600 mb-3">Product Type</p>
-              <div className="flex flex-wrap gap-2">
-                {['Tops', 'Bottoms', 'Accessories'].map((cat) => (
-                  <motion.button
-                    key={cat}
-                    onClick={() => {
-                      // Navigate to that category page
-                      const arcSlug = 'arc-2'
-                      window.location.href = `/${arcSlug}/${cat.toLowerCase()}`
-                    }}
-                    className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
-                      cat === 'Accessories'
-                        ? 'border-black bg-black text-white'
-                        : 'border-black/20 text-black hover:border-black/40'
-                    }`}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    {cat}
-                  </motion.button>
-                ))}
-              </div>
-            </div>
 
 
             <motion.button

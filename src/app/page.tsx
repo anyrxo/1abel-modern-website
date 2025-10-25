@@ -4,38 +4,10 @@ import { motion, useScroll, useTransform, useMotionValue, useSpring, AnimatePres
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { useState, useRef, useEffect } from 'react'
-import { Volume2, VolumeX } from 'lucide-react'
 
 export default function HomePage() {
   const { scrollYProgress, scrollY } = useScroll()
   const [currentArc, setCurrentArc] = useState<null | 2 | 3>(null)
-  const [soundEnabled, setSoundEnabled] = useState(false)
-  const audioRef = useRef<HTMLAudioElement | null>(null)
-
-  // Initialize ambient audio
-  useEffect(() => {
-    audioRef.current = new Audio('/ambient.mp3')
-    audioRef.current.loop = true
-    audioRef.current.volume = 0.3
-
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause()
-        audioRef.current = null
-      }
-    }
-  }, [])
-
-  // Handle sound toggle
-  useEffect(() => {
-    if (audioRef.current) {
-      if (soundEnabled) {
-        audioRef.current.play().catch(err => console.log('Audio play failed:', err))
-      } else {
-        audioRef.current.pause()
-      }
-    }
-  }, [soundEnabled])
 
   // Smooth parallax transforms
   const smoothProgress = useSpring(scrollYProgress, {
@@ -57,16 +29,6 @@ export default function HomePage() {
   return (
     <div className="bg-black text-white relative">
       <Header />
-
-      {/* Ambient Background Noise Indicator */}
-      <motion.button
-        onClick={() => setSoundEnabled(!soundEnabled)}
-        className="fixed top-24 right-8 z-50 p-3 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        {soundEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
-      </motion.button>
 
       {/* Hero Section - Immersive Introduction */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">

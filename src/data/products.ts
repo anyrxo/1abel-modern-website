@@ -123,7 +123,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'The piece you reach for when crossing thresholds. Studio to street. Day to night. This jacket bridges states—functional armor that looks intentional, not technical.',
     arc2Price: 205,
     arc3Price: 202,
-    sizes: ['S', 'M', 'L', 'XL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   CREWNECK: {
@@ -195,7 +195,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'Not quite a shirt, not quite a jacket. The Overshirt exists in the space between—perfect for layering or wearing solo. Built heavy enough to stand alone.',
     arc2Price: 165,
     arc3Price: 162,
-    sizes: ['S', 'M', 'L', 'XL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   PUFFER: {
@@ -213,7 +213,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'When you need to block out the cold and the noise. The Puffer creates a cocoon—your personal atmosphere. It\'s excessive by design. Unapologetic in its volume.',
     arc2Price: 285,
     arc3Price: 275,
-    sizes: ['S', 'M', 'L', 'XL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   // BOTTOMS
