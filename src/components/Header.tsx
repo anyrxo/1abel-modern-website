@@ -6,9 +6,11 @@ import { BookOpen, ShoppingCart, ChevronDown, Menu, X } from 'lucide-react'
 import { useSound } from '@/lib/soundManager'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
+import { useCart } from '@/lib/cartContext'
 
 export function Header() {
   const { playClick, playLogo } = useSound()
+  const { totalItems } = useCart()
   const pathname = usePathname()
   const [arcsOpen, setArcsOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -216,7 +218,20 @@ export function Header() {
                   }`}
                   onClick={() => playClick()}
                 >
-                  <ShoppingCart className="w-4 h-4 mr-1" />
+                  <div className="relative mr-1">
+                    <ShoppingCart className="w-4 h-4" />
+                    {totalItems > 0 && (
+                      <motion.span
+                        initial={{ scale: 0 }}
+                        animate={{ scale: 1 }}
+                        className={`absolute -top-2 -right-2 flex items-center justify-center w-4 h-4 text-[9px] font-bold rounded-full ${
+                          isDark ? 'bg-white text-black' : 'bg-black text-white'
+                        }`}
+                      >
+                        {totalItems > 9 ? '9+' : totalItems}
+                      </motion.span>
+                    )}
+                  </div>
                   CART
                   {isActive('/cart') && (
                     <motion.div
@@ -233,10 +248,21 @@ export function Header() {
             <div className="flex md:hidden items-center justify-end">
               <Link
                 href="/cart"
-                className={`p-2 ${isDark ? 'text-white' : 'text-black'}`}
+                className={`p-2 relative ${isDark ? 'text-white' : 'text-black'}`}
                 onClick={() => playClick()}
               >
                 <ShoppingCart className="w-6 h-6" />
+                {totalItems > 0 && (
+                  <motion.span
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className={`absolute top-0 right-0 flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded-full ${
+                      isDark ? 'bg-white text-black' : 'bg-black text-white'
+                    }`}
+                  >
+                    {totalItems > 9 ? '9+' : totalItems}
+                  </motion.span>
+                )}
               </Link>
             </div>
           </div>

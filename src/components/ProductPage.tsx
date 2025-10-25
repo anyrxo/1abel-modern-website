@@ -203,9 +203,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                     </motion.button>
                   ))}
                 </div>
-                <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-600' : 'text-gray-500'} mt-2`}>
-                  {(colors[selectedColor as keyof typeof colors] as any)?.description || ''}
-                </p>
               </div>
 
               {/* Size Selector */}
@@ -280,28 +277,66 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                   Pairs With
                 </h3>
                 <div className="grid grid-cols-1 gap-4">
-                  {pairsWith[selectedColor]?.map((pairing, index) => (
-                    <motion.div
-                      key={index}
-                      className={`border ${borderColor} p-4 hover:${arc === 'ARC_2' ? 'border-white/20' : 'border-black/20'} transition-colors cursor-pointer group`}
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      <div className="flex items-start justify-between mb-2">
-                        <div>
-                          <p className={`text-sm font-semibold uppercase tracking-wide group-hover:${arc === 'ARC_2' ? 'text-gray-300' : 'text-gray-700'} transition-colors`}>
-                            {pairing.product} — {pairing.color}
+                  {pairsWith[selectedColor]?.map((pairing, index) => {
+                    const pairingProductId = pairing.product.replace(/ /g, '_').toUpperCase()
+                    const pairingArcSlug = pairing.arc === 'Arc 2' ? 'arc-2' : 'arc-3'
+                    const pairingCategory = BASE_PRODUCTS[pairingProductId]?.category.toLowerCase() || 'tops'
+                    const pairingProductSlug = pairing.product.toLowerCase().replace(/ /g, '-')
+                    const pairingLink = `/${pairingArcSlug}/${pairingCategory}/${pairingProductSlug}`
+
+                    return (
+                      <motion.div
+                        key={index}
+                        className={`border ${borderColor} p-4 transition-colors group`}
+                        whileHover={{ scale: 1.01 }}
+                      >
+                        <Link href={pairingLink} className="block mb-3">
+                          <div className="flex items-start justify-between mb-2">
+                            <div>
+                              <p className={`text-sm font-semibold uppercase tracking-wide group-hover:${arc === 'ARC_2' ? 'text-gray-300' : 'text-gray-700'} transition-colors`}>
+                                {pairing.product} — {pairing.color}
+                              </p>
+                              <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-600' : 'text-gray-500'} uppercase tracking-wider mt-1`}>
+                                {pairing.arc}
+                              </p>
+                            </div>
+                            <span className="text-sm">${pairing.price}</span>
+                          </div>
+                          <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-500'} italic`}>
+                            {pairing.reason}
                           </p>
-                          <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-600' : 'text-gray-500'} uppercase tracking-wider mt-1`}>
-                            {pairing.arc}
-                          </p>
-                        </div>
-                        <span className="text-sm">${pairing.price}</span>
-                      </div>
-                      <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-500'} italic`}>
-                        {pairing.reason}
-                      </p>
-                    </motion.div>
-                  ))}
+                        </Link>
+                        <motion.button
+                          onClick={() => {
+                            const pairingProduct = BASE_PRODUCTS[pairingProductId]
+                            if (pairingProduct && pairingProduct.sizes.length === 1) {
+                              addItem({
+                                id: `${pairingProductId.toLowerCase()}-${pairing.color.toLowerCase()}`,
+                                name: `${pairing.product} — ${pairing.color}`,
+                                price: pairing.price,
+                                size: pairingProduct.sizes[0],
+                                arc: pairing.arc,
+                                category: pairingProduct.category
+                              })
+                              setShowNotification(true)
+                              setTimeout(() => setShowNotification(false), 4000)
+                            } else {
+                              router.push(pairingLink)
+                            }
+                          }}
+                          className={`w-full py-2 text-xs tracking-wider uppercase ${
+                            arc === 'ARC_2'
+                              ? 'border border-white/20 hover:border-white/40 hover:bg-white/5'
+                              : 'border border-black/20 hover:border-black/40 hover:bg-black/5'
+                          } transition-all`}
+                          whileHover={{ scale: 1.02 }}
+                          whileTap={{ scale: 0.98 }}
+                        >
+                          {BASE_PRODUCTS[pairingProductId]?.sizes.length === 1 ? 'Add to Cart' : 'Select Size'}
+                        </motion.button>
+                      </motion.div>
+                    )
+                  })}
                 </div>
               </div>
             </div>
