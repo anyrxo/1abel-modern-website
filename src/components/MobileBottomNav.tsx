@@ -15,18 +15,26 @@ export function MobileBottomNav() {
   const [lastScrollY, setLastScrollY] = useState(0)
 
   useEffect(() => {
+    let ticking = false
+
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY
 
-      if (currentScrollY < lastScrollY) {
-        // Scrolling up - show nav
-        setIsVisible(true)
-      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down - hide nav (only after 100px scroll)
-        setIsVisible(false)
+          if (currentScrollY < lastScrollY) {
+            // Scrolling up - show nav instantly
+            setIsVisible(true)
+          } else if (currentScrollY > lastScrollY && currentScrollY > 50) {
+            // Scrolling down - hide nav instantly (lower threshold)
+            setIsVisible(false)
+          }
+
+          setLastScrollY(currentScrollY)
+          ticking = false
+        })
+        ticking = true
       }
-
-      setLastScrollY(currentScrollY)
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
@@ -62,7 +70,7 @@ export function MobileBottomNav() {
       {/* Arc Menu Overlay */}
       {arcMenuOpen && (
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.15 }}
@@ -70,10 +78,10 @@ export function MobileBottomNav() {
           onClick={() => setArcMenuOpen(false)}
         >
           <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
+            initial={{ scale: 1, opacity: 1 }}
             animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.9, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 500, damping: 30, duration: 0.2 }}
+            exit={{ scale: 0.95, opacity: 0 }}
+            transition={{ duration: 0.15 }}
             className="absolute bottom-20 left-4 right-4 glass-card backdrop-blur-xl rounded-premium-xl p-4 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
@@ -102,7 +110,7 @@ export function MobileBottomNav() {
       <motion.div
         className="md:hidden fixed bottom-0 left-0 right-0 z-30 glass-card backdrop-blur-2xl border-t border-black/10 shadow-2xl"
         animate={{ y: isVisible ? 0 : 100 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+        transition={{ duration: 0.2, ease: 'easeOut' }}
       >
         <div className="grid grid-cols-4 h-16">
           {/* Home */}

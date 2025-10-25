@@ -27,6 +27,7 @@ interface ProductPageProps {
 
 export function ProductPage({ productId, arc, colorStories, pairsWith }: ProductPageProps) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const sizeSelectRef = useRef<HTMLDivElement>(null)
   const product = BASE_PRODUCTS[productId]
   const colors = PREMIUM_ACCESSORIES.includes(productId)
     ? (arc === 'ARC_2' ? PREMIUM_ACCESSORY_COLORS.ARC_2 : PREMIUM_ACCESSORY_COLORS.ARC_3)
@@ -39,7 +40,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const [selectedColor, setSelectedColor] = useState<string>(Object.keys(colors)[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes.length === 1 ? product.sizes[0] : '')
   const [sizeModalOpen, setSizeModalOpen] = useState(false)
-  const [sizeSheetOpen, setSizeSheetOpen] = useState(false)
   const [modalProduct, setModalProduct] = useState<any>(null)
   const { addItem } = useCart()
   const router = useRouter()
@@ -61,30 +61,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
     }
   }
 
-  const handleQuickAdd = () => {
-    if (product.sizes.length === 1) {
-      // Auto-add if only one size
-      handleAddToCart()
-    } else {
-      // Show size selector
-      setSizeSheetOpen(true)
-    }
-  }
-
-  const handleSizeSelect = (size: string) => {
-    setSelectedSize(size)
-    const currentColor: any = colors[selectedColor as keyof typeof colors]
-    addItem({
-      id: `${productId.toLowerCase()}-${selectedColor.toLowerCase()}`,
-      name: `${product.name} — ${currentColor.name}`,
-      price: price,
-      size: size,
-      arc: `${arcName}`,
-      category: product.category
-    })
-    setSizeSheetOpen(false)
-  }
-
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"]
@@ -97,7 +73,8 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
 
   const handleAddToCart = () => {
     if (!selectedSize) {
-      alert('Please select a size')
+      // Scroll to size selector instead of showing alert
+      sizeSelectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
       return
     }
 
@@ -144,71 +121,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIvPjwvc3ZnPg==')]" />
       </div>
 
-      {/* Sticky Add to Cart Button - Mobile Only */}
-      <motion.div
-        className="md:hidden fixed bottom-20 left-0 right-0 z-40 px-4 pb-4"
-        initial={{ y: 100 }}
-        animate={{ y: 0 }}
-        transition={{ delay: 0.5 }}
-      >
-        <motion.button
-          onClick={handleQuickAdd}
-          className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium-xl shadow-2xl ${
-            arc === 'ARC_2'
-              ? 'bg-white text-black'
-              : 'bg-black text-white'
-          }`}
-          whileTap={{ scale: 0.98 }}
-        >
-          ADD TO CART
-        </motion.button>
-      </motion.div>
-
-      {/* Size Selector Sheet - Slides up from bottom */}
-      {sizeSheetOpen && (
-        <>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/50 z-50"
-            onClick={() => setSizeSheetOpen(false)}
-          />
-          <motion.div
-            initial={{ y: '100%' }}
-            animate={{ y: 0 }}
-            exit={{ y: '100%' }}
-            transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className={`fixed bottom-0 left-0 right-0 z-50 rounded-t-premium-xl p-6 pb-8 ${bgColor}`}
-          >
-            <div className="flex items-center justify-between mb-6">
-              <h3 className="text-lg font-bold tracking-wider uppercase">Select Size</h3>
-              <button onClick={() => setSizeSheetOpen(false)}>
-                <X className="w-6 h-6" />
-              </button>
-            </div>
-            <div className="grid grid-cols-3 gap-3 mb-6">
-              {product.sizes.map((size) => (
-                <motion.button
-                  key={size}
-                  onClick={() => handleSizeSelect(size)}
-                  className={`py-4 text-sm font-bold tracking-wider uppercase border-2 rounded-premium ${
-                    arc === 'ARC_2'
-                      ? 'border-white/20 hover:bg-white hover:text-black'
-                      : 'border-black/20 hover:bg-black hover:text-white'
-                  } transition-all`}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {size}
-                </motion.button>
-              ))}
-            </div>
-            <p className={`text-xs text-center ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'}`}>
-              Select your size to add to cart
-            </p>
-          </motion.div>
-        </>
-      )}
 
 
       <div className="pt-24 px-4 md:px-8 pb-20">
@@ -285,7 +197,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
 
               {/* Size Selector - Only show for multi-size products */}
               {product.sizes.length > 1 && (
-                <div className="mb-8">
+                <div ref={sizeSelectRef} className="mb-8">
                   <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-4`}>
                     Size
                   </p>
