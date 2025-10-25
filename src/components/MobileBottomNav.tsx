@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { Home, ShoppingBag, Layers, Mail } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { useCart } from '@/lib/cartContext'
 
 export function MobileBottomNav() {
@@ -14,8 +14,48 @@ export function MobileBottomNav() {
 
   const isActive = (path: string) => pathname === path
 
+  // Generate page title based on current route
+  const pageTitle = useMemo(() => {
+    if (pathname === '/') return 'Home'
+    if (pathname === '/cart') return 'Cart'
+    if (pathname === '/contact') return 'Contact'
+    if (pathname === '/about') return 'About'
+    if (pathname === '/checkout') return 'Checkout'
+    if (pathname.includes('/arc-2/collections')) return 'Arc 2 Shadow'
+    if (pathname.includes('/arc-3/collections')) return 'Arc 3 Light'
+    if (pathname.includes('/arc-2/shop-all')) return 'Arc 2 Shop All'
+    if (pathname.includes('/arc-3/shop-all')) return 'Arc 3 Shop All'
+    if (pathname.includes('/arc-2/tops')) return 'Arc 2 Tops'
+    if (pathname.includes('/arc-3/tops')) return 'Arc 3 Tops'
+    if (pathname.includes('/arc-2/bottoms')) return 'Arc 2 Bottoms'
+    if (pathname.includes('/arc-3/bottoms')) return 'Arc 3 Bottoms'
+    if (pathname.includes('/arc-2/accessories')) return 'Arc 2 Accessories'
+    if (pathname.includes('/arc-3/accessories')) return 'Arc 3 Accessories'
+    if (pathname.includes('/arc-2')) return 'Arc 2 Shadow'
+    if (pathname.includes('/arc-3')) return 'Arc 3 Light'
+    return '1ABEL'
+  }, [pathname])
+
   return (
     <>
+      {/* Mobile Page Title Bar */}
+      <div className="md:hidden fixed top-0 left-0 right-0 z-30 glass-card backdrop-blur-2xl border-b border-black/10 shadow-lg">
+        <div className="h-14 flex items-center justify-center px-4">
+          <motion.h1
+            key={pageTitle}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            className="text-sm font-bold tracking-[0.2em] uppercase"
+          >
+            {pageTitle}
+          </motion.h1>
+        </div>
+      </div>
+
+      {/* Spacer for title bar */}
+      <div className="md:hidden h-14" />
+
       {/* Arc Menu Overlay */}
       {arcMenuOpen && (
         <motion.div

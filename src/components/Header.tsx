@@ -186,15 +186,8 @@ export function Header() {
               </div>
             </div>
 
-            {/* Hamburger Menu - Mobile Only */}
+            {/* Left - Mobile (Empty for symmetry) */}
             <div className="flex md:hidden">
-              <motion.button
-                onClick={() => { playClick(); setMobileMenuOpen(true); }}
-                className={`p-2 ${isDark ? 'text-white' : 'text-black'}`}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Menu className="w-6 h-6" />
-              </motion.button>
             </div>
 
             {/* Center Logo */}
@@ -291,26 +284,8 @@ export function Header() {
               </motion.div>
             </div>
 
-            {/* Right Menu - Mobile (Cart Icon Only) */}
+            {/* Right - Mobile (Empty for symmetry) */}
             <div className="flex md:hidden items-center justify-end">
-              <Link
-                href="/cart"
-                className={`p-2 relative ${isDark ? 'text-white' : 'text-black'}`}
-                onClick={() => playClick()}
-              >
-                <ShoppingCart className="w-6 h-6" />
-                {totalItems > 0 && (
-                  <motion.span
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    className={`absolute top-0 right-0 flex items-center justify-center w-5 h-5 text-[10px] font-bold rounded-full ${
-                      isDark ? 'bg-white text-black' : 'bg-black text-white'
-                    }`}
-                  >
-                    {totalItems > 9 ? '9+' : totalItems}
-                  </motion.span>
-                )}
-              </Link>
             </div>
           </div>
         </div>
