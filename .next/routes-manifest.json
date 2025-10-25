@@ -187,6 +187,12 @@
       "namedRegex": "^/arc\\-2/tops(?:/)?$"
     },
     {
+      "page": "/arc-2/tops/thermal",
+      "regex": "^/arc\\-2/tops/thermal(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/tops/thermal(?:/)?$"
+    },
+    {
       "page": "/arc-3",
       "regex": "^/arc\\-3(?:/)?$",
       "routeKeys": {},
