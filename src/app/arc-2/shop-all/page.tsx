@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import Link from 'next/link'
 import { useRef, useState, useMemo } from 'react'
 import { ProductFilters } from '@/components/ProductFilters'
+import { SlidersHorizontal, ArrowUpDown } from 'lucide-react'
 
 export default function Arc2ShopAllPage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -13,6 +14,9 @@ export default function Arc2ShopAllPage() {
   const [selectedColors, setSelectedColors] = useState<string[]>([])
   const [selectedSizes, setSelectedSizes] = useState<string[]>([])
   const [priceSort, setPriceSort] = useState<'asc' | 'desc' | 'none'>('none')
+  const [filterMenuOpen, setFilterMenuOpen] = useState(false)
+  const [sortMenuOpen, setSortMenuOpen] = useState(false)
+
 
   const { scrollYProgress } = useScroll({
     target: containerRef,

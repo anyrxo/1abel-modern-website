@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import Link from 'next/link'
 import { useRef, useState, useMemo } from 'react'
 import { ProductFilters } from '@/components/ProductFilters'
+import { SlidersHorizontal, ArrowUpDown } from 'lucide-react'
 
 export default function Arc2TopsPage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -13,6 +14,8 @@ export default function Arc2TopsPage() {
   const [selectedColors, setSelectedColors] = useState<string[]>([])
   const [selectedSizes, setSelectedSizes] = useState<string[]>([])
   const [priceSort, setPriceSort] = useState<'asc' | 'desc' | 'none'>('none')
+  const [filterMenuOpen, setFilterMenuOpen] = useState(false)
+  const [sortMenuOpen, setSortMenuOpen] = useState(false)
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -301,6 +304,111 @@ export default function Arc2TopsPage() {
           </motion.div>
         </div>
       </main>
+
+      {/* Floating Filter & Sort Buttons - Mobile Only */}
+      <div className="md:hidden fixed bottom-[72px] left-1/2 -translate-x-1/2 z-40 flex gap-3">
+        <motion.button
+          onClick={() => {
+            setFilterMenuOpen(!filterMenuOpen)
+            setSortMenuOpen(false)
+          }}
+          className="flex items-center gap-2 px-6 py-3 bg-white text-black text-sm font-bold tracking-wide uppercase rounded-premium shadow-2xl"
+          whileTap={{ scale: 0.95 }}
+        >
+          <SlidersHorizontal className="w-4 h-4" />
+          Filter
+        </motion.button>
+        <motion.button
+          onClick={() => {
+            setSortMenuOpen(!sortMenuOpen)
+            setFilterMenuOpen(false)
+          }}
+          className="flex items-center gap-2 px-6 py-3 bg-white text-black text-sm font-bold tracking-wide uppercase rounded-premium shadow-2xl"
+          whileTap={{ scale: 0.95 }}
+        >
+          <ArrowUpDown className="w-4 h-4" />
+          Sort
+        </motion.button>
+      </div>
+
+      {/* Filter Menu Popup */}
+      {filterMenuOpen && (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="md:hidden fixed inset-0 bg-black/50 z-45"
+            onClick={() => setFilterMenuOpen(false)}
+          />
+          <motion.div
+            initial={{ y: '100%' }}
+            animate={{ y: 0 }}
+            transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-black rounded-t-premium-xl p-6 pb-8 max-h-[70vh] overflow-y-auto"
+          >
+            <h3 className="text-lg font-bold tracking-wider uppercase mb-6 text-white">Filters</h3>
+            <ProductFilters
+              onSearchChange={setSearchQuery}
+              onColorFilter={setSelectedColors}
+              onSizeFilter={setSelectedSizes}
+              onPriceSort={setPriceSort}
+              availableColors={['VOID', 'STEEL', 'BLOOD', 'MOSS', 'EARTH']}
+              availableSizes={['XS', 'S', 'M', 'L', 'XL', 'ONE SIZE']}
+              isDark={true}
+            />
+            <motion.button
+              onClick={() => setFilterMenuOpen(false)}
+              className="w-full mt-6 py-4 bg-white text-black text-sm font-bold tracking-wider uppercase rounded-premium"
+              whileTap={{ scale: 0.98 }}
+            >
+              Apply Filters
+            </motion.button>
+          </motion.div>
+        </>
+      )}
+
+      {/* Sort Menu Popup */}
+      {sortMenuOpen && (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="md:hidden fixed inset-0 bg-black/50 z-45"
+            onClick={() => setSortMenuOpen(false)}
+          />
+          <motion.div
+            initial={{ y: '100%' }}
+            animate={{ y: 0 }}
+            transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-black rounded-t-premium-xl p-6 pb-8"
+          >
+            <h3 className="text-lg font-bold tracking-wider uppercase mb-6 text-white">Sort By</h3>
+            <div className="space-y-3">
+              {[
+                { label: 'Price: Low to High', value: 'asc' as const },
+                { label: 'Price: High to Low', value: 'desc' as const },
+                { label: 'Default', value: 'none' as const }
+              ].map((option) => (
+                <motion.button
+                  key={option.value}
+                  onClick={() => {
+                    setPriceSort(option.value)
+                    setSortMenuOpen(false)
+                  }}
+                  className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                    priceSort === option.value
+                      ? 'border-white bg-white text-black'
+                      : 'border-white/20 text-white hover:border-white/40'
+                  }`}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  {option.label}
+                </motion.button>
+              ))}
+            </div>
+          </motion.div>
+        </>
+      )}
 
       {/* Footer */}
       <footer className="bg-black border-t border-white/10 py-16 px-4 md:px-8">
