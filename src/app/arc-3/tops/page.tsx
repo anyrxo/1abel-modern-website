@@ -17,61 +17,61 @@ export default function Arc3TopsPage() {
   const headerY = useTransform(scrollYProgress, [0, 0.3], [0, -50])
   const headerOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0])
 
-  const products = [
+    const products = [
     {
-      id: 1,
-      name: "CLOUD THERMAL",
-      price: 118.00,
-      category: "Thermal",
+      slug: "thermal",
+      name: "THERMAL",
+      price: 182.00,
+      category: "Heavyweight",
       soldOut: false
     },
     {
-      id: 2,
-      name: "ETERNAL HOODIE",
-      price: 142.00,
-      category: "Hoodie",
+      slug: "hoodie",
+      name: "HOODIE",
+      price: 192.00,
+      category: "Essential",
       soldOut: false
     },
     {
-      id: 3,
-      name: "FROST ZIPUP",
-      price: 152.00,
-      category: "Zip-Up",
-      soldOut: false
-    },
-    {
-      id: 4,
-      name: "IVORY HOODIE",
-      price: 138.00,
-      category: "Hoodie",
-      soldOut: false
-    },
-    {
-      id: 5,
-      name: "ARCTIC PUFFER",
-      price: 275.00,
+      slug: "coach-jacket",
+      name: "COACH JACKET",
+      price: 202.00,
       category: "Outerwear",
       soldOut: false
     },
     {
-      id: 6,
-      name: "PEARL THERMAL",
-      price: 115.00,
-      category: "Thermal",
+      slug: "crewneck",
+      name: "CREWNECK",
+      price: 172.00,
+      category: "Essential",
       soldOut: false
     },
     {
-      id: 7,
-      name: "CHALK SWEATER",
-      price: 155.00,
-      category: "Sweater",
+      slug: "longsleeve",
+      name: "LONG-SLEEVE TEE",
+      price: 92.00,
+      category: "Layering",
       soldOut: false
     },
     {
-      id: 8,
-      name: "LUNAR TEE",
+      slug: "tee",
+      name: "TEE",
       price: 72.00,
-      category: "T-Shirt",
+      category: "Essential",
+      soldOut: false
+    },
+    {
+      slug: "overshirt",
+      name: "OVERSHIRT",
+      price: 162.00,
+      category: "Hybrid",
+      soldOut: false
+    },
+    {
+      slug: "puffer",
+      name: "PUFFER",
+      price: 275.00,
+      category: "Outerwear",
       soldOut: false
     }
   ]
@@ -148,18 +148,18 @@ export default function Arc3TopsPage() {
               }
             }}
           >
-            {products.map((product) => (
+            {products.map((product, index) => (
               <motion.div
-                key={product.id}
+                key={product.slug}
                 variants={{
                   hidden: { opacity: 0, y: 40 },
                   visible: { opacity: 1, y: 0 }
                 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                onMouseEnter={() => setHoveredProduct(product.id)}
+                onMouseEnter={() => setHoveredProduct(index)}
                 onMouseLeave={() => setHoveredProduct(null)}
               >
-                <Link href={`/arc-3/tops/${product.id}`} className="group block">
+                <Link href={`/arc-3/tops/${product.slug}`} className="group block">
                   {/* Product Image */}
                   <div className="relative overflow-hidden mb-6">
                     <motion.div
@@ -205,7 +205,7 @@ export default function Arc3TopsPage() {
                   <div className="space-y-2">
                     <motion.h3
                       className="text-sm font-bold uppercase tracking-wide group-hover:text-gray-700 transition-colors"
-                      animate={{ x: hoveredProduct === product.id ? 4 : 0 }}
+                      animate={{ x: hoveredProduct === index ? 4 : 0 }}
                       transition={{ duration: 0.3 }}
                     >
                       {product.name}
@@ -214,18 +214,19 @@ export default function Arc3TopsPage() {
                       ${product.price.toFixed(2)} AUD
                       {product.soldOut && <span className="ml-2 text-gray-400">: Sold Out</span>}
                     </p>
+                    <p className="text-xs text-gray-400 mt-1">5 colors available</p>
                   </div>
 
                   {/* View Product CTA */}
                   <motion.div
                     className="mt-4 flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gray-400 group-hover:text-gray-600 transition-colors"
-                    animate={{ x: hoveredProduct === product.id ? 4 : 0 }}
+                    animate={{ x: hoveredProduct === index ? 4 : 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    View Details
+                    View Colors
                     <motion.span
-                      animate={{ x: hoveredProduct === product.id ? [0, 4, 0] : 0 }}
-                      transition={{ duration: 1.5, repeat: hoveredProduct === product.id ? Infinity : 0, ease: "easeInOut" }}
+                      animate={{ x: hoveredProduct === index ? [0, 4, 0] : 0 }}
+                      transition={{ duration: 1.5, repeat: hoveredProduct === index ? Infinity : 0, ease: "easeInOut" }}
                     >
                       →
                     </motion.span>

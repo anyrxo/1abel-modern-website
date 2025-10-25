@@ -17,40 +17,61 @@ export default function Arc2AccessoriesPage() {
   const headerY = useTransform(scrollYProgress, [0, 0.3], [0, -50])
   const headerOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0])
 
-  const products = [
+    const products = [
     {
-      id: 1,
-      name: "SHADOW CHAIN",
+      slug: "chain",
+      name: "CHAIN",
       price: 145.00,
-      category: "Chain",
+      category: "Jewelry",
       soldOut: false
     },
     {
-      id: 2,
-      name: "OBSIDIAN RING",
+      slug: "ring",
+      name: "RING",
       price: 95.00,
-      category: "Ring",
+      category: "Jewelry",
       soldOut: false
     },
     {
-      id: 3,
-      name: "MIDNIGHT BEANIE",
+      slug: "beanie",
+      name: "BEANIE",
       price: 55.00,
-      category: "Beanie",
+      category: "Headwear",
       soldOut: false
     },
     {
-      id: 4,
-      name: "VOID GLOVES",
+      slug: "gloves",
+      name: "GLOVES",
       price: 85.00,
-      category: "Gloves",
+      category: "Winter",
       soldOut: false
     },
     {
-      id: 5,
-      name: "ONYX BELT",
+      slug: "belt",
+      name: "BELT",
       price: 125.00,
-      category: "Belt",
+      category: "Essential",
+      soldOut: false
+    },
+    {
+      slug: "cap",
+      name: "CAP",
+      price: 65.00,
+      category: "Headwear",
+      soldOut: false
+    },
+    {
+      slug: "socks",
+      name: "SOCKS",
+      price: 45.00,
+      category: "Essential",
+      soldOut: false
+    },
+    {
+      slug: "tote",
+      name: "TOTE BAG",
+      price: 85.00,
+      category: "Carry",
       soldOut: false
     }
   ]
@@ -127,18 +148,18 @@ export default function Arc2AccessoriesPage() {
               }
             }}
           >
-            {products.map((product) => (
+            {products.map((product, index) => (
               <motion.div
-                key={product.id}
+                key={product.slug}
                 variants={{
                   hidden: { opacity: 0, y: 40 },
                   visible: { opacity: 1, y: 0 }
                 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                onMouseEnter={() => setHoveredProduct(product.id)}
+                onMouseEnter={() => setHoveredProduct(index)}
                 onMouseLeave={() => setHoveredProduct(null)}
               >
-                <Link href={`/arc-2/accessories/${product.id}`} className="group block">
+                <Link href={`/arc-2/accessories/${product.slug}`} className="group block">
                   {/* Product Image */}
                   <div className="relative overflow-hidden mb-6">
                     <motion.div
@@ -184,7 +205,7 @@ export default function Arc2AccessoriesPage() {
                   <div className="space-y-2">
                     <motion.h3
                       className="text-sm font-bold uppercase tracking-wide group-hover:text-gray-300 transition-colors"
-                      animate={{ x: hoveredProduct === product.id ? 4 : 0 }}
+                      animate={{ x: hoveredProduct === index ? 4 : 0 }}
                       transition={{ duration: 0.3 }}
                     >
                       {product.name}
@@ -193,18 +214,19 @@ export default function Arc2AccessoriesPage() {
                       ${product.price.toFixed(2)} AUD
                       {product.soldOut && <span className="ml-2 text-gray-600">: Sold Out</span>}
                     </p>
+                    <p className="text-xs text-gray-400 mt-1">5 colors available</p>
                   </div>
 
                   {/* View Product CTA */}
                   <motion.div
                     className="mt-4 flex items-center gap-2 text-xs tracking-[0.2em] uppercase text-gray-600 group-hover:text-gray-400 transition-colors"
-                    animate={{ x: hoveredProduct === product.id ? 4 : 0 }}
+                    animate={{ x: hoveredProduct === index ? 4 : 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    View Details
+                    View Colors
                     <motion.span
-                      animate={{ x: hoveredProduct === product.id ? [0, 4, 0] : 0 }}
-                      transition={{ duration: 1.5, repeat: hoveredProduct === product.id ? Infinity : 0, ease: "easeInOut" }}
+                      animate={{ x: hoveredProduct === index ? [0, 4, 0] : 0 }}
+                      transition={{ duration: 1.5, repeat: hoveredProduct === index ? Infinity : 0, ease: "easeInOut" }}
                     >
                       →
                     </motion.span>
