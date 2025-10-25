@@ -199,13 +199,13 @@ export function ProductDetail({ id }: { id: string }) {
               <div className="flex gap-3">
                 <button
                   onClick={() => router.push('/cart')}
-                  className="text-xs uppercase tracking-wider underline hover:no-underline"
+                  className="text-xs uppercase tracking-wider underline hover:no-underline smooth-color glow-on-hover"
                 >
                   View Cart
                 </button>
                 <button
                   onClick={() => router.push('/checkout')}
-                  className="text-xs uppercase tracking-wider underline hover:no-underline"
+                  className="text-xs uppercase tracking-wider underline hover:no-underline smooth-color glow-on-hover"
                 >
                   Checkout
                 </button>

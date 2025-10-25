@@ -214,7 +214,7 @@ export function ProductDetail({ id }: { id: string }) {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => router.push('/cart')}
-                className="flex-1 py-2 border border-white hover:bg-white hover:text-black transition-colors text-xs tracking-wider uppercase"
+                className="flex-1 py-4 border border-black/20 bg-white/50 backdrop-blur-sm text-black hover:bg-black/5 transition-all btn-liquid hover-elevate text-xs tracking-wider uppercase"
               >
                 View Cart
               </motion.button>
@@ -222,7 +222,7 @@ export function ProductDetail({ id }: { id: string }) {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => router.push('/checkout')}
-                className="flex-1 py-2 bg-white text-black hover:bg-gray-200 transition-colors text-xs tracking-wider uppercase"
+                className="flex-1 py-4 bg-gradient-to-r from-black via-gray-900 to-black text-white hover:bg-black transition-all btn-liquid hover-elevate pulse-glow magnetic-button ripple text-xs tracking-wider uppercase font-semibold shadow-xl"
               >
                 Checkout
               </motion.button>

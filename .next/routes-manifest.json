@@ -265,6 +265,12 @@
       "namedRegex": "^/arc\\-2/bottoms/wide\\-pants(?:/)?$"
     },
     {
+      "page": "/arc-2/shop-all",
+      "regex": "^/arc\\-2/shop\\-all(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-2/shop\\-all(?:/)?$"
+    },
+    {
       "page": "/arc-2/tops",
       "regex": "^/arc\\-2/tops(?:/)?$",
       "routeKeys": {},
@@ -419,6 +425,12 @@
       "regex": "^/arc\\-3/bottoms/wide\\-pants(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/arc\\-3/bottoms/wide\\-pants(?:/)?$"
+    },
+    {
+      "page": "/arc-3/shop-all",
+      "regex": "^/arc\\-3/shop\\-all(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/arc\\-3/shop\\-all(?:/)?$"
     },
     {
       "page": "/arc-3/tops",

@@ -67,8 +67,8 @@ export const PREMIUM_ACCESSORY_COLORS = {
   }
 }
 
-// Premium accessories that only come in one signature color
-export const PREMIUM_ACCESSORIES = ['CHAIN', 'RING', 'BELT']
+// Premium accessories that only come in one signature color (VOID for Arc 2, CLOUD for Arc 3)
+export const PREMIUM_ACCESSORIES = ['CHAIN', 'RING', 'BELT', 'GLOVES']
 
 export const BASE_PRODUCTS: Record<string, BaseProduct> = {
   // TOPS

@@ -93,52 +93,32 @@ export function Header() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -10, scale: 0.95 }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className={`absolute top-full left-0 mt-0 glass-card-dark backdrop-blur-xl shadow-2xl min-w-[180px] z-50 border ${
-                      isDark
-                        ? 'border-gray-700'
-                        : 'border-black/10'
-                    }`}
+                    className="absolute top-full left-0 mt-0 backdrop-blur-xl shadow-2xl min-w-[180px] z-50 border border-gray-700 bg-gray-900/95"
                   >
                     <Link
-                      href="/arc-2"
-                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color ${
-                        isDark
-                          ? 'text-white hover:bg-white/5'
-                          : 'hover:bg-black/5'
-                      }`}
+                      href="/arc-2/shop-all"
+                      className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color text-white hover:bg-white/5"
                       onClick={() => { playClick(); setArc2Open(false); }}
                     >
                       Shop All
                     </Link>
                     <Link
                       href="/arc-2/tops"
-                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
-                        isDark
-                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
-                          : 'hover:bg-black/5 border-black/10'
-                      }`}
+                      className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-300 hover:text-white hover:bg-white/5 border-gray-700"
                       onClick={() => { playClick(); setArc2Open(false); }}
                     >
                       Tops
                     </Link>
                     <Link
                       href="/arc-2/bottoms"
-                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
-                        isDark
-                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
-                          : 'hover:bg-black/5 border-black/10'
-                      }`}
+                      className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-300 hover:text-white hover:bg-white/5 border-gray-700"
                       onClick={() => { playClick(); setArc2Open(false); }}
                     >
                       Bottoms
                     </Link>
                     <Link
                       href="/arc-2/accessories"
-                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
-                        isDark
-                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
-                          : 'hover:bg-black/5 border-black/10'
-                      }`}
+                      className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-300 hover:text-white hover:bg-white/5 border-gray-700"
                       onClick={() => { playClick(); setArc2Open(false); }}
                     >
                       Accessories
@@ -171,52 +151,32 @@ export function Header() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -10, scale: 0.95 }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className={`absolute top-full left-0 mt-0 glass-card backdrop-blur-xl shadow-2xl min-w-[180px] z-50 border ${
-                      isDark
-                        ? 'border-gray-700'
-                        : 'border-black/10'
-                    }`}
+                    className="absolute top-full left-0 mt-0 backdrop-blur-xl shadow-2xl min-w-[180px] z-50 border border-black/10 bg-white/95"
                   >
                     <Link
-                      href="/arc-3"
-                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color ${
-                        isDark
-                          ? 'text-white hover:bg-white/5'
-                          : 'hover:bg-black/5'
-                      }`}
+                      href="/arc-3/shop-all"
+                      className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color text-black hover:bg-black/5"
                       onClick={() => { playClick(); setArc3Open(false); }}
                     >
                       Shop All
                     </Link>
                     <Link
                       href="/arc-3/tops"
-                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
-                        isDark
-                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
-                          : 'hover:bg-black/5 border-black/10'
-                      }`}
+                      className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-600 hover:text-black hover:bg-black/5 border-black/10"
                       onClick={() => { playClick(); setArc3Open(false); }}
                     >
                       Tops
                     </Link>
                     <Link
                       href="/arc-3/bottoms"
-                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
-                        isDark
-                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
-                          : 'hover:bg-black/5 border-black/10'
-                      }`}
+                      className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-600 hover:text-black hover:bg-black/5 border-black/10"
                       onClick={() => { playClick(); setArc3Open(false); }}
                     >
                       Bottoms
                     </Link>
                     <Link
                       href="/arc-3/accessories"
-                      className={`block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t ${
-                        isDark
-                          ? 'text-gray-300 hover:text-white hover:bg-white/5 border-gray-700'
-                          : 'hover:bg-black/5 border-black/10'
-                      }`}
+                      className="block px-4 py-3 text-xs font-medium tracking-wider uppercase transition-all hover-elevate smooth-color border-t text-gray-600 hover:text-black hover:bg-black/5 border-black/10"
                       onClick={() => { playClick(); setArc3Open(false); }}
                     >
                       Accessories
@@ -420,7 +380,7 @@ export function Header() {
                           isDark ? 'border-gray-800' : 'border-gray-200'
                         }`}>
                           <Link
-                            href="/arc-2"
+                            href="/arc-2/shop-all"
                             className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
                               isDark
                                 ? 'text-white hover:text-gray-300'
@@ -502,7 +462,7 @@ export function Header() {
                           isDark ? 'border-gray-800' : 'border-gray-200'
                         }`}>
                           <Link
-                            href="/arc-3"
+                            href="/arc-3/shop-all"
                             className={`text-sm font-medium tracking-wider uppercase transition-colors py-2 ${
                               isDark
                                 ? 'text-white hover:text-gray-300'
