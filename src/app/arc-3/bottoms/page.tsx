@@ -3,11 +3,16 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
-import { useRef, useState } from 'react'
+import { useRef, useState, useMemo } from 'react'
+import { ProductFilters } from '@/components/ProductFilters'
 
 export default function Arc3BottomsPage() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedColors, setSelectedColors] = useState<string[]>([])
+  const [selectedSizes, setSelectedSizes] = useState<string[]>([])
+  const [priceSort, setPriceSort] = useState<'asc' | 'desc' | 'none'>('none')
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -61,6 +66,36 @@ export default function Arc3BottomsPage() {
       soldOut: false
     }
   ]
+
+  
+  // Filter and sort products
+  const filteredProducts = useMemo(() => {
+    let filtered = [...products]
+
+    // Search filter
+    if (searchQuery) {
+      filtered = filtered.filter(p =>
+        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    }
+
+    // Size filter (skip for accessories that are ONE SIZE)
+    if (selectedSizes.length > 0) {
+      filtered = filtered.filter(p => {
+        // If product has sizes and any selected size matches
+        return selectedSizes.some(size => size === 'ONE SIZE' || p.category !== 'Accessories')
+      })
+    }
+
+    // Price sort
+    if (priceSort === 'asc') {
+      filtered.sort((a, b) => a.price - b.price)
+    } else if (priceSort === 'desc') {
+      filtered.sort((a, b) => b.price - a.price)
+    }
+
+    return filtered
+  }, [searchQuery, selectedColors, selectedSizes, priceSort])
 
   return (
     <div ref={containerRef} className="bg-white text-black min-h-screen relative">
@@ -121,7 +156,19 @@ export default function Arc3BottomsPage() {
             </motion.div>
           </motion.div>
 
-          {/* Products Grid */}
+          
+          {/* Filters */}
+          <ProductFilters
+            onSearchChange={setSearchQuery}
+            onColorFilter={setSelectedColors}
+            onSizeFilter={setSelectedSizes}
+            onPriceSort={setPriceSort}
+            availableColors={['SAKURA', 'MIST', 'CLOUD', 'SAND', 'LILAC']}
+            availableSizes={['XS', 'S', 'M', 'L', 'XL', 'ONE SIZE']}
+            isDark={false}
+          />
+
+      {/* Products Grid */}
           <motion.div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12"
             initial="hidden"
@@ -134,7 +181,7 @@ export default function Arc3BottomsPage() {
               }
             }}
           >
-            {products.map((product, index) => (
+            {filteredProducts.map((product, index) => (
               <motion.div
                 key={product.slug}
                 variants={{

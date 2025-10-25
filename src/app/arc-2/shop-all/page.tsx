@@ -3,11 +3,16 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
-import { useRef, useState } from 'react'
+import { useRef, useState, useMemo } from 'react'
+import { ProductFilters } from '@/components/ProductFilters'
 
 export default function Arc2ShopAllPage() {
   const containerRef = useRef<HTMLDivElement>(null)
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [selectedColors, setSelectedColors] = useState<string[]>([])
+  const [selectedSizes, setSelectedSizes] = useState<string[]>([])
+  const [priceSort, setPriceSort] = useState<'asc' | 'desc' | 'none'>('none')
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -167,6 +172,36 @@ export default function Arc2ShopAllPage() {
     }
 ]
 
+  
+  // Filter and sort products
+  const filteredProducts = useMemo(() => {
+    let filtered = [...products]
+
+    // Search filter
+    if (searchQuery) {
+      filtered = filtered.filter(p =>
+        p.name.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    }
+
+    // Size filter (skip for accessories that are ONE SIZE)
+    if (selectedSizes.length > 0) {
+      filtered = filtered.filter(p => {
+        // If product has sizes and any selected size matches
+        return selectedSizes.some(size => size === 'ONE SIZE' || p.category !== 'Accessories')
+      })
+    }
+
+    // Price sort
+    if (priceSort === 'asc') {
+      filtered.sort((a, b) => a.price - b.price)
+    } else if (priceSort === 'desc') {
+      filtered.sort((a, b) => b.price - a.price)
+    }
+
+    return filtered
+  }, [searchQuery, selectedColors, selectedSizes, priceSort])
+
   return (
     <div ref={containerRef} className="bg-black text-white min-h-screen relative">
       <Header />
@@ -215,17 +250,29 @@ export default function Arc2ShopAllPage() {
               SHOP ALL
             </h1>
             <p className="text-gray-400 text-sm md:text-base max-w-2xl tracking-wide">
-              All products from Arc 2 Shadow. {products.length} items.
+              All products from Arc 2 Shadow. {filteredProducts.length} items.
             </p>
           </motion.div>
         </motion.div>
       </section>
 
+      
+          {/* Filters */}
+          <ProductFilters
+            onSearchChange={setSearchQuery}
+            onColorFilter={setSelectedColors}
+            onSizeFilter={setSelectedSizes}
+            onPriceSort={setPriceSort}
+            availableColors={['VOID', 'STEEL', 'BLOOD', 'MOSS', 'EARTH']}
+            availableSizes={['XS', 'S', 'M', 'L', 'XL', 'ONE SIZE']}
+            isDark={true}
+          />
+
       {/* Products Grid */}
       <section className="relative pb-32 px-4 md:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
-            {products.map((product, index) => (
+            {filteredProducts.map((product, index) => (
               <motion.div
                 key={product.slug}
                 initial={{ opacity: 0, y: 20 }}
