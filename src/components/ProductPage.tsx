@@ -180,22 +180,15 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                     <motion.button
                       key={key}
                       onClick={() => setSelectedColor(key)}
-                      className={`relative w-12 h-12 rounded-premium border-2 transition-all hover-elevate magnetic-button ${
+                      className={`relative w-12 h-12 rounded-premium transition-all hover-elevate magnetic-button ${
                         selectedColor === key
-                          ? (arc === 'ARC_2' ? 'border-white scale-110' : 'border-black scale-110')
-                          : (arc === 'ARC_2' ? 'border-white/20' : 'border-black/20')
+                          ? (arc === 'ARC_2' ? 'border-2 border-white scale-110' : 'border-2 border-black scale-110')
+                          : 'border-2 border-transparent'
                       }`}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                       style={{ backgroundColor: color.hex }}
                     >
-                      {selectedColor === key && (
-                        <motion.div
-                          layoutId={`colorSelector-${arc}`}
-                          className={`absolute inset-0 rounded-premium border-2 ${arc === 'ARC_2' ? 'border-white' : 'border-black'}`}
-                          transition={{ type: "spring", stiffness: 500, damping: 30 }}
-                        />
-                      )}
                     </motion.button>
                   ))}
                 </div>

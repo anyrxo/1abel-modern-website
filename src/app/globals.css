@@ -31,6 +31,8 @@
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
+    /* Prevent mobile zoom on focus - iOS Safari zooms if font-size < 16px */
+    font-size: 16px;
   }
 }
 
