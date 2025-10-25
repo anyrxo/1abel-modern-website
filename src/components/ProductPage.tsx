@@ -34,7 +34,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const categorySlug = product.category.toLowerCase()
 
   const [selectedColor, setSelectedColor] = useState<string>(Object.keys(colors)[0])
-  const [selectedSize, setSelectedSize] = useState('')
+  const [selectedSize, setSelectedSize] = useState(product.sizes.length === 1 ? product.sizes[0] : '')
   const [showNotification, setShowNotification] = useState(false)
   const [sizeModalOpen, setSizeModalOpen] = useState(false)
   const [modalProduct, setModalProduct] = useState<any>(null)
@@ -207,29 +207,43 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                 </div>
               </div>
 
-              {/* Size Selector */}
-              <div className="mb-8">
-                <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-4`}>
-                  Size
-                </p>
-                <div className={`grid ${product.sizes.length === 1 ? 'grid-cols-1' : product.sizes.length <= 6 ? 'grid-cols-6' : 'grid-cols-8'} gap-2`}>
-                  {product.sizes.map((size) => (
-                    <motion.button
-                      key={size}
-                      onClick={() => setSelectedSize(size)}
-                      className={`py-3 border text-sm ${
-                        selectedSize === size
-                          ? (arc === 'ARC_2' ? 'border-white bg-white text-black' : 'border-black bg-black text-white')
-                          : (arc === 'ARC_2' ? 'border-white/20 hover:border-white/40' : 'border-black/20 hover:border-black/40')
-                      }`}
-                      whileHover={{ scale: product.sizes.length === 1 ? 1 : 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      {size}
-                    </motion.button>
-                  ))}
+              {/* Size Selector - Only show for multi-size products */}
+              {product.sizes.length > 1 && (
+                <div className="mb-8">
+                  <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-4`}>
+                    Size
+                  </p>
+                  <div className={`grid ${product.sizes.length <= 6 ? 'grid-cols-6' : 'grid-cols-8'} gap-2`}>
+                    {product.sizes.map((size) => (
+                      <motion.button
+                        key={size}
+                        onClick={() => setSelectedSize(size)}
+                        className={`py-3 border text-sm ${
+                          selectedSize === size
+                            ? (arc === 'ARC_2' ? 'border-white bg-white text-black' : 'border-black bg-black text-white')
+                            : (arc === 'ARC_2' ? 'border-white/20 hover:border-white/40' : 'border-black/20 hover:border-black/40')
+                        }`}
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        {size}
+                      </motion.button>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
+
+              {/* One Size Indicator */}
+              {product.sizes.length === 1 && (
+                <div className="mb-8">
+                  <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-2`}>
+                    Size
+                  </p>
+                  <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-500'}`}>
+                    {product.sizes[0]}
+                  </p>
+                </div>
+              )}
 
               {/* Add to Cart */}
               <motion.button
