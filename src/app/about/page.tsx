@@ -89,22 +89,42 @@ export default function AboutPage() {
                 Origin
               </h2>
               <h3 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-                Born from a simple belief
+                Designed and envisioned by Anyro
               </h3>
               <div className="space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  Clothing should be more than fabric. It should embody an energy,
-                  a mood, a moment in time. It should be a frequency you can wear.
+                  It started with a frustration. The constant mental drain of figuring out what to wear
+                  every morning. The endless combinations that never quite felt right. The realization
+                  that modern life demanded a wardrobe that just <em>worked</em>—pieces that could be
+                  thrown together without thought, yet always looked intentional.
                 </p>
                 <p>
-                  1ABEL was founded on this principle—that the intersection of sound
-                  and style creates something transcendent. Not trend-chasing. Not
-                  fast fashion. Timeless archetypes that speak to those who understand.
+                  Anyro (<a href="https://instagram.com/anyrxo" target="_blank" rel="noopener noreferrer" className="underline hover:text-black transition-colors">@anyrxo</a>)
+                  was deep in the music world—producing, curating playlists, living between studio sessions
+                  and late-night creative bursts. Music wasn't just sound; it was a mood, a frequency, an
+                  entire atmosphere that shifted throughout the day. Dark, introspective tracks for focused
+                  work. Bright, energetic beats when clarity was needed. Each song carried its own energy,
+                  its own identity.
                 </p>
                 <p>
-                  We don't create collections based on seasons. We create Arcs. Complete
-                  expressions inspired by sonic identities, each one a deliberate
-                  exploration of duality, contrast, and balance.
+                  One night, staring at a wardrobe full of mismatched pieces that required constant curation,
+                  the concept crystallized: <strong>What if clothing worked like music?</strong> What if you
+                  could build a wardrobe of essential "tracks" that always paired perfectly—dark pieces that
+                  carried weight and presence, light pieces that brought balance and clarity. A system where
+                  any combination felt cohesive, where getting dressed was as effortless as hitting play.
+                </p>
+                <p>
+                  The name came from this duality. <strong>1ABEL</strong>—one label, one unified system.
+                  Not scattered collections chasing trends, but a singular vision expressed through carefully
+                  crafted archetypes. The "1" representing unity and essentialism. "ABEL" suggesting capability
+                  and empowerment—you're <em>able</em> to move through your day without friction, without noise,
+                  just pure intention materialized in fabric.
+                </p>
+                <p>
+                  This is clothing for those who understand that what you wear should enhance your life, not
+                  complicate it. For the creatives, the builders, the ones moving too fast to overthink their
+                  wardrobe but too intentional to wear just anything. Where sound becomes style. Where every
+                  piece is a frequency you can wear.
                 </p>
               </div>
             </motion.div>
