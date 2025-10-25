@@ -93,7 +93,7 @@ export function Header() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -10, scale: 0.95 }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="absolute top-full left-0 mt-0 backdrop-blur-xl shadow-2xl min-w-[180px] z-50 border border-gray-700 bg-gray-900/95"
+                    className="absolute top-full left-0 mt-0 backdrop-blur-xl shadow-2xl min-w-[180px] z-50 border border-gray-800 bg-black/98"
                   >
                     <Link
                       href="/arc-2/shop-all"

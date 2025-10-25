@@ -38,9 +38,9 @@ export default function ContactPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-center p-8 border border-black"
+              className="text-center p-8 glass-card rounded-premium shadow-xl hover-elevate border border-black/10 backdrop-blur-sm"
             >
-              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black">
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black/10 rounded-premium bg-gradient-to-br from-black/5 to-black/10 hover-elevate">
                 <Mail className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2 uppercase tracking-wide">Email</h3>
@@ -52,9 +52,9 @@ export default function ContactPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="text-center p-8 border border-black"
+              className="text-center p-8 glass-card rounded-premium shadow-xl hover-elevate border border-black/10 backdrop-blur-sm"
             >
-              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black">
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black/10 rounded-premium bg-gradient-to-br from-black/5 to-black/10 hover-elevate">
                 <MessageCircle className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2 uppercase tracking-wide">Live Chat</h3>
@@ -66,9 +66,9 @@ export default function ContactPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="text-center p-8 border border-black"
+              className="text-center p-8 glass-card rounded-premium shadow-xl hover-elevate border border-black/10 backdrop-blur-sm"
             >
-              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black">
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black/10 rounded-premium bg-gradient-to-br from-black/5 to-black/10 hover-elevate">
                 <MapPin className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2 uppercase tracking-wide">Location</h3>
@@ -80,9 +80,9 @@ export default function ContactPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="text-center p-8 border border-black"
+              className="text-center p-8 glass-card rounded-premium shadow-xl hover-elevate border border-black/10 backdrop-blur-sm"
             >
-              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black">
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center border border-black/10 rounded-premium bg-gradient-to-br from-black/5 to-black/10 hover-elevate">
                 <Clock className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold mb-2 uppercase tracking-wide">Hours</h3>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 border-2 border-black focus:outline-none focus:ring-2 focus:ring-black"
+                    className="w-full glass-input backdrop-blur-sm"
                     placeholder="Your name"
                   />
                 </div>
@@ -122,7 +122,7 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 border-2 border-black focus:outline-none focus:ring-2 focus:ring-black"
+                    className="w-full glass-input backdrop-blur-sm"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 border-2 border-black focus:outline-none focus:ring-2 focus:ring-black"
+                  className="w-full glass-input backdrop-blur-sm"
                   placeholder="How can we help?"
                 />
               </div>
@@ -143,7 +143,7 @@ export default function ContactPage() {
                 </label>
                 <textarea
                   rows={6}
-                  className="w-full px-4 py-3 border-2 border-black focus:outline-none focus:ring-2 focus:ring-black resize-none"
+                  className="w-full glass-input backdrop-blur-sm resize-none"
                   placeholder="Your message..."
                 />
               </div>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="submit"
-                className="w-full py-4 bg-black text-white hover:bg-gray-800 transition-colors text-sm tracking-wider uppercase font-medium"
+                className="w-full py-4 bg-gradient-to-r from-black via-gray-900 to-black text-white btn-liquid hover-elevate pulse-glow magnetic-button ripple shadow-2xl text-sm tracking-wider uppercase font-semibold"
               >
                 Send Message
               </motion.button>
@@ -192,7 +192,7 @@ export default function ContactPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="border border-black p-6"
+                className="glass-card rounded-premium p-6 shadow-lg hover-elevate border border-black/10 backdrop-blur-sm"
               >
                 <h3 className="text-xl font-bold mb-3 uppercase tracking-wide">
                   {faq.question}
