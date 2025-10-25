@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { useCart } from '@/lib/cartContext'
 import { useRouter } from 'next/navigation'
 import { BASE_PRODUCTS, COLORS, PREMIUM_ACCESSORY_COLORS, PREMIUM_ACCESSORIES } from '@/data/products'
+import { ArrowLeft, Share2, X } from 'lucide-react'
 
 type Arc = 'ARC_2' | 'ARC_3'
 type ColorKey = string
@@ -38,9 +39,51 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const [selectedColor, setSelectedColor] = useState<string>(Object.keys(colors)[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes.length === 1 ? product.sizes[0] : '')
   const [sizeModalOpen, setSizeModalOpen] = useState(false)
+  const [sizeSheetOpen, setSizeSheetOpen] = useState(false)
   const [modalProduct, setModalProduct] = useState<any>(null)
   const { addItem } = useCart()
   const router = useRouter()
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: `${product.name} - ${arcName}`,
+          text: `Check out this ${product.name} from 1ABEL`,
+          url: window.location.href
+        })
+      } catch (err) {
+        console.log('Share cancelled')
+      }
+    } else {
+      navigator.clipboard.writeText(window.location.href)
+      alert('Link copied to clipboard!')
+    }
+  }
+
+  const handleQuickAdd = () => {
+    if (product.sizes.length === 1) {
+      // Auto-add if only one size
+      handleAddToCart()
+    } else {
+      // Show size selector
+      setSizeSheetOpen(true)
+    }
+  }
+
+  const handleSizeSelect = (size: string) => {
+    setSelectedSize(size)
+    const currentColor: any = colors[selectedColor as keyof typeof colors]
+    addItem({
+      id: `${productId.toLowerCase()}-${selectedColor.toLowerCase()}`,
+      name: `${product.name} — ${currentColor.name}`,
+      price: price,
+      size: size,
+      arc: `${arcName}`,
+      category: product.category
+    })
+    setSizeSheetOpen(false)
+  }
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -75,10 +118,97 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
     <div ref={containerRef} className={`${bgColor} ${textColor} min-h-screen relative`}>
       <Header />
 
+      {/* Mobile Top Bar - Back & Share */}
+      <div className="md:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3 bg-gradient-to-b from-black/50 to-transparent backdrop-blur-sm">
+        <motion.button
+          onClick={() => router.back()}
+          className="p-2 rounded-full bg-white/10 backdrop-blur-md"
+          whileTap={{ scale: 0.9 }}
+        >
+          <ArrowLeft className={`w-5 h-5 ${arc === 'ARC_2' ? 'text-white' : 'text-black'}`} />
+        </motion.button>
+        <h1 className={`text-sm font-bold tracking-wider uppercase ${arc === 'ARC_2' ? 'text-white' : 'text-black'}`}>
+          {product.name}
+        </h1>
+        <motion.button
+          onClick={handleShare}
+          className="p-2 rounded-full bg-white/10 backdrop-blur-md"
+          whileTap={{ scale: 0.9 }}
+        >
+          <Share2 className={`w-5 h-5 ${arc === 'ARC_2' ? 'text-white' : 'text-black'}`} />
+        </motion.button>
+      </div>
+
       {/* Noise texture overlay */}
       <div className="fixed inset-0 opacity-[0.015] pointer-events-none mix-blend-overlay z-10">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIvPjwvc3ZnPg==')]" />
       </div>
+
+      {/* Sticky Add to Cart Button - Mobile Only */}
+      <motion.div
+        className="md:hidden fixed bottom-20 left-0 right-0 z-40 px-4 pb-4"
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.5 }}
+      >
+        <motion.button
+          onClick={handleQuickAdd}
+          className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium-xl shadow-2xl ${
+            arc === 'ARC_2'
+              ? 'bg-white text-black'
+              : 'bg-black text-white'
+          }`}
+          whileTap={{ scale: 0.98 }}
+        >
+          ADD TO CART
+        </motion.button>
+      </motion.div>
+
+      {/* Size Selector Sheet - Slides up from bottom */}
+      {sizeSheetOpen && (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/50 z-50"
+            onClick={() => setSizeSheetOpen(false)}
+          />
+          <motion.div
+            initial={{ y: '100%' }}
+            animate={{ y: 0 }}
+            exit={{ y: '100%' }}
+            transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            className={`fixed bottom-0 left-0 right-0 z-50 rounded-t-premium-xl p-6 pb-8 ${bgColor}`}
+          >
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-lg font-bold tracking-wider uppercase">Select Size</h3>
+              <button onClick={() => setSizeSheetOpen(false)}>
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            <div className="grid grid-cols-3 gap-3 mb-6">
+              {product.sizes.map((size) => (
+                <motion.button
+                  key={size}
+                  onClick={() => handleSizeSelect(size)}
+                  className={`py-4 text-sm font-bold tracking-wider uppercase border-2 rounded-premium ${
+                    arc === 'ARC_2'
+                      ? 'border-white/20 hover:bg-white hover:text-black'
+                      : 'border-black/20 hover:bg-black hover:text-white'
+                  } transition-all`}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {size}
+                </motion.button>
+              ))}
+            </div>
+            <p className={`text-xs text-center ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'}`}>
+              Select your size to add to cart
+            </p>
+          </motion.div>
+        </>
+      )}
 
 
       <div className="pt-24 px-4 md:px-8 pb-20">

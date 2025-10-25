@@ -4,13 +4,34 @@ import { motion } from 'framer-motion'
 import { Home, ShoppingBag, Layers, Mail } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { useCart } from '@/lib/cartContext'
 
 export function MobileBottomNav() {
   const pathname = usePathname()
   const { totalItems } = useCart()
   const [arcMenuOpen, setArcMenuOpen] = useState(false)
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+
+      if (currentScrollY < lastScrollY) {
+        // Scrolling up - show nav
+        setIsVisible(true)
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down - hide nav (only after 100px scroll)
+        setIsVisible(false)
+      }
+
+      setLastScrollY(currentScrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY])
 
   const isActive = (path: string) => pathname === path
 
@@ -77,8 +98,12 @@ export function MobileBottomNav() {
         </motion.div>
       )}
 
-      {/* Bottom Navigation Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-30 glass-card backdrop-blur-2xl border-t border-black/10 shadow-2xl">
+      {/* Bottom Navigation Bar - Hides on scroll down, shows on scroll up */}
+      <motion.div
+        className="md:hidden fixed bottom-0 left-0 right-0 z-30 glass-card backdrop-blur-2xl border-t border-black/10 shadow-2xl"
+        animate={{ y: isVisible ? 0 : 100 }}
+        transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+      >
         <div className="grid grid-cols-4 h-16">
           {/* Home */}
           <Link href="/" className="flex flex-col items-center justify-center">
@@ -142,7 +167,7 @@ export function MobileBottomNav() {
             </motion.div>
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       {/* Spacer for content to not be hidden behind nav */}
       <div className="md:hidden h-16" />
