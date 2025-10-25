@@ -104,11 +104,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
           <div className={`flex gap-3 pt-3 mt-3 border-t ${arc === 'ARC_2' ? 'border-gray-200' : 'border-gray-800'}`}>
             <motion.button
               onClick={() => router.push('/cart')}
-              className={`flex-1 py-2 text-xs tracking-wider border ${
-                arc === 'ARC_2'
-                  ? 'border-black hover:bg-black hover:text-white'
-                  : 'border-white hover:bg-white hover:text-black'
-              } transition-colors`}
+              className={`flex-1 py-3 text-xs tracking-wider border btn-liquid hover-elevate ${arc === 'ARC_2' ? 'border-black/20 hover:bg-black hover:text-white' : 'border-white/20 hover:bg-white hover:text-black'}`}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -116,11 +112,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
             </motion.button>
             <motion.button
               onClick={() => router.push('/checkout')}
-              className={`flex-1 py-2 text-xs tracking-wider ${
-                arc === 'ARC_2'
-                  ? 'bg-black text-white hover:bg-gray-900'
-                  : 'bg-white text-black hover:bg-gray-100'
-              } transition-colors`}
+              className={`flex-1 py-3 text-xs tracking-wider btn-liquid hover-elevate magnetic-button ${arc === 'ARC_2' ? 'bg-gradient-to-r from-black to-gray-900 text-white' : 'bg-gradient-to-r from-white to-gray-100 text-black'}`}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -150,14 +142,14 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
             {/* Product Image */}
             <motion.div
-              className="relative aspect-[3/4] overflow-hidden"
+              className="relative aspect-[3/4] overflow-hidden rounded-premium-xl"
               style={{ y: imageY }}
             >
               <div
-                className={`absolute inset-0 flex items-center justify-center ${arc === 'ARC_2' ? 'text-white/10' : 'text-black/10'} border ${borderColor}`}
+                className={`absolute inset-0 flex items-center justify-center ${arc === 'ARC_2' ? 'text-white/10' : 'text-black/10'} border ${borderColor} rounded-premium-xl`}
                 style={{ backgroundColor: (colors[selectedColor as keyof typeof colors] as any)?.hex }}
               >
-                <span className="text-8xl font-bold tracking-tighter">
+                <span className="text-6xl md:text-7xl font-bold tracking-tighter text-center px-4">
                   {product.name}
                 </span>
               </div>
@@ -188,7 +180,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                     <motion.button
                       key={key}
                       onClick={() => setSelectedColor(key)}
-                      className={`relative w-12 h-12 border-2 transition-all ${
+                      className={`relative w-12 h-12 rounded-premium border-2 transition-all hover-elevate magnetic-button ${
                         selectedColor === key
                           ? (arc === 'ARC_2' ? 'border-white scale-110' : 'border-black scale-110')
                           : (arc === 'ARC_2' ? 'border-white/20' : 'border-black/20')
@@ -200,7 +192,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                       {selectedColor === key && (
                         <motion.div
                           layoutId={`colorSelector-${arc}`}
-                          className={`absolute inset-0 border-2 ${arc === 'ARC_2' ? 'border-white' : 'border-black'}`}
+                          className={`absolute inset-0 rounded-premium border-2 ${arc === 'ARC_2' ? 'border-white' : 'border-black'}`}
                           transition={{ type: "spring", stiffness: 500, damping: 30 }}
                         />
                       )}
@@ -220,7 +212,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                       <motion.button
                         key={size}
                         onClick={() => setSelectedSize(size)}
-                        className={`py-3 border text-sm rounded-xl ${
+                        className={`py-3 border text-sm btn-liquid hover-elevate magnetic-button ${
                           selectedSize === size
                             ? (arc === 'ARC_2' ? 'border-white bg-white text-black' : 'border-black bg-black text-white')
                             : (arc === 'ARC_2' ? 'border-white/20 hover:border-white/40' : 'border-black/20 hover:border-black/40')
@@ -250,7 +242,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
               {/* Add to Cart */}
               <motion.button
                 onClick={handleAddToCart}
-                className={`w-full py-4 ${arc === 'ARC_2' ? 'bg-gradient-to-r from-white to-gray-100 text-black hover:shadow-2xl' : 'bg-gradient-to-r from-black to-gray-800 text-white hover:shadow-2xl'} text-sm tracking-[0.2em] uppercase font-semibold btn-liquid shadow-xl mb-8`}
+                className={`w-full py-4 ${arc === 'ARC_2' ? 'bg-gradient-to-r from-white via-gray-50 to-white text-black' : 'bg-gradient-to-r from-black via-gray-900 to-black text-white'} text-sm tracking-[0.2em] uppercase font-semibold btn-liquid shadow-2xl hover-elevate pulse-glow magnetic-button ripple mb-8`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -444,7 +436,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                     setShowNotification(true)
                     setTimeout(() => setShowNotification(false), 4000)
                   }}
-                  className={`py-3 border text-sm rounded-xl ${
+                  className={`py-3 border text-sm btn-liquid hover-elevate magnetic-button ${
                     arc === 'ARC_2'
                       ? 'border-black hover:bg-black hover:text-white'
                       : 'border-white hover:bg-white hover:text-black'
