@@ -36,6 +36,8 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const [selectedColor, setSelectedColor] = useState<string>(Object.keys(colors)[0])
   const [selectedSize, setSelectedSize] = useState('')
   const [showNotification, setShowNotification] = useState(false)
+  const [sizeModalOpen, setSizeModalOpen] = useState(false)
+  const [modalProduct, setModalProduct] = useState<any>(null)
   const { addItem } = useCart()
   const router = useRouter()
 
@@ -279,37 +281,54 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                 <div className="grid grid-cols-1 gap-4">
                   {pairsWith[selectedColor]?.map((pairing, index) => {
                     const pairingProductId = pairing.product.replace(/ /g, '_').toUpperCase()
+                    const pairingProduct = BASE_PRODUCTS[pairingProductId]
                     const pairingArcSlug = pairing.arc === 'Arc 2' ? 'arc-2' : 'arc-3'
-                    const pairingCategory = BASE_PRODUCTS[pairingProductId]?.category.toLowerCase() || 'tops'
-                    const pairingProductSlug = pairing.product.toLowerCase().replace(/ /g, '-')
-                    const pairingLink = `/${pairingArcSlug}/${pairingCategory}/${pairingProductSlug}`
+                    const pairingArc = pairing.arc === 'Arc 2' ? 'ARC_2' : 'ARC_3'
+                    const pairingColors = pairingArc === 'ARC_2' ? COLORS.ARC_2 : COLORS.ARC_3
+                    const pairingColorKey = pairing.color.toUpperCase()
+                    const pairingColorHex = (pairingColors[pairingColorKey as keyof typeof pairingColors] as any)?.hex || '#000000'
+
+                    if (!pairingProduct) return null
 
                     return (
                       <motion.div
                         key={index}
-                        className={`border ${borderColor} p-4 transition-colors group`}
+                        className={`border ${borderColor} p-4 transition-colors`}
                         whileHover={{ scale: 1.01 }}
                       >
-                        <Link href={pairingLink} className="block mb-3">
-                          <div className="flex items-start justify-between mb-2">
-                            <div>
-                              <p className={`text-sm font-semibold uppercase tracking-wide group-hover:${arc === 'ARC_2' ? 'text-gray-300' : 'text-gray-700'} transition-colors`}>
-                                {pairing.product} — {pairing.color}
-                              </p>
-                              <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-600' : 'text-gray-500'} uppercase tracking-wider mt-1`}>
-                                {pairing.arc}
-                              </p>
-                            </div>
-                            <span className="text-sm">${pairing.price}</span>
+                        <div className="flex gap-4 mb-3">
+                          {/* Product Image */}
+                          <div
+                            className={`w-20 h-24 flex-shrink-0 border ${borderColor} flex items-center justify-center text-xs font-bold`}
+                            style={{ backgroundColor: pairingColorHex }}
+                          >
+                            <span className={`${pairingArc === 'ARC_2' ? 'text-white/20' : 'text-black/20'}`}>
+                              {pairingProduct.name}
+                            </span>
                           </div>
-                          <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-500'} italic`}>
-                            {pairing.reason}
-                          </p>
-                        </Link>
+
+                          {/* Product Info */}
+                          <div className="flex-1">
+                            <div className="flex items-start justify-between mb-2">
+                              <div>
+                                <p className={`text-sm font-semibold uppercase tracking-wide`}>
+                                  {pairing.product} — {pairing.color}
+                                </p>
+                                <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-600' : 'text-gray-500'} uppercase tracking-wider mt-1`}>
+                                  {pairing.arc}
+                                </p>
+                              </div>
+                              <span className="text-sm">${pairing.price}</span>
+                            </div>
+                            <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-500'} italic mb-3`}>
+                              {pairing.reason}
+                            </p>
+                          </div>
+                        </div>
+
                         <motion.button
                           onClick={() => {
-                            const pairingProduct = BASE_PRODUCTS[pairingProductId]
-                            if (pairingProduct && pairingProduct.sizes.length === 1) {
+                            if (pairingProduct.sizes.length === 1) {
                               addItem({
                                 id: `${pairingProductId.toLowerCase()}-${pairing.color.toLowerCase()}`,
                                 name: `${pairing.product} — ${pairing.color}`,
@@ -321,7 +340,17 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                               setShowNotification(true)
                               setTimeout(() => setShowNotification(false), 4000)
                             } else {
-                              router.push(pairingLink)
+                              setModalProduct({
+                                productId: pairingProductId,
+                                name: pairing.product,
+                                color: pairing.color,
+                                colorKey: pairingColorKey,
+                                arc: pairing.arc,
+                                price: pairing.price,
+                                sizes: pairingProduct.sizes,
+                                category: pairingProduct.category
+                              })
+                              setSizeModalOpen(true)
                             }
                           }}
                           className={`w-full py-2 text-xs tracking-wider uppercase ${
@@ -332,7 +361,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
                         >
-                          {BASE_PRODUCTS[pairingProductId]?.sizes.length === 1 ? 'Add to Cart' : 'Select Size'}
+                          {pairingProduct.sizes.length === 1 ? 'Add to Cart' : 'Select Size & Add to Cart'}
                         </motion.button>
                       </motion.div>
                     )
@@ -343,6 +372,81 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
           </div>
         </div>
       </div>
+
+      {/* Size Selection Modal */}
+      {sizeModalOpen && modalProduct && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          onClick={() => setSizeModalOpen(false)}
+        >
+          {/* Backdrop */}
+          <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+
+          {/* Modal */}
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className={`relative ${arc === 'ARC_2' ? 'bg-white text-black' : 'bg-black text-white'} p-8 max-w-md w-full`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setSizeModalOpen(false)}
+              className={`absolute top-4 right-4 text-2xl ${arc === 'ARC_2' ? 'text-black hover:text-gray-600' : 'text-white hover:text-gray-400'}`}
+            >
+              ×
+            </button>
+
+            <h2 className="text-2xl font-bold uppercase mb-2">{modalProduct.name}</h2>
+            <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-600' : 'text-gray-400'} uppercase tracking-wider mb-6`}>
+              {modalProduct.color} — {modalProduct.arc}
+            </p>
+
+            <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-600' : 'text-gray-400'} uppercase tracking-[0.2em] mb-4`}>
+              Select Size
+            </p>
+
+            <div className={`grid ${modalProduct.sizes.length <= 6 ? 'grid-cols-6' : 'grid-cols-8'} gap-2 mb-6`}>
+              {modalProduct.sizes.map((size: string) => (
+                <motion.button
+                  key={size}
+                  onClick={() => {
+                    addItem({
+                      id: `${modalProduct.productId.toLowerCase()}-${modalProduct.colorKey.toLowerCase()}`,
+                      name: `${modalProduct.name} — ${modalProduct.color}`,
+                      price: modalProduct.price,
+                      size: size,
+                      arc: modalProduct.arc,
+                      category: modalProduct.category
+                    })
+                    setSizeModalOpen(false)
+                    setShowNotification(true)
+                    setTimeout(() => setShowNotification(false), 4000)
+                  }}
+                  className={`py-3 border text-sm ${
+                    arc === 'ARC_2'
+                      ? 'border-black hover:bg-black hover:text-white'
+                      : 'border-white hover:bg-white hover:text-black'
+                  } transition-colors`}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {size}
+                </motion.button>
+              ))}
+            </div>
+
+            <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-500'} text-center`}>
+              Price: ${modalProduct.price}
+            </p>
+          </motion.div>
+        </motion.div>
+      )}
 
       {/* Footer spacer */}
       <div className="h-20" />
