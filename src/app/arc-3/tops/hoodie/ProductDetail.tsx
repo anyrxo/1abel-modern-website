@@ -1,7 +1,7 @@
 'use client'
 
 import { ProductPage } from '@/components/ProductPage'
-import { getGenericColorStory, getDefaultPairings } from '@/data/productVariants'
+import { getGenericColorStory, getSmartPairings } from '@/data/productVariants'
 
 const productId = 'HOODIE'
 const arc = 'ARC_3' as const
@@ -17,11 +17,11 @@ const colorStories: Record<string, string> = {
 
 // Pairing recommendations
 const pairsWith: Record<string, any[]> = {
-  SAKURA: getDefaultPairings('SAKURA', arc),
-  MIST: getDefaultPairings('MIST', arc),
-  CLOUD: getDefaultPairings('CLOUD', arc),
-  SAND: getDefaultPairings('SAND', arc),
-  LILAC: getDefaultPairings('LILAC', arc),
+  SAKURA: getSmartPairings(productId, 'SAKURA', arc),
+  MIST: getSmartPairings(productId, 'MIST', arc),
+  CLOUD: getSmartPairings(productId, 'CLOUD', arc),
+  SAND: getSmartPairings(productId, 'SAND', arc),
+  LILAC: getSmartPairings(productId, 'LILAC', arc),
 }
 
 export function ProductDetail() {

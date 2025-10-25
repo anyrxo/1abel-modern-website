@@ -1,7 +1,7 @@
 'use client'
 
 import { ProductPage } from '@/components/ProductPage'
-import { getGenericColorStory, getDefaultPairings } from '@/data/productVariants'
+import { getGenericColorStory, getSmartPairings } from '@/data/productVariants'
 
 const productId = 'BEANIE'
 const arc = 'ARC_2' as const
@@ -17,11 +17,11 @@ const colorStories: Record<string, string> = {
 
 // Pairing recommendations
 const pairsWith: Record<string, any[]> = {
-  VOID: getDefaultPairings('VOID', arc),
-  STEEL: getDefaultPairings('STEEL', arc),
-  BLOOD: getDefaultPairings('BLOOD', arc),
-  MOSS: getDefaultPairings('MOSS', arc),
-  EARTH: getDefaultPairings('EARTH', arc),
+  VOID: getSmartPairings(productId, 'VOID', arc),
+  STEEL: getSmartPairings(productId, 'STEEL', arc),
+  BLOOD: getSmartPairings(productId, 'BLOOD', arc),
+  MOSS: getSmartPairings(productId, 'MOSS', arc),
+  EARTH: getSmartPairings(productId, 'EARTH', arc),
 }
 
 export function ProductDetail() {

@@ -62,63 +62,165 @@ export const ARC2_PAIRINGS: Record<string, Record<string, any[]>> = {
   }
 }
 
-// Generic pairing template that works for all products
-export function getDefaultPairings(colorKey: string, arc: 'ARC_2' | 'ARC_3'): any[] {
-  const pairings: Record<string, any[]> = {
-    // Arc 2 pairings
-    VOID: [
-      { product: 'CARGO PANTS', color: 'STEEL', arc: 'Arc 2', reason: 'Tonal dark layering', price: 165 },
-      { product: 'SWEATS', color: 'CLOUD', arc: 'Arc 3', reason: 'High contrast', price: 132 },
-      { product: 'BEANIE', color: 'VOID', arc: 'Arc 2', reason: 'Monochrome depth', price: 55 }
-    ],
-    STEEL: [
-      { product: 'DENIM', color: 'VOID', arc: 'Arc 2', reason: 'Dark tonal', price: 185 },
-      { product: 'CARGO PANTS', color: 'MIST', arc: 'Arc 3', reason: 'Cool harmony', price: 162 },
-      { product: 'CAP', color: 'STEEL', arc: 'Arc 2', reason: 'Tonal layering', price: 65 }
-    ],
-    BLOOD: [
-      { product: 'DENIM', color: 'VOID', arc: 'Arc 2', reason: 'Rich depth', price: 185 },
-      { product: 'CARGO PANTS', color: 'SAND', arc: 'Arc 3', reason: 'Warm neutrals', price: 162 },
-      { product: 'BELT', color: 'EARTH', arc: 'Arc 2', reason: 'Earth tone accent', price: 125 }
-    ],
-    MOSS: [
-      { product: 'CARGO PANTS', color: 'EARTH', arc: 'Arc 2', reason: 'Natural harmony', price: 165 },
-      { product: 'SWEATS', color: 'SAND', arc: 'Arc 3', reason: 'Earth tones', price: 132 },
-      { product: 'BEANIE', color: 'MOSS', arc: 'Arc 2', reason: 'Tonal green', price: 55 }
-    ],
-    EARTH: [
-      { product: 'DENIM', color: 'MOSS', arc: 'Arc 2', reason: 'Green + brown', price: 185 },
-      { product: 'CARGO PANTS', color: 'SAND', arc: 'Arc 3', reason: 'Full earth flow', price: 162 },
-      { product: 'BELT', color: 'EARTH', arc: 'Arc 2', reason: 'Tonal warm', price: 125 }
-    ],
-    // Arc 3 pairings
-    SAKURA: [
-      { product: 'DENIM', color: 'CLOUD', arc: 'Arc 3', reason: 'Soft tonal', price: 178 },
-      { product: 'SWEATS', color: 'SAND', arc: 'Arc 3', reason: 'Warm pastels', price: 132 },
-      { product: 'CAP', color: 'STEEL', arc: 'Arc 2', reason: 'Modern edge', price: 65 }
-    ],
-    MIST: [
-      { product: 'CARGO PANTS', color: 'CLOUD', arc: 'Arc 3', reason: 'Clean minimal', price: 162 },
-      { product: 'DENIM', color: 'STEEL', arc: 'Arc 2', reason: 'Cool sophisticated', price: 185 },
-      { product: 'BEANIE', color: 'MIST', arc: 'Arc 3', reason: 'Tonal blue', price: 52 }
-    ],
-    CLOUD: [
-      { product: 'CARGO PANTS', color: 'VOID', arc: 'Arc 2', reason: 'High contrast', price: 165 },
-      { product: 'SWEATS', color: 'SAND', arc: 'Arc 3', reason: 'Warm neutrals', price: 132 },
-      { product: 'CAP', color: 'CLOUD', arc: 'Arc 3', reason: 'Tonal white', price: 62 }
-    ],
-    SAND: [
-      { product: 'CARGO PANTS', color: 'MOSS', arc: 'Arc 2', reason: 'Earth harmony', price: 165 },
-      { product: 'DENIM', color: 'EARTH', arc: 'Arc 2', reason: 'Full earth', price: 185 },
-      { product: 'BELT', color: 'SAND', arc: 'Arc 3', reason: 'Tonal warm', price: 122 }
-    ],
-    LILAC: [
-      { product: 'SWEATS', color: 'CLOUD', arc: 'Arc 3', reason: 'Ethereal pairing', price: 132 },
-      { product: 'DENIM', color: 'SAKURA', arc: 'Arc 3', reason: 'Pastel harmony', price: 178 },
-      { product: 'BEANIE', color: 'STEEL', arc: 'Arc 2', reason: 'Cool gradient', price: 55 }
-    ]
+// Smart pairing system based on product category
+// TOPS pair with → BOTTOMS + ACCESSORIES
+// BOTTOMS pair with → TOPS + ACCESSORIES
+// ACCESSORIES pair with → TOPS + BOTTOMS
+
+export function getSmartPairings(productId: string, colorKey: string, arc: 'ARC_2' | 'ARC_3'): any[] {
+  // Import BASE_PRODUCTS to check category
+  const { BASE_PRODUCTS } = require('./products')
+  const product = BASE_PRODUCTS[productId]
+
+  if (!product) return getDefaultPairings(colorKey, arc)
+
+  const category = product.category
+
+  // Category-specific pairings
+  if (category === 'TOPS') {
+    // Tops pair with bottoms + accessories
+    const pairings: Record<string, any[]> = {
+      VOID: [
+        { product: 'CARGO PANTS', color: 'STEEL', arc: 'Arc 2', reason: 'Tonal dark layering', price: 165 },
+        { product: 'SWEATS', color: 'VOID', arc: 'Arc 2', reason: 'Full monochrome', price: 135 },
+        { product: 'BEANIE', color: 'VOID', arc: 'Arc 2', reason: 'Complete the look', price: 55 }
+      ],
+      STEEL: [
+        { product: 'DENIM', color: 'VOID', arc: 'Arc 2', reason: 'Classic dark pairing', price: 185 },
+        { product: 'CARGO PANTS', color: 'STEEL', arc: 'Arc 2', reason: 'Tonal sophistication', price: 165 },
+        { product: 'CAP', color: 'STEEL', arc: 'Arc 2', reason: 'Finish the outfit', price: 65 }
+      ],
+      BLOOD: [
+        { product: 'DENIM', color: 'VOID', arc: 'Arc 2', reason: 'Rich contrast', price: 185 },
+        { product: 'CARGO PANTS', color: 'EARTH', arc: 'Arc 2', reason: 'Warm earth tones', price: 165 },
+        { product: 'BELT', color: 'VOID', arc: 'Arc 2', reason: 'Grounding accent', price: 128 }
+      ],
+      MOSS: [
+        { product: 'CARGO PANTS', color: 'EARTH', arc: 'Arc 2', reason: 'Natural earth harmony', price: 165 },
+        { product: 'SWEATS', color: 'MOSS', arc: 'Arc 2', reason: 'Tonal green flow', price: 135 },
+        { product: 'BEANIE', color: 'MOSS', arc: 'Arc 2', reason: 'Complete earth look', price: 55 }
+      ],
+      EARTH: [
+        { product: 'DENIM', color: 'MOSS', arc: 'Arc 2', reason: 'Organic pairing', price: 185 },
+        { product: 'CARGO PANTS', color: 'EARTH', arc: 'Arc 2', reason: 'Full earth tone', price: 165 },
+        { product: 'BELT', color: 'VOID', arc: 'Arc 2', reason: 'Contrast accent', price: 128 }
+      ],
+      SAKURA: [
+        { product: 'DENIM', color: 'CLOUD', arc: 'Arc 3', reason: 'Soft contrast', price: 178 },
+        { product: 'SWEATS', color: 'SAND', arc: 'Arc 3', reason: 'Warm pastels', price: 132 },
+        { product: 'CAP', color: 'CLOUD', arc: 'Arc 3', reason: 'Light layering', price: 62 }
+      ],
+      MIST: [
+        { product: 'CARGO PANTS', color: 'CLOUD', arc: 'Arc 3', reason: 'Clean minimal', price: 162 },
+        { product: 'DENIM', color: 'SAND', arc: 'Arc 3', reason: 'Warm + cool balance', price: 178 },
+        { product: 'BEANIE', color: 'CLOUD', arc: 'Arc 3', reason: 'Soft finish', price: 52 }
+      ],
+      CLOUD: [
+        { product: 'CARGO PANTS', color: 'VOID', arc: 'Arc 2', reason: 'High contrast', price: 165 },
+        { product: 'SWEATS', color: 'SAND', arc: 'Arc 3', reason: 'Warm tonal', price: 132 },
+        { product: 'CAP', color: 'CLOUD', arc: 'Arc 3', reason: 'Monochrome light', price: 62 }
+      ],
+      SAND: [
+        { product: 'CARGO PANTS', color: 'SAND', arc: 'Arc 3', reason: 'Tonal earth', price: 162 },
+        { product: 'DENIM', color: 'CLOUD', arc: 'Arc 3', reason: 'Light contrast', price: 178 },
+        { product: 'BELT', color: 'CLOUD', arc: 'Arc 3', reason: 'Clean accent', price: 122 }
+      ],
+      LILAC: [
+        { product: 'SWEATS', color: 'CLOUD', arc: 'Arc 3', reason: 'Ethereal pairing', price: 132 },
+        { product: 'DENIM', color: 'MIST', arc: 'Arc 3', reason: 'Pastel harmony', price: 178 },
+        { product: 'BEANIE', color: 'CLOUD', arc: 'Arc 3', reason: 'Soft layering', price: 52 }
+      ]
+    }
+    return pairings[colorKey] || pairings.VOID
   }
 
+  if (category === 'BOTTOMS') {
+    // Bottoms pair with tops + accessories
+    const pairings: Record<string, any[]> = {
+      VOID: [
+        { product: 'THERMAL', color: 'STEEL', arc: 'Arc 2', reason: 'Dark tonal layering', price: 185 },
+        { product: 'HOODIE', color: 'VOID', arc: 'Arc 2', reason: 'Full black outfit', price: 195 },
+        { product: 'BEANIE', color: 'VOID', arc: 'Arc 2', reason: 'Complete monochrome', price: 55 }
+      ],
+      STEEL: [
+        { product: 'THERMAL', color: 'VOID', arc: 'Arc 2', reason: 'Classic dark combo', price: 185 },
+        { product: 'HOODIE', color: 'STEEL', arc: 'Arc 2', reason: 'Tonal grey flow', price: 195 },
+        { product: 'CAP', color: 'STEEL', arc: 'Arc 2', reason: 'Matching accent', price: 65 }
+      ],
+      BLOOD: [
+        { product: 'THERMAL', color: 'VOID', arc: 'Arc 2', reason: 'Grounding contrast', price: 185 },
+        { product: 'HOODIE', color: 'EARTH', arc: 'Arc 2', reason: 'Rich warm tones', price: 195 },
+        { product: 'BELT', color: 'VOID', arc: 'Arc 2', reason: 'Define the waist', price: 128 }
+      ],
+      MOSS: [
+        { product: 'THERMAL', color: 'EARTH', arc: 'Arc 2', reason: 'Natural earth pairing', price: 185 },
+        { product: 'HOODIE', color: 'MOSS', arc: 'Arc 2', reason: 'Tonal green outfit', price: 195 },
+        { product: 'BEANIE', color: 'EARTH', arc: 'Arc 2', reason: 'Warm earth accent', price: 55 }
+      ],
+      EARTH: [
+        { product: 'THERMAL', color: 'MOSS', arc: 'Arc 2', reason: 'Organic combination', price: 185 },
+        { product: 'HOODIE', color: 'EARTH', arc: 'Arc 2', reason: 'Full earth tone', price: 195 },
+        { product: 'BELT', color: 'VOID', arc: 'Arc 2', reason: 'Dark contrast', price: 128 }
+      ],
+      SAKURA: [
+        { product: 'THERMAL', color: 'CLOUD', arc: 'Arc 3', reason: 'Light + lighter', price: 182 },
+        { product: 'HOODIE', color: 'SAND', arc: 'Arc 3', reason: 'Warm pastel combo', price: 192 },
+        { product: 'CAP', color: 'CLOUD', arc: 'Arc 3', reason: 'Clean finish', price: 62 }
+      ],
+      MIST: [
+        { product: 'THERMAL', color: 'CLOUD', arc: 'Arc 3', reason: 'Cool minimal', price: 182 },
+        { product: 'HOODIE', color: 'MIST', arc: 'Arc 3', reason: 'Tonal blue outfit', price: 192 },
+        { product: 'BEANIE', color: 'CLOUD', arc: 'Arc 3', reason: 'Soft accent', price: 52 }
+      ],
+      CLOUD: [
+        { product: 'THERMAL', color: 'VOID', arc: 'Arc 2', reason: 'Maximum contrast', price: 185 },
+        { product: 'HOODIE', color: 'SAND', arc: 'Arc 3', reason: 'Warm neutral', price: 192 },
+        { product: 'BELT', color: 'CLOUD', arc: 'Arc 3', reason: 'Tonal white', price: 122 }
+      ],
+      SAND: [
+        { product: 'THERMAL', color: 'CLOUD', arc: 'Arc 3', reason: 'Clean earth tone', price: 182 },
+        { product: 'HOODIE', color: 'SAND', arc: 'Arc 3', reason: 'Tonal warmth', price: 192 },
+        { product: 'BEANIE', color: 'CLOUD', arc: 'Arc 3', reason: 'Light layering', price: 52 }
+      ],
+      LILAC: [
+        { product: 'THERMAL', color: 'CLOUD', arc: 'Arc 3', reason: 'Ethereal combo', price: 182 },
+        { product: 'HOODIE', color: 'MIST', arc: 'Arc 3', reason: 'Pastel pairing', price: 192 },
+        { product: 'CAP', color: 'CLOUD', arc: 'Arc 3', reason: 'Soft finishing', price: 62 }
+      ]
+    }
+    return pairings[colorKey] || pairings.VOID
+  }
+
+  if (category === 'ACCESSORIES') {
+    // Accessories pair with tops + bottoms
+    const pairings: Record<string, any[]> = {
+      VOID: [
+        { product: 'THERMAL', color: 'STEEL', arc: 'Arc 2', reason: 'Dark tonal top', price: 185 },
+        { product: 'CARGO PANTS', color: 'STEEL', arc: 'Arc 2', reason: 'Dark tonal bottom', price: 165 },
+        { product: 'HOODIE', color: 'VOID', arc: 'Arc 2', reason: 'Full monochrome', price: 195 }
+      ],
+      CLOUD: [
+        { product: 'THERMAL', color: 'SAND', arc: 'Arc 3', reason: 'Warm light top', price: 182 },
+        { product: 'CARGO PANTS', color: 'CLOUD', arc: 'Arc 3', reason: 'Tonal white bottom', price: 162 },
+        { product: 'HOODIE', color: 'MIST', arc: 'Arc 3', reason: 'Cool pastel top', price: 192 }
+      ]
+    }
+    return pairings[colorKey] || pairings.VOID
+  }
+
+  // Fallback
+  return getDefaultPairings(colorKey, arc)
+}
+
+// Legacy function - kept for backwards compatibility
+export function getDefaultPairings(colorKey: string, arc: 'ARC_2' | 'ARC_3'): any[] {
+  const pairings: Record<string, any[]> = {
+    VOID: [
+      { product: 'THERMAL', color: 'STEEL', arc: 'Arc 2', reason: 'Dark tonal', price: 185 },
+      { product: 'CARGO PANTS', color: 'STEEL', arc: 'Arc 2', reason: 'Tonal layering', price: 165 },
+      { product: 'BEANIE', color: 'VOID', arc: 'Arc 2', reason: 'Monochrome', price: 55 }
+    ]
+  }
   return pairings[colorKey] || pairings.VOID
 }
 
