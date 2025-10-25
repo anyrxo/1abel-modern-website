@@ -9,17 +9,17 @@ import { AuthProvider } from '@/lib/authContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: '1ABEL - Premium minimalist essentials & Fashion',
-  description: '1ABEL is a premium minimalist essentials brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.',
-  keywords: 'minimalist essentials, fashion, clothing brand, minimalist fashion, black and white fashion, premium minimalist essentials, urban fashion, contemporary fashion, designer clothing, fashion boutique, mens fashion, womens fashion, minimalist essentials brand, fashion store, online clothing store',
+  title: '1ABEL - Where Sound Becomes Style | Music-Inspired Minimalist Fashion',
+  description: 'Premium minimalist essentials designed for those who move too fast to overthink their wardrobe. Music-driven design meets effortless style. Arc 2 Shadow & Arc 3 Light collections. Created by Anyro.',
+  keywords: 'minimalist fashion, music-inspired clothing, premium streetwear, Arc 2 Shadow, Arc 3 Light, designer essentials, contemporary menswear, womenswear, gender-neutral fashion, sustainable fashion, slow fashion, timeless wardrobe, 1ABEL, Anyro, @anyrxo, aesthetic clothing, intentional design, urban minimalism, monochrome fashion, capsule wardrobe, quality basics, curated clothing, fashion for creatives, music and fashion, frequency wear',
   authors: [{ name: '1ABEL' }],
   creator: '1ABEL',
   publisher: '1ABEL',
   category: 'Fashion & Apparel',
   classification: 'Clothing Brand',
   openGraph: {
-    title: '1ABEL - Premium minimalist essentials & Fashion',
-    description: '1ABEL is a premium minimalist essentials brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.',
+    title: '1ABEL - Where Sound Becomes Style | Music-Inspired Fashion',
+    description: 'Premium minimalist essentials for those who move too fast to overthink their wardrobe. Music-driven design meets effortless style. Arc 2 Shadow & Arc 3 Light.',
     url: 'https://1abel.com',
     siteName: '1ABEL',
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: '1ABEL Premium minimalist essentials & Fashion',
+        alt: '1ABEL - Music-Inspired Minimalist Fashion | Arc 2 Shadow & Arc 3 Light',
       },
     ],
     locale: 'en_US',
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '1ABEL - Premium minimalist essentials & Fashion',
-    description: 'Premium minimalist essentials brand offering minimalist black and white designs. Shop our curated collection.',
+    title: '1ABEL - Where Sound Becomes Style',
+    description: 'Music-driven design meets effortless style. For creatives who move too fast to overthink their wardrobe. Arc 2 Shadow & Arc 3 Light.',
     images: ['/og-image.jpg'],
-    creator: '@1ABEL',
+    creator: '@anyrxo',
     site: '@1ABEL',
   },
   robots: {
@@ -87,14 +87,20 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "ClothingStore",
     "name": "1ABEL",
-    "alternateName": "1ABEL minimalist essentials",
+    "alternateName": "1ABEL - Where Sound Becomes Style",
     "url": "https://1abel.com",
     "logo": "https://1abel.com/logo.png",
-    "description": "1ABEL is a premium minimalist essentials brand offering minimalist black and white designs. Shop our curated collection of tops, bottoms, and accessories.",
-    "foundingDate": "2020",
+    "description": "Music-inspired minimalist fashion brand. Premium essentials designed for those who move too fast to overthink their wardrobe. Arc 2 Shadow & Arc 3 Light collections. Created by Anyro (@anyrxo). Where clothing works like music - pieces that always pair perfectly.",
+    "slogan": "Where sound becomes style. Where every piece is a frequency you can wear.",
+    "founder": {
+      "@type": "Person",
+      "name": "Anyro",
+      "sameAs": "https://instagram.com/anyrxo"
+    },
+    "foundingDate": "2024",
     "industry": "Fashion & Apparel",
     "areaServed": "Worldwide",
-    "priceRange": "$$",
+    "priceRange": "$$-$$$",
     "sameAs": [
       "https://instagram.com/1abel",
       "https://twitter.com/1ABEL"

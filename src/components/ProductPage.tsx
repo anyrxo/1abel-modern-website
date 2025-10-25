@@ -405,6 +405,9 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                                 arc: pairing.arc,
                                 category: pairingProduct.category
                               })
+                              // Show cart confirmation
+                              setShowCartConfirmation(true)
+                              setTimeout(() => setShowCartConfirmation(false), 2000)
                             } else {
                               setModalProduct({
                                 productId: pairingProductId,
@@ -491,6 +494,9 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                       category: modalProduct.category
                     })
                     setSizeModalOpen(false)
+                    // Show cart confirmation
+                    setShowCartConfirmation(true)
+                    setTimeout(() => setShowCartConfirmation(false), 2000)
                   }}
                   className={`py-3 border text-sm btn-liquid hover-elevate magnetic-button ${
                     arc === 'ARC_2'
