@@ -342,7 +342,7 @@ export default function HomePage() {
 
                   <p className="text-gray-600 max-w-lg mx-auto mb-4 text-sm md:text-base leading-relaxed">
                     For daytime moves. Social energy. Mental clarity.
-                    When you need lightness, breath, and balance. SAND. MIST. CLAY. SAGE. IVORY.
+                    When you need lightness, breath, and balance. CLOUD. SAKURA. MIST. SAND. LILAC.
                     Pieces that lift you into flow.
                   </p>
 

@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: '1ABEL - Where Sound Becomes Style | Music-Inspired Minimalist Fashion',
   description: 'Premium minimalist essentials designed for those who move too fast to overthink their wardrobe. Music-driven design meets effortless style. Arc 2 Shadow & Arc 3 Light collections. Created by Anyro.',
-  keywords: 'minimalist fashion, music-inspired clothing, premium streetwear, Arc 2 Shadow, Arc 3 Light, designer essentials, contemporary menswear, womenswear, gender-neutral fashion, sustainable fashion, slow fashion, timeless wardrobe, 1ABEL, Anyro, @anyrxo, aesthetic clothing, intentional design, urban minimalism, monochrome fashion, capsule wardrobe, quality basics, curated clothing, fashion for creatives, music and fashion, frequency wear',
+  keywords: 'minimalist fashion, music-inspired clothing, premium streetwear, Arc 2 Shadow (VOID STEEL BLOOD MOSS EARTH), Arc 3 Light (CLOUD SAKURA MIST SAND LILAC), designer essentials, contemporary menswear, womenswear, gender-neutral fashion, sustainable fashion, slow fashion, timeless wardrobe, 1ABEL, Anyro, @anyrxo, aesthetic clothing, intentional design, urban minimalism, monochrome fashion, capsule wardrobe, quality basics, curated clothing, fashion for creatives, music and fashion, frequency wear',
   authors: [{ name: '1ABEL' }],
   creator: '1ABEL',
   publisher: '1ABEL',

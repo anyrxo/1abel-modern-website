@@ -447,7 +447,7 @@ export default function Arc3TopsPage() {
               MIST
             </motion.button>
             <motion.button
-              key="CLAY"
+              key="LILAC"
               onClick={() => {
                 setSelectedColors(prev =>
                   prev.includes('CLAY') ? prev.filter(c => c !== 'CLAY') : [...prev, 'CLAY']
@@ -463,7 +463,7 @@ export default function Arc3TopsPage() {
               CLAY
             </motion.button>
             <motion.button
-              key="SAGE"
+              key="SAKURA"
               onClick={() => {
                 setSelectedColors(prev =>
                   prev.includes('SAGE') ? prev.filter(c => c !== 'SAGE') : [...prev, 'SAGE']
@@ -479,7 +479,7 @@ export default function Arc3TopsPage() {
               SAGE
             </motion.button>
             <motion.button
-              key="IVORY"
+              key="CLOUD"
               onClick={() => {
                 setSelectedColors(prev =>
                   prev.includes('IVORY') ? prev.filter(c => c !== 'IVORY') : [...prev, 'IVORY']
