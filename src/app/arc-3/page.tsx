@@ -277,10 +277,10 @@ export default function Arc3Page() {
                 transition={{ duration: 0.8, delay: category.delay, ease: [0.16, 1, 0.3, 1] }}
               >
                 <Link href={category.href} className="group block">
-                  <div className="relative overflow-hidden mb-6">
+                  <div className="relative overflow-hidden mb-6 rounded-premium-xl">
                     {/* Image placeholder with hover effect */}
                     <motion.div
-                      className="aspect-[3/4] bg-gradient-to-br from-gray-50 to-white border border-black/5 relative"
+                      className="aspect-[3/4] rounded-premium-xl bg-gradient-to-br from-gray-50 to-white border border-black/5 relative"
                       whileHover={{ scale: 1.02 }}
                       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                     >

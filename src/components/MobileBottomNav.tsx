@@ -38,21 +38,6 @@ export function MobileBottomNav() {
 
   return (
     <>
-      {/* Mobile Page Title Bar - Glass overlay */}
-      <div className="md:hidden fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 border-b border-black/5">
-        <div className="h-12 flex items-center justify-center px-4">
-          <motion.h1
-            key={pageTitle}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.2 }}
-            className="text-xs font-bold tracking-[0.25em] uppercase text-black/80"
-          >
-            {pageTitle}
-          </motion.h1>
-        </div>
-      </div>
-
       {/* Arc Menu Overlay */}
       {arcMenuOpen && (
         <motion.div

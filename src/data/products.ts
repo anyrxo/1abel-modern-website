@@ -8,9 +8,9 @@ export const COLORS = {
     EARTH: { name: 'EARTH', hex: '#2a1a0a', description: 'Dark brown' }
   },
   ARC_3: {
+    CLOUD: { name: 'CLOUD', hex: '#ffffff', description: 'White' },
     SAKURA: { name: 'SAKURA', hex: '#ffd4e5', description: 'Light pink' },
     MIST: { name: 'MIST', hex: '#d4e5ff', description: 'Soft blue' },
-    CLOUD: { name: 'CLOUD', hex: '#ffffff', description: 'White' },
     SAND: { name: 'SAND', hex: '#f5f0e8', description: 'Cream' },
     LILAC: { name: 'LILAC', hex: '#e8d4ff', description: 'Soft lavender' }
   }

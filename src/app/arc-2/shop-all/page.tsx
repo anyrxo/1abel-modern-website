@@ -283,9 +283,9 @@ export default function Arc2ShopAllPage() {
               >
                 <Link href={`/arc-2/${product.category.toLowerCase()}/${product.slug}`} className="group block">
                   {/* Product Image */}
-                  <div className="relative overflow-hidden mb-6">
+                  <div className="relative overflow-hidden mb-6 rounded-premium-xl">
                     <motion.div
-                      className="aspect-[3/4] glass-card-dark hover-elevate shimmer-on-hover relative overflow-hidden"
+                      className="aspect-[3/4] rounded-premium-xl glass-card-dark hover-elevate shimmer-on-hover relative overflow-hidden"
                       whileHover={{ scale: 1.03, rotateZ: 0.5 }}
                       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                     >

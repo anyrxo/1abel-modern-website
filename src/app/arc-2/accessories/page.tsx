@@ -208,9 +208,9 @@ export default function Arc2AccessoriesPage() {
               >
                 <Link href={`/arc-2/accessories/${product.slug}`} className="group block">
                   {/* Product Image */}
-                  <div className="relative overflow-hidden mb-6">
+                  <div className="relative overflow-hidden mb-6 rounded-premium-xl">
                     <motion.div
-                      className="aspect-[3/4] bg-gradient-to-br from-gray-900 to-black border border-white/5 relative"
+                      className="aspect-[3/4] rounded-premium-xl bg-gradient-to-br from-gray-900 to-black border border-white/5 relative"
                       whileHover={{ scale: 1.03, rotateZ: 0.5 }}
                       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                     >
