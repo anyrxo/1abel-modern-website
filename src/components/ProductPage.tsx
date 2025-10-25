@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
 import { useCart } from '@/lib/cartContext'
@@ -41,6 +41,8 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const [selectedSize, setSelectedSize] = useState(product.sizes.length === 1 ? product.sizes[0] : '')
   const [sizeModalOpen, setSizeModalOpen] = useState(false)
   const [modalProduct, setModalProduct] = useState<any>(null)
+  const [showSizeError, setShowSizeError] = useState(false)
+  const [showCartConfirmation, setShowCartConfirmation] = useState(false)
   const { addItem } = useCart()
   const router = useRouter()
 
@@ -61,6 +63,13 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
     }
   }
 
+  // Clear size error when user selects a size
+  useEffect(() => {
+    if (selectedSize) {
+      setShowSizeError(false)
+    }
+  }, [selectedSize])
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"]
@@ -73,7 +82,8 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
 
   const handleAddToCart = () => {
     if (!selectedSize) {
-      // Scroll to size selector instead of showing alert
+      // Show error and scroll to size selector
+      setShowSizeError(true)
       sizeSelectRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
       return
     }
@@ -89,6 +99,10 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
       arc: `${arcName}`,
       category: product.category
     })
+
+    // Show cart confirmation animation
+    setShowCartConfirmation(true)
+    setTimeout(() => setShowCartConfirmation(false), 2000)
   }
 
   return (
@@ -141,7 +155,22 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
         </motion.button>
       </motion.div>
 
-
+      {/* Cart Confirmation Animation */}
+      {showCartConfirmation && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          className="fixed top-24 left-1/2 -translate-x-1/2 z-50 px-6 py-4 rounded-premium-xl shadow-2xl backdrop-blur-xl"
+          style={{
+            backgroundColor: arc === 'ARC_2' ? 'rgba(255, 255, 255, 0.95)' : 'rgba(0, 0, 0, 0.95)'
+          }}
+        >
+          <p className={`text-sm font-bold tracking-wider uppercase ${arc === 'ARC_2' ? 'text-black' : 'text-white'}`}>
+            Added to cart ✓
+          </p>
+        </motion.div>
+      )}
 
       <div className="pt-24 px-4 md:px-8 pb-20">
         <div className="max-w-7xl mx-auto">
@@ -238,6 +267,17 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                       </motion.button>
                     ))}
                   </div>
+                  {/* Error message when no size selected */}
+                  {showSizeError && (
+                    <motion.p
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0 }}
+                      className="text-red-500 text-xs mt-3 tracking-wide"
+                    >
+                      Please select a size first
+                    </motion.p>
+                  )}
                 </div>
               )}
 
