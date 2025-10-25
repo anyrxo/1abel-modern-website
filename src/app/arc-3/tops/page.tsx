@@ -543,7 +543,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedColors.includes('SAND')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -559,7 +559,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedColors.includes('MIST')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -575,7 +575,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedColors.includes('CLAY')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -591,7 +591,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedColors.includes('SAGE')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -607,7 +607,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedColors.includes('IVORY')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -630,7 +630,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedSizes.includes('XS')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -646,7 +646,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedSizes.includes('S')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -662,7 +662,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedSizes.includes('M')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -678,7 +678,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedSizes.includes('L')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -694,7 +694,7 @@ export default function Arc3TopsPage() {
               className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                 selectedSizes.includes('XL')
                   ? 'border-white bg-white text-black'
-                  : 'border-white/20 hover:border-white/40'
+                  : 'border-white/20 text-white hover:border-white/40'
               }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -749,7 +749,7 @@ export default function Arc3TopsPage() {
                 className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                   priceSort === 'asc'
                     ? 'border-white bg-white text-black'
-                    : 'border-white/20 hover:border-white/40'
+                    : 'border-white/20 text-white hover:border-white/40'
                 }`}
                 whileTap={{ scale: 0.98 }}
               >
@@ -763,7 +763,7 @@ export default function Arc3TopsPage() {
                 className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                   priceSort === 'desc'
                     ? 'border-white bg-white text-black'
-                    : 'border-white/20 hover:border-white/40'
+                    : 'border-white/20 text-white hover:border-white/40'
                 }`}
                 whileTap={{ scale: 0.98 }}
               >
@@ -777,7 +777,7 @@ export default function Arc3TopsPage() {
                 className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
                   priceSort === 'none'
                     ? 'border-white bg-white text-black'
-                    : 'border-white/20 hover:border-white/40'
+                    : 'border-white/20 text-white hover:border-white/40'
                 }`}
                 whileTap={{ scale: 0.98 }}
               >
