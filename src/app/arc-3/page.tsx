@@ -119,6 +119,75 @@ export default function Arc3Page() {
         </motion.div>
       </section>
 
+      {/* Color Palette Section */}
+      <section className="py-32 px-4 md:px-8 relative border-t border-black/5">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="space-y-16"
+          >
+            <div className="text-center">
+              <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-8">
+                The Light Palette
+              </h2>
+              <p className="text-xl md:text-2xl font-light leading-relaxed text-gray-600 max-w-3xl mx-auto">
+                Five colors. Each a different shade of lightness.
+                Each piece in the collection exists across this ethereal spectrum.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+              {[
+                { name: 'SAKURA', hex: '#ffd4e5', desc: 'Light pink. Ethereal softness.' },
+                { name: 'MIST', hex: '#d4e5ff', desc: 'Soft blue. Morning calm.' },
+                { name: 'CLOUD', hex: '#ffffff', desc: 'Pure white. The canvas.' },
+                { name: 'SAND', hex: '#f5f0e8', desc: 'Cream warmth. The bridge.' },
+                { name: 'LILAC', hex: '#e8d4ff', desc: 'Soft lavender. Twilight.' }
+              ].map((color, index) => (
+                <motion.div
+                  key={color.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="group"
+                >
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    className="aspect-square mb-4 border border-black/10 relative overflow-hidden"
+                    style={{ backgroundColor: color.hex }}
+                  >
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500" />
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <p className="text-[10px] tracking-[0.2em] uppercase text-black/40 group-hover:text-black/60 transition-colors">
+                        {color.hex}
+                      </p>
+                    </div>
+                  </motion.div>
+                  <h3 className="text-sm font-bold tracking-wider mb-2 uppercase">
+                    {color.name}
+                  </h3>
+                  <p className="text-xs text-gray-500 leading-relaxed">
+                    {color.desc}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="text-center pt-8">
+              <p className="text-xs text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                Every base product is available in all five colorways.
+                Mix them. Layer them. Build your own light.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Manifesto Section */}
       <section className="py-32 px-4 md:px-8 relative border-t border-black/5">
         <div className="max-w-4xl mx-auto">
@@ -148,10 +217,10 @@ export default function Arc3Page() {
                 </p>
               </div>
               <div>
-                <h3 className="text-sm font-semibold tracking-wide mb-3 uppercase">Luminous Tones</h3>
+                <h3 className="text-sm font-semibold tracking-wide mb-3 uppercase">Five Light Colors</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
-                  Ivory, chalk, and pearl. Subtle variations in white create
-                  depth while maintaining ethereal purity.
+                  From pure CLOUD white to ethereal SAKURA pink. Every piece exists
+                  across the complete spectrum of light.
                 </p>
               </div>
               <div>

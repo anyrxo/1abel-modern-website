@@ -36,7 +36,7 @@ const products = {
       "Ribbed cuffs and hem",
       "Garment-washed for lived-in feel"
     ],
-    story: "Some pieces exist outside of time. The Eternal Hoodie is designed to be worn for years:softening with each wash, becoming more yours. It's not about trends. It's about finding something that works and never needing to replace it."
+    story: "Some pieces exist outside of time. The Eternal Hoodie is designed to be worn for years—softening with each wash, becoming more yours. It's not about trends. It's about finding something that works and never needing to replace it."
   },
   '3': {
     name: "FROST ZIPUP",
@@ -51,7 +51,7 @@ const products = {
       "Athletic fit with stretch",
       "Water-resistant finish"
     ],
-    story: "Designed for transition. The Frost Zipup is what you reach for when you're moving between spaces:the studio and the street, work and rest. Refined enough to wear anywhere, functional enough to actually use."
+    story: "Designed for transition. The Frost Zipup is what you reach for when you're moving between spaces—the studio and the street, work and rest. Refined enough to wear anywhere, functional enough to actually use."
   },
   '4': {
     name: "IVORY HOODIE",
@@ -66,7 +66,7 @@ const products = {
       "Wide ribbed waistband",
       "Slight fading for lived-in aesthetic"
     ],
-    story: "There's comfort in familiarity. The Ivory Hoodie is pre-faded, pre-softened, pre-loved. It's the hoodie you throw on without thinking:because thinking is overrated when you're trying to create."
+    story: "There's comfort in familiarity. The Ivory Hoodie is pre-faded, pre-softened, pre-loved. It's the hoodie you throw on without thinking—because thinking is overrated when you're trying to create."
   },
   '5': {
     name: "ARCTIC PUFFER",
@@ -81,7 +81,7 @@ const products = {
       "Interior media pocket",
       "Packs into own pocket"
     ],
-    story: "Winter doesn't have to be heavy. The Arctic Puffer keeps you warm without the bulk:letting you move freely, think clearly. It's technical without looking like outdoor gear. Just clean lines and quiet warmth."
+    story: "Winter doesn't have to be heavy. The Arctic Puffer keeps you warm without the bulk—letting you move freely, think clearly. It's technical without looking like outdoor gear. Just clean lines and quiet warmth."
   },
   '6': {
     name: "PEARL THERMAL",
@@ -96,7 +96,7 @@ const products = {
       "Longer back hem for coverage",
       "Natural stretch for movement"
     ],
-    story: "Some pieces just work. The Pearl Thermal is that piece:the one you reach for when you want comfort without compromise. Soft organic cotton that feels good on your skin, looks good under anything."
+    story: "Some pieces just work. The Pearl Thermal is that piece—the one you reach for when you want comfort without compromise. Soft organic cotton that feels good on your skin, looks good under anything."
   },
   '7': {
     name: "CHALK SWEATER",
@@ -111,7 +111,7 @@ const products = {
       "Fully fashioned (no side seams)",
       "Hand-washable, won't pill"
     ],
-    story: "A good sweater is an investment. The Chalk Sweater is Italian merino:soft enough to wear against skin, refined enough to wear to dinner. It's the kind of quality that lasts decades if you treat it right."
+    story: "A good sweater is an investment. The Chalk Sweater is Italian merino—soft enough to wear against skin, refined enough to wear to dinner. It's the kind of quality that lasts decades if you treat it right."
   },
   '8': {
     name: "LUNAR TEE",
@@ -126,7 +126,7 @@ const products = {
       "Preshrunk",
       "Durable yet soft hand-feel"
     ],
-    story: "Everyone needs a perfect tee. The Lunar Tee is that tee:heavy enough to feel substantial, soft enough to forget you're wearing it. It's the foundation of a good wardrobe. Buy three."
+    story: "Everyone needs a perfect tee. The Lunar Tee is that tee—heavy enough to feel substantial, soft enough to forget you're wearing it. It's the foundation of a good wardrobe. Buy three."
   }
 }
 

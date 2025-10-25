@@ -62,7 +62,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'Born from late nights in the studio. This thermal embodies the weight of creation—heavy, substantial, grounding. It\'s not what you wear when you\'re trying to impress. It\'s what you wear when you\'re focused on the work.',
     arc2Price: 185,
     arc3Price: 182,
-    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   HOODIE: {
@@ -80,7 +80,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'For those who understand that presence doesn\'t require volume. This hoodie creates negative space around you—a field of calm in chaos. Wear it when you need to disappear into focus.',
     arc2Price: 195,
     arc3Price: 192,
-    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   COACH_JACKET: {
@@ -98,7 +98,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'The piece you reach for when crossing thresholds. Studio to street. Day to night. This jacket bridges states—functional armor that looks intentional, not technical.',
     arc2Price: 205,
     arc3Price: 202,
-    sizes: ['S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['S', 'M', 'L', 'XL']
   },
 
   CREWNECK: {
@@ -116,7 +116,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'Sometimes the most powerful statement is silence. The Crewneck is the piece you build your wardrobe around. Timeless, unbranded, essential.',
     arc2Price: 175,
     arc3Price: 172,
-    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   LONGSLEEVE: {
@@ -134,7 +134,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'The long-sleeve that actually fits. This isn\'t an afterthought—it\'s purpose-built. Layer it under hoodies or wear it solo. Either way, it holds its shape.',
     arc2Price: 95,
     arc3Price: 92,
-    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   TEE: {
@@ -152,7 +152,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'Your everyday foundational tee. This gets better with every wash—fabric softens, fit relaxes, character develops. This is the tee you\'ll still be wearing years from now.',
     arc2Price: 75,
     arc3Price: 72,
-    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   OVERSHIRT: {
@@ -170,7 +170,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'Not quite a shirt, not quite a jacket. The Overshirt exists in the space between—perfect for layering or wearing solo. Built heavy enough to stand alone.',
     arc2Price: 165,
     arc3Price: 162,
-    sizes: ['S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['S', 'M', 'L', 'XL']
   },
 
   PUFFER: {
@@ -188,7 +188,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'When you need to block out the cold and the noise. The Puffer creates a cocoon—your personal atmosphere. It\'s excessive by design. Unapologetic in its volume.',
     arc2Price: 285,
     arc3Price: 275,
-    sizes: ['S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['S', 'M', 'L', 'XL']
   },
 
   // BOTTOMS
@@ -227,7 +227,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'Some days you just need sweats. These are those sweats—soft enough to live in, clean enough to wear out. Pre-washed so they feel broken-in immediately. This is comfort without compromise.',
     arc2Price: 135,
     arc3Price: 132,
-    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   DENIM: {
@@ -265,7 +265,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'Movement shouldn\'t be complicated. These joggers are built for it—whether that\'s through the city or through your process. Technical without looking technical.',
     arc2Price: 145,
     arc3Price: 142,
-    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   SHORTS: {
@@ -283,7 +283,7 @@ export const BASE_PRODUCTS: Record<string, BaseProduct> = {
     story: 'Shorts that don\'t feel like an afterthought. Heavy enough to have structure, comfortable enough to forget you\'re wearing them. Built for the warm months.',
     arc2Price: 95,
     arc3Price: 92,
-    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL']
+    sizes: ['XS', 'S', 'M', 'L', 'XL']
   },
 
   WIDE_PANTS: {

@@ -119,6 +119,75 @@ export default function Arc2Page() {
         </motion.div>
       </section>
 
+      {/* Color Palette Section */}
+      <section className="py-32 px-4 md:px-8 relative border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="space-y-16"
+          >
+            <div className="text-center">
+              <h2 className="text-xs tracking-[0.3em] uppercase text-gray-600 mb-8">
+                The Shadow Palette
+              </h2>
+              <p className="text-xl md:text-2xl font-light leading-relaxed text-gray-400 max-w-3xl mx-auto">
+                Five colors. Each a different shade of darkness.
+                Each piece in the collection exists across this spectrum.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+              {[
+                { name: 'VOID', hex: '#0a0a0a', desc: 'Pure black intensity. The foundation.' },
+                { name: 'STEEL', hex: '#3a3a3a', desc: 'Dark grey sophistication. The bridge.' },
+                { name: 'BLOOD', hex: '#4a1a1a', desc: 'Deep burgundy. Quiet power.' },
+                { name: 'MOSS', hex: '#1a2a1a', desc: 'Forest green. Earth connection.' },
+                { name: 'EARTH', hex: '#2a1a0a', desc: 'Dark brown. Foundation patina.' }
+              ].map((color, index) => (
+                <motion.div
+                  key={color.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="group"
+                >
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.3 }}
+                    className="aspect-square mb-4 border border-white/10 relative overflow-hidden"
+                    style={{ backgroundColor: color.hex }}
+                  >
+                    <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-500" />
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <p className="text-[10px] tracking-[0.2em] uppercase text-white/60 group-hover:text-white/80 transition-colors">
+                        {color.hex}
+                      </p>
+                    </div>
+                  </motion.div>
+                  <h3 className="text-sm font-bold tracking-wider mb-2 uppercase">
+                    {color.name}
+                  </h3>
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    {color.desc}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="text-center pt-8">
+              <p className="text-xs text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Every base product is available in all five colorways.
+                Mix them. Layer them. Build your own shadow.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Manifesto Section */}
       <section className="py-32 px-4 md:px-8 relative border-t border-white/5">
         <div className="max-w-4xl mx-auto">
@@ -148,10 +217,10 @@ export default function Arc2Page() {
                 </p>
               </div>
               <div>
-                <h3 className="text-sm font-semibold tracking-wide mb-3 uppercase">Midnight Palette</h3>
+                <h3 className="text-sm font-semibold tracking-wide mb-3 uppercase">Five Shadow Colors</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Black on black on black. Subtle variations create depth
-                  without breaking the monochrome code.
+                  From pure VOID black to earthy MOSS green. Every piece exists
+                  across the complete spectrum of shadow.
                 </p>
               </div>
               <div>

@@ -55,7 +55,8 @@
       "Bash(git commit -m \"$(cat <<''EOF''\nAdd proof-of-concept THERMAL product with color system\n\nPROOF OF CONCEPT - NEW PRODUCT ARCHITECTURE:\n\nCreated THERMAL product at /arc-2/tops/thermal demonstrating:\n\n1. **Color Selector System**\n   - 5 Arc 2 Shadow colors: VOID, STEEL, BLOOD, MOSS, EARTH\n   - Visual color swatches with live preview\n   - Smooth animations on color change\n   - Color-specific product image backgrounds\n\n2. **Dynamic Color Stories**\n   - Unique story for each color variant\n   - Ties garment philosophy to color meaning\n   - Example: MOSS connects to earth, BLOOD to intensity\n\n3. **\"Pairs With\" Recommendations**\n   - Based on color theory (fashion science)\n   - Cross-arc pairings (MOSS + SAND, STEEL + MIST)\n   - Same-arc pairings (VOID + STEEL, MOSS + EARTH)\n   - Shows why each pairing works\n\n4. **Base Product Data Structure**\n   - Created /src/data/products.ts\n   - All 22 base products defined\n   - Ready to roll out across site\n\nFEATURES DEMONSTRATED:\n- Color selector with hex values\n- Size selector (adapts to product type)\n- Add to cart with color + size\n- Enhanced notifications\n- Parallax image effects\n- \"The Story\" section (color-aware)\n- Pairs With section (3-4 smart recommendations)\n\nNEXT STEPS:\n- Get approval on this system\n- Roll out to all 22 base products\n- Update category pages\n\nBuild successful - new /arc-2/tops/thermal page works\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git push:*)",
       "Bash(node generate-products.js:*)",
-      "Bash(1)"
+      "Bash(1)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
