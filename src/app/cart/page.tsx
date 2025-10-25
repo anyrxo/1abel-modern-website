@@ -6,10 +6,16 @@ import { ShoppingBag, X, Plus, Minus } from 'lucide-react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useCart } from '@/lib/cartContext'
+import { DiscountSuggestion } from '@/components/DiscountNotification'
+import { useState } from 'react'
 
 export default function CartPage() {
   const router = useRouter()
   const { items, removeItem, updateQuantity, totalPrice, clearCart } = useCart()
+  const [appliedSuggestion, setAppliedSuggestion] = useState(false)
+
+  // Check if eligible for WELCOME15
+  const showWelcomeDiscount = items.length > 0 && totalPrice > 100 && !appliedSuggestion
 
   return (
     <div className="bg-white text-black min-h-screen">
@@ -58,7 +64,7 @@ export default function CartPage() {
                 </Link>
                 <Link
                   href="/arc-3"
-                  className="inline-flex items-center justify-center px-8 py-3 border-2 border-black text-black hover:bg-black hover:text-white transition-colors text-sm tracking-wider uppercase font-medium"
+                  className="inline-flex items-center justify-center px-8 py-3 border border-black/10 rounded-premium text-black hover:bg-black hover:text-white transition-colors text-sm tracking-wider uppercase font-medium"
                 >
                   Arc 3 Light
                 </Link>
@@ -73,7 +79,7 @@ export default function CartPage() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="border-2 border-black p-6 relative"
+                    className="border border-black/10 rounded-premium p-6 relative"
                   >
                     <button
                       onClick={() => removeItem(item.id, item.size)}
@@ -100,7 +106,7 @@ export default function CartPage() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                          <div className="flex items-center border-2 border-black">
+                          <div className="flex items-center border border-black/10 rounded-premium">
                             <button
                               onClick={() => updateQuantity(item.id, item.size, item.quantity - 1)}
                               className="px-3 py-2 hover:bg-gray-100 transition-colors touch-manipulation"
@@ -134,7 +140,7 @@ export default function CartPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="border-2 border-black p-6 md:p-8 h-fit lg:sticky lg:top-28"
+                className="border border-black/10 rounded-premium p-6 md:p-8 h-fit lg:sticky lg:top-28"
               >
                 <h2 className="text-xl md:text-2xl font-bold mb-6 uppercase tracking-wide">Order Summary</h2>
                 <div className="space-y-4 mb-6">
@@ -155,7 +161,7 @@ export default function CartPage() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => router.push('/checkout')}
-                  className="w-full px-8 py-4 bg-black text-white hover:bg-gray-800 transition-colors text-sm tracking-wider uppercase font-medium mb-4"
+                  className="w-full px-8 py-4 bg-gradient-to-r from-black to-gray-800 text-white btn-liquid shadow-xl hover:shadow-2xl transition-colors text-sm tracking-wider uppercase font-medium mb-4"
                 >
                   Proceed to Checkout
                 </motion.button>

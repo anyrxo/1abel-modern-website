@@ -218,7 +218,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                       <motion.button
                         key={size}
                         onClick={() => setSelectedSize(size)}
-                        className={`py-3 border text-sm ${
+                        className={`py-3 border text-sm rounded-xl ${
                           selectedSize === size
                             ? (arc === 'ARC_2' ? 'border-white bg-white text-black' : 'border-black bg-black text-white')
                             : (arc === 'ARC_2' ? 'border-white/20 hover:border-white/40' : 'border-black/20 hover:border-black/40')
@@ -248,7 +248,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
               {/* Add to Cart */}
               <motion.button
                 onClick={handleAddToCart}
-                className={`w-full py-4 ${arc === 'ARC_2' ? 'bg-white text-black hover:bg-gray-200' : 'bg-black text-white hover:bg-gray-800'} text-sm tracking-[0.2em] uppercase font-semibold transition-colors mb-8`}
+                className={`w-full py-4 ${arc === 'ARC_2' ? 'bg-gradient-to-r from-white to-gray-100 text-black hover:shadow-2xl' : 'bg-gradient-to-r from-black to-gray-800 text-white hover:shadow-2xl'} text-sm tracking-[0.2em] uppercase font-semibold btn-liquid shadow-xl mb-8`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -307,7 +307,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                     return (
                       <motion.div
                         key={index}
-                        className={`border ${borderColor} p-4 transition-colors`}
+                        className={`border ${borderColor} p-4 transition-all rounded-premium-lg hover:shadow-lg`}
                         whileHover={{ scale: 1.01 }}
                       >
                         <div className="flex gap-4 mb-3">
@@ -405,7 +405,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className={`relative ${arc === 'ARC_2' ? 'bg-white text-black' : 'bg-black text-white'} p-8 max-w-md w-full`}
+            className={`relative ${arc === 'ARC_2' ? 'bg-white text-black' : 'bg-black text-white'} p-8 max-w-md w-full rounded-premium-xl shadow-2xl`}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
@@ -442,7 +442,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                     setShowNotification(true)
                     setTimeout(() => setShowNotification(false), 4000)
                   }}
-                  className={`py-3 border text-sm ${
+                  className={`py-3 border text-sm rounded-xl ${
                     arc === 'ARC_2'
                       ? 'border-black hover:bg-black hover:text-white'
                       : 'border-white hover:bg-white hover:text-black'

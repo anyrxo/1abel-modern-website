@@ -1,11 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Header } from '@/components/Header'
 import { useCart } from '@/lib/cartContext'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircle2, Tag, Sparkles, TrendingDown } from 'lucide-react'
 import Link from 'next/link'
+import { DiscountNotification } from '@/components/DiscountNotification'
 
 // This will be integrated with pricingContext later
 const TEMP_DISCOUNT_RULES = [
@@ -80,6 +81,8 @@ export default function CheckoutPage() {
   const [appliedCodes, setAppliedCodes] = useState<string[]>([])
   const [codeError, setCodeError] = useState('')
   const [showSuccess, setShowSuccess] = useState(false)
+  const [discountNotification, setDiscountNotification] = useState<any>(null)
+  const [checkedDiscounts, setCheckedDiscounts] = useState<Set<string>>(new Set())
 
   // Calculate applicable auto-discounts
   const autoDiscounts = TEMP_DISCOUNT_RULES.filter(rule => {
@@ -141,6 +144,32 @@ export default function CheckoutPage() {
     setAppliedCodes(appliedCodes.filter(c => c !== code))
   }
 
+  
+  // Auto-detect and show discount notifications
+  useEffect(() => {
+    autoDiscounts.forEach(discount => {
+      if (!checkedDiscounts.has(discount.code)) {
+        const savingsAmount = discount.type === 'percentage'
+          ? (totalPrice * discount.value) / 100
+          : discount.value
+
+        setDiscountNotification({
+          code: discount.code,
+          message: discount.message,
+          value: discount.value,
+          type: discount.type,
+          savingsAmount
+        })
+
+        setCheckedDiscounts(prev => new Set([...prev, discount.code]))
+
+        // Only show one at a time
+        return
+      }
+    })
+  }, [autoDiscounts.length, totalPrice])
+
+
   if (items.length === 0) {
     return (
       <div className="bg-white text-black min-h-screen">
@@ -166,7 +195,7 @@ export default function CheckoutPage() {
             <div className="md:col-span-2 space-y-6">
               {items.map((item) => (
                 <div key={item.id} className="flex gap-4 border-b border-black/10 pb-6">
-                  <div className="w-24 h-32 bg-gray-100 border border-black/10" />
+                  <div className="w-24 h-32 bg-gray-100 border border-black/5 rounded-premium" />
                   <div className="flex-1">
                     <h3 className="font-bold text-sm mb-1">{item.name}</h3>
                     <p className="text-xs text-gray-500 uppercase">{item.arc} — {item.category}</p>
@@ -182,7 +211,7 @@ export default function CheckoutPage() {
 
             {/* Right: Payment Summary with Genius Discount Display */}
             <div className="md:col-span-1">
-              <div className="border border-black/10 p-6 sticky top-24">
+              <div className="border border-black/5 rounded-premium p-6 sticky top-24">
                 <h2 className="text-lg font-bold mb-6 uppercase tracking-wide">Summary</h2>
 
                 {/* Subtotal */}
@@ -223,7 +252,7 @@ export default function CheckoutPage() {
                     />
                     <button
                       onClick={applyCode}
-                      className="px-4 py-2 bg-black text-white text-xs uppercase tracking-wide hover:bg-gray-800"
+                      className="px-4 py-2 bg-gradient-to-r from-black to-gray-800 text-white btn-liquid text-xs uppercase tracking-wide hover:bg-gray-800"
                     >
                       Apply
                     </button>
@@ -307,7 +336,7 @@ export default function CheckoutPage() {
                   </div>
                 )}
 
-                <button className="w-full py-4 bg-black text-white text-sm uppercase tracking-wide font-bold hover:bg-gray-800 transition-colors mb-3">
+                <button className="w-full py-4 bg-gradient-to-r from-black to-gray-800 text-white btn-liquid shadow-xl text-sm uppercase tracking-wide font-bold hover:bg-gray-800 transition-colors mb-3">
                   Complete Purchase
                 </button>
 

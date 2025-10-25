@@ -57,7 +57,10 @@
       "Bash(node generate-products.js:*)",
       "Bash(1)",
       "Bash(git commit:*)",
-      "Bash(node update-category-pages.js:*)"
+      "Bash(node update-category-pages.js:*)",
+      "Bash(node update-checkout-premium.js:*)",
+      "Bash(node update-cart-premium.js:*)",
+      "Bash(node update-product-liquid.js:*)"
     ],
     "deny": [],
     "ask": []

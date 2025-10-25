@@ -37,14 +37,58 @@
   .bg-gradient-radial {
     background: radial-gradient(ellipse at center, var(--tw-gradient-stops));
   }
-  
+
   /* 3D Transform Support for Genius Cards */
   .preserve-3d {
     transform-style: preserve-3d;
   }
-  
+
   .perspective-1000 {
     perspective: 1000px;
+  }
+
+  /* Apple-style Glass Morphism */
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Liquid Buttons */
+  .btn-liquid {
+    border-radius: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-liquid:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .btn-liquid:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Premium rounded corners everywhere */
+  .rounded-premium {
+    border-radius: 20px;
+  }
+
+  .rounded-premium-lg {
+    border-radius: 28px;
+  }
+
+  .rounded-premium-xl {
+    border-radius: 36px;
   }
 }
 
