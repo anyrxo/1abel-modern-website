@@ -37,7 +37,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
 
   const [selectedColor, setSelectedColor] = useState<string>(Object.keys(colors)[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes.length === 1 ? product.sizes[0] : '')
-  const [showNotification, setShowNotification] = useState(false)
   const [sizeModalOpen, setSizeModalOpen] = useState(false)
   const [modalProduct, setModalProduct] = useState<any>(null)
   const { addItem } = useCart()
@@ -70,9 +69,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
       arc: `${arcName}`,
       category: product.category
     })
-
-    setShowNotification(true)
-    setTimeout(() => setShowNotification(false), 4000)
   }
 
   return (
@@ -84,43 +80,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIvPjwvc3ZnPg==')]" />
       </div>
 
-      {/* Add to Cart Notification */}
-      {showNotification && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          className={`fixed top-24 right-8 z-50 ${arc === 'ARC_2' ? 'bg-white text-black' : 'bg-black text-white'} px-8 py-6 max-w-sm`}
-        >
-          <div className="flex items-start gap-4">
-            <div className="flex-1">
-              <p className="font-semibold text-sm mb-1">ADDED TO CART</p>
-              <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-600' : 'text-gray-400'} mb-1`}>
-                {product.name} — {(colors[selectedColor as keyof typeof colors] as any)?.name || selectedColor}
-              </p>
-              <p className={`text-xs ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-500'}`}>Size {selectedSize}</p>
-            </div>
-          </div>
-          <div className={`flex gap-3 pt-3 mt-3 border-t ${arc === 'ARC_2' ? 'border-gray-200' : 'border-gray-800'}`}>
-            <motion.button
-              onClick={() => router.push('/cart')}
-              className={`flex-1 py-3 text-xs tracking-wider border btn-liquid hover-elevate ${arc === 'ARC_2' ? 'border-black/20 hover:bg-black hover:text-white' : 'border-white/20 hover:bg-white hover:text-black'}`}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              VIEW CART
-            </motion.button>
-            <motion.button
-              onClick={() => router.push('/checkout')}
-              className={`flex-1 py-3 text-xs tracking-wider btn-liquid hover-elevate magnetic-button ${arc === 'ARC_2' ? 'bg-gradient-to-r from-black to-gray-900 text-white' : 'bg-gradient-to-r from-white to-gray-100 text-black'}`}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              CHECKOUT
-            </motion.button>
-          </div>
-        </motion.div>
-      )}
 
       <div className="pt-24 px-4 md:px-8 pb-20">
         <div className="max-w-7xl mx-auto">
@@ -338,8 +297,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                                 arc: pairing.arc,
                                 category: pairingProduct.category
                               })
-                              setShowNotification(true)
-                              setTimeout(() => setShowNotification(false), 4000)
                             } else {
                               setModalProduct({
                                 productId: pairingProductId,
@@ -426,8 +383,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                       category: modalProduct.category
                     })
                     setSizeModalOpen(false)
-                    setShowNotification(true)
-                    setTimeout(() => setShowNotification(false), 4000)
                   }}
                   className={`py-3 border text-sm btn-liquid hover-elevate magnetic-button ${
                     arc === 'ARC_2'

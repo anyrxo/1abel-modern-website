@@ -38,23 +38,20 @@ export function MobileBottomNav() {
 
   return (
     <>
-      {/* Mobile Page Title Bar */}
-      <div className="md:hidden fixed top-0 left-0 right-0 z-30 glass-card backdrop-blur-2xl border-b border-black/10 shadow-lg">
-        <div className="h-14 flex items-center justify-center px-4">
+      {/* Mobile Page Title Bar - Glass overlay */}
+      <div className="md:hidden fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-white/70 border-b border-black/5">
+        <div className="h-12 flex items-center justify-center px-4">
           <motion.h1
             key={pageTitle}
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
-            className="text-sm font-bold tracking-[0.2em] uppercase"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.2 }}
+            className="text-xs font-bold tracking-[0.25em] uppercase text-black/80"
           >
             {pageTitle}
           </motion.h1>
         </div>
       </div>
-
-      {/* Spacer for title bar */}
-      <div className="md:hidden h-14" />
 
       {/* Arc Menu Overlay */}
       {arcMenuOpen && (
@@ -62,13 +59,15 @@ export function MobileBottomNav() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
+          transition={{ duration: 0.15 }}
           className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
           onClick={() => setArcMenuOpen(false)}
         >
           <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 100, opacity: 0 }}
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 500, damping: 30, duration: 0.2 }}
             className="absolute bottom-20 left-4 right-4 glass-card backdrop-blur-xl rounded-premium-xl p-4 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
