@@ -253,6 +253,22 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                 </div>
               )}
 
+              {/* Add to Cart Button - Desktop Only */}
+              <div className="hidden md:block mb-8">
+                <motion.button
+                  onClick={handleAddToCart}
+                  className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium-xl shadow-lg ${
+                    arc === 'ARC_2'
+                      ? 'bg-white text-black hover:bg-gray-100'
+                      : 'bg-black text-white hover:bg-gray-900'
+                  } transition-colors`}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  ADD TO CART
+                </motion.button>
+              </div>
+
               {/* Description */}
               <div className="mb-8">
                 <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} leading-relaxed`}>

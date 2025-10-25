@@ -4,8 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { Header } from '@/components/Header'
 import Link from 'next/link'
 import { useRef, useState, useMemo } from 'react'
-import { ProductFilters } from '@/components/ProductFilters'
-import { SlidersHorizontal, ArrowUpDown } from 'lucide-react'
+import { SlidersHorizontal, ArrowUpDown, X } from 'lucide-react'
 
 export default function Arc2AccessoriesPage() {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -293,33 +292,7 @@ export default function Arc2AccessoriesPage() {
           </motion.div>
         </div>
       </main>
-      {/* Floating Filter & Sort Buttons - Mobile Only */}
-      <div className="md:hidden fixed bottom-[72px] left-1/2 -translate-x-1/2 z-40 flex gap-3">
-        <motion.button
-          onClick={() => {
-            setFilterMenuOpen(!filterMenuOpen)
-            setSortMenuOpen(false)
-          }}
-          className="flex items-center gap-2 px-6 py-3 bg-white text-black text-sm font-bold tracking-wide uppercase rounded-premium shadow-2xl"
-          whileTap={{ scale: 0.95 }}
-        >
-          <SlidersHorizontal className="w-4 h-4" />
-          Filter
-        </motion.button>
-        <motion.button
-          onClick={() => {
-            setSortMenuOpen(!sortMenuOpen)
-            setFilterMenuOpen(false)
-          }}
-          className="flex items-center gap-2 px-6 py-3 bg-white text-black text-sm font-bold tracking-wide uppercase rounded-premium shadow-2xl"
-          whileTap={{ scale: 0.95 }}
-        >
-          <ArrowUpDown className="w-4 h-4" />
-          Sort
-        </motion.button>
-      </div>
-
-      {/* Filter Menu Popup */}
+{/* Filter Menu Popup */}
       {filterMenuOpen && (
         <>
           <motion.div
@@ -503,6 +476,317 @@ export default function Arc2AccessoriesPage() {
           </div>
         </div>
       </footer>
+
+      {/* Floating Filter & Sort Buttons - Bottom Center */}
+      <div className="fixed bottom-[72px] left-1/2 -translate-x-1/2 z-40 flex gap-3">
+        <motion.button
+          onClick={() => {
+            setFilterMenuOpen(!filterMenuOpen)
+            setSortMenuOpen(false)
+          }}
+          className="flex items-center gap-2 px-6 py-3 bg-white text-black text-sm font-bold tracking-wide uppercase rounded-premium shadow-2xl backdrop-blur-md"
+          whileTap={{ scale: 0.95 }}
+        >
+          <SlidersHorizontal className="w-4 h-4" />
+          Filter
+        </motion.button>
+        <motion.button
+          onClick={() => {
+            setSortMenuOpen(!sortMenuOpen)
+            setFilterMenuOpen(false)
+          }}
+          className="flex items-center gap-2 px-6 py-3 bg-white text-black text-sm font-bold tracking-wide uppercase rounded-premium shadow-2xl backdrop-blur-md"
+          whileTap={{ scale: 0.95 }}
+        >
+          <ArrowUpDown className="w-4 h-4" />
+          Sort
+        </motion.button>
+      </div>
+
+      {/* Filter Popup */}
+      {filterMenuOpen && (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="fixed inset-0 bg-black/50 z-45"
+            onClick={() => setFilterMenuOpen(false)}
+          />
+          <motion.div
+            initial={{ y: '100%' }}
+            animate={{ y: 0 }}
+            transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            className="fixed bottom-0 left-0 right-0 z-50 bg-white rounded-t-premium-xl p-6 pb-8 max-h-[70vh] overflow-y-auto"
+          >
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-lg font-bold tracking-wider uppercase text-black">Filters</h3>
+              <motion.button
+                onClick={() => setFilterMenuOpen(false)}
+                className="text-black hover:opacity-70"
+                whileTap={{ scale: 0.9 }}
+              >
+                <X className="w-6 h-6" />
+              </motion.button>
+            </div>
+
+            {/* Colors */}
+            <div className="mb-6">
+              <p className="text-xs tracking-wider uppercase text-gray-600 mb-3">Colors</p>
+              <div className="flex flex-wrap gap-2">
+            <motion.button
+              key="VOID"
+              onClick={() => {
+                setSelectedColors(prev =>
+                  prev.includes('VOID') ? prev.filter(c => c !== 'VOID') : [...prev, 'VOID']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedColors.includes('VOID')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              VOID
+            </motion.button>
+            <motion.button
+              key="STEEL"
+              onClick={() => {
+                setSelectedColors(prev =>
+                  prev.includes('STEEL') ? prev.filter(c => c !== 'STEEL') : [...prev, 'STEEL']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedColors.includes('STEEL')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              STEEL
+            </motion.button>
+            <motion.button
+              key="BLOOD"
+              onClick={() => {
+                setSelectedColors(prev =>
+                  prev.includes('BLOOD') ? prev.filter(c => c !== 'BLOOD') : [...prev, 'BLOOD']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedColors.includes('BLOOD')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              BLOOD
+            </motion.button>
+            <motion.button
+              key="MOSS"
+              onClick={() => {
+                setSelectedColors(prev =>
+                  prev.includes('MOSS') ? prev.filter(c => c !== 'MOSS') : [...prev, 'MOSS']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedColors.includes('MOSS')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              MOSS
+            </motion.button>
+            <motion.button
+              key="EARTH"
+              onClick={() => {
+                setSelectedColors(prev =>
+                  prev.includes('EARTH') ? prev.filter(c => c !== 'EARTH') : [...prev, 'EARTH']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedColors.includes('EARTH')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              EARTH
+            </motion.button>
+              </div>
+            </div>
+
+            {/* Sizes */}
+            <div className="mb-6">
+              <p className="text-xs tracking-wider uppercase text-gray-600 mb-3">Sizes</p>
+              <div className="flex flex-wrap gap-2">
+            <motion.button
+              key="XS"
+              onClick={() => {
+                setSelectedSizes(prev =>
+                  prev.includes('XS') ? prev.filter(s => s !== 'XS') : [...prev, 'XS']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedSizes.includes('XS')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              XS
+            </motion.button>
+            <motion.button
+              key="S"
+              onClick={() => {
+                setSelectedSizes(prev =>
+                  prev.includes('S') ? prev.filter(s => s !== 'S') : [...prev, 'S']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedSizes.includes('S')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              S
+            </motion.button>
+            <motion.button
+              key="M"
+              onClick={() => {
+                setSelectedSizes(prev =>
+                  prev.includes('M') ? prev.filter(s => s !== 'M') : [...prev, 'M']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedSizes.includes('M')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              M
+            </motion.button>
+            <motion.button
+              key="L"
+              onClick={() => {
+                setSelectedSizes(prev =>
+                  prev.includes('L') ? prev.filter(s => s !== 'L') : [...prev, 'L']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedSizes.includes('L')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              L
+            </motion.button>
+            <motion.button
+              key="XL"
+              onClick={() => {
+                setSelectedSizes(prev =>
+                  prev.includes('XL') ? prev.filter(s => s !== 'XL') : [...prev, 'XL']
+                )
+              }}
+              className={`px-4 py-2 text-xs font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                selectedSizes.includes('XL')
+                  ? 'border-black bg-black text-white'
+                  : 'border-black/20 hover:border-black/40'
+              }`}
+              whileTap={{ scale: 0.95 }}
+            >
+              XL
+            </motion.button>
+              </div>
+            </div>
+
+            <motion.button
+              onClick={() => setFilterMenuOpen(false)}
+              className="w-full mt-6 py-4 bg-white text-black text-sm font-bold tracking-wider uppercase rounded-premium"
+              whileTap={{ scale: 0.98 }}
+            >
+              Apply Filters
+            </motion.button>
+          </motion.div>
+        </>
+      )}
+
+      {/* Sort Popup */}
+      {sortMenuOpen && (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="fixed inset-0 bg-black/50 z-45"
+            onClick={() => setSortMenuOpen(false)}
+          />
+          <motion.div
+            initial={{ y: '100%' }}
+            animate={{ y: 0 }}
+            transition={{ type: 'spring', damping: 30, stiffness: 300 }}
+            className="fixed bottom-0 left-0 right-0 z-50 bg-white rounded-t-premium-xl p-6 pb-8"
+          >
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-lg font-bold tracking-wider uppercase text-black">Sort By</h3>
+              <motion.button
+                onClick={() => setSortMenuOpen(false)}
+                className="text-black hover:opacity-70"
+                whileTap={{ scale: 0.9 }}
+              >
+                <X className="w-6 h-6" />
+              </motion.button>
+            </div>
+
+            <div className="space-y-3">
+              <motion.button
+                onClick={() => {
+                  setPriceSort('asc')
+                  setSortMenuOpen(false)
+                }}
+                className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                  priceSort === 'asc'
+                    ? 'border-black bg-black text-white'
+                    : 'border-black/20 hover:border-black/40'
+                }`}
+                whileTap={{ scale: 0.98 }}
+              >
+                Price: Low to High
+              </motion.button>
+              <motion.button
+                onClick={() => {
+                  setPriceSort('desc')
+                  setSortMenuOpen(false)
+                }}
+                className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                  priceSort === 'desc'
+                    ? 'border-black bg-black text-white'
+                    : 'border-black/20 hover:border-black/40'
+                }`}
+                whileTap={{ scale: 0.98 }}
+              >
+                Price: High to Low
+              </motion.button>
+              <motion.button
+                onClick={() => {
+                  setPriceSort('none')
+                  setSortMenuOpen(false)
+                }}
+                className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium border-2 transition-all ${
+                  priceSort === 'none'
+                    ? 'border-black bg-black text-white'
+                    : 'border-black/20 hover:border-black/40'
+                }`}
+                whileTap={{ scale: 0.98 }}
+              >
+                Default
+              </motion.button>
+            </div>
+          </motion.div>
+        </>
+      )}
     </div>
-  )
+    )
 }
