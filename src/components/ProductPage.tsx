@@ -121,6 +121,26 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbHRlcj0idXJsKCNhKSIvPjwvc3ZnPg==')]" />
       </div>
 
+      {/* Floating Add to Cart Button - Mobile Only */}
+      <motion.div
+        className="md:hidden fixed bottom-[72px] left-0 right-0 z-40 px-4"
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.3 }}
+      >
+        <motion.button
+          onClick={handleAddToCart}
+          className={`w-full py-4 text-sm font-bold tracking-wider uppercase rounded-premium-xl shadow-2xl ${
+            arc === 'ARC_2'
+              ? 'bg-white text-black'
+              : 'bg-black text-white'
+          }`}
+          whileTap={{ scale: 0.98 }}
+        >
+          ADD TO CART
+        </motion.button>
+      </motion.div>
+
 
 
       <div className="pt-24 px-4 md:px-8 pb-20">
@@ -232,16 +252,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                   </p>
                 </div>
               )}
-
-              {/* Add to Cart */}
-              <motion.button
-                onClick={handleAddToCart}
-                className={`w-full py-4 ${arc === 'ARC_2' ? 'bg-gradient-to-r from-white via-gray-50 to-white text-black' : 'bg-gradient-to-r from-black via-gray-900 to-black text-white'} text-sm tracking-[0.2em] uppercase font-semibold btn-liquid shadow-2xl hover-elevate pulse-glow magnetic-button ripple mb-8`}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                Add to Cart
-              </motion.button>
 
               {/* Description */}
               <div className="mb-8">
