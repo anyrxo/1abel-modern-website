@@ -162,11 +162,6 @@ export default function Arc2Page() {
                     style={{ backgroundColor: color.hex }}
                   >
                     <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-500" />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <p className="text-[10px] tracking-[0.2em] uppercase text-white/60 group-hover:text-white/80 transition-colors">
-                        {color.hex}
-                      </p>
-                    </div>
                   </motion.div>
                   <h3 className="text-sm font-bold tracking-wider mb-2 uppercase">
                     {color.name}

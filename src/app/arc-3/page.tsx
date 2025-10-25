@@ -162,11 +162,6 @@ export default function Arc3Page() {
                     style={{ backgroundColor: color.hex }}
                   >
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500" />
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <p className="text-[10px] tracking-[0.2em] uppercase text-black/40 group-hover:text-black/60 transition-colors">
-                        {color.hex}
-                      </p>
-                    </div>
                   </motion.div>
                   <h3 className="text-sm font-bold tracking-wider mb-2 uppercase">
                     {color.name}
