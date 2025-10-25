@@ -248,7 +248,7 @@ export default function CheckoutPage() {
                       onChange={(e) => setDiscountCode(e.target.value.toUpperCase())}
                       onKeyPress={(e) => e.key === 'Enter' && applyCode()}
                       placeholder="Enter code"
-                      className="flex-1 px-3 py-2 border border-black/20 text-sm uppercase"
+                      className="flex-1 glass-input backdrop-blur-sm text-sm uppercase"
                     />
                     <button
                       onClick={applyCode}
