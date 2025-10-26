@@ -18,20 +18,6 @@ export const COLORS = {
   }
 }
 
-// Limited Edition Colors (Coming Soon)
-export const LIMITED_COLORS = {
-  ARC_2: {
-    OBSIDIAN: { name: 'OBSIDIAN', hex: '#1a1a2e', description: 'Deep navy black', comingSoon: true },
-    OXIDE: { name: 'OXIDE', hex: '#3d2a1f', description: 'Rust brown', comingSoon: true },
-    SLATE: { name: 'SLATE', hex: '#4a5a6a', description: 'Blue grey', comingSoon: true }
-  },
-  ARC_3: {
-    PEARL: { name: 'PEARL', hex: '#f5f5f0', description: 'Ivory', comingSoon: true },
-    BLUSH: { name: 'BLUSH', hex: '#ffe0e6', description: 'Warm pink', comingSoon: true },
-    POWDER: { name: 'POWDER', hex: '#e0e6ff', description: 'Ice blue', comingSoon: true }
-  }
-}
-
 // Base product types
 export type ProductCategory = 'TOPS' | 'BOTTOMS' | 'ACCESSORIES'
 export type Arc = 'ARC_2' | 'ARC_3'

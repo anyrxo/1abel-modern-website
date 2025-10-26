@@ -7,7 +7,7 @@ import Link from 'next/link'
 import { useCart } from '@/lib/cartContext'
 import { useRouter } from 'next/navigation'
 import { BASE_PRODUCTS, COLORS, PREMIUM_ACCESSORY_COLORS, PREMIUM_ACCESSORIES } from '@/data/products'
-import { ArrowLeft, Share2, X, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowLeft, Share2, X, ChevronLeft, ChevronRight, Star } from 'lucide-react'
 import { ProductReviews } from '@/components/ProductReviews'
 import { productDescriptions } from '@/data/productDescriptions'
 import {
@@ -16,7 +16,24 @@ import {
   denimReviews,
   chainReviewsArc2,
   chainReviewsArc3,
-  toteBagReviews
+  toteBagReviews,
+  teeReviews,
+  longsleeveReviews,
+  crewneckReviews,
+  overshirtReviews,
+  coachJacketReviews,
+  pufferReviews,
+  cargoReviews,
+  joggersReviews,
+  sweatsReviews,
+  shortsReviews,
+  widePantsReviews,
+  beanieReviews,
+  capReviews,
+  beltReviews,
+  glovesReviews,
+  socksReviews,
+  ringReviews
 } from '@/data/productReviews'
 
 type Arc = 'ARC_2' | 'ARC_3'
@@ -38,6 +55,7 @@ interface ProductPageProps {
 export function ProductPage({ productId, arc, colorStories, pairsWith }: ProductPageProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const sizeSelectRef = useRef<HTMLDivElement>(null)
+  const reviewsRef = useRef<HTMLDivElement>(null)
   const product = BASE_PRODUCTS[productId]
   const colors = PREMIUM_ACCESSORIES.includes(productId)
     ? (arc === 'ARC_2' ? PREMIUM_ACCESSORY_COLORS.ARC_2 : PREMIUM_ACCESSORY_COLORS.ARC_3)
@@ -69,6 +87,40 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
         }
       case 'tote-bag':
         return { reviews: toteBagReviews, overallRating: 4.9, totalReviews: 28, averageFit: 'true' as const }
+      case 'tee':
+        return { reviews: teeReviews, overallRating: 4.9, totalReviews: 30, averageFit: 'true' as const }
+      case 'longsleeve':
+        return { reviews: longsleeveReviews, overallRating: 4.9, totalReviews: 25, averageFit: 'true' as const }
+      case 'crewneck':
+        return { reviews: crewneckReviews, overallRating: 4.9, totalReviews: 35, averageFit: 'large' as const }
+      case 'overshirt':
+        return { reviews: overshirtReviews, overallRating: 4.9, totalReviews: 22, averageFit: 'true' as const }
+      case 'coach-jacket':
+        return { reviews: coachJacketReviews, overallRating: 4.9, totalReviews: 28, averageFit: 'true' as const }
+      case 'puffer':
+        return { reviews: pufferReviews, overallRating: 4.9, totalReviews: 32, averageFit: 'large' as const }
+      case 'cargo':
+        return { reviews: cargoReviews, overallRating: 4.9, totalReviews: 27, averageFit: 'true' as const }
+      case 'joggers':
+        return { reviews: joggersReviews, overallRating: 4.9, totalReviews: 24, averageFit: 'true' as const }
+      case 'sweats':
+        return { reviews: sweatsReviews, overallRating: 4.9, totalReviews: 31, averageFit: 'true' as const }
+      case 'shorts':
+        return { reviews: shortsReviews, overallRating: 4.9, totalReviews: 20, averageFit: 'true' as const }
+      case 'wide-pants':
+        return { reviews: widePantsReviews, overallRating: 4.9, totalReviews: 18, averageFit: 'true' as const }
+      case 'beanie':
+        return { reviews: beanieReviews, overallRating: 4.9, totalReviews: 26, averageFit: 'true' as const }
+      case 'cap':
+        return { reviews: capReviews, overallRating: 4.9, totalReviews: 29, averageFit: 'true' as const }
+      case 'belt':
+        return { reviews: beltReviews, overallRating: 4.9, totalReviews: 23, averageFit: 'true' as const }
+      case 'gloves':
+        return { reviews: glovesReviews, overallRating: 4.9, totalReviews: 19, averageFit: 'true' as const }
+      case 'socks':
+        return { reviews: socksReviews, overallRating: 4.9, totalReviews: 24, averageFit: 'true' as const }
+      case 'ring':
+        return { reviews: ringReviews, overallRating: 4.9, totalReviews: 21, averageFit: 'true' as const }
       default:
         return null
     }
@@ -140,6 +192,10 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const bgColor = arc === 'ARC_2' ? 'bg-black' : 'bg-white'
   const textColor = arc === 'ARC_2' ? 'text-white' : 'text-black'
   const borderColor = arc === 'ARC_2' ? 'border-white/10' : 'border-black/10'
+
+  const scrollToReviews = () => {
+    reviewsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   const handleAddToCart = () => {
     if (!selectedSize) {
@@ -276,6 +332,33 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                   </h1>
                   <span className="text-2xl font-light">${price}</span>
                 </div>
+
+                {/* Star Rating - Clickable if reviews exist */}
+                {reviewsData && (
+                  <motion.button
+                    onClick={scrollToReviews}
+                    className="flex items-center gap-2 mb-1 group"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <div className="flex items-center">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-4 h-4 ${
+                            i < Math.round(reviewsData.overallRating)
+                              ? 'fill-yellow-400 text-yellow-400'
+                              : arc === 'ARC_2' ? 'text-gray-700' : 'text-gray-300'
+                          }`}
+                        />
+                      ))}
+                    </div>
+                    <span className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400 group-hover:text-white' : 'text-gray-600 group-hover:text-black'} transition-colors`}>
+                      ({reviewsData.totalReviews})
+                    </span>
+                  </motion.button>
+                )}
+
                 <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'}`}>
                   {arcName} {(colors[selectedColor as keyof typeof colors] as any)?.name || selectedColor}
                 </p>
@@ -578,7 +661,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
 
       {/* Reviews Section - Only for hero products */}
       {reviewsData && (
-        <div className={`${arc === 'ARC_2' ? 'bg-black' : 'bg-white'}`}>
+        <div ref={reviewsRef} className={`${arc === 'ARC_2' ? 'bg-black' : 'bg-white'}`}>
           <ProductReviews
             reviews={reviewsData.reviews}
             overallRating={reviewsData.overallRating}
