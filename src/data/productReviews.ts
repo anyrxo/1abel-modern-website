@@ -1021,7 +1021,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-004',
-    author: 'amanda_l',
+    author: 'amandalee',
     rating: 5,
     title: 'LILAC omg',
     content: 'cotton fleece is so soft i live in this',
@@ -1066,7 +1066,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-007',
-    author: 'kev_p',
+    author: 'kevinparker',
     rating: 5,
     title: 'sized up',
     content: 'sized up for extra room',
@@ -1111,7 +1111,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-010',
-    author: 'liv_m',
+    author: 'oliviamorgan',
     rating: 5,
     title: 'sakura stunning',
     content: 'so warm for winter',
@@ -1200,7 +1200,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-016',
-    author: 'emma_p',
+    author: 'emmaparker',
     rating: 5,
     title: 'quality fire',
     content: 'quality fire. love it',
@@ -1229,7 +1229,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-018',
-    author: 'lisa_m',
+    author: 'lisamartinez',
     rating: 5,
     title: 'sakura!',
     content: 'got the sakura color love it. so comfy',
@@ -1274,7 +1274,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-021',
-    author: 'jordan_k',
+    author: 'jordankyle',
     rating: 5,
     title: 'steel perfect',
     content: 'got the steel color its perfect. super soft',
@@ -1303,7 +1303,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-023',
-    author: 'alex_nyc',
+    author: 'alexnyc',
     rating: 5,
     title: 'Great fit',
     content: 'Great fit - fits like an oversized but not too much',
@@ -1333,7 +1333,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-025',
-    author: 'brandon_t',
+    author: 'brandontaylor',
     rating: 5,
     title: '550 gsm',
     content: '550 gsm legit. love it',
@@ -1348,7 +1348,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-026',
-    author: 'jenn_kay',
+    author: 'jennkay',
     rating: 5,
     title: 'so soft',
     content: 'the brushed fleece is incredibly soft. feels expensive',
@@ -1363,7 +1363,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-027',
-    author: 'derek_wilson',
+    author: 'derekwilson',
     rating: 5,
     title: 'perfect everyday hoodie',
     content: 'been wearing this nonstop since i got it. the quality is unreal',
@@ -1378,7 +1378,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-028',
-    author: 'amanda_l',
+    author: 'amandalopez',
     rating: 5,
     title: 'everyday wear',
     content: 'literally wear this every other day',
@@ -1437,7 +1437,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-032',
-    author: 'sarah_m',
+    author: 'sarahmiller',
     rating: 5,
     title: 'steel color',
     content: 'got the steel color its perfect',
@@ -1526,7 +1526,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-038',
-    author: 'lisa_k',
+    author: 'lisakim',
     rating: 5,
     title: 'double lined hood',
     content: 'the double lined hood is such a nice detail. keeps my head so warm',
@@ -1585,7 +1585,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-042',
-    author: 'alex_t',
+    author: 'alextaylor',
     rating: 5,
     title: 'fleece quality',
     content: 'the cotton fleece is unreal. so thick and soft',
@@ -1614,7 +1614,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-044',
-    author: 'maya_h',
+    author: 'mayahernandez',
     rating: 5,
     title: 'best purchase',
     content: 'best purchase ive made this year. the pocket is huge and the whole thing just feels premium',
@@ -1644,7 +1644,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-046',
-    author: 'jessica_p',
+    author: 'jessicaparker',
     rating: 5,
     title: 'void color',
     content: 'void color is so clean. goes with everything',
@@ -1673,7 +1673,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-048',
-    author: 'ashley_r',
+    author: 'ashleyrios',
     rating: 5,
     title: 'oversized fit',
     content: 'the oversized fit is exactly what i wanted. not too baggy just right',
