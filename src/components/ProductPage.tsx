@@ -8,6 +8,16 @@ import { useCart } from '@/lib/cartContext'
 import { useRouter } from 'next/navigation'
 import { BASE_PRODUCTS, COLORS, PREMIUM_ACCESSORY_COLORS, PREMIUM_ACCESSORIES } from '@/data/products'
 import { ArrowLeft, Share2, X, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ProductReviews } from '@/components/ProductReviews'
+import { productDescriptions } from '@/data/productDescriptions'
+import {
+  thermalReviews,
+  hoodieReviews,
+  denimReviews,
+  chainReviewsArc2,
+  chainReviewsArc3,
+  toteBagReviews
+} from '@/data/productReviews'
 
 type Arc = 'ARC_2' | 'ARC_3'
 type ColorKey = string
@@ -36,6 +46,35 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const arcName = arc === 'ARC_2' ? 'Arc 2' : 'Arc 3'
   const arcSlug = arc === 'ARC_2' ? 'arc-2' : 'arc-3'
   const categorySlug = product.category.toLowerCase()
+
+  // Get product description if available for hero products
+  const productSlug = productId.toLowerCase().replace(/_/g, '-')
+  const productDesc = productDescriptions[productSlug]
+
+  // Get reviews for hero products
+  const getProductReviews = () => {
+    switch (productSlug) {
+      case 'thermal':
+        return { reviews: thermalReviews, overallRating: 4.9, totalReviews: 45, averageFit: 'true' as const }
+      case 'hoodie':
+        return { reviews: hoodieReviews, overallRating: 4.9, totalReviews: 87, averageFit: 'large' as const }
+      case 'denim':
+        return { reviews: denimReviews, overallRating: 4.8, totalReviews: 34, averageFit: 'true' as const }
+      case 'chain':
+        return {
+          reviews: arc === 'ARC_2' ? chainReviewsArc2 : chainReviewsArc3,
+          overallRating: 4.8,
+          totalReviews: arc === 'ARC_2' ? 14 : 24,
+          averageFit: 'true' as const
+        }
+      case 'tote-bag':
+        return { reviews: toteBagReviews, overallRating: 4.9, totalReviews: 28, averageFit: 'true' as const }
+      default:
+        return null
+    }
+  }
+
+  const reviewsData = getProductReviews()
 
   const [selectedColor, setSelectedColor] = useState<string>(Object.keys(colors)[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes.length === 1 ? product.sizes[0] : '')
@@ -498,8 +537,107 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
               </div>
             </div>
           </div>
+
+          {/* Enhanced Product Description - Only for hero products */}
+          {productDesc && (
+            <div className="mt-16 max-w-5xl mx-auto">
+              <div className={`border-t ${borderColor} pt-16`}>
+                {/* Description */}
+                <div className="mb-12">
+                  <h2 className={`text-3xl md:text-4xl font-bold uppercase tracking-tight mb-6`}>
+                    Description
+                  </h2>
+                  <p className={`text-base ${arc === 'ARC_2' ? 'text-gray-300' : 'text-gray-700'} leading-relaxed`}>
+                    {productDesc.description}
+                  </p>
+                </div>
+
+                {/* Fit & Fabrication */}
+                <div className="grid md:grid-cols-2 gap-12 mb-12">
+                  {/* Fit Details */}
+                  <div>
+                    <h3 className={`text-xl font-bold uppercase tracking-tight mb-6`}>
+                      Fit
+                    </h3>
+                    <ul className="space-y-3">
+                      {productDesc.fitDetails.map((detail, index) => (
+                        <li key={index} className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} flex items-start`}>
+                          <span className="mr-3">•</span>
+                          <span>{detail}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Fabrication */}
+                  <div>
+                    <h3 className={`text-xl font-bold uppercase tracking-tight mb-6`}>
+                      Fabrication
+                    </h3>
+                    <div className="space-y-4">
+                      <div>
+                        <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-2`}>
+                          Composition
+                        </p>
+                        <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'}`}>
+                          {productDesc.fabrication.composition}
+                        </p>
+                      </div>
+                      <div>
+                        <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-2`}>
+                          Weight
+                        </p>
+                        <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'}`}>
+                          {productDesc.fabrication.weight}
+                        </p>
+                      </div>
+                      <div>
+                        <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-2`}>
+                          Care Instructions
+                        </p>
+                        <ul className="space-y-2">
+                          {productDesc.fabrication.care.map((instruction, index) => (
+                            <li key={index} className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} flex items-start`}>
+                              <span className="mr-2">•</span>
+                              <span>{instruction}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div>
+                        <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-2`}>
+                          Features
+                        </p>
+                        <ul className="space-y-2">
+                          {productDesc.fabrication.features.map((feature, index) => (
+                            <li key={index} className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} flex items-start`}>
+                              <span className="mr-2">•</span>
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
+
+      {/* Reviews Section - Only for hero products */}
+      {reviewsData && (
+        <div className={`${arc === 'ARC_2' ? 'bg-black' : 'bg-white'}`}>
+          <ProductReviews
+            reviews={reviewsData.reviews}
+            overallRating={reviewsData.overallRating}
+            totalReviews={reviewsData.totalReviews}
+            productName={product.name}
+            averageFit={reviewsData.averageFit}
+          />
+        </div>
+      )}
 
       {/* Size Selection Modal */}
       {sizeModalOpen && modalProduct && (
