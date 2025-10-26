@@ -16,7 +16,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'thermal',
     description: 'Our Thermal is the foundation of your wardrobe. Designed for the entrepreneur who needs versatility without sacrificing quality, this heavyweight thermal bridges the gap between comfort and intention. The 400 GSM cotton-elastane blend provides substantial warmth while maintaining breathability, making it perfect for layering or wearing on its own. Garment-dyed and enzyme-washed for an ultra-soft hand feel from day one, this piece gets better with every wear. The minimal branding philosophy means you can wear it anywhere—from client meetings to late-night creative sessions—without overthinking it.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Relaxed fit with slight drop shoulder',
       'Long sleeve with ribbed cuffs',
       'Ribbed hem for structure',
@@ -47,7 +46,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'hoodie',
     description: 'The ultimate expression of comfort meeting craft. Our Hoodie is built with an uncompromising 550 GSM cotton fleece that redefines what premium should feel like. This isn\'t just another hoodie—it\'s the piece you reach for when you need to feel grounded. The oversized fit creates a cocoon of calm without looking sloppy, while the double-lined hood and reinforced kangaroo pocket add functional luxury. Designed for the decision-maker who refuses to compromise on quality, this hoodie eliminates the noise and lets you focus on what matters. Wear it on focused work days, travel days, or those rare moments when you actually have time to do nothing.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Oversized relaxed fit',
       'Drop shoulder construction',
       'Ribbed cuffs and hem',
@@ -82,7 +80,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'denim',
     description: 'Denim that respects your time. Our Denim is crafted from 14oz Japanese selvage denim with just enough stretch to move with you, not against you. The relaxed straight fit offers comfort without the baggy silhouette—intentional ease for the modern builder. Each pair is garment-dyed to achieve our signature colorways, from the deep VOID black to the soft CLOUD light wash. No distressing, no artificial aging, just honest construction that gets better with wear. These jeans work as hard as you do, transitioning seamlessly from focused work sessions to client dinners without a second thought.',
     fitDetails: [
-      'Model is 6\'0" and wears size 32',
       'Relaxed straight leg fit',
       'Mid-rise waist (sits at natural waist)',
       'Inseam: 32" (unhemmed 34" available)',
@@ -185,7 +182,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'tee',
     description: 'The tee you\'ll reach for every day. Our Tee is constructed from 220 GSM ring-spun cotton with a slightly boxy, relaxed fit that looks intentional without trying too hard. Garment-dyed and pre-washed, it feels broken-in from the first wear and only gets better with time. The weight hits that sweet spot between substantial and breathable—thick enough to hold its shape, light enough for layering. This isn\'t a throwaway basic; it\'s the foundation piece that anchors your rotation. Wear it under overshirts, layer it with thermals, or let it stand alone. It just works.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Relaxed boxy fit',
       'Slightly dropped shoulders',
       'Ribbed crew neck',
@@ -219,7 +215,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'longsleeve',
     description: 'A long-sleeve that actually fits right. Our Long-Sleeve Tee is built from 260 GSM heavyweight cotton with a slightly elongated body and tapered sleeves that don\'t bunch up when you layer. The crew neck sits clean without stretching out, and the pre-washed fabric means it holds its shape wear after wear. This is the piece you throw on for morning coffee runs, late-night studio sessions, or layering under crewnecks when the temperature drops. It transitions seamlessly from base layer to standalone—doing the work without drawing attention to itself.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Slim through body with slight taper',
       'Elongated torso (adds ~2" length)',
       'Tapered sleeves for clean layering',
@@ -253,7 +248,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'crewneck',
     description: 'The Crewneck is what happens when you strip away everything unnecessary. Built from 420 GSM brushed fleece cotton, this piece has the weight and structure to stand on its own without relying on graphics or branding. The drop-shoulder construction and slightly oversized fit create clean lines that work whether you\'re at your desk or out in the world. Pre-shrunk and enzyme-washed, it feels lived-in from day one. This is the sweatshirt you build your wardrobe around—the one that makes everything else easier.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Slightly oversized fit',
       'Drop-shoulder construction',
       'Ribbed crew neckline',
@@ -287,7 +281,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'overshirt',
     description: 'Not quite a shirt, not quite a jacket. Our Overshirt occupies the space in between—built from 12oz cotton twill with enough structure to layer over hoodies but comfortable enough to wear solo. The relaxed fit through the body and split hem construction allow for natural movement, while dual chest pockets add utility without clutter. Button closures use natural corozo nut buttons that develop character over time. This is the piece you grab when you need something more than a tee but don\'t want the commitment of a jacket. Layer it, wear it open, or button it up. It adapts.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Relaxed fit through body',
       'Drop shoulder for ease of movement',
       'Split hem with side vents',
@@ -321,7 +314,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'coach-jacket',
     description: 'The transitional piece that works between seasons and situations. Our Coach Jacket is built from a water-resistant cotton-nylon blend that sheds light rain without looking technical. The clean zip-up front with snap-button closure adds wind resistance, while the lightweight construction means you can pack it down when you don\'t need it. Two exterior pockets and one interior pocket keep essentials accessible. This is the jacket you throw on for early mornings, unpredictable weather, or anytime you need a clean outer layer that doesn\'t overthink it.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Standard fit with slight ease',
       'Adjustable snap-button cuffs',
       'Straight hem with slight drop tail',
@@ -356,7 +348,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'puffer',
     description: 'When warmth is non-negotiable. Our Puffer is built with 700-fill responsibly sourced down and a matte water-resistant shell that handles the elements without looking like outdoor gear. The oversized silhouette creates a deliberate volume—this isn\'t about fitting in, it\'s about blocking out the cold and the noise. Internal storm flaps, a zipper garage, and elastic cuffs seal in warmth, while the packable design means you can stow it when temperatures shift. This is the coat for when you need serious insulation but refuse to sacrifice style.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Oversized boxy fit',
       'Drop shoulder construction',
       'Elastic cuffs and hem',
@@ -392,7 +383,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'cargo',
     description: 'Cargo pants without the bulk. Our Cargo is built from 10oz organic cotton twill that\'s been garment-dyed and washed for a soft hand feel from day one. Six utility pockets provide function without adding visual weight, while the tapered leg keeps the silhouette clean. The elastic waistband with drawstring means comfort without compromise—no belt needed. These are the pants for people who need their clothing to work as hard as they do, holding what matters without looking loaded down.',
     fitDetails: [
-      'Model is 6\'0" and wears size 32',
       'Relaxed through hip and thigh',
       'Tapered from knee to ankle',
       'Elastic waistband with flat drawcord',
@@ -426,7 +416,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'joggers',
     description: 'Movement without restriction. Our Joggers are built from a four-way stretch technical fabric with a water-resistant finish that handles whatever your day throws at you. Articulated knees and elasticated cuffs allow natural range of motion, while zip pockets keep essentials secure. These aren\'t gym pants trying to be streetwear—they\'re built for the person who refuses to choose between function and form. Wear them on travel days, active days, or days when you just need clothing that moves with you.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Slim tapered fit',
       'Articulated knees for mobility',
       'Elastic waistband with flat drawcord',
@@ -461,7 +450,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'sweats',
     description: 'Sweatpants that don\'t feel like giving up. Our Sweatpants are built from 320 GSM French terry cotton that\'s been enzyme-washed to feel broken-in immediately. The relaxed fit with tapered leg creates a clean silhouette that works at home or out in the world. A single back pocket adds utility without disrupting the minimal aesthetic. Pre-shrunk and soft from day one, these are the sweats you\'ll wear until they fall apart—and then wish you could wear longer.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Relaxed fit through hip and thigh',
       'Tapered from knee to ankle',
       'Elastic waistband with flat drawcord',
@@ -496,7 +484,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'shorts',
     description: 'Summer essentials that don\'t feel like an afterthought. Our Shorts are built from 12oz heavyweight cotton with a relaxed fit that hits just above the knee. Garment-washed for immediate softness, they have enough structure to look intentional without feeling stiff. Two side pockets and one back pocket provide function without clutter. These are the shorts you\'ll wear all season—substantial enough to feel like real clothing, comfortable enough to forget you\'re wearing them.',
     fitDetails: [
-      'Model is 6\'0" and wears size M',
       'Relaxed fit through leg',
       'Inseam: 9 inches (hits above knee)',
       'Elastic waistband with flat drawcord',
@@ -531,7 +518,6 @@ export const productDescriptions: Record<string, ProductDescription> = {
     productId: 'wide-pants',
     description: 'Not every pant needs to be slim. Our Wide Pants offer breathing room with a relaxed wide-leg silhouette and high-rise waist that creates clean, timeless proportions. Built from 11oz cotton twill with a pleated front, they bring structure without stiffness. These are the pants that work now and will still work in ten years—a silhouette that transcends trend cycles. Wear them with tucked tees, oversized hoodies, or layered tops. The wide leg balances everything.',
     fitDetails: [
-      'Model is 6\'0" and wears size 32',
       'Wide relaxed leg',
       'High-rise waist (sits above natural waist)',
       'Pleated front for drape',

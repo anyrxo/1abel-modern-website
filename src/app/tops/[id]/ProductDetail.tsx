@@ -15,7 +15,6 @@ export function ProductDetail({ id }: { id: string }) {
     price: 45,
     description: "PREMIUM MATERIAL: MADE WITH TOP-QUALITY 100% COTTON",
     fit: "REGULAR FIT",
-    note: "MODEL IS 5'9 WEARING SIZE SMALL (SIZE CHART LAST PICTURE)",
     shipping: "PRODUCTION ON THE WAY SHIPPED IN 1-3 WEEKS",
     policy: "ALL SALES ARE FINAL",
     images: [
@@ -60,7 +59,6 @@ export function ProductDetail({ id }: { id: string }) {
               <div className="space-y-4 mb-8 text-sm">
                 <p className="font-semibold">{product.description}</p>
                 <p>{product.fit}</p>
-                <p>{product.note}</p>
                 <p className="pt-4 border-t border-gray-200">{product.shipping}</p>
                 <p className="font-semibold">{product.policy}</p>
               </div>
