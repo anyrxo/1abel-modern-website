@@ -100,11 +100,15 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Anyro (<a href="https://instagram.com/anyrxo" target="_blank" rel="noopener noreferrer" className="underline hover:text-black transition-colors">@anyrxo</a>)
-                  was deep in the music world—producing, curating playlists, living between studio sessions
-                  and late-night creative bursts. Music wasn't just sound; it was a mood, a frequency, an
-                  entire atmosphere that shifted throughout the day. Dark, introspective tracks for focused
-                  work. Bright, energetic beats when clarity was needed. Each song carried its own energy,
-                  its own identity.
+                  was juggling multiple businesses—music production, fashion ventures, tech projects. The reality
+                  of running companies across different industries meant zero mental bandwidth for trivial decisions.
+                  What to wear? That was energy that should have been spent on building, creating, executing.
+                </p>
+                <p>
+                  But here's where it clicked: music had always been his framework for everything. Dark, introspective
+                  tracks for focused work. Bright, energetic beats when clarity was needed. Each song carried its own
+                  energy, its own mood, its own frequency. Music was a system—an effortless way to shift states without
+                  thinking about it.
                 </p>
                 <p>
                   One night, staring at a wardrobe full of mismatched pieces that required constant curation,
@@ -112,6 +116,12 @@ export default function AboutPage() {
                   could build a wardrobe of essential "tracks" that always paired perfectly—dark pieces that
                   carried weight and presence, light pieces that brought balance and clarity. A system where
                   any combination felt cohesive, where getting dressed was as effortless as hitting play.
+                </p>
+                <p>
+                  He built it for himself first. A wardrobe that eliminated decision fatigue. Then realized: there are
+                  thousands like him. Entrepreneurs, creatives, builders juggling multiple projects who don't have time
+                  to think about fashion but refuse to look like they don't care. People who need clothing that just
+                  <em>works</em>, every single time.
                 </p>
                 <p>
                   The name came from this duality. <strong>1ABEL</strong>—one label, one unified system.
