@@ -6,7 +6,7 @@ import { Header } from '@/components/Header'
 import Link from 'next/link'
 import { useCart } from '@/lib/cartContext'
 import { useRouter } from 'next/navigation'
-import { BASE_PRODUCTS, COLORS, LIMITED_COLORS, PREMIUM_ACCESSORY_COLORS, PREMIUM_ACCESSORIES } from '@/data/products'
+import { BASE_PRODUCTS, COLORS, PREMIUM_ACCESSORY_COLORS, PREMIUM_ACCESSORIES } from '@/data/products'
 import { ArrowLeft, Share2, X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { ProductReviews } from '@/components/ProductReviews'
 import { productDescriptions } from '@/data/productDescriptions'
@@ -42,7 +42,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const colors = PREMIUM_ACCESSORIES.includes(productId)
     ? (arc === 'ARC_2' ? PREMIUM_ACCESSORY_COLORS.ARC_2 : PREMIUM_ACCESSORY_COLORS.ARC_3)
     : (arc === 'ARC_2' ? COLORS.ARC_2 : COLORS.ARC_3)
-  const limitedColors = arc === 'ARC_2' ? LIMITED_COLORS.ARC_2 : LIMITED_COLORS.ARC_3
   const price = arc === 'ARC_2' ? product.arc2Price : product.arc3Price
   const arcName = arc === 'ARC_2' ? 'Arc 2' : 'Arc 3'
   const arcSlug = arc === 'ARC_2' ? 'arc-2' : 'arc-3'
@@ -285,9 +284,9 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
               {/* Color Selector */}
               <div className={`mb-8 pb-8 border-b ${borderColor}`}>
                 <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-4`}>
-                  Core: {(colors[selectedColor as keyof typeof colors] as any)?.name || selectedColor}
+                  Color — {(colors[selectedColor as keyof typeof colors] as any)?.name || selectedColor}
                 </p>
-                <div className="flex gap-3 mb-6">
+                <div className="flex gap-3">
                   {Object.entries(colors).map(([key, color]) => (
                     <motion.button
                       key={key}
@@ -303,28 +302,6 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                     >
                     </motion.button>
                   ))}
-                </div>
-
-                {/* Limited Colors Section */}
-                <div>
-                  <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-4`}>
-                    Limited
-                  </p>
-                  <div className="flex gap-3 items-center">
-                    {Object.entries(limitedColors).map(([key, color]) => (
-                      <div
-                        key={key}
-                        className={`relative w-12 h-12 rounded-premium border-2 ${
-                          arc === 'ARC_2' ? 'border-gray-700' : 'border-gray-300'
-                        } opacity-50 cursor-not-allowed`}
-                        style={{ backgroundColor: color.hex }}
-                      >
-                      </div>
-                    ))}
-                    <span className={`text-xs uppercase tracking-wider ${arc === 'ARC_2' ? 'text-gray-600' : 'text-gray-500'}`}>
-                      Coming Soon
-                    </span>
-                  </div>
                 </div>
               </div>
 
