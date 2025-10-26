@@ -69,7 +69,8 @@
       "Bash(done)",
       "Bash(python update_reviews.py:*)",
       "Bash(python complete_reviews_fix.py:*)",
-      "Bash(python fix_reviews_final.py:*)"
+      "Bash(python fix_reviews_final.py:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []
