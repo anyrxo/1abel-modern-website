@@ -89,14 +89,6 @@
       "namedRegex": "^/arc\\-3/tops/(?<nxtPid>[^/]+?)(?:/)?$"
     },
     {
-      "page": "/blog/[slug]",
-      "regex": "^/blog/([^/]+?)(?:/)?$",
-      "routeKeys": {
-        "nxtPslug": "nxtPslug"
-      },
-      "namedRegex": "^/blog/(?<nxtPslug>[^/]+?)(?:/)?$"
-    },
-    {
       "page": "/bottoms/[id]",
       "regex": "^/bottoms/([^/]+?)(?:/)?$",
       "routeKeys": {
@@ -499,22 +491,10 @@
       "namedRegex": "^/arc\\-3/tops/thermal(?:/)?$"
     },
     {
-      "page": "/blog",
-      "regex": "^/blog(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/blog(?:/)?$"
-    },
-    {
       "page": "/bottoms",
       "regex": "^/bottoms(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/bottoms(?:/)?$"
-    },
-    {
-      "page": "/careers",
-      "regex": "^/careers(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/careers(?:/)?$"
     },
     {
       "page": "/cart",
@@ -545,12 +525,6 @@
       "regex": "^/refund(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/refund(?:/)?$"
-    },
-    {
-      "page": "/services",
-      "regex": "^/services(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/services(?:/)?$"
     },
     {
       "page": "/shipping",
