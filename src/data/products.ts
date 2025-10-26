@@ -1,18 +1,34 @@
 // Color definitions
 export const COLORS = {
   ARC_2: {
-    VOID: { name: 'VOID', hex: '#0a0a0a', description: 'Pure black' },
-    STEEL: { name: 'STEEL', hex: '#3a3a3a', description: 'Dark grey' },
-    BLOOD: { name: 'BLOOD', hex: '#4a1a1a', description: 'Deep burgundy' },
-    MOSS: { name: 'MOSS', hex: '#1a2a1a', description: 'Dark forest green' },
-    EARTH: { name: 'EARTH', hex: '#2a1a0a', description: 'Dark brown' }
+    // Core Colors
+    VOID: { name: 'VOID', hex: '#0a0a0a', description: 'Pure black', core: true },
+    STEEL: { name: 'STEEL', hex: '#3a3a3a', description: 'Dark grey', core: true },
+    BLOOD: { name: 'BLOOD', hex: '#4a1a1a', description: 'Deep burgundy', core: true },
+    MOSS: { name: 'MOSS', hex: '#1a2a1a', description: 'Dark forest green', core: true },
+    EARTH: { name: 'EARTH', hex: '#2a1a0a', description: 'Dark brown', core: true }
   },
   ARC_3: {
-    CLOUD: { name: 'CLOUD', hex: '#ffffff', description: 'White' },
-    SAKURA: { name: 'SAKURA', hex: '#ffd4e5', description: 'Light pink' },
-    MIST: { name: 'MIST', hex: '#d4e5ff', description: 'Soft blue' },
-    SAND: { name: 'SAND', hex: '#f5f0e8', description: 'Cream' },
-    LILAC: { name: 'LILAC', hex: '#e8d4ff', description: 'Soft lavender' }
+    // Core Colors
+    CLOUD: { name: 'CLOUD', hex: '#ffffff', description: 'White', core: true },
+    SAKURA: { name: 'SAKURA', hex: '#ffd4e5', description: 'Light pink', core: true },
+    MIST: { name: 'MIST', hex: '#d4e5ff', description: 'Soft blue', core: true },
+    SAND: { name: 'SAND', hex: '#f5f0e8', description: 'Cream', core: true },
+    LILAC: { name: 'LILAC', hex: '#e8d4ff', description: 'Soft lavender', core: true }
+  }
+}
+
+// Limited Edition Colors (Coming Soon)
+export const LIMITED_COLORS = {
+  ARC_2: {
+    OBSIDIAN: { name: 'OBSIDIAN', hex: '#1a1a2e', description: 'Deep navy black', comingSoon: true },
+    OXIDE: { name: 'OXIDE', hex: '#3d2a1f', description: 'Rust brown', comingSoon: true },
+    SLATE: { name: 'SLATE', hex: '#4a5a6a', description: 'Blue grey', comingSoon: true }
+  },
+  ARC_3: {
+    PEARL: { name: 'PEARL', hex: '#f5f5f0', description: 'Ivory', comingSoon: true },
+    BLUSH: { name: 'BLUSH', hex: '#ffe0e6', description: 'Warm pink', comingSoon: true },
+    POWDER: { name: 'POWDER', hex: '#e0e6ff', description: 'Ice blue', comingSoon: true }
   }
 }
 
