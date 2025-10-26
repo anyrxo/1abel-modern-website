@@ -38,6 +38,7 @@ export function ProductReviews({
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedFilters, setSelectedFilters] = useState<string[]>([])
   const [sortBy, setSortBy] = useState<'highest' | 'lowest' | 'recent'>('highest')
+  const [votedReviews, setVotedReviews] = useState<Record<string, 'helpful' | 'not-helpful' | null>>({})
 
   // Filter tags from review content
   const commonTags = [
@@ -84,6 +85,27 @@ export function ProductReviews({
         ? prev.filter(f => f !== filter)
         : [...prev, filter]
     )
+  }
+
+  const handleVote = (reviewId: string, voteType: 'helpful' | 'not-helpful') => {
+    setVotedReviews((prev) => {
+      const currentVote = prev[reviewId]
+      // If clicking the same vote, remove it; otherwise set new vote
+      return {
+        ...prev,
+        [reviewId]: currentVote === voteType ? null : voteType
+      }
+    })
+  }
+
+  const getVoteCount = (review: Review, voteType: 'helpful' | 'not-helpful') => {
+    const baseCount = voteType === 'helpful' ? review.helpfulCount : review.notHelpfulCount
+    const userVote = votedReviews[review.id]
+
+    if (userVote === voteType) {
+      return baseCount + 1
+    }
+    return baseCount
   }
 
   // Calculate fit percentage for slider
@@ -259,13 +281,27 @@ export function ProductReviews({
                     <div className="flex items-center gap-6 text-sm">
                       <div className="flex items-center gap-2">
                         <span className="text-gray-400">Helpful?</span>
-                        <button className="flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                        <button
+                          onClick={() => handleVote(review.id, 'helpful')}
+                          className={`flex items-center gap-1 transition-colors ${
+                            votedReviews[review.id] === 'helpful'
+                              ? 'text-white'
+                              : 'text-gray-400 hover:text-white'
+                          }`}
+                        >
                           <ThumbsUp className="w-4 h-4" />
-                          <span>{review.helpfulCount}</span>
+                          <span>{getVoteCount(review, 'helpful')}</span>
                         </button>
-                        <button className="flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
+                        <button
+                          onClick={() => handleVote(review.id, 'not-helpful')}
+                          className={`flex items-center gap-1 transition-colors ${
+                            votedReviews[review.id] === 'not-helpful'
+                              ? 'text-white'
+                              : 'text-gray-400 hover:text-white'
+                          }`}
+                        >
                           <ThumbsDown className="w-4 h-4" />
-                          <span>{review.notHelpfulCount}</span>
+                          <span>{getVoteCount(review, 'not-helpful')}</span>
                         </button>
                       </div>
                       <button className="flex items-center gap-1 text-gray-400 hover:text-white transition-colors">
