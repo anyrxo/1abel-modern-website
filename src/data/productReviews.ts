@@ -686,7 +686,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-15'
@@ -700,7 +700,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-13'
@@ -715,7 +715,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-11'
@@ -730,7 +730,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-09'
@@ -745,7 +745,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-07'
@@ -759,7 +759,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-05'
@@ -774,7 +774,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-03'
@@ -789,7 +789,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'large',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-01'
@@ -803,7 +803,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-29'
@@ -818,7 +818,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-27'
@@ -833,7 +833,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-25'
@@ -847,7 +847,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-23'
@@ -862,7 +862,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-21'
@@ -877,7 +877,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-19'
@@ -892,7 +892,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-17'
@@ -906,7 +906,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-15'
@@ -921,7 +921,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-13'
@@ -936,7 +936,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-11'
@@ -950,7 +950,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-09'
@@ -965,7 +965,7 @@ export const thermalReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 18,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-07'
@@ -1134,7 +1134,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-03'
@@ -1163,7 +1163,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-01'
@@ -1193,7 +1193,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-28'
@@ -1207,7 +1207,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'large',
-    helpfulCount: 4,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-26'
@@ -1222,7 +1222,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-24'
@@ -1267,7 +1267,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-18'
@@ -1282,7 +1282,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-16'
@@ -1296,7 +1296,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-14'
@@ -1311,7 +1311,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'large',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-12'
@@ -1326,7 +1326,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-10'
@@ -1341,7 +1341,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-08'
@@ -1371,7 +1371,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-04'
@@ -1385,7 +1385,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-02'
@@ -1400,7 +1400,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-30'
@@ -1415,7 +1415,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-28'
@@ -1430,7 +1430,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-26'
@@ -1445,7 +1445,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-24'
@@ -1460,7 +1460,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-22'
@@ -1489,7 +1489,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-18'
@@ -1504,7 +1504,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'large',
-    helpfulCount: 9,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-16'
@@ -1519,7 +1519,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-14'
@@ -1534,7 +1534,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-12'
@@ -1548,7 +1548,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-10'
@@ -1563,7 +1563,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-08'
@@ -1578,7 +1578,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-06'
@@ -1593,7 +1593,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-04'
@@ -1607,7 +1607,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-02'
@@ -1622,7 +1622,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'large',
-    helpfulCount: 18,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-31'
@@ -1637,7 +1637,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-29'
@@ -1652,7 +1652,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-27'
@@ -1666,7 +1666,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-25'
@@ -1681,7 +1681,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'M',
     fitRating: 'large',
-    helpfulCount: 15,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-23'
@@ -1696,7 +1696,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-21'
@@ -1711,7 +1711,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 20,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-19'
@@ -1726,7 +1726,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-17'
@@ -1741,7 +1741,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 17,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-15'
@@ -1755,7 +1755,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-13'
@@ -1770,7 +1770,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-11'
@@ -1785,7 +1785,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-09'
@@ -1799,7 +1799,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-07'
@@ -1814,7 +1814,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'L',
     fitRating: 'large',
-    helpfulCount: 19,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-05'
@@ -1829,7 +1829,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-03'
@@ -1844,7 +1844,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-01'
@@ -1873,7 +1873,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-27'
@@ -1888,7 +1888,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-25'
@@ -1903,7 +1903,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-23'
@@ -1917,7 +1917,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-21'
@@ -1932,7 +1932,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-19'
@@ -1947,7 +1947,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'M',
     fitRating: 'large',
-    helpfulCount: 15,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-17'
@@ -1961,7 +1961,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-15'
@@ -1976,7 +1976,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 18,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-13'
@@ -1991,7 +1991,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-11'
@@ -2006,7 +2006,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 21,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-09'
@@ -2020,7 +2020,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-07'
@@ -2035,7 +2035,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-05'
@@ -2050,7 +2050,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-03'
@@ -2064,7 +2064,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-09-01'
@@ -2079,7 +2079,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-30'
@@ -2094,7 +2094,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'large',
-    helpfulCount: 14,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-28'
@@ -2108,7 +2108,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-26'
@@ -2123,7 +2123,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-24'
@@ -2138,7 +2138,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 17,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-22'
@@ -2152,7 +2152,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-20'
@@ -2167,7 +2167,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-18'
@@ -2181,7 +2181,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-16'
@@ -2196,7 +2196,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 19,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-14'
@@ -2211,7 +2211,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-12'
@@ -2225,7 +2225,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-10'
@@ -2240,7 +2240,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-08'
@@ -2255,7 +2255,7 @@ export const hoodieReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 22,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-08-06'
@@ -2394,7 +2394,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-03'
@@ -2408,7 +2408,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '27',
     usualSize: '27',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-01'
@@ -2423,7 +2423,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '34',
     usualSize: '34',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-30'
@@ -2438,7 +2438,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '28',
     usualSize: '28',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-28'
@@ -2453,7 +2453,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '31',
     usualSize: '31',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-26'
@@ -2467,7 +2467,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '26',
     usualSize: '26',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-24'
@@ -2482,7 +2482,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-22'
@@ -2497,7 +2497,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '25',
     usualSize: '25',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-20'
@@ -2512,7 +2512,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '34',
     usualSize: '34',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-18'
@@ -2526,7 +2526,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '27',
     usualSize: '27',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-16'
@@ -2541,7 +2541,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '30',
     usualSize: '30',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-14'
@@ -2556,7 +2556,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '28',
     usualSize: '28',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-12'
@@ -2570,7 +2570,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '33',
     usualSize: '33',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-10'
@@ -2585,7 +2585,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '26',
     usualSize: '26',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-08'
@@ -2600,7 +2600,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-06'
@@ -2614,7 +2614,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '27',
     usualSize: '27',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-04'
@@ -2629,7 +2629,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '34',
     usualSize: '34',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-02'
@@ -2644,7 +2644,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '28',
     usualSize: '28',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-30'
@@ -2658,7 +2658,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '31',
     usualSize: '31',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-28'
@@ -2673,7 +2673,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '25',
     usualSize: '25',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-26'
@@ -2688,7 +2688,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-24'
@@ -2702,7 +2702,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '26',
     usualSize: '26',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-22'
@@ -2717,7 +2717,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '31',
     usualSize: '31',
     fitRating: 'large',
-    helpfulCount: 12,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-20'
@@ -2732,7 +2732,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '28',
     usualSize: '28',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-18'
@@ -2746,7 +2746,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-16'
@@ -2761,7 +2761,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '34',
     usualSize: '34',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-14'
@@ -2776,7 +2776,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '25',
     usualSize: '25',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-12'
@@ -2790,7 +2790,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '33',
     usualSize: '33',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-10'
@@ -2805,7 +2805,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '27',
     usualSize: '27',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-08'
@@ -2820,7 +2820,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-06'
@@ -2834,7 +2834,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '26',
     usualSize: '26',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-04'
@@ -2849,7 +2849,7 @@ export const denimReviews: Review[] = [
     sizeOrdered: '31',
     usualSize: '31',
     fitRating: 'true',
-    helpfulCount: 18,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-02'
@@ -3094,7 +3094,7 @@ export const toteBagReviews: Review[] = [
     content: 'fire',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-03'
@@ -3107,7 +3107,7 @@ export const toteBagReviews: Review[] = [
     content: 'perfect size, fits my laptop and gym stuff',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-31'
@@ -3120,7 +3120,7 @@ export const toteBagReviews: Review[] = [
     content: 'obsessed',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-28'
@@ -3133,7 +3133,7 @@ export const toteBagReviews: Review[] = [
     content: 'got the void color, canvas is so durable',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-25'
@@ -3146,7 +3146,7 @@ export const toteBagReviews: Review[] = [
     content: 'holds everything, use it for work daily',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-22'
@@ -3159,7 +3159,7 @@ export const toteBagReviews: Review[] = [
     content: 'love it sm',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-19'
@@ -3172,7 +3172,7 @@ export const toteBagReviews: Review[] = [
     content: 'steel color goes with everything, canvas feels premium',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-16'
@@ -3185,7 +3185,7 @@ export const toteBagReviews: Review[] = [
     content: 'great bag but wish it had a zipper',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 1,
     verified: true,
     date: '2024-12-13'
@@ -3198,7 +3198,7 @@ export const toteBagReviews: Review[] = [
     content: 'heavy duty canvas, best tote ive owned',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-10'
@@ -3224,7 +3224,7 @@ export const toteBagReviews: Review[] = [
     content: 'got the moss color, perfect for groceries and errands',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-04'
@@ -3237,7 +3237,7 @@ export const toteBagReviews: Review[] = [
     content: 'use it daily, leather handles feel quality',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-01'
@@ -3250,7 +3250,7 @@ export const toteBagReviews: Review[] = [
     content: 'spacious af, fits so much stuff',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-28'
@@ -3263,7 +3263,7 @@ export const toteBagReviews: Review[] = [
     content: 'best tote, canvas is heavyweight and the handles are reinforced',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-25'
@@ -3432,7 +3432,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-31'
@@ -3447,7 +3447,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-29'
@@ -3461,7 +3461,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-27'
@@ -3476,7 +3476,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-25'
@@ -3491,7 +3491,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-23'
@@ -3505,7 +3505,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-21'
@@ -3520,7 +3520,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-19'
@@ -3535,7 +3535,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-17'
@@ -3549,7 +3549,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-15'
@@ -3564,7 +3564,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-13'
@@ -3579,7 +3579,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-11'
@@ -3594,7 +3594,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-09'
@@ -3608,7 +3608,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-07'
@@ -3623,7 +3623,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-05'
@@ -3638,7 +3638,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-03'
@@ -3652,7 +3652,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-01'
@@ -3667,7 +3667,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-29'
@@ -3682,7 +3682,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-27'
@@ -3696,7 +3696,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-25'
@@ -3711,7 +3711,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-23'
@@ -3726,7 +3726,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-21'
@@ -3740,7 +3740,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-19'
@@ -3755,7 +3755,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-17'
@@ -3770,7 +3770,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-15'
@@ -3784,7 +3784,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'large',
-    helpfulCount: 12,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-13'
@@ -3799,7 +3799,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-11'
@@ -3813,7 +3813,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-09'
@@ -3828,7 +3828,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-07'
@@ -3843,7 +3843,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-05'
@@ -3857,7 +3857,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-03'
@@ -3872,7 +3872,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-01'
@@ -3887,7 +3887,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-30'
@@ -3901,7 +3901,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-28'
@@ -3916,7 +3916,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-26'
@@ -3931,7 +3931,7 @@ export const teeReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-24'
@@ -4070,7 +4070,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-03'
@@ -4085,7 +4085,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-01'
@@ -4100,7 +4100,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-28'
@@ -4115,7 +4115,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-26'
@@ -4130,7 +4130,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'S',
     fitRating: 'small',
-    helpfulCount: 14,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-23'
@@ -4145,7 +4145,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-20'
@@ -4160,7 +4160,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-18'
@@ -4175,7 +4175,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 1,
     verified: true,
     date: '2024-12-15'
@@ -4190,7 +4190,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-12'
@@ -4205,7 +4205,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-09'
@@ -4220,7 +4220,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-06'
@@ -4235,7 +4235,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-03'
@@ -4250,7 +4250,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-30'
@@ -4265,7 +4265,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-27'
@@ -4280,7 +4280,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 17,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-24'
@@ -4295,7 +4295,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-21'
@@ -4310,7 +4310,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-18'
@@ -4325,7 +4325,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-15'
@@ -4340,7 +4340,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-12'
@@ -4355,7 +4355,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-09'
@@ -4370,7 +4370,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-06'
@@ -4385,7 +4385,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-03'
@@ -4400,7 +4400,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-31'
@@ -4415,7 +4415,7 @@ export const longsleeveReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'S',
     fitRating: 'small',
-    helpfulCount: 18,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-28'
@@ -4569,7 +4569,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-03'
@@ -4584,7 +4584,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-01'
@@ -4598,7 +4598,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-30'
@@ -4613,7 +4613,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-28'
@@ -4628,7 +4628,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-26'
@@ -4642,7 +4642,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-24'
@@ -4657,7 +4657,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-22'
@@ -4672,7 +4672,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-20'
@@ -4686,7 +4686,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-18'
@@ -4701,7 +4701,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-16'
@@ -4716,7 +4716,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-14'
@@ -4731,7 +4731,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-12'
@@ -4745,7 +4745,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-10'
@@ -4760,7 +4760,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-08'
@@ -4775,7 +4775,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-06'
@@ -4789,7 +4789,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-04'
@@ -4804,7 +4804,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-02'
@@ -4819,7 +4819,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-30'
@@ -4833,7 +4833,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-28'
@@ -4848,7 +4848,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-26'
@@ -4863,7 +4863,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-24'
@@ -4877,7 +4877,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-22'
@@ -4892,7 +4892,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-20'
@@ -4907,7 +4907,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-18'
@@ -4921,7 +4921,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-16'
@@ -4936,7 +4936,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'large',
-    helpfulCount: 14,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-14'
@@ -4951,7 +4951,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-12'
@@ -4965,7 +4965,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-10'
@@ -4980,7 +4980,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-08'
@@ -4995,7 +4995,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-06'
@@ -5009,7 +5009,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-04'
@@ -5024,7 +5024,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-02'
@@ -5039,7 +5039,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-31'
@@ -5053,7 +5053,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-29'
@@ -5068,7 +5068,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-27'
@@ -5083,7 +5083,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-25'
@@ -5097,7 +5097,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-23'
@@ -5112,7 +5112,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-21'
@@ -5127,7 +5127,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-19'
@@ -5141,7 +5141,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-17'
@@ -5156,7 +5156,7 @@ export const crewneckReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 18,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-15'
@@ -5295,7 +5295,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-04'
@@ -5310,7 +5310,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-01'
@@ -5325,7 +5325,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-29'
@@ -5340,7 +5340,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-26'
@@ -5355,7 +5355,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-23'
@@ -5370,7 +5370,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-20'
@@ -5385,7 +5385,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-17'
@@ -5400,7 +5400,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 1,
     verified: true,
     date: '2024-12-14'
@@ -5415,7 +5415,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-11'
@@ -5430,7 +5430,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-08'
@@ -5445,7 +5445,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-05'
@@ -5460,7 +5460,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'S',
     fitRating: 'small',
-    helpfulCount: 15,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-02'
@@ -5475,7 +5475,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-29'
@@ -5490,7 +5490,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-26'
@@ -5505,7 +5505,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-23'
@@ -5520,7 +5520,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-20'
@@ -5535,7 +5535,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-17'
@@ -5550,7 +5550,7 @@ export const overshirtReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-14'
@@ -5689,7 +5689,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-05'
@@ -5704,7 +5704,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-02'
@@ -5719,7 +5719,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-30'
@@ -5734,7 +5734,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-27'
@@ -5749,7 +5749,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-24'
@@ -5764,7 +5764,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-21'
@@ -5779,7 +5779,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-18'
@@ -5794,7 +5794,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 1,
     verified: true,
     date: '2024-12-15'
@@ -5809,7 +5809,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-12'
@@ -5824,7 +5824,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-09'
@@ -5839,7 +5839,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-06'
@@ -5854,7 +5854,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'S',
     fitRating: 'small',
-    helpfulCount: 15,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-03'
@@ -5869,7 +5869,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-30'
@@ -5884,7 +5884,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-27'
@@ -5899,7 +5899,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-24'
@@ -5914,7 +5914,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-21'
@@ -5929,7 +5929,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-18'
@@ -5944,7 +5944,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-15'
@@ -5959,7 +5959,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-12'
@@ -5974,7 +5974,7 @@ export const coachJacketReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-09'
@@ -6113,7 +6113,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-06'
@@ -6128,7 +6128,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-04'
@@ -6142,7 +6142,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-02'
@@ -6157,7 +6157,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-31'
@@ -6172,7 +6172,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-29'
@@ -6186,7 +6186,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-27'
@@ -6201,7 +6201,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-25'
@@ -6216,7 +6216,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-23'
@@ -6230,7 +6230,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-21'
@@ -6245,7 +6245,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-19'
@@ -6260,7 +6260,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-17'
@@ -6275,7 +6275,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-15'
@@ -6289,7 +6289,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-13'
@@ -6304,7 +6304,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-11'
@@ -6319,7 +6319,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-09'
@@ -6333,7 +6333,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-07'
@@ -6348,7 +6348,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-05'
@@ -6363,7 +6363,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-03'
@@ -6377,7 +6377,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-01'
@@ -6392,7 +6392,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-29'
@@ -6407,7 +6407,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-27'
@@ -6421,7 +6421,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'large',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-25'
@@ -6436,7 +6436,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-23'
@@ -6451,7 +6451,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-21'
@@ -6465,7 +6465,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-19'
@@ -6480,7 +6480,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-17'
@@ -6495,7 +6495,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-15'
@@ -6509,7 +6509,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-13'
@@ -6524,7 +6524,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-11'
@@ -6539,7 +6539,7 @@ export const pufferReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 18,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-09'
@@ -6678,7 +6678,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-05'
@@ -6693,7 +6693,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '27',
     usualSize: '27',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-02'
@@ -6708,7 +6708,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '34',
     usualSize: '34',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-30'
@@ -6723,7 +6723,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '29',
     usualSize: '29',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-27'
@@ -6738,7 +6738,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-24'
@@ -6753,7 +6753,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '27',
     usualSize: '27',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-21'
@@ -6768,7 +6768,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '34',
     usualSize: '34',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-18'
@@ -6783,7 +6783,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '29',
     usualSize: '27',
     fitRating: 'large',
-    helpfulCount: 7,
+    helpfulCount: 3,
     notHelpfulCount: 1,
     verified: true,
     date: '2024-12-15'
@@ -6798,7 +6798,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-12'
@@ -6813,7 +6813,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '27',
     usualSize: '27',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-09'
@@ -6828,7 +6828,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '34',
     usualSize: '34',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-06'
@@ -6843,7 +6843,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '29',
     usualSize: '29',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-03'
@@ -6858,7 +6858,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-30'
@@ -6873,7 +6873,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '27',
     usualSize: '27',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-27'
@@ -6888,7 +6888,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '34',
     usualSize: '34',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-24'
@@ -6903,7 +6903,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-21'
@@ -6918,7 +6918,7 @@ export const cargoReviews: Review[] = [
     sizeOrdered: '29',
     usualSize: '29',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-18'
@@ -7057,7 +7057,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-04'
@@ -7072,7 +7072,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-02'
@@ -7086,7 +7086,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-31'
@@ -7101,7 +7101,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-29'
@@ -7116,7 +7116,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-27'
@@ -7130,7 +7130,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-25'
@@ -7145,7 +7145,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-23'
@@ -7160,7 +7160,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-21'
@@ -7174,7 +7174,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-19'
@@ -7189,7 +7189,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-17'
@@ -7204,7 +7204,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-15'
@@ -7219,7 +7219,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-13'
@@ -7233,7 +7233,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-11'
@@ -7248,7 +7248,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-09'
@@ -7263,7 +7263,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-07'
@@ -7277,7 +7277,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-05'
@@ -7292,7 +7292,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-03'
@@ -7307,7 +7307,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-01'
@@ -7321,7 +7321,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-29'
@@ -7336,7 +7336,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-27'
@@ -7351,7 +7351,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-25'
@@ -7365,7 +7365,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-23'
@@ -7380,7 +7380,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-21'
@@ -7395,7 +7395,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-19'
@@ -7409,7 +7409,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-17'
@@ -7424,7 +7424,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-15'
@@ -7439,7 +7439,7 @@ export const joggersReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 17,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-13'
@@ -7593,7 +7593,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-04'
@@ -7608,7 +7608,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-02'
@@ -7622,7 +7622,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-31'
@@ -7637,7 +7637,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-29'
@@ -7652,7 +7652,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-27'
@@ -7666,7 +7666,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-25'
@@ -7681,7 +7681,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'large',
-    helpfulCount: 8,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-23'
@@ -7696,7 +7696,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-21'
@@ -7710,7 +7710,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-19'
@@ -7725,7 +7725,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-17'
@@ -7740,7 +7740,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-15'
@@ -7755,7 +7755,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 16,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-13'
@@ -7769,7 +7769,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-11'
@@ -7784,7 +7784,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-09'
@@ -7799,7 +7799,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-07'
@@ -7813,7 +7813,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-05'
@@ -7828,7 +7828,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-03'
@@ -7843,7 +7843,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-01'
@@ -7857,7 +7857,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-29'
@@ -7872,7 +7872,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-27'
@@ -7887,7 +7887,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-25'
@@ -7902,7 +7902,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-23'
@@ -7916,7 +7916,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-21'
@@ -7931,7 +7931,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-19'
@@ -7946,7 +7946,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-17'
@@ -7960,7 +7960,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-15'
@@ -7975,7 +7975,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-13'
@@ -7990,7 +7990,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-11'
@@ -8004,7 +8004,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-09'
@@ -8019,7 +8019,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'large',
-    helpfulCount: 13,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-07'
@@ -8034,7 +8034,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-05'
@@ -8048,7 +8048,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-03'
@@ -8063,7 +8063,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'XS',
     usualSize: 'XS',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-01'
@@ -8078,7 +8078,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-30'
@@ -8092,7 +8092,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 14,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-28'
@@ -8107,7 +8107,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'XL',
     usualSize: 'XL',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-26'
@@ -8122,7 +8122,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-24'
@@ -8136,7 +8136,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-22'
@@ -8151,7 +8151,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-20'
@@ -8166,7 +8166,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-18'
@@ -8180,7 +8180,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-16'
@@ -8195,7 +8195,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-14'
@@ -8210,7 +8210,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-12'
@@ -8225,7 +8225,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-10'
@@ -8239,7 +8239,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-08'
@@ -8254,7 +8254,7 @@ export const sweatsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 19,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-10-06'
@@ -8393,7 +8393,7 @@ export const shortsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-03'
@@ -8408,7 +8408,7 @@ export const shortsReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-31'
@@ -8423,7 +8423,7 @@ export const shortsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-28'
@@ -8438,7 +8438,7 @@ export const shortsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-25'
@@ -8453,7 +8453,7 @@ export const shortsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-22'
@@ -8483,7 +8483,7 @@ export const shortsReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-16'
@@ -8498,7 +8498,7 @@ export const shortsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 1,
     notHelpfulCount: 1,
     verified: true,
     date: '2024-12-13'
@@ -8513,7 +8513,7 @@ export const shortsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-10'
@@ -8528,7 +8528,7 @@ export const shortsReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-07'
@@ -8667,7 +8667,7 @@ export const widePantsReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 3,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-04'
@@ -8682,7 +8682,7 @@ export const widePantsReviews: Review[] = [
     sizeOrdered: '29',
     usualSize: '29',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-01'
@@ -8697,7 +8697,7 @@ export const widePantsReviews: Review[] = [
     sizeOrdered: '34',
     usualSize: '34',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-29'
@@ -8712,7 +8712,7 @@ export const widePantsReviews: Review[] = [
     sizeOrdered: '29',
     usualSize: '29',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-26'
@@ -8727,7 +8727,7 @@ export const widePantsReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-23'
@@ -8742,7 +8742,7 @@ export const widePantsReviews: Review[] = [
     sizeOrdered: '29',
     usualSize: '29',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-20'
@@ -8863,7 +8863,7 @@ export const beanieReviews: Review[] = [
     content: 'keeps me warm',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-05'
@@ -8876,7 +8876,7 @@ export const beanieReviews: Review[] = [
     content: 'so warm, perfect for winter',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-02'
@@ -8889,7 +8889,7 @@ export const beanieReviews: Review[] = [
     content: 'obsessed',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-30'
@@ -8902,7 +8902,7 @@ export const beanieReviews: Review[] = [
     content: 'got the void color, merino wool is so soft',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-27'
@@ -8915,7 +8915,7 @@ export const beanieReviews: Review[] = [
     content: 'cozy af, wear this daily',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-24'
@@ -8941,7 +8941,7 @@ export const beanieReviews: Review[] = [
     content: 'steel color is clean, ribbed knit is quality',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-18'
@@ -8954,7 +8954,7 @@ export const beanieReviews: Review[] = [
     content: 'best beanie ive owned, merino wool is premium',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-15'
@@ -9075,7 +9075,7 @@ export const capReviews: Review[] = [
     content: 'fire',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-06'
@@ -9088,7 +9088,7 @@ export const capReviews: Review[] = [
     content: 'perfect fit, adjustable strap works great',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-03'
@@ -9101,7 +9101,7 @@ export const capReviews: Review[] = [
     content: 'obsessed',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-31'
@@ -9114,7 +9114,7 @@ export const capReviews: Review[] = [
     content: 'got the void color, goes with everything',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-28'
@@ -9127,7 +9127,7 @@ export const capReviews: Review[] = [
     content: 'clean design, embroidered logo is quality',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 12,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-25'
@@ -9140,7 +9140,7 @@ export const capReviews: Review[] = [
     content: 'love it',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-22'
@@ -9153,7 +9153,7 @@ export const capReviews: Review[] = [
     content: 'steel color clean, wear this constantly',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-19'
@@ -9166,7 +9166,7 @@ export const capReviews: Review[] = [
     content: 'great cap but wish the brim was slightly curved',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 6,
+    helpfulCount: 3,
     notHelpfulCount: 1,
     verified: true,
     date: '2024-12-16'
@@ -9179,7 +9179,7 @@ export const capReviews: Review[] = [
     content: 'quality cap, cotton twill feels premium',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 13,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-13'
@@ -9205,7 +9205,7 @@ export const capReviews: Review[] = [
     content: 'got the moss color, perfect for summer',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 10,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-07'
@@ -9218,7 +9218,7 @@ export const capReviews: Review[] = [
     content: 'wear daily, adjustable strap fits perfectly',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 1,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-04'
@@ -9231,7 +9231,7 @@ export const capReviews: Review[] = [
     content: 'structured brim holds shape well',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-01'
@@ -9244,7 +9244,7 @@ export const capReviews: Review[] = [
     content: 'love the embroidery, minimal logo is perfect',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-28'
@@ -9257,7 +9257,7 @@ export const capReviews: Review[] = [
     content: 'earth tone is fire',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 11,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-25'
@@ -9270,7 +9270,7 @@ export const capReviews: Review[] = [
     content: 'best cap ive owned, quality is insane',
     sizeOrdered: 'ONE SIZE',
     fitRating: 'true',
-    helpfulCount: 15,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-11-22'
@@ -9400,7 +9400,7 @@ export const beltReviews: Review[] = [
     sizeOrdered: '32',
     usualSize: '32',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-05'
@@ -9414,7 +9414,7 @@ export const beltReviews: Review[] = [
     sizeOrdered: '28',
     usualSize: '28',
     fitRating: 'true',
-    helpfulCount: 8,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-02'
@@ -9660,7 +9660,7 @@ export const socksReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 5,
+    helpfulCount: 2,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-05'
@@ -9674,7 +9674,7 @@ export const socksReviews: Review[] = [
     sizeOrdered: 'S',
     usualSize: 'S',
     fitRating: 'true',
-    helpfulCount: 7,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2025-01-02'
@@ -9688,7 +9688,7 @@ export const socksReviews: Review[] = [
     sizeOrdered: 'L',
     usualSize: 'L',
     fitRating: 'true',
-    helpfulCount: 4,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-30'
@@ -9702,7 +9702,7 @@ export const socksReviews: Review[] = [
     sizeOrdered: 'M',
     usualSize: 'M',
     fitRating: 'true',
-    helpfulCount: 9,
+    helpfulCount: 0,
     notHelpfulCount: 0,
     verified: true,
     date: '2024-12-27'
