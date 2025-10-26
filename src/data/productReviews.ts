@@ -1703,7 +1703,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-050',
-    author: 'nicole_s',
+    author: 'nicolesantos',
     rating: 5,
     title: 'earth color',
     content: 'earth color is beautiful. the 550 gsm weight makes it feel like a blanket but in the best way',
@@ -1762,7 +1762,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-054',
-    author: 'amber_t',
+    author: 'ambertaylor',
     rating: 5,
     title: 'sakura pink',
     content: 'sakura pink is such a unique color. not too bright not too pastel',
@@ -1939,7 +1939,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-066',
-    author: 'natalie_w',
+    author: 'nataliewong',
     rating: 5,
     title: 'drop shoulder',
     content: 'the drop shoulder detail makes this so much better than regular hoodies',
@@ -1968,7 +1968,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-068',
-    author: 'madison_h',
+    author: 'madisonharris',
     rating: 5,
     title: 'lilac is perfect',
     content: 'got the lilac and its even prettier in person. everyone asks where i got it',
@@ -1998,7 +1998,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-070',
-    author: 'olivia_t',
+    author: 'oliviatran',
     rating: 5,
     title: 'no pilling',
     content: 'ive washed this like 10 times and it still looks brand new. no pilling at all',
@@ -2057,7 +2057,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-074',
-    author: 'chloe_p',
+    author: 'chloepark',
     rating: 5,
     title: 'steel is so good',
     content: 'steel is so good. neutral but interesting',
@@ -2086,7 +2086,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-076',
-    author: 'grace_h',
+    author: 'gracehill',
     rating: 4,
     title: 'runs big',
     content: 'love it but def runs big. should have sized down',
@@ -2218,7 +2218,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-085',
-    author: 'josh_l',
+    author: 'joshlewis',
     rating: 5,
     title: 'blood red color',
     content: 'blood red color stands out. love the bold choice',
@@ -2247,7 +2247,7 @@ export const hoodieReviews: Review[] = [
   },
   {
     id: 'rev-hoodie-087',
-    author: 'scott_w',
+    author: 'scottwilson',
     rating: 5,
     title: 'best heavyweight hoodie',
     content: 'ive tried a lot of heavyweight hoodies and this is the best. the 550 gsm cotton fleece is unmatched',
