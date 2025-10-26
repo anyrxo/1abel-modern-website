@@ -407,36 +407,72 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
                 </motion.button>
               </div>
 
-              {/* Description */}
-              <div className="mb-8">
-                <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} leading-relaxed`}>
-                  {product.description}
-                </p>
+              {/* Free Shipping & Returns Banner */}
+              <div className={`mb-8 py-3 px-4 text-center text-xs tracking-wider ${arc === 'ARC_2' ? 'bg-white/5 text-gray-400' : 'bg-black/5 text-gray-600'} rounded-lg`}>
+                Free Shipping Over AU$110 and Free Returns
               </div>
+            </div>
+          </div>
+        </div>
 
-              {/* Product Details */}
-              <div className={`mb-8 pb-8 border-b ${borderColor}`}>
-                <h3 className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-4`}>
-                  Details
-                </h3>
-                <ul className="space-y-2">
-                  {product.details.map((detail, index) => (
-                    <li key={index} className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} flex items-start`}>
-                      <span className="mr-2">•</span>
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+        {/* Enhanced Product Description - Only for hero products */}
+        {productDesc && (
+          <div className="mt-16 max-w-7xl mx-auto px-4 md:px-8">
+            <div className={`border-t ${borderColor} pt-16`}>
+              {/* Description, Fit & Fabrication - Horizontal Layout */}
+              <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-16">
+                {/* Description */}
+                <div>
+                  <h2 className={`text-sm font-bold uppercase tracking-wider mb-4 ${arc === 'ARC_2' ? 'text-white' : 'text-black'}`}>
+                    DESCRIPTION
+                  </h2>
+                  <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} leading-relaxed`}>
+                    {productDesc.description}
+                  </p>
+                </div>
 
-              {/* The Story */}
-              <div className="mb-8">
-                <h3 className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-4`}>
-                  The Story
-                </h3>
-                <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} leading-relaxed italic`}>
-                  "{colorStories[selectedColor]}"
-                </p>
+                {/* Fit */}
+                <div>
+                  <h3 className={`text-sm font-bold uppercase tracking-wider mb-4 ${arc === 'ARC_2' ? 'text-white' : 'text-black'}`}>
+                    FIT
+                  </h3>
+                  <ul className="space-y-2">
+                    {productDesc.fitDetails.map((detail, index) => (
+                      <li key={index} className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'}`}>
+                        • {detail}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Fabrication */}
+                <div>
+                  <h3 className={`text-sm font-bold uppercase tracking-wider mb-4 ${arc === 'ARC_2' ? 'text-white' : 'text-black'}`}>
+                    FABRICATION
+                  </h3>
+                  <div className="space-y-3">
+                    <div>
+                      <p className={`text-xs uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-500'} mb-1`}>
+                        Composition
+                      </p>
+                      <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'}`}>
+                        {productDesc.fabrication.composition}
+                      </p>
+                    </div>
+                    <div>
+                      <p className={`text-xs uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-500'} mb-1`}>
+                        Care
+                      </p>
+                      <ul className="space-y-1">
+                        {productDesc.fabrication.care.slice(0, 3).map((instruction, index) => (
+                          <li key={index} className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'}`}>
+                            • {instruction}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Pairs With */}
@@ -537,93 +573,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
               </div>
             </div>
           </div>
-
-          {/* Enhanced Product Description - Only for hero products */}
-          {productDesc && (
-            <div className="mt-16 max-w-5xl mx-auto">
-              <div className={`border-t ${borderColor} pt-16`}>
-                {/* Description */}
-                <div className="mb-12">
-                  <h2 className={`text-3xl md:text-4xl font-bold uppercase tracking-tight mb-6`}>
-                    Description
-                  </h2>
-                  <p className={`text-base ${arc === 'ARC_2' ? 'text-gray-300' : 'text-gray-700'} leading-relaxed`}>
-                    {productDesc.description}
-                  </p>
-                </div>
-
-                {/* Fit & Fabrication */}
-                <div className="grid md:grid-cols-2 gap-12 mb-12">
-                  {/* Fit Details */}
-                  <div>
-                    <h3 className={`text-xl font-bold uppercase tracking-tight mb-6`}>
-                      Fit
-                    </h3>
-                    <ul className="space-y-3">
-                      {productDesc.fitDetails.map((detail, index) => (
-                        <li key={index} className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} flex items-start`}>
-                          <span className="mr-3">•</span>
-                          <span>{detail}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Fabrication */}
-                  <div>
-                    <h3 className={`text-xl font-bold uppercase tracking-tight mb-6`}>
-                      Fabrication
-                    </h3>
-                    <div className="space-y-4">
-                      <div>
-                        <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-2`}>
-                          Composition
-                        </p>
-                        <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'}`}>
-                          {productDesc.fabrication.composition}
-                        </p>
-                      </div>
-                      <div>
-                        <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-2`}>
-                          Weight
-                        </p>
-                        <p className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'}`}>
-                          {productDesc.fabrication.weight}
-                        </p>
-                      </div>
-                      <div>
-                        <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-2`}>
-                          Care Instructions
-                        </p>
-                        <ul className="space-y-2">
-                          {productDesc.fabrication.care.map((instruction, index) => (
-                            <li key={index} className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} flex items-start`}>
-                              <span className="mr-2">•</span>
-                              <span>{instruction}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div>
-                        <p className={`text-xs tracking-[0.2em] uppercase ${arc === 'ARC_2' ? 'text-gray-500' : 'text-gray-400'} mb-2`}>
-                          Features
-                        </p>
-                        <ul className="space-y-2">
-                          {productDesc.fabrication.features.map((feature, index) => (
-                            <li key={index} className={`text-sm ${arc === 'ARC_2' ? 'text-gray-400' : 'text-gray-600'} flex items-start`}>
-                              <span className="mr-2">•</span>
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
+        )}
       </div>
 
       {/* Reviews Section - Only for hero products */}
