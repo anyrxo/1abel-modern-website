@@ -571,6 +571,12 @@
       "namedRegex": "^/terms(?:/)?$"
     },
     {
+      "page": "/terms-of-use",
+      "regex": "^/terms\\-of\\-use(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/terms\\-of\\-use(?:/)?$"
+    },
+    {
       "page": "/tops",
       "regex": "^/tops(?:/)?$",
       "routeKeys": {},

@@ -42,26 +42,125 @@ Allow: /
 User-agent: TikTokBot
 Allow: /
 
-# Block AI scrapers to protect unique brand content
+# Block AI scrapers to protect unique brand content and code
+# 1ABEL is a registered brand of IImagined Company - unauthorized scraping prohibited
+
+# OpenAI scrapers
 User-agent: GPTBot
 Disallow: /
 
 User-agent: ChatGPT-User
 Disallow: /
 
-User-agent: CCBot
+User-agent: OAI-SearchBot
 Disallow: /
 
+# Anthropic scrapers
 User-agent: anthropic-ai
 Disallow: /
 
 User-agent: Claude-Web
 Disallow: /
 
+# Common Crawl
+User-agent: CCBot
+Disallow: /
+
+# Diffbot
 User-agent: Diffbot
 Disallow: /
 
+# Perplexity
 User-agent: PerplexityBot
+Disallow: /
+
+# Firecrawl (scraping service)
+User-agent: FireCrawl
+Disallow: /
+
+User-agent: firecrawl-scraper
+Disallow: /
+
+# Apify (scraping service)
+User-agent: Apify
+Disallow: /
+
+# Bright Data / Luminati (scraping network)
+User-agent: Luminati
+Disallow: /
+
+# Bytedance / TikTok scraper
+User-agent: Bytespider
+Disallow: /
+
+# SEO tools that scrape content
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+# Meta/Facebook scraper (keep facebookexternalhit for previews, block others)
+User-agent: meta-externalagent
+Disallow: /
+
+# PetalBot (Huawei)
+User-agent: PetalBot
+Disallow: /
+
+# Yandex scraper
+User-agent: YandexBot
+Disallow: /
+
+# Baidu scraper
+User-agent: Baiduspider
+Disallow: /
+
+# Generic AI/ML scrapers
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: Kangaroo Bot
+Disallow: /
+
+# Web scraping frameworks
+User-agent: scrapy
+Disallow: /
+
+User-agent: python-requests
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: wget
 Disallow: /
 
 # Disallow private/functional pages

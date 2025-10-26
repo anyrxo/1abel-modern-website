@@ -4,16 +4,17 @@ import './globals.css'
 import { MobileBottomNav } from '@/components/MobileBottomNav'
 import { CartProvider } from '@/lib/cartContext'
 import { AuthProvider } from '@/lib/authContext'
+import { SecurityProtection } from '@/components/SecurityProtection'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: '1ABEL - Where Sound Becomes Style | Music-Inspired Minimalist Fashion',
-  description: 'Premium minimalist essentials designed for those who move too fast to overthink their wardrobe. Music-driven design meets effortless style. Arc 2 Shadow & Arc 3 Light collections. Created by Anyro.',
+  description: 'Premium minimalist essentials designed for those who move too fast to overthink their wardrobe. Music-driven design meets effortless style. Arc 2 Shadow & Arc 3 Light collections. Created by Anyro. A brand of IImagined Company.',
   keywords: 'minimalist fashion, music-inspired clothing, premium streetwear, Arc 2 Shadow (VOID STEEL BLOOD MOSS EARTH), Arc 3 Light (CLOUD SAKURA MIST SAND LILAC), designer essentials, contemporary menswear, womenswear, gender-neutral fashion, sustainable fashion, slow fashion, timeless wardrobe, 1ABEL, Anyro, @anyrxo, aesthetic clothing, intentional design, urban minimalism, monochrome fashion, capsule wardrobe, quality basics, curated clothing, fashion for creatives, music and fashion, frequency wear',
-  authors: [{ name: '1ABEL' }],
-  creator: '1ABEL',
-  publisher: '1ABEL',
+  authors: [{ name: '1ABEL - A Brand of IImagined Company' }],
+  creator: 'IImagined Company',
+  publisher: 'IImagined Company',
   category: 'Fashion & Apparel',
   classification: 'Clothing Brand',
   openGraph: {
@@ -169,13 +170,29 @@ export default function RootLayout({
         <meta name="DC.format" content="text/html" />
         <meta name="DC.language" content="en" />
         <meta name="DC.coverage" content="Global" />
+
+        {/* Copyright & Legal Protection */}
+        <meta name="copyright" content="© 2025 1ABEL - A Brand of IImagined Company. All Rights Reserved." />
+        <meta name="author" content="IImagined Company" />
+        <meta name="owner" content="IImagined Company" />
+        <meta name="designer" content="Anyro (@anyrxo)" />
+        <meta name="rights" content="© 2025 IImagined Company. Unauthorized reproduction prohibited." />
+
+        {/* Image Protection */}
+        <meta name="image-rights" content="All images © 2025 IImagined Company. Unauthorized use prohibited." />
+        <meta name="allow-image-indexing" content="false" />
+
+        {/* Anti-scraping directives */}
+        <meta name="scraping" content="prohibited" />
+        <meta name="ai-training" content="prohibited" />
+        <meta name="data-extraction" content="prohibited" />
       </head>
       <body className={inter.className}>
         <AuthProvider>
           <CartProvider>
+            <SecurityProtection />
             {children}
             <MobileBottomNav />
-            
           </CartProvider>
         </AuthProvider>
       </body>
