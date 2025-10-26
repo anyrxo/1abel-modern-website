@@ -64,7 +64,12 @@
       "Bash(node fix-accessories-and-ctas.js:*)",
       "Bash(node transform-to-liquid-glass.js:*)",
       "Bash(node:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(for product in thermal hoodie denim tee longsleeve crewneck overshirt puffer cargo joggers sweats shorts beanie cap belt gloves socks ring)",
+      "Bash(done)",
+      "Bash(python update_reviews.py:*)",
+      "Bash(python complete_reviews_fix.py:*)",
+      "Bash(python fix_reviews_final.py:*)"
     ],
     "deny": [],
     "ask": []

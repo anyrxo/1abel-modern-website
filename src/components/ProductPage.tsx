@@ -73,54 +73,54 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
   const getProductReviews = () => {
     switch (productSlug) {
       case 'thermal':
-        return { reviews: thermalReviews, overallRating: 4.9, totalReviews: 45, averageFit: 'true' as const }
+        return { reviews: thermalReviews, overallRating: 4.9, totalReviews: thermalReviews.length, averageFit: 'true' as const }
       case 'hoodie':
-        return { reviews: hoodieReviews, overallRating: 4.9, totalReviews: 87, averageFit: 'large' as const }
+        return { reviews: hoodieReviews, overallRating: 4.9, totalReviews: hoodieReviews.length, averageFit: 'large' as const }
       case 'denim':
-        return { reviews: denimReviews, overallRating: 4.8, totalReviews: 34, averageFit: 'true' as const }
+        return { reviews: denimReviews, overallRating: 4.8, totalReviews: denimReviews.length, averageFit: 'true' as const }
       case 'chain':
         return {
           reviews: arc === 'ARC_2' ? chainReviewsArc2 : chainReviewsArc3,
           overallRating: 4.8,
-          totalReviews: arc === 'ARC_2' ? 14 : 24,
+          totalReviews: arc === 'ARC_2' ? chainReviewsArc2.length : chainReviewsArc3.length,
           averageFit: 'true' as const
         }
       case 'tote-bag':
-        return { reviews: toteBagReviews, overallRating: 4.9, totalReviews: 28, averageFit: 'true' as const }
+        return { reviews: toteBagReviews, overallRating: 4.9, totalReviews: toteBagReviews.length, averageFit: 'true' as const }
       case 'tee':
-        return { reviews: teeReviews, overallRating: 4.9, totalReviews: 30, averageFit: 'true' as const }
+        return { reviews: teeReviews, overallRating: 4.9, totalReviews: teeReviews.length, averageFit: 'true' as const }
       case 'longsleeve':
-        return { reviews: longsleeveReviews, overallRating: 4.9, totalReviews: 25, averageFit: 'true' as const }
+        return { reviews: longsleeveReviews, overallRating: 4.9, totalReviews: longsleeveReviews.length, averageFit: 'true' as const }
       case 'crewneck':
-        return { reviews: crewneckReviews, overallRating: 4.9, totalReviews: 35, averageFit: 'large' as const }
+        return { reviews: crewneckReviews, overallRating: 4.9, totalReviews: crewneckReviews.length, averageFit: 'large' as const }
       case 'overshirt':
-        return { reviews: overshirtReviews, overallRating: 4.9, totalReviews: 22, averageFit: 'true' as const }
+        return { reviews: overshirtReviews, overallRating: 4.9, totalReviews: overshirtReviews.length, averageFit: 'true' as const }
       case 'coach-jacket':
-        return { reviews: coachJacketReviews, overallRating: 4.9, totalReviews: 28, averageFit: 'true' as const }
+        return { reviews: coachJacketReviews, overallRating: 4.9, totalReviews: coachJacketReviews.length, averageFit: 'true' as const }
       case 'puffer':
-        return { reviews: pufferReviews, overallRating: 4.9, totalReviews: 32, averageFit: 'large' as const }
+        return { reviews: pufferReviews, overallRating: 4.9, totalReviews: pufferReviews.length, averageFit: 'large' as const }
       case 'cargo':
-        return { reviews: cargoReviews, overallRating: 4.9, totalReviews: 27, averageFit: 'true' as const }
+        return { reviews: cargoReviews, overallRating: 4.9, totalReviews: cargoReviews.length, averageFit: 'true' as const }
       case 'joggers':
-        return { reviews: joggersReviews, overallRating: 4.9, totalReviews: 24, averageFit: 'true' as const }
+        return { reviews: joggersReviews, overallRating: 4.9, totalReviews: joggersReviews.length, averageFit: 'true' as const }
       case 'sweats':
-        return { reviews: sweatsReviews, overallRating: 4.9, totalReviews: 31, averageFit: 'true' as const }
+        return { reviews: sweatsReviews, overallRating: 4.9, totalReviews: sweatsReviews.length, averageFit: 'true' as const }
       case 'shorts':
-        return { reviews: shortsReviews, overallRating: 4.9, totalReviews: 20, averageFit: 'true' as const }
+        return { reviews: shortsReviews, overallRating: 4.9, totalReviews: shortsReviews.length, averageFit: 'true' as const }
       case 'wide-pants':
-        return { reviews: widePantsReviews, overallRating: 4.9, totalReviews: 18, averageFit: 'true' as const }
+        return { reviews: widePantsReviews, overallRating: 4.9, totalReviews: widePantsReviews.length, averageFit: 'true' as const }
       case 'beanie':
-        return { reviews: beanieReviews, overallRating: 4.9, totalReviews: 26, averageFit: 'true' as const }
+        return { reviews: beanieReviews, overallRating: 4.9, totalReviews: beanieReviews.length, averageFit: 'true' as const }
       case 'cap':
-        return { reviews: capReviews, overallRating: 4.9, totalReviews: 29, averageFit: 'true' as const }
+        return { reviews: capReviews, overallRating: 4.9, totalReviews: capReviews.length, averageFit: 'true' as const }
       case 'belt':
-        return { reviews: beltReviews, overallRating: 4.9, totalReviews: 23, averageFit: 'true' as const }
+        return { reviews: beltReviews, overallRating: 4.9, totalReviews: beltReviews.length, averageFit: 'true' as const }
       case 'gloves':
-        return { reviews: glovesReviews, overallRating: 4.9, totalReviews: 19, averageFit: 'true' as const }
+        return { reviews: glovesReviews, overallRating: 4.9, totalReviews: glovesReviews.length, averageFit: 'true' as const }
       case 'socks':
-        return { reviews: socksReviews, overallRating: 4.9, totalReviews: 24, averageFit: 'true' as const }
+        return { reviews: socksReviews, overallRating: 4.9, totalReviews: socksReviews.length, averageFit: 'true' as const }
       case 'ring':
-        return { reviews: ringReviews, overallRating: 4.9, totalReviews: 21, averageFit: 'true' as const }
+        return { reviews: ringReviews, overallRating: 4.9, totalReviews: ringReviews.length, averageFit: 'true' as const }
       default:
         return null
     }

@@ -1,0 +1,30 @@
+SUMMARY OF REVIEWS NEEDED (Current vs Target):
+
+Products WITH existing reviews (need MORE):
+- thermal: 45/45 ✓ DONE
+- hoodie: 10/87 (need 77 more)
+- denim: 8/34 (need 26 more)
+- chain-arc2: 4/14 (need 10 more)
+- chain-arc3: 5/24 (need 19 more)
+- tee: 10/30 (need 20 more)
+- puffer: 8/32 (need 24 more)
+- cargo: 8/27 (need 19 more)
+- sweats: 9/31 (need 22 more)
+- beanie: 8/26 (need 18 more)
+- cap: 8/29 (need 21 more)
+- belt: 8/23 (need 15 more)
+- ring: 8/21 (need 13 more)
+
+Products with NO reviews (need ALL):
+- tote-bag: 0/28 (need 28)
+- longsleeve: 0/25 (need 25)
+- crewneck: 0/35 (need 35)
+- overshirt: 0/22 (need 22)
+- coach-jacket: 0/28 (need 28)
+- joggers: 0/24 (need 24)
+- shorts: 0/20 (need 20)
+- wide-pants: 0/18 (need 18)
+- gloves: 0/19 (need 19)
+- socks: 0/24 (need 24)
+
+TOTAL: 529 reviews need to be added
