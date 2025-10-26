@@ -419,6 +419,16 @@ export default function HomePage() {
                 </li>
               </ul>
             </div>
+
+            {/* Honeypot links - invisible to humans, bots will follow */}
+            <div className="hidden" aria-hidden="true">
+              <a href="/admin">Admin Panel</a>
+              <a href="/wp-admin">WordPress Admin</a>
+              <a href="/.env">Environment Config</a>
+              <a href="/backup">Backup Files</a>
+              <a href="/config">Configuration</a>
+              <a href="/database">Database Access</a>
+            </div>
           </div>
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
             <p>© 2025, 1ABEL All rights reserved</p>

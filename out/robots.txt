@@ -171,6 +171,18 @@ Disallow: /cart/
 Disallow: /_next/
 Disallow: /.well-known/
 
+# HONEYPOT TRAPS - Only bots ignoring robots.txt will access these
+# Legitimate crawlers respect Disallow, malicious ones trigger logging
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /.env
+Disallow: /backup/
+Disallow: /config/
+Disallow: /database/
+Disallow: /.git/
+Disallow: /phpmyadmin/
+Disallow: /administrator/
+
 # Sitemaps for optimal indexing
 Sitemap: https://1abel.com/sitemap.xml
 Sitemap: https://1abel.com/sitemap-products.xml

@@ -113,6 +113,12 @@
       "namedRegex": "^/(?:/)?$"
     },
     {
+      "page": "/.env",
+      "regex": "^/\\.env(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/\\.env(?:/)?$"
+    },
+    {
       "page": "/_not-found",
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
@@ -153,6 +159,12 @@
       "regex": "^/account/signup(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/account/signup(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
     },
     {
       "page": "/arc-2",
@@ -555,6 +567,12 @@
       "regex": "^/tops(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/tops(?:/)?$"
+    },
+    {
+      "page": "/wp-admin",
+      "regex": "^/wp\\-admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/wp\\-admin(?:/)?$"
     }
   ],
   "dataRoutes": [],
