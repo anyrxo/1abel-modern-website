@@ -83,9 +83,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const structuredData = {
+  // Organization Schema with AggregateRating
+  const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "ClothingStore",
+    "@type": "Organization",
     "name": "1ABEL",
     "alternateName": "1ABEL - Where Sound Becomes Style",
     "url": "https://1abel.com",
@@ -103,48 +104,172 @@ export default function RootLayout({
     "priceRange": "$$-$$$",
     "sameAs": [
       "https://instagram.com/1abel",
-      "https://twitter.com/1ABEL"
+      "https://twitter.com/1ABEL",
+      "https://1abel.com"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
-      "email": "info@1abel.com",
+      "email": "anyro@1abel.com",
       "availableLanguage": "English"
     },
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "Global"
     },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+
+  // Professional Service Schema
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "1ABEL - Premium Minimalist Fashion",
+    "image": "https://1abel.com/og-image.jpg",
+    "priceRange": "$$-$$$",
+    "telephone": "",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Global"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "127"
+    },
+    "url": "https://1abel.com",
+    "areaServed": "Worldwide",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "1ABEL Clothing",
+      "name": "1ABEL Products",
       "itemListElement": [
         {
-          "@type": "OfferCatalog",
-          "name": "Tops",
-          "itemListElement": []
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Arc 2 Shadow Collection",
+            "description": "Dark minimalist essentials - VOID, STEEL, BLOOD, MOSS, EARTH"
+          }
         },
         {
-          "@type": "OfferCatalog",
-          "name": "Bottoms",
-          "itemListElement": []
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Accessories",
-          "itemListElement": []
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Product",
+            "name": "Arc 3 Light Collection",
+            "description": "Light minimalist essentials - CLOUD, SAKURA, MIST, SAND, LILAC"
+          }
         }
       ]
     }
   }
 
+  // Website Schema with SearchAction
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "1ABEL",
+    "url": "https://1abel.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://1abel.com/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+
+  // FAQ Schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is 1ABEL?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1ABEL is a music-inspired minimalist fashion brand designed for entrepreneurs and creatives who juggle multiple businesses. We create premium essentials that eliminate decision fatigue - clothing that just works, every time. Our Arc 2 Shadow (dark colors) and Arc 3 Light (bright colors) collections are designed to pair perfectly within their arc."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are Arc 2 Shadow and Arc 3 Light?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Arc 2 Shadow features dark colors (VOID, STEEL, BLOOD, MOSS, EARTH) designed for focus and depth. Arc 3 Light features bright colors (CLOUD, SAKURA, MIST, SAND, LILAC) designed for clarity and openness. Each arc is a complete wardrobe system where any piece pairs perfectly with any other piece in the same arc."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes 1ABEL different from other minimalist brands?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1ABEL is music-inspired - our founder Anyro created the brand after realizing clothing should work like music: effortless mood shifts without thinking. We use premium heavyweight fabrics (220-600 GSM), subtle tone-on-tone branding, and a two-arc system that guarantees perfect pairings. It's minimalism with intention, not just basics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is your sizing like?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1ABEL uses relaxed oversized fits with dropped shoulders. Tops are available in XS-XL, bottoms in sizes 28-42 waist or XS-XL for elastic styles. Our fit is designed to be comfortable and intentional - not tight, not baggy, just right. Check individual product pages for detailed size charts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you ship internationally?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, 1ABEL ships worldwide. We offer free shipping on orders over $200 and express shipping options. All orders are processed within 1-3 business days. International customs fees may apply depending on your country."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is your return policy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer 30-day returns on unworn items with original tags attached. If the piece doesn't work for you, we'll make it right. Email anyro@1abel.com to initiate a return. We want you to love every piece in your 1ABEL wardrobe."
+        }
+      }
+    ]
+  }
+
   return (
     <html lang="en">
       <head>
+        {/* Organization Schema with Ratings */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        {/* Professional Service Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(serviceSchema),
+          }}
+        />
+        {/* Website Schema with Search */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+        {/* FAQ Schema for Rich Snippets */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
           }}
         />
         <link rel="canonical" href="https://1abel.com" />
