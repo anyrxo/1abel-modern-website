@@ -3,8 +3,16 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
+import { useMemo } from 'react'
 
 export default function NotFound() {
+  // Generate random invisible text to randomize page size (anti-scraping)
+  const randomText = useMemo(() => {
+    const words = ['shadow', 'light', 'fabric', 'design', 'quality', 'minimal', 'modern', 'essential', 'premium', 'crafted', 'timeless', 'elevated', 'refined', 'authentic', 'heritage', 'contemporary', 'sustainable', 'durable', 'versatile', 'functional']
+    const count = Math.floor(Math.random() * 500) + 200 // 200-700 random words
+    return Array.from({ length: count }, () => words[Math.floor(Math.random() * words.length)]).join(' ')
+  }, [])
+
   return (
     <div className="bg-white text-black min-h-screen">
       <Header />
@@ -64,6 +72,11 @@ export default function NotFound() {
             <span className="text-[20vw] font-bold tracking-tighter">
               1ABEL
             </span>
+          </div>
+
+          {/* Random invisible text to randomize page size (anti-scraping) */}
+          <div className="hidden" aria-hidden="true">
+            {randomText}
           </div>
         </motion.div>
       </main>
