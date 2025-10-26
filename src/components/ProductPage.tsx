@@ -585,6 +585,7 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
             totalReviews={reviewsData.totalReviews}
             productName={product.name}
             averageFit={reviewsData.averageFit}
+            arc={arc}
           />
         </div>
       )}
