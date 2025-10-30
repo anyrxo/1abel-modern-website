@@ -5,6 +5,9 @@ import { MobileBottomNav } from '@/components/MobileBottomNav'
 import { CartProvider } from '@/lib/cartContext'
 import { AuthProvider } from '@/lib/authContext'
 import { SecurityProtection } from '@/components/SecurityProtection'
+import { CoreWebVitals } from '@/components/CoreWebVitals'
+import { IndexNow } from '@/components/IndexNow'
+import { SEOPerformanceTracker } from '@/components/SEOPerformanceTracker'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -316,6 +319,9 @@ export default function RootLayout({
         <AuthProvider>
           <CartProvider>
             <SecurityProtection />
+            <CoreWebVitals />
+            <IndexNow />
+            <SEOPerformanceTracker />
             {children}
             <MobileBottomNav />
           </CartProvider>

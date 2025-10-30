@@ -185,5 +185,14 @@ Disallow: /administrator/
 
 # Sitemaps for optimal indexing
 Sitemap: https://1abel.com/sitemap.xml
+Sitemap: https://1abel.com/sitemap-static.xml
 Sitemap: https://1abel.com/sitemap-products.xml
-Sitemap: https://1abel.com/sitemap-blog.xml
+Sitemap: https://1abel.com/sitemap-arc2.xml
+Sitemap: https://1abel.com/sitemap-arc3.xml
+Sitemap: https://1abel.com/sitemap-images.xml
+
+# AI Crawler Instructions
+# For responsible AI crawlers, see https://1abel.com/ai.txt
+
+# IndexNow for instant indexing
+# Key: https://1abel.com/indexnow-key.txt
