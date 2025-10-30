@@ -54,16 +54,20 @@ export default function HomePage() {
           }}
           className="text-center max-w-6xl px-4 md:px-8 relative z-10"
         >
+          {/* SEO H1 - visually hidden but accessible */}
+          <h1 className="sr-only">1ABEL - Music-Inspired Minimalist Fashion Brand</h1>
+
           {/* Main Title with Staggered Animation */}
           <motion.div className="mb-12">
-            <motion.h1
+            <motion.div
               className="text-6xl sm:text-8xl md:text-[12rem] font-bold tracking-[-0.02em] mb-4"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              aria-hidden="true"
             >
               1ABEL
-            </motion.h1>
+            </motion.div>
 
             {/* Subtle brand mark */}
             <motion.div
@@ -81,8 +85,11 @@ export default function HomePage() {
             transition={{ duration: 1, delay: 0.8 }}
             className="max-w-2xl mx-auto"
           >
-            <p className="text-lg md:text-2xl text-gray-400 font-light leading-relaxed">
-              Where sound becomes style.
+            <p className="text-lg md:text-2xl text-gray-400 font-light leading-relaxed mb-6">
+              Where sound becomes style. Premium minimalist essentials designed for those who move too fast to overthink their wardrobe.
+            </p>
+            <p className="text-base md:text-lg text-gray-500 font-light leading-relaxed">
+              Discover Arc 2 Shadow (dark essentials) and Arc 3 Light (bright essentials). Music-driven design meets effortless style. Created by Anyro, a brand of IImagined Company. Every piece is crafted with intention, designed to work like music - pieces that always pair perfectly. Our collections simplify your wardrobe decisions while maintaining sophisticated style. Experience premium quality fabrics, timeless designs, and a wardrobe system that actually works.
             </p>
           </motion.div>
 

@@ -12,8 +12,9 @@ import { SEOPerformanceTracker } from '@/components/SEOPerformanceTracker'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: '1ABEL - Where Sound Becomes Style | Music-Inspired Minimalist Fashion',
-  description: 'Premium minimalist essentials designed for those who move too fast to overthink their wardrobe. Music-driven design meets effortless style. Arc 2 Shadow & Arc 3 Light collections. Created by Anyro. A brand of IImagined Company.',
+  metadataBase: new URL('https://1abel.com'),
+  title: '1ABEL - Music-Inspired Minimalist Fashion',
+  description: 'Premium minimalist essentials for those who move too fast to overthink their wardrobe. Arc 2 Shadow & Arc 3 Light collections by Anyro.',
   keywords: 'minimalist fashion, music-inspired clothing, premium streetwear, Arc 2 Shadow (VOID STEEL BLOOD MOSS EARTH), Arc 3 Light (CLOUD SAKURA MIST SAND LILAC), designer essentials, contemporary menswear, womenswear, gender-neutral fashion, sustainable fashion, slow fashion, timeless wardrobe, 1ABEL, Anyro, @anyrxo, aesthetic clothing, intentional design, urban minimalism, monochrome fashion, capsule wardrobe, quality basics, curated clothing, fashion for creatives, music and fashion, frequency wear',
   authors: [{ name: '1ABEL - A Brand of IImagined Company' }],
   creator: 'IImagined Company',
@@ -63,12 +64,13 @@ export const metadata: Metadata = {
     yandex: 'yandex-verification-code',
   },
   alternates: {
-    canonical: 'https://1abel.com',
+    canonical: '/',
     languages: {
-      'en-US': 'https://1abel.com',
-      'en-GB': 'https://1abel.com/en-gb',
-      'en-CA': 'https://1abel.com/en-ca',
-      'en-AU': 'https://1abel.com/en-au',
+      'en-US': '/',
+      'en-GB': '/en-gb',
+      'en-CA': '/en-ca',
+      'en-AU': '/en-au',
+      'x-default': '/',
     },
   },
   other: {
@@ -78,6 +80,10 @@ export const metadata: Metadata = {
     'theme-color': '#000000',
     'color-scheme': 'light dark',
     'format-detection': 'telephone=no',
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
 }
 
@@ -275,12 +281,9 @@ export default function RootLayout({
             __html: JSON.stringify(faqSchema),
           }}
         />
-        <link rel="canonical" href="https://1abel.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//1abel.com" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-        <meta name="language" content="English" />
         <meta name="robots" content="index,follow,noimageindex,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
         <meta name="googlebot" content="index,follow,noimageindex,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
         <meta property="og:locale" content="en_US" />
