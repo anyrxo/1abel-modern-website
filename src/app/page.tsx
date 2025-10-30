@@ -86,12 +86,17 @@ export default function HomePage() {
             className="max-w-2xl mx-auto"
           >
             <p className="text-lg md:text-2xl text-gray-400 font-light leading-relaxed mb-6">
-              Where sound becomes style. Premium minimalist essentials designed for those who move too fast to overthink their wardrobe.
+              Where sound becomes style.
             </p>
             <p className="text-base md:text-lg text-gray-500 font-light leading-relaxed">
-              Discover Arc 2 Shadow (dark essentials) and Arc 3 Light (bright essentials). Music-driven design meets effortless style. Created by Anyro, a brand of IImagined Company. Every piece is crafted with intention, designed to work like music - pieces that always pair perfectly. Our collections simplify your wardrobe decisions while maintaining sophisticated style. Experience premium quality fabrics, timeless designs, and a wardrobe system that actually works.
+              Premium minimalist essentials designed for those who move too fast to overthink their wardrobe.
             </p>
           </motion.div>
+
+          {/* SEO Content - Hidden but readable by search engines and screen readers */}
+          <div className="sr-only">
+            Discover Arc 2 Shadow (dark essentials) and Arc 3 Light (bright essentials). Music-driven design meets effortless style. Created by Anyro, a brand of IImagined Company. Every piece is crafted with intention, designed to work like music - pieces that always pair perfectly. Our collections simplify your wardrobe decisions while maintaining sophisticated style. Experience premium quality fabrics, timeless designs, and a wardrobe system that actually works.
+          </div>
 
           {/* CTA */}
           <motion.div
