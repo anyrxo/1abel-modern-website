@@ -6439,10 +6439,10 @@ Items you haven't worn in 6+ months, don't fit properly, or don't make you feel 
   },
 
   {
-    slug: 'style-mistakes-test',
-    title: 'Test Post 20',
-    excerpt: 'Test excerpt',
-    content: `Test content`,
+    slug: 'common-clothing-mistakes-to-avoid',
+    title: '10 Common Clothing Mistakes That Make You Look Cheap (And How to Fix Them)',
+    excerpt: 'Small clothing mistakes can ruin an otherwise good outfit. Learn the most common errors people make and how to avoid them for a more polished, expensive look.',
+    content: `Comprehensive content about clothing mistakes`,
     author: { name: 'Anyro', role: 'Founder, 1ABEL', bio: 'Multi-business entrepreneur and founder of 1ABEL.' },
     publishedAt: '2025-02-10',
     updatedAt: '2025-02-10',
@@ -6457,10 +6457,10 @@ Items you haven't worn in 6+ months, don't fit properly, or don't make you feel 
     }
   },
   {
-    slug: 'layering-test',
-    title: 'Test Post 21',
-    excerpt: 'Test excerpt',
-    content: `Test content`,
+    slug: 'year-round-wardrobe-layering-guide',
+    title: 'The Complete Guide to Building a Year-Round Wardrobe Through Layering',
+    excerpt: 'Small clothing mistakes can ruin an otherwise good outfit. Learn the most common errors people make and how to avoid them for a more polished, expensive look.',
+    content: `Comprehensive content about clothing mistakes`,
     author: { name: 'Anyro', role: 'Founder, 1ABEL', bio: 'Multi-business entrepreneur and founder of 1ABEL.' },
     publishedAt: '2025-02-11',
     updatedAt: '2025-02-11',
@@ -6475,10 +6475,10 @@ Items you haven't worn in 6+ months, don't fit properly, or don't make you feel 
     }
   },
   {
-    slug: 'color-theory-test',
-    title: 'Test Post 22',
-    excerpt: 'Test excerpt',
-    content: `Test content`,
+    slug: 'clothing-color-theory-for-men',
+    title: 'Clothing Color Theory for Men: The Complete Guide to Color Coordination',
+    excerpt: 'Small clothing mistakes can ruin an otherwise good outfit. Learn the most common errors people make and how to avoid them for a more polished, expensive look.',
+    content: `Comprehensive content about clothing mistakes`,
     author: { name: 'Anyro', role: 'Founder, 1ABEL', bio: 'Multi-business entrepreneur and founder of 1ABEL.' },
     publishedAt: '2025-02-12',
     updatedAt: '2025-02-12',
