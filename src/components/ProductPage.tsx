@@ -9,6 +9,7 @@ import { useRouter } from 'next/navigation'
 import { BASE_PRODUCTS, COLORS, PREMIUM_ACCESSORY_COLORS, PREMIUM_ACCESSORIES } from '@/data/products'
 import { ArrowLeft, Share2, X, ChevronLeft, ChevronRight, Star } from 'lucide-react'
 import { ProductReviews } from '@/components/ProductReviews'
+import ProductSchema from '@/components/ProductSchema'
 import { productDescriptions } from '@/data/productDescriptions'
 import {
   thermalReviews,
@@ -224,6 +225,14 @@ export function ProductPage({ productId, arc, colorStories, pairsWith }: Product
 
   return (
     <div ref={containerRef} className={`${bgColor} ${textColor} min-h-screen relative`}>
+      <ProductSchema
+        productId={productId}
+        arc={arc}
+        selectedColor={selectedColor}
+        overallRating={reviewsData?.overallRating}
+        totalReviews={reviewsData?.totalReviews}
+        pairsWith={pairsWith[selectedColor] || []}
+      />
       <Header />
 
       {/* Mobile Top Bar - Back & Share */}

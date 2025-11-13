@@ -14059,5 +14059,530 @@ Items you haven't worn in 6+ months, don't fit properly, or don't make you feel 
         'street style minimalism'
       ]
     }
+  },
+  {
+    slug: '1abel-brand-philosophy-origin-story',
+    title: '1ABEL: Where Sound Becomes Style - The Philosophy Behind Music-Inspired Minimalism',
+    excerpt: 'The origin story and philosophy behind 1ABEL. How music, entrepreneurship, and minimalism converge into a fashion system designed for builders and creators.',
+    content: `
+<section>
+<h2>What Is 1ABEL?</h2>
+<p>1ABEL isn't a clothing brand. It's a system.</p>
+
+<p>A system designed for people who have more important things to think about than fashion. Entrepreneurs building companies. Creatives making art. People who need their wardrobe to work as hard as they do.</p>
+
+<p>Founded by multi-business entrepreneur Anyro, 1ABEL emerged from a simple frustration: why is getting dressed still so complicated?</p>
+</section>
+
+<section>
+<h2>The Origin: Decision Fatigue in the Studio</h2>
+<p>Late nights in the studio. Building businesses. Making music. Creating things that matter.</p>
+
+<p>And every morning, wasting mental energy on the same question: what do I wear today?</p>
+
+<p>Steve Jobs had his black turtleneck. Mark Zuckerberg has grey t-shirts. Barack Obama famously said he doesn't want to decide what to wear because he has too many other decisions to make.</p>
+
+<p>They understood something fundamental: your cognitive bandwidth is finite. Every trivial decision drains energy that could go toward the work that actually matters.</p>
+
+<p>1ABEL was born from this realization—combined with Anyro's background in music production, where systems, precision, and intentional design shape everything.</p>
+</section>
+
+<section>
+<h2>Music as Blueprint: The System Thinking</h2>
+<p>In music production, everything is intentional. Every sound has a purpose. Every element serves the whole. There's no room for clutter.</p>
+
+<p>1ABEL applies this same philosophy to fashion:</p>
+
+<ul>
+<li><strong>No filler pieces</strong> - Every garment must earn its place</li>
+<li><strong>Interoperability</strong> - Everything pairs with everything</li>
+<li><strong>Cohesive aesthetic</strong> - The whole is greater than the parts</li>
+<li><strong>Intentional limitations</strong> - Constraints breed creativity and clarity</li>
+</ul>
+
+<p>Music producers work within systems: DAWs, plugins, workflows. They don't reinvent the wheel every time they sit down to create. They have their tools, refined and ready.</p>
+
+<p>Your wardrobe should work the same way.</p>
+</section>
+
+<section>
+<h2>The Two-System Philosophy: Arc 2 Shadow & Arc 3 Light</h2>
+<p>1ABEL isn't one aesthetic. It's two complementary systems designed to cover every context in your life.</p>
+
+<h3>Arc 2 Shadow: The Depth</h3>
+<p>Dark. Substantial. Grounding. For creation, focus, and nights when you need weight around you.</p>
+
+<p>Colors: VOID (pure black), STEEL (dark grey), BLOOD (deep burgundy), MOSS (dark forest green), EARTH (dark brown)</p>
+
+<p>Arc 2 is about presence. About commanding space without trying. About disappearing into the work.</p>
+
+<h3>Arc 3 Light: The Breath</h3>
+<p>Soft. Elevated. Clarifying. For mornings, movement, and moments when you need lightness.</p>
+
+<p>Colors: CLOUD (white), SAKURA (light pink), MIST (soft blue), SAND (cream), LILAC (soft lavender)</p>
+
+<p>Arc 3 is about ease. About moving through the world with minimal friction. About signaling approachability.</p>
+
+<p>Together, they create a complete system. You're not choosing between two styles—you're using two tools for different jobs.</p>
+</section>
+
+<section>
+<h2>Color Theory: Fashion Science, Not Fashion Trends</h2>
+<p>Every color in 1ABEL is chosen through the lens of color theory, psychology, and practical versatility.</p>
+
+<p><strong>No trends.</strong> No seasonal palettes that expire in six months. Just timeless colors that work together across both arcs.</p>
+
+<p>Arc 2 Shadow uses deep, saturated tones that create visual weight and grounding. These are colors that photograph well, layer naturally, and don't show wear.</p>
+
+<p>Arc 3 Light uses soft, desaturated tones that create openness and calm. These are colors that work in natural light, pair easily, and signal approachability.</p>
+
+<p>The magic happens when you cross-arc pair: MOSS (Arc 2) with SAND (Arc 3). STEEL (Arc 2) with MIST (Arc 3). Dark and light. Depth and breath.</p>
+</section>
+
+<section>
+<h2>Designed for Entrepreneurs and Creators</h2>
+<p>1ABEL's target customer is specific: multi-business entrepreneurs, creative professionals, and builders who operate in multiple contexts daily.</p>
+
+<p>You're not in one world. You're:</p>
+<ul>
+<li>In a Zoom meeting with investors at 10am</li>
+<li>Recording in the studio at 2pm</li>
+<li>Meeting a collaborator for coffee at 5pm</li>
+<li>Working late into the night</li>
+</ul>
+
+<p>You need clothing that transitions seamlessly. That looks intentional without trying. That doesn't make you think.</p>
+
+<p>This is why every 1ABEL piece is:</p>
+<ul>
+<li><strong>Versatile</strong> - Works in professional and creative contexts</li>
+<li><strong>Durable</strong> - Premium fabrics that hold up to daily wear</li>
+<li><strong>Minimal</strong> - No branding, no loud details, no expiration date</li>
+<li><strong>Systematic</strong> - Designed to pair with everything else in the system</li>
+</ul>
+</section>
+
+<section>
+<h2>Anti-Trends: Built to Last</h2>
+<p>Fashion moves in cycles. Trends come and go. Brands chase the next big thing.</p>
+
+<p>1ABEL doesn't play that game.</p>
+
+<p>Every piece is designed to look the same in 5 years as it does today. No seasonal drops. No collaborations with hype artists. No limited editions creating artificial scarcity.</p>
+
+<p>This is fashion as infrastructure. Pieces that become tools in your creative process rather than distractions from it.</p>
+
+<p>When you buy a 1ABEL thermal, you're not buying this season's trend. You're buying a foundational piece that will anchor your wardrobe for years.</p>
+</section>
+
+<section>
+<h2>Sustainability Through Longevity</h2>
+<p>1ABEL doesn't market itself as "sustainable fashion" with recycled materials and carbon offsets. The sustainability comes from something simpler:</p>
+
+<p><strong>You keep wearing it.</strong></p>
+
+<p>Fast fashion isn't destructive because of how it's made. It's destructive because you throw it away after 3 months.</p>
+
+<p>1ABEL's model is different:</p>
+<ul>
+<li>Premium construction means garments last 5-10+ years</li>
+<li>Timeless design means you won't want to replace them</li>
+<li>Systematic approach means you buy less overall</li>
+<li>Capsule philosophy means you own exactly what you need</li>
+</ul>
+
+<p>The most sustainable garment is the one you wear 500 times.</p>
+</section>
+
+<section>
+<h2>The 1ABEL Customer: A Day in the Life</h2>
+<p>Morning: Arc 3 Light. CLOUD thermal, SAND joggers. Soft start to the day. Coffee, focused work, clarity.</p>
+
+<p>Afternoon meetings: Same outfit. Presentable, professional, effortless. No costume change required.</p>
+
+<p>Evening studio session: Switch to Arc 2 Shadow. VOID hoodie, STEEL cargos. Grounding. Ready to create.</p>
+
+<p>Late night: Same outfit. Comfortable enough to work in. Substantial enough to feel like armor.</p>
+
+<p>This is the 1ABEL lifestyle. One wardrobe. Two systems. Infinite versatility.</p>
+</section>
+
+<section>
+<h2>What 1ABEL Is NOT</h2>
+<p>Let's be clear about what 1ABEL doesn't do:</p>
+
+<ul>
+<li><strong>Not streetwear</strong> - No loud branding, no hype drops, no artificial scarcity</li>
+<li><strong>Not luxury fashion</strong> - No $500 t-shirts, no logo flexing, no status signaling</li>
+<li><strong>Not fast fashion</strong> - No seasonal trends, no disposable quality, no chasing TikTok</li>
+<li><strong>Not technical wear</strong> - No 47-pocket cargo vests, no Cyberpunk cosplay, no hiking gear for city life</li>
+</ul>
+
+<p>1ABEL sits in a unique space: premium quality, minimalist aesthetic, systematic approach, entrepreneurial ethos.</p>
+
+<p>It's for people who know exactly what they want and don't need fashion to tell them who they are.</p>
+</section>
+
+<section>
+<h2>The Vision: Building a Wardrobe That Works</h2>
+<p>The goal of 1ABEL is simple: eliminate friction from your daily life through intentional wardrobe design.</p>
+
+<p>When you wake up in the morning, you shouldn't think about what to wear. You should reach for the system that already works.</p>
+
+<p>Arc 2 Shadow or Arc 3 Light? That's the only decision you need to make. Everything else is handled.</p>
+
+<p>This is fashion for people who have more important things to build. For entrepreneurs who measure success in companies created, not outfits photographed. For creators who want their work to speak louder than their wardrobe.</p>
+
+<p>Welcome to 1ABEL. Where sound becomes style. Where systems replace chaos. Where your wardrobe finally works as hard as you do.</p>
+</section>
+`,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur and founder of 1ABEL. Applies music production principles to minimalist fashion design.'
+    },
+    publishedAt: '2025-06-01',
+    updatedAt: '2025-06-01',
+    readTime: '18 min',
+    category: 'Brand',
+    tags: ['1ABEL', 'brand philosophy', 'minimalist fashion', 'entrepreneurship', 'music-inspired design', 'capsule wardrobe'],
+    featured: true,
+    seo: {
+      metaTitle: '1ABEL Brand Philosophy: Where Sound Becomes Style',
+      metaDescription: 'The origin story and philosophy behind 1ABEL. How music, entrepreneurship, and minimalism create a fashion system for builders and creators. Arc 2 Shadow meets Arc 3 Light.',
+      keywords: [
+        '1ABEL brand story',
+        'music-inspired fashion',
+        'minimalist fashion philosophy',
+        'entrepreneur wardrobe',
+        'capsule wardrobe system',
+        'Arc 2 Shadow',
+        'Arc 3 Light',
+        '1ABEL philosophy',
+        'Anyro fashion',
+        'systematic fashion design'
+      ]
+    }
+  },
+  {
+    slug: 'arc-2-shadow-collection-complete-guide',
+    title: 'Arc 2 Shadow: The Complete Guide to 1ABEL\'s Dark Minimalist Collection',
+    excerpt: 'Everything about Arc 2 Shadow. The philosophy, the colors, the pieces, and how to build a complete dark minimalist wardrobe that commands presence.',
+    content: `
+<section>
+<h2>What Is Arc 2 Shadow?</h2>
+<p>Arc 2 Shadow is 1ABEL's dark system. The collection designed for depth, presence, and grounding.</p>
+
+<p>If Arc 3 Light is the breath, Arc 2 is the weight. The substance. The anchor.</p>
+
+<p>This isn't just "dark colors." It's a complete aesthetic philosophy built on the psychological and practical power of deep, saturated tones.</p>
+
+<p>Arc 2 Shadow is for:</p>
+<ul>
+<li>Late night studio sessions</li>
+<li>Focused work that requires intensity</li>
+<li>Contexts where you need to command space</li>
+<li>Moments when you want to disappear into the work</li>
+</ul>
+
+<p>It's minimalism with weight. Presence without effort.</p>
+</section>
+
+<section>
+<h2>The Arc 2 Shadow Color Palette: Fashion Science</h2>
+<p>Arc 2 features five carefully chosen colors, each selected for psychological impact and practical versatility.</p>
+
+<h3>VOID - Pure Black (#0a0a0a)</h3>
+<p>The foundation. The anchor. True black, not washed-out charcoal.</p>
+
+<p><strong>Psychology:</strong> Authority, focus, timelessness. Black commands attention without demanding it.</p>
+
+<p><strong>Practical:</strong> Never goes out of style. Hides wear. Pairs with everything. Professional in any context.</p>
+
+<p><strong>Best for:</strong> Thermals, hoodies, denim, accessories. Your daily uniform pieces.</p>
+
+<h3>STEEL - Dark Grey (#3a3a3a)</h3>
+<p>The versatile neutral. Softer than black but still substantial.</p>
+
+<p><strong>Psychology:</strong> Sophisticated, modern, professional. Grey signals thoughtfulness.</p>
+
+<p><strong>Practical:</strong> Shows less lint than black. Easier to pair across arcs. Business-appropriate.</p>
+
+<p><strong>Best for:</strong> Crewnecks, overshirts, cargos. Pieces that layer.</p>
+
+<h3>BLOOD - Deep Burgundy (#4a1a1a)</h3>
+<p>The intensity piece. Dark red that reads as brown in low light.</p>
+
+<p><strong>Psychology:</strong> Passion, confidence, depth. Burgundy adds richness without loud color.</p>
+
+<p><strong>Practical:</strong> Adds visual interest to all-dark fits. Still reads as neutral. Ages beautifully.</p>
+
+<p><strong>Best for:</strong> Statement pieces. Overshirts, thermals, accessories.</p>
+
+<h3>MOSS - Dark Forest Green (#1a2a1a)</h3>
+<p>The earth tone. Deep green that grounds outfits.</p>
+
+<p><strong>Psychology:</strong> Growth, stability, nature. Green creates calm focus.</p>
+
+<p><strong>Practical:</strong> Pairs beautifully with Arc 3 SAND and CLOUD. Unique without being loud.</p>
+
+<p><strong>Best for:</strong> Cargos, thermals, overshirts. Outdoor-appropriate pieces.</p>
+
+<h3>EARTH - Dark Brown (#2a1a0a)</h3>
+<p>The warmth piece. Rich brown that adds depth.</p>
+
+<p><strong>Psychology:</strong> Grounded, reliable, sophisticated. Brown signals authenticity.</p>
+
+<p><strong>Practical:</strong> Wears in beautifully. Leather-adjacent. Works with denim.</p>
+
+<p><strong>Best for:</strong> Accessories, overshirts, bottoms. Heritage-inspired pieces.</p>
+</section>
+
+<section>
+<h2>The Complete Arc 2 Shadow Wardrobe</h2>
+<p>A functional Arc 2 Shadow wardrobe contains 18-24 pieces covering all categories:</p>
+
+<h3>Tops (6-8 pieces)</h3>
+<ul>
+<li>2x THERMAL (VOID, STEEL) - Daily foundation</li>
+<li>1x HOODIE (VOID) - The armor piece</li>
+<li>2x TEE (VOID, STEEL) - Summer basics</li>
+<li>1x LONGSLEEVE (BLOOD or MOSS) - Layering piece</li>
+<li>1x CREWNECK (STEEL) - Professional option</li>
+<li>1x OVERSHIRT (MOSS or EARTH) - Jacket alternative</li>
+</ul>
+
+<h3>Bottoms (4-6 pieces)</h3>
+<ul>
+<li>1x DENIM (VOID) - The foundation bottom</li>
+<li>1x CARGO (STEEL or MOSS) - Utility + storage</li>
+<li>1x JOGGERS (VOID) - Comfort piece</li>
+<li>1x SWEATS (STEEL) - Home/studio piece</li>
+<li>1x SHORTS (VOID) - Summer option</li>
+</ul>
+
+<h3>Outerwear (1-2 pieces)</h3>
+<ul>
+<li>1x PUFFER (VOID) - Winter essential</li>
+<li>1x OVERSHIRT (EARTH or BLOOD) - Transitional layer</li>
+</ul>
+
+<h3>Accessories (4-6 pieces)</h3>
+<ul>
+<li>1x BEANIE (VOID) - Winter essential</li>
+<li>1x CAP (VOID) - Summer alternative</li>
+<li>1x BELT (VOID) - Functional detail</li>
+<li>1x GLOVES (VOID) - Winter hands</li>
+<li>2x SOCKS (VOID) - Daily essentials</li>
+<li>1x RING (VOID) - Signature accent</li>
+</ul>
+
+<p><strong>Total: 18-24 pieces. Complete wardrobe.</strong></p>
+</section>
+
+<section>
+<h2>Arc 2 Shadow Outfit Formulas</h2>
+<p>The beauty of a system: you don't reinvent outfits daily. You use proven formulas.</p>
+
+<h3>Formula 1: The Uniform</h3>
+<p>VOID thermal + VOID denim + VOID beanie</p>
+<p><strong>Context:</strong> Daily default. Studio work. Focus sessions.</p>
+<p><strong>Why it works:</strong> Zero decisions. Pure utility. Timeless.</p>
+
+<h3>Formula 2: The Professional</h3>
+<p>STEEL crewneck + VOID denim + EARTH belt</p>
+<p><strong>Context:</strong> Meetings, client calls, presentations.</p>
+<p><strong>Why it works:</strong> Polished without trying. Still you.</p>
+
+<h3>Formula 3: The Layered</h3>
+<p>BLOOD thermal + MOSS overshirt + STEEL cargos</p>
+<p><strong>Context:</strong> Transitional weather. Evening events.</p>
+<p><strong>Why it works:</strong> Visual depth. Color variation within dark palette.</p>
+
+<h3>Formula 4: The Comfort</h3>
+<p>VOID hoodie + STEEL sweats + VOID socks</p>
+<p><strong>Context:</strong> Home studio. Late nights. Maximum comfort.</p>
+<p><strong>Why it works:</strong> Armor + ease. Substantial but soft.</p>
+
+<h3>Formula 5: The Statement</h3>
+<p>BLOOD overshirt + VOID thermal + VOID denim + VOID ring</p>
+<p><strong>Context:</strong> Dinner. First impressions. Events where you want presence.</p>
+<p><strong>Why it works:</strong> BLOOD adds richness without loud color. Ring adds intentionality.</p>
+</section>
+
+<section>
+<h2>Cross-Arc Pairing: Arc 2 + Arc 3</h2>
+<p>The magic of 1ABEL's system: Arc 2 Shadow pairs beautifully with Arc 3 Light.</p>
+
+<h3>Recommended Cross-Arc Combinations:</h3>
+<ul>
+<li><strong>VOID (Arc 2) + CLOUD (Arc 3):</strong> Classic contrast. Maximum versatility.</li>
+<li><strong>STEEL (Arc 2) + MIST (Arc 3):</strong> Soft greys. Professional + approachable.</li>
+<li><strong>MOSS (Arc 2) + SAND (Arc 3):</strong> Earth tones. Grounded + warm.</li>
+<li><strong>BLOOD (Arc 2) + SAKURA (Arc 3):</strong> Reds. Intensity + softness.</li>
+<li><strong>EARTH (Arc 2) + SAND (Arc 3):</strong> Browns. Heritage + modern.</li>
+</ul>
+
+<p><strong>Example outfit:</strong> MOSS thermal (Arc 2) + SAND joggers (Arc 3) + VOID beanie (Arc 2)</p>
+
+<p>Dark top, light bottom. Grounded + elevated. Complete system working together.</p>
+</section>
+
+<section>
+<h2>Who Should Wear Arc 2 Shadow?</h2>
+<p>Arc 2 Shadow is ideal for:</p>
+
+<ul>
+<li><strong>Night owls and late workers:</strong> The colors match the energy of focused night work</li>
+<li><strong>Creatives in production mode:</strong> When you need to disappear into the work</li>
+<li><strong>People who prefer visual weight:</strong> If you feel better in substantial, grounding colors</li>
+<li><strong>Contexts requiring authority:</strong> Meetings, presentations, leadership moments</li>
+<li><strong>Minimalists who love dark aesthetics:</strong> If you're drawn to monochrome and shadows</li>
+</ul>
+
+<p>But remember: Arc 2 isn't your only tool. It's one half of a complete system. Use it when you need depth. Switch to Arc 3 when you need breath.</p>
+</section>
+
+<section>
+<h2>Caring for Arc 2 Shadow Pieces</h2>
+<p>Dark colors require specific care to maintain their depth:</p>
+
+<h3>Washing:</h3>
+<ul>
+<li>Turn inside out to protect outer fabric</li>
+<li>Cold water only (hot water fades darks)</li>
+<li>Gentle cycle or hand wash</li>
+<li>Use detergent formulated for darks</li>
+<li>Never use bleach (even color-safe bleach)</li>
+</ul>
+
+<h3>Drying:</h3>
+<ul>
+<li>Air dry when possible (heat fades color)</li>
+<li>If machine drying: low heat, remove promptly</li>
+<li>Hang hoodies and overshirts to prevent stretching</li>
+</ul>
+
+<h3>Storage:</h3>
+<ul>
+<li>Store in dark, cool place (light fades fabrics)</li>
+<li>Fold heavy knits (hangers stretch shoulders)</li>
+<li>Use cedar blocks to prevent moths</li>
+</ul>
+
+<p><strong>Pro tip:</strong> Dark clothes fade from washing frequency, not time. Wear 3-4 times before washing (unless visibly dirty or sweaty).</p>
+</section>
+
+<section>
+<h2>The Psychology of Wearing Dark Colors</h2>
+<p>Why do dark colors feel different? Science has answers:</p>
+
+<p><strong>Perceived authority:</strong> Studies show people in dark clothing are perceived as more authoritative and competent.</p>
+
+<p><strong>Reduced decision fatigue:</strong> Dark monochrome outfits require fewer matching decisions.</p>
+
+<p><strong>Visual slimming:</strong> Dark colors create clean lines and defined silhouettes.</p>
+
+<p><strong>Professional versatility:</strong> Dark colors work in more contexts than light (business, creative, casual).</p>
+
+<p><strong>Emotional grounding:</strong> Deep colors create psychological weight and stability.</p>
+
+<p>This is why entrepreneurs like Steve Jobs, designers like Yohji Yamamoto, and architects like Tadao Ando default to dark uniforms. It's not fashion—it's psychology.</p>
+</section>
+
+<section>
+<h2>Building Your Arc 2 Shadow Wardrobe: Start Here</h2>
+<p>Don't buy everything at once. Build systematically.</p>
+
+<h3>Phase 1: The Foundation (3 pieces)</h3>
+<p>Start with the daily uniform:</p>
+<ul>
+<li>VOID thermal</li>
+<li>VOID denim</li>
+<li>VOID beanie or cap</li>
+</ul>
+
+<p><strong>Cost:</strong> ~$370<br>
+<strong>Wears per week:</strong> 5-7<br>
+<strong>Versatility:</strong> Works in 90% of contexts</p>
+
+<h3>Phase 2: The Expansion (3-4 pieces)</h3>
+<p>Add variety and layers:</p>
+<ul>
+<li>STEEL crewneck or overshirt</li>
+<li>STEEL or MOSS cargos</li>
+<li>VOID hoodie</li>
+</ul>
+
+<p><strong>Cost:</strong> ~$480-550<br>
+<strong>Wears per week:</strong> 3-5 additional outfits</p>
+
+<h3>Phase 3: The Complete System (remaining pieces)</h3>
+<p>Fill gaps and add seasonal pieces:</p>
+<ul>
+<li>Additional thermals in BLOOD, MOSS, or EARTH</li>
+<li>PUFFER for winter</li>
+<li>SHORTS for summer</li>
+<li>Remaining accessories</li>
+</ul>
+
+<p><strong>Total investment:</strong> $1,200-1,800 for complete 18-24 piece system<br>
+<strong>Cost per wear over 5 years:</strong> $1-3 per wear<br>
+<strong>Decision fatigue eliminated:</strong> Priceless</p>
+</section>
+
+<section>
+<h2>Arc 2 Shadow in Different Seasons</h2>
+<h3>Summer:</h3>
+<p>VOID or STEEL tees + VOID shorts + VOID cap. Lightweight but still cohesive.</p>
+
+<h3>Fall:</h3>
+<p>Layering season. Thermals + overshirts + cargos. Arc 2 shines here.</p>
+
+<h3>Winter:</h3>
+<p>VOID puffer + hoodie + thermal + denim + beanie + gloves. Maximum warmth, zero bulk.</p>
+
+<h3>Spring:</h3>
+<p>Transition with overshirts. MOSS or EARTH overshirt over VOID thermal.</p>
+</section>
+
+<section>
+<h2>Final Thoughts: Arc 2 Shadow as System</h2>
+<p>Arc 2 Shadow isn't a collection of dark clothes. It's a complete aesthetic system designed to eliminate friction from your daily life.</p>
+
+<p>When you build an Arc 2 wardrobe, you're not buying fashion. You're buying infrastructure. Tools that work together. A system that scales.</p>
+
+<p>Dark minimalism with purpose. Presence without effort. Weight without excess.</p>
+
+<p>That's Arc 2 Shadow. That's 1ABEL.</p>
+</section>
+`,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur and founder of 1ABEL. Applies music production principles to minimalist fashion design.'
+    },
+    publishedAt: '2025-06-02',
+    updatedAt: '2025-06-02',
+    readTime: '20 min',
+    category: 'Brand',
+    tags: ['Arc 2 Shadow', '1ABEL', 'dark minimalist fashion', 'all black wardrobe', 'minimalist collection', 'dark colors'],
+    featured: true,
+    seo: {
+      metaTitle: 'Arc 2 Shadow: Complete Guide to 1ABEL\'s Dark Minimalist Collection',
+      metaDescription: 'Everything about Arc 2 Shadow: the colors (VOID, STEEL, BLOOD, MOSS, EARTH), the philosophy, outfit formulas, and how to build a complete dark minimalist wardrobe.',
+      keywords: [
+        'Arc 2 Shadow',
+        'dark minimalist fashion',
+        'all black wardrobe',
+        '1ABEL collection',
+        'minimalist dark colors',
+        'VOID STEEL BLOOD MOSS EARTH',
+        'dark wardrobe guide',
+        'black clothing system',
+        'minimalist menswear dark',
+        'entrepreneur dark wardrobe'
+      ]
+    }
   }
 ]
