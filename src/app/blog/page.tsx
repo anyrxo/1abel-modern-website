@@ -115,43 +115,46 @@ export default function BlogPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="group"
                 >
-                  <Link href={`/blog/${post.slug}`} className="group block">
-                    {/* Featured indicator */}
-                    <div className="aspect-[16/10] bg-gradient-to-br from-gray-100 to-gray-50 border border-black/5 mb-6 relative overflow-hidden group-hover:border-black/20 transition-all duration-500">
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-700" />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-6xl font-bold tracking-tighter opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-700 uppercase">
+                  <Link href={`/blog/${post.slug}`} className="block">
+                    {/* Featured image placeholder */}
+                    <div className="aspect-[16/10] bg-gradient-to-br from-gray-100 via-gray-50 to-white border border-black/5 mb-6 relative overflow-hidden group-hover:border-black/15 transition-all duration-500">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700" />
+                      <div className="absolute inset-0 flex items-center justify-center p-8">
+                        <span className="text-7xl font-bold tracking-tighter opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-700 uppercase text-center leading-none">
                           {post.category}
+                        </span>
+                      </div>
+                      {/* Featured badge */}
+                      <div className="absolute top-4 right-4">
+                        <span className="text-[10px] tracking-[0.25em] uppercase bg-black text-white px-3 py-1.5 font-semibold">
+                          Featured
                         </span>
                       </div>
                     </div>
 
-                    <div className="space-y-3">
+                    <div className="space-y-4">
                       <div className="flex items-center gap-3 text-xs text-gray-500">
                         <span className="tracking-[0.2em] uppercase">{post.category}</span>
                         <span>•</span>
                         <span>{post.readTime}</span>
                       </div>
 
-                      <h3 className="text-2xl md:text-3xl font-bold leading-tight group-hover:text-gray-700 transition-colors">
+                      <h3 className="text-2xl md:text-3xl font-bold leading-[1.2] tracking-tight group-hover:text-gray-600 transition-colors duration-300">
                         {post.title}
                       </h3>
 
-                      <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
+                      <p className="text-[15px] text-gray-600 leading-[1.7] line-clamp-3 group-hover:text-gray-700 transition-colors">
                         {post.excerpt}
                       </p>
 
                       <div className="pt-2">
-                        <span className="text-xs tracking-[0.2em] uppercase text-gray-400 group-hover:text-black transition-colors inline-flex items-center gap-2">
+                        <span className="text-xs tracking-[0.2em] uppercase text-gray-400 group-hover:text-black transition-colors inline-flex items-center gap-2 font-medium">
                           Read Article
-                          <motion.span
-                            className="inline-block"
-                            animate={{ x: [0, 4, 0] }}
-                            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                          >
+                          <span className="inline-block transform group-hover:translate-x-1 transition-transform duration-300">
                             →
-                          </motion.span>
+                          </span>
                         </span>
                       </div>
                     </div>
@@ -187,52 +190,46 @@ export default function BlogPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.8, delay: index * 0.05 }}
-                  className="border-b border-black/5 pb-12"
+                  className="group border-b border-black/5 pb-12 hover:border-black/20 transition-all duration-300"
                 >
-                  <Link href={`/blog/${post.slug}`} className="group block">
-                    <div className="space-y-4">
-                      <div className="flex items-center gap-3 text-xs text-gray-500">
+                  <Link href={`/blog/${post.slug}`} className="block">
+                    <div className="space-y-5">
+                      {/* Category badge */}
+                      <div className="inline-block">
+                        <span className="text-xs tracking-[0.2em] uppercase bg-gray-50 text-gray-600 px-4 py-2 border border-black/5 group-hover:bg-black group-hover:text-white transition-all duration-300">
+                          {post.category}
+                        </span>
+                      </div>
+
+                      <h3 className="text-3xl md:text-4xl font-bold leading-[1.15] tracking-tight group-hover:text-gray-600 transition-colors duration-300">
+                        {post.title}
+                      </h3>
+
+                      <p className="text-[16px] text-gray-600 leading-[1.75] group-hover:text-gray-700 transition-colors">
+                        {post.excerpt}
+                      </p>
+
+                      {/* Meta info */}
+                      <div className="flex items-center gap-3 text-xs text-gray-500 pt-2">
                         <time dateTime={post.publishedAt}>
                           {new Date(post.publishedAt).toLocaleDateString('en-US', {
-                            year: 'numeric',
-                            month: 'long',
-                            day: 'numeric'
+                            month: 'short',
+                            day: 'numeric',
+                            year: 'numeric'
                           })}
                         </time>
                         <span>•</span>
                         <span>{post.readTime}</span>
                       </div>
 
-                      <h3 className="text-3xl md:text-4xl font-bold leading-tight group-hover:text-gray-700 transition-colors">
-                        {post.title}
-                      </h3>
-
-                      <p className="text-base text-gray-600 leading-relaxed">
-                        {post.excerpt}
-                      </p>
-
-                      <div className="flex items-center gap-4 pt-2">
-                        <span className="text-xs tracking-[0.15em] uppercase text-gray-400 group-hover:text-black transition-colors inline-flex items-center gap-2">
-                          Read More
-                          <motion.span
-                            className="inline-block"
-                            animate={{ x: [0, 4, 0] }}
-                            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-                          >
+                      {/* Read more link */}
+                      <div className="pt-3">
+                        <span className="text-xs tracking-[0.2em] uppercase text-gray-400 group-hover:text-black transition-colors inline-flex items-center gap-2 font-medium">
+                          Read Article
+                          <span className="inline-block transform group-hover:translate-x-1 transition-transform duration-300">
                             →
-                          </motion.span>
-                        </span>
-                      </div>
-
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {post.tags.slice(0, 3).map((tag) => (
-                          <span
-                            key={tag}
-                            className="text-xs text-gray-500 bg-gray-50 px-3 py-1 border border-black/5"
-                          >
-                            {tag}
                           </span>
-                        ))}
+                        </span>
                       </div>
                     </div>
                   </Link>
