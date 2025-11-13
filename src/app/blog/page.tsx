@@ -240,40 +240,6 @@ export default function BlogPage() {
         </section>
       )}
 
-      {/* Newsletter CTA */}
-      <section className="px-4 md:px-8 py-24 bg-black text-white relative">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="max-w-3xl mx-auto text-center"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Stay in the frequency
-          </h2>
-          <p className="text-gray-400 mb-8 leading-relaxed">
-            Get new articles, drop announcements, and exclusive insights delivered to your inbox.
-          </p>
-          <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="your@email.com"
-              className="flex-1 px-5 py-3 bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-white/30 transition-colors"
-            />
-            <button
-              type="submit"
-              className="px-8 py-3 bg-white text-black font-semibold text-sm tracking-wide hover:bg-gray-200 transition-colors uppercase"
-            >
-              Subscribe
-            </button>
-          </form>
-          <p className="text-xs text-gray-600 mt-4">
-            No spam. Unsubscribe anytime.
-          </p>
-        </motion.div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-white border-t border-black/10 py-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
