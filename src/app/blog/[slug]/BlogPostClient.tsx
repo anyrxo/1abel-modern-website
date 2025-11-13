@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, useScroll, useSpring } from 'framer-motion'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { BlogPost, blogPosts } from '@/data/blog-posts'
@@ -11,6 +11,14 @@ interface BlogPostClientProps {
 }
 
 export default function BlogPostClient({ post }: BlogPostClientProps) {
+  // Reading progress indicator
+  const { scrollYProgress } = useScroll()
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  })
+
   // Get related posts (same category, exclude current)
   const relatedPosts = blogPosts
     .filter(p => p.category === post.category && p.slug !== post.slug)
@@ -55,6 +63,12 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
   return (
     <div className="bg-white text-black min-h-screen relative">
       <Header />
+
+      {/* Reading Progress Bar */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-black origin-left z-50"
+        style={{ scaleX }}
+      />
 
       {/* Noise texture overlay */}
       <div className="fixed inset-0 opacity-[0.01] pointer-events-none mix-blend-overlay z-10">

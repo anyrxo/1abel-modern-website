@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { blogPosts } from '@/data/blog-posts'
 import { useState } from 'react'
+import { Rss } from 'lucide-react'
 
 export default function BlogPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All')
@@ -47,9 +48,25 @@ export default function BlogPage() {
               Insights
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-600 font-light max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-600 font-light max-w-2xl mx-auto leading-relaxed mb-6">
               Thoughts on minimalism, slow fashion, design philosophy, and building a wardrobe that actually works.
             </p>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 0.8 }}
+            >
+              <a
+                href="/blog/feed.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-black transition-colors"
+              >
+                <Rss className="w-4 h-4" />
+                Subscribe via RSS
+              </a>
+            </motion.div>
           </motion.div>
 
           {/* Category Filter */}
