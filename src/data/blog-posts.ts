@@ -6436,5 +6436,60 @@ Items you haven't worn in 6+ months, don't fit properly, or don't make you feel 
         'office wardrobe essentials'
       ]
     }
+  },
+
+  {
+    slug: 'style-mistakes-test',
+    title: 'Test Post 20',
+    excerpt: 'Test excerpt',
+    content: `Test content`,
+    author: { name: 'Anyro', role: 'Founder, 1ABEL', bio: 'Multi-business entrepreneur and founder of 1ABEL.' },
+    publishedAt: '2025-02-10',
+    updatedAt: '2025-02-10',
+    readTime: '14 min',
+    category: 'Style',
+    tags: ['test'],
+    featured: false,
+    seo: {
+      metaTitle: 'Test',
+      metaDescription: 'Test',
+      keywords: ['test']
+    }
+  },
+  {
+    slug: 'layering-test',
+    title: 'Test Post 21',
+    excerpt: 'Test excerpt',
+    content: `Test content`,
+    author: { name: 'Anyro', role: 'Founder, 1ABEL', bio: 'Multi-business entrepreneur and founder of 1ABEL.' },
+    publishedAt: '2025-02-11',
+    updatedAt: '2025-02-11',
+    readTime: '15 min',
+    category: 'Philosophy',
+    tags: ['test'],
+    featured: false,
+    seo: {
+      metaTitle: 'Test',
+      metaDescription: 'Test',
+      keywords: ['test']
+    }
+  },
+  {
+    slug: 'color-theory-test',
+    title: 'Test Post 22',
+    excerpt: 'Test excerpt',
+    content: `Test content`,
+    author: { name: 'Anyro', role: 'Founder, 1ABEL', bio: 'Multi-business entrepreneur and founder of 1ABEL.' },
+    publishedAt: '2025-02-12',
+    updatedAt: '2025-02-12',
+    readTime: '16 min',
+    category: 'Style',
+    tags: ['test'],
+    featured: false,
+    seo: {
+      metaTitle: 'Test',
+      metaDescription: 'Test',
+      keywords: ['test']
+    }
   }
 ]
