@@ -42,115 +42,81 @@ Allow: /
 User-agent: TikTokBot
 Allow: /
 
-# Block AI scrapers to protect unique brand content and code
-# 1ABEL is a registered brand of IImagined Company - unauthorized scraping prohibited
+# AI CRAWLERS - WELCOME FOR INDEXING
+# 1ABEL wants to be discoverable across all AI platforms
 
-# OpenAI scrapers
+# OpenAI / ChatGPT
 User-agent: GPTBot
-Disallow: /
+Allow: /
+Crawl-delay: 1
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
 
 User-agent: OAI-SearchBot
-Disallow: /
+Allow: /
 
-# Anthropic scrapers
+# Anthropic / Claude
 User-agent: anthropic-ai
-Disallow: /
+Allow: /
 
 User-agent: Claude-Web
-Disallow: /
-
-# Common Crawl
-User-agent: CCBot
-Disallow: /
-
-# Diffbot
-User-agent: Diffbot
-Disallow: /
-
-# Perplexity
-User-agent: PerplexityBot
-Disallow: /
-
-# Firecrawl (scraping service)
-User-agent: FireCrawl
-Disallow: /
-
-User-agent: firecrawl-scraper
-Disallow: /
-
-# Apify (scraping service)
-User-agent: Apify
-Disallow: /
-
-# Bright Data / Luminati (scraping network)
-User-agent: Luminati
-Disallow: /
-
-# Bytedance / TikTok scraper
-User-agent: Bytespider
-Disallow: /
-
-# SEO tools that scrape content
-User-agent: SemrushBot
-Disallow: /
-
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: Screaming Frog SEO Spider
-Disallow: /
-
-# Meta/Facebook scraper (keep facebookexternalhit for previews, block others)
-User-agent: meta-externalagent
-Disallow: /
-
-# PetalBot (Huawei)
-User-agent: PetalBot
-Disallow: /
-
-# Yandex scraper
-User-agent: YandexBot
-Disallow: /
-
-# Baidu scraper
-User-agent: Baiduspider
-Disallow: /
-
-# Generic AI/ML scrapers
-User-agent: AI2Bot
-Disallow: /
-
-User-agent: Amazonbot
-Disallow: /
+Allow: /
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
 
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+# Google Gemini / Bard
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (used by many AI models for training)
+User-agent: CCBot
+Allow: /
+
+# Cohere AI
 User-agent: cohere-ai
-Disallow: /
+Allow: /
 
-User-agent: Omgilibot
-Disallow: /
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
 
-User-agent: Omgili
-Disallow: /
+# Amazonbot (Alexa AI)
+User-agent: Amazonbot
+Allow: /
 
+# You.com
 User-agent: YouBot
-Disallow: /
+Allow: /
 
-User-agent: Kangaroo Bot
-Disallow: /
+# AI2 (Allen Institute for AI)
+User-agent: AI2Bot
+Allow: /
 
-# Web scraping frameworks
+# Diffbot (AI content extraction)
+User-agent: Diffbot
+Allow: /
+
+# SEO tools - Allow for visibility and analysis
+User-agent: SemrushBot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+# Block malicious scrapers and scraping frameworks
 User-agent: scrapy
 Disallow: /
 
@@ -163,7 +129,11 @@ Disallow: /
 User-agent: wget
 Disallow: /
 
-# Disallow private/functional pages
+# Block Bytespider (aggressive TikTok scraper, not for content discovery)
+User-agent: Bytespider
+Disallow: /
+
+# Disallow private/functional pages (not content)
 Disallow: /api/
 Disallow: /account/
 Disallow: /checkout/
@@ -171,8 +141,7 @@ Disallow: /cart/
 Disallow: /_next/
 Disallow: /.well-known/
 
-# HONEYPOT TRAPS - Only bots ignoring robots.txt will access these
-# Legitimate crawlers respect Disallow, malicious ones trigger logging
+# HONEYPOT TRAPS - Only malicious bots ignoring robots.txt will access these
 Disallow: /admin/
 Disallow: /wp-admin/
 Disallow: /.env
@@ -183,16 +152,13 @@ Disallow: /.git/
 Disallow: /phpmyadmin/
 Disallow: /administrator/
 
-# Sitemaps for optimal indexing
+# Sitemaps for optimal indexing across search engines and AI platforms
 Sitemap: https://1abel.com/sitemap.xml
-Sitemap: https://1abel.com/sitemap-static.xml
+Sitemap: https://1abel.com/sitemap-blog.xml
 Sitemap: https://1abel.com/sitemap-products.xml
 Sitemap: https://1abel.com/sitemap-arc2.xml
 Sitemap: https://1abel.com/sitemap-arc3.xml
 Sitemap: https://1abel.com/sitemap-images.xml
 
-# AI Crawler Instructions
-# For responsible AI crawlers, see https://1abel.com/ai.txt
-
-# IndexNow for instant indexing
+# IndexNow for instant indexing on Bing, Yandex, Seznam
 # Key: https://1abel.com/indexnow-key.txt

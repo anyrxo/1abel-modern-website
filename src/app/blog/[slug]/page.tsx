@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import BlogPostClient from './BlogPostClient'
+import BlogPostSchema from '@/components/BlogPostSchema'
 import { blogPosts } from '@/data/blog-posts'
 
 type Props = {
@@ -58,5 +59,10 @@ export default async function BlogPostPage({ params }: Props) {
     notFound()
   }
 
-  return <BlogPostClient post={post} />
+  return (
+    <>
+      <BlogPostSchema post={post} />
+      <BlogPostClient post={post} />
+    </>
+  )
 }

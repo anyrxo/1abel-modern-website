@@ -8146,7 +8146,7 @@ Items you haven't worn in 6+ months, don't fit properly, or don't make you feel 
   },
   {
     slug: 'expensive-vs-cheap-clothing-worth-it',
-    title: 'Expensive vs Cheap Clothing: What You're Really Paying For (And What's Worth It)',
+    title: 'Expensive vs Cheap Clothing: What You\'re Really Paying For (And What\'s Worth It)',
     excerpt: 'Breaking down the real differences between cheap and expensive clothing. Learn what justifies the price tag and where to save vs splurge.',
     content: `<section><h2>The $500 Question</h2><p>You're holding two black t-shirts. One costs $15. One costs $150. They look identical. Are you really getting 10x the value?</p><p>Sometimes yes. Sometimes no.</p><p>This guide breaks down exactly what changes as clothing gets more expensive—and teaches you when to invest and when to save.</p></section><section><h2>The Bottom Line</h2><p>Expensive clothing is worth it when:</p><ul><li>You'll wear it frequently (100+ times)</li><li>It's a wardrobe staple</li><li>Quality difference is tangible</li><li>It's in the $60-180 sweet spot</li></ul><p>Expensive clothing is NOT worth it when:</p><ul><li>You're paying for brand name over quality</li><li>It's trendy and won't last</li><li>You'll rarely wear it</li><li>The quality isn't noticeably better</li></ul><p>The goal: Build a wardrobe where every piece justifies its price through either durability, versatility, or frequency of wear.</p><p>Buy cheap when it makes sense. Invest when it matters. Avoid luxury for luxury's sake.</p><p>That's how you build a wardrobe that's both high-quality and cost-effective.</p></section>`,
     author: {
@@ -8161,7 +8161,7 @@ Items you haven't worn in 6+ months, don't fit properly, or don't make you feel 
     tags: ['expensive vs cheap', 'clothing value', 'quality clothing', 'fashion investment', 'shopping guide'],
     featured: false,
     seo: {
-      metaTitle: 'Expensive vs Cheap Clothing: What You're Really Paying For',
+      metaTitle: 'Expensive vs Cheap Clothing: What You\'re Really Paying For',
       metaDescription: 'Complete breakdown of expensive vs cheap clothing differences. Learn what justifies the price tag, where to save, and where to splurge on quality.',
       keywords: [
         'expensive vs cheap clothing',
@@ -10061,7 +10061,7 @@ Items you haven't worn in 6+ months, don't fit properly, or don't make you feel 
   {
     slug: 'tailoring-alterations-guide-when-how-to-tailor',
     title: 'The Complete Tailoring Guide: When, How, and Why to Alter Your Clothes',
-    excerpt: 'Master the art of tailoring and alterations. Learn what's worth tailoring, what isn't, how much it costs, and how to work with a tailor for perfect fit.',
+    excerpt: 'Master the art of tailoring and alterations. Learn what\'s worth tailoring, what isn\'t, how much it costs, and how to work with a tailor for perfect fit.',
     content: `
 <section>
 <h2>Tailoring Transforms Good Clothes into Great Clothes</h2>
