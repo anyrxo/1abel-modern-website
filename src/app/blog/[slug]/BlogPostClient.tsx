@@ -142,26 +142,27 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           <div
             className="prose prose-lg max-w-none
               prose-headings:font-bold prose-headings:tracking-tight
-              prose-h2:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:leading-[1.2]
-              prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:leading-[1.3]
-              prose-h4:text-lg prose-h4:mt-8 prose-h4:mb-3 prose-h4:leading-[1.4]
-              prose-p:text-base prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-5
+              prose-h2:text-3xl prose-h2:mt-0 prose-h2:mb-6 prose-h2:leading-[1.2]
+              prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:leading-[1.3]
+              prose-h4:text-lg prose-h4:mt-6 prose-h4:mb-3 prose-h4:leading-[1.4]
+              prose-p:text-base prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-5 prose-p:mt-0
               prose-strong:text-black prose-strong:font-semibold
               prose-em:text-gray-800 prose-em:italic
-              prose-ul:my-6 prose-ul:space-y-2.5 prose-ul:pl-6
-              prose-ol:my-6 prose-ol:space-y-2.5 prose-ol:pl-6
-              prose-li:text-base prose-li:text-gray-700 prose-li:leading-relaxed prose-li:marker:text-black prose-li:marker:font-bold
+              prose-ul:my-5 prose-ul:space-y-2 prose-ul:pl-6
+              prose-ol:my-5 prose-ol:space-y-2 prose-ol:pl-6
+              prose-li:text-base prose-li:text-gray-700 prose-li:leading-relaxed prose-li:marker:text-black prose-li:marker:font-bold prose-li:my-0
               prose-a:text-black prose-a:underline prose-a:underline-offset-2 prose-a:decoration-1 prose-a:font-medium
               hover:prose-a:text-gray-600 hover:prose-a:decoration-gray-400
               prose-blockquote:border-l-2 prose-blockquote:border-black/20 prose-blockquote:pl-6 prose-blockquote:py-1 prose-blockquote:my-6 prose-blockquote:italic prose-blockquote:text-gray-700
               prose-img:rounded-lg prose-img:my-8
               prose-code:text-sm prose-code:bg-gray-100 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:before:content-none prose-code:after:content-none
               prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:p-6 prose-pre:rounded-lg prose-pre:my-8
-              [&_section]:mb-12 [&_section]:pb-12 [&_section]:border-b [&_section]:border-black/5 [&_section:last-child]:border-b-0 [&_section:last-child]:pb-0
-              [&_section>h2]:mt-0 [&_section>h2]:mb-6
-              [&_section>h3]:mt-8 [&_section>h3:first-of-type]:mt-6
-              [&_section>p:first-of-type]:mt-0"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+              [&_section]:mb-12 [&_section]:pb-12 [&_section]:border-b [&_section]:border-black/5 [&_section:last-child]:border-b-0 [&_section:last-child]:pb-0 [&_section:first-child]:pt-0
+              [&_section>h2]:mt-0 [&_section>h2]:mb-5
+              [&_section>h3]:mt-7 [&_section>h3:first-of-type]:mt-5
+              [&_section>p:first-of-type]:mt-0 [&_section>p:last-child]:mb-0
+              [&_section>ul]:mt-4 [&_section>ol]:mt-4"
+            dangerouslySetInnerHTML={{ __html: post.content.trim() }}
           />
 
           {/* Tags */}
