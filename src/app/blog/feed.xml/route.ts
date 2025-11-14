@@ -1,5 +1,7 @@
 import { blogPosts } from '@/data/blog-posts'
 
+export const dynamic = 'force-static'
+
 export async function GET() {
   const baseUrl = 'https://1abel.com'
 
