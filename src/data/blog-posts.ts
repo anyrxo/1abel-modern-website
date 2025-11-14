@@ -6442,54 +6442,1327 @@ Items you haven't worn in 6+ months, don't fit properly, or don't make you feel 
     slug: 'common-clothing-mistakes-to-avoid',
     title: '10 Common Clothing Mistakes That Make You Look Cheap (And How to Fix Them)',
     excerpt: 'Small clothing mistakes can ruin an otherwise good outfit. Learn the most common errors people make and how to avoid them for a more polished, expensive look.',
-    content: `Comprehensive content about clothing mistakes`,
-    author: { name: 'Anyro', role: 'Founder, 1ABEL', bio: 'Multi-business entrepreneur and founder of 1ABEL.' },
+    content: `
+<section>
+<h2>The Details That Destroy Your Look</h2>
+<p>You can wear expensive clothes and still look cheap. The difference isn't always about price—it's about the details.</p>
+
+<p>Small mistakes compound. A wrinkled shirt here, ill-fitting pants there, worn-out shoes—each one chips away at your appearance until even quality pieces look mediocre.</p>
+
+<p>This guide identifies the 10 most common clothing mistakes that make you look cheap, and more importantly, shows you exactly how to fix them.</p>
+</section>
+
+<section>
+<h2>Mistake 1: Wearing Clothes That Don't Fit</h2>
+
+<h3>The Problem</h3>
+<p>This is the #1 mistake that undermines everything else. <strong>Fit matters more than brand, fabric, or price.</strong></p>
+
+<p>Common fit issues:</p>
+<ul>
+<li>Shoulders too wide or narrow on shirts/jackets</li>
+<li>Pants bunching at the ankles</li>
+<li>Sleeves too long (covering your hands)</li>
+<li>T-shirts too baggy or too tight</li>
+<li>Waist gaping on pants</li>
+</ul>
+
+<h3>The Fix</h3>
+<p><strong>Learn your measurements:</strong></p>
+<ul>
+<li>Shoulder width (seam to seam)</li>
+<li>Chest circumference</li>
+<li>Waist size (where pants sit, not belt size)</li>
+<li>Inseam length</li>
+<li>Sleeve length (from shoulder to wrist)</li>
+</ul>
+
+<p><strong>Key fit rules:</strong></p>
+<ul>
+<li><strong>Shoulders:</strong> Shirt/jacket shoulder seam should align with your natural shoulder edge</li>
+<li><strong>Chest:</strong> Should be able to pinch 2-3 inches of fabric at the side</li>
+<li><strong>Sleeves:</strong> Long sleeves should end at wrist bone, showing 1/4-1/2 inch of cuff under jacket</li>
+<li><strong>Pants:</strong> Should sit at natural waist or slightly below, with minimal bunching at shoes</li>
+<li><strong>Length:</strong> Pants should have slight break (one fold) at shoes, or no break for modern look</li>
+</ul>
+
+<p><strong>Invest in tailoring:</strong> A $50 shirt that fits perfectly looks better than a $200 shirt that doesn't. Tailoring costs $15-40 per garment but doubles the perceived value.</p>
+</section>
+
+<section>
+<h2>Mistake 2: Neglecting Shoe Care</h2>
+
+<h3>The Problem</h3>
+<p>Shoes are the first thing people notice. Dirty, scuffed, or worn-out shoes instantly make your entire outfit look cheap—even if everything else is premium.</p>
+
+<p>Common shoe mistakes:</p>
+<ul>
+<li>Visible scuffs and scratches</li>
+<li>Worn-down heels</li>
+<li>Dirty sneakers with stained soles</li>
+<li>Shoes that don't match the formality of the outfit</li>
+<li>Creased leather (from improper storage)</li>
+</ul>
+
+<h3>The Fix</h3>
+<p><strong>Weekly maintenance:</strong></p>
+<ul>
+<li>Wipe down shoes after each wear</li>
+<li>Clean sneakers weekly (mild soap, soft brush)</li>
+<li>Polish leather shoes every 2-3 wears</li>
+<li>Use shoe trees to maintain shape</li>
+</ul>
+
+<p><strong>When to replace:</strong></p>
+<ul>
+<li>Heels worn down more than 1/4 inch (get resoled)</li>
+<li>Soles cracking or separating</li>
+<li>Leather beyond repair (deep cracks, severe creasing)</li>
+</ul>
+
+<p><strong>Rule of thumb:</strong> If you wouldn't want someone looking at your feet during a conversation, your shoes need attention.</p>
+</section>
+
+<section>
+<h2>Mistake 3: Wearing Wrinkled or Stained Clothing</h2>
+
+<h3>The Problem</h3>
+<p>Wrinkles and stains scream "I don't care about my appearance"—even on expensive clothing.</p>
+
+<h3>The Fix</h3>
+<p><strong>For wrinkles:</strong></p>
+<ul>
+<li>Hang clothes immediately after washing</li>
+<li>Use a steamer for quick de-wrinkling (faster than iron)</li>
+<li>Iron dress shirts and pants (especially front pleats and collar)</li>
+<li>Hang clothes in bathroom during hot shower for light steaming</li>
+<li>Choose wrinkle-resistant fabrics for travel</li>
+</ul>
+
+<p><strong>For stains:</strong></p>
+<ul>
+<li>Treat stains immediately (the longer they sit, the harder to remove)</li>
+<li>Keep stain remover pen or wipes handy</li>
+<li>Don't machine dry stained items (heat sets stains permanently)</li>
+<li>If a stain won't come out after 2-3 treatments, retire the garment</li>
+</ul>
+
+<p><strong>Zero tolerance policy:</strong> If it's wrinkled or stained and you can't fix it in 5 minutes, don't wear it. No exceptions.</p>
+</section>
+
+<section>
+<h2>Mistake 4: Ignoring Proportions</h2>
+
+<h3>The Problem</h3>
+<p>Wearing all tight clothes or all baggy clothes throws off your proportions. You need contrast and balance.</p>
+
+<p>Common proportion mistakes:</p>
+<ul>
+<li>Skinny jeans with tight shirt (everything looks constricted)</li>
+<li>Oversized shirt with baggy pants (looks sloppy)</li>
+<li>Short jacket with long shirt underneath (shortens your frame)</li>
+<li>Chunky shoes with skinny pants (unbalanced)</li>
+</ul>
+
+<h3>The Fix</h3>
+<p><strong>The Golden Rule: Balance tight with loose</strong></p>
+
+<ul>
+<li><strong>If top is fitted:</strong> Wear regular or relaxed-fit bottoms</li>
+<li><strong>If top is oversized:</strong> Wear tapered or slim-fit bottoms</li>
+<li><strong>If pants are wide:</strong> Keep top more fitted</li>
+<li><strong>If pants are slim:</strong> Top can be looser</li>
+</ul>
+
+<p><strong>Examples of good proportion:</strong></p>
+<ul>
+<li>Oversized hoodie + slim jeans</li>
+<li>Fitted t-shirt + relaxed chinos</li>
+<li>Structured blazer + straight-leg pants</li>
+<li>Baggy sweater + tapered joggers</li>
+</ul>
+
+<p>The goal is visual balance—not uniformity.</p>
+</section>
+
+<section>
+<h2>Mistake 5: Wearing Low-Quality Basics</h2>
+
+<h3>The Problem</h3>
+<p>Basics (t-shirts, jeans, underwear, socks) are worn most frequently. Cheap basics look cheap no matter what you layer on top.</p>
+
+<p>Signs of low-quality basics:</p>
+<ul>
+<li>Thin, see-through t-shirts</li>
+<li>Faded or pilling fabric after a few washes</li>
+<li>Stretched-out necklines</li>
+<li>Jeans that lose color in weeks</li>
+<li>Socks that slide down or develop holes quickly</li>
+</ul>
+
+<h3>The Fix</h3>
+<p><strong>Invest in your most-worn items:</strong></p>
+
+<ul>
+<li><strong>T-shirts:</strong> Look for 180+ GSM weight, reinforced necklines, quality cotton (Supima, Pima, organic)</li>
+<li><strong>Jeans:</strong> 12+ oz denim, reinforced stitching, quality hardware</li>
+<li><strong>Socks:</strong> Merino wool or quality cotton blends (avoid cheap polyester)</li>
+<li><strong>Underwear:</strong> Natural fabrics, proper support, reinforced waistband</li>
+</ul>
+
+<p><strong>Cost-per-wear math:</strong></p>
+<ul>
+<li>Cheap t-shirt: $10, lasts 15 wears = $0.67/wear</li>
+<li>Quality t-shirt: $60, lasts 200 wears = $0.30/wear</li>
+</ul>
+
+<p>Quality basics are literally cheaper over time.</p>
+</section>
+
+<section>
+<h2>Mistake 6: Over-Accessorizing or Under-Accessorizing</h2>
+
+<h3>The Problem</h3>
+<p>Too many accessories look try-hard. Too few look unfinished.</p>
+
+<p><strong>Over-accessorizing:</strong></p>
+<ul>
+<li>Multiple necklaces, rings, bracelets, and watches all at once</li>
+<li>Loud patterns mixed with statement jewelry</li>
+<li>Too many competing focal points</li>
+</ul>
+
+<p><strong>Under-accessorizing:</strong></p>
+<ul>
+<li>Plain outfit with zero accessories (looks flat)</li>
+<li>No watch, belt, or subtle jewelry when appropriate</li>
+</ul>
+
+<h3>The Fix</h3>
+<p><strong>The 2-3 Accessory Rule:</strong></p>
+<p>Aim for 2-3 subtle accessories per outfit. Examples:</p>
+
+<ul>
+<li>Watch + simple chain</li>
+<li>Watch + ring</li>
+<li>Belt + watch</li>
+<li>Beanie + chain + watch</li>
+</ul>
+
+<p><strong>Quality over quantity:</strong></p>
+<ul>
+<li>One quality watch beats three cheap ones</li>
+<li>Simple gold or silver chain > loud statement piece</li>
+<li>Leather belt with quality buckle > designer logo belt</li>
+</ul>
+
+<p><strong>Match metals:</strong> If your watch is silver, keep other jewelry silver. If gold, keep it gold. Don't mix unless intentional.</p>
+</section>
+
+<section>
+<h2>Mistake 7: Choosing the Wrong Colors for Your Skin Tone</h2>
+
+<h3>The Problem</h3>
+<p>Some colors make you look washed out or sallow. Others make you look vibrant and healthy. Wearing the wrong colors undermines even expensive clothing.</p>
+
+<h3>The Fix</h3>
+<p><strong>Determine your undertone:</strong></p>
+
+<ul>
+<li><strong>Warm undertone:</strong> Veins appear greenish, gold jewelry looks better, skin has yellow/peachy cast</li>
+<li><strong>Cool undertone:</strong> Veins appear bluish, silver jewelry looks better, skin has pink/rosy cast</li>
+<li><strong>Neutral undertone:</strong> Veins appear blue-green, both metals look good</li>
+</ul>
+
+<p><strong>Best colors by undertone:</strong></p>
+
+<p><strong>Warm undertones—wear:</strong></p>
+<ul>
+<li>Earthy tones: olive, forest green, rust, terracotta, camel, warm browns</li>
+<li>Warm neutrals: cream, beige, warm grey</li>
+<li>Warm jewel tones: amber, coral, warm reds</li>
+</ul>
+
+<p><strong>Cool undertones—wear:</strong></p>
+<ul>
+<li>Cool tones: navy, royal blue, charcoal, true black, emerald, burgundy</li>
+<li>Cool neutrals: pure white, cool grey, black</li>
+<li>Cool jewel tones: sapphire, ruby, amethyst</li>
+</ul>
+
+<p><strong>Safe for everyone:</strong> Navy, charcoal, medium grey, olive, white</p>
+</section>
+
+<section>
+<h2>Mistake 8: Wearing Clothes That Are Pilling, Faded, or Worn Out</h2>
+
+<h3>The Problem</h3>
+<p>Clinging to worn-out favorites makes your entire wardrobe look cheap. If clothing is visibly deteriorating, it's time to let go.</p>
+
+<p>Signs it's time to retire a piece:</p>
+<ul>
+<li>Pilling (fabric balls) that won't come off</li>
+<li>Fading that looks dingy (not intentional vintage)</li>
+<li>Holes or fraying that's beyond repair</li>
+<li>Permanent stains</li>
+<li>Stretched-out fabric that won't recover</li>
+<li>Collar or cuffs that are worn/discolored</li>
+</ul>
+
+<h3>The Fix</h3>
+<p><strong>The retirement test:</strong> If you wouldn't wear it to meet someone you wanted to impress, don't wear it at all.</p>
+
+<p><strong>Extend garment life:</strong></p>
+<ul>
+<li>Use a fabric shaver for pilling (can buy good ones for $15-25)</li>
+<li>Wash less frequently (most clothes don't need washing after one wear)</li>
+<li>Wash cold, hang dry when possible</li>
+<li>Rotate clothes (don't wear same items back-to-back)</li>
+<li>Proper storage (fold knits, hang structured pieces)</li>
+</ul>
+
+<p><strong>When to keep worn items:</strong> Only for actual work (painting, yard work, gym). Never for public wear.</p>
+</section>
+
+<section>
+<h2>Mistake 9: Mixing Formality Levels Incorrectly</h2>
+
+<h3>The Problem</h3>
+<p>Mixing formal and casual pieces haphazardly creates visual discord. Some mixing works (dressed-down formal, dressed-up casual), but it requires intention.</p>
+
+<p>Common formality mistakes:</p>
+<ul>
+<li>Dress shoes with athletic shorts</li>
+<li>Suit jacket with distressed jeans and sneakers</li>
+<li>Sweatpants with dress shirt</li>
+<li>Running shoes with chinos and button-up</li>
+</ul>
+
+<h3>The Fix</h3>
+<p><strong>The Adjacent Level Rule:</strong> Mix items that are one formality level apart, not two or more.</p>
+
+<p><strong>Formality levels (most to least formal):</strong></p>
+<ol>
+<li>Formal: Suit, dress shoes, tie</li>
+<li>Business casual: Blazer, chinos, leather shoes</li>
+<li>Smart casual: Button-up, dark jeans, clean sneakers or boots</li>
+<li>Casual: T-shirt, jeans, sneakers</li>
+<li>Athletic: Hoodies, joggers, athletic shoes</li>
+</ol>
+
+<p><strong>Good mixing examples:</strong></p>
+<ul>
+<li>Blazer (Level 2) + dark jeans (Level 3) + minimal sneakers = works</li>
+<li>Button-up (Level 3) + chinos (Level 2) + leather boots (Level 2) = works</li>
+<li>T-shirt (Level 4) + tailored pants (Level 2) + leather shoes (Level 2) = intentional contrast, works</li>
+</ul>
+
+<p><strong>Bad mixing examples:</strong></p>
+<ul>
+<li>Suit jacket (Level 1) + athletic joggers (Level 5) = too far apart</li>
+<li>Dress shirt + tie (Level 1) + shorts + flip-flops (Level 5) = jarring</li>
+</ul>
+</section>
+
+<section>
+<h2>Mistake 10: Ignoring the Power of Proper Layering</h2>
+
+<h3>The Problem</h3>
+<p>Throwing on multiple pieces without considering how they work together creates bulk, awkward proportions, and visual confusion.</p>
+
+<p>Common layering mistakes:</p>
+<ul>
+<li>Too many competing patterns or textures</li>
+<li>Layers that are all the same length (creates boxy silhouette)</li>
+<li>Visible undershirt beneath dress shirt</li>
+<li>Bulky layers under fitted jackets</li>
+<li>Hoodie strings visible under jacket</li>
+</ul>
+
+<h3>The Fix</h3>
+<p><strong>The layering formula:</strong></p>
+
+<ol>
+<li><strong>Base layer:</strong> Fitted t-shirt or long-sleeve (should not be visible unless intentional)</li>
+<li><strong>Mid layer:</strong> Shirt, sweater, or hoodie (provides main color/texture)</li>
+<li><strong>Outer layer:</strong> Jacket or coat (should be longest layer)</li>
+</ol>
+
+<p><strong>Layering rules:</strong></p>
+<ul>
+<li><strong>Length:</strong> Each layer should be slightly longer than the one beneath it</li>
+<li><strong>Fit:</strong> Inner layers should be more fitted, outer layers can be looser</li>
+<li><strong>Collar:</strong> Only one collared piece visible (don't layer collared shirts)</li>
+<li><strong>Texture:</strong> Mix textures (denim over cotton, wool over cotton) for visual interest</li>
+<li><strong>Color:</strong> Limit to 3 colors max across all layers</li>
+</ul>
+
+<p><strong>Good layering examples:</strong></p>
+<ul>
+<li>Fitted white tee + grey crewneck sweater + black overcoat</li>
+<li>Black long-sleeve + olive hoodie + denim jacket</li>
+<li>White t-shirt + flannel shirt (unbuttoned) + field jacket</li>
+</ul>
+</section>
+
+<section>
+<h2>The Common Thread: Attention to Detail</h2>
+
+<p>Looking expensive isn't about spending more—it's about caring more.</p>
+
+<p><strong>Quick daily checklist before leaving:</strong></p>
+<ol>
+<li>Does everything fit properly?</li>
+<li>Are my shoes clean?</li>
+<li>Is anything wrinkled or stained?</li>
+<li>Are proportions balanced?</li>
+<li>Is anything worn out or faded?</li>
+<li>Do formality levels work together?</li>
+<li>Do colors complement my skin tone?</li>
+<li>Are accessories intentional (not random)?</li>
+</ol>
+
+<p>If you can answer "yes" to all these questions, you'll look polished regardless of how much your clothes cost.</p>
+
+<p>Details matter. Fix the small mistakes, and the big improvements follow.</p>
+</section>
+    `,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur and founder of 1ABEL. Believes in eliminating friction from daily life through intentional design.'
+    },
     publishedAt: '2025-02-10',
     updatedAt: '2025-02-10',
     readTime: '14 min',
     category: 'Style',
-    tags: ['test'],
+    tags: ['style mistakes', 'fashion tips', 'how to dress better', 'clothing fit', 'style guide', 'wardrobe basics'],
     featured: false,
     seo: {
-      metaTitle: 'Test',
-      metaDescription: 'Test',
-      keywords: ['test']
+      metaTitle: '10 Common Clothing Mistakes That Make You Look Cheap | How to Fix Them',
+      metaDescription: 'Avoid these 10 common clothing mistakes that ruin your look. Learn how to dress better with practical tips on fit, styling, and wardrobe maintenance.',
+      keywords: [
+        'common clothing mistakes',
+        'fashion mistakes to avoid',
+        'how to look expensive',
+        'style mistakes men',
+        'clothing fit guide',
+        'how to dress better',
+        'wardrobe mistakes',
+        'style tips'
+      ]
     }
   },
   {
     slug: 'year-round-wardrobe-layering-guide',
     title: 'The Complete Guide to Building a Year-Round Wardrobe Through Layering',
-    excerpt: 'Small clothing mistakes can ruin an otherwise good outfit. Learn the most common errors people make and how to avoid them for a more polished, expensive look.',
-    content: `Comprehensive content about clothing mistakes`,
-    author: { name: 'Anyro', role: 'Founder, 1ABEL', bio: 'Multi-business entrepreneur and founder of 1ABEL.' },
+    excerpt: 'Master the art of layering to create a versatile wardrobe that works across all seasons. Learn how to build outfits that adapt from winter cold to summer heat.',
+    content: `
+<section>
+<h2>The Layering Philosophy</h2>
+<p>Most people build separate wardrobes for each season. Winter clothes in storage. Summer pieces packed away. A closet that requires constant rotation.</p>
+
+<p>There's a better way: <strong>build a year-round wardrobe through strategic layering.</strong></p>
+
+<p>With the right core pieces and layering strategy, you can wear the same foundational wardrobe 365 days a year—adding or removing layers as needed. This approach is simpler, more sustainable, and more cost-effective than maintaining seasonal wardrobes.</p>
+</section>
+
+<section>
+<h2>Why Layering Works Year-Round</h2>
+
+<h3>Adaptability</h3>
+<p>Layered pieces adapt to temperature changes throughout the day. Cool morning, warm afternoon, cold evening—your outfit adjusts.</p>
+
+<h3>Efficiency</h3>
+<p>A 20-piece layering system creates more outfit combinations than 60 seasonal pieces. Fewer items, more versatility.</p>
+
+<h3>Cost-Effectiveness</h3>
+<p>Instead of buying separate summer and winter wardrobes, you invest in quality core pieces you wear year-round. Better value, less waste.</p>
+
+<h3>Simplicity</h3>
+<p>No more seasonal closet swaps. Everything you own is accessible and wearable, regardless of the month.</p>
+</section>
+
+<section>
+<h2>The Three-Layer System</h2>
+
+<p>Every outfit is built from three fundamental layers:</p>
+
+<h3>Layer 1: Base Layer (Foundation)</h3>
+<p><strong>Purpose:</strong> Sits directly against skin, manages moisture, provides base warmth</p>
+
+<p><strong>Year-round pieces:</strong></p>
+<ul>
+<li>Premium t-shirts (short and long sleeve)</li>
+<li>Lightweight thermals or base layers</li>
+<li>Tank tops (for layering under shirts)</li>
+</ul>
+
+<p><strong>Fabric priorities:</strong></p>
+<ul>
+<li>Breathable (cotton, merino wool, performance blends)</li>
+<li>Moisture-wicking</li>
+<li>Form-fitting but comfortable</li>
+<li>Durable enough for frequent washing</li>
+</ul>
+
+<h3>Layer 2: Mid Layer (Insulation & Style)</h3>
+<p><strong>Purpose:</strong> Provides warmth, defines outfit aesthetic, adds color/texture</p>
+
+<p><strong>Year-round pieces:</strong></p>
+<ul>
+<li>Hoodies and crewnecks</li>
+<li>Button-up shirts (flannel, oxford, chambray)</li>
+<li>Lightweight sweaters</li>
+<li>Overshirts and shackets</li>
+</ul>
+
+<p><strong>Fabric priorities:</strong></p>
+<ul>
+<li>Medium weight (can layer over base, under outer)</li>
+<li>Textural variety (add visual interest)</li>
+<li>Versatile colors (work with multiple outfits)</li>
+</ul>
+
+<h3>Layer 3: Outer Layer (Weather Protection)</h3>
+<p><strong>Purpose:</strong> Protects from elements, completes silhouette, makes statement</p>
+
+<p><strong>Year-round pieces:</strong></p>
+<ul>
+<li>Denim or chore jacket (transitional weather)</li>
+<li>Lightweight windbreaker or coach jacket (rain, wind)</li>
+<li>Puffer or insulated jacket (cold weather)</li>
+<li>Overcoat or wool jacket (formal cold weather)</li>
+</ul>
+
+<p><strong>Fabric priorities:</strong></p>
+<ul>
+<li>Weather-resistant (water-repellent when possible)</li>
+<li>Roomy enough to layer over mid-layers comfortably</li>
+<li>Durable construction</li>
+</ul>
+</section>
+
+<section>
+<h2>Building Your Year-Round Core Wardrobe</h2>
+
+<h3>Base Layer Essentials (8-10 pieces)</h3>
+<ul>
+<li>4-5 premium t-shirts (mix of colors across Arc 2 & Arc 3)</li>
+<li>2-3 long-sleeve base layers or thermals</li>
+<li>1-2 tank tops or undershirts (for layering)</li>
+</ul>
+
+<p><strong>Color strategy:</strong> 70% neutral (black, white, grey), 30% accent colors</p>
+
+<h3>Mid Layer Essentials (6-8 pieces)</h3>
+<ul>
+<li>2-3 hoodies or crewnecks (varying weights)</li>
+<li>2-3 button-up shirts (flannel, oxford, or chambray)</li>
+<li>1-2 overshirts or shackets</li>
+<li>1 lightweight sweater or cardigan</li>
+</ul>
+
+<p><strong>Weight distribution:</strong></p>
+<ul>
+<li>2 pieces lightweight (spring/summer/fall)</li>
+<li>3 pieces medium weight (fall/winter/spring)</li>
+<li>2 pieces heavyweight (winter)</li>
+</ul>
+
+<h3>Outer Layer Essentials (3-5 pieces)</h3>
+<ul>
+<li>1 denim or chore jacket (3-season versatility)</li>
+<li>1 lightweight rain/wind jacket</li>
+<li>1 insulated jacket or puffer (cold weather)</li>
+<li>1 overcoat (optional, for formal cold weather)</li>
+</ul>
+
+<h3>Bottoms (4-5 pieces)</h3>
+<ul>
+<li>2 pairs quality jeans or chinos (one dark, one medium)</li>
+<li>1-2 pairs joggers or sweats</li>
+<li>1 pair shorts (summer, can be layered with thermals in shoulder seasons)</li>
+</ul>
+
+<p><strong>Total core wardrobe: 21-28 pieces</strong></p>
+<p><strong>Outfit combinations: 100+ with strategic layering</strong></p>
+</section>
+
+<section>
+<h2>Layering Strategies by Season</h2>
+
+<h3>Summer (70-90°F / 21-32°C)</h3>
+
+<p><strong>Light days:</strong></p>
+<ul>
+<li>Base layer only: Premium t-shirt + shorts or light pants</li>
+<li>Single layer: Lightweight button-up (unbuttoned over tee optional)</li>
+</ul>
+
+<p><strong>Cooler summer evenings:</strong></p>
+<ul>
+<li>Base + lightweight mid: T-shirt + lightweight overshirt</li>
+<li>Add light jacket if needed (denim jacket, windbreaker)</li>
+</ul>
+
+<p><strong>Air-conditioned environments:</strong></p>
+<ul>
+<li>Keep lightweight hoodie or overshirt for indoor spaces</li>
+</ul>
+
+<h3>Fall/Spring (50-70°F / 10-21°C)</h3>
+
+<p><strong>Mild days:</strong></p>
+<ul>
+<li>Base + mid: T-shirt or long-sleeve + hoodie or overshirt</li>
+<li>Base + outer: T-shirt + denim jacket or light coat</li>
+</ul>
+
+<p><strong>Cool days:</strong></p>
+<ul>
+<li>Base + mid + outer: Long-sleeve + hoodie + jacket</li>
+<li>Base + heavy mid: T-shirt + heavyweight hoodie or sweater</li>
+</ul>
+
+<p><strong>Variable temperature days:</strong></p>
+<ul>
+<li>Wear removable layers (button-up over tee, easily shed jacket)</li>
+<li>Carry lightweight jacket in bag</li>
+</ul>
+
+<h3>Winter (30-50°F / -1-10°C)</h3>
+
+<p><strong>Cold days:</strong></p>
+<ul>
+<li>All three layers: Thermal or long-sleeve + hoodie or sweater + insulated jacket</li>
+<li>Heavy mid + outer: Heavyweight hoodie + puffer or overcoat</li>
+</ul>
+
+<p><strong>Very cold days (below 30°F / -1°C):</strong></p>
+<ul>
+<li>Double mid layers: Thermal + long-sleeve + hoodie + insulated coat</li>
+<li>Add accessories: Beanie, gloves, scarf</li>
+</ul>
+
+<p><strong>Indoor/outdoor transition:</strong></p>
+<ul>
+<li>Base + mid layers should be comfortable indoors</li>
+<li>Outer layer is removable for indoor comfort</li>
+</ul>
+</section>
+
+<section>
+<h2>The Layering Rules</h2>
+
+<h3>Rule 1: Fit Gets Looser as You Layer</h3>
+<ul>
+<li><strong>Base layer:</strong> Fitted (but not tight)</li>
+<li><strong>Mid layer:</strong> Regular to relaxed fit</li>
+<li><strong>Outer layer:</strong> Roomy enough to accommodate layers beneath</li>
+</ul>
+
+<p>Each layer should comfortably fit over the previous one without creating bulk or restriction.</p>
+
+<h3>Rule 2: Length Increases with Each Layer</h3>
+<ul>
+<li><strong>Base layer:</strong> Shortest (or equal to mid)</li>
+<li><strong>Mid layer:</strong> Medium length</li>
+<li><strong>Outer layer:</strong> Longest (covers or extends beyond mid layer)</li>
+</ul>
+
+<p>Exception: Intentional contrast (long tee under short jacket can work if styled purposefully)</p>
+
+<h3>Rule 3: Limit Color Complexity</h3>
+<ul>
+<li>2-3 colors maximum across all layers</li>
+<li>Use neutral base colors (black, white, grey) as foundation</li>
+<li>Add one accent color through mid or outer layer</li>
+<li>Monochrome layering (all black, all grey) simplifies everything</li>
+</ul>
+
+<h3>Rule 4: Vary Texture, Not Just Color</h3>
+<ul>
+<li>Mix smooth and textured fabrics (cotton tee + wool sweater + nylon jacket)</li>
+<li>Combine weights (lightweight base + heavyweight mid + structured outer)</li>
+<li>Texture creates visual interest even in monochrome outfits</li>
+</ul>
+
+<h3>Rule 5: Consider Collar Stacking</h3>
+<ul>
+<li>Only one visible collar (don't layer collared shirt under collared jacket visibly)</li>
+<li>Crew necks and hoodies layer well under everything</li>
+<li>V-necks work under crew necks or hoodies</li>
+<li>Button-ups can layer under crew necks with collar showing (intentional prep look)</li>
+</ul>
+
+<h3>Rule 6: Balance Proportions</h3>
+<ul>
+<li>If top layers are bulky, keep bottoms fitted or tapered</li>
+<li>If top is fitted, bottoms can be looser</li>
+<li>Heavy layering on top requires visual balance below</li>
+</ul>
+</section>
+
+<section>
+<h2>Common Layering Mistakes to Avoid</h2>
+
+<h3>Mistake 1: Too Many Competing Patterns</h3>
+<p><strong>Problem:</strong> Plaid shirt + graphic tee + patterned jacket = visual chaos</p>
+<p><strong>Fix:</strong> Limit to one patterned piece per outfit, keep others solid</p>
+
+<h3>Mistake 2: All Layers Same Length</h3>
+<p><strong>Problem:</strong> Creates boxy, unflattering silhouette</p>
+<p><strong>Fix:</strong> Vary lengths—shortest to longest as you layer outward</p>
+
+<h3>Mistake 3: Visible Undershirt Beneath Dress Shirt</h3>
+<p><strong>Problem:</strong> Looks unintentional and sloppy</p>
+<p><strong>Fix:</strong> Use deep V-neck undershirts, or skip the undershirt if the shirt is quality</p>
+
+<h3>Mistake 4: Outer Layer Too Tight</h3>
+<p><strong>Problem:</strong> Can't move, layers bunch uncomfortably, looks strained</p>
+<p><strong>Fix:</strong> Size up on outerwear if you plan to layer heavily beneath</p>
+
+<h3>Mistake 5: Neglecting Seasonal Fabric Weight</h3>
+<p><strong>Problem:</strong> Heavyweight hoodie in summer, thin jacket in winter</p>
+<p><strong>Fix:</strong> Adjust fabric weights seasonally while maintaining layering system</p>
+</section>
+
+<section>
+<h2>Example Year-Round Layered Outfits</h2>
+
+<h3>Summer Day Outfit</h3>
+<ul>
+<li><strong>Base:</strong> White premium t-shirt</li>
+<li><strong>Mid (optional):</strong> Light grey linen overshirt (unbuttoned, sleeves rolled)</li>
+<li><strong>Bottoms:</strong> Dark denim or chinos</li>
+<li><strong>Temperature range:</strong> 75-85°F / 24-29°C</li>
+</ul>
+
+<h3>Fall Day Outfit</h3>
+<ul>
+<li><strong>Base:</strong> Black long-sleeve thermal</li>
+<li><strong>Mid:</strong> Charcoal heavyweight hoodie</li>
+<li><strong>Outer:</strong> Olive denim jacket</li>
+<li><strong>Bottoms:</strong> Dark jeans</li>
+<li><strong>Temperature range:</strong> 50-60°F / 10-15°C</li>
+</ul>
+
+<h3>Winter Day Outfit</h3>
+<ul>
+<li><strong>Base:</strong> Grey merino wool long-sleeve</li>
+<li><strong>Mid:</strong> Black heavyweight crewneck</li>
+<li><strong>Outer:</strong> Black puffer jacket</li>
+<li><strong>Bottoms:</strong> Dark denim</li>
+<li><strong>Accessories:</strong> Black beanie</li>
+<li><strong>Temperature range:</strong> 30-40°F / -1-4°C</li>
+</ul>
+
+<h3>Spring Transition Outfit</h3>
+<ul>
+<li><strong>Base:</strong> White t-shirt</li>
+<li><strong>Mid:</strong> Navy overshirt or flannel</li>
+<li><strong>Outer (optional):</strong> Light coach jacket</li>
+<li><strong>Bottoms:</strong> Olive chinos</li>
+<li><strong>Temperature range:</strong> 55-65°F / 13-18°C</li>
+</ul>
+</section>
+
+<section>
+<h2>Building Your Layering Wardrobe on a Budget</h2>
+
+<h3>Phase 1: Foundation (Month 1-2)</h3>
+<p><strong>Priority purchases:</strong></p>
+<ul>
+<li>3-4 quality base layer t-shirts ($60-80 each) = $180-320</li>
+<li>2 long-sleeve base layers ($40-60 each) = $80-120</li>
+<li>1-2 versatile bottoms ($80-150 each) = $80-300</li>
+</ul>
+<p><strong>Total: $340-740</strong></p>
+
+<h3>Phase 2: Mid Layers (Month 3-4)</h3>
+<p><strong>Priority purchases:</strong></p>
+<ul>
+<li>2 hoodies (one medium, one heavyweight) ($80-120 each) = $160-240</li>
+<li>1-2 button-up shirts ($60-100 each) = $60-200</li>
+<li>1 overshirt or shacket ($100-150) = $100-150</li>
+</ul>
+<p><strong>Total: $320-590</strong></p>
+
+<h3>Phase 3: Outer Layers (Month 5-6)</h3>
+<p><strong>Priority purchases:</strong></p>
+<ul>
+<li>1 versatile jacket (denim or chore jacket) ($120-200) = $120-200</li>
+<li>1 weather-appropriate piece (puffer or coat) ($150-300) = $150-300</li>
+</ul>
+<p><strong>Total: $270-500</strong></p>
+
+<p><strong>Complete year-round layering wardrobe: $930-1,830 over 6 months</strong></p>
+<p><strong>Outfit combinations: 100+</strong></p>
+<p><strong>Lifespan: 5-10+ years with proper care</strong></p>
+</section>
+
+<section>
+<h2>Maintaining Your Layered Wardrobe</h2>
+
+<h3>Washing Strategy</h3>
+<ul>
+<li><strong>Base layers:</strong> Wash after every wear (direct skin contact)</li>
+<li><strong>Mid layers:</strong> Wash after 2-3 wears (unless visibly dirty or odorous)</li>
+<li><strong>Outer layers:</strong> Spot clean as needed, full wash every 10-15 wears</li>
+</ul>
+
+<h3>Storage</h3>
+<ul>
+<li>Fold heavyweight knits (hoodies, sweaters) to prevent stretching</li>
+<li>Hang structured pieces (overshirts, jackets)</li>
+<li>Keep everything accessible year-round (no seasonal storage needed)</li>
+<li>Rotate regularly to ensure even wear</li>
+</ul>
+
+<h3>Care Tips</h3>
+<ul>
+<li>Wash cold, hang dry when possible (extends life 50%+)</li>
+<li>Air out pieces between wears (reduces washing frequency)</li>
+<li>Use fabric shaver for pilling</li>
+<li>Repair minor issues immediately (loose buttons, small holes)</li>
+</ul>
+</section>
+
+<section>
+<h2>The Bottom Line</h2>
+
+<p>A year-round layering wardrobe is simpler, more sustainable, and more versatile than seasonal wardrobes.</p>
+
+<p><strong>Key principles:</strong></p>
+<ol>
+<li>Build around three layers: base, mid, outer</li>
+<li>Choose quality pieces that work across seasons</li>
+<li>Add or remove layers based on temperature</li>
+<li>Follow layering rules: fit, length, color, texture</li>
+<li>Invest gradually, starting with base layers</li>
+</ol>
+
+<p>With 20-30 well-chosen pieces, you'll never need separate summer and winter wardrobes again. Just layer intelligently, and you're covered 365 days a year.</p>
+</section>
+    `,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur and founder of 1ABEL. Believes in eliminating friction from daily life through intentional design.'
+    },
     publishedAt: '2025-02-11',
     updatedAt: '2025-02-11',
     readTime: '15 min',
-    category: 'Philosophy',
-    tags: ['test'],
+    category: 'Style Guide',
+    tags: ['layering guide', 'year-round wardrobe', 'capsule wardrobe', 'seasonal dressing', 'wardrobe basics', 'minimalist wardrobe'],
     featured: false,
     seo: {
-      metaTitle: 'Test',
-      metaDescription: 'Test',
-      keywords: ['test']
+      metaTitle: 'Year-Round Wardrobe Layering Guide | Build a Versatile Seasonal Wardrobe',
+      metaDescription: 'Master the art of layering to build a versatile year-round wardrobe. Complete guide to seasonal layering strategies, outfit formulas, and wardrobe essentials.',
+      keywords: [
+        'year round wardrobe',
+        'layering guide',
+        'seasonal layering',
+        'how to layer clothes',
+        'versatile wardrobe',
+        'capsule wardrobe layering',
+        'minimalist layering',
+        'wardrobe for all seasons'
+      ]
     }
   },
   {
     slug: 'clothing-color-theory-for-men',
     title: 'Clothing Color Theory for Men: The Complete Guide to Color Coordination',
-    excerpt: 'Small clothing mistakes can ruin an otherwise good outfit. Learn the most common errors people make and how to avoid them for a more polished, expensive look.',
-    content: `Comprehensive content about clothing mistakes`,
-    author: { name: 'Anyro', role: 'Founder, 1ABEL', bio: 'Multi-business entrepreneur and founder of 1ABEL.' },
+    excerpt: 'Master the art of color coordination with this comprehensive guide to color theory in menswear. Learn foolproof color combinations and avoid common mistakes.',
+    content: `
+<section>
+<h2>Why Most Men Struggle with Color</h2>
+<p>Walk into most men's closets and you'll see the same thing: 90% black, navy, and grey. Safe. Boring. Predictable.</p>
+
+<p>It's not that men don't want to use color—it's that they don't know how. Without understanding basic color theory, introducing color feels risky. So they stick to neutrals and call it "minimalist."</p>
+
+<p>But color isn't complicated. With a few fundamental principles, you can confidently coordinate any outfit and expand beyond the neutral safety zone.</p>
+</section>
+
+<section>
+<h2>The Color Wheel Basics</h2>
+
+<h3>Primary Colors</h3>
+<ul>
+<li><strong>Red</strong></li>
+<li><strong>Blue</strong></li>
+<li><strong>Yellow</strong></li>
+</ul>
+<p>These cannot be created by mixing other colors. All other colors are derived from these three.</p>
+
+<h3>Secondary Colors</h3>
+<ul>
+<li><strong>Orange</strong> (red + yellow)</li>
+<li><strong>Green</strong> (blue + yellow)</li>
+<li><strong>Purple</strong> (red + blue)</li>
+</ul>
+
+<h3>Tertiary Colors</h3>
+<p>Created by mixing primary and secondary colors:</p>
+<ul>
+<li>Red-orange, yellow-orange, yellow-green, blue-green, blue-purple, red-purple</li>
+</ul>
+
+<p>Understanding this foundation helps you see how colors relate to each other—which is the key to coordination.</p>
+</section>
+
+<section>
+<h2>The Color Harmony Rules</h2>
+
+<h3>Rule 1: Monochromatic (Same Color, Different Shades)</h3>
+<p><strong>What it is:</strong> Using different shades, tints, and tones of a single color</p>
+
+<p><strong>Examples:</strong></p>
+<ul>
+<li>All black outfit (different black tones and textures)</li>
+<li>Navy shirt + light blue jeans + dark blue jacket</li>
+<li>Charcoal sweater + light grey pants + dark grey coat</li>
+</ul>
+
+<p><strong>Why it works:</strong> Inherently cohesive, creates visual flow, impossible to clash</p>
+
+<p><strong>Pro tip:</strong> Add texture variety to prevent flatness. Mix matte and shiny, smooth and textured fabrics.</p>
+
+<h3>Rule 2: Analogous (Adjacent Colors on Wheel)</h3>
+<p><strong>What it is:</strong> Colors that sit next to each other on the color wheel</p>
+
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Blue + blue-green + green</li>
+<li>Orange + red-orange + red</li>
+<li>Yellow + yellow-green + green</li>
+</ul>
+
+<p><strong>In menswear:</strong></p>
+<ul>
+<li>Olive jacket + forest green sweater + tan pants</li>
+<li>Navy jacket + royal blue shirt + light blue jeans</li>
+<li>Burgundy hoodie + rust orange shirt + brown pants</li>
+</ul>
+
+<p><strong>Why it works:</strong> Natural progression, visually harmonious, subtle sophistication</p>
+
+<h3>Rule 3: Complementary (Opposite Colors on Wheel)</h3>
+<p><strong>What it is:</strong> Colors directly opposite each other on the color wheel</p>
+
+<p><strong>Color pairs:</strong></p>
+<ul>
+<li>Red ↔ Green</li>
+<li>Blue ↔ Orange</li>
+<li>Yellow ↔ Purple</li>
+</ul>
+
+<p><strong>In menswear (toned down):</strong></p>
+<ul>
+<li>Navy (blue) + tan/camel (orange family)</li>
+<li>Olive (green) + burgundy (red family)</li>
+<li>Charcoal (dark blue-grey) + rust (orange)</li>
+</ul>
+
+<p><strong>Why it works:</strong> Maximum contrast, dynamic tension, eye-catching without being loud</p>
+
+<p><strong>Warning:</strong> Use muted/desaturated versions in menswear. Bright complementary colors (pure red + pure green) look costume-y.</p>
+
+<h3>Rule 4: Triadic (Three Evenly Spaced Colors)</h3>
+<p><strong>What it is:</strong> Three colors equally spaced on the color wheel</p>
+
+<p><strong>Classic triads:</strong></p>
+<ul>
+<li>Red + Yellow + Blue</li>
+<li>Orange + Green + Purple</li>
+</ul>
+
+<p><strong>In menswear (subdued versions):</strong></p>
+<ul>
+<li>Burgundy + mustard + navy</li>
+<li>Rust + olive + purple (aubergine)</li>
+</ul>
+
+<p><strong>Application:</strong> This is advanced. Stick to one dominant color, two as accents. Most men should master monochromatic and analogous first.</p>
+</section>
+
+<section>
+<h2>The Neutral Foundation</h2>
+
+<p>Neutrals are your safety net. They work with everything and each other.</p>
+
+<h3>True Neutrals</h3>
+<ul>
+<li><strong>Black:</strong> Bold, commanding, versatile</li>
+<li><strong>White:</strong> Clean, crisp, foundational</li>
+<li><strong>Grey:</strong> Sophisticated, balanced, professional</li>
+<li><strong>Navy:</strong> More versatile than black for daytime</li>
+<li><strong>Beige/Tan:</strong> Warm neutral, casual elegance</li>
+<li><strong>Brown:</strong> Earthy, approachable, underrated</li>
+</ul>
+
+<h3>The 70/30 Rule for Color</h3>
+<p>Build outfits with:</p>
+<ul>
+<li><strong>70% neutrals</strong> (base pieces: pants, shoes, jacket)</li>
+<li><strong>30% color</strong> (accent pieces: shirt, sweater, accessories)</li>
+</ul>
+
+<p>This ensures color enhances rather than overwhelms.</p>
+
+<h3>Neutral Combinations That Always Work</h3>
+<ul>
+<li>Black + white</li>
+<li>Navy + white</li>
+<li>Grey + white</li>
+<li>Black + grey</li>
+<li>Navy + grey</li>
+<li>Beige + white</li>
+<li>Brown + cream</li>
+<li>Navy + tan</li>
+<li>Charcoal + light grey</li>
+</ul>
+
+<p>Master these before adding color.</p>
+</section>
+
+<section>
+<h2>Adding Color: The Practical Guide</h2>
+
+<h3>Start with Accent Colors in Small Doses</h3>
+
+<p><strong>Beginner-friendly color additions:</strong></p>
+<ul>
+<li><strong>Burgundy/Maroon:</strong> Rich, sophisticated, masculine</li>
+<li><strong>Forest/Olive Green:</strong> Earthy, versatile, underutilized</li>
+<li><strong>Rust/Terracotta:</strong> Warm, unique, works with many neutrals</li>
+<li><strong>Mustard:</strong> Bold but grounded, pairs well with navy and grey</li>
+</ul>
+
+<p><strong>Where to add color first:</strong></p>
+<ol>
+<li><strong>Sweaters/Hoodies:</strong> Easy to layer over neutral tees, low-risk</li>
+<li><strong>Shirts:</strong> Can be worn alone or layered under neutral jackets</li>
+<li><strong>Accessories:</strong> Beanies, scarves, minimal commitment</li>
+<li><strong>Sneakers:</strong> Statement shoes with neutral outfit</li>
+</ol>
+
+<p><strong>Where NOT to add color first:</strong></p>
+<ul>
+<li>Pants (harder to coordinate, higher commitment)</li>
+<li>Outerwear (most visible piece, stick to neutrals until confident)</li>
+<li>Shoes (unless sneakers—leather shoes should stay neutral)</li>
+</ul>
+
+<h3>Foolproof Color Formulas</h3>
+
+<p><strong>Formula 1: Neutral Base + One Color</strong></p>
+<ul>
+<li>Grey pants + white tee + forest green hoodie + black shoes</li>
+<li>Black jeans + white tee + burgundy sweater + white sneakers</li>
+<li>Navy pants + olive overshirt + white tee + brown boots</li>
+</ul>
+
+<p><strong>Formula 2: Monochrome + Accent Color</strong></p>
+<ul>
+<li>All black outfit + rust orange beanie</li>
+<li>All grey outfit + navy jacket</li>
+<li>All navy outfit + white sneakers</li>
+</ul>
+
+<p><strong>Formula 3: Earth Tones Only</strong></p>
+<ul>
+<li>Brown jacket + olive shirt + tan pants + brown boots</li>
+<li>Camel coat + cream sweater + chocolate brown pants</li>
+<li>Olive jacket + rust tee + brown chinos + beige sneakers</li>
+</ul>
+
+<p><strong>Formula 4: Navy + Complementary Warm Tones</strong></p>
+<ul>
+<li>Navy jacket + tan pants + white tee</li>
+<li>Navy hoodie + rust shirt + grey jeans</li>
+<li>Navy coat + camel sweater + black pants</li>
+</ul>
+</section>
+
+<section>
+<h2>Colors to Avoid (And Why)</h2>
+
+<h3>Bright Primary Colors</h3>
+<p><strong>Why avoid:</strong> Pure red, bright blue, bright yellow look childish in casualwear unless used very intentionally (athletic/streetwear contexts)</p>
+<p><strong>Alternative:</strong> Use muted versions—burgundy instead of red, navy instead of bright blue, mustard instead of bright yellow</p>
+
+<h3>Neon and Fluorescent Colors</h3>
+<p><strong>Why avoid:</strong> Trendy, not timeless. Ages poorly. Hard to coordinate.</p>
+<p><strong>Alternative:</strong> Rich, saturated colors with depth (emerald green vs. neon green)</p>
+
+<h3>Too Many Competing Colors</h3>
+<p><strong>Why avoid:</strong> Looks chaotic, unfocused, try-hard</p>
+<p><strong>Rule:</strong> Maximum 3 colors per outfit (including neutrals)</p>
+
+<h3>Mismatched Browns and Blacks</h3>
+<p><strong>The mistake:</strong> Black shoes with brown belt, or brown shoes with black pants</p>
+<p><strong>The fix:</strong> Match your leathers (black with black, brown with brown) or separate them entirely</p>
+<p><strong>Exception:</strong> Black and brown CAN work if intentionally styled (black pants + brown suede jacket), but it's advanced</p>
+</section>
+
+<section>
+<h2>Understanding Color Temperature</h2>
+
+<h3>Warm Colors</h3>
+<p><strong>Colors:</strong> Reds, oranges, yellows, warm browns, beige, cream</p>
+<p><strong>Feel:</strong> Energetic, approachable, grounded</p>
+<p><strong>Best for:</strong> Fall/winter, casual settings, creating warmth</p>
+
+<h3>Cool Colors</h3>
+<p><strong>Colors:</strong> Blues, greens, purples, greys, black, white</p>
+<p><strong>Feel:</strong> Calm, professional, sophisticated</p>
+<p><strong>Best for:</strong> Spring/summer, formal settings, creating distance</p>
+
+<h3>Mixing Warm and Cool</h3>
+<p><strong>The rule:</strong> You can mix warm and cool, but keep one dominant</p>
+
+<p><strong>Good mixing:</strong></p>
+<ul>
+<li>Navy (cool) + tan (warm)—navy dominant, tan accent</li>
+<li>Olive (warm-ish) + charcoal (cool)—balanced neutral mix</li>
+<li>Burgundy (warm) + navy (cool)—both rich, similar saturation</li>
+</ul>
+
+<p><strong>Bad mixing:</strong></p>
+<ul>
+<li>Bright orange + bright blue (too much contrast, wrong saturations)</li>
+<li>Lime green + hot pink (just... no)</li>
+</ul>
+</section>
+
+<section>
+<h2>Seasonal Color Palettes</h2>
+
+<h3>Fall/Winter Palette</h3>
+<p><strong>Dominant colors:</strong></p>
+<ul>
+<li>Earth tones: Browns, tans, camel, rust, terracotta</li>
+<li>Deep jewel tones: Burgundy, forest green, navy, charcoal</li>
+<li>Warm neutrals: Cream, beige, chocolate brown</li>
+</ul>
+
+<p><strong>Why it works:</strong> Heavier fabrics in deeper colors feel seasonally appropriate and create warmth</p>
+
+<h3>Spring/Summer Palette</h3>
+<p><strong>Dominant colors:</strong></p>
+<ul>
+<li>Light neutrals: White, light grey, light beige, sand</li>
+<li>Soft pastels: Light blue, pale pink, mint (use sparingly)</li>
+<li>Muted brights: Olive, dusty blue, faded denim</li>
+</ul>
+
+<p><strong>Why it works:</strong> Lighter colors reflect heat, feel fresh and clean, work with summer's natural brightness</p>
+</section>
+
+<section>
+<h2>Color Coordination by Skin Tone</h2>
+
+<h3>Warm Undertones</h3>
+<p><strong>Identifying features:</strong> Veins look greenish, gold jewelry flatters, skin has yellow/peachy tone</p>
+
+<p><strong>Best colors:</strong></p>
+<ul>
+<li>Earth tones: Olive, rust, camel, warm browns, terracotta</li>
+<li>Warm jewel tones: Burgundy, amber, warm reds</li>
+<li>Warm neutrals: Cream, beige, warm grey, chocolate brown</li>
+</ul>
+
+<p><strong>Avoid:</strong> Icy colors, pure white (use cream instead), cool greys</p>
+
+<h3>Cool Undertones</h3>
+<p><strong>Identifying features:</strong> Veins look bluish, silver jewelry flatters, skin has pink/rosy tone</p>
+
+<p><strong>Best colors:</strong></p>
+<ul>
+<li>Cool tones: Navy, royal blue, charcoal, true black, emerald</li>
+<li>Cool jewel tones: Sapphire, ruby, amethyst</li>
+<li>Cool neutrals: Pure white, cool grey, black</li>
+</ul>
+
+<p><strong>Avoid:</strong> Orange, rust, warm browns (use cool browns instead)</p>
+
+<h3>Neutral Undertones</h3>
+<p><strong>Identifying features:</strong> Veins appear blue-green, both metals look good</p>
+
+<p><strong>Best colors:</strong> Nearly everything works. Lucky you.</p>
+
+<p><strong>Strategy:</strong> Experiment freely, you have the most flexibility</p>
+</section>
+
+<section>
+<h2>Advanced Color Techniques</h2>
+
+<h3>Tonal Layering</h3>
+<p><strong>What it is:</strong> Layering similar tones for sophisticated depth</p>
+
+<p><strong>Example:</strong></p>
+<ul>
+<li>Charcoal coat + medium grey sweater + light grey shirt + dark grey pants</li>
+<li>Forest green jacket + olive hoodie + sage green tee</li>
+<li>Navy overcoat + royal blue sweater + light blue shirt</li>
+</ul>
+
+<p><strong>Why it works:</strong> Creates dimension without contrast chaos</p>
+
+<h3>The Accent Pop</h3>
+<p><strong>What it is:</strong> Neutral outfit with one bold color accent</p>
+
+<p><strong>Example:</strong></p>
+<ul>
+<li>All black outfit + white sneakers (classic)</li>
+<li>Grey monochrome + burgundy beanie (subtle pop)</li>
+<li>Navy and white + rust jacket (warm accent)</li>
+</ul>
+
+<p><strong>Rule:</strong> Keep the accent to 10-15% of total outfit</p>
+
+<h3>Pattern as Color</h3>
+<p><strong>What it is:</strong> Using patterns to introduce multiple colors cohesively</p>
+
+<p><strong>Example:</strong></p>
+<ul>
+<li>Navy and rust plaid flannel pulls double duty (navy = cool, rust = warm)</li>
+<li>Subtle camo in earth tones incorporates multiple greens/browns</li>
+<li>Striped tee introduces second color without commitment</li>
+</ul>
+
+<p><strong>Rule:</strong> Pattern should be the only color interest—keep everything else neutral</p>
+</section>
+
+<section>
+<h2>Common Color Mistakes to Avoid</h2>
+
+<h3>Mistake 1: Matching Everything Exactly</h3>
+<p><strong>The problem:</strong> Navy shoes + navy pants + navy shirt = too matchy, looks costume-y</p>
+<p><strong>The fix:</strong> Use different shades of the same color, or break it up with neutrals</p>
+
+<h3>Mistake 2: Too Many Colors</h3>
+<p><strong>The problem:</strong> Red shirt + blue pants + green jacket + yellow shoes = visual chaos</p>
+<p><strong>The fix:</strong> Limit to 3 colors max, let neutrals dominate</p>
+
+<h3>Mistake 3: Ignoring Color Saturation</h3>
+<p><strong>The problem:</strong> Mixing muted olive with bright neon green</p>
+<p><strong>The fix:</strong> Match saturation levels—muted with muted, bright with bright (though muted is usually safer in menswear)</p>
+
+<h3>Mistake 4: Black and Navy Together</h3>
+<p><strong>The debate:</strong> Some say never, others say it's fine</p>
+<p><strong>The truth:</strong> It CAN work, but it's tricky. They're too similar to create intentional contrast, but different enough to look like a mistake</p>
+<p><strong>The fix:</strong> If you're going to do it, make it obvious (black pants + navy blazer + white shirt for clear separation)</p>
+
+<h3>Mistake 5: Wearing Colors That Don't Match Your Undertone</h3>
+<p><strong>The problem:</strong> Cool-toned person wearing orange (looks washed out)</p>
+<p><strong>The fix:</strong> Know your undertone, stick to your color family</p>
+</section>
+
+<section>
+<h2>Building a Versatile Color Wardrobe</h2>
+
+<h3>Essential Neutral Base (70% of wardrobe)</h3>
+<ul>
+<li>Black: 2-3 pieces (tees, jeans, jacket)</li>
+<li>White: 2-3 pieces (tees, sneakers)</li>
+<li>Grey: 2-3 pieces (hoodies, pants, sweaters)</li>
+<li>Navy: 2-3 pieces (jacket, jeans, sweater)</li>
+<li>Tan/Beige: 1-2 pieces (pants, outerwear)</li>
+</ul>
+
+<h3>Color Accents (30% of wardrobe)</h3>
+<ul>
+<li>1 rich red/burgundy piece (sweater or hoodie)</li>
+<li>1 green piece (olive or forest green jacket/overshirt)</li>
+<li>1 warm accent (rust, terracotta, or mustard shirt/sweater)</li>
+<li>1-2 seasonal colors (rotate as needed)</li>
+</ul>
+
+<p><strong>Total wardrobe: 15-20 pieces with infinite combinations</strong></p>
+</section>
+
+<section>
+<h2>Quick Reference: Colors That Always Work Together</h2>
+
+<h3>Neutral Combos</h3>
+<ul>
+<li>Black + white</li>
+<li>Navy + white</li>
+<li>Grey + white</li>
+<li>Black + grey</li>
+<li>Navy + grey</li>
+<li>Navy + tan</li>
+<li>Brown + cream</li>
+<li>Charcoal + beige</li>
+</ul>
+
+<h3>Color + Neutral Combos</h3>
+<ul>
+<li>Burgundy + grey</li>
+<li>Olive + black</li>
+<li>Navy + rust/camel</li>
+<li>Forest green + tan</li>
+<li>Charcoal + burgundy</li>
+<li>Mustard + navy</li>
+<li>Rust + charcoal</li>
+</ul>
+
+<h3>Advanced Color Combos</h3>
+<ul>
+<li>Navy + burgundy + white</li>
+<li>Olive + rust + cream</li>
+<li>Charcoal + forest green + tan</li>
+<li>Navy + camel + brown</li>
+</ul>
+</section>
+
+<section>
+<h2>The Bottom Line</h2>
+
+<p>Color coordination isn't complicated once you understand the fundamentals:</p>
+
+<ol>
+<li><strong>Master neutrals first</strong> (black, white, grey, navy, tan)</li>
+<li><strong>Add color gradually</strong> through hoodies, sweaters, and shirts</li>
+<li><strong>Stick to 3 colors max</strong> per outfit</li>
+<li><strong>Use the 70/30 rule</strong> (70% neutral, 30% color)</li>
+<li><strong>Match your undertone</strong> (warm or cool skin tones)</li>
+<li><strong>Keep saturation consistent</strong> (muted with muted, bright with bright)</li>
+</ol>
+
+<p>Start with monochromatic outfits. Graduate to analogous colors. Experiment with complementary pairings once you're confident.</p>
+
+<p>Color is a tool, not a mystery. Use it intentionally.</p>
+</section>
+    `,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur and founder of 1ABEL. Believes in eliminating friction from daily life through intentional design.'
+    },
     publishedAt: '2025-02-12',
     updatedAt: '2025-02-12',
     readTime: '16 min',
     category: 'Style',
-    tags: ['test'],
+    tags: ['color theory', 'color coordination', 'menswear', 'style guide', 'fashion basics', 'color matching'],
     featured: false,
     seo: {
-      metaTitle: 'Test',
-      metaDescription: 'Test',
-      keywords: ['test']
+      metaTitle: 'Clothing Color Theory for Men | Complete Color Coordination Guide',
+      metaDescription: 'Master color coordination in menswear. Complete guide to color theory, foolproof color combinations, and avoiding common mistakes. Build a versatile color wardrobe.',
+      keywords: [
+        'color theory clothing',
+        'color coordination men',
+        'how to match colors clothes',
+        'menswear color guide',
+        'color matching outfits',
+        'clothing color combinations',
+        'color wheel fashion',
+        'color theory menswear'
+      ]
     }
   },
   {
