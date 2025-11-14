@@ -19,10 +19,15 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
     restDelta: 0.001
   })
 
-  // Get related posts (same category, exclude current)
-  const relatedPosts = blogPosts
+  // Get related posts (same category first, then fill with other recent posts)
+  const sameCategoryPosts = blogPosts
     .filter(p => p.category === post.category && p.slug !== post.slug)
-    .slice(0, 3)
+
+  const otherPosts = blogPosts
+    .filter(p => p.category !== post.category && p.slug !== post.slug)
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+
+  const relatedPosts = [...sameCategoryPosts, ...otherPosts].slice(0, 4)
 
   // Add structured data for SEO
   useEffect(() => {
@@ -209,10 +214,10 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-12">
-                Related Articles
+                Continue Reading
               </h2>
 
-              <div className="grid md:grid-cols-3 gap-8 md:gap-10">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
                 {relatedPosts.map((relatedPost, index) => (
                   <motion.div
                     key={relatedPost.slug}
