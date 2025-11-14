@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
-import { BookOpen, ShoppingCart, ChevronDown, Menu, X, FileText } from 'lucide-react'
+import { ShoppingCart, ChevronDown, Menu, X, FileText } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { useCart } from '@/lib/cartContext'
@@ -205,27 +205,6 @@ export function Header() {
 
             {/* Right Menu - Desktop */}
             <div className="hidden md:flex items-center justify-end space-x-8">
-              <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
-                <Link
-                  href="/about"
-                  className={`text-xs font-medium tracking-wider uppercase transition-colors flex items-center relative ${
-                    isDark
-                      ? isActive('/about') ? 'text-white' : 'text-gray-400 hover:text-white'
-                      : isActive('/about') ? 'text-black' : 'text-gray-500 hover:text-black'
-                  }`}
-                  onClick={() => {}}
-                >
-                  <BookOpen className="w-4 h-4 mr-1" />
-                  ABOUT
-                  {isActive('/about') && (
-                    <motion.div
-                      layoutId="activeNav"
-                      className={`absolute -bottom-1 left-0 right-0 h-px ${isDark ? 'bg-white' : 'bg-black'}`}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                    />
-                  )}
-                </Link>
-              </motion.div>
               <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
                 <Link
                   href="/blog"
@@ -504,20 +483,6 @@ export function Header() {
                     )}
                   </AnimatePresence>
                 </div>
-
-                {/* About Link */}
-                <Link
-                  href="/about"
-                  className={`text-lg font-medium tracking-wider uppercase transition-colors flex items-center py-3 ${
-                    isDark
-                      ? isActive('/about') ? 'text-white' : 'text-gray-400 hover:text-white'
-                      : isActive('/about') ? 'text-black' : 'text-gray-500 hover:text-black'
-                  }`}
-                  onClick={() => { setMobileMenuOpen(false); }}
-                >
-                  <BookOpen className="w-5 h-5 mr-2" />
-                  ABOUT
-                </Link>
 
                 {/* Blog Link */}
                 <Link
