@@ -282,16 +282,8 @@ export function Header() {
               </motion.div>
             </div>
 
-            {/* Right - Mobile (Menu Button) */}
+            {/* Right - Mobile (Empty for symmetry) */}
             <div className="flex md:hidden items-center justify-end">
-              <motion.button
-                onClick={() => setMobileMenuOpen(true)}
-                className={`p-2 ${isDark ? 'text-white' : 'text-black'}`}
-                whileTap={{ scale: 0.95 }}
-                aria-label="Open menu"
-              >
-                <Menu className="w-6 h-6" />
-              </motion.button>
             </div>
           </div>
         </div>

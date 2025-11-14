@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Home, ShoppingBag, Layers, Mail } from 'lucide-react'
+import { Home, ShoppingBag, Layers, Mail, FileText } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useMemo, useEffect } from 'react'
@@ -112,7 +112,7 @@ export function MobileBottomNav() {
         animate={{ y: isVisible ? 0 : 100 }}
         transition={{ duration: 0.2, ease: 'easeOut' }}
       >
-        <div className="grid grid-cols-4 h-16">
+        <div className="grid grid-cols-5 h-16">
           {/* Home */}
           <Link href="/" className="flex flex-col items-center justify-center">
             <motion.div
@@ -162,7 +162,20 @@ export function MobileBottomNav() {
             </motion.div>
           </Link>
 
-          {/* Contact */}
+          {/* Blog - 4th position */}
+          <Link href="/blog" className="flex flex-col items-center justify-center">
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              className={`flex flex-col items-center justify-center ${
+                pathname.startsWith('/blog') ? 'text-black' : 'text-gray-500'
+              }`}
+            >
+              <FileText className="w-5 h-5 mb-1" />
+              <span className="text-[10px] font-medium tracking-wide uppercase">Blog</span>
+            </motion.div>
+          </Link>
+
+          {/* Contact - 5th position */}
           <Link href="/contact" className="flex flex-col items-center justify-center">
             <motion.div
               whileTap={{ scale: 0.9 }}
