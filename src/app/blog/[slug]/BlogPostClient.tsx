@@ -3,6 +3,7 @@
 import { motion, useScroll, useSpring } from 'framer-motion'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
+import { MobileBottomNav } from '@/components/MobileBottomNav'
 import { BlogPost, blogPosts } from '@/data/blog-posts'
 import { useEffect } from 'react'
 
@@ -187,21 +188,6 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               ))}
             </div>
           </div>
-
-          {/* Author Bio */}
-          <div className="mt-16 p-10 bg-gradient-to-br from-gray-50 to-white border border-black/5 rounded-sm">
-            <div className="flex items-start gap-6">
-              <div className="w-20 h-20 bg-black text-white flex items-center justify-center font-bold text-3xl flex-shrink-0 rounded-sm">
-                {post.author.name.charAt(0)}
-              </div>
-              <div className="flex-1">
-                <div className="text-[10px] tracking-[0.25em] uppercase text-gray-400 mb-2">Written By</div>
-                <h3 className="font-bold text-xl mb-3 tracking-tight">{post.author.name}</h3>
-                <p className="text-[15px] text-gray-700 leading-[1.7] mb-4">{post.author.bio}</p>
-                <div className="text-xs text-gray-500 tracking-wide">{post.author.role}</div>
-              </div>
-            </div>
-          </div>
         </motion.div>
 
         {/* Related Posts */}
@@ -333,6 +319,8 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
           </div>
         </div>
       </footer>
+
+      <MobileBottomNav />
     </div>
   )
 }
