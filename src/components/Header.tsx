@@ -484,32 +484,43 @@ export function Header() {
                   </AnimatePresence>
                 </div>
 
-                {/* Blog Link */}
-                <Link
-                  href="/blog"
-                  className={`text-lg font-medium tracking-wider uppercase transition-colors flex items-center py-3 ${
-                    isDark
-                      ? pathname.startsWith('/blog') ? 'text-white' : 'text-gray-400 hover:text-white'
-                      : pathname.startsWith('/blog') ? 'text-black' : 'text-gray-500 hover:text-black'
-                  }`}
-                  onClick={() => { setMobileMenuOpen(false); }}
-                >
-                  <FileText className="w-5 h-5 mr-2" />
-                  BLOG
-                </Link>
+                {/* Mobile Menu Links Row */}
+                <div className="grid grid-cols-2 gap-4">
+                  {/* Blog Link - 4th position */}
+                  <Link
+                    href="/blog"
+                    className={`text-lg font-medium tracking-wider uppercase transition-colors flex items-center justify-center py-4 border ${
+                      isDark
+                        ? pathname.startsWith('/blog')
+                          ? 'text-white bg-white/10 border-white/20'
+                          : 'text-gray-400 hover:text-white border-gray-800 hover:bg-white/5'
+                        : pathname.startsWith('/blog')
+                          ? 'text-black bg-black/5 border-black/20'
+                          : 'text-gray-500 hover:text-black border-gray-200 hover:bg-black/5'
+                    }`}
+                    onClick={() => { setMobileMenuOpen(false); }}
+                  >
+                    <FileText className="w-5 h-5 mr-2" />
+                    BLOG
+                  </Link>
 
-                {/* Contact Link */}
-                <Link
-                  href="/contact"
-                  className={`text-lg font-medium tracking-wider uppercase transition-colors py-3 ${
-                    isDark
-                      ? isActive('/contact') ? 'text-white' : 'text-gray-400 hover:text-white'
-                      : isActive('/contact') ? 'text-black' : 'text-gray-500 hover:text-black'
-                  }`}
-                  onClick={() => { setMobileMenuOpen(false); }}
-                >
-                  CONTACT US
-                </Link>
+                  {/* Contact Link - 5th position */}
+                  <Link
+                    href="/contact"
+                    className={`text-lg font-medium tracking-wider uppercase transition-colors flex items-center justify-center py-4 border ${
+                      isDark
+                        ? isActive('/contact')
+                          ? 'text-white bg-white/10 border-white/20'
+                          : 'text-gray-400 hover:text-white border-gray-800 hover:bg-white/5'
+                        : isActive('/contact')
+                          ? 'text-black bg-black/5 border-black/20'
+                          : 'text-gray-500 hover:text-black border-gray-200 hover:bg-black/5'
+                    }`}
+                    onClick={() => { setMobileMenuOpen(false); }}
+                  >
+                    CONTACT
+                  </Link>
+                </div>
 
                 {/* Cart Link */}
                 <Link
