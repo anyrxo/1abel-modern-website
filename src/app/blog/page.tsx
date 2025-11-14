@@ -4,20 +4,10 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { blogPosts } from '@/data/blog-posts'
-import { useState } from 'react'
-import { Rss } from 'lucide-react'
 
 export default function BlogPage() {
-  const [selectedCategory, setSelectedCategory] = useState<string>('All')
-
-  const categories = ['All', ...Array.from(new Set(blogPosts.map(post => post.category)))]
-
-  const filteredPosts = selectedCategory === 'All'
-    ? blogPosts
-    : blogPosts.filter(post => post.category === selectedCategory)
-
   const featuredPosts = blogPosts.filter(post => post.featured)
-  const regularPosts = filteredPosts.filter(post => !post.featured)
+  const regularPosts = blogPosts.filter(post => !post.featured)
 
   return (
     <div className="bg-white text-black min-h-screen relative">
@@ -48,53 +38,15 @@ export default function BlogPage() {
               Insights
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-600 font-light max-w-2xl mx-auto leading-relaxed mb-6">
+            <p className="text-lg md:text-xl text-gray-600 font-light max-w-2xl mx-auto leading-relaxed">
               Thoughts on minimalism, slow fashion, design philosophy, and building a wardrobe that actually works.
             </p>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 0.8 }}
-            >
-              <a
-                href="/blog/feed.xml"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-black transition-colors"
-              >
-                <Rss className="w-4 h-4" />
-                Subscribe via RSS
-              </a>
-            </motion.div>
-          </motion.div>
-
-          {/* Category Filter */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-wrap justify-center gap-3 mb-16"
-          >
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-5 py-2 text-xs tracking-[0.2em] uppercase transition-all duration-300 border ${
-                  selectedCategory === category
-                    ? 'bg-black text-white border-black'
-                    : 'bg-white text-gray-600 border-gray-300 hover:border-black'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
           </motion.div>
         </div>
       </section>
 
       {/* Featured Posts */}
-      {selectedCategory === 'All' && featuredPosts.length > 0 && (
+      {featuredPosts.length > 0 && (
         <section className="px-4 md:px-8 pb-20 relative border-t border-black/5">
           <div className="max-w-7xl mx-auto pt-20">
             <motion.div
@@ -178,7 +130,7 @@ export default function BlogPage() {
               className="mb-12"
             >
               <h2 className="text-xs tracking-[0.3em] uppercase text-gray-400 mb-2">
-                {selectedCategory === 'All' ? 'All Articles' : selectedCategory}
+                All Articles
               </h2>
             </motion.div>
 
