@@ -4,6 +4,8 @@ import { motion, useScroll, useTransform, useMotionValue, useSpring, AnimatePres
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { useState, useRef, useEffect } from 'react'
+import { blogPosts } from '@/data/blog-posts'
+import { ArrowRight } from 'lucide-react'
 
 export default function HomePage() {
   const { scrollYProgress, scrollY } = useScroll()
@@ -375,6 +377,86 @@ export default function HomePage() {
             </div>
           </div>
         </motion.div>
+      </section>
+
+      {/* Latest from the Blog */}
+      <section className="py-32 px-4 md:px-8 bg-black relative border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="mb-16"
+          >
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xs tracking-[0.3em] uppercase text-gray-600">Latest Insights</h2>
+              <Link
+                href="/blog"
+                className="text-xs tracking-[0.2em] uppercase text-gray-500 hover:text-white transition-colors inline-flex items-center gap-2"
+              >
+                View All
+                <ArrowRight className="w-3 h-3" />
+              </Link>
+            </div>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Thoughts on minimalism,<br />
+              <span className="text-gray-500">slow fashion, and design.</span>
+            </h3>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+            {blogPosts.slice(0, 3).map((post, index) => (
+              <motion.article
+                key={post.slug}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+              >
+                <Link href={`/blog/${post.slug}`} className="group block">
+                  <div className="aspect-[4/3] bg-gradient-to-br from-gray-900 to-black border border-white/5 mb-6 relative overflow-hidden group-hover:border-white/10 transition-all duration-500">
+                    <div className="absolute inset-0 bg-white/0 group-hover:bg-white/5 transition-all duration-700" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-6xl font-bold tracking-tighter opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-700 uppercase">
+                        {post.category}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3 text-xs text-gray-600">
+                      <span className="tracking-[0.2em] uppercase">{post.category}</span>
+                      <span>•</span>
+                      <span>{post.readTime}</span>
+                    </div>
+
+                    <h4 className="text-xl md:text-2xl font-bold leading-tight group-hover:text-gray-300 transition-colors line-clamp-2">
+                      {post.title}
+                    </h4>
+
+                    <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
+                      {post.excerpt}
+                    </p>
+
+                    <div className="pt-2">
+                      <span className="text-xs tracking-[0.2em] uppercase text-gray-500 group-hover:text-gray-400 transition-colors inline-flex items-center gap-2">
+                        Read More
+                        <motion.span
+                          className="inline-block"
+                          animate={{ x: [0, 4, 0] }}
+                          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                        >
+                          →
+                        </motion.span>
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </motion.article>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Footer */}
