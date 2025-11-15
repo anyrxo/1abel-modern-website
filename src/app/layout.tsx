@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://1abel.com'),
   title: '1ABEL - Music-Inspired Minimalist Fashion',
   description: 'Premium minimalist essentials for those who move too fast to overthink their wardrobe. Arc 2 Shadow & Arc 3 Light collections by Anyro.',
-  keywords: 'minimalist fashion, music-inspired clothing, premium streetwear, Arc 2 Shadow (VOID STEEL BLOOD MOSS EARTH), Arc 3 Light (CLOUD SAKURA MIST SAND LILAC), designer essentials, contemporary menswear, womenswear, gender-neutral fashion, sustainable fashion, slow fashion, timeless wardrobe, 1ABEL, Anyro, @anyrxo, aesthetic clothing, intentional design, urban minimalism, monochrome fashion, capsule wardrobe, quality basics, curated clothing, fashion for creatives, music and fashion, frequency wear',
+  keywords: '1abel, 1ABEL, 1abel fashion, 1abel clothing, 1abel brand, 1abel minimalist, 1abel arc 2, 1abel arc 3, 1abel store, 1abel shop, buy 1abel, minimalist fashion, music-inspired clothing, premium streetwear, Arc 2 Shadow, Arc 3 Light, VOID STEEL BLOOD MOSS EARTH, CLOUD SAKURA MIST SAND LILAC, designer essentials, contemporary menswear, womenswear, gender-neutral fashion, sustainable fashion, slow fashion, timeless wardrobe, Anyro, Anyro fashion, @anyrxo, aesthetic clothing, intentional design, urban minimalism, monochrome fashion, capsule wardrobe, quality basics, curated clothing, fashion for creatives, music and fashion, frequency wear, where sound becomes style, iimagined fashion, music inspired fashion brand',
   authors: [{ name: '1ABEL - A Brand of IImagined Company' }],
   creator: 'IImagined Company',
   publisher: 'IImagined Company',
@@ -281,6 +281,7 @@ export default function RootLayout({
             __html: JSON.stringify(faqSchema),
           }}
         />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="//1abel.com" />
