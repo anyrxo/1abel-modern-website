@@ -83,15 +83,12 @@ export function IndexNow({ urls }: { urls?: string[] }) {
 /**
  * Generate or retrieve IndexNow API key
  *
- * In production, this should be a static key stored in your public folder
- * as /indexnow-key.txt
+ * This key is stored in /public/indexnow-key.txt
+ * Key: 21c1b6aa5252f4b3a3f828e36098226a
  */
 function generateIndexNowKey(): string {
-  // In production, use a real key that matches /indexnow-key.txt
-  // Generate one at: https://www.bing.com/indexnow
-
-  // Example key format (replace with your actual key)
-  return '1234567890abcdef1234567890abcdef'
+  // Production key that matches /public/indexnow-key.txt
+  return '21c1b6aa5252f4b3a3f828e36098226a'
 }
 
 /**

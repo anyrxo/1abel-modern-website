@@ -161,4 +161,5 @@ Sitemap: https://1abel.com/sitemap-arc3.xml
 Sitemap: https://1abel.com/sitemap-images.xml
 
 # IndexNow for instant indexing on Bing, Yandex, Seznam
-# Key: https://1abel.com/indexnow-key.txt
+# Key location: https://1abel.com/indexnow-key.txt
+# Key: 21c1b6aa5252f4b3a3f828e36098226a
