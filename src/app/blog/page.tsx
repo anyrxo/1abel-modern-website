@@ -231,6 +231,9 @@ export default function BlogPage() {
                   <Link href="/blog" className="hover:text-black transition-colors inline-block">Blog</Link>
                 </li>
                 <li>
+                  <Link href="/press" className="hover:text-black transition-colors inline-block">Press</Link>
+                </li>
+                <li>
                   <Link href="/terms" className="hover:text-black transition-colors inline-block">Terms</Link>
                 </li>
                 <li>

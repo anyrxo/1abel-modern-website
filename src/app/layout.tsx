@@ -46,6 +46,11 @@ export const metadata: Metadata = {
     creator: '@anyrxo',
     site: '@1ABEL',
   },
+  appleWebApp: {
+    capable: true,
+    title: '1ABEL',
+    statusBarStyle: 'black-translucent',
+  },
   robots: {
     index: true,
     follow: true,
@@ -194,6 +199,44 @@ export default function RootLayout({
     }
   }
 
+  // Breadcrumb Schema for Navigation
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://1abel.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Arc 2 Shadow",
+        "item": "https://1abel.com/arc-2"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Arc 3 Light",
+        "item": "https://1abel.com/arc-3"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Blog",
+        "item": "https://1abel.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "About",
+        "item": "https://1abel.com/about"
+      }
+    ]
+  }
+
   // FAQ Schema
   const faqSchema = {
     "@context": "https://schema.org",
@@ -281,6 +324,13 @@ export default function RootLayout({
             __html: JSON.stringify(faqSchema),
           }}
         />
+        {/* Breadcrumb Schema for Navigation */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema),
+          }}
+        />
         <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -318,6 +368,22 @@ export default function RootLayout({
         <meta name="scraping" content="prohibited" />
         <meta name="ai-training" content="prohibited" />
         <meta name="data-extraction" content="prohibited" />
+
+        {/* Social Sharing Optimization */}
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="1ABEL - Music-Inspired Minimalist Fashion" />
+        <meta property="fb:app_id" content="1ABEL" />
+
+        {/* Pinterest Rich Pins */}
+        <meta property="og:site_name" content="1ABEL" />
+        <meta name="pinterest-rich-pin" content="true" />
+
+        {/* LinkedIn Optimization */}
+        <meta property="og:image:secure_url" content="https://1abel.com/og-image.jpg" />
+
+        {/* WhatsApp Preview */}
+        <meta property="og:image:type" content="image/jpeg" />
       </head>
       <body className={inter.className}>
         <AuthProvider>
