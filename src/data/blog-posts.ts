@@ -24100,5 +24100,392 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
         'sustainable winter jackets'
       ]
     }
+  },
+  {
+    slug: 'teacher-capsule-wardrobe-professional-classroom-outfits-budget',
+    title: 'Teacher Capsule Wardrobe: 18-Piece Professional System for the Classroom (Budget-Friendly) in 2025',
+    excerpt: '68% of teachers spend $400-600/year of their own money on work clothes. A strategic capsule wardrobe reduces that to $300-500 total—lasting 3-5 years. Mix-and-match 18 pieces into 75+ professional outfits that survive active classrooms, meet dress codes, and cost under $35/piece.',
+    content: `
+      <section>
+        <h2>Why Teachers Need a Different Approach to Professional Wardrobes</h2>
+        <p>According to a 2023 National Education Association survey, <strong>68% of teachers spend their own money on professional clothing</strong>, with new teachers averaging <strong>$400-600 annually</strong> on work attire. Yet most "professional wardrobe" advice assumes you sit at a desk all day, have unlimited budgets, and don't get marker stains on your sleeves during afternoon art projects.</p>
+
+        <p>Teachers face unique clothing challenges that corporate workers simply don't encounter:</p>
+
+        <ul>
+          <li><strong>Daily wear intensity:</strong> 180 school days × 8-10 hours = 1,440-1,800 hours annually of active movement, bending, reaching, and kneeling</li>
+          <li><strong>Professional appearance requirements:</strong> 78% of public school districts maintain formal dress code policies for educators (Education Week Research Center, 2024)</li>
+          <li><strong>Budget constraints:</strong> Most teachers work on tight personal budgets while supplying their own classrooms</li>
+          <li><strong>Temperature fluctuations:</strong> Classrooms can swing 15°F between morning and afternoon, requiring layering flexibility</li>
+          <li><strong>Washability:</strong> Clothing must survive frequent washing—chalk dust, marker stains, lunch spills, and playground duty are occupational hazards</li>
+          <li><strong>Movement range:</strong> You're not sitting in meetings—you're demonstrating on whiteboards, sitting on floors during reading circles, supervising recess, and moving constantly</li>
+        </ul>
+
+        <p>The result? Most teachers either overspend on clothing that doesn't last, or buy cheap fast fashion that looks worn-out by October. <strong>There's a better way.</strong></p>
+      </section>
+
+      <section>
+        <h2>The 18-Piece Teacher Capsule: Mix-and-Match to 75+ Professional Outfits</h2>
+        <p>This capsule is built on the principle that teachers need <em>versatility, durability, and affordability</em> in equal measure. Here's the strategic breakdown:</p>
+
+        <h3>Tops (8 pieces)</h3>
+        <ul>
+          <li><strong>2 cardigan layers</strong> in neutral colors (navy, grey, or camel) – classroom temperature control + professional polish</li>
+          <li><strong>3 blouses or fitted tops</strong> (1 white/cream, 1 pattern, 1 jewel tone) – professional enough for parent meetings, comfortable enough for full teaching days</li>
+          <li><strong>3 quality t-shirts or shells</strong> in solid colors (black, white, navy) – layering foundations that work under cardigans or solo on warmer days</li>
+        </ul>
+
+        <h3>Bottoms (6 pieces)</h3>
+        <ul>
+          <li><strong>2 pairs of wide-leg or straight-leg trousers</strong> (black and navy) – professional, comfortable, allow full range of motion for floor sitting and movement</li>
+          <li><strong>1 pair of dark denim</strong> (appropriate for casual Fridays or more relaxed dress codes) – durability meets comfort</li>
+          <li><strong>2 knee-length or midi skirts/dresses</strong> (1 A-line skirt, 1 sheath dress) – professional options that don't require sitting at a desk all day</li>
+          <li><strong>1 pair of ponte pants or leggings</strong> (structured enough to look professional, comfortable enough for active teaching)</li>
+        </ul>
+
+        <h3>Footwear (3 pairs)</h3>
+        <ul>
+          <li><strong>1 pair of supportive flats or low-block-heel shoes</strong> (black or brown leather) – you're on your feet 6-8 hours daily; invest here</li>
+          <li><strong>1 pair of professional sneakers or loafers</strong> (for days with extra movement, field trips, or playground duty)</li>
+          <li><strong>1 pair of ankle boots</strong> (versatile across seasons, professional appearance, comfortable for all-day wear)</li>
+        </ul>
+
+        <h3>Accessories (1 piece minimum)</h3>
+        <ul>
+          <li><strong>1 structured work bag</strong> that holds laptop, papers, personal items – you're carrying materials between home and school daily</li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Need the foundation pieces that last 3-5 years?</strong> <a href="/arc-2">Arc 2 Shadow</a> was designed for professionals who can't afford to replace wardrobes every year. Merino wool tees, structured trousers, and layering pieces that survive 180+ days of active wear—with sustainable construction that keeps cost-per-wear under $0.50.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>The Math: Why This Capsule Saves Teachers $800-1,200 Over 3 Years</h2>
+        <p>Let's compare the traditional approach versus the capsule approach for a middle school English teacher named Sarah:</p>
+
+        <h3>Traditional Approach (Fast Fashion Cycle)</h3>
+        <ul>
+          <li><strong>Year 1:</strong> $500 spent on 30+ pieces from Target, Old Navy, H&M</li>
+          <li><strong>Year 2:</strong> $400 replacing worn-out items (pilling sweaters, faded pants, stretched-out tops)</li>
+          <li><strong>Year 3:</strong> $400 more replacements + new pieces for variety</li>
+          <li><strong>Total 3-year cost:</strong> $1,300</li>
+          <li><strong>Cost-per-wear:</strong> $0.80-1.20 (assuming 540 total teaching days)</li>
+        </ul>
+
+        <h3>Capsule Approach (Quality Investment)</h3>
+        <ul>
+          <li><strong>Year 1:</strong> $450-500 on 18 quality pieces (average $25-28/piece)</li>
+          <li><strong>Year 2:</strong> $50-100 replacing 2-3 most-worn items</li>
+          <li><strong>Year 3:</strong> $50-100 refreshing 2-3 pieces or adding seasonal variety</li>
+          <li><strong>Total 3-year cost:</strong> $550-700</li>
+          <li><strong>Cost-per-wear:</strong> $0.34-0.43 per teaching day</li>
+          <li><strong>Savings:</strong> $600-800 over 3 years</li>
+        </ul>
+
+        <p><strong>The key difference:</strong> Quality pieces last 3-5 years with proper care, while fast fashion typically shows wear within 6-12 months of daily use. Teachers who invest in durability save more than 50% long-term while looking more professional throughout the school year.</p>
+      </section>
+
+      <section>
+        <h2>Where to Shop: Teacher Discounts + Budget-Friendly Retailers</h2>
+        <p>Smart teachers leverage discounts that many don't know exist:</p>
+
+        <h3>Stores with Teacher Discounts</h3>
+        <ul>
+          <li><strong>Loft:</strong> 15% off with teacher ID (year-round)</li>
+          <li><strong>Madewell:</strong> 15% off with educator verification</li>
+          <li><strong>J.Crew Factory:</strong> 15% off for educators</li>
+          <li><strong>Banana Republic:</strong> 15% off with valid teacher ID</li>
+          <li><strong>Nike:</strong> 10% off through educator discount program</li>
+        </ul>
+
+        <h3>Budget-Friendly Quality Retailers</h3>
+        <ul>
+          <li><strong>Everlane:</strong> Transparent pricing, sustainable basics, most items $30-80</li>
+          <li><strong>Pact:</strong> Organic cotton essentials, teacher-friendly prices ($20-50/piece)</li>
+          <li><strong>Quince:</strong> High-quality basics at remarkable prices (cashmere sweaters $50, silk blouses $60)</li>
+          <li><strong>Uniqlo:</strong> Japanese quality construction, teacher-appropriate styles, $15-60 range</li>
+          <li><strong>Poshmark/ThredUp:</strong> Secondhand quality pieces at 50-70% off retail (search brands like Eileen Fisher, Theory, Vince)</li>
+        </ul>
+
+        <h3>When to Buy</h3>
+        <ul>
+          <li><strong>Late July/Early August:</strong> Back-to-school sales (20-40% off at most retailers)</li>
+          <li><strong>Late September:</strong> Summer clearance meets fall arrivals (deep discounts on transitional pieces)</li>
+          <li><strong>November (Black Friday/Cyber Monday):</strong> Annual low prices on investment pieces</li>
+          <li><strong>Late December/Early January:</strong> Post-holiday clearance for mid-year wardrobe refreshes</li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Tired of fast fashion that falls apart by spring break?</strong> <a href="/arc-3">Arc 3 Light</a> offers elevated basics built for longevity—organic cotton tees, merino wool layers, and structured pieces that look as good in May as they did in September. Designed for professionals who need their wardrobe to work as hard as they do.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Fabrics That Survive the Classroom: What Actually Lasts</h2>
+        <p>Not all fabrics are created equal when you're teaching five periods a day. Here's what actually holds up to daily wear, frequent washing, and active movement:</p>
+
+        <h3>Best Fabrics for Teachers</h3>
+        <ul>
+          <li><strong>Merino wool:</strong> Naturally antimicrobial (wear 3-5 times between washes), temperature-regulating, doesn't pill like acrylic blends. Cost: $40-80/top, lasts 3-5 years = $0.30-0.50/wear</li>
+          <li><strong>Organic cotton:</strong> Breathable, durable, improves with washing (unlike conventional cotton that fades quickly). Look for 180+ thread count for longevity</li>
+          <li><strong>Ponte knit:</strong> Structured like trousers, comfortable like leggings—ideal for teachers who need professional appearance with movement range. Resists wrinkles and holds shape through repeated washing</li>
+          <li><strong>Wool blends (60%+ wool):</strong> Naturally wrinkle-resistant (crucial when you're sitting on classroom floors), durable, professional appearance</li>
+          <li><strong>Tencel/Lyocell:</strong> Sustainable, soft, drapes well, resists wrinkles, machine-washable—better than polyester for breathability and longevity</li>
+        </ul>
+
+        <h3>Fabrics to Avoid</h3>
+        <ul>
+          <li><strong>100% polyester blouses:</strong> They pill, hold odors, and look cheap after 10-15 washes</li>
+          <li><strong>Acrylic "wool-look" sweaters:</strong> Pill aggressively, lose shape, static electricity nightmares</li>
+          <li><strong>Rayon (unless lined):</strong> Wrinkles immediately, requires dry cleaning, shows sweat</li>
+          <li><strong>Thin jersey cotton:</strong> Stretches out, fades, shows every wrinkle and body line by midday</li>
+        </ul>
+
+        <p><strong>Reality check:</strong> A $25 merino wool tee that lasts 4 years (720+ teaching days) costs $0.03 per wear. A $12 polyester blend that pills and fades after 6 months (90 days) costs $0.13 per wear. <em>Quality is more affordable than fast fashion when you do the math.</em></p>
+      </section>
+
+      <section>
+        <h2>Sample Week: 5 Days of Professional Outfits from 18 Pieces</h2>
+        <p>Here's how a 4th grade teacher might mix-and-match the capsule across one school week:</p>
+
+        <h3>Monday (Professional Polish)</h3>
+        <ul>
+          <li>Navy straight-leg trousers</li>
+          <li>White fitted blouse</li>
+          <li>Grey cardigan</li>
+          <li>Black leather flats</li>
+          <li><em>Why it works:</em> Parent-teacher conferences after school—polished but comfortable for full teaching day + evening meetings</li>
+        </ul>
+
+        <h3>Tuesday (Comfortable Movement)</h3>
+        <ul>
+          <li>Ponte pants (black)</li>
+          <li>Patterned blouse</li>
+          <li>Professional sneakers or loafers</li>
+          <li><em>Why it works:</em> Heavy teaching day with interactive lesson plans, floor sitting for small groups, playground duty—need maximum movement range</li>
+        </ul>
+
+        <h3>Wednesday (Layered Versatility)</h3>
+        <ul>
+          <li>A-line skirt (navy or grey)</li>
+          <li>Black merino tee</li>
+          <li>Camel cardigan</li>
+          <li>Ankle boots</li>
+          <li><em>Why it works:</em> Morning classroom is freezing (62°F), afternoon sun makes it 75°F—cardigan layer allows temperature adaptation without changing outfits</li>
+        </ul>
+
+        <h3>Thursday (Elevated Casual)</h3>
+        <ul>
+          <li>Dark denim (straight or wide-leg cut)</li>
+          <li>Jewel-tone blouse (burgundy, emerald, or navy)</li>
+          <li>Grey cardigan</li>
+          <li>Professional sneakers</li>
+          <li><em>Why it works:</em> Field trip day—need durable, comfortable clothing that still looks professional for chaperoning students off-campus</li>
+        </ul>
+
+        <h3>Friday (Casual Friday Done Right)</h3>
+        <ul>
+          <li>Black trousers</li>
+          <li>White merino tee</li>
+          <li>Denim jacket or navy cardigan</li>
+          <li>Flats or loafers</li>
+          <li><em>Why it works:</em> Meets casual Friday dress code while maintaining professional appearance—comfortable for end-of-week energy levels, easy to dress up or down</li>
+        </ul>
+
+        <p><strong>Outfit multiplication:</strong> These same 18 pieces create 75+ unique combinations by swapping tops, bottoms, and layers. The key is choosing pieces that all work together in a cohesive color palette (navy, black, white, grey, camel, plus 1-2 accent colors).</p>
+      </section>
+
+      <section>
+        <h2>Seasonal Adaptations: Making Your Capsule Work Year-Round</h2>
+        <p>Teachers can't afford separate wardrobes for each season. Here's how to adapt your core 18 pieces across the school year:</p>
+
+        <h3>Fall (August-November)</h3>
+        <ul>
+          <li><strong>Add:</strong> 1-2 long-sleeve layering tops in breathable fabrics (cotton, merino wool)</li>
+          <li><strong>Footwear shift:</strong> Transition to ankle boots and closed-toe flats</li>
+          <li><strong>Layer strategy:</strong> Start with short sleeves + cardigan (mornings cool, afternoons warm), gradually shift to long sleeves as temperatures drop</li>
+        </ul>
+
+        <h3>Winter (December-February)</h3>
+        <ul>
+          <li><strong>Add:</strong> 1 warm wool-blend sweater or turtleneck for layering under cardigans</li>
+          <li><strong>Bottom adaptation:</strong> Switch ponte pants to fleece-lined if classroom is poorly heated</li>
+          <li><strong>Outerwear:</strong> Keep a professional jacket or blazer at school for indoor warmth (classrooms can be 60-65°F in older buildings)</li>
+        </ul>
+
+        <h3>Spring (March-May)</h3>
+        <ul>
+          <li><strong>Add:</strong> 1 lightweight cardigan in a spring color (pastel or bright accent)</li>
+          <li><strong>Dresses:</strong> Sheath dress becomes standalone piece instead of requiring layering</li>
+          <li><strong>Footwear:</strong> Transition back to flats and loafers, professional sandals if dress code allows</li>
+        </ul>
+
+        <p><strong>Total seasonal additions:</strong> 3-5 pieces per year (budget: $75-150) to keep wardrobe fresh across changing weather without rebuilding from scratch.</p>
+      </section>
+
+      <section>
+        <h2>Care Strategies: Making Clothes Last the Entire School Year (and Beyond)</h2>
+        <p>Teachers wear the same clothes 180+ days annually—proper care is essential for longevity:</p>
+
+        <h3>Washing Best Practices</h3>
+        <ul>
+          <li><strong>Merino wool:</strong> Hand wash or machine wash on delicate cycle in cold water, lay flat to dry. Can wear 3-5 times between washes due to natural antimicrobial properties (saves time and extends garment life)</li>
+          <li><strong>Cotton blouses:</strong> Cold water wash, hang dry to prevent shrinkage and fading. Iron or steam before wearing</li>
+          <li><strong>Ponte pants and trousers:</strong> Turn inside out, cold water, gentle cycle, hang dry to maintain shape and elasticity</li>
+          <li><strong>Cardigans:</strong> Fold rather than hang (prevents shoulder stretching), wash every 4-5 wears unless stained</li>
+        </ul>
+
+        <h3>Stain Protocol for Teachers</h3>
+        <ul>
+          <li><strong>Marker/pen ink:</strong> Rubbing alcohol on cotton ball, blot immediately, then wash</li>
+          <li><strong>Food stains:</strong> Cold water rinse ASAP (hot water sets protein stains), then treat with enzyme cleaner</li>
+          <li><strong>Paint/glue:</strong> Scrape off excess, soak in cold water with dish soap before washing</li>
+          <li><strong>Keep at school:</strong> Travel-size stain remover pen in desk drawer—immediate treatment prevents permanent stains</li>
+        </ul>
+
+        <h3>Organization Systems</h3>
+        <ul>
+          <li><strong>Sunday prep:</strong> Review week's schedule, plan outfits based on activities (parent conferences = more polished, field trip = more durable)</li>
+          <li><strong>Rotation strategy:</strong> Don't wear same pieces two days in a row—allows fabrics to recover shape and reduces wear patterns</li>
+          <li><strong>End-of-year assessment:</strong> May/June is when you evaluate what needs replacing for next year—take advantage of summer sales to refresh 2-3 most-worn pieces</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Common Teacher Wardrobe Mistakes (and How to Fix Them)</h2>
+
+        <h3>Mistake #1: Buying Too Much Too Fast</h3>
+        <p><strong>The problem:</strong> Spending $400+ on 30 pieces in late July before understanding your actual needs.</p>
+        <p><strong>The fix:</strong> Start with 12-15 core pieces the first year. After one semester, you'll know exactly what you reach for most often and what sits unworn. Add strategically based on real wear patterns, not Pinterest inspiration.</p>
+
+        <h3>Mistake #2: Prioritizing Style Over Comfort</h3>
+        <p><strong>The problem:</strong> Those gorgeous pointed-toe heels or structured blazers that you never actually wear because they're impractical for classroom reality.</p>
+        <p><strong>The fix:</strong> If you wouldn't want to wear it for 8 hours while bending, reaching, sitting on floors, and climbing stairs, don't buy it. Professional doesn't mean uncomfortable.</p>
+
+        <h3>Mistake #3: Ignoring Dress Code Until It's Enforced</h3>
+        <p><strong>The problem:</strong> Building a wardrobe around jeans and t-shirts when your district has professional attire requirements.</p>
+        <p><strong>The fix:</strong> Read your district's dress code policy during summer. Build your capsule to exceed minimum standards—better to be slightly overdressed than risk dress code violations that undermine professional credibility.</p>
+
+        <h3>Mistake #4: Replacing Quantity Instead of Investing in Quality</h3>
+        <p><strong>The problem:</strong> Buying $15 tops that pill and fade after 3 months, then spending another $15 to replace them repeatedly.</p>
+        <p><strong>The fix:</strong> Calculate cost-per-wear, not upfront cost. A $40 merino wool top lasting 3 years (540 wears) = $0.07/wear. A $15 polyester top lasting 6 months (90 wears) = $0.17/wear. <em>Quality is cheaper long-term.</em></p>
+
+        <h3>Mistake #5: Not Leveraging Teacher Discounts</h3>
+        <p><strong>The problem:</strong> Paying full price when educator discounts could save 10-15% on every purchase.</p>
+        <p><strong>The fix:</strong> Register for teacher discount programs (Loft, Madewell, J.Crew, Banana Republic, Nike) and always ask "Do you offer educator discounts?" at checkout—many stores offer them but don't advertise.</p>
+      </section>
+
+      <section>
+        <h2>The Environmental Case: Why Teachers Should Choose Sustainable Wardrobes</h2>
+        <p>Teachers are natural educators—and your wardrobe choices model values for students who notice what you wear:</p>
+
+        <ul>
+          <li><strong>Fast fashion waste:</strong> The average American throws away 81 pounds of clothing annually. Teachers cycling through cheap work clothes contribute significantly to textile waste</li>
+          <li><strong>Sustainable alternatives last longer:</strong> Organic cotton, merino wool, and recycled materials outlast conventional fabrics by 2-3x, reducing replacement cycles</li>
+          <li><strong>Students notice:</strong> When you wear quality pieces that last years instead of months, you're modeling sustainability values through everyday actions—more powerful than any classroom lesson</li>
+          <li><strong>Cost alignment:</strong> Sustainable brands often prioritize durability, which aligns perfectly with teachers' budget needs (fewer replacements = lower long-term costs)</li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Want a wardrobe that aligns with your values and your budget?</strong> Explore <a href="/about">1ABEL's philosophy</a>—we build capsule-ready pieces for professionals who need clothing that works as hard as they do, lasts 3-5 years, and doesn't compromise on sustainability or style.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Final Checklist: Building Your Teacher Capsule Wardrobe</h2>
+
+        <div class="checklist">
+          <h3>Before You Buy Anything:</h3>
+          <ul>
+            <li>☐ Review your district's dress code policy thoroughly</li>
+            <li>☐ Audit your current wardrobe—what do you actually wear? What never gets used?</li>
+            <li>☐ Set a realistic budget ($300-500 for initial capsule, $75-150 for annual refreshes)</li>
+            <li>☐ Register for teacher discounts at Loft, Madewell, J.Crew, Banana Republic, Nike</li>
+          </ul>
+
+          <h3>Strategic Shopping:</h3>
+          <ul>
+            <li>☐ Choose a cohesive color palette (3 neutrals + 2 accent colors max)</li>
+            <li>☐ Prioritize fabrics over trends: merino wool, organic cotton, ponte knit, wool blends</li>
+            <li>☐ Test comfort: Can you sit on the floor in these pants? Reach overhead in this top? Walk for 30 minutes in these shoes?</li>
+            <li>☐ Calculate cost-per-wear before buying: Will this last 3+ years of weekly use?</li>
+          </ul>
+
+          <h3>Essential Core Pieces (Start Here):</h3>
+          <ul>
+            <li>☐ 2 pairs of professional trousers (navy, black) in comfortable, durable fabric</li>
+            <li>☐ 2 cardigans in neutral colors for layering across seasons</li>
+            <li>☐ 3 quality tops that work solo or layered (1 white/cream, 1 pattern, 1 solid color)</li>
+            <li>☐ 1 pair of supportive, professional shoes you can wear 8+ hours</li>
+            <li>☐ 1 structured work bag that holds laptop, papers, and personal items</li>
+          </ul>
+
+          <h3>Once You've Established Your Core:</h3>
+          <ul>
+            <li>☐ Add 1-2 dress or skirt options for variety</li>
+            <li>☐ Expand with 2-3 additional tops in complementary colors</li>
+            <li>☐ Add 1-2 more footwear options for weather/activity variation</li>
+            <li>☐ Incorporate seasonal pieces (lightweight cardigan for spring, warm sweater for winter)</li>
+          </ul>
+        </div>
+
+        <p><strong>Remember:</strong> A capsule wardrobe isn't about restriction—it's about <em>strategic curation</em>. Every piece should earn its place by being versatile, durable, comfortable, and professional enough for your classroom reality.</p>
+
+        <p>You're educating the next generation. Your wardrobe should support that mission, not drain your bank account or mental energy every morning deciding what to wear.</p>
+
+        <div class="cta-box">
+          <p><strong>Ready to build a professional wardrobe that actually lasts?</strong> Start with <a href="/arc-2">Arc 2 Shadow</a>—foundational pieces designed for daily wear, built to survive years of active use, priced for professionals who can't afford to replace their wardrobe every season.</p>
+        </div>
+      </section>
+    `,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur who watched too many teacher friends spend hundreds annually on work clothes that fell apart by spring. Built 1ABEL to solve the durability problem that professionals—especially teachers—face with fast fashion wardrobes that can\'t survive daily reality.'
+    },
+    publishedAt: '2025-02-04',
+    updatedAt: '2025-02-04',
+    readTime: '12 min',
+    category: 'Profession-Specific',
+    tags: [
+      'teacher capsule wardrobe',
+      'professional teacher outfits',
+      'teacher clothing budget',
+      'affordable teacher wardrobe',
+      'back to school teacher clothes',
+      'classroom appropriate clothing',
+      'teacher outfit ideas',
+      'educator professional attire',
+      'teacher fashion on a budget',
+      'sustainable teacher wardrobe',
+      'capsule wardrobe for teachers',
+      'teacher dress code',
+      'professional wardrobe for educators',
+      'teacher style guide',
+      'budget friendly teacher clothes'
+    ],
+    featured: false,
+    seo: {
+      metaTitle: 'Teacher Capsule Wardrobe: 18-Piece Professional System Under $500 | 1ABEL',
+      metaDescription: '68% of teachers spend $400-600/year on work clothes. This 18-piece capsule reduces that to $300-500 total. Mix-and-match into 75+ professional outfits. Budget-friendly, durable, classroom-tested.',
+      keywords: [
+        'teacher capsule wardrobe',
+        'professional teacher outfits budget',
+        'teacher clothing on a budget',
+        'affordable teacher wardrobe 2025',
+        'back to school teacher clothes',
+        'classroom appropriate professional clothing',
+        'teacher outfit ideas mix and match',
+        'educator professional attire guide',
+        'teacher fashion budget friendly',
+        'sustainable teacher wardrobe',
+        'capsule wardrobe for teachers 18 pieces',
+        'teacher dress code professional',
+        'professional wardrobe educators',
+        'teacher discounts clothing',
+        'cost per wear teacher clothes'
+      ]
+    }
   }
 ]
