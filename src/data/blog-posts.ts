@@ -22455,7 +22455,7 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
     tags: ["clothing care","washing guide","laundry tips","preserve clothing","fabric maintenance"],
     featured: false,
     seo: {
-      metaTitle: 'The Complete Washing Guide: How to Preserve Your Clothing's Quality | 1ABEL',
+      metaTitle: 'The Complete Washing Guide: How to Preserve Your Clothing\'s Quality | 1ABEL',
       metaDescription: 'Most people ruin their clothes in the wash. Learn the proper techniques to extend garment lifespan by years and maintain fabric integrity.',
       keywords: ["clothing care","washing guide","laundry tips","preserve clothing","fabric maintenance"]
     }
@@ -25264,7 +25264,7 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
     tags: ["carbon footprint fashion","environmental impact","sustainable fashion","clothing pollution","eco fashion"],
     featured: false,
     seo: {
-      metaTitle: 'The Carbon Footprint of Clothing: Understanding Fashion's Environmental Impact | 1ABEL',
+      metaTitle: 'The Carbon Footprint of Clothing: Understanding Fashion\'s Environmental Impact | 1ABEL',
       metaDescription: 'Fashion is one of the most polluting industries. Learn the environmental cost of your wardrobe and how to reduce it.',
       keywords: ["carbon footprint fashion","environmental impact","sustainable fashion","clothing pollution","eco fashion"]
     }
@@ -26899,6 +26899,26 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
     `,
     author: {
       name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur and founder of 1ABEL. Believes in eliminating friction from daily life through intentional design.'
+    },
+    publishedAt: '2025-01-16',
+    updatedAt: '2025-01-16',
+    readTime: '16 min',
+    category: 'Brand',
+    tags: ["product development","design process","quality control","manufacturing","behind the scenes"],
+    featured: false,
+    seo: {
+      metaTitle: 'Behind the Design: How 1ABEL Products Are Developed | 1ABEL',
+      metaDescription: 'Inside 1ABEL product development: 7 prototype iterations, 50+ wash tests, 12 fit models. How we obsess over details most brands ignore.',
+      keywords: ["product development","design process","quality control","clothing manufacturing","behind the scenes fashion"]
+    }
+  },
+  {
+    slug: 'fashion-as-infrastructure-systems-thinking-wardrobe',
+    title: 'Fashion as Infrastructure: Applying Systems Thinking to Your Wardrobe',
+    excerpt: 'Stop treating your wardrobe like a collection. Start treating it like infrastructure—reliable, efficient, systematically designed for long-term performance.',
+    content: `
 <section>
 <h2>Infrastructure vs. Collection Mindset: A Fundamental Paradigm Shift</h2>
 <p>Most people build wardrobes like they're collecting stamps—random accumulation over time, driven by impulse, trends, and reactive purchases.</p>
@@ -27875,7 +27895,6 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
       metaDescription: 'Understanding how your wardrobe consumes mental resources and how to design for minimal cognitive load.',
       keywords: ["cognitive load","mental bandwidth","wardrobe psychology","decision science","cognitive science fashion"]
     }
-  }
   },
   {
     slug: 'spring-summer-minimalist-wardrobe-20-pieces',
