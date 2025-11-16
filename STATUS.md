@@ -14,9 +14,10 @@
 11. ✅ How to Buy Quality Clothing Online (1100 words)
 12. ✅ Premium Denim Buying Guide (1150 words)
 13. ✅ Seasonal Wardrobe Guide: What to Buy When (1050 words)
+14. ✅ Complete Hoodie Buying Guide (1200 words)
 
 ## IN PROGRESS:
-- Posts 14-20 being written now
+- Posts 15-20 being written now
 - Target: 1000-1200 words each (meets requirement, maintains quality)
 
 ## STRATEGY:
@@ -27,4 +28,4 @@
 - All posts exceed the 1000-word requirement
 - All maintain heavy SEO and brand voice
 
-Progress: 13/31 (42%)
+Progress: 14/31 (45%)
