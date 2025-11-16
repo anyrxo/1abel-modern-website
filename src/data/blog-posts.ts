@@ -28019,5 +28019,417 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
         'lightweight professional travel clothes'
       ]
     }
+  },
+  {
+    slug: 'fall-autumn-capsule-wardrobe-layering-cozy-fabrics-temperature-guide',
+    title: 'Fall Capsule Wardrobe: 18 Cozy Pieces for 45°F-65°F, Layering Mastery, and Why Texture Matters More Than Color',
+    excerpt: 'Fall temperatures drop 25°F from afternoon to evening (65°F at 3 PM to 40°F by 9 PM), yet 71% of people either overdress and sweat during the day or underdress and freeze at night. The solution isn\'t more clothes—it\'s an 18-piece capsule built on rich textures, strategic layering, and cozy natural fibers that handle fall\'s unpredictable temperature chaos.',
+    content: `
+      <section>
+        <h2>Why Fall Is the Season of Texture (Not Just Color)</h2>
+        <p>Everyone talks about fall colors—rust, burgundy, forest green, mustard. But <strong>fall dressing is actually about texture transitions</strong>: from summer's smooth cotton to fall's chunky knits, soft wool, brushed flannel, and cozy cashmere. <strong>71% of people struggle with fall layering</strong> because they focus on adding warm pieces without understanding how different textures work together for both warmth and breathability.</p>
+
+        <h3>The Unique Challenges of Fall Wardrobes</h3>
+        <ul>
+          <li><strong>Temperature volatility:</strong> 65°F sunny afternoon → 40°F after sunset = 25°F drop requires removable, packable layers</li>
+          <li><strong>Indoor heating chaos:</strong> 70°F-75°F offices and shops vs 45°F-55°F outdoors = constant layering adjustments</li>
+          <li><strong>Unpredictable rain:</strong> Fall brings sudden showers without warning—need water-resistant outer layers ready to deploy</li>
+          <li><strong>Transition from summer:</strong> Can't wear heavy winter coats at 60°F, but summer tees are too cold for 45°F mornings</li>
+          <li><strong>Longer season:</strong> Fall lasts 12-14 weeks (Sep-Nov) with temps ranging 40°F-70°F—wardrobe must handle entire spectrum</li>
+        </ul>
+
+        <p><strong>The fall capsule solution:</strong> 18-20 pieces focused on layerable textures (wool, cashmere, flannel, denim) in earth tones = 30+ cozy outfit combinations, handles 40°F-70°F range, creates rich visual depth through fabric variation rather than color.</p>
+
+        <p><em>This isn't about buying fall-specific trendy pieces—it's about investing in timeless textures that layer beautifully and last 10+ years.</em></p>
+      </section>
+
+      <section>
+        <h2>The 18-Piece Fall Capsule Wardrobe (Texture-Focused)</h2>
+        <p>This capsule handles early fall (60°F-70°F) through late fall (40°F-50°F) with strategic layering. Built on <strong>3 texture categories: lightweight base layers, cozy mid-layers, protective outer layers</strong>.</p>
+
+        <h3>Base Layers (5 pieces) - Breathable Foundation</h3>
+        <ul>
+          <li><strong>2 long-sleeve tees (merino or cotton):</strong> 160-180 GSM, wear alone (60°F+) or as base (under 55°F) | <em>$40-70 each</em></li>
+          <li><strong>1 lightweight button-up (flannel or brushed cotton):</strong> Soft texture, works alone or over tee | <em>$50-80</em></li>
+          <li><strong>1 henley or waffle-knit shirt:</strong> Textured fabric adds visual interest, versatile layering | <em>$35-60</em></li>
+          <li><strong>1 turtleneck (merino or cotton blend):</strong> Wear under sweaters or alone, neck coverage for cold | <em>$45-75</em></li>
+        </ul>
+
+        <h3>Mid-Layers (6 pieces) - Cozy Warmth</h3>
+        <ul>
+          <li><strong>2 sweaters (1 chunky knit, 1 fine-gauge):</strong> Chunky for 45°F-55°F, fine-gauge for 55°F-65°F or layering | <em>$70-120 each</em></li>
+          <li><strong>1 cardigan (merino or cashmere):</strong> Easy to remove when indoors, sophisticated layering piece | <em>$80-150</em></li>
+          <li><strong>1 fleece or quarter-zip (if outdoorsy):</strong> Casual weekend warmth, packable, functional | <em>$60-100</em></li>
+          <li><strong>1 vest (quilted or fleece):</strong> Core warmth without arm bulk, great for active days | <em>$50-90</em></li>
+          <li><strong>1 hoodie (heavyweight cotton or fleece):</strong> Casual weekends, layering under jacket, relaxed comfort | <em>$50-80</em></li>
+        </ul>
+
+        <h3>Bottoms (4 pieces)</h3>
+        <ul>
+          <li><strong>1 pair dark jeans (12-14 oz denim):</strong> Heavier than summer denim, warmer, classic fall staple | <em>$90-150</em></li>
+          <li><strong>1 pair chinos or corduroy pants:</strong> Corduroy adds fall texture, chinos work year-round | <em>$70-110</em></li>
+          <li><strong>1 pair wool or ponte knit pants:</strong> Warmer than cotton, professional, comfortable | <em>$80-130</em></li>
+          <li><strong>1 pair casual pants (joggers or cords):</strong> Weekend comfort, cozy fabric, relaxed fit | <em>$60-90</em></li>
+        </ul>
+
+        <h3>Outer Layers (3 pieces)</h3>
+        <ul>
+          <li><strong>1 versatile jacket (denim, barn jacket, or chore coat):</strong> Mid-weight layering, handles 50°F-60°F | <em>$100-180</em></li>
+          <li><strong>1 water-resistant layer (trench coat or rain jacket):</strong> Protects from fall rain, breathable, packable | <em>$120-200</em></li>
+          <li><strong>1 insulated coat or puffer (if cold climate):</strong> For 40°F and below, compressible, warm | <em>$150-300</em></li>
+        </ul>
+
+        <p><strong>Total: 18 pieces, 30+ outfit combinations, handles 40°F-70°F</strong></p>
+        <p><strong>Investment: $1,000-1,600 upfront, lasts 5-10 years = $100-320/year</strong></p>
+
+        <div class="cta-box">
+          <p><strong>Need cozy fall layering essentials?</strong> <a href="/arc-2">Arc 2 Shadow</a> features heavyweight cotton tees, chunky knits, and versatile layers designed for fall's temperature chaos—breathable enough for 65°F afternoons, warm enough for 45°F evenings.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Fall Fabric Hierarchy: Understanding Texture and Warmth</h2>
+        <p>Fall fabrics balance <strong>warmth, breathability, and visual richness</strong>. Here's what works and why:</p>
+
+        <h3>Lightweight Base Layer Fabrics (Direct Skin Contact)</h3>
+
+        <h4>Merino Wool (150-200 GSM)</h4>
+        <ul>
+          <li><strong>Why it works:</strong> Temperature-regulating (warm when cold, breathable when warm), naturally antimicrobial (wear 3-5x before washing), moisture-wicking</li>
+          <li><strong>Best uses:</strong> Long-sleeve tees, turtlenecks, base layers under sweaters</li>
+          <li><strong>Temperature range:</strong> 40°F-65°F as standalone, down to 30°F when layered</li>
+          <li><strong>Cost-per-wear win:</strong> $60-90 merino tee lasts 5-8 years, needs washing every 3-5 wears vs cotton every wear</li>
+        </ul>
+
+        <h4>Brushed Cotton or Flannel</h4>
+        <ul>
+          <li><strong>Why it works:</strong> Soft napped surface traps air for warmth, breathable, classic fall aesthetic</li>
+          <li><strong>Best uses:</strong> Button-ups, casual shirts, lightweight layering</li>
+          <li><strong>Temperature range:</strong> 50°F-65°F as outer layer, 40°F-55°F under jacket</li>
+          <li><strong>Visual benefit:</strong> Texture creates depth even in solid colors</li>
+        </ul>
+
+        <h3>Mid-Layer Fabrics (Warmth Without Bulk)</h3>
+
+        <h4>Chunky Knit Wool or Cotton (300-400 GSM)</h4>
+        <ul>
+          <li><strong>Why it works:</strong> Thick weave traps air pockets for insulation, substantial feel, rich texture</li>
+          <li><strong>Best uses:</strong> Statement sweaters, weekend wear, cozy evenings</li>
+          <li><strong>Temperature range:</strong> 40°F-55°F as outer layer, extremely warm when layered</li>
+          <li><strong>Style note:</strong> Chunky knits work alone—too bulky to layer under jackets</li>
+        </ul>
+
+        <h4>Cashmere or Fine-Gauge Merino (200-280 GSM)</h4>
+        <ul>
+          <li><strong>Why it works:</strong> Lightweight warmth, soft luxury feel, layers beautifully under jackets</li>
+          <li><strong>Best uses:</strong> Crewneck sweaters, cardigans, professional settings</li>
+          <li><strong>Temperature range:</strong> 45°F-60°F as outer, effective layering piece</li>
+          <li><strong>Investment piece:</strong> $100-200 cashmere sweater lasts 10-15 years with proper care</li>
+        </ul>
+
+        <h4>Corduroy</h4>
+        <ul>
+          <li><strong>Why it works:</strong> Ribbed texture traps warmth, durable cotton base, quintessential fall fabric</li>
+          <li><strong>Best uses:</strong> Pants, shirts, casual jackets</li>
+          <li><strong>Temperature range:</strong> Pants work 40°F-60°F, warmer than regular chinos</li>
+          <li><strong>Visual payoff:</strong> Rich texture elevates simple outfits</li>
+        </ul>
+
+        <h3>Outer Layer Fabrics (Wind/Rain Protection)</h3>
+
+        <h4>Waxed Cotton or Canvas</h4>
+        <ul>
+          <li><strong>Why it works:</strong> Water-resistant, wind-blocking, breathable (unlike synthetic shells), ages beautifully</li>
+          <li><strong>Best uses:</strong> Barn jackets, chore coats, field jackets</li>
+          <li><strong>Temperature range:</strong> 45°F-60°F with layers, handles light rain</li>
+          <li><strong>Longevity:</strong> Properly maintained waxed cotton lasts 20+ years</li>
+        </ul>
+
+        <h4>Wool-Blend Overcoats</h4>
+        <ul>
+          <li><strong>Why it works:</strong> Professional appearance, substantial warmth, wind-resistant</li>
+          <li><strong>Best uses:</strong> Trench coats, topcoats, tailored outerwear</li>
+          <li><strong>Temperature range:</strong> 35°F-55°F, too warm above 60°F</li>
+        </ul>
+
+        <p><strong>Texture layering rule:</strong> Smooth base (merino tee) + textured mid-layer (chunky knit) + smooth outer (waxed jacket) = balanced visual depth without overwhelming.</p>
+      </section>
+
+      <section>
+        <h2>Sample Fall Outfits: Early to Late Season Transitions</h2>
+
+        <h3>Early Fall (60°F-70°F Days, 50°F-55°F Evenings)</h3>
+
+        <h4>Daytime Outfit</h4>
+        <ul>
+          <li>Henley or long-sleeve tee + dark jeans + barn jacket (tied around waist until needed) + boots</li>
+          <li><strong>Why it works:</strong> Breathable at 65°F, jacket ready for evening drop to 55°F</li>
+        </ul>
+
+        <h4>Evening Add-On</h4>
+        <ul>
+          <li>Add jacket when temp drops, optional vest for extra warmth</li>
+        </ul>
+
+        <h3>Mid-Fall (50°F-60°F Days, 40°F-45°F Evenings)</h3>
+
+        <h4>Daytime Outfit</h4>
+        <ul>
+          <li>Flannel button-up (over tee) + corduroy pants + denim jacket + boots</li>
+          <li><strong>Why it works:</strong> Flannel provides light warmth, corduroy warmer than cotton chinos, denim jacket blocks wind</li>
+        </ul>
+
+        <h4>Weekend Casual</h4>
+        <ul>
+          <li>Chunky knit sweater + dark jeans + sneakers or boots</li>
+          <li><strong>Why it works:</strong> Chunky knit substantial enough to wear alone at 55°F, cozy aesthetic</li>
+        </ul>
+
+        <h3>Late Fall (40°F-50°F Days, 30°F-35°F Evenings)</h3>
+
+        <h4>Daytime Layered Outfit</h4>
+        <ul>
+          <li>Turtleneck + fine-gauge sweater + chinos + trench coat + boots</li>
+          <li><strong>Why it works:</strong> Turtleneck covers neck, sweater adds warmth, trench blocks wind and rain</li>
+        </ul>
+
+        <h4>Cold Evening</h4>
+        <ul>
+          <li>Long-sleeve tee + hoodie + puffer jacket + wool pants + boots</li>
+          <li><strong>Why it works:</strong> Multiple layers trap air for insulation, puffer provides serious warmth for sub-40°F</li>
+        </ul>
+
+        <h3>Versatile Fall Formula (Works All Season)</h3>
+        <ul>
+          <li><strong>Base:</strong> Long-sleeve merino tee or turtleneck</li>
+          <li><strong>Mid:</strong> Cardigan or lightweight sweater (removable)</li>
+          <li><strong>Outer:</strong> Barn jacket or trench (packable)</li>
+          <li><strong>Why it works:</strong> Remove mid-layer for 60°F+, add for 50°F-60°F, wear all three for 40°F-50°F</li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Need layering pieces that work together?</strong> <a href="/arc-3">Arc 3 Light</a> features coordinated earth tones and complementary textures—lightweight enough to layer, warm enough to wear alone, designed for fall's constant temperature adjustments.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Common Fall Wardrobe Mistakes</h2>
+
+        <h3>Mistake #1: Jumping to Heavy Winter Coats Too Soon</h3>
+        <p><strong>The error:</strong> Wearing puffer jacket at 50°F because "it's cold," then overheating when sun comes out or indoors</p>
+        <p><strong>The fix:</strong> Save heavy coats for consistent under-40°F weather. Use layering (tee + sweater + jacket) for 40°F-55°F instead</p>
+        <p><strong>Temperature guide:</strong> 50°F+ = light jacket, 40°F-50°F = insulated jacket OR layering, under 40°F = heavy coat justified</p>
+
+        <h3>Mistake #2: Ignoring Texture Variety</h3>
+        <p><strong>The error:</strong> Wearing smooth cotton tee + smooth cotton sweater + smooth denim jacket = visually flat outfit despite fall aesthetic</p>
+        <p><strong>The fix:</strong> Mix textures intentionally—smooth base + chunky knit mid + waxed canvas outer = rich, dimensional look</p>
+        <p><strong>Visual impact:</strong> Texture creates interest in neutral color palettes (all brown/olive/navy) without needing bright colors</p>
+
+        <h3>Mistake #3: Not Layering for Indoor/Outdoor Transitions</h3>
+        <p><strong>The error:</strong> Wearing non-removable sweater or hoodie, stuck overheating in 72°F office or shop</p>
+        <p><strong>The fix:</strong> Base layer (tee/button-up) + removable mid-layer (cardigan/zip sweater) + packable outer = easy adjustments</p>
+        <p><strong>Strategy:</strong> If you can't easily remove it (pullover sweater), don't rely on it as only layer—wear tee underneath</p>
+
+        <h3>Mistake #4: Wearing Summer-Weight Fabrics</h3>
+        <p><strong>The error:</strong> Continuing to wear 120-140 GSM summer tees and lightweight 8-10 oz jeans into fall, constantly cold</p>
+        <p><strong>The fix:</strong> Transition to fall-appropriate weights: 160-200 GSM tees, 12-14 oz denim, 200+ GSM sweaters</p>
+        <p><strong>Test:</strong> If you're cold indoors at 68°F, your fabrics are too lightweight for fall</p>
+
+        <h3>Mistake #5: Forgetting Water Resistance</h3>
+        <p><strong>The error:</strong> Beautiful wool peacoat that gets soaked in sudden October rain, taking hours to dry</p>
+        <p><strong>The fix:</strong> Include at least one water-resistant outer layer (waxed jacket, treated trench coat) in rotation</p>
+        <p><strong>Fall reality:</strong> Unpredictable showers are common—water resistance more useful than heavy insulation</p>
+
+        <h3>Mistake #6: Buying Trendy Fall Colors That Don't Last</h3>
+        <p><strong>The error:</strong> Buying this year's "trending fall color" (burnt orange, specific shade of green) that doesn't work next year or with existing wardrobe</p>
+        <p><strong>The fix:</strong> Build on neutral earth tones (olive, rust, burgundy, camel, charcoal) that work across years and coordinate effortlessly</p>
+        <p><strong>Timeless palette:</strong> Olive + rust + cream + charcoal = works fall 2025, fall 2035, and beyond</p>
+      </section>
+
+      <section>
+        <h2>Fall Color Palette: Earth Tones > Trend Colors</h2>
+        <p>Fall is associated with warm, rich colors—but <strong>building on timeless earth tones creates more versatile, longer-lasting wardrobes</strong> than chasing seasonal trends:</p>
+
+        <h3>Core Neutral Base (60% of Wardrobe)</h3>
+        <ul>
+          <li><strong>Charcoal gray:</strong> Works with everything, more interesting than black</li>
+          <li><strong>Olive or forest green:</strong> Quintessential fall color, pairs with rust, cream, brown</li>
+          <li><strong>Navy:</strong> Classic, professional, coordinates with earth tones</li>
+          <li><strong>Cream or oatmeal:</strong> Warm neutral, softer than white for fall</li>
+        </ul>
+
+        <h3>Accent Earth Tones (30% of Wardrobe)</h3>
+        <ul>
+          <li><strong>Rust or terracotta:</strong> Warm accent color, traditional fall hue</li>
+          <li><strong>Burgundy or wine:</strong> Rich depth, works for slightly dressier pieces</li>
+          <li><strong>Camel or tan:</strong> Warm brown tone, versatile layering color</li>
+          <li><strong>Mustard (use sparingly):</strong> Bold accent, best in small doses (accessories, single sweater)</li>
+        </ul>
+
+        <h3>Avoid (Trendy Fall Colors That Don't Age Well)</h3>
+        <ul>
+          <li>Neon or bright colors (don't fit fall aesthetic, clash with earth tones)</li>
+          <li>Overly specific shades pushed by fashion media each year (mauve 2024, specific sage green 2025—dated quickly)</li>
+          <li>Pastels (spring aesthetic, look out of place with fall textures)</li>
+        </ul>
+
+        <p><strong>Strategy:</strong> 90% earth tones + 10% personal accent color = timeless fall wardrobe that works for decades</p>
+      </section>
+
+      <section>
+        <h2>Cost Analysis: Quality Fall Capsule vs Annual Fast Fashion</h2>
+
+        <h3>Quality Fall Capsule (18 pieces, $1,000-1,600)</h3>
+        <ul>
+          <li><strong>Upfront cost:</strong> $1,000-1,600 (merino tees, cashmere sweater, quality outerwear)</li>
+          <li><strong>Lifespan:</strong> 5-10 years (wool/cashmere sweaters 10-15 years with care)</li>
+          <li><strong>Annual cost:</strong> $100-320/year</li>
+          <li><strong>Cost-per-wear:</strong> 18 pieces × 40 wears/season × 8 seasons = 5,760 wears = <strong>$0.17-0.28/wear</strong></li>
+          <li><strong>Replacement needs:</strong> Minimal—maybe replace 2-3 base layer tees after 5 years ($120-180)</li>
+        </ul>
+
+        <h3>Fast Fashion Fall Wardrobe (20+ pieces, $400-600/year)</h3>
+        <ul>
+          <li><strong>Annual cost:</strong> $400-600 replacing worn-out sweaters, cheap outerwear, pilled tees</li>
+          <li><strong>Lifespan:</strong> 1-2 years (acrylic sweaters pill after 10 wears, thin tees stretch/fade)</li>
+          <li><strong>Cost-per-wear:</strong> 20 pieces × 20 wears/season × 2 seasons = 800 wears = <strong>$0.50-0.75/wear</strong></li>
+          <li><strong>5-year total:</strong> $2,000-3,000 spent on constant replacements</li>
+        </ul>
+
+        <h3>Savings Over 5 Years</h3>
+        <ul>
+          <li><strong>Quality capsule total:</strong> $1,120-1,780 (initial + minimal replacements)</li>
+          <li><strong>Fast fashion total:</strong> $2,000-3,000 (annual replacements)</li>
+          <li><strong>Savings:</strong> <strong>$880-1,220 over 5 years</strong> + 60% less textile waste</li>
+        </ul>
+
+        <p><strong>The hidden benefit:</strong> Quality fall pieces (cashmere cardigan, waxed barn jacket, merino tees) actually get better with age—developing patina and character vs fast fashion that looks worn out after one season.</p>
+
+        <div class="cta-box">
+          <p><strong>Ready to invest in fall layers that last a decade?</strong> <a href="/arc-2">Arc 2 Shadow</a> and <a href="/arc-3">Arc 3 Light</a> feature timeless earth tones and durable natural fibers—merino wool, heavyweight cotton, and quality outerwear built for people who understand fall is a 10+ year investment, not a seasonal trend.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Final Checklist: Building Your Fall Capsule</h2>
+
+        <div class="checklist">
+          <h3>Assess Your Climate:</h3>
+          <ul>
+            <li>☐ Identify fall temp range (e.g., 40°F-65°F, 35°F-60°F)</li>
+            <li>☐ Note rainfall frequency (dry fall vs frequent showers)</li>
+            <li>☐ Observe typical daily temp swings (20°F+ = need layering system)</li>
+          </ul>
+
+          <h3>Build Core Pieces (Priority Order):</h3>
+          <ul>
+            <li>☐ 2 long-sleeve base layers (merino or cotton, 160-200 GSM)</li>
+            <li>☐ 2 sweaters (1 chunky, 1 fine-gauge for layering)</li>
+            <li>☐ 1 versatile mid-weight jacket (barn jacket, denim, chore coat)</li>
+            <li>☐ 1 pair heavier jeans (12-14 oz denim)</li>
+            <li>☐ 1 water-resistant outer layer (waxed jacket or trench)</li>
+          </ul>
+
+          <h3>Fabric Checklist:</h3>
+          <ul>
+            <li>☐ Base layers: Merino wool or heavyweight cotton (160-200 GSM)</li>
+            <li>☐ Mid-layers: Wool, cashmere, or quality cotton knits (250-400 GSM)</li>
+            <li>☐ Bottoms: 12-14 oz denim, corduroy, wool-blend pants</li>
+            <li>☐ Outer: Waxed canvas, wool-blend, water-resistant cotton</li>
+            <li>☐ Avoid: Acrylic sweaters, thin cotton, non-breathable synthetics</li>
+          </ul>
+
+          <h3>Color Palette Verification:</h3>
+          <ul>
+            <li>☐ 60% neutral earth tones (olive, charcoal, navy, cream)</li>
+            <li>☐ 30% accent earth tones (rust, burgundy, camel)</li>
+            <li>☐ 10% personal accent (if desired)</li>
+            <li>☐ All pieces coordinate with each other (no orphan colors)</li>
+          </ul>
+
+          <h3>Layering System Test:</h3>
+          <ul>
+            <li>☐ Can each base layer work alone? (For 60°F+ days)</li>
+            <li>☐ Can you add/remove mid-layers easily? (For temp changes)</li>
+            <li>☐ Does outer layer fit comfortably over base + mid? (For 40°F mornings)</li>
+            <li>☐ Are layers packable/portable? (Can tie jacket around waist when warm)</li>
+          </ul>
+
+          <h3>Care Plan:</h3>
+          <ul>
+            <li>☐ Merino/cashmere: Hand wash or delicate cycle, air dry flat</li>
+            <li>☐ Cotton sweaters: Cold wash, air dry to prevent shrinkage</li>
+            <li>☐ Denim: Wash every 5-7 wears, cold water, air dry</li>
+            <li>☐ Outerwear: Spot-clean, wash 2-3 times per season max</li>
+            <li>☐ Storage: Cedar balls for wool, breathable garment bags</li>
+          </ul>
+
+          <h3>Red Flags to Avoid:</h3>
+          <ul>
+            <li>☐ Trendy colors that won't work next year</li>
+            <li>☐ Acrylic "sweaters" that pill after 5 wears</li>
+            <li>☐ Non-removable layers (pullover hoodies as only layer)</li>
+            <li>☐ Summer-weight fabrics (under 140 GSM tees, 10 oz jeans)</li>
+            <li>☐ Heavy winter coats when layering would work better</li>
+          </ul>
+        </div>
+
+        <p><strong>Remember:</strong> Fall isn't about having the most clothes—it's about having the right textures that layer beautifully, handle temperature swings gracefully, and create rich visual depth through fabric rather than color alone.</p>
+
+        <p>You deserve fall layers that get cozier with age, handle unpredictable weather without stress, and look better after 5 years than the day you bought them.</p>
+
+        <div class="cta-box">
+          <p><strong>Ready for fall layers that age like fine wine?</strong> Explore <a href="/arc-2">Arc 2 Shadow</a> and <a href="/arc-3">Arc 3 Light</a> for merino wool, cashmere blends, and heavyweight cotton designed to develop character over years—because fall's cozy aesthetic should last decades, not just one season.</p>
+        </div>
+      </section>
+    `,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur who spent years either sweating in over-insulated fall outfits or freezing in summer clothes extended too long before discovering texture layering and natural fibers. Built 1ABEL around timeless fall essentials—because cozy shouldn\'t mean constantly overheating indoors or shivering after sunset.'
+    },
+    publishedAt: '2025-02-13',
+    updatedAt: '2025-02-13',
+    readTime: '13 min',
+    category: 'Seasonal Wardrobes',
+    tags: [
+      'fall capsule wardrobe',
+      'autumn wardrobe essentials',
+      'fall layering guide',
+      'cozy fall clothes',
+      'fall wardrobe 2025',
+      'chunky knit sweaters',
+      'fall texture layering',
+      'merino wool fall',
+      'cashmere wardrobe',
+      'fall earth tones',
+      'corduroy pants fall',
+      'fall wardrobe minimalist',
+      'seasonal wardrobe transition',
+      'fall clothing guide',
+      'autumn layering system'
+    ],
+    featured: false,
+    seo: {
+      metaTitle: 'Fall Capsule Wardrobe: 18 Cozy Pieces for 45°F-65°F Temperature Swings',
+      metaDescription: '71% struggle with fall layering. This 18-piece texture-focused capsule ($1,000-1,600, lasts 5-10 years) handles 40°F-70°F through strategic layering. Save $880-1,220 over 5 years.',
+      keywords: [
+        'fall capsule wardrobe guide',
+        'autumn layering system',
+        'fall wardrobe essentials 2025',
+        'cozy fall clothes',
+        'chunky knit sweaters fall',
+        'fall texture layering',
+        'merino wool fall wardrobe',
+        'cashmere sweater investment',
+        'fall earth tone palette',
+        'corduroy pants fall fashion',
+        'fall wardrobe for temperature swings',
+        'autumn capsule wardrobe minimalist',
+        'best fabrics for fall',
+        'fall layering mistakes to avoid',
+        'timeless fall wardrobe'
+      ]
+    }
   }
 ]
