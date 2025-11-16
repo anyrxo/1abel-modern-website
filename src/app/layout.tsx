@@ -381,14 +381,14 @@ export default function RootLayout({
         <meta name="DC.coverage" content="Global" />
 
         {/* Copyright & Legal Protection */}
-        <meta name="copyright" content="© 2025 1ABEL - A Brand of IImagined Company. All Rights Reserved." />
+        <meta name="copyright" content="© 2026 1ABEL - A Brand of IImagined Company. All Rights Reserved." />
         <meta name="author" content="IImagined Company" />
         <meta name="owner" content="IImagined Company" />
         <meta name="designer" content="Anyro (@anyrxo)" />
-        <meta name="rights" content="© 2025 IImagined Company. Unauthorized reproduction prohibited." />
+        <meta name="rights" content="© 2026 IImagined Company. Unauthorized reproduction prohibited." />
 
         {/* Image Protection */}
-        <meta name="image-rights" content="All images © 2025 IImagined Company. Unauthorized use prohibited." />
+        <meta name="image-rights" content="All images © 2026 IImagined Company. Unauthorized use prohibited." />
         <meta name="allow-image-indexing" content="false" />
 
         {/* Anti-scraping directives */}
