@@ -1,0 +1,467 @@
+<section>
+<h2>Why Manufacturing Transparency Matters: The Hidden Truth Behind Your Clothes</h2>
+<p>Most fashion brands don't want you to know where or how their clothes are made. There's a reason for that.</p>
+
+<p><strong>The harsh reality of fast fashion manufacturing:</strong></p>
+<ul>
+<li>Garment workers in Bangladesh earn an average of <strong>$95/month</strong> (less than $3/day)</li>
+<li>Factory collapses like Rana Plaza (2013) killed <strong>1,134 workers</strong> due to unsafe conditions</li>
+<li>Textile dyeing pollutes <strong>20% of global wastewater</strong> with toxic chemicals</li>
+<li>Average fast fashion garment travels <strong>17,000+ miles</strong> from raw material to consumer</li>
+<li>Workers face <strong>14-16 hour shifts</strong> during peak production seasons</li>
+</ul>
+
+<p>Source: Fashion Revolution, Clean Clothes Campaign, World Bank, Ellen MacArthur Foundation.</p>
+
+<p><strong>The opacity problem:</strong></p>
+<p>When brands refuse to disclose manufacturing locations, labor practices, or quality standards, it's not about protecting trade secrets—it's about hiding exploitation, corner-cutting, and environmental damage.</p>
+
+<p>At 1ABEL, we believe <strong>transparency is non-negotiable</strong>. If we're asking you to invest in our garments, you deserve to know exactly how they're made, where they're made, who made them, and what standards we uphold.</p>
+
+<p>This isn't marketing—it's accountability.</p>
+
+<blockquote>
+<p>Where and how your clothes are made determines their quality, durability, ethics, and environmental impact. Choose brands that don't hide this information.</p>
+</blockquote>
+</section>
+
+<section>
+<h2>Our Manufacturing Partners: Certified Excellence, Not Lowest Bidder</h2>
+<p>We don't choose manufacturing partners based on price. We choose based on <strong>capability, ethics, and quality standards</strong>.</p>
+
+<p><strong>Partner selection criteria:</strong></p>
+
+<p><strong>1. Specialization in premium garments:</strong></p>
+<p>Our manufacturing partners specialize in <strong>heavyweight streetwear and technical garments</strong>. They have 15+ years experience producing garments in the 200-400+ GSM range (most fast fashion is 120-160 GSM).</p>
+
+<p>Why specialization matters: Heavyweight fabrics require different equipment, techniques, and expertise. A facility optimized for thin fast fashion can't properly construct 400 GSM hoodies—the stitching, seams, and finishing require specialized knowledge.</p>
+
+<p><strong>2. Certifications and compliance:</strong></p>
+<p>All our partners hold multiple certifications that verify their standards:</p>
+
+<p><strong>ISO 9001 (Quality Management System):</strong></p>
+<ul>
+<li>International standard for quality management processes</li>
+<li>Requires documented procedures, regular audits, continuous improvement</li>
+<li>Ensures consistency across production runs</li>
+<li>Covers material sourcing, production, inspection, and delivery</li>
+</ul>
+
+<p><strong>WRAP (Worldwide Responsible Accredited Production):</strong></p>
+<ul>
+<li>Independent certification for ethical manufacturing</li>
+<li>Verifies compliance with labor laws, safe working conditions, fair wages</li>
+<li>Prohibits child labor, forced labor, discrimination</li>
+<li>Requires environmental compliance and regulatory adherence</li>
+<li>Annual audits by third-party inspectors</li>
+</ul>
+
+<p><strong>OEKO-TEX Standard 100 (textile safety):</strong></p>
+<ul>
+<li>Certifies fabrics are free from harmful chemicals</li>
+<li>Tests for 100+ regulated and non-regulated substances</li>
+<li>Ensures garments are safe for skin contact</li>
+<li>Covers dyes, finishes, and fabric treatments</li>
+</ul>
+
+<p><strong>Why certifications matter:</strong></p>
+<p>Certifications aren't marketing badges—they're third-party verification of standards. ISO 9001 means quality processes are documented and auditable. WRAP means labor conditions are independently verified. OEKO-TEX means fabrics are tested for safety.</p>
+
+<p>These certifications cost money to obtain and maintain (annual audits, compliance updates, third-party inspections). Fast fashion brands avoid them because they add cost and require accountability.</p>
+
+<p><strong>3. Production capacity and timelines:</strong></p>
+<p>We work with facilities that have the capacity to produce at our scale without compromising quality. This means:</p>
+<ul>
+<li>No rush orders that force overtime or cut corners</li>
+<li>Adequate time for quality control at each stage</li>
+<li>Proper equipment maintenance and calibration</li>
+<li>Skilled workers who aren't overworked or rushed</li>
+</ul>
+
+<p>Our production timelines are 6-10 months from design to delivery. Fast fashion timelines are 2-4 weeks. The difference is quality, ethics, and sustainability.</p>
+
+<p><strong>4. Environmental practices:</strong></p>
+<p>Our partners implement environmental management systems that reduce impact:</p>
+<ul>
+<li>Water recycling and treatment (reduces consumption by 40-50%)</li>
+<li>Low-impact dyeing processes (reduces chemical pollution)</li>
+<li>Energy-efficient machinery (reduces carbon footprint)</li>
+<li>Waste reduction and recycling programs (fabric scraps recycled into other products)</li>
+</ul>
+
+<p>These practices add 15-20% to production costs. We pay for them because environmental responsibility isn't optional.</p>
+</section>
+
+<section>
+<h2>The 4-Stage Quality Control Process: From Fabric to Final Garment</h2>
+<p>Quality isn't checked once at the end—it's verified at <strong>every stage of production</strong>.</p>
+
+<p><strong>Stage 1: Material Inspection (Pre-Production)</strong></p>
+
+<p>Before any garment is cut or sewn, every roll of fabric undergoes rigorous inspection:</p>
+
+<p><strong>GSM verification:</strong></p>
+<ul>
+<li>Random samples tested for fabric weight (grams per square meter)</li>
+<li>Must match specifications: 200-220 GSM for tees, 400-450 GSM for hoodies</li>
+<li>Tolerance: ±5% (industry standard ±10%, we hold tighter tolerances)</li>
+<li>Failed rolls are rejected before cutting begins</li>
+</ul>
+
+<p>Why this matters: GSM determines durability, feel, and longevity. A 180 GSM tee marketed as 200 GSM will wear out faster and feel thinner. We verify to ensure you get what you're paying for.</p>
+
+<p><strong>Colorfastness testing:</strong></p>
+<ul>
+<li>Fabric samples washed 30+ times to test color retention</li>
+<li>Tested for bleeding, fading, and color transfer</li>
+<li>Must maintain 90%+ color integrity after 30 washes</li>
+<li>Dyes tested for safety (OEKO-TEX compliance)</li>
+</ul>
+
+<p>Why this matters: Poor dyeing causes fading after a few washes. You've bought a VOID (black) piece—it should stay VOID for years, not fade to grey after 10 washes.</p>
+
+<p><strong>Composition verification:</strong></p>
+<ul>
+<li>Lab testing to confirm fiber content (100% cotton, merino wool blend, etc.)</li>
+<li>Ensures label accuracy (what's on the tag matches reality)</li>
+<li>Detects synthetic blends or low-quality fibers</li>
+</ul>
+
+<p>Why this matters: Some manufacturers cut costs by blending cheaper synthetics into "100% cotton" fabric. Lab testing catches this before production begins.</p>
+
+<p><strong>Physical inspection:</strong></p>
+<ul>
+<li>Every roll inspected for defects (holes, stains, inconsistencies)</li>
+<li>Defective sections marked and excluded from cutting</li>
+<li>Only first-quality fabric makes it into production</li>
+</ul>
+
+<p><strong>Stage 2: In-Line Production Checks (During Manufacturing)</strong></p>
+
+<p>As garments move through production, quality controllers check critical points:</p>
+
+<p><strong>Pattern and cutting accuracy:</strong></p>
+<ul>
+<li>Pieces measured to ensure correct dimensions (chest, length, sleeve, etc.)</li>
+<li>Tolerance: ±1cm (industry standard ±2-3cm)</li>
+<li>Grain alignment checked (fabric grain must run straight for proper drape)</li>
+</ul>
+
+<p><strong>Stitching quality:</strong></p>
+<ul>
+<li>Stitch density verified (12-14 stitches per inch for durability)</li>
+<li>Seam strength tested (must withstand 15+ lbs of force)</li>
+<li>Reinforcement points inspected (shoulder seams, underarms, pockets)</li>
+<li>Straight stitching (no puckering, skipping, or uneven lines)</li>
+</ul>
+
+<p>Why this matters: Fast fashion uses 6-8 stitches per inch to save time and thread. This is why seams fail after a few wears. We use 12-14 stitches per inch—tighter, stronger, more durable.</p>
+
+<p><strong>Construction checkpoints:</strong></p>
+<ul>
+<li>Collar and cuff attachment (secure, symmetrical)</li>
+<li>Zipper installation (straight, functional, no bunching)</li>
+<li>Pocket placement and reinforcement (accurate, secure)</li>
+<li>Hem finishing (clean, even, professional)</li>
+</ul>
+
+<p><strong>Proportions and fit:</strong></p>
+<ul>
+<li>Sample garments worn and photographed to verify fit</li>
+<li>Compared to approved tech packs (design specifications)</li>
+<li>Adjustments made if proportions are off</li>
+</ul>
+
+<p><strong>Stage 3: Final Garment Inspection (Post-Production)</strong></p>
+
+<p><strong>Every single garment</strong> is inspected before packaging. Not random sampling—<strong>every garment, 100% inspection rate</strong>.</p>
+
+<p><strong>Visual inspection:</strong></p>
+<ul>
+<li>Check for stains, holes, loose threads, fabric defects</li>
+<li>Verify color consistency (no shade variations between batches)</li>
+<li>Ensure all labels are attached correctly (size, care, brand)</li>
+</ul>
+
+<p><strong>Functional inspection:</strong></p>
+<ul>
+<li>Zippers tested (smooth operation, no snagging)</li>
+<li>Buttons tested (secure attachment, proper alignment)</li>
+<li>Drawstrings checked (even length, secure attachment)</li>
+<li>Pockets inspected (functional, clean finish)</li>
+</ul>
+
+<p><strong>Measurement verification:</strong></p>
+<ul>
+<li>Random samples measured to confirm sizing accuracy</li>
+<li>Must match size chart specifications (chest, length, shoulder, sleeve)</li>
+<li>Tolerance: ±1cm from spec</li>
+</ul>
+
+<p><strong>Defect categorization and rejection:</strong></p>
+<p>Defects are classified as:</p>
+<ul>
+<li><strong>Critical:</strong> Automatic rejection (holes, severe stains, broken zippers, misaligned seams)</li>
+<li><strong>Major:</strong> Likely rejection (loose threads, minor stains, uneven hems)</li>
+<li><strong>Minor:</strong> Acceptable if isolated (small thread tail, slight color variation within tolerance)</li>
+</ul>
+
+<p>Rejection rate: We reject 2-5% of production for defects. Fast fashion rejects <1% (lower standards). The 2-5% we reject doesn't reach customers—it's sold as factory seconds or recycled.</p>
+
+<p><strong>Stage 4: Pre-Shipment Audit (Random Sampling)</strong></p>
+
+<p>Before shipment, a final audit is conducted on random samples from finished inventory:</p>
+
+<p><strong>AQL (Acceptable Quality Limit) sampling:</strong></p>
+<ul>
+<li>Industry standard statistical sampling method</li>
+<li>Random garments pulled from each batch</li>
+<li>Inspected against all previous checkpoints</li>
+<li>If sample fails, entire batch is re-inspected</li>
+</ul>
+
+<p><strong>Packaging and presentation:</strong></p>
+<ul>
+<li>Garments folded consistently</li>
+<li>Packaging clean and undamaged</li>
+<li>All inserts and tags included</li>
+</ul>
+
+<p>This 4-stage process ensures that when you receive a 1ABEL garment, it has passed <strong>dozens of individual quality checks</strong> from raw fabric to your door.</p>
+</section>
+
+<section>
+<h2>Fabric Sourcing: Why We Pay 2-3x Industry Standard</h2>
+<p>The biggest cost difference between 1ABEL and fast fashion is <strong>fabric quality</strong>.</p>
+
+<p><strong>Our fabric sourcing standards:</strong></p>
+
+<p><strong>1. Organic cotton priority:</strong></p>
+<ul>
+<li>Grown without synthetic pesticides or fertilizers</li>
+<li>Uses 91% less water than conventional cotton (drip irrigation vs flood irrigation)</li>
+<li>Healthier for farmers (no pesticide exposure)</li>
+<li>Biodegradable at end-of-life (no synthetic fibers)</li>
+<li>Cost: 20-30% more than conventional cotton</li>
+</ul>
+
+<p>We use organic cotton wherever feasible. When technical performance requires blends (stretch, water-resistance), we minimize synthetic content and ensure quality.</p>
+
+<p><strong>2. Heavyweight construction (200+ GSM tees, 400+ GSM hoodies):</strong></p>
+
+<p>Comparison table:</p>
+<ul>
+<li><strong>Fast fashion tee:</strong> 120-160 GSM, $3-5 fabric cost, wears thin after 20-30 washes</li>
+<li><strong>Mid-tier brand tee:</strong> 160-180 GSM, $6-8 fabric cost, decent durability</li>
+<li><strong>1ABEL premium tee:</strong> 200-220 GSM, $12-15 fabric cost, lasts 100+ washes without thinning</li>
+</ul>
+
+<p>Why heavyweight matters: Fabric weight correlates directly with durability. Heavier fabrics resist thinning, tearing, and wear. A 220 GSM tee lasts 3-5x longer than a 140 GSM tee.</p>
+
+<p>The cost: Heavyweight fabrics cost 2-3x more per meter. A fast fashion hoodie uses $8-10 of fabric. Our 400+ GSM hoodies use $25-30 of fabric. That's before labor, construction, or finishing.</p>
+
+<p><strong>3. Tested colorfastness (30+ wash retention):</strong></p>
+
+<p>Cheap dyes fade after 5-10 washes. Premium dyes maintain color for 50+ washes. We test every fabric batch:</p>
+<ul>
+<li>Wash cycles: 30+ washes at 40°C (standard home washing)</li>
+<li>Color retention: Must maintain 90%+ original color</li>
+<li>Bleeding: No color transfer to other garments</li>
+<li>Lightfastness: No fading from sun exposure</li>
+</ul>
+
+<p>Cost: Premium dyes and dyeing processes cost 40-50% more than standard dyes. We pay it because you shouldn't have to replace a faded garment after 10 washes.</p>
+
+<p><strong>4. Verified composition (lab testing):</strong></p>
+
+<p>Fabric fraud is common: manufacturers claim "100% cotton" but use 80% cotton + 20% polyester to cut costs. We lab test composition:</p>
+<ul>
+<li>Fiber content analysis (confirms cotton %, synthetic %, etc.)</li>
+<li>Detects undisclosed blends or substitutions</li>
+<li>Ensures label accuracy (what you're told matches what you're getting)</li>
+</ul>
+
+<p><strong>The cost reality:</strong></p>
+<p>Our fabric costs are 2-3x industry standard. A fast fashion hoodie might use $8-10 of fabric. Our 400+ GSM organic cotton fleece costs $25-30 per hoodie in raw fabric alone.</p>
+
+<p>Add labor, quality control, ethical wages, environmental compliance, and overhead—our production cost is 3-5x fast fashion. But the result lasts 10x longer.</p>
+
+<p>The math favors quality when you measure cost per wear, not cost per purchase.</p>
+</section>
+
+<section>
+<h2>Labor Practices: Fair Wages and Safe Conditions Aren't Optional</h2>
+<p>The fashion industry has a labor problem. <strong>Garment workers are among the lowest-paid workers globally</strong>, despite being skilled craftspeople.</p>
+
+<p><strong>The industry standard (what we reject):</strong></p>
+<ul>
+<li>Minimum wage in Bangladesh: $95/month ($3/day)</li>
+<li>14-16 hour shifts during peak production</li>
+<li>Unsafe factory conditions (poor ventilation, inadequate fire exits, structural issues)</li>
+<li>Quota-based pay (workers paid per piece, encouraging speed over quality)</li>
+<li>No benefits, no job security</li>
+</ul>
+
+<p><strong>The 1ABEL standard (what we require):</strong></p>
+
+<p><strong>1. Living wages (above minimum wage):</strong></p>
+<ul>
+<li>Our partners pay 30-50% above local minimum wage</li>
+<li>Wages sufficient to cover basic needs (housing, food, healthcare, education)</li>
+<li>Regular salary reviews and adjustments</li>
+<li>No piece-rate pay (workers paid hourly/monthly, not per garment)</li>
+</ul>
+
+<p>Why this matters: Minimum wage in most garment-producing countries is below living wage. Paying above minimum ensures workers can afford dignified lives.</p>
+
+<p><strong>2. Safe working conditions:</strong></p>
+<ul>
+<li>Proper ventilation and temperature control (prevents heat exhaustion)</li>
+<li>Adequate lighting (prevents eye strain, improves accuracy)</li>
+<li>Ergonomic workstations (reduces repetitive strain injuries)</li>
+<li>Fire safety compliance (multiple exits, extinguishers, emergency training)</li>
+<li>Building safety inspections (prevents collapses like Rana Plaza)</li>
+</ul>
+
+<p><strong>3. Reasonable hours and overtime limits:</strong></p>
+<ul>
+<li>Standard 8-hour shifts</li>
+<li>Overtime voluntary and compensated at premium rates</li>
+<li>Maximum 60-hour weeks (including overtime)</li>
+<li>Weekly rest days guaranteed</li>
+</ul>
+
+<p>Fast fashion thrives on forced overtime during peak seasons (back-to-school, holidays). We plan production timelines to avoid forced overtime.</p>
+
+<p><strong>4. Worker rights and representation:</strong></p>
+<ul>
+<li>Freedom of association (workers can form unions)</li>
+<li>Grievance mechanisms (workers can report issues without retaliation)</li>
+<li>Non-discrimination policies (hiring/pay based on skill, not gender/age/background)</li>
+</ul>
+
+<p><strong>The cost of ethical labor:</strong></p>
+<p>Fair wages and safe conditions add 20-30% to production costs. Fast fashion avoids these costs by choosing the cheapest possible labor. We pay the premium because exploitation isn't acceptable—regardless of whether it's legal in the country of production.</p>
+
+<p>Our higher retail prices reflect fair labor. When you buy 1ABEL, you're supporting workers earning living wages in safe conditions. When you buy fast fashion, you're supporting a system built on exploitation.</p>
+
+<p>Choose accordingly.</p>
+</section>
+
+<section>
+<h2>Environmental Practices: Reducing Impact Throughout Production</h2>
+<p>Garment manufacturing is resource-intensive and polluting. We can't eliminate environmental impact, but we can minimize it through responsible practices.</p>
+
+<p><strong>1. Water management:</strong></p>
+
+<p>Textile dyeing and finishing consumes massive amounts of water. Our partners implement:</p>
+<ul>
+<li><strong>Water recycling systems:</strong> Capture, treat, and reuse water (reduces consumption by 40-50%)</li>
+<li><strong>Closed-loop dyeing:</strong> Dye baths recycled instead of dumped into waterways</li>
+<li><strong>Wastewater treatment:</strong> All water treated before discharge to remove chemicals and dyes</li>
+<li><strong>Low-water dyeing techniques:</strong> Modern dyeing methods that use 30-40% less water</li>
+</ul>
+
+<p>Impact: Reduces water consumption from 100+ liters per kg of fabric to 50-60 liters per kg.</p>
+
+<p><strong>2. Chemical management (low-impact dyes):</strong></p>
+
+<p>Conventional textile dyeing uses toxic chemicals (heavy metals, formaldehyde, azo dyes). Our partners use:</p>
+<ul>
+<li><strong>GOTS-approved dyes:</strong> Global Organic Textile Standard-certified low-impact dyes</li>
+<li><strong>No heavy metals:</strong> Dyes free from lead, chromium, mercury</li>
+<li><strong>Low-VOC finishes:</strong> Fabric treatments with minimal volatile organic compounds</li>
+<li><strong>OEKO-TEX compliance:</strong> All chemicals tested for safety</li>
+</ul>
+
+<p>Impact: Reduces chemical pollution and ensures garments are safe for skin contact.</p>
+
+<p><strong>3. Energy efficiency:</strong></p>
+<ul>
+<li>Modern, energy-efficient machinery (30-40% less energy than older equipment)</li>
+<li>LED lighting throughout facilities</li>
+<li>Optimized production scheduling (minimizes machine idle time)</li>
+<li>Solar panels where feasible (reduces grid electricity dependence)</li>
+</ul>
+
+<p><strong>4. Waste reduction:</strong></p>
+<ul>
+<li><strong>Pattern optimization:</strong> Computerized pattern layouts minimize fabric waste (90%+ fabric utilization)</li>
+<li><strong>Scrap recycling:</strong> Fabric scraps collected and sold to recyclers (turned into insulation, stuffing, rags)</li>
+<li><strong>Packaging reduction:</strong> Minimal packaging, recyclable materials</li>
+<li><strong>Zero-landfill goal:</strong> Partners work toward sending zero waste to landfills</li>
+</ul>
+
+<p><strong>The cost of environmental responsibility:</strong></p>
+<p>Water recycling systems, low-impact dyes, energy-efficient equipment, and waste management programs add 15-20% to production costs. Fast fashion skips these investments, externalizing environmental costs to communities and ecosystems.</p>
+
+<p>We internalize these costs because environmental damage isn't someone else's problem—it's everyone's responsibility.</p>
+</section>
+
+<section>
+<h2>Why This Costs More (And Why It's Worth It)</h2>
+<p>Let's break down the cost structure transparently.</p>
+
+<p><strong>Fast fashion hoodie ($20-30 retail):</strong></p>
+<ul>
+<li>Fabric: $3-5 (140-160 GSM synthetic blend)</li>
+<li>Labor: $2-3 (minimum wage, rushed production)</li>
+<li>Manufacturing overhead: $1-2 (minimal QC, basic facilities)</li>
+<li>Total production cost: $6-10</li>
+<li>Markup: 3-5x (retail $20-30)</li>
+<li>Lifespan: 20-30 washes before thinning, fading, seams failing</li>
+<li><strong>Cost per wear:</strong> $1-1.50 (assuming 20 wears before it's unwearable)</li>
+</ul>
+
+<p><strong>1ABEL premium hoodie ($100-120 retail):</strong></p>
+<ul>
+<li>Fabric: $25-30 (400+ GSM organic cotton fleece)</li>
+<li>Labor: $15-20 (living wage, safe conditions, reasonable hours)</li>
+<li>Manufacturing overhead: $10-12 (4-stage QC, certified facilities, environmental compliance)</li>
+<li>Total production cost: $50-62</li>
+<li>Markup: 2x (retail $100-120)</li>
+<li>Lifespan: 100+ washes, 5-10 years of regular wear</li>
+<li><strong>Cost per wear:</strong> $0.20-0.50 (assuming 200-500 wears over lifespan)</li>
+</ul>
+
+<p><strong>The math:</strong></p>
+<p>Fast fashion hoodie: $30 / 20 wears = <strong>$1.50 per wear</strong></p>
+<p>1ABEL hoodie: $100 / 300 wears = <strong>$0.33 per wear</strong></p>
+
+<p>Over 10 years, you'll replace the fast fashion hoodie 5-10 times (5-10 × $30 = $150-300). The 1ABEL hoodie lasts the entire 10 years ($100 total).</p>
+
+<p><strong>Quality costs less long-term</strong>, even though the upfront price is higher.</p>
+
+<p><strong>Why we can't compete on price:</strong></p>
+<p>We use premium materials (2-3x fabric cost), pay fair wages (30-50% above minimum), implement rigorous QC (4-stage inspection), ensure safe conditions (certified facilities), and minimize environmental impact (water recycling, low-impact dyes, waste reduction).</p>
+
+<p>This costs 3-5x more to produce than fast fashion. We can't cut these costs without sacrificing quality, ethics, or sustainability. We won't make that trade.</p>
+
+<p><strong>The choice:</strong></p>
+<p>You can buy cheap and replace often, or buy quality and keep for years. The former costs more long-term and supports exploitation. The latter costs less long-term and supports ethical practices.</p>
+
+<p>We're transparent about this trade-off. Choose accordingly.</p>
+</section>
+
+<section>
+<h2>The Bottom Line: Transparency, Quality, and Accountability</h2>
+<p>Manufacturing matters. Where your clothes are made, how they're made, who makes them, and what standards are upheld determine quality, ethics, and environmental impact.</p>
+
+<p><strong>The 1ABEL manufacturing framework:</strong></p>
+<ul>
+<li><strong>Certified partners:</strong> ISO 9001, WRAP, OEKO-TEX compliance (verified quality, ethics, safety)</li>
+<li><strong>4-stage quality control:</strong> Material inspection, in-line checks, final inspection, pre-shipment audit (100% inspection rate)</li>
+<li><strong>Premium fabrics:</strong> 200+ GSM tees, 400+ GSM hoodies, organic cotton priority, tested colorfastness (2-3x industry fabric costs)</li>
+<li><strong>Fair labor:</strong> Living wages (30-50% above minimum), safe conditions, reasonable hours, worker rights</li>
+<li><strong>Environmental responsibility:</strong> Water recycling (40-50% reduction), low-impact dyes, energy efficiency, waste reduction</li>
+<li><strong>Transparent costs:</strong> Production costs 3-5x fast fashion, but lasts 10x longer (lower cost per wear)</li>
+</ul>
+
+<p>The result: Garments that last 5-10 years with proper care, support ethical labor practices, minimize environmental impact, and cost less per wear than disposable fast fashion.</p>
+
+<p><strong>Start with 1ABEL's ethically-manufactured basics:</strong> Premium tees in organic cotton (200-220 GSM), heavyweight hoodies (400+ GSM fleece), modern selvedge denim. Every piece is made in certified facilities, passes 4-stage QC, and supports living wages throughout the supply chain.</p>
+
+<blockquote>
+<p>Transparency isn't marketing—it's accountability. When brands hide their manufacturing practices, they're hiding exploitation, corner-cutting, and environmental damage. We show you everything because we're proud of how we make our garments.</p>
+</blockquote>
+</section>
