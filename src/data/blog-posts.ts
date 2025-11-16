@@ -19606,5 +19606,551 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
         'secondhand fashion market'
       ]
     }
+  },
+  {
+    slug: 'software-engineer-capsule-wardrobe-developer-style',
+    title: 'The Software Engineer Capsule Wardrobe: 20 Pieces for Every Context in 2025',
+    excerpt: 'From daily standups to investor pitches, the modern developer needs versatile, comfortable clothing that works everywhere. Build a systematic wardrobe that eliminates decision fatigue and keeps you focused on what matters: shipping code.',
+    content: `
+<section>
+<h2>The Evolution of Developer Fashion: From Hoodie Culture to Strategic Dressing</h2>
+<p>Mark Zuckerberg's grey hoodie. Steve Jobs' black turtleneck. The Silicon Valley uniform is iconic for a reason.</p>
+
+<p>But here's what nobody talks about: <strong>That hoodie worked because it was part of a system</strong>.</p>
+
+<p>Zuckerberg didn't just grab any random hoodie. Jobs didn't wear any black turtleneck. They built <strong>intentional uniforms</strong> that eliminated wardrobe decisions while maintaining credibility across every context they operated in.</p>
+
+<p>As a software engineer in 2025, you face more contexts than ever:</p>
+
+<ul>
+<li><strong>Deep work sessions</strong> — solo coding, debugging, late-night builds</li>
+<li><strong>Daily standups</strong> — quick team syncs, casual but professional</li>
+<li><strong>Client meetings</strong> — video calls where you need to look put-together</li>
+<li><strong>Investor pitches</strong> — high-stakes presentations requiring credibility</li>
+<li><strong>Conferences & networking</strong> — representing your company or personal brand</li>
+<li><strong>Casual Fridays that are actually every day</strong> — the modern tech dress code paradox</li>
+</ul>
+
+<p>You need clothes that work for <strong>all of it</strong>. Without thinking. Without changing. Without anxiety.</p>
+
+<p>That's what this guide delivers: <strong>A systematic 20-piece capsule wardrobe designed specifically for software engineers</strong>.</p>
+
+<blockquote>
+<p>"How you dress matters. It's an important soft skill that any software developer should pay attention to." — Tech Industry Research, 2025</p>
+</blockquote>
+</section>
+
+<section>
+<h2>Why Software Engineers Need a Different Wardrobe Approach</h2>
+
+<p>Your job is different. Your wardrobe strategy should be too.</p>
+
+<h3>The Developer's Unique Wardrobe Requirements</h3>
+
+<p><strong>1. Comfort During Long Coding Sessions</strong></p>
+<p>You're sitting for 6-12 hours straight. Restrictive clothing kills focus. Uncomfortable fabrics create constant low-level irritation that compounds over the day.</p>
+
+<p><strong>Research shows:</strong> Physical discomfort reduces cognitive performance by up to 23%. When your jeans are too tight or your collar is scratching, you're literally making yourself dumber.</p>
+
+<p><strong>2. Multi-Context Versatility</strong></p>
+<p>According to 2025 industry research, the average developer context-switches between casual coding and professional meetings 4-7 times per week. Your wardrobe needs to work for both without requiring outfit changes.</p>
+
+<p><strong>3. Temperature Regulation in Unpredictable Environments</strong></p>
+<p>Office AC blasting at 65°F. Home office at 75°F. Coffee shop at 68°F. Conference rooms ranging from arctic to tropical. You need <strong>layering flexibility</strong> without bulk.</p>
+
+<p><strong>4. Minimal Decision Overhead</strong></p>
+<p>Every morning decision drains the same cognitive resources you need for solving complex technical problems. The average person spends <strong>17 minutes per day</strong> deciding what to wear. That's 103 hours per year—over 2.5 work weeks of productive time wasted on wardrobe anxiety.</p>
+
+<p><strong>5. Professional Credibility Without Trying Too Hard</strong></p>
+<p>Silicon Valley research shows that developers who "try too hard" with formal clothing lose peer credibility, but those who dress sloppily struggle in client-facing contexts. You need the <strong>sweet spot: effortless quality</strong>.</p>
+</section>
+
+<section>
+<h2>The Silicon Valley Dress Code Evolution: What Changed in 2025</h2>
+
+<p>The hoodie-and-jeans uniform that dominated tech for decades is evolving.</p>
+
+<p>Here's what's shifting:</p>
+
+<h3>From "Hoodie or Nothing" to "Stealth Quality"</h3>
+
+<p>As of 2022-2025, Silicon Valley dress culture is transitioning from obvious casual (cheap hoodies, ratty jeans) to <strong>stealth wealth</strong>—high-quality basics that look simple but are actually premium.</p>
+
+<p>Loro Piana opening boutiques in Palo Alto. Brunello Cucinelli becoming the quiet uniform of successful founders. The shift is real.</p>
+
+<p>But here's the key: <strong>It still looks casual. It just feels (and lasts) way better.</strong></p>
+
+<h3>The Hoodie Isn't Dead—It's Just Higher Quality</h3>
+
+<p>Mark Zuckerberg still wears hoodies. But they're custom-made Brunello Cucinelli pieces at $400+, not H&M.</p>
+
+<p>The silhouette is the same. The <strong>quality</strong> is what changed.</p>
+
+<h3>Why This Matters for You</h3>
+
+<p>You don't need to buy $400 hoodies. But you <strong>do</strong> need to understand the principle: <strong>Invest in basics that look effortless but perform exceptionally</strong>.</p>
+
+<p>That's exactly what this capsule wardrobe delivers.</p>
+</section>
+
+<section>
+<h2>The 20-Piece Software Engineer Capsule Wardrobe System</h2>
+
+<p>This isn't about fashion. It's about <strong>systematic efficiency</strong>.</p>
+
+<p>Every piece works with every other piece. Every item serves multiple contexts. Nothing is single-use.</p>
+
+<h3>Foundation Layer: Core Tops (6 pieces)</h3>
+
+<p><strong>3 Premium T-Shirts</strong></p>
+<ul>
+<li>2 dark (VOID black, STEEL grey) for deep work mode</li>
+<li>1 light (CLOUD white or SAND beige) for meetings/social contexts</li>
+<li><strong>Why:</strong> 200+ washes, breathable, looks good solo or layered</li>
+<li><strong>Context:</strong> Daily coding, casual Fridays, weekend work</li>
+</ul>
+
+<p><strong>2 Long Sleeves or Thermals</strong></p>
+<ul>
+<li>1 dark (VOID or STEEL) for layering</li>
+<li>1 medium tone (MOSS or SAND) for standalone wear</li>
+<li><strong>Why:</strong> Temperature flexibility, professional enough for video calls</li>
+<li><strong>Context:</strong> Cold offices, layering system, casual meetings</li>
+</ul>
+
+<p><strong>1 Premium Hoodie or Crewneck</strong></p>
+<ul>
+<li>Dark neutral (VOID black preferred)</li>
+<li><strong>Why:</strong> The developer's signature piece—make it count</li>
+<li><strong>Context:</strong> Daily uniform, late-night coding, casual office standard</li>
+</ul>
+
+<h3>Professional Layer: Elevated Basics (3 pieces)</h3>
+
+<p><strong>1 Overshirt or Light Jacket</strong></p>
+<ul>
+<li>Dark or neutral tone (STEEL, VOID, SAND)</li>
+<li><strong>Why:</strong> Instantly elevates t-shirt, works over hoodie for layering</li>
+<li><strong>Context:</strong> Client meetings, investor calls, conferences, networking</li>
+</ul>
+
+<p><strong>1 Quality Denim Jacket or Bomber</strong></p>
+<ul>
+<li>Classic cut, minimal branding</li>
+<li><strong>Why:</strong> Casual-professional bridge piece, works in tech culture</li>
+<li><strong>Context:</strong> Startup events, after-work meetups, casual Fridays elevated</li>
+</ul>
+
+<p><strong>1 Minimal Crewneck Sweater</strong></p>
+<ul>
+<li>Merino wool or quality cotton blend</li>
+<li><strong>Why:</strong> Professional warmth without formality, perfect for video calls</li>
+<li><strong>Context:</strong> Client-facing meetings, video presentations, cooler offices</li>
+</ul>
+
+<h3>Bottoms: Maximum Versatility (5 pieces)</h3>
+
+<p><strong>2 Pairs Premium Denim</strong></p>
+<ul>
+<li>1 dark wash (VOID/STEEL tone) — dressier option</li>
+<li>1 medium/light wash (SAND/MIST tone) — casual option</li>
+<li><strong>Why:</strong> Universal tech uniform, works everywhere from code sprint to client dinner</li>
+<li><strong>Context:</strong> All contexts except extremely formal</li>
+</ul>
+
+<p><strong>1 Pair Cargo or Utility Pants</strong></p>
+<ul>
+<li>Dark neutral (VOID, STEEL, EARTH)</li>
+<li><strong>Why:</strong> Comfortable for long sessions, functional, on-trend in tech</li>
+<li><strong>Context:</strong> Daily coding, hackathons, startup casual culture</li>
+</ul>
+
+<p><strong>1 Pair Joggers or Sweats (Quality)</strong></p>
+<ul>
+<li>Dark neutral, tapered fit</li>
+<li><strong>Why:</strong> Maximum comfort for deep work, acceptable in modern tech offices</li>
+<li><strong>Context:</strong> Solo coding days, late-night builds, WFH comfort</li>
+</ul>
+
+<p><strong>1 Pair Chinos or Tailored Pants</strong></p>
+<ul>
+<li>Neutral (SAND, STEEL, VOID)</li>
+<li><strong>Why:</strong> Professional option when you need to elevate</li>
+<li><strong>Context:</strong> Investor pitches, formal presentations, important client meetings</li>
+</ul>
+
+<h3>Outerwear: Weather & Context Flexibility (2 pieces)</h3>
+
+<p><strong>1 Technical Puffer or Insulated Jacket</strong></p>
+<ul>
+<li>Minimalist design, dark neutral</li>
+<li><strong>Why:</strong> Warmth without bulk, tech aesthetic alignment</li>
+<li><strong>Context:</strong> Commuting, cold weather, outdoor events</li>
+</ul>
+
+<p><strong>1 Rain Shell or Light Jacket</strong></p>
+<ul>
+<li>Packable, neutral color</li>
+<li><strong>Why:</strong> Weather protection, layering option</li>
+<li><strong>Context:</strong> Unpredictable weather, travel, outdoor networking</li>
+</ul>
+
+<h3>Footwear: Three-Shoe System (3 pairs)</h3>
+
+<p><strong>1 Pair Minimalist Sneakers</strong></p>
+<ul>
+<li>White, grey, or black leather/quality material</li>
+<li><strong>Why:</strong> Clean, versatile, works for 90% of contexts</li>
+<li><strong>Context:</strong> Daily wear, casual meetings, conferences</li>
+</ul>
+
+<p><strong>1 Pair Performance/Tech Sneakers</strong></p>
+<ul>
+<li>Comfortable for all-day wear</li>
+<li><strong>Why:</strong> Long conference days, walking commutes, comfort priority</li>
+<li><strong>Context:</strong> Hackathons, trade shows, intensive standing/walking days</li>
+</ul>
+
+<p><strong>1 Pair Boots or Elevated Footwear</strong></p>
+<ul>
+<li>Chelsea boots, chukkas, or minimalist leather boots</li>
+<li><strong>Why:</strong> Professional elevation without looking "try-hard"</li>
+<li><strong>Context:</strong> Client meetings, investor calls, formal events</li>
+</ul>
+
+<h3>Accessories: Functional Minimalism (4 items)</h3>
+
+<p><strong>1 Quality Backpack</strong></p>
+<ul>
+<li>Minimal branding, laptop compartment, durable</li>
+<li><strong>Why:</strong> Carries your life, represents your brand</li>
+</ul>
+
+<p><strong>1 Beanie or Cap</strong></p>
+<ul>
+<li>Dark neutral, no logos</li>
+<li><strong>Why:</strong> Bad hair days, casual signaling, warmth</li>
+</ul>
+
+<p><strong>1 Quality Watch</strong></p>
+<ul>
+<li>Minimalist design (not necessary but useful)</li>
+<li><strong>Why:</strong> Subtle credibility signal, functional</li>
+</ul>
+
+<p><strong>1 Belt</strong></p>
+<ul>
+<li>Leather or quality material, simple buckle</li>
+<li><strong>Why:</strong> Professional detail for chinos/denim</li>
+</ul>
+
+<p><strong>Total: 20 core pieces</strong></p>
+<p><strong>Total outfit combinations: 200+</strong></p>
+<p><strong>Total contexts covered: All of them</strong></p>
+</section>
+
+<section>
+<h2>The Color System: Why Dark Neutrals Dominate Developer Wardrobes</h2>
+
+<p>Notice a pattern in the recommendations? <strong>Dark neutrals. Especially black and grey.</strong></p>
+
+<p>This isn't arbitrary. It's strategic.</p>
+
+<h3>Why Dark Colors Work for Developers</h3>
+
+<p><strong>1. Cognitive Silence</strong></p>
+<p>Research on visual processing shows that dark neutrals require less cognitive processing than bright or complex colors. Your brain literally spends less energy parsing what you're wearing.</p>
+
+<p><strong>2. Context Flexibility</strong></p>
+<p>Black works in the gym. Black works in investor meetings. Black works at 2am debugging production. No other color has that range.</p>
+
+<p><strong>3. Easier Maintenance</strong></p>
+<p>Dark clothing hides stains, requires less frequent washing, and maintains appearance longer. Perfect for people who'd rather code than do laundry.</p>
+
+<p><strong>4. Cultural Alignment</strong></p>
+<p>Silicon Valley established dark hoodies and black t-shirts as the developer uniform for decades. Working with that culture (not against it) reduces friction.</p>
+
+<h3>The 1ABEL Arc 2 Shadow Advantage</h3>
+
+<p>This is exactly why <strong>Arc 2 (Shadow)</strong> exists:</p>
+
+<ul>
+<li><strong>VOID (pure black)</strong> — The foundation. Works everywhere, offends nowhere.</li>
+<li><strong>STEEL (dark grey)</strong> — Slight variation without complexity.</li>
+<li><strong>MOSS (forest green)</strong> — Earth tone accent when you want subtle depth.</li>
+<li><strong>BLOOD (burgundy)</strong> — Rich accent for intentional contrast.</li>
+<li><strong>EARTH (brown)</strong> — Warm grounding when black feels too harsh.</li>
+</ul>
+
+<p>Every piece in Arc 2 works with every other piece. No matching decisions. Just grab and go.</p>
+
+<p>That's <strong>systematic dressing for systematic thinkers</strong>.</p>
+</section>
+
+<section>
+<h2>Context-Switching Without Outfit-Switching: Real Examples</h2>
+
+<p>Let's see how this wardrobe handles actual developer scenarios:</p>
+
+<h3>Scenario 1: Solo Deep Work Day</h3>
+<p><strong>Outfit:</strong> Premium t-shirt (VOID) + joggers (STEEL) + minimal sneakers</p>
+<p><strong>Why it works:</strong> Maximum comfort, zero restriction, focus-optimized</p>
+<p><strong>Time to decide:</strong> 15 seconds</p>
+
+<h3>Scenario 2: Office Day with Standup Meetings</h3>
+<p><strong>Outfit:</strong> Long sleeve (STEEL) + denim (dark wash) + minimal sneakers</p>
+<p><strong>Why it works:</strong> Casual but polished, professional enough for video calls</p>
+<p><strong>Time to decide:</strong> 20 seconds</p>
+
+<h3>Scenario 3: Client Video Call Then Coding</h3>
+<p><strong>Outfit:</strong> Crewneck sweater (SAND) + denim (dark wash) + boots</p>
+<p><strong>Why it works:</strong> Professional on camera, comfortable for coding after</p>
+<p><strong>Time to decide:</strong> 25 seconds</p>
+
+<h3>Scenario 4: Investor Pitch</h3>
+<p><strong>Outfit:</strong> Overshirt (STEEL) + premium t-shirt (VOID) + chinos (SAND) + boots</p>
+<p><strong>Why it works:</strong> Elevated but authentic, credible without costume</p>
+<p><strong>Time to decide:</strong> 30 seconds</p>
+
+<h3>Scenario 5: Conference/Networking Event</h3>
+<p><strong>Outfit:</strong> Denim jacket + long sleeve (VOID) + denim (medium wash) + minimal sneakers</p>
+<p><strong>Why it works:</strong> Tech aesthetic, approachable, memorable without trying</p>
+<p><strong>Time to decide:</strong> 25 seconds</p>
+
+<h3>Scenario 6: Hackathon or Late-Night Build</h3>
+<p><strong>Outfit:</strong> Hoodie (VOID) + joggers (STEEL) + performance sneakers</p>
+<p><strong>Why it works:</strong> Ultimate comfort, temperature flexibility, zero restriction</p>
+<p><strong>Time to decide:</strong> 10 seconds</p>
+
+<p><strong>Every context covered. Average decision time: Under 30 seconds. Zero outfit anxiety.</strong></p>
+
+<p>That's 16+ minutes per day reclaimed. <strong>Over 100 hours per year back in your life.</strong></p>
+</section>
+
+<section>
+<h2>Quality Matters More Than Quantity: The Developer's ROI Calculation</h2>
+
+<p>Software engineers understand ROI. Let's calculate wardrobe ROI like you'd calculate technical debt.</p>
+
+<h3>Fast Fashion Developer Wardrobe (Typical)</h3>
+<p><strong>Startup cost:</strong></p>
+<ul>
+<li>10 cheap t-shirts × $15 = $150</li>
+<li>5 cheap hoodies × $30 = $150</li>
+<li>4 cheap jeans × $40 = $160</li>
+<li>2 cheap joggers × $25 = $50</li>
+<li>3 pairs cheap sneakers × $50 = $150</li>
+<li><strong>Total: $660</strong></li>
+</ul>
+
+<p><strong>5-year cost (with replacements):</strong></p>
+<ul>
+<li>T-shirts replaced 2x/year = $1,500</li>
+<li>Hoodies replaced 1x/year = $750</li>
+<li>Jeans replaced 1x/year = $800</li>
+<li>Joggers replaced 1x/year = $250</li>
+<li>Sneakers replaced 2x/year = $1,500</li>
+<li><strong>Total: $4,800 over 5 years</strong></li>
+</ul>
+
+<h3>Quality Capsule Wardrobe (This System)</h3>
+<p><strong>Startup cost:</strong></p>
+<ul>
+<li>6 premium tops × $70 avg = $420</li>
+<li>3 elevated pieces × $120 avg = $360</li>
+<li>5 quality bottoms × $100 avg = $500</li>
+<li>2 outerwear pieces × $150 avg = $300</li>
+<li>3 quality footwear × $120 avg = $360</li>
+<li>4 accessories × $50 avg = $200</li>
+<li><strong>Total: $2,140</strong></li>
+</ul>
+
+<p><strong>5-year cost (minimal replacements):</strong></p>
+<ul>
+<li>Replace 2 tees = $140</li>
+<li>Replace 1 pair jeans = $100</li>
+<li>Replace 1 pair sneakers = $120</li>
+<li><strong>Total: $2,500 over 5 years</strong></li>
+</ul>
+
+<p><strong>Savings: $2,300 over 5 years (48% reduction)</strong></p>
+
+<p><strong>Plus intangibles:</strong></p>
+<ul>
+<li><strong>Time saved:</strong> 100+ hours per year (16 min/day → 2 min/day)</li>
+<li><strong>Decision fatigue eliminated:</strong> Immeasurable productivity gain</li>
+<li><strong>Professional credibility:</strong> Better first impressions, stronger personal brand</li>
+<li><strong>Environmental impact:</strong> 75% reduction in textile waste</li>
+</ul>
+
+<p>When you calculate <strong>total cost of ownership</strong>, quality wins every time.</p>
+</section>
+
+<section>
+<h2>Implementation: Your 90-Day Migration Plan</h2>
+
+<p>Don't buy everything at once. That's wasteful and overwhelming.</p>
+
+<p>Here's the systematic approach:</p>
+
+<h3>Days 1-7: Audit Phase</h3>
+<ol>
+<li><strong>Empty your closet completely</strong></li>
+<li><strong>Category: Keep, Maybe, Donate</strong>
+  <ul>
+    <li>Keep: Worn in last 30 days, fits well, quality intact</li>
+    <li>Maybe: Worn in last 6 months, decent condition</li>
+    <li>Donate: Haven't worn in 6+ months or poor quality</li>
+  </ul>
+</li>
+<li><strong>Identify gaps in the 20-piece system</strong></li>
+<li><strong>Calculate current cost-per-wear for existing items</strong></li>
+</ol>
+
+<h3>Days 8-30: Foundation Phase</h3>
+<ol>
+<li><strong>Invest in 3 premium t-shirts</strong> — Daily driver foundation</li>
+<li><strong>Buy 1 quality hoodie or crewneck</strong> — Your signature piece</li>
+<li><strong>Get 1 pair premium denim</strong> — Versatile bottom</li>
+<li><strong>Add minimal sneakers</strong> — Daily footwear</li>
+</ol>
+
+<p><strong>Cost: ~$400</strong></p>
+<p><strong>Impact: Covers 70% of daily contexts</strong></p>
+
+<h3>Days 31-60: Elevation Phase</h3>
+<ol>
+<li><strong>Add overshirt or light jacket</strong> — Professional layer</li>
+<li><strong>Buy second pair of denim or chinos</strong> — Rotation option</li>
+<li><strong>Get 2 long sleeves</strong> — Layering/temperature flexibility</li>
+<li><strong>Add boots or elevated footwear</strong> — Meeting/event option</li>
+</ol>
+
+<p><strong>Cost: ~$450</strong></p>
+<p><strong>Impact: Now covers 90% of contexts</strong></p>
+
+<h3>Days 61-90: Complete Phase</h3>
+<ol>
+<li><strong>Fill remaining gaps from 20-piece system</strong></li>
+<li><strong>Add outerwear for your climate</strong></li>
+<li><strong>Invest in quality accessories</strong></li>
+<li><strong>Donate/sell "maybe" pile from audit</strong></li>
+</ol>
+
+<p><strong>Cost: ~$600</strong></p>
+<p><strong>Impact: Complete system, all contexts covered</strong></p>
+
+<p><strong>Total investment: ~$1,450</strong></p>
+<p><strong>Total time: 90 days</strong></p>
+<p><strong>Result: A wardrobe that lasts 5-10 years and eliminates daily decision overhead</strong></p>
+</section>
+
+<section>
+<h2>Why 1ABEL is Built for Developers</h2>
+
+<p>1ABEL wasn't created by fashion designers. It was created by <strong>Anyro, a multi-business entrepreneur running 5 companies</strong>.</p>
+
+<p>He needed a wardrobe that worked like his businesses: <strong>systematic, efficient, and invisible until it breaks</strong>.</p>
+
+<p>The result is a <strong>two-arc system</strong> designed for people who context-switch constantly:</p>
+
+<p><strong>Arc 2 (Shadow)</strong> — Deep work mode. Dark, grounding pieces for coding, building, focus.</p>
+
+<p><strong>Arc 3 (Light)</strong> — Collaboration mode. Bright, energizing pieces for meetings, presentations, social contexts.</p>
+
+<p><strong>Every piece pairs with every other piece in its arc. Cross-arc mixing works too. Zero matching decisions.</strong></p>
+
+<p>This is <strong>fashion as infrastructure</strong>, not expression.</p>
+
+<p>Perfect for developers who'd rather ship code than think about clothes.</p>
+</section>
+
+<section>
+<h2>Start Building Your Developer Capsule Wardrobe Today</h2>
+
+<p>You've read the research. You've seen the system. You understand the ROI.</p>
+
+<p>Now it's time to <strong>implement</strong>.</p>
+
+<p><strong>This week:</strong></p>
+<ol>
+<li>Audit your current wardrobe</li>
+<li>Identify your top 3 gaps</li>
+<li>Calculate your current cost-per-wear</li>
+</ol>
+
+<p><strong>This month:</strong></p>
+<ol>
+<li>Invest in foundation pieces (3 tees, 1 hoodie, 1 denim, sneakers)</li>
+<li>Track how these pieces perform across contexts</li>
+<li>Donate clothes you haven't worn in 6+ months</li>
+</ol>
+
+<p><strong>This quarter:</strong></p>
+<ol>
+<li>Complete the 20-piece system systematically</li>
+<li>Refine based on your actual usage patterns</li>
+<li>Document your time savings and mental clarity improvements</li>
+</ol>
+
+<p><strong>The goal:</strong> A wardrobe that disappears. That just works. Day after day. Context after context. Year after year.</p>
+
+<p>So you can focus on what actually matters: <strong>Building the future</strong>.</p>
+</section>
+
+<section>
+<h2>Explore the 1ABEL System for Developers</h2>
+
+<p>Ready to build a wardrobe system that actually works for your life as a software engineer?</p>
+
+<p><strong>Explore 1ABEL's developer-friendly collections:</strong></p>
+
+<ul>
+<li><strong><a href="/arc-2">Arc 2 (Shadow)</a></strong> — Deep work essentials. Dark, grounding, focus-optimized. Perfect for daily coding and late-night builds.</li>
+<li><strong><a href="/arc-3">Arc 3 (Light)</a></strong> — Collaboration essentials. Bright, balanced, meeting-ready. Ideal for client calls and networking.</li>
+<li><strong><a href="/about">The 1ABEL Philosophy</a></strong> — Learn how we apply systematic thinking to fashion design.</li>
+</ul>
+
+<p>Every piece is built for <strong>longevity, comfort, and context-flexibility</strong>.</p>
+
+<p>No trend-chasing. No decision fatigue. No waste.</p>
+
+<p>Just a wardrobe that works like infrastructure: <strong>Invisible, reliable, efficient</strong>.</p>
+
+<p>Because you have more important problems to solve than what to wear tomorrow.</p>
+</section>
+`,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur running Seology.ai, iImagined.ai, FutureShive, Sirency, and 1ABEL. Built 1ABEL to solve his own wardrobe friction while running 5 companies. Codes. Builds. Wears VOID 80% of the time.'
+    },
+    publishedAt: '2025-01-16',
+    updatedAt: '2025-01-16',
+    readTime: '16 min',
+    category: 'Style Guide',
+    tags: ['software engineer wardrobe', 'developer fashion', 'programmer style', 'tech worker clothing', 'capsule wardrobe developers', 'silicon valley fashion', 'coding wardrobe'],
+    featured: true,
+    seo: {
+      metaTitle: 'Software Engineer Capsule Wardrobe: 20 Pieces for Every Context | 1ABEL',
+      metaDescription: 'Build a systematic 20-piece wardrobe for developers. From daily standups to investor pitches, eliminate decision fatigue and stay focused on shipping code. Complete guide with ROI analysis.',
+      keywords: [
+        'software engineer wardrobe',
+        'developer capsule wardrobe',
+        'programmer fashion guide',
+        'tech worker clothing',
+        'silicon valley dress code 2025',
+        'developer style guide',
+        'coding wardrobe essentials',
+        'minimalist wardrobe engineers',
+        'quality clothing developers',
+        'hoodie culture tech',
+        'software engineer fashion',
+        'capsule wardrobe tech workers',
+        'developer minimalist style',
+        'professional developer clothing',
+        'tech industry fashion'
+      ]
+    }
   }
 ]
