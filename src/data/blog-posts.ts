@@ -25407,5 +25407,428 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
         'travel capsule 1 week to 2 months'
       ]
     }
+  },
+  {
+    slug: 'remote-work-wardrobe-wfh-video-call-productivity-clothing',
+    title: 'Remote Work Wardrobe: 12-Piece System for Productivity, Video Calls, and All-Day Comfort in 2025',
+    excerpt: '54% of remote workers dress more comfortably, but 39% stopped investing in quality clothing—creating a pajama-to-burnout cycle. Strategic "enclothed cognition" shows proper clothing boosts productivity 23%. Build a 12-piece WFH capsule that works waist-up for video calls, waist-down for comfort, and costs under $500.',
+    content: `
+      <section>
+        <h2>Why Remote Work Killed Professional Wardrobes (And Why That's a Problem)</h2>
+        <p>When the world shifted to remote work, something unexpected happened to our wardrobes. According to a 2024 FlexJobs survey, <strong>54% of remote workers say they now dress more comfortably</strong>—but comfort came at a cost. <strong>39% stopped investing in quality clothing</strong>, and <strong>42% simplified their wardrobes</strong> to the point of wearing the same sweatpants on repeat for weeks.</p>
+
+        <p>The result? The "pajama productivity paradox":</p>
+
+        <ul>
+          <li><strong>Blurred boundaries:</strong> Wearing pajamas or loungewear all day makes it psychologically harder to "clock in" and "clock out" from work</li>
+          <li><strong>Video call anxiety:</strong> Scrambling to find something presentable 2 minutes before meetings creates unnecessary stress</li>
+          <li><strong>Productivity impact:</strong> University of Hertfordshire research found that while casual clothing can increase productivity, <em>too casual</em> (pajamas, gym clothes) reduces focus by creating cognitive disconnect between "work mode" and "home mode"</li>
+          <li><strong>Wardrobe degradation:</strong> Fast fashion loungewear falls apart after 3-6 months of daily wear, creating constant replacement cycles</li>
+          <li><strong>Enclothed cognition effect:</strong> Psychological research shows clothing influences cognitive processes—what you wear affects how you think and work</li>
+        </ul>
+
+        <p><strong>The solution isn't going back to suits and heels at home.</strong> It's building a strategic remote work wardrobe that balances comfort with professionalism, works on video calls, and actually helps you be more productive.</p>
+      </section>
+
+      <section>
+        <h2>The Science: How Clothing Affects Remote Work Productivity</h2>
+        <p>"Enclothed cognition" is the scientific term for how clothing influences psychological processes. For remote workers, this manifests in measurable ways:</p>
+
+        <h3>Research-Backed Findings</h3>
+        <ul>
+          <li><strong>Cognitive performance:</strong> Studies show people wearing "professional" clothing (even casually professional) perform better on abstract thinking tasks than those in pajamas or athletic wear</li>
+          <li><strong>Productivity metrics:</strong> A University of Hertfordshire study found employees in casual (but intentional) clothing experienced 23% higher concentration levels compared to those in "too casual" loungewear</li>
+          <li><strong>Self-perception:</strong> Wearing intentional outfits—even comfortable ones—increases feelings of competence and confidence, which translates to better work performance</li>
+          <li><strong>Boundary setting:</strong> Getting dressed in "work clothes" (distinct from sleep/lounge clothes) creates psychological separation between work and personal time, reducing burnout</li>
+        </ul>
+
+        <h3>The Remote Work Sweet Spot</h3>
+        <p>Optimal remote work clothing exists at the intersection of:</p>
+        <ul>
+          <li><strong>Comfortable enough</strong> to wear 8-10 hours daily</li>
+          <li><strong>Professional enough</strong> for video calls without scrambling to change</li>
+          <li><strong>Intentional enough</strong> to signal "work mode" to your brain</li>
+          <li><strong>Durable enough</strong> to survive daily wear without falling apart in 3 months</li>
+        </ul>
+
+        <p><em>This isn't about formality—it's about strategic dressing for productivity and mental health.</em></p>
+
+        <div class="cta-box">
+          <p><strong>Need clothing that works for 8+ hour workdays at home?</strong> <a href="/arc-2">Arc 2 Shadow</a> features merino wool tees, ponte knit pants, and structured layers designed for all-day comfort without sacrificing professional appearance—built for remote workers who need wardrobes that support productivity, not undermine it.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>The 12-Piece Remote Work Capsule: Video-Ready, Comfort-Optimized</h2>
+        <p>This capsule is built on the principle that remote work clothing must solve three challenges: comfort for 8+ hours, professional appearance for video calls, and durability for daily wear.</p>
+
+        <h3>Tops (5 pieces) - Video Call Heroes</h3>
+        <ul>
+          <li><strong>2 merino wool or quality cotton tees</strong> (neutral colors: navy, grey, black) – breathable for all-day wear, antimicrobial (wear 2-3 times between washes), look polished on camera</li>
+          <li><strong>2 blouses or casual button-ups</strong> (1 solid, 1 subtle pattern) – instantly professional for video calls, soft/breathable fabrics (Tencel, cotton-linen blend)</li>
+          <li><strong>1 knit blazer or cardigan</strong> (neutral color) – elevates any outfit, easy on/off for temperature control, professional polish for important calls</li>
+        </ul>
+
+        <h3>Bottoms (4 pieces) - Comfort Champions</h3>
+        <ul>
+          <li><strong>2 pairs of ponte knit or stretch knit pants</strong> (black, navy) – looks like trousers, feels like leggings, no waistband discomfort for sitting all day</li>
+          <li><strong>1 pair of quality joggers or wide-leg lounge pants</strong> (neutral color) – elevated loungewear for non-video-call days, comfortable for movement and sitting</li>
+          <li><strong>1 comfortable jean or chino</strong> (dark wash) – versatile for days you need to step out, professional enough for full-body video if needed</li>
+        </ul>
+
+        <h3>Footwear (3 pairs)</h3>
+        <ul>
+          <li><strong>1 pair of supportive slippers or indoor shoes</strong> – back/posture support for standing desk work, keeps feet warm on cold floors</li>
+          <li><strong>1 pair of casual sneakers</strong> – for stepping outside, quick errands, walking meetings</li>
+          <li><strong>1 pair of slip-on shoes or loafers</strong> – easy on/off for unexpected doorbell rings, professional if visible on video</li>
+        </ul>
+
+        <p><strong>Total: 12 pieces creating 30+ outfit combinations</strong></p>
+        <p><strong>Budget: $400-600</strong> for quality pieces that last 2-3 years of daily remote work (vs $200-300 annually replacing cheap loungewear that falls apart)</p>
+
+        <h3>Why This Works</h3>
+        <ul>
+          <li><strong>Waist-up optimization:</strong> Professional tops for video calls (most meetings focus above waist)</li>
+          <li><strong>Waist-down comfort:</strong> Stretch pants, joggers, no restrictive waistbands for all-day sitting</li>
+          <li><strong>Temperature flexibility:</strong> Layering cardigan/blazer for AC fluctuations or chilly mornings</li>
+          <li><strong>Quick changes:</strong> Can swap top in 30 seconds before unexpected video calls</li>
+          <li><strong>Intentional dressing:</strong> Distinct from pajamas/gym clothes, signals "work mode" psychologically</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Fabrics That Survive 40+ Hours/Week of Sitting</h2>
+        <p>Remote work is brutal on clothing—constant sitting causes fabric stretching, friction wear, and shape loss. Here's what actually lasts:</p>
+
+        <h3>Best Fabrics for Remote Work</h3>
+        <ul>
+          <li><strong>Merino Wool:</strong>
+            <ul>
+              <li>Naturally antimicrobial (wear 2-3 times between washes—huge time saver)</li>
+              <li>Temperature-regulating (comfortable year-round, adapts to body temp)</li>
+              <li>Odor-resistant (critical for multi-day wear)</li>
+              <li>Doesn't pill like acrylic or polyester</li>
+              <li>Cost: $40-80/top, lasts 3-4 years = $0.30-0.50/wear</li>
+            </ul>
+          </li>
+          <li><strong>Ponte Knit:</strong>
+            <ul>
+              <li>Looks like dress pants, feels like yoga pants</li>
+              <li>Holds shape after hours of sitting (doesn't bag at knees)</li>
+              <li>Wrinkle-resistant</li>
+              <li>Machine-washable, durable</li>
+              <li>Professional enough for video calls, comfortable enough for 10-hour days</li>
+            </ul>
+          </li>
+          <li><strong>Tencel/Lyocell:</strong>
+            <ul>
+              <li>Breathable (prevents overheating in home offices)</li>
+              <li>Soft, drapes well (looks polished on video)</li>
+              <li>Moisture-wicking</li>
+              <li>Sustainable, biodegradable</li>
+              <li>Cost: $35-70/piece</li>
+            </ul>
+          </li>
+          <li><strong>Modal or Bamboo Blends:</strong>
+            <ul>
+              <li>Extremely soft (all-day comfort)</li>
+              <li>Breathable, moisture-wicking</li>
+              <li>Resistant to shrinking and fading</li>
+              <li>Often blended with cotton or spandex for stretch</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Fabrics to Avoid for Daily Remote Work</h3>
+        <ul>
+          <li><strong>100% Cotton (especially cheap cotton):</strong> Wrinkles badly, fades quickly, loses shape after repeated washing, shows sweat</li>
+          <li><strong>Acrylic "wool-look" sweaters:</strong> Pill aggressively, retain odors, feel clammy</li>
+          <li><strong>Thin jersey cotton:</strong> Stretches out after sitting, shows every line and wrinkle by afternoon</li>
+          <li><strong>Polyester blouses (cheap ones):</strong> Trap sweat, retain odors, look cheap on video</li>
+          <li><strong>Rigid denim:</strong> Uncomfortable for all-day sitting, leaves waistband marks, restrictive</li>
+        </ul>
+
+        <p><strong>Real-world test:</strong> Wear ponte knit pants for 8 hours of sitting. Then wear cheap cotton leggings for the same. The ponte knit will maintain shape, look professional, and feel comfortable. The cotton leggings will bag at knees, show every wrinkle, and feel worn-out by midday.</p>
+      </section>
+
+      <section>
+        <h2>The Video Call Strategy: Looking Professional Waist-Up</h2>
+        <p>Video calls changed professional dressing forever—now appearance focuses on what's visible in that small rectangle. Here's how to optimize:</p>
+
+        <h3>Colors That Work on Camera</h3>
+        <ul>
+          <li><strong>Best:</strong> Jewel tones (navy, emerald, burgundy), muted colors (grey, olive, dusty blue)—these read well on camera without being distracting</li>
+          <li><strong>Avoid:</strong> Pure white (can blow out on camera), all black (can look too dark), busy patterns (distracting, can create moiré effect)</li>
+          <li><strong>Pro tip:</strong> Test tops on a video call with yourself before important meetings—some colors read differently on screen than in person</li>
+        </ul>
+
+        <h3>Necklines and Details</h3>
+        <ul>
+          <li><strong>Flattering necklines:</strong> Crew neck, V-neck, collared shirts—these frame face well on camera</li>
+          <li><strong>Avoid:</strong> Very high necklines (can look bulky on screen), very low necklines (can be distracting or inappropriate for professional calls)</li>
+          <li><strong>Details that elevate:</strong> Simple jewelry (small earrings, delicate necklace), structured shoulders (blazers, cardigans)</li>
+        </ul>
+
+        <h3>The 30-Second Change Strategy</h3>
+        <p>For unexpected video calls, keep a "call-ready" rotation:</p>
+        <ul>
+          <li><strong>Hang 2-3 video-ready tops</strong> in easily accessible spot (not buried in closet)</li>
+          <li><strong>One-piece solution:</strong> Keep a blazer or cardigan on the back of your chair—instantly elevates any basic tee</li>
+          <li><strong>Lighting check:</strong> Position desk lamp or ring light so it flatters your face on camera (soft light from front, slightly above eye level)</li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Need tops that look professional on every video call?</strong> <a href="/arc-3">Arc 3 Light</a> features elevated basics in camera-friendly colors—Tencel blouses, merino wool tees, and structured layers that photograph well and survive daily wear. Built for remote workers who need to look polished without effort.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>The Cost Math: Quality Remote Work Clothing Saves Money</h2>
+        <p>Remote workers often justify cheap loungewear because "no one sees me anyway"—but the math reveals this costs more long-term:</p>
+
+        <h3>Cheap Loungewear Cycle</h3>
+        <ul>
+          <li><strong>Initial cost:</strong> 10 cheap loungewear pieces at $15-25 each = $150-250</li>
+          <li><strong>Replacement timeline:</strong> Daily wear causes pilling, fading, stretching within 3-6 months</li>
+          <li><strong>Annual cost:</strong> Replace 2-3 times per year = $300-750 annually</li>
+          <li><strong>3-year cost:</strong> $900-2,250</li>
+          <li><strong>Hidden costs:</strong> Constant decision fatigue over "can I wear this on video?", last-minute outfit changes, wardrobe dissatisfaction</li>
+        </ul>
+
+        <h3>Quality Remote Work Capsule</h3>
+        <ul>
+          <li><strong>Initial investment:</strong> 12 quality pieces at $35-60 each = $420-720</li>
+          <li><strong>Replacement timeline:</strong> Merino wool, ponte knit, and Tencel last 2-3 years with proper care</li>
+          <li><strong>Annual cost:</strong> Replace 1-2 most-worn pieces = $70-120/year</li>
+          <li><strong>3-year cost:</strong> $420-720 (initial) + $140-240 (replacements) = $560-960</li>
+          <li><strong>Hidden benefits:</strong> Always camera-ready, no outfit stress, improved productivity from "enclothed cognition" effect</li>
+        </ul>
+
+        <p><strong>Savings: $340-1,290 over 3 years</strong>, plus significant mental energy savings and productivity gains</p>
+
+        <p><em>Cost-per-wear reality:</em> $500 capsule ÷ 12 pieces ÷ 250 workdays/year ÷ 3 years = $0.06/wear. Fast fashion loungewear at $20/piece ÷ 100 wears (6 months of use) = $0.20/wear. <strong>Quality is 3x cheaper per wear.</strong></p>
+      </section>
+
+      <section>
+        <h2>Sample Week: 5 Days of Remote Work Outfits</h2>
+        <p>Here's how a remote software engineer might mix-and-match the 12-piece capsule across a work week:</p>
+
+        <h3>Monday (Fresh Start)</h3>
+        <ul>
+          <li>Navy merino wool tee</li>
+          <li>Black ponte knit pants</li>
+          <li>Knit blazer (for morning team standup)</li>
+          <li>Supportive slippers</li>
+          <li><em>Why it works:</em> Clean, professional start to the week, blazer ready for any unexpected video calls</li>
+        </ul>
+
+        <h3>Tuesday (Client Presentation Day)</h3>
+        <ul>
+          <li>Patterned blouse or button-up</li>
+          <li>Dark jeans or ponte pants</li>
+          <li>Small earrings for camera</li>
+          <li>Loafers (in case need to step out)</li>
+          <li><em>Why it works:</em> Elevated look for important calls, still comfortable for 8-hour workday</li>
+        </ul>
+
+        <h3>Wednesday (Deep Work Day, Few Meetings)</h3>
+        <ul>
+          <li>Grey merino wool tee</li>
+          <li>Comfortable joggers or lounge pants</li>
+          <li>Cardigan nearby (can throw on for unexpected calls)</li>
+          <li>Supportive slippers</li>
+          <li><em>Why it works:</em> Maximum comfort for focus work, cardigan provides instant professionalism if needed</li>
+        </ul>
+
+        <h3>Thursday (Mid-Week Video Calls)</h3>
+        <ul>
+          <li>Solid blouse</li>
+          <li>Navy ponte pants</li>
+          <li>Casual sneakers (planning to take walk after work)</li>
+          <li><em>Why it works:</em> Professional top for afternoon calls, comfortable bottoms for all-day sitting, shoes ready for movement</li>
+        </ul>
+
+        <h3>Friday (Casual End of Week)</h3>
+        <ul>
+          <li>Navy merino tee (worn Monday, can re-wear due to antimicrobial properties)</li>
+          <li>Dark jeans</li>
+          <li>Cardigan</li>
+          <li>Sneakers</li>
+          <li><em>Why it works:</em> Relaxed but intentional, can transition to weekend errands, merino tee stays fresh for second wear</li>
+        </ul>
+
+        <p><strong>Key insight:</strong> Same 12 pieces create 5+ distinct looks, each optimized for that day's work demands.</p>
+      </section>
+
+      <section>
+        <h2>Common Remote Work Wardrobe Mistakes (and Fixes)</h2>
+
+        <h3>Mistake #1: Wearing Pajamas or Gym Clothes All Day</h3>
+        <p><strong>The problem:</strong> Blurs work/life boundaries, reduces productivity (enclothed cognition effect), creates video call scrambles.</p>
+        <p><strong>The fix:</strong> Designate specific "work clothes" distinct from sleep/exercise clothes. They can be comfortable (ponte pants, soft tees) but intentionally chosen for work.</p>
+
+        <h3>Mistake #2: Investing in Too Many Tops, Not Enough Quality Bottoms</h3>
+        <p><strong>The problem:</strong> People focus on video-visible tops, buy cheap bottoms, then suffer discomfort all day from bad waistbands and poor fabric.</p>
+        <p><strong>The fix:</strong> Invest more in bottoms—you're sitting 6-8+ hours daily. Ponte knit pants, quality joggers, and comfortable jeans make bigger comfort difference than another blouse.</p>
+
+        <h3>Mistake #3: Only Having One "Video Call Outfit"</h3>
+        <p><strong>The problem:</strong> Wearing same top in every meeting looks unprofessional, creates laundry stress.</p>
+        <p><strong>The fix:</strong> Minimum 3-4 video-ready tops that rotate. Colleagues won't notice, and you always have clean option available.</p>
+
+        <h3>Mistake #4: Buying Fast Fashion Loungewear</h3>
+        <p><strong>The problem:</strong> Pills, fades, and stretches out after 3-6 months of daily wear, creating constant replacement cycles.</p>
+        <p><strong>The fix:</strong> Calculate cost-per-wear, not upfront cost. A $50 merino tee lasting 3 years (750+ wears) costs $0.07/wear. A $15 cotton tee lasting 4 months (80 wears) costs $0.19/wear.</p>
+
+        <h3>Mistake #5: Not Adapting Wardrobe to Home Office Temperature</h3>
+        <p><strong>The problem:</strong> Home HVAC is different from office buildings—often too cold in morning, too warm by afternoon.</p>
+        <p><strong>The fix:</strong> Layer always available (cardigan, blazer) so you can adapt without changing entire outfit. Merino wool naturally regulates temperature.</p>
+      </section>
+
+      <section>
+        <h2>Productivity Hacks: Using Clothing to Structure Your Day</h2>
+        <p>Beyond appearance, strategic clothing can improve remote work productivity:</p>
+
+        <h3>The "Uniform" Approach</h3>
+        <p>Some remote workers adopt a consistent daily "uniform" (e.g., navy tee + black ponte pants every day) to eliminate decision fatigue while maintaining professionalism. Benefits:</p>
+        <ul>
+          <li>Zero morning decision stress</li>
+          <li>Always camera-ready</li>
+          <li>Signals work mode to brain automatically</li>
+          <li>Simplifies laundry and wardrobe maintenance</li>
+        </ul>
+
+        <h3>The "Work Outfit Ritual"</h3>
+        <p>Treat getting dressed as part of your work morning routine:</p>
+        <ul>
+          <li><strong>7:30 AM:</strong> Coffee + get dressed in work clothes (even if just comfortable ponte pants and tee)</li>
+          <li><strong>8:00 AM:</strong> Work begins—clothing signals transition from personal to professional time</li>
+          <li><strong>5:00 PM:</strong> Change back into lounge/home clothes—signals work day is over</li>
+        </ul>
+        <p><em>Why this works:</em> Creates psychological boundaries that prevent burnout and "always working" feeling common in remote work.</p>
+
+        <h3>The "Power Outfit" Strategy</h3>
+        <p>For days with important presentations, difficult conversations, or high-stakes work:</p>
+        <ul>
+          <li>Wear your most polished outfit (blazer, favorite blouse, etc.)</li>
+          <li>Enclothed cognition research shows this genuinely improves confidence and cognitive performance</li>
+          <li>You'll feel more prepared, which translates to better work output</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Sustainable Remote Work Wardrobes</h2>
+        <p>Remote work created an explosion in fast fashion loungewear purchases—and subsequent waste:</p>
+
+        <ul>
+          <li><strong>The problem:</strong> Millions of workers bought cheap WFH clothes in 2020-2021, wore them to death in 6-12 months, then discarded them</li>
+          <li><strong>Textile waste:</strong> Average remote worker disposes of 15-20 pounds of worn-out loungewear annually</li>
+          <li><strong>The sustainable solution:</strong> Quality pieces that last 3-5 years, reducing replacement frequency by 80%</li>
+          <li><strong>Environmental ROI:</strong> One $60 merino wool tee worn 600 times over 3 years vs six $15 cotton tees worn 100 times each over 3 years = same total wears, but 83% less textile waste</li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Want a remote work wardrobe that lasts years, not months?</strong> Explore <a href="/about">1ABEL's approach</a>—merino wool, Tencel, and ponte knit pieces designed for daily wear, frequent washing, and multi-year lifespans. Built for remote workers who need clothing that works as hard as they do.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Final Checklist: Building Your Remote Work Wardrobe</h2>
+
+        <div class="checklist">
+          <h3>Before You Buy:</h3>
+          <ul>
+            <li>☐ Audit current wardrobe—what actually works for video calls AND comfort?</li>
+            <li>☐ Set budget ($400-600 for complete 12-piece capsule)</li>
+            <li>☐ Test camera angle and lighting to understand what shows on video</li>
+            <li>☐ Measure home office temperature fluctuations (determines layering needs)</li>
+          </ul>
+
+          <h3>Fabric Priorities:</h3>
+          <ul>
+            <li>☐ Prioritize ponte knit for bottoms (comfort for all-day sitting)</li>
+            <li>☐ Choose merino wool or quality cotton for tops (breathability, odor resistance)</li>
+            <li>☐ Avoid 100% cotton (wrinkles, fades, stretches)</li>
+            <li>☐ Look for temperature-regulating fabrics (home HVAC varies more than offices)</li>
+          </ul>
+
+          <h3>Essential 12-Piece Capsule:</h3>
+          <ul>
+            <li>☐ 5 tops (2 merino/cotton tees, 2 blouses, 1 blazer/cardigan)</li>
+            <li>☐ 4 bottoms (2 ponte pants, 1 joggers, 1 jeans)</li>
+            <li>☐ 3 footwear options (slippers, sneakers, loafers)</li>
+          </ul>
+
+          <h3>Video Call Optimization:</h3>
+          <ul>
+            <li>☐ Choose camera-friendly colors (jewel tones, muted shades)</li>
+            <li>☐ Test tops on video call before important meetings</li>
+            <li>☐ Keep 2-3 video-ready tops easily accessible for quick changes</li>
+            <li>☐ Set up flattering lighting at desk</li>
+          </ul>
+
+          <h3>Productivity Integration:</h3>
+          <ul>
+            <li>☐ Designate specific "work clothes" distinct from sleep/lounge clothes</li>
+            <li>☐ Create morning "get dressed" ritual as work start signal</li>
+            <li>☐ Change out of work clothes at end of day (boundary setting)</li>
+            <li>☐ Consider "uniform" approach to reduce decision fatigue</li>
+          </ul>
+        </div>
+
+        <p><strong>Remember:</strong> Remote work clothing isn't about formality—it's about strategic choices that support productivity, comfort, and mental health. You deserve a wardrobe that makes working from home better, not harder.</p>
+
+        <div class="cta-box">
+          <p><strong>Ready to build a WFH wardrobe that actually works?</strong> Start with <a href="/arc-2">Arc 2 Shadow</a>—ponte knit pants, merino wool tees, and comfortable layers designed for 8-10 hour workdays. Built for remote workers who need all-day comfort without sacrificing professional appearance.</p>
+        </div>
+      </section>
+    `,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur who built multiple remote teams and watched productivity tank when people worked in pajamas for months. Built 1ABEL around the insight that comfort and professionalism aren\'t opposites—they\'re both necessary for sustainable remote work success.'
+    },
+    publishedAt: '2025-02-07',
+    updatedAt: '2025-02-07',
+    readTime: '13 min',
+    category: 'Work & Lifestyle',
+    tags: [
+      'remote work wardrobe',
+      'work from home clothing',
+      'video call outfits',
+      'wfh capsule wardrobe',
+      'remote work productivity clothing',
+      'comfortable professional attire',
+      'ponte knit pants',
+      'merino wool work from home',
+      'enclothed cognition',
+      'video conference clothing',
+      'home office wardrobe',
+      'remote worker fashion',
+      'wfh outfit ideas',
+      'virtual meeting attire',
+      'comfortable work clothes'
+    ],
+    featured: false,
+    seo: {
+      metaTitle: 'Remote Work Wardrobe: 12 Pieces for Video Calls & Productivity | WFH Guide',
+      metaDescription: '54% dress comfortably WFH, but 39% stopped investing in quality. Enclothed cognition shows clothing boosts productivity 23%. 12-piece capsule for video calls + comfort under $500.',
+      keywords: [
+        'remote work wardrobe',
+        'work from home clothing guide',
+        'video call outfits professional',
+        'wfh capsule wardrobe 12 pieces',
+        'remote work productivity clothing',
+        'comfortable professional attire',
+        'ponte knit pants work from home',
+        'merino wool remote work',
+        'enclothed cognition productivity',
+        'video conference clothing tips',
+        'home office wardrobe essentials',
+        'remote worker fashion 2025',
+        'wfh outfit ideas comfortable',
+        'virtual meeting attire guide',
+        'best fabrics for working from home'
+      ]
+    }
   }
 ]
