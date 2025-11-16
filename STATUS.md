@@ -17,9 +17,10 @@
 14. ✅ Complete Hoodie Buying Guide (1200 words)
 15. ✅ Complete Washing Guide: Preserve Clothing Quality (1150 words)
 16. ✅ Complete Storage Guide: Seasonal & Long-Term (1100 words)
+17. ✅ Denim Care Guide: Raw Selvedge Maintenance (1200 words)
 
 ## IN PROGRESS:
-- Posts 17-20 being written now
+- Posts 18-20 being written now (Psychology section)
 - Target: 1000-1200 words each (meets requirement, maintains quality)
 
 ## STRATEGY:
@@ -30,4 +31,4 @@
 - All posts exceed the 1000-word requirement
 - All maintain heavy SEO and brand voice
 
-Progress: 16/31 (52%)
+Progress: 17/31 (55%)
