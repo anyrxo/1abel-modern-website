@@ -20084,72 +20084,177 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
     content: `
 <section>
 <h2>The Problem With Unlimited Options</h2>
-<p>When every color and style is available, decision-making becomes paralyzing.</p>
+<p>Walk into a typical clothing store and you're confronted with hundreds of colors, dozens of styles, infinite combinations.</p>
 
-<p>The two-frequency system constrains your options intentionally, which paradoxically increases your freedom.</p>
+<p>It feels like freedom. It's actually <strong>decision paralysis</strong>.</p>
 
+<p>Research by Barry Schwartz shows that <strong>more options make us less happy</strong>. We spend more time deciding, second-guess our choices, and feel less satisfied with what we pick.</p>
+
+<p>The two-frequency wardrobe solves this by <strong>constraining your options intentionally</strong>.</p>
+
+<p>You choose two color frequencies—Shadow (dark) or Light (bright)—and build everything around them. This paradoxically <strong>increases your freedom</strong> because you eliminate the mental overhead of infinite choice.</p>
+
+<blockquote>
+<p>Constraint creates freedom. Limitation enables flow.</p>
+</blockquote>
 </section>
 
 <section>
 <h2>Understanding Shadow (Arc 2)</h2>
-<p>Shadow is your dark, grounding frequency.</p>
+<p>Shadow is your dark, grounding frequency. It creates weight, presence, and intensity.</p>
 
-<p>VOID black, STEEL grey, BLOOD burgundy, MOSS forest green, EARTH brown.</p>
+<p><strong>Core Shadow Colors:</strong></p>
+<ul>
+<li><strong>VOID:</strong> Pure black—maximum contrast, commanding presence</li>
+<li><strong>STEEL:</strong> Dark grey—sophisticated, versatile, softer than black</li>
+<li><strong>BLOOD:</strong> Deep burgundy—adds richness without breaking dark aesthetic</li>
+<li><strong>MOSS:</strong> Forest green—organic, grounded, connects to earth</li>
+<li><strong>EARTH:</strong> Dark brown—warm darkness, natural foundation</li>
+</ul>
 
-<p>These colors create weight, presence, and focus.</p>
+<p><strong>When to Wear Shadow:</strong></p>
+<ul>
+<li>Deep work sessions (minimize visual distraction, maximize focus)</li>
+<li>Important meetings or presentations (command attention and respect)</li>
+<li>Studio/creative time (introspective, focused energy)</li>
+<li>When you need to feel grounded and serious</li>
+<li>Evening/night settings (matches natural darkness)</li>
+</ul>
 
-<p>Wear Shadow when you need to command attention, do deep work, or feel grounded.</p>
-
+<p>Shadow says: <strong>"I'm here to work, create, or lead."</strong> It's the frequency of focus and power.</p>
 </section>
 
 <section>
 <h2>Understanding Light (Arc 3)</h2>
-<p>Light is your bright, energizing frequency.</p>
+<p>Light is your bright, energizing frequency. It creates openness, balance, and approachability.</p>
 
-<p>CLOUD white, SAKURA pink, MIST light grey, SAND beige, LILAC lavender.</p>
+<p><strong>Core Light Colors:</strong></p>
+<ul>
+<li><strong>CLOUD:</strong> Pure white—clean, open, maximum brightness</li>
+<li><strong>SAKURA:</strong> Soft pink—gentle, creative, unexpected warmth</li>
+<li><strong>MIST:</strong> Light grey—balanced neutrality, sophisticated lightness</li>
+<li><strong>SAND:</strong> Warm beige—earthy light, natural comfort</li>
+<li><strong>LILAC:</strong> Soft lavender—creative energy with calm</li>
+</ul>
 
-<p>These colors create energy, openness, and balance.</p>
+<p><strong>When to Wear Light:</strong></p>
+<ul>
+<li>Social situations (approachable, open energy)</li>
+<li>Daytime activities (matches natural light)</li>
+<li>Creative brainstorming (open, energized mindset)</li>
+<li>When you need mental clarity and balance</li>
+<li>Spring/summer months (aligns with seasonal energy)</li>
+</ul>
 
-<p>Wear Light for social settings, creative work, or when you need mental clarity.</p>
-
+<p>Light says: <strong>"I'm approachable, creative, and present."</strong> It's the frequency of connection and clarity.</p>
 </section>
 
 <section>
-<h2>The 70/30 Split</h2>
-<p>Most people naturally favor one frequency.</p>
+<h2>The 70/30 Split: Finding Your Dominant Frequency</h2>
+<p>Most people naturally gravitate toward one frequency. Your closet already tells you which one.</p>
 
-<p>If you're drawn to dark, intense colors, you're Shadow-dominant.</p>
+<p><strong>Shadow-Dominant:</strong> If 70%+ of your clothes are dark colors, you're Shadow-dominant. You prefer focus over social energy, intensity over lightness. Build 70% Arc 2, 30% Arc 3.</p>
 
-<p>Build 70% Shadow, 30% Light.</p>
+<p><strong>Light-Dominant:</strong> If 70%+ of your clothes are bright/light colors, you're Light-dominant. You thrive in social settings, prefer openness over intensity. Build 70% Arc 3, 30% Arc 2.</p>
 
-<p>If you prefer bright, light colors, build 70% Light, 30% Shadow.</p>
-
-<p>This split gives you range without complexity.</p>
-
+<p>The 70/30 split gives you:</p>
+<ul>
+<li><strong>Clear identity:</strong> 70% establishes who you are</li>
+<li><strong>Flexibility:</strong> 30% provides range for different contexts</li>
+<li><strong>System coherence:</strong> Everything still works together</li>
+<li><strong>Visual interest:</strong> Cross-frequency combinations prevent monotony</li>
+</ul>
 </section>
 
 <section>
-<h2>Cross-Arc Styling: Creating Contrast</h2>
-<p>The magic happens when you mix frequencies.</p>
+<h2>Cross-Arc Styling: Creating Visual Interest</h2>
+<p>The magic of the two-frequency system is <strong>cross-arc combinations</strong>.</p>
 
-<p>VOID hoodie with SAND joggers.</p>
+<p><strong>Shadow Top + Light Bottom:</strong></p>
+<ul>
+<li>VOID hoodie + SAND joggers</li>
+<li>STEEL crewneck + CLOUD pants</li>
+<li>MOSS overshirt + MIST denim</li>
+</ul>
 
-<p>CLOUD tee under STEEL overshirt.</p>
+<p><strong>Light Top + Shadow Bottom:</strong></p>
+<ul>
+<li>CLOUD tee + VOID joggers</li>
+<li>SAND thermal + STEEL denim</li>
+<li>MIST hoodie + EARTH cargo pants</li>
+</ul>
 
-<p>These cross-arc combinations create visual interest while maintaining system coherence.</p>
-
+<p>These combinations create <strong>visual contrast and depth</strong> while maintaining system coherence. You're not breaking the system—you're using it intentionally.</p>
 </section>
 
 <section>
 <h2>Seasonal Frequency Shifting</h2>
-<p>You might find yourself shifting frequencies seasonally.</p>
+<p>Your frequency preference might shift seasonally. This is natural and the system accommodates it.</p>
 
-<p>Shadow-dominant in fall/winter (grounding, inward energy).</p>
+<p><strong>Fall/Winter → Shadow-Dominant</strong></p>
+<p>As days shorten and temperatures drop, many people naturally shift toward Shadow. Dark colors match the seasonal energy—introspective, focused, grounded. Your 70/30 might become 80/20 or even 90/10 Shadow during these months.</p>
 
-<p>Light-dominant in spring/summer (social, outward energy).</p>
+<p><strong>Spring/Summer → Light-Dominant</strong></p>
+<p>As days lengthen and warmth returns, Light becomes more appealing. Bright colors match increased social activity and outdoor time. Your split might shift to 60/40 or even 50/50 during peak summer.</p>
 
-<p>Your system accommodates this naturally.</p>
+<p>The system adapts naturally. You don't need to rebuild—just emphasize different pieces seasonally.</p>
+</section>
 
+<section>
+<h2>Building Your Two-Frequency Wardrobe: The Process</h2>
+<p>Transitioning to a two-frequency system takes intentionality. Here's the step-by-step process:</p>
+
+<p><strong>Step 1: Identify Your Natural Frequency</strong></p>
+<p>Look at what you actually wear, not what's hanging untouched. If you reach for dark colors 70%+ of the time, you're Shadow-dominant. If you prefer light/bright colors, you're Light-dominant.</p>
+
+<p><strong>Step 2: Audit Against Your Frequency</strong></p>
+<p>Pull everything from your closet. Separate into three piles:</p>
+<ul>
+<li><strong>Pile 1:</strong> Fits your dominant frequency (keep)</li>
+<li><strong>Pile 2:</strong> Fits your secondary frequency (keep best 30%, donate rest)</li>
+<li><strong>Pile 3:</strong> Doesn't fit either frequency (donate/sell all)</li>
+</ul>
+
+<p><strong>Step 3: Fill Gaps Strategically</strong></p>
+<p>Identify what's missing in your dominant frequency. Need more Shadow basics? Buy VOID tees and STEEL joggers. Need Light layers? Add CLOUD hoodies and SAND overshirts. Always buy within your frequency system.</p>
+
+<p><strong>Step 4: Test Cross-Arc Combinations</strong></p>
+<p>Once you have a solid base (15-20 pieces), start experimenting with cross-arc styling. VOID + SAND. CLOUD + STEEL. Find combinations that feel right and repeat them.</p>
+</section>
+
+<section>
+<h2>Common Two-Frequency Mistakes to Avoid</h2>
+
+<p><strong>Mistake #1: Trying to be 50/50</strong></p>
+<p>A true 50/50 split between Shadow and Light creates visual confusion. You need a dominant frequency (70%) to establish identity. The 30% provides range without diluting your aesthetic.</p>
+
+<p><strong>Mistake #2: Adding Random Colors</strong></p>
+<p>You see a great deal on an orange hoodie. It doesn't fit Shadow or Light, but it's cheap. Don't buy it. It's an orphan piece that breaks your system.</p>
+
+<p><strong>Mistake #3: Ignoring Seasonal Shifts</strong></p>
+<p>If you naturally want to wear more Light in summer, do it. Don't force yourself into Shadow when your energy doesn't match. The system adapts to your natural rhythms.</p>
+
+<p><strong>Mistake #4: Overthinking Cross-Arc Styling</strong></p>
+<p>Cross-arc combinations should feel effortless. If you're spending 10 minutes figuring out if MOSS + LILAC works, you're overthinking. Trust your eye and the system coherence.</p>
+</section>
+
+<section>
+<h2>The Bottom Line</h2>
+<p>Most people try to own every color, every style, infinite options. The result is decision fatigue and a closet that doesn't work.</p>
+
+<p>The two-frequency system—Shadow and Light—constrains your options intentionally. You choose one dominant frequency (70%) and add the other for range (30%).</p>
+
+<p>This creates:</p>
+<ul>
+<li>Effortless decision-making (everything works together)</li>
+<li>Visual coherence (clear aesthetic identity)</li>
+<li>Cross-arc versatility (mix frequencies for depth)</li>
+<li>Seasonal flexibility (shift emphasis naturally)</li>
+</ul>
+
+<blockquote>
+<p>Two frequencies. Infinite combinations. Zero decision fatigue.</p>
+</blockquote>
 </section>
     `,
     author: {
