@@ -20152,5 +20152,515 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
         'tech industry fashion'
       ]
     }
+  },
+  {
+    slug: 'gen-z-sustainable-fashion-tiktok-trends-2025',
+    title: 'Gen Z Sustainable Fashion in 2025: How TikTok Is Redefining Conscious Style',
+    excerpt: '77% of Gen Z prioritize sustainability over cost, yet 88% don\'t trust brand claims. With #ThriftTok and #CapsuleWardrobe generating billions of views, discover how Gen Z is actually building sustainable wardrobes—and why quality beats viral trends.',
+    content: `
+<section>
+<h2>The Gen Z Fashion Paradox: Sustainability Champions Fueling Fast Fashion</h2>
+<p>Gen Z is the most sustainability-conscious generation in history.</p>
+
+<p><strong>77% prioritize sustainability over cost.</strong> <strong>66% are willing to pay more for eco-friendly products.</strong> <strong>83% are willing to shop thrifted goods.</strong></p>
+
+<p>Yet fast fashion is booming, growing to a <strong>$150.82 billion industry in 2025</strong> with a 10.7% growth rate—largely fueled by Gen Z consumers.</p>
+
+<p>How does this make sense?</p>
+
+<p>The answer reveals everything about how Gen Z actually approaches sustainable fashion in 2025—and why TikTok is both the problem and the solution.</p>
+
+<blockquote>
+<p>"88% of Gen Z shoppers do not trust companies' sustainability claims." — 2025 Consumer Trust Research</p>
+</blockquote>
+
+<p>This isn't hypocrisy. It's a trust crisis.</p>
+
+<p>Gen Z <em>wants</em> to shop sustainably. But greenwashing, misleading marketing, and brands that talk sustainability while practicing exploitation have created massive skepticism.</p>
+
+<p>So Gen Z is building their own sustainable fashion playbook—on TikTok, through thrifting, and by redefining what "quality" actually means.</p>
+</section>
+
+<section>
+<h2>How TikTok Transformed Sustainable Fashion for Gen Z</h2>
+
+<p><strong>73% of Gen Z use TikTok daily</strong>, making it their primary discovery platform for everything—including fashion.</p>
+
+<p>And here's the kicker: <strong>39% of female Gen Z consumers purchase products after viewing them on TikTok</strong>. 61% discover new brands through the platform.</p>
+
+<p>But TikTok's influence on sustainable fashion goes way deeper than just sales:</p>
+
+<h3>1. #ThriftTok: Secondhand Shopping as Social Currency</h3>
+
+<p>Hashtags like #ThriftTok and #ThriftStyle are exploding, showcasing thrifted outfits as trendy, not cheap.</p>
+
+<p>What changed? <strong>Social validation</strong>.</p>
+
+<p>Gen Z grew up seeing influencers show off expensive hauls. Now, the flex is <em>finding</em> something unique at Goodwill for $5.</p>
+
+<p>Thrifting evolved from economic necessity to <strong>social status</strong>. The creativity required to assemble a quality wardrobe from secondhand sources signals taste, resourcefulness, and values alignment.</p>
+
+<h3>2. #CapsuleWardrobe: 2 Billion Views and Counting</h3>
+
+<p>The capsule wardrobe concept—building a minimal, versatile wardrobe from quality essentials—has <strong>2 billion views on TikTok</strong>.</p>
+
+<p>Why? Because it aligns perfectly with Gen Z values:</p>
+<ul>
+<li><strong>Anti-consumerism</strong> — Buying less, choosing better</li>
+<li><strong>Sustainability</strong> — Longevity over disposability</li>
+<li><strong>Financial pragmatism</strong> — Inflation-proof wardrobe strategy</li>
+<li><strong>Mental health</strong> — Less clutter, less decision fatigue</li>
+</ul>
+
+<p>TikTok made capsule wardrobes accessible, visual, and aspirational—not boring or restrictive.</p>
+
+<h3>3. Thrift-Flip Culture: DIY as Creative Expression</h3>
+
+<p>Gen Z isn't just buying secondhand. They're <strong>transforming</strong> it.</p>
+
+<p>TikTok and Instagram Reels are flooded with DIY upcycling videos—turning oversized blazers into cropped jackets, distressing thrifted jeans, customizing tees.</p>
+
+<p>This "thrift-flip" phenomenon serves multiple purposes:</p>
+<ul>
+<li><strong>Individuality</strong> — One-of-a-kind pieces in a world of mass production</li>
+<li><strong>Creativity</strong> — Fashion as self-expression and skill-building</li>
+<li><strong>Sustainability</strong> — Extending garment lifespan, reducing waste</li>
+<li><strong>Side hustles</strong> — Reselling customized pieces for profit</li>
+</ul>
+
+<p>Gen Z is treating fashion like a remix culture. Just like sampling in music, they're taking existing garments and making them new.</p>
+
+<h3>4. Transparency as the New Marketing</h3>
+
+<p>TikTok has forced brands to be <strong>radically transparent</strong>.</p>
+
+<p>Gen Z creators tear apart greenwashing. They expose labor exploitation. They fact-check sustainability claims in real-time.</p>
+
+<p>Brands that try to fake it get called out—instantly and publicly.</p>
+
+<p>This is why <strong>88% of Gen Z don't trust corporate sustainability claims</strong>. They've been burned too many times. They want <strong>proof</strong>, not promises.</p>
+</section>
+
+<section>
+<h2>The Numbers Behind Gen Z's Sustainable Fashion Movement</h2>
+
+<p>Let's look at what Gen Z is <em>actually</em> doing, not just what they say they value:</p>
+
+<h3>Thrifting & Secondhand Shopping</h3>
+<ul>
+<li><strong>Nearly half of adults under 30</strong> buy secondhand at least once a month</li>
+<li><strong>60% of Gen Z</strong> look for secondhand options before buying new</li>
+<li><strong>15% of the average Gen Z closet</strong> consists of thrifted or reworked pieces</li>
+<li>The global secondhand market is projected to reach <strong>$350 billion by 2027</strong></li>
+</ul>
+
+<h3>Social Media Influence</h3>
+<ul>
+<li><strong>73% of Gen Z</strong> use TikTok daily</li>
+<li><strong>39% of female Gen Z</strong> purchase after viewing products on TikTok</li>
+<li><strong>61% discover new brands</strong> through TikTok</li>
+<li>Social media engagement with fashion content increased <strong>125% since 2024</strong></li>
+</ul>
+
+<h3>Values & Purchasing Behavior</h3>
+<ul>
+<li><strong>77% prioritize sustainability over cost</strong></li>
+<li><strong>66% willing to pay more</strong> for environmentally friendly products</li>
+<li><strong>83% willing to shop thrifted goods</strong></li>
+<li><strong>88% don't trust</strong> company sustainability claims</li>
+</ul>
+
+<p>The data reveals a clear pattern: <strong>Gen Z values sustainability, actively seeks secondhand options, and uses social media to discover and verify brands—but doesn't trust traditional marketing</strong>.</p>
+</section>
+
+<section>
+<h2>Why Gen Z Still Buys Fast Fashion (Despite Hating It)</h2>
+
+<p>Here's the uncomfortable truth: Gen Z drives fast fashion growth while simultaneously criticizing it.</p>
+
+<p>This isn't hypocrisy. It's <strong>economic reality meets aspiration gaps</strong>.</p>
+
+<h3>Reason 1: Inflation & Affordability</h3>
+
+<p>Gen Z is experiencing <strong>record inflation</strong> on entry-level salaries. Student debt is crushing. Housing is unaffordable.</p>
+
+<p>When a Zara t-shirt costs $12 and a sustainable alternative costs $60, the choice often isn't really a choice.</p>
+
+<p><strong>Nearly half of Gen Z buying secondhand monthly</strong> shows they're trying to balance values with budget constraints.</p>
+
+<h3>Reason 2: Greenwashing Confusion</h3>
+
+<p>Every brand claims sustainability now. "Conscious collections." "Eco-friendly lines." "Responsibly sourced."</p>
+
+<p>But <strong>88% of Gen Z don't trust these claims</strong> because they've learned that:</p>
+<ul>
+<li>"Recycled polyester" still sheds microplastics</li>
+<li>"Sustainable materials" can still involve exploitative labor</li>
+<li>"Eco-friendly packaging" doesn't fix overproduction</li>
+<li>"Conscious collections" are often marketing, not transformation</li>
+</ul>
+
+<p>When you can't tell what's real, you default to what's affordable.</p>
+
+<h3>Reason 3: TikTok Trend Cycles</h3>
+
+<p>TikTok accelerates trend cycles to weeks instead of seasons.</p>
+
+<p>The "coastal grandmother" aesthetic. "Balletcore." "Quiet luxury." "Office siren."</p>
+
+<p>These micro-trends create pressure to constantly refresh your wardrobe to stay relevant—the exact opposite of sustainable fashion.</p>
+
+<p>Gen Z is caught between wanting timeless style and feeling social pressure to participate in viral trends.</p>
+
+<h3>Reason 4: Lack of Education on Quality</h3>
+
+<p>Most Gen Z grew up with fast fashion as the norm. They don't necessarily know:</p>
+<ul>
+<li>What quality construction looks like</li>
+<li>How to assess fabric durability</li>
+<li>What cost-per-wear actually means</li>
+<li>How long good clothing should last</li>
+</ul>
+
+<p>So they buy based on price and aesthetic, not longevity.</p>
+
+<p>This is changing—thanks to TikTok creators educating on quality indicators—but there's still a knowledge gap.</p>
+</section>
+
+<section>
+<h2>Building a Gen Z-Friendly Sustainable Capsule Wardrobe</h2>
+
+<p>Here's how to actually build a sustainable wardrobe that aligns with Gen Z values <strong>and</strong> budget realities:</p>
+
+<h3>The Foundation: Quality Over Quantity (Finally Real)</h3>
+
+<p>The capsule wardrobe isn't about restriction. It's about <strong>strategic curation</strong>.</p>
+
+<p><strong>Goal: 25-35 pieces that work together systematically</strong></p>
+
+<p>Why this works for Gen Z:</p>
+<ul>
+<li><strong>Inflation-proof:</strong> Buy once, wear for years, lower long-term cost</li>
+<li><strong>Decision fatigue reduction:</strong> Everything works together, no morning paralysis</li>
+<li><strong>Trend-resistant:</strong> Timeless pieces outlast TikTok micro-trends</li>
+<li><strong>Secondhand-friendly:</strong> Quality pieces hold resale value</li>
+<li><strong>Authentic sustainability:</strong> Longevity is the most sustainable choice</li>
+</ul>
+
+<h3>The Color Palette: 5-7 Colors Max</h3>
+
+<p>Choose colors you actually wear, not what TikTok says is trendy this month.</p>
+
+<p><strong>Dark neutrals (recommended for versatility):</strong></p>
+<ul>
+<li>VOID (black) — Works everywhere, timeless, easy to thrift</li>
+<li>STEEL (grey) — Professional, casual, layerable</li>
+<li>EARTH (brown) — Warm, grounding, vintage-friendly</li>
+</ul>
+
+<p><strong>Light neutrals (for balance):</strong></p>
+<ul>
+<li>CLOUD (white/cream) — Fresh, clean, classic</li>
+<li>SAND (beige) — Soft, versatile, pairs with everything</li>
+</ul>
+
+<p><strong>1-2 accent colors (for personality):</strong></p>
+<ul>
+<li>MOSS (green), BLOOD (burgundy), LILAC, or your preference</li>
+</ul>
+
+<p>Every piece in your palette works with every other piece. <strong>Zero matching stress</strong>.</p>
+
+<h3>The Essentials: What to Actually Buy</h3>
+
+<p><strong>Tops (6-8 pieces):</strong></p>
+<ul>
+<li>3 quality t-shirts (mix of dark and light)</li>
+<li>2 long sleeves or thermals</li>
+<li>1-2 hoodies or crewnecks</li>
+<li>1 button-up or overshirt</li>
+</ul>
+
+<p><strong>Bottoms (4-6 pieces):</strong></p>
+<ul>
+<li>2 pairs quality denim (1 dark, 1 light/medium wash)</li>
+<li>1 pair utility/cargo pants</li>
+<li>1 pair joggers or sweats (quality, not fast fashion)</li>
+<li>1 pair dress pants or chinos (if needed for your lifestyle)</li>
+</ul>
+
+<p><strong>Outerwear (2-3 pieces):</strong></p>
+<ul>
+<li>1 denim or utility jacket</li>
+<li>1 hoodie or zip-up (elevated quality)</li>
+<li>1 weather-appropriate jacket (puffer, rain shell, etc.)</li>
+</ul>
+
+<p><strong>Footwear (3-4 pairs):</strong></p>
+<ul>
+<li>1 pair minimal sneakers (white/black)</li>
+<li>1 pair versatile boots or elevated shoes</li>
+<li>1 pair comfort/athletic shoes</li>
+<li>Optional: sandals or seasonal footwear</li>
+</ul>
+
+<p><strong>Accessories (minimal):</strong></p>
+<ul>
+<li>Quality bag or backpack</li>
+<li>1-2 hats (beanie, cap)</li>
+<li>Belt(s) if needed</li>
+<li>Jewelry/watch (if that's your style)</li>
+</ul>
+
+<p><strong>Total: 25-35 pieces</strong></p>
+<p><strong>Total outfit combinations: 200+</strong></p>
+<p><strong>Lifespan if quality: 5-10 years</strong></p>
+</section>
+
+<section>
+<h2>The Gen Z Sustainable Shopping Strategy: Thrift First, Invest Smart</h2>
+
+<p>Here's the systematic approach that balances sustainability, budget, and quality:</p>
+
+<h3>Step 1: Thrift for Basics and Vintage</h3>
+
+<p><strong>What to thrift:</strong></p>
+<ul>
+<li>Vintage denim (often better quality than modern fast fashion)</li>
+<li>Basic tees (test before committing to new)</li>
+<li>Overshirts, button-ups, utility jackets</li>
+<li>Unique statement pieces</li>
+<li>Accessories (belts, bags, hats)</li>
+</ul>
+
+<p><strong>What NOT to thrift:</strong></p>
+<ul>
+<li>Underwear and socks (hygiene)</li>
+<li>Athletic shoes (wear patterns affect performance)</li>
+<li>Heavily worn items (defeats longevity purpose)</li>
+</ul>
+
+<p><strong>Thrifting ROI:</strong> 60% of Gen Z check secondhand first. You can find $200 jeans for $15. Quality boots for $40. Designer pieces for 90% off.</p>
+
+<h3>Step 2: Invest in New for Core Pieces</h3>
+
+<p><strong>What to buy new and quality:</strong></p>
+<ul>
+<li>Foundational tees and basics you'll wear 100+ times/year</li>
+<li>Hoodies and crewnecks (your daily drivers)</li>
+<li>Denim if you can't find quality secondhand</li>
+<li>Footwear (proper fit and support matter)</li>
+<li>Technical outerwear (performance and durability)</li>
+</ul>
+
+<p><strong>Why invest new?</strong> Because a $70 tee worn 200 times costs <strong>$0.35 per wear</strong>. A $12 fast fashion tee worn 15 times costs <strong>$0.80 per wear</strong>.</p>
+
+<p>Quality is actually <strong>cheaper</strong> over time.</p>
+
+<h3>Step 3: Sell or Trade What Doesn't Work</h3>
+
+<p>Gen Z is driving the resale boom. Use it:</p>
+
+<ul>
+<li><strong>Depop, Poshmark, Vinted</strong> — Sell pieces that don't fit your capsule</li>
+<li><strong>ThredUp, Vestiaire Collective</strong> — Consign higher-end items</li>
+<li><strong>Local consignment shops</strong> — In-person options with instant payout</li>
+<li><strong>Clothing swaps</strong> — Community-based trading</li>
+</ul>
+
+<p>Quality pieces hold resale value. Fast fashion doesn't.</p>
+
+<p>If you invest in good clothing, you can recover 30-70% of the cost when you're done with it. That's impossible with Shein.</p>
+</section>
+
+<section>
+<h2>How to Spot Greenwashing (So You Don't Get Scammed)</h2>
+
+<p>88% of Gen Z don't trust sustainability claims for good reason. Here's how to cut through the BS:</p>
+
+<h3>Red Flags:</h3>
+<ul>
+<li><strong>Vague language:</strong> "Eco-friendly," "natural," "green" without specifics</li>
+<li><strong>"Conscious collections"</strong> within fast fashion brands (still overproducing)</li>
+<li><strong>Recycled polyester as only sustainable option</strong> (still sheds microplastics)</li>
+<li><strong>No transparency on labor practices</strong> (where's it made? who made it?)</li>
+<li><strong>No certifications</strong> (GOTS, Fair Trade, B Corp, OEKO-TEX)</li>
+<li><strong>Massive product turnover</strong> (new collections every few weeks = not sustainable)</li>
+</ul>
+
+<h3>What to Look For:</h3>
+<ul>
+<li><strong>Specific materials:</strong> Organic cotton, linen, hemp, Tencel, merino wool</li>
+<li><strong>Certifications:</strong> GOTS, Fair Trade, B Corp, Bluesign, OEKO-TEX</li>
+<li><strong>Transparent supply chain:</strong> Factory locations, labor practices disclosed</li>
+<li><strong>Longevity focus:</strong> Repair programs, quality construction, timeless design</li>
+<li><strong>Slower product cycles:</strong> Seasonal or annual releases, not weekly drops</li>
+<li><strong>Take-back or recycling programs:</strong> Actual circular economy efforts</li>
+</ul>
+
+<p>If a brand can't tell you <strong>exactly</strong> what makes them sustainable, they're probably not.</p>
+</section>
+
+<section>
+<h2>TikTok Trends vs. Timeless Style: Finding Balance</h2>
+
+<p>Here's the truth: You don't have to choose between being on-trend and being sustainable.</p>
+
+<p>You just need to <strong>filter TikTok through a sustainability lens</strong>.</p>
+
+<h3>How to Engage with Trends Sustainably:</h3>
+
+<p><strong>1. Identify Your Core vs. Trend Pieces</strong></p>
+<ul>
+<li><strong>Core:</strong> 80% of wardrobe — timeless, quality, works for years</li>
+<li><strong>Trend:</strong> 20% of wardrobe — fun, expressive, okay if temporary</li>
+</ul>
+
+<p><strong>2. Thrift Trend Pieces</strong></p>
+<p>Want to try "office siren" or "balletcore"? Hit the thrift store. Find the aesthetic for $20 instead of $200. If the trend dies in 3 months, you're not stuck with expensive mistakes.</p>
+
+<p><strong>3. Use Accessories for Trend Expression</strong></p>
+<p>Hats, bags, jewelry, scarves—these let you play with trends without overhauling your wardrobe.</p>
+
+<p><strong>4. DIY and Upcycle</strong></p>
+<p>Embrace the thrift-flip culture. Transform pieces you already own instead of buying new ones.</p>
+
+<p><strong>5. Ignore Trends That Don't Fit Your Life</strong></p>
+<p>Not every TikTok aesthetic needs to be yours. If it doesn't align with your actual lifestyle, let it pass.</p>
+
+<p>The goal: <strong>Use TikTok for inspiration, not instruction</strong>.</p>
+</section>
+
+<section>
+<h2>Why 1ABEL Aligns with Gen Z Values (No Greenwashing)</h2>
+
+<p>1ABEL wasn't built for fast fashion. It was built as an <strong>anti-thesis</strong> to it.</p>
+
+<p>Here's why it resonates with Gen Z sustainability values:</p>
+
+<h3>1. Longevity Over Trends</h3>
+<p>No seasonal drops. No trend-chasing. Just timeless pieces designed to last <strong>5-10+ years</strong>.</p>
+
+<p>Every garment is built with durability in mind—quality materials, solid construction, classic cuts that won't look dated next year.</p>
+
+<h3>2. Systematic Interoperability</h3>
+<p>The <strong>two-arc system</strong> (Arc 2 Shadow, Arc 3 Light) ensures every piece works with every other piece.</p>
+
+<p>This is the <strong>actual</strong> capsule wardrobe philosophy. Not marketing. Just functional design.</p>
+
+<h3>3. Transparent Philosophy</h3>
+<p>1ABEL doesn't hide behind vague sustainability claims. The focus is simple:</p>
+
+<ul>
+<li><strong>Buy less</strong> (capsule system)</li>
+<li><strong>Buy better</strong> (quality materials)</li>
+<li><strong>Wear longer</strong> (durability design)</li>
+<li><strong>Think systematically</strong> (compositional approach)</li>
+</ul>
+
+<p>No greenwashing. No fake promises. Just honest design for people who want their wardrobe to work like infrastructure.</p>
+
+<h3>4. Anti-Consumerism Built In</h3>
+<p>The entire brand philosophy fights overconsumption:</p>
+
+<ul>
+<li>Minimal branding (no flex culture)</li>
+<li>Limited color palette (reduces decision complexity)</li>
+<li>No seasonal collections (buy once, done)</li>
+<li>Designed for multiple contexts (one piece, many uses)</li>
+</ul>
+
+<p>This aligns with Gen Z's growing rejection of materialism and embrace of intentional consumption.</p>
+</section>
+
+<section>
+<h2>Take Action: Build Your Gen Z Sustainable Wardrobe This Month</h2>
+
+<p>You've seen the data. You understand the paradox. You know the strategies.</p>
+
+<p>Now it's time to <strong>act</strong>.</p>
+
+<p><strong>This week:</strong></p>
+<ol>
+<li>Audit your closet: What do you actually wear? What's waste?</li>
+<li>Define your 5-7 color palette</li>
+<li>Identify which pieces you can thrift vs. which need quality investment</li>
+</ol>
+
+<p><strong>This month:</strong></p>
+<ol>
+<li>Hit thrift stores or online secondhand platforms (Depop, Poshmark, ThredUp)</li>
+<li>Invest in 1-2 quality foundational pieces (quality tee, denim, or hoodie)</li>
+<li>Sell or donate pieces that don't fit your capsule</li>
+</ol>
+
+<p><strong>This year:</strong></p>
+<ol>
+<li>Complete your 25-35 piece capsule wardrobe systematically</li>
+<li>Track your cost-per-wear to see real savings</li>
+<li>Share your sustainable wardrobe journey (TikTok, Instagram—inspire others!)</li>
+</ol>
+
+<p><strong>The goal:</strong> A wardrobe that reflects your values, fits your budget, and lasts for years.</p>
+
+<p>No greenwashing. No trend anxiety. No guilt.</p>
+
+<p>Just <strong>quality, sustainability, and style that's actually yours</strong>.</p>
+</section>
+
+<section>
+<h2>Explore 1ABEL's Gen Z-Friendly Sustainable Collections</h2>
+
+<p>Ready to invest in pieces that actually last?</p>
+
+<p><strong>1ABEL's two-arc system is built for conscious consumers who want quality without the greenwashing:</strong></p>
+
+<ul>
+<li><strong><a href="/arc-2">Arc 2 (Shadow)</a></strong> — Dark, grounding essentials. Perfect for everyday wear, thrift-mixable, built to last 5-10 years.</li>
+<li><strong><a href="/arc-3">Arc 3 (Light)</a></strong> — Bright, balanced pieces. Versatile, timeless, designed to outlast TikTok trend cycles.</li>
+<li><strong><a href="/about">The 1ABEL Philosophy</a></strong> — Learn how we apply systematic thinking to sustainable fashion design.</li>
+</ul>
+
+<p>Every piece is designed for <strong>longevity, interoperability, and real sustainability</strong>.</p>
+
+<p>No seasonal drops. No greenwashing. No BS.</p>
+
+<p>Just quality clothing that aligns with your values and works for your life.</p>
+
+<p>Because the most sustainable garment is the one you'll still be wearing in 2030.</p>
+</section>
+`,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur running Seology.ai, iImagined.ai, FutureShive, Sirency, and 1ABEL. Built 1ABEL as an anti-fast-fashion solution. Understands Gen Z because he's solving for real values, not marketing to demographics.'
+    },
+    publishedAt: '2025-01-17',
+    updatedAt: '2025-01-17',
+    readTime: '15 min',
+    category: 'Sustainability',
+    tags: ['Gen Z fashion', 'sustainable fashion Gen Z', 'TikTok fashion trends', 'thrifting', 'capsule wardrobe', 'secondhand shopping', '#ThriftTok', 'conscious consumption'],
+    featured: true,
+    seo: {
+      metaTitle: 'Gen Z Sustainable Fashion 2025: TikTok Trends & Conscious Style Guide | 1ABEL',
+      metaDescription: '77% of Gen Z prioritize sustainability but 88% don\'t trust brands. Discover how #ThriftTok, capsule wardrobes, and quality pieces are redefining conscious fashion for 2025. Real data, no greenwashing.',
+      keywords: [
+        'Gen Z sustainable fashion',
+        'Gen Z fashion trends 2025',
+        'TikTok fashion sustainability',
+        '#ThriftTok trends',
+        'Gen Z thrifting statistics',
+        'capsule wardrobe Gen Z',
+        'secondhand shopping Gen Z',
+        'sustainable fashion TikTok',
+        'Gen Z conscious consumption',
+        'thrift flip culture',
+        'greenwashing Gen Z',
+        'quality over quantity fashion',
+        'Gen Z wardrobe essentials',
+        'sustainable fashion budget',
+        'TikTok capsule wardrobe trends'
+      ]
+    }
   }
 ]
