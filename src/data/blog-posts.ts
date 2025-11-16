@@ -25830,5 +25830,451 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
         'best fabrics for working from home'
       ]
     }
+  },
+  {
+    slug: 'weekend-wardrobe-capsule-casual-off-duty-style-essentials',
+    title: 'Weekend Wardrobe Capsule: 10-Piece System for 16+ Hours of Off-Duty Comfort & Style in 2025',
+    excerpt: 'You spend 104+ waking hours per weekend monthly—yet most people own 50+ casual pieces they cycle through poorly. A strategic 10-piece weekend capsule eliminates "nothing to wear" stress, costs under $400, and works for everything from coffee runs to casual dinners to outdoor activities.',
+    content: `
+      <section>
+        <h2>Why Weekend Wardrobes Fail (Despite Owning Dozens of Casual Pieces)</h2>
+        <p>The average person spends <strong>16+ waking hours per day on weekends</strong>—that's 32+ hours weekly, or <strong>138+ hours monthly</strong> of non-work time. Yet despite owning 40-60+ casual pieces, most people experience the "closet full, nothing to wear" phenomenon every Saturday morning.</p>
+
+        <p>The weekend wardrobe problem is different from work wardrobe challenges:</p>
+
+        <ul>
+          <li><strong>Too many random pieces:</strong> Graphic tees from concerts, old college hoodies, impulse purchases that don't work together</li>
+          <li><strong>No cohesive strategy:</strong> Work capsules get intentional planning; weekend clothes are afterthoughts</li>
+          <li><strong>Quality imbalance:</strong> People invest in professional wear, buy cheap fast fashion for weekends that falls apart in months</li>
+          <li><strong>Activity mismatch:</strong> Clothes designed for lounging at home, but weekends involve errands, social activities, outdoor time, casual dining—requiring versatile, durable pieces</li>
+          <li><strong>Style inconsistency:</strong> Weekend wardrobe looks disjointed because pieces were never chosen to work together</li>
+        </ul>
+
+        <p><strong>The result?</strong> Closets overflowing with weekend clothes, yet 10 minutes of indecision every morning trying to find something that looks good, feels comfortable, and works for the day's activities.</p>
+
+        <p><em>The solution isn't more weekend clothes—it's a strategic weekend capsule that actually works for how you spend those 138+ monthly hours.</em></p>
+      </section>
+
+      <section>
+        <h2>The 10-Piece Weekend Capsule: From Coffee Runs to Casual Dinners</h2>
+        <p>This capsule covers the full spectrum of weekend activities while maintaining the comfort-first, no-fuss mindset weekends deserve:</p>
+
+        <h3>Tops (4 pieces)</h3>
+        <ul>
+          <li><strong>2 quality tees or henleys</strong> (neutral colors: grey, navy, white, or black) – elevated basics that work solo or layered, merino wool or organic cotton for durability and comfort</li>
+          <li><strong>1 casual button-up or chambray shirt</strong> – instantly elevates any outfit, works for casual dinners or weekend errands, comfortable enough for all-day wear</li>
+          <li><strong>1 sweatshirt or casual knit sweater</strong> (neutral color, quality fabric) – layering warmth, comfortable but intentional (not ratty old college hoodie)</li>
+        </ul>
+
+        <h3>Bottoms (3 pieces)</h3>
+        <ul>
+          <li><strong>1 pair of quality jeans</strong> (dark wash, comfortable fit—straight leg or relaxed) – weekend workhorse, works for 80% of casual activities</li>
+          <li><strong>1 pair of chinos or casual trousers</strong> (khaki, olive, or navy) – slightly more polished than jeans, works for casual dinners or relaxed social events</li>
+          <li><strong>1 pair of shorts</strong> (warm weather/active days) or joggers (cooler weather/loungewear that's not pajamas) – comfortable movement, still looks intentional</li>
+        </ul>
+
+        <h3>Outerwear (2 pieces)</h3>
+        <ul>
+          <li><strong>1 denim jacket or bomber jacket</strong> – classic layering piece, works over tees or button-ups, casual but polished</li>
+          <li><strong>1 casual jacket or fleece</strong> (depending on climate) – warmth layer for outdoor activities, structured enough to look good</li>
+        </ul>
+
+        <h3>Footwear (1-2 pairs for weekend-specific wear)</h3>
+        <ul>
+          <li><strong>1 pair of white or neutral sneakers</strong> – clean, minimal design works with everything in capsule, comfortable for walking</li>
+          <li><strong>Optional: 1 pair of casual boots or loafers</strong> (if your weekend activities include nicer casual dining or social events)</li>
+        </ul>
+
+        <p><strong>Total: 10 pieces creating 25-30+ weekend outfit combinations</strong></p>
+
+        <p><strong>Budget: $350-500</strong> for quality pieces that last 3-4 years (vs $250-400 annually replacing cheap casual wear that deteriorates)</p>
+
+        <h3>Why This Works</h3>
+        <ul>
+          <li><strong>Versatility:</strong> Each piece works with 70%+ of other pieces, creating dozens of combinations from minimal items</li>
+          <li><strong>Activity coverage:</strong> Coffee shop casual to weekend dinner dates to outdoor activities</li>
+          <li><strong>Intentional comfort:</strong> Comfortable without looking sloppy (distinct from lounge/sleepwear)</li>
+          <li><strong>Year-round base:</strong> Core pieces work across seasons, swap shorts for joggers or fleece for denim jacket depending on weather</li>
+          <li><strong>Coordinates with work capsule:</strong> Share footwear, some bottoms can overlap, maintains cohesive overall wardrobe</li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Need weekend essentials that last years, not months?</strong> <a href="/arc-2">Arc 2 Shadow</a> features elevated casual pieces—organic cotton tees, quality denim, and layering pieces designed for frequent wear and multi-year lifespans. Built for weekends that demand comfort without sacrificing style.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>The Weekend Activity Matrix: What Actually Works</h2>
+        <p>Weekend clothes must handle diverse activities. Here's how the 10-piece capsule covers real-world weekend scenarios:</p>
+
+        <h3>Scenario 1: Errands & Coffee Shop (60% of Weekend Time)</h3>
+        <ul>
+          <li><strong>Outfit:</strong> Quality tee + jeans + sneakers</li>
+          <li><strong>Elevation option:</strong> Add denim jacket or casual button-up</li>
+          <li><strong>Why it works:</strong> Comfortable for 4-6 hours of movement, looks put-together, works everywhere from grocery store to coffee shop to bookstore</li>
+        </ul>
+
+        <h3>Scenario 2: Casual Dining or Social Events (20% of Weekend Time)</h3>
+        <ul>
+          <li><strong>Outfit:</strong> Casual button-up + chinos + sneakers (or casual boots)</li>
+          <li><strong>Alternative:</strong> Quality tee + chinos + denim jacket + boots</li>
+          <li><strong>Why it works:</strong> Elevated without being formal, works for casual restaurants, brewery meet-ups, low-key social gatherings</li>
+        </ul>
+
+        <h3>Scenario 3: Outdoor Activities (Hiking, Parks, Walks) (15% of Weekend Time)</h3>
+        <ul>
+          <li><strong>Outfit:</strong> Quality tee + joggers or shorts + sneakers + casual jacket</li>
+          <li><strong>Why it works:</strong> Full range of motion, moisture-wicking fabrics (if merino wool), comfortable for extended outdoor time</li>
+        </ul>
+
+        <h3>Scenario 4: Home Projects or Relaxed Days (5% of Weekend Time)</h3>
+        <ul>
+          <li><strong>Outfit:</strong> Quality tee + joggers + sneakers</li>
+          <li><strong>Alternative:</strong> Sweatshirt + jeans (comfortable but distinct from pajamas)</li>
+          <li><strong>Why it works:</strong> Comfortable enough for home tasks, still looks intentional if you need to answer door or run quick errand</li>
+        </ul>
+
+        <p><strong>Key insight:</strong> Same 10 pieces adapt to every weekend scenario by mixing-and-matching and adding/removing layers. No need for specialized "hiking clothes," "social event clothes," "errand clothes"—versatility handles it all.</p>
+      </section>
+
+      <section>
+        <h2>Fabrics That Survive Weekend Reality</h2>
+        <p>Weekend wear faces different challenges than work clothes—more movement, outdoor exposure, variable activities, frequent washing. Here's what lasts:</p>
+
+        <h3>Winner Fabrics for Weekend Wear</h3>
+        <ul>
+          <li><strong>Organic Cotton (heavyweight, 180+ GSM):</strong>
+            <ul>
+              <li>Durable, improves with washing (unlike cheap cotton that fades and thins)</li>
+              <li>Breathable for active days</li>
+              <li>Versatile across temperatures with layering</li>
+              <li>Cost: $30-60/tee, lasts 4-5 years = $0.15-0.30/wear</li>
+            </ul>
+          </li>
+          <li><strong>Merino Wool (for tees and sweaters):</strong>
+            <ul>
+              <li>Naturally antimicrobial (can wear 2-3 times between washes)</li>
+              <li>Odor-resistant (ideal for active weekends)</li>
+              <li>Temperature-regulating</li>
+              <li>Doesn't pill like acrylic or cheap cotton blends</li>
+            </ul>
+          </li>
+          <li><strong>Quality Denim (10oz+, raw or selvedge):</strong>
+            <ul>
+              <li>Durability that improves with wear and washing</li>
+              <li>Fades naturally, develops character (unlike fast fashion that just looks worn-out)</li>
+              <li>10-20 year lifespan with proper care</li>
+              <li>Cost: $80-150, lasts 10+ years = $0.08-0.15/wear</li>
+            </ul>
+          </li>
+          <li><strong>French Terry or Loopback Jersey (for sweatshirts):</strong>
+            <ul>
+              <li>Structured enough to look intentional (not sloppy)</li>
+              <li>Comfortable for all-day wear</li>
+              <li>Holds shape better than cheap fleece</li>
+              <li>Machine-washable, durable</li>
+            </ul>
+          </li>
+          <li><strong>Chino Twill (for casual trousers):</strong>
+            <ul>
+              <li>More durable than regular cotton</li>
+              <li>Wrinkle-resistant enough for casual wear</li>
+              <li>Professional enough for nicer casual occasions</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Fabrics to Avoid for Weekend Wear</h3>
+        <ul>
+          <li><strong>Thin jersey cotton (< 150 GSM):</strong> Stretches out, fades quickly, shows wear after 20-30 washes</li>
+          <li><strong>Cheap fleece/poly blends:</strong> Pill aggressively, retain odors, look worn-out within months</li>
+          <li><strong>Low-quality denim (< 8oz):</strong> Thin, tears easily, fades poorly, uncomfortable</li>
+          <li><strong>Graphic tees on cheap blanks:</strong> Graphics crack and fade, base fabric stretches and thins</li>
+        </ul>
+
+        <p><strong>Real-world test:</strong> Wear a $60 heavyweight organic cotton tee 100 times over 2 years. Then wear a $12 fast fashion tee 20 times over 6 months. The organic cotton will look and feel almost new. The fast fashion tee will be stretched, faded, and ready for disposal. <em>Cost-per-wear: $0.60 vs $0.60, but the quality tee has 80+ wears remaining.</em></p>
+      </section>
+
+      <section>
+        <h2>The Color Strategy: Weekend Capsule That Actually Mixes</h2>
+        <p>Weekend wardrobes fail when colors don't work together. Here's the strategic approach:</p>
+
+        <h3>Foundation: 2-3 Neutral Colors</h3>
+        <p>Choose neutrals that work with your work capsule (for overlap) and each other:</p>
+        <ul>
+          <li><strong>Option A:</strong> Navy, white, grey (classic, works with everything)</li>
+          <li><strong>Option B:</strong> Black, cream, olive (slightly edgier, still versatile)</li>
+          <li><strong>Option C:</strong> Khaki, white, navy (prep/classic casual)</li>
+        </ul>
+
+        <h3>Accent: 1-2 Colors (Optional)</h3>
+        <p>Add personality without sacrificing versatility:</p>
+        <ul>
+          <li>Burgundy, forest green, rust (earthy tones that work across seasons)</li>
+          <li>Denim blue (if not using navy as base neutral—denim jacket provides this)</li>
+          <li><em>Rule:</em> Accent pieces must still pair with 70%+ of capsule</li>
+        </ul>
+
+        <h3>What to Avoid</h3>
+        <ul>
+          <li><strong>Graphic tees with loud designs:</strong> Limit mixing, date quickly, look juvenile on most people over 25</li>
+          <li><strong>Bright colors that demand specific pairings:</strong> A bright yellow tee that only works with one pair of pants wastes capsule space</li>
+          <li><strong>Too many patterns:</strong> Keep 80% solids, 20% patterns (chambray shirt, subtle stripe, etc.)</li>
+        </ul>
+
+        <p><strong>Test before buying:</strong> If a piece only works with 1-2 items you own, it's not capsule-worthy. Every piece should create 3-5+ outfit combinations.</p>
+      </section>
+
+      <section>
+        <h2>The Cost Reality: Weekend Capsule ROI</h2>
+        <p>Weekend wardrobes often get the "leftover budget" after work clothes—but this creates expensive problems:</p>
+
+        <h3>Cheap Weekend Wear Cycle</h3>
+        <ul>
+          <li><strong>Initial cost:</strong> 20-30 cheap casual pieces at $10-25 each = $200-600</li>
+          <li><strong>Replacement timeline:</strong> Tees pill/fade/stretch after 3-6 months (20-30 wears), jeans blow out after 6-12 months, sweatshirts look ratty after 1 year</li>
+          <li><strong>Annual replacement:</strong> Replace 15-20 pieces yearly = $150-500/year</li>
+          <li><strong>3-year cost:</strong> $200-600 (initial) + $300-1,000 (replacements) = <strong>$500-1,600</strong></li>
+          <li><strong>Hidden cost:</strong> Closet clutter, decision fatigue, always looking for "something better"</li>
+        </ul>
+
+        <h3>Quality Weekend Capsule Approach</h3>
+        <ul>
+          <li><strong>Initial investment:</strong> 10 quality pieces at $35-80 each = $350-800</li>
+          <li><strong>Replacement timeline:</strong> Merino wool tees last 3-4 years, quality denim lasts 10+ years with care, organic cotton tees last 4-5 years</li>
+          <li><strong>Annual replacement:</strong> Replace 1-2 most-worn pieces = $70-160/year</li>
+          <li><strong>3-year cost:</strong> $350-800 (initial) + $140-320 (replacements) = <strong>$490-1,120</strong></li>
+          <li><strong>Hidden benefits:</strong> Zero decision fatigue, always looks cohesive, confident you'll find something to wear</li>
+        </ul>
+
+        <p><strong>Savings: $10-480 over 3 years</strong>, plus significantly reduced mental energy and improved appearance</p>
+
+        <p><em>Wardrobe confidence ROI:</em> The real value isn't just financial—it's eliminating the Saturday morning "I have nothing to wear" crisis when you know exactly what works.</p>
+      </section>
+
+      <section>
+        <h2>Sample Weekend: Friday Evening Through Sunday Night</h2>
+        <p>Here's how a 10-piece weekend capsule covers 2.5 days of activities:</p>
+
+        <h3>Friday Evening (After Work)</h3>
+        <ul>
+          <li>Quality tee (grey merino wool)</li>
+          <li>Jeans</li>
+          <li>White sneakers</li>
+          <li><em>Activity:</em> Casual dinner with friends, brewery meet-up</li>
+          <li><em>Why it works:</em> Comfortable after work day, appropriate for casual social settings, easy transition from work</li>
+        </ul>
+
+        <h3>Saturday Morning (Errands & Coffee)</h3>
+        <ul>
+          <li>Quality tee (navy organic cotton)</li>
+          <li>Joggers or shorts (depending on weather)</li>
+          <li>Denim jacket (if cool morning)</li>
+          <li>White sneakers</li>
+          <li><em>Activity:</em> Coffee shop, grocery shopping, bookstore</li>
+          <li><em>Why it works:</em> Comfortable for 4-5 hours of movement, looks put-together enough for public, easy to add/remove layer</li>
+        </ul>
+
+        <h3>Saturday Afternoon (Outdoor Activity)</h3>
+        <ul>
+          <li>Same tee</li>
+          <li>Swap joggers/shorts for chinos (if meeting friends after hike)</li>
+          <li>Remove jacket (warmed up)</li>
+          <li>Sneakers</li>
+          <li><em>Activity:</em> Park walk, outdoor market</li>
+          <li><em>Why it works:</em> Merino wool stays odor-free through activity, chinos work for casual lunch after outdoor time</li>
+        </ul>
+
+        <h3>Saturday Evening (Casual Dinner Date)</h3>
+        <ul>
+          <li>Casual button-up (chambray or oxford)</li>
+          <li>Chinos</li>
+          <li>White sneakers or casual boots</li>
+          <li><em>Activity:</em> Dinner at casual-nice restaurant</li>
+          <li><em>Why it works:</em> Button-up elevates outfit without being formal, chinos are comfortable after full day of wear, appropriate for nicer casual dining</li>
+        </ul>
+
+        <h3>Sunday Morning (Relaxed)</h3>
+        <ul>
+          <li>Sweatshirt</li>
+          <li>Jeans</li>
+          <li>Sneakers</li>
+          <li><em>Activity:</em> Brunch, lazy morning</li>
+          <li><em>Why it works:</em> Comfortable, but intentional enough to leave house if needed</li>
+        </ul>
+
+        <h3>Sunday Afternoon (Home Projects/Errands)</h3>
+        <ul>
+          <li>Quality tee (grey, re-worn from Friday—merino stays fresh)</li>
+          <li>Jeans</li>
+          <li>Sneakers</li>
+          <li><em>Activity:</em> Home organization, quick errands</li>
+          <li><em>Why it works:</em> Practical for home tasks, still looks good if you need to run to hardware store</li>
+        </ul>
+
+        <p><strong>Total: 6 complete outfits from 10 pieces</strong>, with room for dozens more combinations by swapping tops, bottoms, and layers.</p>
+      </section>
+
+      <section>
+        <h2>Coordinating Weekend & Work Capsules</h2>
+        <p>Strategic overlap reduces total wardrobe size while maintaining distinct work/weekend separation:</p>
+
+        <h3>Items That Work Both Ways</h3>
+        <ul>
+          <li><strong>Footwear:</strong> White sneakers can work casual Friday + weekends. Loafers work business casual + weekend dinners</li>
+          <li><strong>Bottoms:</strong> Quality chinos or dark jeans work casual office days + weekend outings</li>
+          <li><strong>Layers:</strong> Blazer works office + elevated weekend events. Denim jacket works casual Friday + weekend</li>
+        </ul>
+
+        <h3>Items That Should Stay Separate</h3>
+        <ul>
+          <li><strong>Core work tops:</strong> Keep professional blouses/shirts distinct from weekend tees to maintain work/life boundaries</li>
+          <li><strong>Weekend comfort pieces:</strong> Sweatshirts, joggers stay weekend-only (wearing to work blurs boundaries)</li>
+        </ul>
+
+        <p><strong>Smart overlap strategy:</strong> Share 3-5 pieces between work and weekend capsules (typically footwear and bottoms), keep 8-10 pieces unique to each. <em>Total wardrobe: 25-30 pieces instead of separate 18-piece work + 10-piece weekend = 28 pieces.</em></p>
+      </section>
+
+      <section>
+        <h2>Common Weekend Wardrobe Mistakes (and Fixes)</h2>
+
+        <h3>Mistake #1: Keeping Decade-Old "Sentimental" Casual Clothes</h3>
+        <p><strong>The problem:</strong> Old college hoodies, concert tees from 2015, worn-out "favorite" pieces that no longer fit well or look good.</p>
+        <p><strong>The fix:</strong> Be ruthless. If it's pilled, faded, stretched, or you wouldn't want to run into someone you know while wearing it—donate or discard. Sentimental value doesn't make it capsule-worthy.</p>
+
+        <h3>Mistake #2: Buying Graphic Tees Instead of Quality Basics</h3>
+        <p><strong>The problem:</strong> Graphic tees limit outfit combinations, date quickly, often printed on cheap blanks that fail within months.</p>
+        <p><strong>The fix:</strong> Invest in 3-4 quality solid tees in flattering cuts and neutral colors. If you love graphic tees, limit to 1-2 truly special ones.</p>
+
+        <h3>Mistake #3: Not Having an "Instant Upgrade" Piece</h3>
+        <p><strong>The problem:</strong> All weekend clothes are ultra-casual—nothing for impromptu nicer casual events.</p>
+        <p><strong>The fix:</strong> Include 1 button-up and 1 pair of chinos (or equivalent) that instantly elevates outfit when needed.</p>
+
+        <h3>Mistake #4: Separating "Gym Clothes" From "Weekend Clothes"</h3>
+        <p><strong>The problem:</strong> Buying specialized gym-only clothes that never get used otherwise, creating wardrobe bloat.</p>
+        <p><strong>The fix:</strong> Choose weekend pieces that work for light activity—merino tees, joggers, quality shorts function as both casual wear and gym clothes.</p>
+
+        <h3>Mistake #5: Forgetting About Footwear</h3>
+        <p><strong>The problem:</strong> Great weekend capsule, but only ratty old sneakers or uncomfortable shoes to wear with it.</p>
+        <p><strong>The fix:</strong> Invest in 1 pair of quality white/neutral sneakers ($80-150). They'll last 2-3 years with care and work with everything in capsule.</p>
+      </section>
+
+      <section>
+        <h2>Sustainable Weekend Wardrobes</h2>
+        <p>Weekend wear is where most fashion waste happens—cheap impulse buys that fall apart in months:</p>
+
+        <ul>
+          <li><strong>Fast fashion weekend cycle:</strong> Average person buys 20-30 cheap weekend pieces annually, wears each 10-20 times, discards when worn-out = 15-25 pounds of textile waste yearly</li>
+          <li><strong>Quality weekend capsule:</strong> 10 pieces worn 50-100+ times each over 3-5 years = same total wears, 80% less waste</li>
+          <li><strong>Longevity advantage:</strong> Quality denim lasts 10+ years vs 1-2 for fast fashion jeans. Organic cotton tees last 4-5 years vs 6 months for cheap cotton</li>
+          <li><strong>Environmental ROI:</strong> One $80 pair of quality jeans worn 300 times over 5 years vs four $30 fast fashion jeans worn 75 times each = same total wears, 75% less water, energy, and textile waste</li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Want weekend essentials that last years, not months?</strong> Explore <a href="/about">1ABEL's approach</a>—organic cotton, merino wool, and quality denim designed for multi-year lifespans and hundreds of wears. Built for people who want weekend wardrobes that work, not closets full of disposable fast fashion.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Final Checklist: Building Your Weekend Capsule</h2>
+
+        <div class="checklist">
+          <h3>Before You Buy:</h3>
+          <ul>
+            <li>☐ Audit current weekend wardrobe—what do you actually wear? What sits unworn?</li>
+            <li>☐ Identify your weekend activities (errands, dining, outdoor, social) to determine needs</li>
+            <li>☐ Set budget ($350-500 for quality 10-piece capsule)</li>
+            <li>☐ Choose color palette that coordinates with work capsule (if you have one)</li>
+          </ul>
+
+          <h3>Essential 10-Piece Weekend Capsule:</h3>
+          <ul>
+            <li>☐ 4 tops (2 quality tees, 1 button-up, 1 sweatshirt/sweater)</li>
+            <li>☐ 3 bottoms (1 jeans, 1 chinos, 1 shorts/joggers)</li>
+            <li>☐ 2 outerwear pieces (denim/bomber jacket, casual jacket/fleece)</li>
+            <li>☐ 1-2 footwear (white/neutral sneakers essential, casual boots optional)</li>
+          </ul>
+
+          <h3>Fabric Priorities:</h3>
+          <ul>
+            <li>☐ Choose heavyweight organic cotton or merino wool for tees</li>
+            <li>☐ Look for quality denim (10oz+, selvedge or raw preferred)</li>
+            <li>☐ Avoid thin jersey cotton and cheap fleece (fail within months)</li>
+            <li>☐ Prioritize natural fibers or high-quality synthetics (not cheap poly blends)</li>
+          </ul>
+
+          <h3>Versatility Test:</h3>
+          <ul>
+            <li>☐ Each piece should work with 70%+ of other pieces</li>
+            <li>☐ Create 5-7 complete outfits before purchasing to verify combinations work</li>
+            <li>☐ Ensure capsule covers all weekend activities (casual, elevated casual, active)</li>
+            <li>☐ Test if you could spend entire weekend in just these 10 pieces</li>
+          </ul>
+
+          <h3>Overlap Strategy:</h3>
+          <ul>
+            <li>☐ Identify 3-5 pieces that work for both work and weekend (footwear, bottoms)</li>
+            <li>☐ Keep work/weekend boundaries clear (don't wear sweatshirts to work)</li>
+            <li>☐ Coordinate color palettes between work and weekend for seamless overlap</li>
+          </ul>
+        </div>
+
+        <p><strong>Remember:</strong> Weekend wardrobes should eliminate stress, not create it. The goal is opening your closet on Saturday morning and immediately knowing what to wear—because everything works together and looks good.</p>
+
+        <p>You deserve weekends free from wardrobe stress.</p>
+
+        <div class="cta-box">
+          <p><strong>Ready to build a weekend wardrobe that actually works?</strong> Start with <a href="/arc-2">Arc 2 Shadow</a>—quality tees, denim, and casual layers designed for 100+ wears, multi-year lifespans, and effortless style. Built for people who want weekend clothes that look good without thinking about it.</p>
+        </div>
+      </section>
+    `,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur who spent years drowning in closets full of random weekend clothes while somehow having nothing to wear. Built 1ABEL around the realization that weekend wardrobes deserve the same strategic thinking as professional wardrobes—maybe more, since we spend half our waking hours on weekends.'
+    },
+    publishedAt: '2025-02-08',
+    updatedAt: '2025-02-08',
+    readTime: '12 min',
+    category: 'Lifestyle & Casual',
+    tags: [
+      'weekend wardrobe',
+      'casual capsule wardrobe',
+      'off-duty style',
+      'weekend outfit ideas',
+      'casual wardrobe essentials',
+      'minimalist weekend wardrobe',
+      'quality casual clothing',
+      'weekend fashion men women',
+      'casual outfit combinations',
+      'weekend style guide',
+      'everyday casual wardrobe',
+      'versatile weekend clothes',
+      'weekend capsule 10 pieces',
+      'sustainable casual wardrobe',
+      'casual wardrobe 2025'
+    ],
+    featured: false,
+    seo: {
+      metaTitle: 'Weekend Wardrobe Capsule: 10 Pieces for 30+ Outfits | Off-Duty Style Guide',
+      metaDescription: '138+ weekend hours monthly deserve better than closet clutter. 10-piece capsule eliminates "nothing to wear" stress, costs under $400, works for coffee runs to casual dinners. Quality lasts 3-4 years.',
+      keywords: [
+        'weekend wardrobe capsule',
+        'casual capsule wardrobe 10 pieces',
+        'off-duty style essentials',
+        'weekend outfit ideas minimalist',
+        'casual wardrobe essentials 2025',
+        'minimalist weekend wardrobe guide',
+        'quality casual clothing that lasts',
+        'weekend fashion capsule',
+        'casual outfit combinations versatile',
+        'weekend style guide men women',
+        'everyday casual wardrobe minimalist',
+        'versatile weekend clothes',
+        'sustainable casual wardrobe',
+        'best fabrics weekend wear',
+        'weekend wardrobe under 500'
+      ]
+    }
   }
 ]
