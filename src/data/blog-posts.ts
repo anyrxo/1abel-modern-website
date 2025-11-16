@@ -20662,5 +20662,534 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
         'TikTok capsule wardrobe trends'
       ]
     }
+  },
+  {
+    slug: 'medical-professional-minimalist-wardrobe-doctor-nurse',
+    title: 'Medical Professional Capsule Wardrobe: Hospital to Street in Under 5 Minutes',
+    excerpt: 'Healthcare workers spend 12+ hour shifts in scrubs, then need to transition seamlessly to life outside the hospital. Build a 20-25 piece minimalist wardrobe designed for comfort, quick changes, and the unique demands of medical life.',
+    content: `
+<section>
+<h2>The Medical Professional's Wardrobe Challenge</h2>
+<p>You just finished a 12-hour shift.</p>
+
+<p>You're exhausted. Your back hurts. You've been on your feet since 6 AM.</p>
+
+<p>The last thing you want to do is stand in front of your closet trying to figure out what to wear to dinner, the grocery store, or tomorrow's non-scrubs meeting with hospital administration.</p>
+
+<p>But here's the reality of working in healthcare:</p>
+
+<ul>
+<li><strong>Variable schedules</strong> — 12-hour shifts, overnight rotations, on-call randomness</li>
+<li><strong>Limited closet space</strong> — Hospital lockers barely fit a change of clothes</li>
+<li><strong>Scrubs 80% of the time</strong> — But you still need real clothes for the other 20%</li>
+<li><strong>Quick transitions required</strong> — Post-shift errands, family events, professional meetings</li>
+<li><strong>Comfort is non-negotiable</strong> — After 12 hours in the ER, restrictive clothing isn't happening</li>
+</ul>
+
+<p>Medical professionals need a wardrobe that works <strong>like scrubs</strong>—functional, comfortable, no-thought—but looks appropriate for non-hospital life.</p>
+
+<p>That's exactly what this guide delivers: <strong>A 20-25 piece minimalist capsule wardrobe designed specifically for doctors, nurses, PAs, and healthcare workers</strong>.</p>
+</section>
+
+<section>
+<h2>Why Healthcare Workers Need a Different Approach to Fashion</h2>
+
+<p>You're not a typical 9-to-5 office worker. Your wardrobe strategy shouldn't be either.</p>
+
+<h3>1. Extreme Comfort Requirements</h3>
+
+<p>After standing for 12+ hours, sitting through procedures, running between patient rooms, your body is done with restrictive clothing.</p>
+
+<p>Tight waistbands? No. Stiff fabrics? Absolutely not. Uncomfortable shoes? Never again.</p>
+
+<p>Your off-duty wardrobe needs to feel as comfortable as scrubs while looking presentable for public life.</p>
+
+<h3>2. Minimal Decision Bandwidth</h3>
+
+<p>You make life-or-death decisions all day. Treatment plans. Medication dosages. Emergency interventions.</p>
+
+<p>By the time you're off shift, <strong>decision fatigue is real</strong>. The idea of choosing an outfit feels overwhelming.</p>
+
+<p>A capsule wardrobe eliminates that friction: Everything works together. No decisions needed. Just grab and go.</p>
+
+<h3>3. Quick Change Requirements</h3>
+
+<p>You need to transition from scrubs to street clothes in under 5 minutes:</p>
+
+<ul>
+<li>Post-shift grocery run</li>
+<li>Meeting a friend for coffee after work</li>
+<li>Picking up kids from school</li>
+<li>Hospital admin meetings (non-scrubs required)</li>
+</ul>
+
+<p>Complicated outfits with multiple layers and accessories don't work. You need <strong>uniform-like simplicity</strong> in your civilian wardrobe.</p>
+
+<h3>4. Limited Storage Space</h3>
+
+<p>Hospital lockers are tiny. Your car trunk isn't a closet. You can't carry 10 outfit options.</p>
+
+<p>You need a <strong>minimal, strategic selection</strong> that covers all scenarios without taking up space.</p>
+
+<h3>5. Easy Care/Antimicrobial Priorities</h3>
+
+<p>Working in healthcare means exposure to bacteria, bodily fluids, and infectious materials.</p>
+
+<p>Your clothing needs to:</p>
+<ul>
+<li>Wash easily at high temperatures</li>
+<li>Dry quickly</li>
+<li>Resist odors and bacteria buildup</li>
+<li>Maintain quality through frequent washing</li>
+</ul>
+
+<p>Delicate fabrics that require dry cleaning? Not practical for medical life.</p>
+</section>
+
+<section>
+<h2>2025 Trends in Medical Professional Fashion</h2>
+
+<p>The healthcare apparel industry is evolving. Here's what's shaping medical professional wardrobes in 2025:</p>
+
+<h3>Antimicrobial & Smart Fabrics</h3>
+
+<p>More brands are offering fabrics with <strong>antimicrobial technology</strong> that reduces bacteria buildup and odors—perfect for long shifts and the transition from hospital to street.</p>
+
+<p>Fabrics featuring silver ion technology, copper-infused materials, and moisture-wicking properties are becoming standard.</p>
+
+<h3>Sustainable Materials</h3>
+
+<p>Organic cotton, bamboo, and recycled polyester are replacing traditional synthetic scrubs and off-duty clothing.</p>
+
+<p>Healthcare workers are prioritizing <strong>eco-conscious choices</strong> that align with the medical field's focus on health and wellness.</p>
+
+<h3>Enhanced Functionality</h3>
+
+<p>2025 trends emphasize practical design:</p>
+<ul>
+<li>Enhanced pocket designs for phones, pens, ID badges</li>
+<li>Adjustable features for different body types</li>
+<li>Magnetic closures and adaptive options</li>
+<li>Stretch waistbands and mobility-focused cuts</li>
+</ul>
+
+<h3>Comfort Without Sacrifice</h3>
+
+<p>The old dichotomy of "comfortable OR professional" is disappearing.</p>
+
+<p>2025 medical fashion prioritizes <strong>both</strong>: athleisure-inspired cuts with professional aesthetics. Jogger-style pants that look polished. Soft hoodies that read as elevated basics.</p>
+</section>
+
+<section>
+<h2>The 20-25 Piece Medical Professional Capsule Wardrobe</h2>
+
+<p>This system is designed for <strong>maximum comfort, minimal decisions, and seamless transitions</strong>.</p>
+
+<h3>Foundation: Comfortable Tops (6-7 pieces)</h3>
+
+<p><strong>3-4 Premium T-Shirts</strong></p>
+<ul>
+<li>Soft, breathable fabrics (organic cotton, bamboo, modal)</li>
+<li>2 dark (VOID black, STEEL grey) for versatility</li>
+<li>1-2 light (CLOUD white, SAND beige) for balance</li>
+<li><strong>Why:</strong> Post-shift comfort, easy layering, machine washable</li>
+<li><strong>Context:</strong> Grocery runs, casual outings, home comfort</li>
+</ul>
+
+<p><strong>2 Long Sleeves or Thermals</strong></p>
+<ul>
+<li>Soft, non-restrictive fabric</li>
+<li>1 dark (VOID, STEEL), 1 neutral (SAND, MOSS)</li>
+<li><strong>Why:</strong> Layering, temperature control, professional enough for admin meetings</li>
+<li><strong>Context:</strong> Hospital meetings, cooler weather, layering under jackets</li>
+</ul>
+
+<p><strong>1-2 Hoodies or Crewnecks</strong></p>
+<ul>
+<li>Elevated quality, soft interior</li>
+<li>Dark neutrals preferred (VOID, STEEL)</li>
+<li><strong>Why:</strong> Ultimate comfort, professional-casual balance</li>
+<li><strong>Context:</strong> Post-shift comfort, weekend errands, casual meetings</li>
+</ul>
+
+<h3>Bottoms: Comfort-First Versatility (5-6 pieces)</h3>
+
+<p><strong>2 Pairs Quality Joggers or Sweats</strong></p>
+<ul>
+<li>Tapered fit, elevated materials (not ratty gym sweats)</li>
+<li>Dark neutrals (VOID, STEEL)</li>
+<li><strong>Why:</strong> Scrub-level comfort, acceptable in public, elastic waist after long shifts</li>
+<li><strong>Context:</strong> Post-shift errands, weekend comfort, casual socializing</li>
+</ul>
+
+<p><strong>2 Pairs Stretch Denim or Utility Pants</strong></p>
+<ul>
+<li>Soft, stretch fabric (not stiff)</li>
+<li>1 dark wash, 1 medium wash</li>
+<li><strong>Why:</strong> More polished than joggers, still comfortable, works for admin/professional contexts</li>
+<li><strong>Context:</strong> Hospital admin meetings, dinners out, semi-professional events</li>
+</ul>
+
+<p><strong>1 Pair Leggings or Athleisure Pants</strong></p>
+<ul>
+<li>High-quality, non-see-through material</li>
+<li>Dark neutral (VOID)</li>
+<li><strong>Why:</strong> Maximum comfort, gym-to-errands versatility</li>
+<li><strong>Context:</strong> Quick gym stops, yoga, ultra-casual outings</li>
+</ul>
+
+<p><strong>Optional: 1 Pair Chinos or Dress Pants</strong></p>
+<ul>
+<li>Only if your role requires occasional formal meetings</li>
+<li>Stretch fabric essential</li>
+<li><strong>Context:</strong> Conferences, formal hospital events, presentations</li>
+</ul>
+
+<h3>Outerwear: Quick Layers (3-4 pieces)</h3>
+
+<p><strong>1 Zip-Up Hoodie or Cardigan</strong></p>
+<ul>
+<li>Easy on/off for temperature changes</li>
+<li>Dark neutral</li>
+<li><strong>Why:</strong> Hospital temp fluctuations, post-shift layering</li>
+<li><strong>Context:</strong> Hospital wear, casual outings, travel</li>
+</ul>
+
+<p><strong>1 Utility Jacket or Overshirt</strong></p>
+<ul>
+<li>Lightweight, pockets helpful</li>
+<li>Neutral color</li>
+<li><strong>Why:</strong> Professional layer without formality</li>
+<li><strong>Context:</strong> Admin meetings, conferences, elevated casual</li>
+</ul>
+
+<p><strong>1 Puffer or Insulated Jacket</strong></p>
+<ul>
+<li>Lightweight, packable if possible</li>
+<li><strong>Why:</strong> Weather protection, commuting</li>
+<li><strong>Context:</strong> Winter shifts, outdoor errands, travel</li>
+</ul>
+
+<p><strong>Optional: Rain Shell or Windbreaker</strong></p>
+<ul>
+<li>Packable, functional</li>
+<li><strong>Why:</strong> Weather protection for hospital parking lot commutes</li>
+</ul>
+
+<h3>Footwear: Comfort Above All (3 pairs)</h3>
+
+<p><strong>1 Pair Supportive Sneakers</strong></p>
+<ul>
+<li>Comfortable for walking, clean aesthetic</li>
+<li>White, grey, or black</li>
+<li><strong>Why:</strong> Post-shift foot relief, everyday wear</li>
+<li><strong>Context:</strong> 90% of non-work activities</li>
+</ul>
+
+<p><strong>1 Pair Slip-On Shoes or Clogs</strong></p>
+<ul>
+<li>Easy on/off (important after long shifts)</li>
+<li>Supportive footbed</li>
+<li><strong>Why:</strong> Quick changes, comfort, practical</li>
+<li><strong>Context:</strong> Quick errands, home wear, casual outings</li>
+</ul>
+
+<p><strong>1 Pair Versatile Boots or Elevated Shoes</strong></p>
+<ul>
+<li>Comfortable, professional appearance</li>
+<li><strong>Why:</strong> Professional meetings, formal events</li>
+<li><strong>Context:</strong> Conferences, presentations, dinners</li>
+</ul>
+
+<h3>Accessories: Functional Minimalism (3-4 items)</h3>
+
+<p><strong>1 Quality Bag or Backpack</strong></p>
+<ul>
+<li>Laptop compartment, organizational pockets</li>
+<li>Holds hospital badge, stethoscope if needed</li>
+<li><strong>Why:</strong> Carries work essentials, daily use</li>
+</ul>
+
+<p><strong>1-2 Hats (Beanie or Cap)</strong></p>
+<ul>
+<li>Post-shift hair solution</li>
+<li><strong>Why:</strong> Scrub cap hair is real, this fixes it</li>
+</ul>
+
+<p><strong>Optional: Simple Watch</strong></p>
+<ul>
+<li>Functional, washable</li>
+<li><strong>Why:</strong> Timekeeping without phone dependency</li>
+</ul>
+
+<p><strong>Total: 20-25 pieces</strong></p>
+<p><strong>All combinations work together</strong></p>
+<p><strong>Change time: Under 5 minutes</strong></p>
+</section>
+
+<section>
+<h2>The 5-Minute Post-Shift Change System</h2>
+
+<p>Here's how medical professionals actually use this wardrobe:</p>
+
+<h3>Scenario 1: Grocery Run After 12-Hour Shift</h3>
+<p><strong>Outfit:</strong> Premium tee (VOID) + joggers (STEEL) + sneakers</p>
+<p><strong>Change time:</strong> 2 minutes</p>
+<p><strong>Why it works:</strong> Scrub-level comfort, public-appropriate, zero thought required</p>
+
+<h3>Scenario 2: Meeting Friend for Dinner Post-Shift</h3>
+<p><strong>Outfit:</strong> Hoodie (VOID) + stretch denim (dark wash) + sneakers</p>
+<p><strong>Change time:</strong> 3 minutes</p>
+<p><strong>Why it works:</strong> Casual-polished, comfortable enough after long day, restaurant-appropriate</p>
+
+<h3>Scenario 3: Hospital Admin Meeting (Non-Scrubs)</h3>
+<p><strong>Outfit:</strong> Long sleeve (SAND) + stretch denim or chinos + boots</p>
+<p><strong>Change time:</strong> 4 minutes</p>
+<p><strong>Why it works:</strong> Professional appearance, still comfortable for rest of shift</p>
+
+<h3>Scenario 4: Weekend Errands</h3>
+<p><strong>Outfit:</strong> Tee + joggers + slip-on shoes</p>
+<p><strong>Change time:</strong> 90 seconds</p>
+<p><strong>Why it works:</strong> Maximum comfort, minimal effort, functional</p>
+
+<h3>Scenario 5: Conference or Professional Event</h3>
+<p><strong>Outfit:</strong> Crewneck sweater + chinos + boots + utility jacket</p>
+<p><strong>Change time:</strong> 5 minutes</p>
+<p><strong>Why it works:</strong> Polished, professional, still comfortable for all-day wear</p>
+</section>
+
+<section>
+<h2>Color Strategy for Medical Professionals</h2>
+
+<p>Keep it simple. You don't have mental bandwidth for color coordination after a shift.</p>
+
+<h3>Recommended Palette: 5-6 Colors Max</h3>
+
+<p><strong>Foundation colors (choose 3-4):</strong></p>
+<ul>
+<li><strong>VOID (black)</strong> — Universal, hides stains, works everywhere</li>
+<li><strong>STEEL (grey)</strong> — Softer than black, equally versatile</li>
+<li><strong>SAND (beige)</strong> — Warm neutral, pairs with everything</li>
+<li><strong>CLOUD (white/cream)</strong> — Fresh, clean, balances dark pieces</li>
+</ul>
+
+<p><strong>Accent colors (choose 1-2):</strong></p>
+<ul>
+<li><strong>MOSS (green)</strong> — Calming, medical-appropriate</li>
+<li><strong>EARTH (brown)</strong> — Warm, grounding</li>
+</ul>
+
+<p><strong>Why this works:</strong></p>
+<p>Every piece pairs with every other piece. You can get dressed in the dark (which you might be doing pre-shift). No matching stress. No decisions.</p>
+
+<p>This is the <strong>scrubs philosophy applied to civilian clothing</strong>: functional uniformity.</p>
+</section>
+
+<section>
+<h2>Fabric Priorities for Healthcare Workers</h2>
+
+<p>Material matters when you're washing clothes 2-3x per week minimum.</p>
+
+<h3>Best Fabrics for Medical Professional Wardrobes:</h3>
+
+<p><strong>Organic Cotton or Cotton Blends</strong></p>
+<ul>
+<li>Breathable, soft, washable at high temperatures</li>
+<li>Natural antimicrobial properties</li>
+<li>Durable through frequent washing</li>
+</ul>
+
+<p><strong>Bamboo or Modal</strong></p>
+<ul>
+<li>Incredibly soft (important post-shift)</li>
+<li>Naturally antimicrobial and odor-resistant</li>
+<li>Moisture-wicking</li>
+<li>Sustainable choice</li>
+</ul>
+
+<p><strong>Merino Wool (for layers)</strong></p>
+<ul>
+<li>Temperature-regulating</li>
+<li>Odor-resistant (can wear multiple times between washes)</li>
+<li>Soft, comfortable</li>
+<li>Professional appearance</li>
+</ul>
+
+<p><strong>Quality Performance Blends</strong></p>
+<ul>
+<li>Stretch for comfort and movement</li>
+<li>Quick-drying</li>
+<li>Wrinkle-resistant (important for locker storage)</li>
+</ul>
+
+<h3>Fabrics to Avoid:</h3>
+<ul>
+<li><strong>100% polyester</strong> (traps odors, not breathable after long shifts)</li>
+<li><strong>Delicate materials requiring dry cleaning</strong> (not practical)</li>
+<li><strong>Non-stretch denim or rigid fabrics</strong> (uncomfortable post-shift)</li>
+</ul>
+</section>
+
+<section>
+<h2>Building Your Medical Professional Wardrobe: 60-Day Plan</h2>
+
+<p>Don't buy everything at once. Build systematically.</p>
+
+<h3>Days 1-7: Audit & Assess</h3>
+<ol>
+<li>Empty your non-scrubs closet</li>
+<li>Keep only what you've worn in the last 3 months</li>
+<li>Identify gaps in comfort and functionality</li>
+<li>Note what you reach for most often post-shift</li>
+</ol>
+
+<h3>Days 8-30: Foundation Phase</h3>
+<p><strong>Priority purchases:</strong></p>
+<ul>
+<li>3 premium tees (your daily drivers)</li>
+<li>2 pairs joggers or comfortable pants</li>
+<li>1 pair supportive sneakers</li>
+<li>1 hoodie or zip-up</li>
+</ul>
+<p><strong>Cost: ~$300-400</strong></p>
+<p><strong>Impact: Covers 80% of post-shift needs</strong></p>
+
+<h3>Days 31-45: Professional Layer</h3>
+<p><strong>Add:</strong></p>
+<ul>
+<li>2 pairs stretch denim or chinos</li>
+<li>2 long sleeves for layering</li>
+<li>1 utility jacket or overshirt</li>
+<li>1 pair elevated shoes</li>
+</ul>
+<p><strong>Cost: ~$350-450</strong></p>
+<p><strong>Impact: Now covers professional meetings</strong></p>
+
+<h3>Days 46-60: Complete the System</h3>
+<p><strong>Final additions:</strong></p>
+<ul>
+<li>Remaining outerwear for your climate</li>
+<li>Quality bag or backpack</li>
+<li>Accessories (hats, watch if needed)</li>
+<li>Optional: chinos for formal events</li>
+</ul>
+<p><strong>Cost: ~$200-300</strong></p>
+<p><strong>Impact: Complete system for all contexts</strong></p>
+
+<p><strong>Total investment: $850-1,150</strong></p>
+<p><strong>Lifespan: 3-5 years with proper care</strong></p>
+<p><strong>Annual cost: $170-380/year for complete wardrobe</strong></p>
+</section>
+
+<section>
+<h2>Why 1ABEL Works for Medical Professionals</h2>
+
+<p>1ABEL wasn't designed specifically for healthcare workers, but the philosophy aligns perfectly:</p>
+
+<h3>1. Uniform-Like Simplicity</h3>
+<p>Just like scrubs, every 1ABEL piece works with every other piece. No matching. No decisions. Just functional clothing.</p>
+
+<h3>2. Comfort-First Design</h3>
+<p>Quality fabrics that feel good after 12-hour shifts. Nothing restrictive. Nothing uncomfortable. Just soft, breathable, well-constructed basics.</p>
+
+<h3>3. Longevity Focus</h3>
+<p>Built to last 5-10 years with proper care. Healthcare workers need clothing that survives frequent washing and daily use.</p>
+
+<h3>4. Context Flexibility</h3>
+<p>Arc 2 Shadow pieces work for post-shift grocery runs AND hospital admin meetings. Arc 3 Light pieces transition from weekend errands to professional conferences.</p>
+
+<p>No separate "work clothes" and "life clothes." Just one systematic wardrobe that works everywhere.</p>
+
+<h3>5. Decision Elimination</h3>
+<p>The two-arc system removes wardrobe complexity. Choose your arc based on mood or context. Everything within that arc coordinates automatically.</p>
+
+<p>Perfect for medical professionals who've already made enough decisions for the day.</p>
+</section>
+
+<section>
+<h2>Take Action: Build Your Medical Professional Wardrobe This Month</h2>
+
+<p>You save lives. You deserve a wardrobe that doesn't drain your energy.</p>
+
+<p><strong>This week:</strong></p>
+<ol>
+<li>Audit your current non-scrubs wardrobe</li>
+<li>Identify your top 3 post-shift frustrations with clothing</li>
+<li>Choose your 5-6 color palette</li>
+</ol>
+
+<p><strong>This month:</strong></p>
+<ol>
+<li>Invest in foundation pieces (tees, joggers, sneakers, hoodie)</li>
+<li>Test the 5-minute change system after your next shift</li>
+<li>Donate clothes you haven't worn in 3+ months</li>
+</ol>
+
+<p><strong>This quarter:</strong></p>
+<ol>
+<li>Complete your 20-25 piece capsule system</li>
+<li>Track time saved on wardrobe decisions</li>
+<li>Enjoy the mental bandwidth you've reclaimed</li>
+</ol>
+
+<p><strong>The goal:</strong> A wardrobe that works as seamlessly as your scrubs—comfortable, functional, and invisible until you need it.</p>
+
+<p>Because you have more important things to focus on than what to wear tomorrow.</p>
+</section>
+
+<section>
+<h2>Explore 1ABEL's Medical Professional-Friendly Collections</h2>
+
+<p>Ready to build a wardrobe system that actually works for healthcare life?</p>
+
+<p><strong>1ABEL's two-arc system is perfect for medical professionals who need comfort, simplicity, and zero decision overhead:</strong></p>
+
+<ul>
+<li><strong><a href="/arc-2">Arc 2 (Shadow)</a></strong> — Dark, comfortable essentials. Perfect for post-shift comfort and professional meetings. Scrub-like simplicity.</li>
+<li><strong><a href="/arc-3">Arc 3 (Light)</a></strong> — Balanced, versatile pieces. Great for weekend life and semi-professional contexts. Soft, breathable, easy-care.</li>
+<li><strong><a href="/about">The 1ABEL Philosophy</a></strong> — Learn how systematic thinking creates wardrobe infrastructure.</li>
+</ul>
+
+<p>Every piece is designed for <strong>comfort, longevity, and interoperability</strong>.</p>
+
+<p>No complex outfits. No matching stress. No decision fatigue.</p>
+
+<p>Just quality clothing that works like scrubs: functional, reliable, comfortable.</p>
+
+<p>Because after saving lives all day, you deserve a wardrobe that just works.</p>
+</section>
+`,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur running Seology.ai, iImagined.ai, FutureShive, Sirency, and 1ABEL. Built 1ABEL for people who need their wardrobe to work like infrastructure—including healthcare heroes who don\'t have time for fashion complexity.'
+    },
+    publishedAt: '2025-01-18',
+    updatedAt: '2025-01-18',
+    readTime: '14 min',
+    category: 'Style Guide',
+    tags: ['medical professional wardrobe', 'doctor clothing', 'nurse fashion', 'healthcare worker style', 'capsule wardrobe medical', 'scrubs to street', 'hospital fashion'],
+    featured: false,
+    seo: {
+      metaTitle: 'Medical Professional Capsule Wardrobe: Hospital to Street in 5 Minutes | 1ABEL',
+      metaDescription: 'Build a 20-25 piece minimalist wardrobe designed for doctors, nurses, and healthcare workers. Post-shift comfort, quick changes, antimicrobial fabrics. Complete guide for medical professionals.',
+      keywords: [
+        'medical professional wardrobe',
+        'doctor capsule wardrobe',
+        'nurse fashion guide',
+        'healthcare worker clothing',
+        'scrubs to street style',
+        'post-shift wardrobe',
+        'minimalist wardrobe doctors',
+        'nurse capsule wardrobe',
+        'medical professional fashion 2025',
+        'hospital to street clothing',
+        'doctor fashion guide',
+        'comfortable professional clothing medical',
+        'antimicrobial clothing healthcare',
+        'quick change wardrobe medical',
+        'PA wardrobe essentials'
+      ]
+    }
   }
 ]
