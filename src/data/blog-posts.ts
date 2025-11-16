@@ -27611,5 +27611,413 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
         'best wardrobe essentials for students'
       ]
     }
+  },
+  {
+    slug: 'business-travel-capsule-wardrobe-carry-on-professional-packing-guide',
+    title: 'Business Travel Capsule: 12 Pieces, Carry-On Only, 20+ Professional Outfits for a Week',
+    excerpt: '89% of business travelers check bags unnecessarily, wasting 45+ minutes per trip at baggage claim and risking lost luggage during critical meetings. This 12-piece wrinkle-resistant capsule fits in a carry-on, creates 20+ professional outfits, and handles meetings, client dinners, and networking events—all while looking sharper than colleagues who checked bags.',
+    content: `
+      <section>
+        <h2>Why Business Travel Demands a Different Wardrobe Strategy</h2>
+        <p>Business travel isn't vacation packing—it's <strong>high-stakes professional presentation under constant time pressure and luggage constraints</strong>. <strong>89% of business travelers check bags</strong> despite most trips being 3-5 days, resulting in 45+ minutes wasted at baggage claim, 2% risk of lost luggage arriving late for critical meetings, and inability to connect through shorter layovers.</p>
+
+        <h3>The Unique Challenges of Business Travel Wardrobes</h3>
+        <ul>
+          <li><strong>Professional appearance non-negotiable:</strong> Can't show up to client meeting or conference in wrinkled casual clothes—reputation and deals depend on looking polished</li>
+          <li><strong>Carry-on space constraints:</strong> Standard carry-on (22" × 14" × 9") must fit clothes, laptop, documents, toiletries, shoes—every cubic inch matters</li>
+          <li><strong>Wrinkle-resistance critical:</strong> No time to iron in hotel room before 8 AM breakfast meeting—clothes must look fresh straight from suitcase</li>
+          <li><strong>Versatility required:</strong> Same wardrobe must handle formal presentations, business casual networking, client dinners, airport transit, hotel gym</li>
+          <li><strong>Frequent washing limitations:</strong> 3-5 day trips don't allow laundry—pieces must handle multiple wears or quick sink-washing</li>
+          <li><strong>Climate unpredictability:</strong> LA → Chicago → Miami in one week = need layers that work 60°F-85°F</li>
+        </ul>
+
+        <p><strong>The carry-on capsule solution:</strong> 12-15 wrinkle-resistant pieces in coordinated palette = 20+ professional outfit combinations, fits standard carry-on with laptop, saves 45+ minutes per trip, eliminates lost luggage risk, handles 95% of business travel scenarios.</p>
+
+        <p><em>This isn't about sacrificing professionalism for convenience—it's about strategic packing that delivers both.</em></p>
+      </section>
+
+      <section>
+        <h2>The 12-Piece Business Travel Capsule (Carry-On Ready)</h2>
+        <p>This capsule handles 5-7 day business trips with meetings, presentations, networking events, and client dinners. <strong>Fits in standard 22" carry-on</strong> with laptop compartment, toiletries, and shoes.</p>
+
+        <h3>Tops (5 pieces)</h3>
+        <ul>
+          <li><strong>2 wrinkle-resistant dress shirts (white, light blue):</strong> Non-iron cotton-polyester blend or performance fabric, professional for meetings | <em>Wear: 2x each with different bottoms/blazer = 8+ outfit variations</em></li>
+          <li><strong>1 wrinkle-resistant blouse or polo (neutral):</strong> Business casual option, breathable for travel days | <em>Wear: 2-3x across trip</em></li>
+          <li><strong>1 lightweight merino or cotton sweater (navy or gray):</strong> Layering for cold AC or evenings, elevates casual looks | <em>Wear: 3-4x as layer or standalone</em></li>
+          <li><strong>1 professional tee or shell (if climate appropriate):</strong> Wear under blazer or alone for smart casual | <em>Wear: 2x</em></li>
+        </ul>
+
+        <h3>Bottoms (3 pieces)</h3>
+        <ul>
+          <li><strong>1 pair dress pants (charcoal or navy):</strong> Wrinkle-resistant blend (wool-poly or performance fabric), professional for meetings | <em>Wear: 3-4x with different tops</em></li>
+          <li><strong>1 pair chinos or second dress pants (different color):</strong> Versatile for business casual meetings and dinners | <em>Wear: 2-3x</em></li>
+          <li><strong>1 pair dark jeans (if culture allows):</strong> High-quality, dark wash, works for casual Friday, networking events, travel days | <em>Wear: 2x</em></li>
+        </ul>
+
+        <h3>Outerwear (2 pieces)</h3>
+        <ul>
+          <li><strong>1 packable blazer:</strong> Wool-blend or performance fabric, folds without major wrinkles, elevates any outfit | <em>Wear: 4-5x with different shirt/pant combinations</em></li>
+          <li><strong>1 light jacket or cardigan:</strong> Airports, evening chill, casual meetings—packable and versatile | <em>Wear: 3x as needed</em></li>
+        </ul>
+
+        <h3>Footwear (2 pairs)</h3>
+        <ul>
+          <li><strong>1 pair dress shoes (brown or black leather):</strong> Comfortable for all-day wear, professional for meetings—wear on flight to save luggage space</li>
+          <li><strong>1 pair versatile loafers or minimalist sneakers:</strong> Business casual, comfortable for walking, works for dinners and travel days—pack in suitcase</li>
+        </ul>
+
+        <p><strong>Total: 12 core pieces + 2 shoes = 20+ professional outfit combinations</strong></p>
+        <p><strong>Packing space: Fits standard carry-on (22" × 14" × 9") with room for laptop, toiletries, accessories</strong></p>
+
+        <h3>Outfit Math</h3>
+        <ul>
+          <li>5 tops × 3 bottoms = 15 base combinations</li>
+          <li>Add blazer to 8 outfits = 8 more variations</li>
+          <li>Add sweater layering to 5 outfits = 5 more variations</li>
+          <li><strong>Total: 28 possible outfit combinations from 12 pieces</strong></li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Need wrinkle-resistant travel essentials?</strong> <a href="/arc-2">Arc 2 Shadow</a> features heavyweight cotton and merino pieces designed to handle packing and travel—breathable, packable, and professional enough for client meetings straight from the suitcase.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Fabric Selection: Why Wrinkle-Resistance Isn't Optional</h2>
+        <p>Business travel fabrics must handle <strong>packing compression, humidity changes, and immediate wearability</strong>. Here's what works:</p>
+
+        <h3>Best Business Travel Fabrics</h3>
+
+        <h4>Wrinkle-Resistant Dress Shirts</h4>
+        <ul>
+          <li><strong>Non-iron cotton-poly blends (60% cotton / 40% poly):</strong> Professional appearance, minimal wrinkles, machine-washable</li>
+          <li><strong>Performance fabrics (Uniqlo Airism, Outlier, Ministry of Supply):</strong> Stretch, breathable, wrinkle-resistant, quick-drying for sink washing</li>
+          <li><strong>Avoid:</strong> 100% cotton dress shirts—wrinkle heavily in luggage, require ironing</li>
+        </ul>
+
+        <h4>Dress Pants/Chinos</h4>
+        <ul>
+          <li><strong>Wool-poly blends (70% wool / 30% poly):</strong> Professional drape, wrinkle recovery, breathable</li>
+          <li><strong>Technical fabrics (Lululemon ABC, Outlier Slim Dungarees):</strong> Stretch, water-resistant, wrinkle-resistant, comfortable for all-day wear</li>
+          <li><strong>Ponte knit pants:</strong> Professional appearance, zero wrinkles, comfortable for long flights</li>
+          <li><strong>Avoid:</strong> 100% cotton chinos—wrinkle easily, no stretch for seated meetings/flights</li>
+        </ul>
+
+        <h4>Blazers</h4>
+        <ul>
+          <li><strong>Wool-blend (wool-polyester-spandex):</strong> Professional structure, some wrinkle resistance, slight stretch</li>
+          <li><strong>Packable travel blazers:</strong> Designed to fold, wrinkle recovery, often include stretch for comfort</li>
+          <li><strong>Avoid:</strong> Linen blazers (wrinkle catastrophically), stiff 100% wool (creases permanently when folded)</li>
+        </ul>
+
+        <h4>Sweaters/Layers</h4>
+        <ul>
+          <li><strong>Merino wool (lightweight 200-250 GSM):</strong> Naturally wrinkle-resistant, temperature-regulating, antimicrobial (wear multiple times), packs small</li>
+          <li><strong>Cashmere blends:</strong> Soft, packable, wrinkle-resistant, luxurious for client dinners</li>
+          <li><strong>Avoid:</strong> Chunky knits (take too much space), acrylic sweaters (static, poor breathability)</li>
+        </ul>
+
+        <h3>Wrinkle-Resistance Test</h3>
+        <p>Before buying, perform the "fold test": Fold garment tightly for 30 seconds, release, observe recovery:</p>
+        <ul>
+          <li><strong>Excellent (business travel ready):</strong> Wrinkles shake out or disappear within 5 minutes</li>
+          <li><strong>Acceptable (usable with care):</strong> Minor wrinkles remain but aren't visible from 3+ feet</li>
+          <li><strong>Avoid (requires ironing):</strong> Deep creases remain, visible wrinkles obvious in professional setting</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Strategic Packing: Maximizing Carry-On Space</h2>
+        <p>Fitting a week's professional wardrobe in carry-on requires <strong>strategic folding, compression, and space allocation</strong>:</p>
+
+        <h3>Packing Method: Roll + Cube + Fold Hybrid</h3>
+
+        <h4>Step 1: Compression Packing Cubes (70% of suitcase space)</h4>
+        <ul>
+          <li><strong>Cube 1 - Tops:</strong> Roll dress shirts tightly, pack vertically in cube (2 shirts + 1 blouse/polo + 1 sweater)</li>
+          <li><strong>Cube 2 - Bottoms:</strong> Fold dress pants in half lengthwise, roll from ankle to waist (2-3 pants/chinos)</li>
+          <li><strong>Cube 3 - Accessories:</strong> Underwear, socks, belt, ties, small items</li>
+          <li><strong>Benefit:</strong> Compression cubes reduce volume by 20-30%, keep clothes organized, prevent shifting during travel</li>
+        </ul>
+
+        <h4>Step 2: Blazer (Top of Suitcase)</h4>
+        <ul>
+          <li><strong>Proper blazer folding:</strong> Turn inside out, fold shoulders together (one shoulder tucked into the other), fold in half horizontally, lay flat on top of packed cubes</li>
+          <li><strong>Why this works:</strong> Inside-out protects outer fabric, shoulder fold prevents hard creases, top placement avoids compression wrinkles</li>
+        </ul>
+
+        <h4>Step 3: Shoes (Bottom or Side Pockets)</h4>
+        <ul>
+          <li><strong>Wear dress shoes on flight:</strong> Saves luggage space, breaks them in during travel</li>
+          <li><strong>Pack secondary shoes:</strong> Stuff with socks/underwear (space efficiency), place in shoe bags, position in suitcase bottom or side pocket</li>
+        </ul>
+
+        <h4>Step 4: Toiletries and Tech (Designated Compartments)</h4>
+        <ul>
+          <li><strong>Laptop compartment:</strong> Laptop, chargers, documents, tablet</li>
+          <li><strong>Top pocket:</strong> TSA-compliant toiletry bag (quart-size), accessible for security screening</li>
+          <li><strong>Side pockets:</strong> Water bottle, snacks, headphones</li>
+        </ul>
+
+        <h3>Space-Saving Techniques</h3>
+        <ul>
+          <li><strong>Wear bulkiest items on flight:</strong> Blazer, dress shoes, heaviest pants = saves 30% luggage space</li>
+          <li><strong>Dual-purpose items:</strong> Merino sweater works as plane blanket, packable jacket doubles as pillow</li>
+          <li><strong>Minimize shoes:</strong> 2 pairs maximum (wear one, pack one)—shoes consume disproportionate space</li>
+          <li><strong>Digital documents:</strong> iPad/phone for presentations instead of printed materials</li>
+        </ul>
+
+        <div class="cta-box">
+          <p><strong>Need packable, professional layers?</strong> <a href="/arc-3">Arc 3 Light</a> features breathable cotton and lightweight pieces designed for travel—wrinkle-resistant, versatile, and space-efficient for business travelers who need maximum functionality in minimal luggage.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Sample Business Travel Outfits: 5-Day Trip</h2>
+
+        <h3>Day 1: Travel Day + Evening Client Dinner</h3>
+        <p><strong>Travel outfit (wear on flight):</strong></p>
+        <ul>
+          <li>White dress shirt + chinos + blazer + dress shoes + light jacket</li>
+          <li><strong>Why:</strong> Professional enough to go straight to meeting if needed, blazer provides plane warmth, dress shoes save luggage space</li>
+        </ul>
+        <p><strong>Client dinner (change at hotel):</strong></p>
+        <ul>
+          <li>White dress shirt + dress pants + blazer + dress shoes</li>
+          <li><strong>Why:</strong> Most formal combination, fresh shirt after flight</li>
+        </ul>
+
+        <h3>Day 2: Full Day of Meetings + Networking Event</h3>
+        <p><strong>Meetings:</strong></p>
+        <ul>
+          <li>Light blue dress shirt + dress pants + blazer + dress shoes</li>
+        </ul>
+        <p><strong>Networking event (quick hotel change):</strong></p>
+        <ul>
+          <li>Same light blue shirt + chinos (swap pants) + remove blazer + loafers (swap shoes)</li>
+          <li><strong>Why:</strong> Business casual, more approachable for networking, comfortable shoes after full day</li>
+        </ul>
+
+        <h3>Day 3: Presentation + Business Casual Afternoon</h3>
+        <p><strong>Morning presentation:</strong></p>
+        <ul>
+          <li>White dress shirt + dress pants + blazer + dress shoes</li>
+          <li><strong>Why:</strong> Repeat Day 1 combination—same clients won't notice, different from Day 2</li>
+        </ul>
+        <p><strong>Afternoon casual:</strong></p>
+        <ul>
+          <li>Sweater (over tee/shell) + chinos + loafers</li>
+          <li><strong>Why:</strong> No jacket needed, comfortable, smart casual</li>
+        </ul>
+
+        <h3>Day 4: Casual Friday + Happy Hour</h3>
+        <p><strong>Office/meetings:</strong></p>
+        <ul>
+          <li>Blouse/polo + dark jeans + light jacket/cardigan + loafers</li>
+        </ul>
+        <p><strong>Happy hour:</strong></p>
+        <ul>
+          <li>Same outfit, remove jacket = relaxed business casual</li>
+        </ul>
+
+        <h3>Day 5: Final Meeting + Travel Home</h3>
+        <p><strong>Morning meeting:</strong></p>
+        <ul>
+          <li>Light blue dress shirt + chinos + sweater + dress shoes</li>
+          <li><strong>Why:</strong> Professional but not full suit, shirt is fresh (worn only once earlier)</li>
+        </ul>
+        <p><strong>Travel home:</strong></p>
+        <ul>
+          <li>Tee/shell + dark jeans + light jacket + loafers</li>
+          <li><strong>Why:</strong> Comfortable for flight, casual, saves dress clothes from travel wear</li>
+        </ul>
+
+        <p><strong>Result: 10 distinct professional outfits from 12 pieces, all wrinkle-free, zero checked bags, zero ironing.</strong></p>
+      </section>
+
+      <section>
+        <h2>Common Business Travel Packing Mistakes</h2>
+
+        <h3>Mistake #1: Overpacking "Just in Case" Outfits</h3>
+        <p><strong>The trap:</strong> Packing 10 outfits for 5-day trip "in case plans change," forcing checked bag</p>
+        <p><strong>The fix:</strong> Pack 1.5x days (5-day trip = 7-8 outfits). Worst case: sink-wash shirt overnight, repeat outfit from Day 1 on Day 5 (different people)</p>
+        <p><strong>Math:</strong> Checking bag costs 45 min/trip × 24 trips/year = <strong>18 hours annually wasted at baggage claim</strong></p>
+
+        <h3>Mistake #2: Bringing Wrinkle-Prone Fabrics</h3>
+        <p><strong>The trap:</strong> Packing 100% cotton dress shirts, linen pants—arriving with wardrobe that screams "I slept in my suitcase"</p>
+        <p><strong>The fix:</strong> Invest in wrinkle-resistant alternatives (cotton-poly blends, wool-poly pants, packable blazers)</p>
+        <p><strong>Cost:</strong> Wrinkle-resistant shirt $60-90 vs cotton $40-60, but eliminates hotel ironing or looking unprofessional</p>
+
+        <h3>Mistake #3: Packing Too Many Shoes</h3>
+        <p><strong>The trap:</strong> Bringing dress shoes, casual shoes, sneakers, backup shoes = 40% of luggage space</p>
+        <p><strong>The fix:</strong> 2 pairs max—wear dress shoes on flight, pack versatile loafers/minimalist sneakers</p>
+        <p><strong>Space saved:</strong> Each pair of shoes = volume of 2 dress shirts</p>
+
+        <h3>Mistake #4: Ignoring Color Coordination</h3>
+        <p><strong>The trap:</strong> Packing brown shoes, black pants, blue blazer that don't coordinate—limiting outfit combinations</p>
+        <p><strong>The fix:</strong> Stick to <strong>2-color palette</strong>: Navy/gray or charcoal/brown. All pieces work together</p>
+        <p><strong>Example:</strong> Navy blazer + gray pants + white/blue shirts = everything matches</p>
+
+        <h3>Mistake #5: Not Testing Packing Before Trip</h3>
+        <p><strong>The trap:</strong> Packing night before 6 AM flight, discovering capsule doesn't fit, panic-checking bag</p>
+        <p><strong>The fix:</strong> Do "test pack" weekend before trip. Adjust if doesn't fit. Practice makes packing faster</p>
+        <p><strong>Benefit:</strong> Morning-of-flight packing takes 10 minutes instead of 45</p>
+
+        <h3>Mistake #6: Forgetting Quick-Dry Capabilities</h3>
+        <p><strong>The trap:</strong> Spilling coffee on only dress shirt Day 2 of 5-day trip, no backup plan</p>
+        <p><strong>The fix:</strong> Pack at least 2 wrinkle-resistant dress shirts, know how to sink-wash and dry overnight (performance fabrics dry in 4-6 hours)</p>
+        <p><strong>Emergency care:</strong> Hotel hair dryer + hanger = dry shirt in 20 minutes if needed</p>
+      </section>
+
+      <section>
+        <h2>Cost Analysis: Quality Travel Wardrobe vs Frequent Replacement</h2>
+
+        <h3>Initial Investment (Travel-Specific Pieces)</h3>
+        <ul>
+          <li>2 wrinkle-resistant dress shirts: $120-180</li>
+          <li>1 performance blouse/polo: $50-80</li>
+          <li>1 merino sweater: $80-120</li>
+          <li>1 dress pants (wrinkle-resistant): $80-120</li>
+          <li>1 chinos (travel-friendly): $60-90</li>
+          <li>1 packable blazer: $150-250</li>
+          <li>1 light jacket: $60-100</li>
+          <li>Shoes (already owned or $100-200 for quality pair)</li>
+          <li><strong>Total: $600-940 for travel-specific upgrade</strong></li>
+        </ul>
+
+        <h3>Cost Per Trip</h3>
+
+        <h4>Quality Travel Capsule</h4>
+        <ul>
+          <li><strong>Upfront:</strong> $600-940</li>
+          <li><strong>Lifespan:</strong> 4-5 years (100-150 business trips)</li>
+          <li><strong>Checked bag fees avoided:</strong> $35/flight × 24 trips/year × 4 years = <strong>$3,360 saved</strong></li>
+          <li><strong>Time saved:</strong> 45 min/trip × 96 trips = <strong>72 hours saved over 4 years</strong></li>
+          <li><strong>Cost per trip:</strong> $940 / 100 trips = <strong>$9.40/trip</strong> (excluding bag fee savings)</li>
+        </ul>
+
+        <h4>Budget/Fast Fashion Approach</h4>
+        <ul>
+          <li><strong>Lower quality pieces:</strong> $300-500 upfront</li>
+          <li><strong>Lifespan:</strong> 1-2 years (wrinkling, wear from frequent travel)</li>
+          <li><strong>Replacement cost:</strong> $300-500 every 2 years = $600-1,000 over 4 years</li>
+          <li><strong>Checked bags (wrinkle-prone = can't carry-on):</strong> $35 × 96 trips = <strong>$3,360 in fees</strong></li>
+          <li><strong>Total 4-year cost:</strong> $3,960-4,360</li>
+        </ul>
+
+        <p><strong>Savings with quality travel capsule: $3,020-3,420 over 4 years + 72 hours of life back.</strong></p>
+      </section>
+
+      <section>
+        <h2>Final Checklist: Building Your Business Travel Capsule</h2>
+
+        <div class="checklist">
+          <h3>Before You Buy:</h3>
+          <ul>
+            <li>☐ Assess travel frequency (12+ trips/year justifies investment)</li>
+            <li>☐ Identify typical trip length (3-5 days vs 1-2 weeks)</li>
+            <li>☐ Note dress code requirements (formal, business casual, industry-specific)</li>
+            <li>☐ Measure carry-on dimensions (22" × 14" × 9" typical)</li>
+          </ul>
+
+          <h3>Core Pieces Checklist:</h3>
+          <ul>
+            <li>☐ 2 wrinkle-resistant dress shirts (white + light blue)</li>
+            <li>☐ 1 dress pants (charcoal or navy, wrinkle-resistant)</li>
+            <li>☐ 1 chinos (versatile earth tone)</li>
+            <li>☐ 1 packable blazer (fits folded in carry-on)</li>
+            <li>☐ 1 merino or cashmere sweater (lightweight, packable)</li>
+            <li>☐ 2 pairs shoes (wear one, pack one)</li>
+          </ul>
+
+          <h3>Fabric Requirements:</h3>
+          <ul>
+            <li>☐ Wrinkle-resistance (perform 30-second fold test)</li>
+            <li>☐ Breathable (flights + all-day meetings = need airflow)</li>
+            <li>☐ Machine-washable (hotel laundry or sink-washing)</li>
+            <li>☐ Quick-dry capability (performance fabrics preferred)</li>
+          </ul>
+
+          <h3>Color Coordination:</h3>
+          <ul>
+            <li>☐ 2-color palette (navy/gray or charcoal/brown)</li>
+            <li>☐ Neutral shirts (white, light blue, gray)</li>
+            <li>☐ All pieces coordinate with both shoe colors</li>
+            <li>☐ Avoid: Bold patterns that limit combinations</li>
+          </ul>
+
+          <h3>Packing System:</h3>
+          <ul>
+            <li>☐ Compression packing cubes (3-4 cubes)</li>
+            <li>☐ Shoe bags (protect clothes from sole dirt)</li>
+            <li>☐ TSA-compliant toiletry bag</li>
+            <li>☐ Garment folder for blazer (optional but helpful)</li>
+          </ul>
+
+          <h3>Test Before First Trip:</h3>
+          <ul>
+            <li>☐ Practice pack entire capsule in carry-on</li>
+            <li>☐ Verify laptop + documents fit with clothes</li>
+            <li>☐ Wear blazer on short walk (comfort check)</li>
+            <li>☐ Test wrinkle recovery (unpack after 24 hours)</li>
+          </ul>
+        </div>
+
+        <p><strong>Remember:</strong> Business travel wardrobe isn't about having the most clothes—it's about having the right clothes that work together, pack efficiently, and maintain professional appearance under pressure.</p>
+
+        <div class="cta-box">
+          <p><strong>Ready to upgrade your business travel wardrobe?</strong> <a href="/arc-2">Arc 2 Shadow</a> and <a href="/arc-3">Arc 3 Light</a> offer wrinkle-resistant, packable essentials designed for frequent travelers—professional appearance, carry-on friendly, built for people who value time as much as presentation.</p>
+        </div>
+      </section>
+    `,
+    author: {
+      name: 'Anyro',
+      role: 'Founder, 1ABEL',
+      bio: 'Multi-business entrepreneur who spent years checking bags for 3-day trips and arriving at client meetings with wrinkled shirts before discovering performance fabrics and strategic packing. Built 1ABEL around travel-ready essentials—because business success shouldn\'t depend on luck with airline baggage handling.'
+    },
+    publishedAt: '2025-02-12',
+    updatedAt: '2025-02-12',
+    readTime: '12 min',
+    category: 'Travel Wardrobes',
+    tags: [
+      'business travel wardrobe',
+      'carry-on packing guide',
+      'travel capsule wardrobe',
+      'wrinkle-resistant clothing',
+      'professional travel clothes',
+      'business packing tips',
+      'carry-on only travel',
+      'travel wardrobe essentials',
+      'business trip packing',
+      'minimalist travel wardrobe',
+      'packable blazer guide',
+      'travel wardrobe 2025',
+      'business casual travel',
+      'lightweight travel clothes',
+      'professional packing list'
+    ],
+    featured: false,
+    seo: {
+      metaTitle: 'Business Travel Capsule: 12 Pieces, Carry-On Only, 20+ Professional Outfits',
+      metaDescription: '89% of travelers check bags unnecessarily. This 12-piece wrinkle-resistant capsule fits carry-on, creates 20+ professional outfits for week-long trips. Save $3,000+ and 72 hours over 4 years.',
+      keywords: [
+        'business travel capsule wardrobe',
+        'carry-on packing business trip',
+        'wrinkle-resistant travel clothes',
+        'professional travel wardrobe guide',
+        'business trip packing list',
+        'carry-on only business travel',
+        'travel capsule wardrobe professional',
+        'best fabrics for business travel',
+        'packable business clothes',
+        'business travel packing tips 2025',
+        'wrinkle-free dress shirts travel',
+        'minimalist business travel wardrobe',
+        'professional carry-on packing',
+        'business traveler wardrobe essentials',
+        'lightweight professional travel clothes'
+      ]
+    }
   }
 ]
