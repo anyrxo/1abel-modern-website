@@ -20633,7 +20633,7 @@ Six months later: Faded. Stretched out. Pilling. Looks cheap.</p>
     author: {
       name: 'Anyro',
       role: 'Founder, 1ABEL',
-      bio: 'Multi-business entrepreneur running Seology.ai, iImagined.ai, FutureShive, Sirency, and 1ABEL. Built 1ABEL as an anti-fast-fashion solution. Understands Gen Z because he's solving for real values, not marketing to demographics.'
+      bio: 'Multi-business entrepreneur running Seology.ai, iImagined.ai, FutureShive, Sirency, and 1ABEL. Built 1ABEL as an anti-fast-fashion solution. Understands Gen Z because he\'s solving for real values, not marketing to demographics.'
     },
     publishedAt: '2026-01-17',
     updatedAt: '2026-01-17',
