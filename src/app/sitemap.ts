@@ -80,7 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }))
 
-  // Blog posts - SEO powerhouse with 62+ comprehensive articles
+  // Blog posts - SEO powerhouse with 119 comprehensive articles
   // Featured posts get higher priority for AI indexing
   const blogPages = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
@@ -89,6 +89,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: post.featured ? 0.8 : 0.7, // Increased priority for blog content
   }))
 
-  // Combine all pages - Total 100+ URLs for comprehensive indexing
+  // Combine all pages - Total 150+ URLs for comprehensive indexing
   return [...staticPages, ...arc2Products, ...arc3Products, ...blogPages]
 }
